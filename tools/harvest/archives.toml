@@ -1,0 +1,102 @@
+# Sites scanned by tools/archive_scan.jl in the Internet Archive (Wayback CDX index).
+# Collaboration and group pages go offline (site moves, security shutdowns); their archived data files are often the
+# only remaining copy. `prefix` is matched as host/path*; `label` names the owner.
+[[site]]
+label = "Super-Kamiokande"
+prefix = ["www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/", "www-sk.icrr.u-tokyo.ac.jp/sk/lowe/", "www-sk.icrr.u-tokyo.ac.jp/sk/atmpd/", "www-sk.icrr.u-tokyo.ac.jp/~"]
+[[site]]
+label = "SNO"
+prefix = ["sno.phy.queensu.ca/", "www.sno.phy.queensu.ca/"]
+[[site]]
+label = "NuFIT"
+prefix = ["www.nu-fit.org/sites/default/files/", "nu-fit.org/sites/default/files/"]
+[[site]]
+label = "KamLAND (Tohoku)"
+prefix = ["www.awa.tohoku.ac.jp/KamLAND/", "www.awa.tohoku.ac.jp/kamland/", "kamland.lbl.gov/"]
+[[site]]
+label = "ANTARES"
+prefix = ["antares.in2p3.fr/"]
+[[site]]
+label = "Borexino"
+prefix = ["borex.lngs.infn.it/"]
+[[site]]
+label = "Bahcall (IAS)"
+prefix = ["www.sns.ias.edu/~jnb/"]
+[[site]]
+label = "Daya Bay"
+prefix = ["dayabay.ihep.ac.cn/", "dayabay.bnl.gov/"]
+[[site]]
+label = "MINOS / NuMI"
+prefix = ["www-numi.fnal.gov/"]
+[[site]]
+label = "MiniBooNE"
+prefix = ["www-boone.fnal.gov/"]
+[[site]]
+label = "T2K"
+prefix = ["t2k-experiment.org/wp-content/uploads/", "www.t2k.org/"]
+[[site]]
+label = "NOvA"
+prefix = ["novaexperiment.fnal.gov/", "nova-docdb.fnal.gov/"]
+[[site]]
+label = "MINERvA"
+prefix = ["minerva.fnal.gov/", "minerva-docdb.fnal.gov/"]
+[[site]]
+label = "MicroBooNE"
+prefix = ["microboone.fnal.gov/"]
+[[site]]
+label = "Double Chooz"
+prefix = ["www.doublechooz.org/", "doublechooz.in2p3.fr/"]
+[[site]]
+label = "RENO"
+prefix = ["neutrino.snu.ac.kr/", "reno.knu.ac.kr/"]
+[[site]]
+label = "LSND / KARMEN"
+prefix = ["www.nevis.columbia.edu/~lsnd/", "www-ik.fzk.de/~karmen/", "www-ik.fzk.de/karmen/"]
+[[site]]
+label = "K2K"
+prefix = ["neutrino.kek.jp/"]
+[[site]]
+label = "OPERA"
+prefix = ["operaweb.lngs.infn.it/"]
+[[site]]
+label = "IceCube"
+prefix = ["icecube.wisc.edu/science/data/", "icecube.umd.edu/"]
+[[site]]
+label = "DUNE fluxes (Notre Dame)"
+prefix = ["glaucus.crc.nd.edu/DUNEFluxes/"]
+[[site]]
+label = "Honda flux tables"
+prefix = ["www.icrr.u-tokyo.ac.jp/~mhonda/", "www-rccn.icrr.u-tokyo.ac.jp/mhonda/"]
+[[site]]
+label = "Huber reactor fluxes"
+prefix = ["www.phys.vt.edu/~pahuber/", "www1.phys.vt.edu/~pahuber/"]
+[[site]]
+label = "Bartol fluxes (Barr)"
+prefix = ["www-pnp.physics.ox.ac.uk/~barr/"]
+[[site]]
+label = "FLUKA fluxes (Battistoni)"
+prefix = ["pcbat1.mi.infn.it/~battist/"]
+[[site]]
+label = "Serenelli solar models"
+prefix = ["www.ice.csic.es/personal/aldos/", "www.mpa-garching.mpg.de/~aldos/"]
+[[site]]
+label = "Garching CCSN archive"
+prefix = ["wwwmpa.mpa-garching.mpg.de/ccsnarchive/"]
+[[site]]
+label = "Valencia global fit"
+prefix = ["globalfit.astroparticles.es/"]
+[[site]]
+label = "Neutrino Unbound (Giunti)"
+prefix = ["www.nu.to.infn.it/"]
+[[site]]
+label = "Durham neutrino review"
+prefix = ["hepdata.cedar.ac.uk/review/neutrino/"]
+[[site]]
+label = "GLoBES"
+prefix = ["www.mpi-hd.mpg.de/personalhomes/globes/", "www.mpi-hd.mpg.de/lin/globes/"]
+[[site]]
+label = "KATRIN"
+prefix = ["www.katrin.kit.edu/"]
+[[site]]
+label = "GERDA"
+prefix = ["www.mpi-hd.mpg.de/gerda/"]
