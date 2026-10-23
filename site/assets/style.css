@@ -185,10 +185,10 @@ th, td { padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); text-al
 .hero .toolbar input { font: inherit; padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); width: 100%; }
 .entry-head .summary { color: var(--muted); margin: 0.2rem 0 0.6rem; }
 .meta-line { font-size: 0.85rem; }
-.datacard { display: grid; grid-template-columns: 160px 1fr; gap: 0.15rem 1rem; margin: 0; max-width: 980px; }
-.datacard dt { color: var(--muted); font-size: 0.85rem; padding-top: 0.15rem; }
-.datacard dd { margin: 0; }
-.datacard dd p { margin: 0 0 0.35rem; }
+.kv td p { margin: 0; }
+.kv td p + p { margin-top: 0.4rem; }
+.fair { display: inline-block; font-size: 0.78rem; padding: 0.05rem 0.5rem; border-radius: 999px; margin-right: 0.15rem; }
+.fair.yes { background: var(--ok-soft); color: var(--ok); }
+.fair.no { background: var(--warn-soft); color: var(--warn); text-decoration: line-through; }
 .usedby { padding-left: 1.1rem; }
 .usedby li { margin: 0.25rem 0; }
-@media (max-width: 760px) { .datacard { grid-template-columns: 1fr; } .datacard dt { padding-top: 0.5rem; } }

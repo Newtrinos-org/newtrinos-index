@@ -320,16 +320,17 @@ function record_page(rec, vocab, byid, rels, status)
     cardhtml = if isempty(card)
         ""
     else
-        secs = join(["""<dt>$label</dt><dd>$(md(card[k]))</dd>""" for (k, label) in CARD_SECTIONS if haskey(card, k)], "\n")
-        extra = String[]
-        haskey(card, "dphep_level") && push!(extra, "DPHEP preservation level $(card["dphep_level"])")
+        rows = [(label, md(card[k])) for (k, label) in CARD_SECTIONS if haskey(card, k)]
+        DPHEP_LABEL = Dict(1 => "publication-level", 2 => "simplified data", 3 => "analysis-level", 4 => "full reconstruction and simulation")
+        haskey(card, "dphep_level") &&
+            push!(rows, ("Preservation", """DPHEP level $(card["dphep_level"]) <span class="muted">($(DPHEP_LABEL[card["dphep_level"]]))</span>"""))
         if haskey(card, "fair")
             f = card["fair"]
-            push!(extra, "FAIR: " * join(["$(k[1:1] |> uppercase)$(get(f, k, false) ? "✓" : "✗")" for k in ("findable", "accessible", "interoperable", "reusable")], " ") *
-                         (haskey(f, "notes") ? " ($(esc(f["notes"])))" : ""))
+            pills = join(["""<span class="fair $(get(f, k, false) ? "yes" : "no")">$(uppercasefirst(k))</span>""" for k in ("findable", "accessible", "interoperable", "reusable")], " ")
+            push!(rows, ("FAIR", pills * (haskey(f, "notes") ? " <span class=\"muted small\">$(esc(f["notes"]))</span>" : "")))
         end
         """<h2>Data card <span class="muted small">$(card_score(rec))/$(length(CARD_SECTIONS)) sections</span></h2>
-<dl class="datacard">$secs</dl>$(isempty(extra) ? "" : "<p class=\"muted small\">" * join(extra, " · ") * "</p>")"""
+$(kv(rows))"""
     end
 
     dists = join(["""<tr><td><a href="$(esc(d["url"]))">$(esc(get(d, "label", d["url"])))</a>$(badge(d["url"]))$(haskey(d, "notes") ? "<br><span class=\"muted small\">$(esc(d["notes"]))</span>" : "")</td>
