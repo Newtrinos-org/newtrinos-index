@@ -1,0 +1,47 @@
+id: barr-2006-atm-flux-uncertainties
+type: model
+title: Barr et al. atmospheric neutrino flux uncertainties (hadron-production parameterisation)
+short: 'Barr et al. 2006: atmospheric-ν flux uncertainties from hadron production in (E, x_lab) regions'
+description: Parameterisation of atmospheric neutrino flux uncertainties in terms of pion and kaon production uncertainties in regions of energy and x_lab (Phys. Rev. D 74, 094009), the standard flux-systematics scheme of IceCube, ORCA and others.
+creators:
+- name: G. D. Barr
+- name: T. K. Gaisser
+- name: S. Robbins
+- name: T. Stanev
+date_published: 2006
+license: none-stated
+access: open
+distributions:
+- url: https://doi.org/10.1103/PhysRevD.74.094009
+  host: journal-supplement
+  role: primary
+  formats:
+  - pdf
+cite_as:
+- doi:10.1103/PhysRevD.74.094009
+references:
+- doi: 10.1103/PhysRevD.74.094009
+  relation: describes
+used_by:
+- kind: software
+  target: https://github.com/icecube/pisa/blob/master/pisa/utils/barr_parameterization.py
+  label: PISA barr_parameterization
+  notes: IceCube implementation
+sources:
+- atmospheric
+topics:
+- flux
+model:
+  quantities:
+  - flux uncertainties
+newtrinos:
+  modules:
+  - atm_flux
+  verifications:
+  - 10.1103_PhysRevD.74.094009
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'
+  quality_notes:
+  - Newtrinos ships digitised Barr curves (src/physics/*updown.csv etc.) that are not loaded by any code

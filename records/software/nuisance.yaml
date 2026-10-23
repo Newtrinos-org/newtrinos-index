@@ -1,0 +1,53 @@
+id: nuisance
+type: software
+title: NUISANCE
+short: 'NUISANCE: neutrino cross-section generator comparison and tuning framework with a library of measurements'
+description: github mirror of the NUISANCE neutrino interaction generator comparison tool. Compare your favourite neutrino
+  interaction generators to each other and over 440 published data sets
+url_landing: https://nuisance.hepforge.org
+creators:
+- name: NUISANCE developers
+  kind: collaboration
+owner:
+  name: NUISANCEMC
+  kind: organization
+date_published: '2017-05-11'
+date_updated: '2026-10-07'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/NUISANCEMC/nuisance
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1088/1748-0221/12/01/P01016
+references:
+- doi: 10.1088/1748-0221/12/01/P01016
+  citation: Stowell et al., JINST 12, P01016 (2017)
+  relation: describes
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+software:
+  repository: https://github.com/NUISANCEMC/nuisance
+  languages:
+  - C++
+  purposes:
+  - nuclear-model
+  - fitting
+  interfaces:
+  - library
+  development_status: active
+  dependencies:
+  - ROOT
+  - generators (GENIE, NEUT, NuWro, GiBUU)
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: new_record.jl (GitHub API) + manual
+  quality_notes:
+  - GitHub mirror; ships a collection of published cross-section measurements (data/)

@@ -1,0 +1,55 @@
+id: daya-bay-3158d-supplemental
+type: dataset
+title: 'Daya Bay 3158-day oscillation analysis: supplemental files'
+short: 'Daya Bay 3158 days: prompt IBD and background spectra per hall and the official Δχ² grid (arXiv supplement)'
+description: 'Supplemental material of the final Daya Bay nGd oscillation analysis (Phys. Rev. Lett. 130, 161802): prompt-energy IBD and background spectra for the three experimental halls and the official Δχ²(sin²2θ13, Δm²32) grid.'
+url_landing: https://arxiv.org/abs/2211.14988
+creators:
+- name: Daya Bay Collaboration
+  kind: collaboration
+date_published: 2022
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2211.14988
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/daya_bay/daya_bay_3158days
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - txt
+references:
+- doi: 10.1103/PhysRevLett.130.161802
+  arxiv: '2211.14988'
+  relation: describes
+relations:
+- rel: superseded_by
+  target: daya-bay-full-data-release
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- oscillation
+channels:
+- ibd
+data:
+  levels:
+  - binned
+  - likelihood
+  formats:
+  - txt
+  result_of: 10.1103/PhysRevLett.130.161802
+newtrinos:
+  modules:
+  - dayabay
+  verifications:
+  - 10.1103_PhysRevLett.130.161802
+  notes: with the reactor-spectrum correlation matrix of arXiv:1607.05378 Fig. 29
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

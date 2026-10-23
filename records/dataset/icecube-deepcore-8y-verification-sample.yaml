@@ -1,0 +1,68 @@
+id: icecube-deepcore-8y-verification-sample
+type: dataset
+title: 'Replication data: Measurement of atmospheric neutrino mixing with improved IceCube DeepCore calibration and data processing'
+short: 'IceCube DeepCore 2012–2019 (oscNext) sample: binned data, MC per flavour, hypersurface systematics'
+description: 'Public verification sample of the oscNext DeepCore νμ-disappearance analysis (Phys. Rev. D 108, 012014): binned data and Monte Carlo with hypersurface detector systematics and the official 90 % contour.'
+doi: 10.7910/DVN/B4RITM
+url_landing: https://icecube.wisc.edu/data-releases/2025/07/measurement-of-atmospheric-neutrino-mixing-with-improved-icecube-deepcore-calibration-and-data-processing/
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '1.0'
+date_published: 2025
+license: unknown
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/B4RITM
+  host: dataverse
+  role: primary
+  formats:
+  - csv
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/icecube/deepcore_8y_verification_sample
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - csv
+references:
+- doi: 10.1103/PhysRevD.108.012014
+  relation: describes
+experiments:
+- deepcore
+sources:
+- atmospheric
+topics:
+- oscillation
+channels:
+- cc
+- nc
+flavors:
+- all
+detector_technologies:
+- ice-cherenkov
+period:
+  start: 2012
+  end: 2019
+data:
+  levels:
+  - binned
+  - mc
+  - systematics
+  - contours
+  has_mc: true
+  has_systematics_model: true
+  result_of: 10.1103/PhysRevD.108.012014
+newtrinos:
+  modules:
+  - deepcore_8y
+  verifications:
+  - 10.1103_PhysRevD.108.012014
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'
+  quality_notes:
+  - DataCite record states no licence

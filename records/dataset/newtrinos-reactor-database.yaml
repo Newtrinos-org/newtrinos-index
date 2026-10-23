@@ -1,0 +1,45 @@
+id: newtrinos-reactor-database
+type: dataset
+title: 'Japanese and Korean power reactors: units, sites and operating histories (from IAEA PRIS)'
+short: Reactor units, coordinates and annual load factors of all Japanese and Korean reactors, compiled for reactor-ν fluxes
+description: Per-unit thermal power, coordinates and annual operating histories of the Japanese and Korean power reactors, compiled by the Newtrinos developers from the IAEA PRIS API and archived PRIS reactor pages, for first-principles reactor antineutrino fluxes (KamLAND).
+owner:
+  name: Newtrinos-org
+  kind: organization
+date_published: 2026
+license: MIT
+license_notes: compilation as part of Newtrinos.jl; underlying data © IAEA PRIS
+access: open
+distributions:
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/physics/reactors
+  host: github
+  role: primary
+  label: Newtrinos.jl repository
+  formats:
+  - csv
+relations:
+- rel: derived_from
+  target: iaea-pris
+sources:
+- reactor
+topics:
+- flux
+data:
+  levels:
+  - summary
+  formats:
+  - csv
+newtrinos:
+  modules:
+  - reactor_flux
+  - kamland
+  verifications:
+  - 10.1103_PhysRevD.88.033001
+  - 10.1103_PhysRevD.83.052002
+card:
+  provenance: PRIS API (pris-stats.iaea.org, retrieved 2026-10-09) for unit data; archived PRIS reactor pages (web.archive.org) for operating histories; site coordinates from public sources (±0.01°).
+  known_limitations: Japan and Korea only; annual (not monthly) load factors.
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

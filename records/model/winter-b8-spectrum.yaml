@@ -1,0 +1,53 @@
+id: winter-b8-spectrum
+type: model
+title: Winter et al. ⁸B neutrino spectrum
+short: ⁸B solar-neutrino energy spectrum from the ⁸B(β⁺)⁸Be* α spectrum measurement (Winter et al. 2006), Table IV
+description: Neutrino spectrum of ⁸B decay with uncertainties derived from a measurement of the β-delayed α spectrum (Phys. Rev. C 73, 025503); the Newtrinos default ⁸B shape, and the shape recommended by Solar fusion III.
+creators:
+- name: W. T. Winter
+- name: S. J. Freedman
+- name: K. E. Rehm
+- name: J. P. Schiffer
+date_published: 2006
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/nucl-ex/0406019
+  host: arxiv
+  role: primary
+  label: arXiv version (Table IV)
+  formats:
+  - pdf
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/physics/solar
+  host: github
+  role: mirror
+  label: transcription (spectrum_b8_winter.csv)
+  formats:
+  - csv
+cite_as:
+- doi:10.1103/PhysRevC.73.025503
+references:
+- doi: 10.1103/PhysRevC.73.025503
+  arxiv: nucl-ex/0406019
+  relation: describes
+sources:
+- solar
+topics:
+- flux
+- solar-model
+model:
+  quantities:
+  - ⁸B neutrino spectrum
+  has_uncertainties: true
+  formats:
+  - pdf
+newtrinos:
+  modules:
+  - solar_flux
+  verifications:
+  - 10.1103_PhysRevC.73.025503
+  notes: above 15.2 MeV continued with Bahcall's shape
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

@@ -1,0 +1,49 @@
+id: hepdata-nomad-numu-cc-inclusive
+type: dataset
+title: 'HEPData: NOMAD νμ CC inclusive cross section on an isoscalar target'
+short: 'HEPData ins767013: NOMAD νμ CC inclusive σ/E (2.5–40 GeV)'
+description: HEPData tables of the NOMAD measurement of the νμ CC inclusive cross section (Phys. Lett. B 660, 19 (2008)).
+url_landing: https://www.hepdata.net/record/ins767013
+creators:
+- name: NOMAD Collaboration
+  kind: collaboration
+date_published: 2008
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins767013
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1016/j.physletb.2007.12.027
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- nomad
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  result_of: 10.1016/j.physletb.2007.12.027
+newtrinos:
+  modules:
+  - xsec
+  verifications:
+  - 10.1016_j.physletb.2007.12.027
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

@@ -1,0 +1,58 @@
+id: genie-cross-section-splines
+type: model
+title: GENIE cross-section spline files (genie_xsec)
+short: Pre-computed GENIE cross-section splines per tune (gxspl-FNALsmall.xml), distributed via CVMFS / Fermilab
+description: Pre-computed total cross sections of the GENIE event generator for each model configuration ("tune"), as distributed in the genie_xsec product on CVMFS. Newtrinos extracted ten tunes (GENIE 2.12 and 3.x, e.g. G18_10a_02_11a, AR23_20i_00_000) into an HDF5 file.
+owner:
+  name: GENIE Collaboration
+  kind: collaboration
+license: proprietary
+license_url: https://genie-mc.github.io/copyright.html
+access: open
+distributions:
+- url: https://scisoft.fnal.gov/scisoft/packages/genie_xsec/
+  host: institutional
+  role: primary
+  label: Fermilab SciSoft genie_xsec packages
+  formats:
+  - xml
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/physics/xsec_data
+  host: github
+  role: mirror
+  label: extracted splines (genie_splines.h5) + extract_genie_splines.py
+  formats:
+  - hdf5
+relations:
+- rel: derived_from
+  target: genie-generator
+sources:
+- accelerator
+- atmospheric
+topics:
+- cross-section
+channels:
+- ccqe
+- mec
+- res
+- dis
+- nc
+model:
+  quantities:
+  - total cross sections per channel and target
+  formats:
+  - xml
+newtrinos:
+  modules:
+  - xsec
+  verifications:
+  - 10.1016_j.physletb.2007.12.027
+  - 10.1103_PhysRevD.81.072002
+  - 10.1103_PhysRevD.95.072009
+  - 10.1103_RevModPhys.84.1307
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'
+  quality_notes:
+  - Newtrinos read them from /cvmfs/larsoft.opensciencegrid.org/products/genie_xsec/<version>; SciSoft URL to be confirmed
+  - GENIE 2.12 splines end at 400 GeV

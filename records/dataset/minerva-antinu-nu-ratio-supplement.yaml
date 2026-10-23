@@ -1,0 +1,44 @@
+id: minerva-antinu-nu-ratio-supplement
+type: dataset
+title: 'MINERvA ν̄/ν CC inclusive cross-section ratio: supplemental tables and covariances'
+short: 'MINERvA ν̄/ν CC inclusive ratio and σ/E on carbon: supplemental tables with covariance matrices'
+description: Supplemental material of the MINERvA measurement of the ν̄/ν CC inclusive cross-section ratio (Phys. Rev. D 95, 072009).
+url_landing: https://doi.org/10.1103/PhysRevD.95.072009
+creators:
+- name: MINERvA Collaboration
+  kind: collaboration
+date_published: 2017
+license: none-stated
+access: open
+distributions:
+- url: https://doi.org/10.1103/PhysRevD.95.072009
+  host: journal-supplement
+  role: primary
+  label: PRD supplemental material
+references:
+- doi: 10.1103/PhysRevD.95.072009
+  arxiv: '1701.04857'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  - systematics
+  has_covariance: true
+  result_of: 10.1103/PhysRevD.95.072009
+newtrinos:
+  modules:
+  - xsec
+  verifications:
+  - 10.1103_PhysRevD.95.072009
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

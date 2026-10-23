@@ -1,0 +1,76 @@
+id: coherent-cenns10-lar-data-release
+type: dataset
+title: COHERENT Collaboration data release from the first detection of CEvNS on argon
+short: 'COHERENT CENNS-10 (LAr): energy/F90/timing PDFs, efficiencies, backgrounds and data of the first argon CEvNS detection'
+description: 'Data release of the first CEvNS detection on argon with the CENNS-10 liquid-argon detector (Phys. Rev. Lett. 126, 012002), Analysis A: 3D PDFs (energy, F90, time) for CEvNS and backgrounds with ±1σ variants, efficiency, beam-off-subtracted data and parameters.'
+doi: 10.5281/zenodo.3903810
+url_landing: https://doi.org/10.5281/zenodo.3903810
+creators:
+- name: COHERENT Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+version: '1.0'
+date_published: '2020-06-22'
+license: CC-BY-4.0
+license_url: http://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.3903810
+  host: zenodo
+  role: primary
+  formats:
+  - txt
+  - pdf
+  - yaml
+  - source-code
+  size_bytes: 542460
+  n_files: 24
+- url: https://arxiv.org/abs/2006.12659
+  host: arxiv
+  role: documentation
+  label: companion document (arXiv:2006.12659)
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/coherent/coherent_2020/lAr
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - txt
+  - yaml
+references:
+- doi: 10.1103/PhysRevLett.126.012002
+  arxiv: '2003.10630'
+  relation: describes
+- arxiv: '2006.12659'
+  relation: documents
+experiments:
+- coherent
+sources:
+- spallation
+topics:
+- cross-section
+- nsi
+channels:
+- cevns
+detector_technologies:
+- lartpc
+exposure: 13.8×10²² POT (6.12 GWhr), 24.4 kg fiducial
+data:
+  levels:
+  - binned
+  - prediction
+  - response
+  - systematics
+  result_of: 10.1103/PhysRevLett.126.012002
+newtrinos:
+  modules:
+  - coherent_lAr
+  - cevns_xsec
+  - sns_flux
+  verifications:
+  - 10.1103_PhysRevLett.126.012002
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

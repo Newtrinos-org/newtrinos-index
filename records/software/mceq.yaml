@@ -1,0 +1,47 @@
+id: mceq
+type: software
+title: MCEq
+short: 'MCEq: matrix cascade equation solver for atmospheric lepton fluxes (conventional + prompt)'
+description: Matrix cascade equation core code
+url_landing: https://mceq.readthedocs.io
+creators:
+- name: Anatoli Fedynitch
+owner:
+  name: mceq-project
+  kind: organization
+date_published: '2015-02-17'
+date_updated: '2026-10-22'
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/mceq-project/MCEq
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1051/epjconf/20159908001
+references:
+- doi: 10.1051/epjconf/20159908001
+  citation: Fedynitch, Engel, Gaisser, Riehn, Stanev, EPJ Web Conf. 99, 08001 (2015)
+  relation: describes
+sources:
+- atmospheric
+topics:
+- flux
+software:
+  repository: https://github.com/mceq-project/MCEq
+  languages:
+  - Python
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: active
+  dependencies:
+  - NumPy
+  - SciPy
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: new_record.jl (GitHub API) + manual

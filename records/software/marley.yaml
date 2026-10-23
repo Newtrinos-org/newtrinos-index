@@ -1,0 +1,54 @@
+id: marley
+type: software
+title: MARLEY
+short: 'MARLEY: event generator for tens-of-MeV neutrino–nucleus interactions (supernova, solar, stopped-pion ν)'
+description: A Monte Carlo event generator for tens-of-MeV neutrino-nucleus interactions
+url_landing: http://www.marleygen.org/
+creators:
+- name: Steven Gardiner
+owner:
+  name: MARLEY-MC
+  kind: organization
+date_published: '2016-07-29'
+date_updated: '2026-10-23'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/MARLEY-MC/marley
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1016/j.cpc.2021.108123
+references:
+- doi: 10.1016/j.cpc.2021.108123
+  citation: Gardiner, Comput. Phys. Commun. 269, 108123 (2021)
+  relation: describes
+sources:
+- supernova
+- solar
+- spallation
+topics:
+- cross-section
+- nuclear-model
+channels:
+- cc
+- nc
+- es
+software:
+  repository: https://github.com/MARLEY-MC/marley
+  languages:
+  - C++
+  purposes:
+  - event-generator
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: active
+  dependencies:
+  - ROOT (optional)
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: new_record.jl (GitHub API) + manual

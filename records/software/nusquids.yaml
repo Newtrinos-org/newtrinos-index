@@ -13,6 +13,8 @@ distributions:
 cite_as: ["doi:10.1016/j.cpc.2022.108346"]
 references:
   - {doi: 10.1016/j.cpc.2022.108346, relation: describes, citation: "Argüelles, Salvado, Weaver, Comput. Phys. Commun. 277, 108346 (2022)"}
+relations:
+  - {rel: uses, target: squids}
 sources: [atmospheric, astrophysical, solar]
 topics: [oscillation, sterile, nsi, decoherence]
 software:

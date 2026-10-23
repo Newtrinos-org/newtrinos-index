@@ -1,0 +1,51 @@
+id: coherent-2018-first-observation-data-release
+type: dataset
+title: COHERENT Collaboration data release from the first observation of coherent elastic neutrino-nucleus scattering
+short: 'COHERENT 2017 CsI[Na] first CEvNS observation: beam-on/off coincidence data, PDFs, quenching data and companion note'
+description: 'Data of the first observation of CEvNS (Science 357, 1123 (2017)) with the 14.6 kg CsI[Na] detector: coincidence and anti-coincidence data, arrival-time and prompt PDFs, quenching-factor measurements and a companion document.'
+doi: 10.5281/zenodo.1228631
+url_landing: https://zenodo.org/record/1228631
+creators:
+- name: COHERENT Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2018-04-25'
+license: unknown
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.1228631
+  host: zenodo
+  role: primary
+  formats:
+  - txt
+  - pdf
+  - yaml
+  size_bytes: 636461
+  n_files: 13
+references:
+- doi: 10.1126/science.aao0990
+  relation: describes
+experiments:
+- coherent
+sources:
+- spallation
+topics:
+- cross-section
+channels:
+- cevns
+detector_technologies:
+- crystal
+data:
+  levels:
+  - events
+  - prediction
+  - response
+  result_of: 10.1126/science.aao0990
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Zenodo search (not used by Newtrinos)
+  quality_notes:
+  - Zenodo lists CC-BY-4.0 in search but DataCite has no rights entry; check

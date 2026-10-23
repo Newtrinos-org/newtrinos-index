@@ -1,0 +1,53 @@
+id: icecube-upgrade-mc-2020
+type: dataset
+title: IceCube Upgrade Neutrino Monte Carlo Simulation
+short: IceCube Upgrade (7 strings + DeepCore) public neutrino MC for sensitivity studies (ICRC2019)
+description: Preliminary public Monte Carlo of the IceCube Upgrade for oscillation sensitivity studies, as used for the ICRC2019 sensitivity (PoS(ICRC2019)1031). Generated with GENIE 2.12, without MEC.
+doi: 10.21234/qfz1-yh02
+url_landing: https://icecube.wisc.edu/data-releases/2020/04/icecube-upgrade-neutrino-monte-carlo-simulation/
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+date_published: 2020
+license: unknown
+access: open
+distributions:
+- url: https://doi.org/10.21234/qfz1-yh02
+  host: institutional
+  role: primary
+  formats:
+  - csv
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/icecube/upgrade_sim_2020
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - csv
+references:
+- doi: 10.22323/1.358.1031
+  relation: describes
+experiments:
+- icecube-upgrade
+sources:
+- atmospheric
+topics:
+- oscillation
+- mass-ordering
+detector_technologies:
+- ice-cherenkov
+data:
+  levels:
+  - mc
+  has_mc: true
+newtrinos:
+  modules:
+  - ic_upgrade
+  verifications:
+  - 10.22323_1.358.1031
+  - 10.1103_PhysRevD.101.032006
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'
+  quality_notes:
+  - simulation of a detector under construction; later Upgrade sensitivities (arXiv:2307.15295, 2509.13066) are not based on public MC

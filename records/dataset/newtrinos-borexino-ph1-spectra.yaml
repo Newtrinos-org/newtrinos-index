@@ -1,0 +1,60 @@
+id: newtrinos-borexino-ph1-spectra
+type: dataset
+title: Borexino Phase-I spectra extracted from figures (⁷Be Fig. 1, ⁸B Fig. 7)
+short: Borexino Phase-I ⁷Be spectrum with fit components and ⁸B spectrum, vector-extracted by Newtrinos
+description: Phase-I ⁷Be spectrum 270–1600 keV (10 keV bins) with data and fit components, and the ⁸B spectrum in five 2 MeV bins. Digitised / vector-extracted by the Newtrinos developers from published figures; scripts alongside the data.
+creators:
+- name: Newtrinos developers
+  kind: organization
+owner:
+  name: Newtrinos-org
+  kind: organization
+date_published: 2026
+license: MIT
+license_notes: as part of Newtrinos.jl; the underlying figures belong to the collaborations / publishers
+access: open
+distributions:
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/borexino/borexino_phase1_spectrum
+  host: github
+  role: primary
+  label: Newtrinos.jl repository
+  formats: &id001
+  - csv
+references:
+- doi: 10.1103/PhysRevLett.107.141302
+  arxiv: '1104.1816'
+  citation: '⁷Be: Fig. 1 top'
+  relation: uses
+- doi: 10.1103/PhysRevD.82.033006
+  arxiv: '0808.2868'
+  citation: '⁸B: Fig. 7'
+  relation: uses
+relations:
+- rel: derived_from
+  target: doi:10.1103/PhysRevLett.107.141302
+experiments:
+- borexino
+sources:
+- solar
+topics:
+- flux
+- oscillation
+data:
+  levels:
+  - digitized
+  - binned
+  formats: *id001
+newtrinos:
+  modules:
+  - borexino_ph1_spectrum
+  verifications:
+  - 10.1103_PhysRevLett.107.141302
+  - 10.1103_PhysRevD.82.033006
+card:
+  provenance: Extracted from PRL 107, 141302 Fig. 1 and PRD 82, 033006 Fig. 7 with the scripts in the same folder (vector paths where available).
+  validation: Checked against the published numbers / curves in the verification entries listed above.
+  known_limitations: Digitisation, not an official release; precision limited by the figure.
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

@@ -1,0 +1,51 @@
+id: nuoscprobexact
+type: software
+title: NuOscProbExact
+short: 'NuOscProbExact: exact two- and three-flavour oscillation probabilities via SU(2)/SU(3) expansions'
+description: Python code computing exact oscillation probabilities for arbitrary time-independent Hamiltonians (vacuum, matter, NSI, Lorentz violation) using expansions of the evolution operator in SU(2) and SU(3) generators.
+url_landing: https://mbustama.github.io/NuOscProbExact/
+creators:
+- name: Mauricio Bustamante
+owner:
+  name: mbustama
+  kind: person
+date_published: '2019-04-19'
+date_updated: '2026-09-04'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/mbustama/NuOscProbExact
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:1904.12391
+references:
+- arxiv: '1904.12391'
+  relation: describes
+sources:
+- none
+topics:
+- oscillation
+- nsi
+- lorentz-violation
+software:
+  repository: https://github.com/mbustama/NuOscProbExact
+  languages:
+  - Python
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: maintained
+newtrinos:
+  modules:
+  - osc
+  verifications:
+  - 10.48550_arXiv.1904.12391
+  notes: reference values for the Newtrinos oscillation benchmark (v1.14.0)
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

@@ -1,0 +1,64 @@
+id: minos-sterile-2019-data-release
+type: dataset
+title: 'MINOS/MINOS+ two-detector sterile-neutrino search: data release'
+short: 'MINOS/MINOS+ 16×10²⁰ POT: ND/FD CC and NC spectra, predictions, covariance and χ² code of the 3+1 search'
+description: 'Supplemental data release of the MINOS/MINOS+ search for sterile neutrinos with the two-detector fit (Phys. Rev. Lett. 122, 091803): ROOT file with near- and far-detector spectra, predictions, covariance matrices, χ² surface, Feldman–Cousins critical values and the reference χ² macro.'
+url_landing: https://arxiv.org/abs/1710.06488
+creators:
+- name: MINOS+ Collaboration
+  kind: collaboration
+date_published: 2019
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1710.06488
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/minos/minos_sterile_16e20_POT
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - hdf5
+  - root
+references:
+- doi: 10.1103/PhysRevLett.122.091803
+  arxiv: '1710.06488'
+  relation: describes
+experiments:
+- minos
+sources:
+- accelerator
+topics:
+- sterile
+- oscillation
+channels:
+- cc
+- nc
+detector_technologies:
+- iron-calorimeter
+exposure: 16.36×10²⁰ POT
+data:
+  levels:
+  - binned
+  - prediction
+  - systematics
+  - likelihood
+  has_covariance: true
+  formats:
+  - root
+  - source-code
+  result_of: 10.1103/PhysRevLett.122.091803
+newtrinos:
+  modules:
+  - minos
+  verifications:
+  - 10.1103_PhysRevLett.122.091803
+  - 10.1103_PhysRevLett.125.131802
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'
+  quality_notes:
+  - 'files: dataRelease.root and macros in the arXiv ancillary files'

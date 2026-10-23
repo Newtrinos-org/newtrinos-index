@@ -1,0 +1,49 @@
+id: mach3
+type: software
+title: MaCh3
+short: 'MaCh3: Markov-chain Monte Carlo framework for neutrino oscillation fits (T2K, SK, DUNE, HK)'
+description: The official repository for MaCh3
+url_landing: https://mach3-software.github.io/MaCh3/
+creators:
+- name: MaCh3 collaboration
+  kind: collaboration
+owner:
+  name: mach3-software
+  kind: organization
+date_published: '2021-01-19'
+date_updated: '2026-10-23'
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/mach3-software/MaCh3
+  host: github
+  role: primary
+  formats:
+  - source-code
+experiments:
+- t2k
+- super-k
+- dune
+- hyper-k
+sources:
+- accelerator
+- atmospheric
+topics:
+- oscillation
+- statistics
+software:
+  repository: https://github.com/mach3-software/MaCh3
+  languages:
+  - C++
+  purposes:
+  - fitting
+  - global-fit
+  interfaces:
+  - library
+  development_status: active
+  dependencies:
+  - ROOT
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: new_record.jl (GitHub API) + manual

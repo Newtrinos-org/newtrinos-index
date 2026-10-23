@@ -1,0 +1,53 @@
+id: sk-t2k-joint-2024-data-release
+type: result
+title: Data release for "First joint oscillation analysis of Super-Kamiokande atmospheric and T2K accelerator neutrino data"
+short: 'SK + T2K joint fit (2024): official Δχ² surfaces / contours and supporting material'
+description: Results of the first joint frequentist analysis of Super-K atmospheric and T2K accelerator data (Phys. Rev. Lett. 134, 011801).
+doi: 10.5281/zenodo.12702685
+url_landing: https://zenodo.org/doi/10.5281/zenodo.12702685
+creators:
+- name: T2K and Super-Kamiokande Collaborations
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2024-07-10'
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.12702685
+  host: zenodo
+  role: primary
+  formats:
+  - tarball
+  size_bytes: 3284853
+  n_files: 1
+  notes: DataRelease_JointFit.zip
+references:
+- doi: 10.1103/PhysRevLett.134.011801
+  relation: describes
+experiments:
+- super-k
+- t2k
+sources:
+- atmospheric
+- accelerator
+topics:
+- oscillation
+- mass-ordering
+- cp-violation
+data:
+  levels:
+  - likelihood
+  - contours
+  result_of: 10.1103/PhysRevLett.134.011801
+newtrinos:
+  modules:
+  - t2k
+  - super_k
+  verifications:
+  - 10.1103_PhysRevLett.134.011801
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

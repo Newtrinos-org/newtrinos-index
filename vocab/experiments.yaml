@@ -56,3 +56,7 @@
 - {id: cuore, name: CUORE, collaboration: CUORE, sources: [nuclear-decay], technology: [bolometer], site: LNGS (Italy), start: 2017}
 - {id: kamland-zen, name: KamLAND-Zen, collaboration: KamLAND-Zen, sources: [nuclear-decay], technology: [liquid-scintillator], site: Kamioka (Japan), start: 2011}
 - {id: exo-200, name: EXO-200, collaboration: EXO-200, sources: [nuclear-decay], technology: [xenon-tpc], site: WIPP (USA), start: 2011, end: 2018}
+# --- cross-section / historical ---
+- {id: nomad, name: NOMAD, collaboration: NOMAD, sources: [accelerator], technology: [other], site: CERN WANF, start: 1995, end: 1998}
+- {id: anl-12ft, name: ANL 12-foot bubble chamber, aliases: [ANL], collaboration: ANL, sources: [accelerator], technology: [other], site: Argonne (USA)}
+- {id: bnl-7ft, name: BNL 7-foot bubble chamber, aliases: [BNL], collaboration: BNL, sources: [accelerator], technology: [other], site: Brookhaven (USA)}

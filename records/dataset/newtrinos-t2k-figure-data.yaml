@@ -1,0 +1,62 @@
+id: newtrinos-t2k-figure-data
+type: dataset
+title: T2K far-detector events, predictions and official contours extracted from figures (2023, 2025)
+short: 'T2K: far-detector events, per-mode predictions (2025 release PDFs), CC1π⁺ data and official Δχ²/contours, extracted'
+description: Event-by-event far-detector kinematics from arXiv:2303.03222 (vector markers), per-sample / per-mode predictions from the vector PDFs of the 2025 release, the νμ CC1π⁺ data, and the official Δχ²(δCP) and (sin²θ23, Δm²32) contours of arXiv:2506.05889. Digitised / vector-extracted by the Newtrinos developers from published figures; scripts alongside the data.
+creators:
+- name: Newtrinos developers
+  kind: organization
+owner:
+  name: Newtrinos-org
+  kind: organization
+date_published: 2026
+license: MIT
+license_notes: as part of Newtrinos.jl; the underlying figures belong to the collaborations / publishers
+access: open
+distributions:
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/t2k/t2k_2025
+  host: github
+  role: primary
+  label: Newtrinos.jl repository
+  formats: &id001
+  - hdf5
+references:
+- doi: 10.1140/epjc/s10052-023-11819-x
+  arxiv: '2303.03222'
+  citation: far-detector distributions
+  relation: uses
+- doi: 10.1103/gh5j-5cwv
+  arxiv: '2506.05889'
+  citation: Figs. 1, 3, 4
+  relation: uses
+relations:
+- rel: derived_from
+  target: doi:10.1140/epjc/s10052-023-11819-x
+- rel: derived_from
+  target: t2k-2025-data-release
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- oscillation
+- cp-violation
+data:
+  levels:
+  - digitized
+  - binned
+  formats: *id001
+newtrinos:
+  modules:
+  - t2k
+  verifications:
+  - 10.1103_gh5j-5cwv
+  - 10.1140_epjc_s10052-023-11819-x
+card:
+  provenance: Extracted from the arXiv sources of 2303.03222 and 2506.05889 and the 2025 release PDFs with the scripts in the same folder (vector paths where available).
+  validation: Checked against the published numbers / curves in the verification entries listed above.
+  known_limitations: Digitisation, not an official release; precision limited by the figure. The μ-like event figure covers E_rec < 3 GeV only; the (sin²θ23, Δm²32) contour figure is a raster image (digitised by colour, less precise). Per-mode totals match the release legends to ≤0.3 %.
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

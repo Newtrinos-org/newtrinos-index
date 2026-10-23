@@ -1,0 +1,64 @@
+id: borexino-phase3-cno-data
+type: dataset
+title: Borexino Phase-III open data (CNO) and Monte Carlo spectral shapes
+short: 'Borexino Phase III: TFC-subtracted spectrum with fit, CNO likelihood profile, MC shapes of all components'
+description: 'Phase-III data of the improved CNO measurement (Phys. Rev. Lett. 129, 252701): TFC-subtracted spectrum with Borexino''s fit, the published CNO −2Δln L profile, and the Monte Carlo spectral shapes of all signals and backgrounds released with arXiv:2005.12829.'
+url_landing: https://borex.lngs.infn.it/
+creators:
+- name: Borexino Collaboration
+  kind: collaboration
+date_published: 2022
+license: none-stated
+access: open
+distributions:
+- url: https://borex.lngs.infn.it/
+  host: institutional
+  role: primary
+  formats:
+  - txt
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/borexino/borexino_phase3/data
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - txt
+references:
+- doi: 10.1103/PhysRevLett.129.252701
+  arxiv: '2205.15975'
+  relation: describes
+- arxiv: '2005.12829'
+  citation: source of the MC spectral shapes
+  relation: supplements
+relations:
+- rel: is_part_of
+  target: borexino-open-data
+experiments:
+- borexino
+sources:
+- solar
+topics:
+- solar-model
+- flux
+channels:
+- es
+data:
+  levels:
+  - binned
+  - prediction
+  - likelihood
+  result_of: 10.1103/PhysRevLett.129.252701
+newtrinos:
+  modules:
+  - borexino_ph3
+  - borexino_ph2_spectrum
+  verifications:
+  - 10.1103_PhysRevLett.129.252701
+card:
+  summary: The public part of Borexino's CNO analysis.
+  out_of_scope_use: 'Full reproduction of the multivariate fit: the TFC-tagged spectrum and the radial distribution are not public.'
+  validation: Newtrinos borexino_ph3 reproduces the CNO best fit (6.68 vs 6.7 cpd/100 t) with Gaussian priors on ¹¹C and external backgrounds (entry 10.1103_PhysRevLett.129.252701).
+  known_limitations: No DOI or licence; web site intermittently unreachable.
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

@@ -1,0 +1,51 @@
+id: hepdata-microboone-numu-cc-inclusive
+type: dataset
+title: 'HEPData: MicroBooNE νμ CC inclusive cross section on argon σ(Eν)'
+short: 'HEPData ins1954078: MicroBooNE νμ CC inclusive σ(Eν) on argon with covariance'
+description: HEPData tables of the MicroBooNE energy-dependent νμ CC inclusive cross section (Phys. Rev. Lett. 128, 151801).
+url_landing: https://www.hepdata.net/record/ins1954078
+creators:
+- name: MicroBooNE Collaboration
+  kind: collaboration
+date_published: 2022
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins1954078
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/PhysRevLett.128.151801
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  - systematics
+  has_covariance: true
+  result_of: 10.1103/PhysRevLett.128.151801
+newtrinos:
+  modules:
+  - xsec
+  verifications:
+  - 10.1103_PhysRevLett.128.151801
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

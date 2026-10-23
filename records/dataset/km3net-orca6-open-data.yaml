@@ -1,0 +1,78 @@
+id: km3net-orca6-open-data
+type: dataset
+title: Oscillation Analysis ORCA433kt-y / ORCA 6
+short: 'KM3NeT/ORCA6 (433 kton-years) open data: binned data and response, χ² landscapes'
+description: 'Open data of the KM3NeT/ORCA 6-detection-unit atmospheric oscillation analysis (JHEP 10 (2024) 206): ROOT file with the binned response and data, binning definition, and the official χ² landscapes for both orderings. The release prescribes the Honda 2014 Fréjus flux (no mountain, solar minimum).'
+url_landing: https://opendata.km3net.de/dataset.xhtml?persistentId=doi:10.5072/FK2/Y0UXVW
+creators:
+- name: KM3NeT Collaboration
+  kind: collaboration
+publisher:
+  name: KM3NeT Open Data
+  kind: organization
+version: '2'
+date_published: '2025-05-27'
+license: CC-BY-4.0
+license_url: http://creativecommons.org/licenses/by/4.0
+access: open
+distributions:
+- url: https://opendata.km3net.de/dataset.xhtml?persistentId=doi:10.5072/FK2/Y0UXVW
+  host: dataverse
+  role: primary
+  formats:
+  - root
+  - json
+  - csv
+  size_bytes: 14413914
+  n_files: 5
+  notes: ORCA6_433kt-y_opendata_v0.5.root, README.md, bins_433kt-y_v0.5.json, chi2_landscape_{NO,IO}.csv
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/km3net/orca6_433kton
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - hdf5
+  - csv
+references:
+- doi: 10.1007/JHEP10(2024)206
+  relation: describes
+relations:
+- rel: uses
+  target: honda-atmospheric-flux-tables
+  notes: prescribed flux table
+experiments:
+- km3net-orca
+sources:
+- atmospheric
+topics:
+- oscillation
+- mass-ordering
+detector_technologies:
+- water-cherenkov-open
+exposure: 433 kton-years
+data:
+  levels:
+  - binned
+  - response
+  - likelihood
+  result_of: 10.1007/JHEP10(2024)206
+newtrinos:
+  modules:
+  - orca
+  verifications:
+  - 10.1007_JHEP10(2024)206
+card:
+  summary: Public inputs of the first ORCA oscillation result.
+  known_limitations: The persistent identifier doi:10.5072/FK2/Y0UXVW uses the DataCite test prefix and does not resolve at doi.org (2026-10-23); only the Dataverse page works.
+  fair:
+    findable: false
+    accessible: true
+    interoperable: true
+    reusable: true
+    notes: test DOI, not a real PID
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'
+  quality_notes:
+  - identifier is a DataCite test DOI (10.5072); reported here instead of a doi field

@@ -1,0 +1,54 @@
+id: newtrinos-kamland-2011-spectrum
+type: dataset
+title: KamLAND 2002–2009 prompt spectrum and efficiency extracted from PRD 83, 052002 Fig. 1
+short: 'KamLAND 2011: prompt-energy spectrum, no-oscillation expectation and efficiency, vector-extracted'
+description: Prompt spectrum, no-oscillation prediction and selection efficiency (top panel) of the 2011 KamLAND analysis. Digitised / vector-extracted by the Newtrinos developers from published figures; scripts alongside the data.
+creators:
+- name: Newtrinos developers
+  kind: organization
+owner:
+  name: Newtrinos-org
+  kind: organization
+date_published: 2026
+license: MIT
+license_notes: as part of Newtrinos.jl; the underlying figures belong to the collaborations / publishers
+access: open
+distributions:
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/kamland/kamland_periods
+  host: github
+  role: primary
+  label: Newtrinos.jl repository
+  formats: &id001
+  - csv
+references:
+- doi: 10.1103/PhysRevD.83.052002
+  arxiv: '1009.4771'
+  citation: Fig. 1
+  relation: uses
+relations:
+- rel: derived_from
+  target: doi:10.1103/PhysRevD.83.052002
+experiments:
+- kamland
+sources:
+- reactor
+topics:
+- oscillation
+data:
+  levels:
+  - digitized
+  - binned
+  formats: *id001
+newtrinos:
+  modules:
+  - kamland
+  verifications:
+  - 10.1103_PhysRevD.83.052002
+card:
+  provenance: Extracted from Fig. 1 of PRD 83, 052002 with the scripts in the same folder (vector paths where available).
+  validation: Checked against the published numbers / curves in the verification entries listed above.
+  known_limitations: Digitisation, not an official release; precision limited by the figure.
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

@@ -1,0 +1,53 @@
+id: strumia-vissani-ibd-xsec
+type: model
+title: Strumia–Vissani inverse-beta-decay cross section
+short: 'Strumia & Vissani 2003: precise ν̄e p → e⁺ n cross section, full calculation (table) and approximation (Eq. 25)'
+description: Inverse-beta-decay cross section including recoil, weak magnetism and radiative corrections, with a tabulated full result and an accurate approximate formula (Phys. Lett. B 564, 42).
+creators:
+- name: Alessandro Strumia
+- name: Francesco Vissani
+date_published: 2003
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/astro-ph/0302055
+  host: arxiv
+  role: primary
+  formats:
+  - pdf
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/physics
+  host: github
+  role: mirror
+  label: table transcription (ibd_xsec.csv)
+  formats:
+  - csv
+cite_as:
+- doi:10.1016/S0370-2693(03)00616-6
+references:
+- doi: 10.1016/S0370-2693(03)00616-6
+  arxiv: astro-ph/0302055
+  relation: describes
+sources:
+- reactor
+- supernova
+topics:
+- cross-section
+channels:
+- ibd
+flavors:
+- nuebar
+model:
+  quantities:
+  - IBD cross section
+  targets:
+  - proton
+newtrinos:
+  modules:
+  - ibd_xsec
+  - reactor_flux
+  verifications:
+  - 10.1016_S0370-2693(03)00616-6
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

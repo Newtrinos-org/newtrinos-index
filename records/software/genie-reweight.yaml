@@ -1,0 +1,56 @@
+id: genie-reweight
+type: software
+title: GENIE Reweight
+short: 'GENIE Reweight: propagation of GENIE model uncertainties by event reweighting'
+description: 'The GENIE Reweight product includes a collection of tools for propagating model uncertainties. '
+url_landing: https://github.com/GENIE-MC/Reweight
+creators:
+- name: GENIE Collaboration
+  kind: collaboration
+owner:
+  name: GENIE-MC
+  kind: organization
+date_published: '2018-10-05'
+date_updated: '2026-10-15'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/GENIE-MC/Reweight
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1140/epjs/s11734-021-00295-7
+references:
+- doi: 10.1140/epjs/s11734-021-00295-7
+  citation: GENIE Collaboration, Eur. Phys. J. ST 230, 4449 (2021) — GENIE v3 highlights
+  relation: describes
+relations:
+- rel: uses
+  target: genie-generator
+sources:
+- accelerator
+- atmospheric
+topics:
+- cross-section
+- nuclear-model
+software:
+  repository: https://github.com/GENIE-MC/Reweight
+  languages:
+  - C++
+  purposes:
+  - event-generator
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: active
+  dependencies:
+  - GENIE Generator
+  - ROOT
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: new_record.jl (GitHub API) + manual
+  quality_notes:
+  - GitHub detects no licence file; check the repository

@@ -1,0 +1,40 @@
+id: t2k-ingrid-2015-numu-cc-xs
+type: dataset
+title: 'T2K INGRID νμ CC inclusive cross sections on iron and hydrocarbon: data release'
+short: T2K INGRID (on-axis) νμ CC inclusive σ on Fe and CH and their ratio, with flux (ingriddata-numu-ccqe-xs-2015)
+description: Data release of the T2K INGRID measurement of the νμ CC inclusive cross sections on iron and hydrocarbon and their ratio (Phys. Rev. D 90, 052010), from the T2K public results page.
+url_landing: https://t2k-experiment.org/results/
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+date_published: 2015
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/PhysRevD.90.052010
+  relation: describes
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  result_of: 10.1103/PhysRevD.90.052010
+newtrinos:
+  modules:
+  - xsec
+  verifications:
+  - 10.1103_PhysRevD.90.052010
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

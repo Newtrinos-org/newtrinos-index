@@ -1,0 +1,55 @@
+id: newtrinos-sk-solar-dn-amplitude
+type: dataset
+title: Super-K solar day/night amplitude A_DN vs Δm²21, extracted from PRD 109, 092001
+short: Super-K SK-IV and SK-I–IV day/night amplitude-fit curves A_DN(Δm²21), vector-extracted
+description: The day/night asymmetry from SK's amplitude fit as a function of Δm²21 for SK-IV and for SK-I–IV combined; the amplitude fit is what drives the solar–KamLAND Δm²21 comparison. Digitised / vector-extracted by the Newtrinos developers from published figures; scripts alongside the data.
+creators:
+- name: Newtrinos developers
+  kind: organization
+owner:
+  name: Newtrinos-org
+  kind: organization
+date_published: 2026
+license: MIT
+license_notes: as part of Newtrinos.jl; the underlying figures belong to the collaborations / publishers
+access: open
+distributions:
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/super_k/sk_solar_dn_amplitude
+  host: github
+  role: primary
+  label: Newtrinos.jl repository
+  formats: &id001
+  - csv
+references:
+- doi: 10.1103/PhysRevD.109.092001
+  arxiv: '2312.12907'
+  citation: A_DN vs Δm²21 figures
+  relation: uses
+relations:
+- rel: derived_from
+  target: doi:10.1103/PhysRevD.109.092001
+experiments:
+- super-k
+sources:
+- solar
+topics:
+- oscillation
+- earth-model
+data:
+  levels:
+  - digitized
+  - binned
+  formats: *id001
+newtrinos:
+  modules:
+  - sk_solar_dn
+  verifications:
+  - 10.1103_PhysRevD.109.092001
+card:
+  provenance: Extracted from the two A_DN(Δm²21) figures of PRD 109, 092001 with the scripts in the same folder (vector paths where available).
+  validation: Checked against the published numbers / curves in the verification entries listed above.
+  known_limitations: Digitisation, not an official release; precision limited by the figure. Smoothed in the module with a ±0.5e-5 eV² running mean.
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

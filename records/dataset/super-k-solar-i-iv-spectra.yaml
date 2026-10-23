@@ -1,0 +1,72 @@
+id: super-k-solar-i-iv-spectra
+type: dataset
+title: Super-Kamiokande solar ⁸B spectra, SK-I to SK-IV (paper tables)
+short: Super-K solar ⁸B recoil-electron spectra per phase (day/night, stat/syst errors) from the SK-I…SK-IV paper appendices
+description: Binned recoil-electron spectra of the four Super-K solar phases as printed in the papers (SK-I 1496 d, SK-II 791 d, SK-III 548 d, SK-IV 2970 d), with day/night and uncorrelated / correlated systematics. Newtrinos combines them with the per-phase systematics table of the SK-IV paper.
+creators:
+- name: Super-Kamiokande Collaboration
+  kind: collaboration
+date_published: 2024
+license: none-stated
+access: open
+distributions:
+- url: https://doi.org/10.1103/PhysRevD.109.092001
+  host: journal-supplement
+  role: primary
+  label: SK-IV paper (appendix tables, also SK-II/III systematics)
+  formats:
+  - pdf
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/super_k
+  host: github
+  role: mirror
+  label: machine-readable transcription in Newtrinos.jl (sk*_solar_spectrum.csv)
+  formats:
+  - csv
+references:
+- doi: 10.1103/PhysRevD.73.112001
+  citation: SK-I
+  relation: describes
+- doi: 10.1103/PhysRevD.78.032002
+  citation: SK-II
+  relation: describes
+- doi: 10.1103/PhysRevD.83.052010
+  citation: SK-III (revised table in appendix)
+  relation: describes
+- doi: 10.1103/PhysRevD.109.092001
+  arxiv: '2312.12907'
+  citation: SK-IV
+  relation: describes
+experiments:
+- super-k
+sources:
+- solar
+topics:
+- oscillation
+- flux
+channels:
+- es
+flavors:
+- nue
+detector_technologies:
+- water-cherenkov
+data:
+  levels:
+  - binned
+  - systematics
+  formats:
+  - pdf
+newtrinos:
+  modules:
+  - sk1_solar
+  - sk2_solar
+  - sk3_solar
+  - sk4_solar
+  - sk_solar
+  verifications:
+  - 10.1103_PhysRevD.109.092001
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'
+  quality_notes:
+  - statistical errors symmetrised in the Newtrinos transcription

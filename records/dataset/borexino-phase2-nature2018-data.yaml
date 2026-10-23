@@ -1,0 +1,60 @@
+id: borexino-phase2-nature2018-data
+type: dataset
+title: Borexino Phase-II open data (comprehensive pp-chain measurement)
+short: 'Borexino Phase II (Nature 2018): TFC-subtracted spectrum with residuals, P_ee bands, profiles, correlations'
+description: 'Data files published by Borexino with the comprehensive measurement of pp-chain solar neutrinos (Nature 562, 505 (2018)): the TFC-subtracted Phase-II spectrum with the best fit residuals (Fig. 2a), Fig. 2b–4 data, and the rate correlation matrix.'
+url_landing: https://borex.lngs.infn.it/papers/articles/comprehensive-measurement-of-pp-chain-solar-neutrinos/
+creators:
+- name: Borexino Collaboration
+  kind: collaboration
+date_published: 2018
+license: none-stated
+access: open
+distributions:
+- url: https://borex.lngs.infn.it/papers/articles/comprehensive-measurement-of-pp-chain-solar-neutrinos/
+  host: institutional
+  role: primary
+  formats:
+  - txt
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/borexino/borexino_phase2_spectrum
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - txt
+references:
+- doi: 10.1038/s41586-018-0624-y
+  relation: describes
+- doi: 10.1103/PhysRevD.100.082004
+  arxiv: '1707.09279'
+  relation: describes
+relations:
+- rel: is_part_of
+  target: borexino-open-data
+experiments:
+- borexino
+sources:
+- solar
+topics:
+- oscillation
+- flux
+channels:
+- es
+data:
+  levels:
+  - binned
+  - summary
+  - likelihood
+  result_of: 10.1038/s41586-018-0624-y
+newtrinos:
+  modules:
+  - borexino_ph2_spectrum
+  verifications:
+  - 10.1038_s41586-018-0624-y
+  - 10.1103_PhysRevD.100.082004
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'
+  quality_notes:
+  - web site unreachable on 2026-10-23

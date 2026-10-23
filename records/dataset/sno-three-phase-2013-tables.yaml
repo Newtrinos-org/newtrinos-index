@@ -1,0 +1,56 @@
+id: sno-three-phase-2013-tables
+type: dataset
+title: 'SNO combined three-phase analysis: polynomial P_ee fit, covariance and sensitivity tables'
+short: 'SNO combined analysis (2013): ⁸B flux, P_ee polynomial with covariance, S(Eν) sensitivities'
+description: 'The parameterised result of the SNO combined three-phase analysis (Phys. Rev. C 88, 025501): ⁸B flux and day/night survival-probability polynomial coefficients with their covariance (Tables XXIV, XXV), and the CC/ES day/night sensitivity functions S(Eν) (Appendix B, Table XXVI) needed to use the result in fits (Sec. VI B).'
+creators:
+- name: SNO Collaboration
+  kind: collaboration
+date_published: 2013
+license: none-stated
+access: open
+distributions:
+- url: https://doi.org/10.1103/PhysRevC.88.025501
+  host: journal-supplement
+  role: primary
+  formats:
+  - pdf
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/sno/sno_combined_2013
+  host: github
+  role: mirror
+  label: transcription in Newtrinos.jl
+  formats:
+  - csv
+references:
+- doi: 10.1103/PhysRevC.88.025501
+  arxiv: '1109.0763'
+  relation: describes
+experiments:
+- sno
+sources:
+- solar
+topics:
+- oscillation
+- flux
+channels:
+- cc
+- nc
+- es
+detector_technologies:
+- heavy-water
+data:
+  levels:
+  - summary
+  - response
+  - systematics
+  has_covariance: true
+  result_of: 10.1103/PhysRevC.88.025501
+newtrinos:
+  modules:
+  - sno
+  verifications:
+  - 10.1103_PhysRevC.88.025501
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

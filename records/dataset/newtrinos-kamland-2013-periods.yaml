@@ -1,0 +1,55 @@
+id: newtrinos-kamland-2013-periods
+type: dataset
+title: KamLAND 2002–2012 per-period spectra, efficiency and geoneutrino shapes extracted from PRD 88, 033001
+short: 'KamLAND 2013: prompt spectra for the three data-taking periods, efficiency and geo-ν shapes, vector-extracted'
+description: Per-period prompt spectra (Fig. 3), selection efficiency (Fig. 3a) and geoneutrino spectral shapes (Fig. 6) of the 2013 KamLAND analysis; the reactor prediction in Newtrinos is computed from first principles instead. Digitised / vector-extracted by the Newtrinos developers from published figures; scripts alongside the data.
+creators:
+- name: Newtrinos developers
+  kind: organization
+owner:
+  name: Newtrinos-org
+  kind: organization
+date_published: 2026
+license: MIT
+license_notes: as part of Newtrinos.jl; the underlying figures belong to the collaborations / publishers
+access: open
+distributions:
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/kamland/kamland_periods
+  host: github
+  role: primary
+  label: Newtrinos.jl repository
+  formats: &id001
+  - csv
+references:
+- doi: 10.1103/PhysRevD.88.033001
+  arxiv: '1303.4667'
+  citation: Figs. 3, 6
+  relation: uses
+relations:
+- rel: derived_from
+  target: doi:10.1103/PhysRevD.88.033001
+experiments:
+- kamland
+sources:
+- reactor
+- geo
+topics:
+- oscillation
+data:
+  levels:
+  - digitized
+  - binned
+  formats: *id001
+newtrinos:
+  modules:
+  - kamland
+  verifications:
+  - 10.1103_PhysRevD.88.033001
+card:
+  provenance: Extracted from Figs. 3 and 6 of PRD 88, 033001 with the scripts in the same folder (vector paths where available).
+  validation: Checked against the published numbers / curves in the verification entries listed above.
+  known_limitations: Digitisation, not an official release; precision limited by the figure. An earlier extraction picked up a legend line in Fig. 3a; legend samples are now filtered.
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

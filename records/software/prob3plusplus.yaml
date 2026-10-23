@@ -1,0 +1,45 @@
+id: prob3plusplus
+type: software
+title: Prob3++
+short: 'Prob3++: fast three-flavour oscillation probabilities in matter (Barger et al. formalism), used by SK/T2K'
+description: 'Software for calculating neutrino oscillation probabilities in matter or vacuum '
+url_landing: https://github.com/rogerwendell/Prob3plusplus
+creators:
+- name: Roger Wendell
+owner:
+  name: rogerwendell
+  kind: person
+date_published: '2021-01-03'
+date_updated: '2025-05-25'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/rogerwendell/Prob3plusplus
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1103/PhysRevD.22.2718
+references:
+- doi: 10.1103/PhysRevD.22.2718
+  citation: Barger, Whisnant, Pakvasa, Phillips, Phys. Rev. D 22, 2718 (1980) — the formalism
+  relation: describes
+sources:
+- atmospheric
+- accelerator
+topics:
+- oscillation
+software:
+  repository: https://github.com/rogerwendell/Prob3plusplus
+  languages:
+  - C++
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: maintained
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: new_record.jl (GitHub API) + manual

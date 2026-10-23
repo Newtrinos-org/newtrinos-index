@@ -1,0 +1,48 @@
+id: solar-fusion-iii
+type: model
+title: 'Solar fusion III: new data and theory for hydrogen-burning stars'
+short: 'Solar Fusion III (2025): recommended pp-chain and CNO nuclear reaction rates (S-factors) and their uncertainties'
+description: Community evaluation of the nuclear reaction cross sections of the pp chain and CNO cycle (Rev. Mod. Phys. 97, 035002), the input of the B23 solar models; also quotes the B23 fluxes (Table II) and recommendations for the ⁸B spectrum.
+creators:
+- name: Solar Fusion III authors
+  kind: collaboration
+date_published: 2025
+license: none-stated
+access: open
+distributions:
+- url: https://doi.org/10.1103/8lm7-gs18
+  host: journal-supplement
+  role: primary
+  formats:
+  - pdf
+- url: https://arxiv.org/abs/2405.06470
+  host: arxiv
+  role: mirror
+  formats:
+  - pdf
+cite_as:
+- doi:10.1103/8lm7-gs18
+references:
+- doi: 10.1103/8lm7-gs18
+  arxiv: '2405.06470'
+  relation: describes
+sources:
+- solar
+topics:
+- solar-model
+- nuclear-model
+model:
+  quantities:
+  - nuclear reaction rates
+  - S-factors
+  has_uncertainties: true
+newtrinos:
+  modules:
+  - solar_flux
+  verifications:
+  - 10.5281_zenodo.10174170
+  - 10.1103_PhysRevC.73.025503
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

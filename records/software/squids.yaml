@@ -1,0 +1,49 @@
+id: squids
+type: software
+title: SQuIDS
+short: 'SQuIDS: simple quantum integro-differential solver (SU(N) density matrices), the engine of nuSQuIDS'
+description: 'SQuIDS: simple quantum integro-differential solver (SU(N) density matrices), the engine of nuSQuIDS'
+url_landing: https://github.com/jsalvado/SQuIDS
+creators:
+- name: Carlos A. Argüelles
+- name: Jordi Salvado
+- name: Christopher N. Weaver
+owner:
+  name: jsalvado
+  kind: person
+date_published: '2014-09-01'
+date_updated: '2025-07-28'
+license: LGPL-3.0-or-later
+access: open
+distributions:
+- url: https://github.com/jsalvado/SQuIDS
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1016/j.cpc.2020.107405
+references:
+- doi: 10.1016/j.cpc.2020.107405
+  citation: Argüelles, Salvado, Weaver, Comput. Phys. Commun. 255, 107405 (2020)
+  relation: describes
+sources:
+- none
+topics:
+- oscillation
+software:
+  repository: https://github.com/jsalvado/SQuIDS
+  languages:
+  - C++
+  purposes:
+  - oscillation-probability
+  - tooling
+  interfaces:
+  - library
+  development_status: maintained
+  dependencies:
+  - GSL
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: new_record.jl (GitHub API) + manual

@@ -1,0 +1,55 @@
+id: newtrinos-borexino-ph2-fig6a-components
+type: dataset
+title: Borexino Phase-II fit components extracted from PRD 100, 082004 Fig. 6a
+short: Borexino Phase-II spectral-fit components per N_h bin (¹⁴C, pileup, ²¹⁰Po, ¹¹C, …), vector-extracted
+description: 'Per-bin components of Borexino''s own Phase-II fit (N_h 93–950): data, total fit, ¹⁴C, pileup, ²¹⁰Po, ⁸⁵Kr, ²¹⁰Bi, ¹¹C, external and solar; the extracted total matches the Nature 2018 Fig. 2a best fit to 1e-4. Digitised / vector-extracted by the Newtrinos developers from published figures; scripts alongside the data.'
+creators:
+- name: Newtrinos developers
+  kind: organization
+owner:
+  name: Newtrinos-org
+  kind: organization
+date_published: 2026
+license: MIT
+license_notes: as part of Newtrinos.jl; the underlying figures belong to the collaborations / publishers
+access: open
+distributions:
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/borexino/borexino_phase2_spectrum
+  host: github
+  role: primary
+  label: Newtrinos.jl repository
+  formats: &id001
+  - csv
+references:
+- doi: 10.1103/PhysRevD.100.082004
+  arxiv: '1707.09279'
+  citation: Fig. 6a (Figure6a.pdf in the arXiv source)
+  relation: uses
+relations:
+- rel: derived_from
+  target: doi:10.1103/PhysRevD.100.082004
+experiments:
+- borexino
+sources:
+- solar
+topics:
+- flux
+data:
+  levels:
+  - digitized
+  - binned
+  formats: *id001
+newtrinos:
+  modules:
+  - borexino_ph2_spectrum
+  verifications:
+  - 10.1103_PhysRevD.100.082004
+  - 10.1038_s41586-018-0624-y
+card:
+  provenance: Extracted from Fig. 6a of arXiv:1707.09279 (mutool trace) with the scripts in the same folder (vector paths where available).
+  validation: Checked against the published numbers / curves in the verification entries listed above.
+  known_limitations: Digitisation, not an official release; precision limited by the figure.
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

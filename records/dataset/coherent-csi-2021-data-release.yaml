@@ -1,0 +1,70 @@
+id: coherent-csi-2021-data-release
+type: dataset
+title: COHERENT CsI[Na] data release (full exposure)
+short: 'COHERENT CsI[Na]: beam-on/anti-coincidence events, backgrounds, efficiencies, quenching and SNS flux tables'
+description: 'Data release accompanying the COHERENT measurement of the CEvNS cross section on CsI with the full CsI[Na] exposure (Phys. Rev. Lett. 129, 081801): coincidence and anti-coincidence event lists, beam-related neutron and NIN background PDFs, efficiency and scintillation-response coefficients, and the SNS neutrino flux in energy and time.'
+url_landing: https://arxiv.org/abs/2110.07730
+creators:
+- name: COHERENT Collaboration
+  kind: collaboration
+date_published: 2021
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2110.07730
+  host: arxiv
+  role: primary
+  label: arXiv supplemental material and data
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/coherent/coherent_2020/csi
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - txt
+  - root
+  - csv
+references:
+- doi: 10.1103/PhysRevLett.129.081801
+  arxiv: '2110.07730'
+  relation: describes
+- doi: 10.1103/PhysRevD.106.032003
+  citation: SNS neutrino flux paper
+  relation: documents
+relations:
+- rel: supersedes
+  target: coherent-2018-first-observation-data-release
+experiments:
+- coherent
+sources:
+- spallation
+topics:
+- cross-section
+- nsi
+channels:
+- cevns
+flavors:
+- numu
+- nue
+- numubar
+detector_technologies:
+- crystal
+data:
+  levels:
+  - events
+  - prediction
+  - response
+  result_of: 10.1103/PhysRevLett.129.081801
+newtrinos:
+  modules:
+  - coherent_csi
+  - sns_flux
+  - cevns_xsec
+  verifications:
+  - 10.1103_PhysRevLett.129.081801
+  - 10.1103_PhysRevD.106.032003
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'
+  quality_notes:
+  - Newtrinos source files do not state where the CsI tables were downloaded from; the release year is written as 2020/2021/2022 in different places — location inferred from the verification entry links

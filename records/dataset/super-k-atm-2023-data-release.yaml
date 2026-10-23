@@ -1,0 +1,73 @@
+id: super-k-atm-2023-data-release
+type: dataset
+title: 'Data release: Super-Kamiokande I–V atmospheric neutrino oscillation analysis with neutron tagging'
+short: 'Super-K I–V atmospheric ν: binned data and MC per flavour (NO/IO/no osc.), Δχ² grids and contours'
+description: Binned data and Monte Carlo of the Super-Kamiokande I–V atmospheric neutrino oscillation analysis with neutron tagging and an expanded fiducial volume (Phys. Rev. D 109, 072014), with the Δχ² grids and contours of the result.
+doi: 10.5281/zenodo.8401262
+url_landing: https://zenodo.org/record/8401262
+creators:
+- name: Super-Kamiokande Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2023-10-04'
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.8401262
+  host: zenodo
+  role: primary
+  formats:
+  - tarball
+  size_bytes: 55173120
+  n_files: 1
+  notes: sk_atm_2023.tar.gz
+- url: https://github.com/Newtrinos-org/Newtrinos.jl/tree/main/src/experiments/super_k/sk_atm_2023
+  host: github
+  role: mirror
+  label: copy in Newtrinos.jl
+  formats:
+  - root
+  - txt
+references:
+- doi: 10.1103/PhysRevD.109.072014
+  relation: describes
+experiments:
+- super-k
+sources:
+- atmospheric
+topics:
+- oscillation
+- mass-ordering
+- theta23-octant
+channels:
+- cc
+- nc
+flavors:
+- all
+detector_technologies:
+- water-cherenkov
+data:
+  levels:
+  - binned
+  - prediction
+  - likelihood
+  - contours
+  has_systematics_model: false
+  has_mc: true
+  result_of: 10.1103/PhysRevD.109.072014
+newtrinos:
+  modules:
+  - super_k
+  verifications:
+  - 10.1103_PhysRevD.109.072014
+card:
+  summary: Binned Super-K atmospheric data and MC of the 2023 analysis.
+  out_of_scope_use: 'Exact reproduction of the published fit: the release states that systematic response functions are not included.'
+  validation: Reproduced with Newtrinos (entry 10.1103_PhysRevD.109.072014) using energy-scale priors from the literature.
+  known_limitations: No systematic response functions; Newtrinos takes energy-scale priors from a thesis table.
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1: Newtrinos.jl / verifications inventory'

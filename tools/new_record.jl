@@ -31,6 +31,12 @@ const LICENSE_MAP = Dict("cc-by-4.0" => "CC-BY-4.0", "cc-by-3.0" => "CC-BY-3.0",
     "bsd-2-clause" => "BSD-2-Clause", "gpl-3.0" => "GPL-3.0-only", "gpl-3.0-only" => "GPL-3.0-only", "gpl-3.0-or-later" => "GPL-3.0-or-later",
     "gpl-2.0" => "GPL-2.0-only", "lgpl-3.0" => "LGPL-3.0-or-later", "mpl-2.0" => "MPL-2.0", "odbl-1.0" => "ODbL-1.0")
 spdx(id) = get(LICENSE_MAP, lowercase(string(id)), "unknown")
+"Licence from a Creative Commons / opensource.org URL when DataCite gives no SPDX id"
+function spdx_from_url(u)
+    m = match(r"creativecommons\.org/(licenses|publicdomain)/([a-z-]+)/([0-9.]+)"i, u)
+    m === nothing && return "unknown"
+    m[2] == "zero" ? "CC0-1.0" : spdx("cc-$(lowercase(m[2]))-$(m[3])")
+end
 
 function agent(c)
     a = OrderedDict{String, Any}("name" => c["name"])
@@ -51,6 +57,7 @@ function from_doi(doi; type = nothing)
     type = something(type, rtype == "Software" ? "software" : rtype == "Collection" ? "collection" : "dataset")
     rights = get(d, "rightsList", [])
     lic = isempty(rights) ? "unknown" : spdx(get(rights[1], "rightsIdentifier", ""))
+    lic == "unknown" && !isempty(rights) && (lic = spdx_from_url(get(rights[1], "rightsUri", "")))
     desc = [x["description"] for x in get(d, "descriptions", []) if get(x, "descriptionType", "") == "Abstract"]
     issued = [x["date"] for x in get(d, "dates", []) if x["dateType"] == "Issued"]
     updated = [x["date"] for x in get(d, "dates", []) if x["dateType"] == "Updated"]
@@ -123,7 +130,12 @@ function main(args)
     opts = Dict(m[1] => m[2] for m in (match(r"^--([a-z]+)=(.*)$", a) for a in args) if m !== nothing)
     targets = filter(a -> !startswith(a, "--"), args)
     for t in targets
-        rec = scaffold(t; id = get(opts, "id", nothing), type = get(opts, "type", nothing))
+        rec = try
+            scaffold(t; id = get(opts, "id", nothing), type = get(opts, "type", nothing))
+        catch e
+            println(stderr, "skipped $t: ", sprint(showerror, e)[1:min(end, 200)])
+            continue
+        end
         txt = "# scaffolded by tools/new_record.jl on $(today()); review every field\n" * to_yaml(rec)
         if "--write" in args
             path = joinpath(ROOT, "candidates", rec["type"], rec["id"] * ".yaml")
