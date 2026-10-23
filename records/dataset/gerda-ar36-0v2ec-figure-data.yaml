@@ -1,0 +1,35 @@
+id: gerda-ar36-0v2ec-figure-data
+type: dataset
+title: 'GERDA ³⁶Ar neutrinoless double-electron capture: figure data'
+short: 'GERDA ³⁶Ar 0ν2EC search: energy spectra per detector type and period (figure data)'
+description: 'EPJC supplementary zip: data of Fig. 1 and Fig. 4 (energy spectra per detector type and data-taking period: Phase I BEGe/coax/natural coax, pre/post-upgrade BEGe, coax, IC).'
+url_landing: https://media.springernature.com/original/springer-static/esm/art%3A10.1140%2Fepjc%2Fs10052-023-12280-6/MediaObjects/10052_2023_12280_MOESM1_ESM.zip
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://media.springernature.com/original/springer-static/esm/art%3A10.1140%2Fepjc%2Fs10052-023-12280-6/MediaObjects/10052_2023_12280_MOESM1_ESM.zip
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1140/epjc/s10052-023-12280-6
+  host: institutional
+  role: documentation
+references:
+- doi: 10.1140/epjc/s10052-023-12280-6
+  relation: describes
+experiments:
+- gerda
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - binned
+  - digitized
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (Springer supplementary material, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): Springer article page (paper scan publisher stage), 2026-10-23'
+  - contents listed 2026-10-23

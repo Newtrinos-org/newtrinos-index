@@ -1,0 +1,36 @@
+id: gerda-new-physics-below-2me-data
+type: dataset
+title: 'GERDA searches for new physics below 2mₑ: spectra and limits'
+short: 'GERDA new-physics searches below 2mₑ: M1/M2 spectra and Bayesian limits (CSV)'
+description: 'EPJC supplementary zip: M1 and M2 energy spectra (Figs. 3, 4) and Bayesian limits (Figs. 7–11) as CSV.'
+url_landing: https://media.springernature.com/original/springer-static/esm/art%3A10.1140%2Fepjc%2Fs10052-024-13020-0/MediaObjects/10052_2024_13020_MOESM1_ESM.zip
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://media.springernature.com/original/springer-static/esm/art%3A10.1140%2Fepjc%2Fs10052-024-13020-0/MediaObjects/10052_2024_13020_MOESM1_ESM.zip
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1140/epjc/s10052-024-13020-0
+  host: institutional
+  role: documentation
+references:
+- doi: 10.1140/epjc/s10052-024-13020-0
+  relation: describes
+experiments:
+- gerda
+sources:
+- nuclear-decay
+topics:
+- bsm-other
+- dark-matter
+data:
+  levels:
+  - binned
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (Springer supplementary material, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): Springer article page (paper scan publisher stage), 2026-10-23'
+  - contents listed 2026-10-23

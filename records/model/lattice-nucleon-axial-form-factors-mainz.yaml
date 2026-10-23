@@ -1,0 +1,35 @@
+id: lattice-nucleon-axial-form-factors-mainz
+type: model
+title: Nucleon axial, induced pseudoscalar and pseudoscalar form factors from lattice QCD (Mainz)
+short: Lattice-QCD nucleon axial and pseudoscalar form factors (dipole and z-expansion tables)
+description: 'JHEP supplementary zip: tabulated G_A(Q²), G̃_P(Q²) and G_P(Q²) with dipole and z-expansion parametrisations.'
+url_landing: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2FJHEP05%282020%29126/MediaObjects/13130_2020_13064_MOESM1_ESM.zip
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2FJHEP05%282020%29126/MediaObjects/13130_2020_13064_MOESM1_ESM.zip
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1007/JHEP05(2020)126
+  host: institutional
+  role: documentation
+references:
+- doi: 10.1007/JHEP05(2020)126
+  relation: describes
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- ccqe
+model:
+  quantities:
+  - form factors
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (Springer supplementary material, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): Springer article page (paper scan publisher stage), 2026-10-23'
+  - contents listed 2026-10-23

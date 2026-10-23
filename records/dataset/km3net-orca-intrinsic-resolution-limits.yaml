@@ -1,0 +1,37 @@
+id: km3net-orca-intrinsic-resolution-limits
+type: dataset
+title: 'KM3NeT/ORCA intrinsic resolution limits for νμ and νe CC events: figure data'
+short: 'KM3NeT/ORCA intrinsic energy and angular resolution limits for CC events: figure data'
+description: 'JHEP supplementary tarball intrinsic_limit_data/: data files of the paper''s figures (energy and direction resolution limits from neutrino-interaction physics).'
+url_landing: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2FJHEP05%282017%29008/MediaObjects/13130_2017_5971_MOESM1_ESM.gz
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2FJHEP05%282017%29008/MediaObjects/13130_2017_5971_MOESM1_ESM.gz
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1007/JHEP05(2017)008
+  host: institutional
+  role: documentation
+references:
+- doi: 10.1007/JHEP05(2017)008
+  relation: describes
+experiments:
+- km3net
+detectors:
+- orca
+sources:
+- atmospheric
+topics:
+- detector-response
+- mass-ordering
+data:
+  levels:
+  - digitized
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (Springer supplementary material, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): Springer article page (paper scan publisher stage), 2026-10-23'
+  - contents listed 2026-10-23

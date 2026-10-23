@@ -1,0 +1,32 @@
+id: nsi-neff-mathematica-notebook
+type: model
+title: 'Neutrino NSI and N_eff: auxiliary Mathematica notebook'
+short: 'NC NSI with electrons and N_eff: auxiliary Mathematica notebook (JHEP 2021)'
+description: 'JHEP electronic supplementary material: NC_NSIs_aux.nb, a Mathematica notebook for the effect of neutral-current NSI with electrons on N_eff.'
+url_landing: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2FJHEP05%282021%29058/MediaObjects/13130_2021_15621_MOESM1_ESM.zip
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2FJHEP05%282021%29058/MediaObjects/13130_2021_15621_MOESM1_ESM.zip
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1007/JHEP05(2021)058
+  host: institutional
+  role: documentation
+references:
+- doi: 10.1007/JHEP05(2021)058
+  relation: describes
+sources:
+- cosmology
+topics:
+- nsi
+model:
+  quantities:
+  - N eff
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (Springer supplementary material, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): Springer article page (paper scan publisher stage), 2026-10-23'
+  - contents listed 2026-10-23
