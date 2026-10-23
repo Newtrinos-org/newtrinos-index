@@ -67,4 +67,4 @@ curation:
   added: '2026-10-23'
   source: 'wave 1: Newtrinos.jl / verifications inventory'
   quality_notes:
-  - Newtrinos source files do not state where the CsI tables were downloaded from; the release year is written as 2020/2021/2022 in different places — location inferred from the verification entry links
+  - file list checked against the arXiv:2110.07730v2 ancillary files (2026-10-23)

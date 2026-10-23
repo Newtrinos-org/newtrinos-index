@@ -1,0 +1,51 @@
+id: hepdata-miniboone-oscillation-2021
+type: dataset
+title: Updated MiniBooNE Neutrino Oscillation Results with Increased Data and New Background Studies
+short: 'HEPData: MiniBooNE updated oscillation results with increased data (2021)'
+description: 'The MiniBooNE experiment at Fermilab reports a total excess of $638.0\pm 132.8$ electron-like events ($4.8\sigma$) from a data sample corresponding to $18.75\times 10^{20}$ protons-on-target in neutrino mode, which is a $46\%$ increase in the data sample with respect to previously published results, and $11.27\times 10^{20}$ protons-on-target in antineutrino mode. The additional statistics allow several studies to address questions on the source of the excess. First, we provide two-dimensional plots in visible energy and cosine of the angle of the outgoing lepton, which can provide valuable input to models for the event excess. Second, we test whether the excess may arise from photons that enter the detector from external events or photons exiting the detector from $\pi_0$ decays in two model independent ways. Beam timing information shows that almost all of the excess is in time with neutrinos that interact in the detector. The radius distribution shows that the excess is distributed throughout the volume, while tighter cuts on the fiducial volume increase the significance of the excess. We conclude that models of the event excess based on entering and exiting photons are disfavored.
+
+  The data release is intended to enable the oscillation fit for three different data-set combinations, the neutrino-mode data fit, the antineutrino-mode data fit, and the combined neutrino- plus antineutrino-mode data fit. In all cases the data is fit above a reconstructed neutrino energy of …'
+doi: 10.17182/hepdata.114365.v1
+url_landing: https://www.hepdata.net/record/ins1804293?version=1
+creators:
+- name: MiniBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2021'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.114365.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.103.052002
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- sterile
+data:
+  levels:
+  - summary
+  - contours
+  result_of: 10.1103/physrevd.103.052002
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

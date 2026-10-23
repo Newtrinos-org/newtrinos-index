@@ -1,0 +1,43 @@
+id: icecube-txs0506-2008-2017
+type: dataset
+title: IceCube data from 2008 to 2017 related to analysis of TXS 0506+056
+short: IceCube 2008–2017 data for the TXS 0506+056 neutrino-flare analysis
+description: A high-energy neutrino event detected by IceCube on 22 September 2017 was coincident in direction and time with a gamma-ray flare from the blazar TXS 0506+056. The analysis of this association was reported in Science (DOI:10.1126/science.aat1378). Prompted by this association, IceCube investigated 9.5 years of data recorded in the direction of this blazar to search for additional evidence of neutrino emission. The data consisted of six existing neutrino data samples used for point source searches, from 5 April 2008 until 31 October 2017. An excess of high-energy neutrino events with respect to atmospheric backgrounds at the coordinates of TXS 0506+056 was found between September 2014 and March 2015. Allowing for time-variable flux, this constituted 3.5sigma evidence for neutrino emission from the direction of TXS 0506+056, independent of and prior to the 2017 flaring episode.
+doi: 10.21234/b4qg92
+url_landing: https://icecube.wisc.edu/science/data/TXS0506_point_source
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2018'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4qg92
+  host: institutional
+  role: primary
+references:
+- doi: 10.1126/science.aat2890
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  result_of: 10.1126/science.aat2890
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

@@ -1,0 +1,49 @@
+id: hepdata-antares-dm-sun
+type: dataset
+title: Limits on Dark Matter Annihilation in the Sun using the ANTARES Neutrino Telescope
+short: 'HEPData: ANTARES limits on dark-matter annihilation in the Sun'
+description: Numbers taken from table 1 of arXiv:1603.02228v2.
+doi: 10.17182/hepdata.77062.v1
+url_landing: https://www.hepdata.net/record/ins1426493?version=1
+creators:
+- name: ANTARES Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2017'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.77062.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1016/j.physletb.2016.05.019
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- antares
+sources:
+- none
+topics:
+- dark-matter
+data:
+  levels:
+  - summary
+  - contours
+  result_of: 10.1016/j.physletb.2016.05.019
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

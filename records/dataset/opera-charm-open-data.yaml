@@ -1,0 +1,44 @@
+id: opera-charm-open-data
+type: dataset
+title: OPERA open data for neutrino-induced charmed-hadron production studies
+short: OPERA electronic-detector and emulsion data for neutrino-induced charmed-hadron production studies (CERN Open Data, CC0)
+description: 'Event-level data released by OPERA on the CERN Open Data portal for neutrino-induced charmed-hadron production studies: electronic-detector data (10.7483/OPENDATA.OPERA.6YX1.BRUK) and emulsion data (10.7483/OPENDATA.OPERA.R5MW.SEFX), with per-event records for the candidate events.'
+url_landing: https://doi.org/10.7483/OPENDATA.OPERA.6YX1.BRUK
+creators:
+- name: OPERA Collaboration
+  kind: collaboration
+publisher:
+  name: CERN Open Data Portal
+  kind: organization
+date_published: 2019
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.7483/OPENDATA.OPERA.6YX1.BRUK
+  host: cern-opendata
+  role: primary
+  label: electronic-detector data
+- url: https://doi.org/10.7483/OPENDATA.OPERA.R5MW.SEFX
+  host: cern-opendata
+  role: primary
+  label: emulsion data
+relations:
+- rel: is_part_of
+  target: opera-cern-open-data
+experiments:
+- opera
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: CERN Open Data API'
+  quality_notes:
+  - two DOIs (electronic, emulsion); the per-event records are covered by the collection

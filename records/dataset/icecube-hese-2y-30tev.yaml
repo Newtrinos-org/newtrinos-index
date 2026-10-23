@@ -1,0 +1,43 @@
+id: icecube-hese-2y-30tev
+type: dataset
+title: Search for contained neutrino events at energies above 30 TeV in 2 years of data
+short: IceCube contained events above 30 TeV in 2 years (first HESE sample)
+description: 'Neutrino observations are a unique probe of the universe''s highest energy phenomena: neutrinos are able to escape from dense environments that photons cannot and are unambiguous tracers of hadronic interaction processes, in particular the acceleration of cosmic rays. We report on results of an all-sky search for these neutrinos at energies above 30 TeV in the cubic kilometer antarctic IceCube observatory between May 2010 and May 2012. The search follows up on the previous detection of two PeV neutrino events, with improved sensitivity and extended energy coverage down to approximately 30 TeV.'
+doi: 10.21234/b4vc7h
+url_landing: https://icecube.wisc.edu/science/data/HE-nu-2010-2012
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2013'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4vc7h
+  host: institutional
+  role: primary
+references:
+- doi: 10.1126/science.1242856
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - events
+  result_of: 10.1126/science.1242856
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

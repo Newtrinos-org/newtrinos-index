@@ -1,0 +1,30 @@
+id: icecube-data-releases
+type: collection
+title: IceCube data releases
+short: 'All IceCube public data releases (DOI prefix 10.21234 and Dataverse): oscillations, point sources, diffuse flux, alerts'
+description: The IceCube Collaboration publishes its public data sets on icecube.wisc.edu/data-releases with DOIs under the prefix 10.21234 (since 2025 also on Harvard Dataverse). Each release is catalogued separately and linked here.
+url_landing: https://icecube.wisc.edu/science/data-releases/
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://icecube.wisc.edu/science/data-releases/
+  host: institutional
+  role: primary
+experiments:
+- icecube
+- deepcore
+sources:
+- atmospheric
+- astrophysical
+topics:
+- oscillation
+- flux
+- multi-messenger
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite prefix 10.21234'

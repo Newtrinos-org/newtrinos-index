@@ -1,0 +1,53 @@
+id: hepdata-minerva-low-q3
+type: dataset
+title: Identification of nuclear effects in neutrino-carbon interactions at low three-momentum transfer
+short: 'HEPData: MINERvA nuclear effects in ν–carbon interactions at low three-momentum transfer'
+description: 'Fermilab-NuMI. Two different nuclear-medium effects are isolated using a low three-momentum transfer subsample of neutrino-carbon scattering data from the MINERvA neutrino experiment. The observed hadronic energy in charged-current $\nu_\mu$ interactions is combined with muon kinematics to permit separation of the quasielastic and $\Delta$(1232) resonance processes. First, we observe a small cross section at very low energy transfer that matches the expected screening effect of long-range nucleon correlations. Second, additions to the event rate in the kinematic region between the quasielastic and $\Delta$ resonance processes are needed to describe the data. The data in this kinematic region also has an enhanced population of multi-proton final states. Contributions predicted for scattering from a nucleon pair have both properties; the model tested in this analysis is a significant improvement but does not fully describe the data. We present the results as a double-differential cross section to enable further investigation of nuclear models. Improved description of the effects of the nuclear environment are required by current and future neutrino oscillation experiments
+
+  Numbers taken from supplemental.txt ancillary file included in arXiv:1511.05944v3.'
+doi: 10.17182/hepdata.76976.v1
+url_landing: https://www.hepdata.net/record/ins1405301?version=1
+creators:
+- name: MINERvA Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2017'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.76976.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevlett.116.071802
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- mec
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevlett.116.071802
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

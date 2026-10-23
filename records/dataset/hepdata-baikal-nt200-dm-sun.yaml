@@ -1,0 +1,49 @@
+id: hepdata-baikal-nt200-dm-sun
+type: dataset
+title: Search for neutrino emission from relic dark matter in the Sun with the Baikal NT200 detector
+short: 'HEPData: Baikal NT200 search for neutrinos from dark matter in the Sun'
+description: BAIKAL. We have analyzed a data set taken over 2.76 years live time with the Baikal neutrino telescope NT200. The goal of the analysis is to search for neutrinos from dark matter annihilation in the center of the Sun. Apart from the conventional annihilation channels BOTTOM BOTTOMBAR, W+ W- and TAU+ TAU- we consider also the annihilation of dark matter particles into monochromatic neutrinos. From the absence of any excess of events from the direction of the Sun over the expected background, we derive 90% upper limits on the fluxes of muons and muon neutrinos from the Sun, as well as on the elastic cross sections of dark matter scattering on protons.
+doi: 10.17182/hepdata.64126.v1
+url_landing: https://www.hepdata.net/record/ins1296058?version=1
+creators:
+- name: Baikal Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2014'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.64126.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1016/j.astropartphys.2014.07.006
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- baikal-gvd
+sources:
+- none
+topics:
+- dark-matter
+data:
+  levels:
+  - summary
+  result_of: 10.1016/j.astropartphys.2014.07.006
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+  - Baikal Collaboration (NT200)

@@ -1,0 +1,44 @@
+id: amanda-7y
+type: dataset
+title: AMANDA 7 Year Data
+short: AMANDA-II 7-year point-source event data
+description: The Antarctic Muon And Neutrino Detector Array (AMANDA) is an optical Cherenkov detector consisting of 677 optical modules arranged in 19 strings frozen ~1.5 km -- ~2 km deep in the ice sheet at the geographic South Pole. Each optical module contains a 20 cm photomultiplier tube surrounded by a glass pressure sphere housing. Cherenkov light emitted by energetic particles inside the AMANDA volume is detected by the modules, and resulting PMT pulses are propagated to the surface and processed by trigger logic. AMANDA-II has operated from 2000 -- 2006 and has recorded 6595 upgoing events in 3.8 years of livetime during this period.
+doi: 10.21234/b4bc7v
+url_landing: https://icecube.wisc.edu/science/data/amanda
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2008'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4bc7v
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/physrevd.79.062001
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  result_of: 10.1103/physrevd.79.062001
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+  - AMANDA Collaboration
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

@@ -1,0 +1,52 @@
+id: hepdata-t2k-ccqe-carbon
+type: dataset
+title: Measurement of the $\nu_\mu$ CCQE cross section on carbon with the ND280 detector at T2K
+short: 'HEPData: T2K ND280 νμ CCQE cross section on carbon'
+description: 'KEK. The Charged-Current Quasi-Elastic (CCQE) interaction, $\nu_{l} + n \rightarrow l^{-} + p$, is the dominant CC process at $E_\nu \sim 1$ GeV and contributes to the signal in accelerator-based long-baseline neutrino oscillation experiments operating at intermediate neutrino energies. This paper reports a measurement by the T2K experiment of the $\nu_{\mu}$ CCQE cross section on a carbon target with the off-axis detector based on the observed distribution of muon momentum ($p_\mu$) and angle with respect to the incident neutrino beam ($\theta_\mu$). The flux-integrated CCQE cross section was measured to be $(0.83 \pm 0.12) \times 10^{-38}\textrm{ cm}^{2}$ in good agreement with NEUT MC value of ${0.88 \times 10^{-38}} \textrm{ cm}^{2}$. The energy dependence of the CCQE cross section is also reported.
+
+  Data points taken from attached tar file available at http://t2k-experiment.org/results/.'
+doi: 10.17182/hepdata.72875.v1
+url_landing: https://www.hepdata.net/record/ins1329784?version=1
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2016'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.72875.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.92.112003
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- ccqe
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevd.92.112003
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

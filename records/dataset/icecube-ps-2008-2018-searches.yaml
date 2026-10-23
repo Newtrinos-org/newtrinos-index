@@ -1,0 +1,40 @@
+id: icecube-ps-2008-2018-searches
+type: dataset
+title: IceCube Data for Neutrino Point-Source Searches Years 2008-2018
+short: IceCube data for neutrino point-source searches, 2008–2018
+description: IceCube has performed several all-sky searches for point-like neutrino sources using track-like events, including a recent time-integrated analysis using 10 years of IceCube data. This paper accompanies the public data release of these neutrino candidates detected by IceCube between April 6, 2008 and July 8, 2018. The selection includes through-going tracks, primarily due to muon neutrino candidates, that reach the detector from all directions, as well as neutrino track events that start within the instrumented volume. An updated selection and reconstruction for data taken after April 2012 slightly improves the sensitivity of the sample. While more than 80% of the sample overlaps between the old and new versions, differing events can lead to changes relative to the previous 7 year event selection. An a posteriori estimate of the significance of the 2014-2015 TXS flare is reported with an explanation of observed discrepancies with previous results. This public data release, which includes 10 years of data and binned detector response functions for muon neutrino signal events, shows improved sensitivity in generic time-integrated point source analyses and should be preferred over previous releases.
+doi: 10.21234/cpkq-k003
+url_landing: https://arxiv.org/abs/2101.09836
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: 2021
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/cpkq-k003
+  host: institutional
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

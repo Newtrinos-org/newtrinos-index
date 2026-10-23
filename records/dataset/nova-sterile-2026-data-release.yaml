@@ -1,0 +1,45 @@
+id: nova-sterile-2026-data-release
+type: dataset
+title: NOvA 2026 sterile neutrino search official data release
+short: 'NOvA 2026 sterile-neutrino search: official data release'
+description: 'This data release corresponds to the 2026 search for sterile neutrinos in the NOvA data using $\nu_{\mu}$ disappearance and NC disappearance.
+
+  Samples, binning, and exposures:
+
+  * $\nu$-mode ND $\nu_{\mu}$CC, 22 bins, 13.8e20 POT* $\nu$-mode FD $\nu_{\mu}$CC, 22 bins, 26.6e20 POT* $\bar{\nu}$-mode ND $\bar{\nu}_{\mu}$CC, 22 bins, 11.4e20 POT* $\bar{\nu}$-mode FD $\bar{\nu}_{\mu}$CC, 22 bins, 12.5e20 POT* $\nu$-mode ND NC, 14 bins, 13.8e20 POT* $\nu$-mode FD NC, 14 bins, 26.6e20 POT* $\bar{\nu}$-mode ND NC, 13 bins, 11.4e20 POT* $\bar{\nu}$-mode FD NC, 13 bins, 12.5e20 POT* $\nu$-mode ND $\nu$-on-e, 6 bins, 13.8e20 POT
+
+  File nova-2026-steriles-results-numudis-ncdis-nu-anu.root contains:
+
+  * Final analysis 90\% CL contours in $\Delta m^2_{41}$-$\sin^{2}\theta_{24}$ and $\Delta m^2_{41}$-$\sin^{2}\theta_{34}$ spaces.* Data spectra for each of the nine analysis samples.* Prediction objects (event distributions in $E_{\mathrm{reco}}^{\nu}$-$E_{\mathrm{true}}^{\nu}$ space for far detector samples, $E_{\mathrm{reco}}^{\nu}$-$L/E_{\mathrm{true}}^{\nu}$ for near detector samples) for each sample, split by oscillation channel, allowing for oscillations to be applied. Each prediction is normalised to the correct data POT/livetime so as to allow direct comparison. When using the predictions, note that the components use a naming convention that is {original flavor}{oscillated flavor}Comp , with the flavours being M (muon neutrino), AM (muon antineutrino), E (electron neutrino), AE (electron …'
+doi: 10.5281/zenodo.22678622
+url_landing: https://zenodo.org/doi/10.5281/zenodo.22678622
+creators:
+- name: NOvA Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2026-09-09'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.22678622
+  host: zenodo
+  role: primary
+experiments:
+- nova
+sources:
+- accelerator
+topics:
+- sterile
+data:
+  levels:
+  - binned
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

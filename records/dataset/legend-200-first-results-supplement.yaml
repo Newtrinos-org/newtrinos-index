@@ -1,0 +1,50 @@
+id: legend-200-first-results-supplement
+type: dataset
+title: Supplemental Material for "First Results on the Search for Lepton Number Violating Neutrinoless Double Beta Decay with the LEGEND-200 Experiment"
+short: 'LEGEND-200 first 0νββ results: supplemental material'
+description: '[l200-event-list.csv] Table of events detected by LEGEND-200 in the [1930, 2160] keV HPGe energy range surviving all cuts. The two events at 2118.46 keV and at 2118.78 keV are excluded in the following analysis, being associated to the gamma line of 214Bi.
+
+  [l200-partition-parameters.csv] Table of LEGEND-200 experimental parameters for each HPGe detector and each time period characterized by stable performance. The combined 0vbb acceptance incorporates all other acceptances and enrichment fractions, with uncertainties added in quadrature. energy_bias_in_keV is defined as the Q-value of double-beta decay (2039.06 keV) minus calibrated energy. See the main body of the letter for more details about the definition of these parameters and how they are used in the likelihood function for the 0vbb analysis.
+
+  event-list and partition-parameters files for the GERDA and MAJORANA DEMONSTRATOR datasets can be downloaded at (respectively):
+
+  10.5281/zenodo.15031465
+
+  10.1103/PhysRevLett.130.062501 (Supplemental Material)
+
+  [l200-0vbb-rate-posterior.csv] [ge76-comb-0vbb-rate-posterior.csv] Normalized histogram of the (Bayesian) posterior distribution for the 0vbb signal half-rate parameter Γ_1/2, calculated using a uniform prior distribution. l200-0vbb-rate-posterior.csv refers to the LEGEND-200 data set, while ge76-comb-0vbb-rate-posterior.csv refers to the combined analysis of GERDA, MAJORANA DEMONSTRATOR and LEGEND data.
+
+  [profile-likelihood.csv] Likelihood for the analysis of the LEGEND-200 …'
+doi: 10.5281/zenodo.15411219
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15411219
+creators:
+- name: LEGEND Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+version: v1.0.0
+date_published: '2025-05-14'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15411219
+  host: zenodo
+  role: primary
+experiments:
+- legend
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - events
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

@@ -1,0 +1,44 @@
+id: nova-antinumu-cc-pi0
+type: dataset
+title: NOvA numubar CC pi0 data for FERMILAB-PUB-25-0813-PPD
+short: NOvA ν̄μ CC π⁰ production data (FERMILAB-PUB-25-0813-PPD)
+description: 'Data release for the NOvA muon antineutrino charged-current (CC) pi^0 cross section presented in FERMILAB-PUB-25-0813-PPD.
+
+  The signal for this analysis is defined as muon antineutrino CC interactions in the fiducial volume of the NOvA near detector (a 2.7 m × 2.7 m × 9.0 m region) that produce at least one pi^0 in the final state emerging from the nucleus, within the phase space of muon momentum [0.5, 2.5) GeV/c and muon angle [0, 60) degree.
+
+  The README provides a detailed description of the contents of the data release, as per FERMILAB-PUB-25-0813-PPD.
+
+  https://inspirehep.net/literature/3081601'
+doi: 10.5281/zenodo.17822214
+url_landing: https://zenodo.org/doi/10.5281/zenodo.17822214
+creators:
+- name: NOvA Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2025-11-26'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.17822214
+  host: zenodo
+  role: primary
+experiments:
+- nova
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- res
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

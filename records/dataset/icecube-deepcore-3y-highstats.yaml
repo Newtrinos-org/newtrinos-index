@@ -11,7 +11,8 @@ url_landing: "https://icecube.wisc.edu/data-releases/2019/05/three-year-high-sta
 creators: [{name: IceCube Collaboration, kind: collaboration}]
 publisher: {name: IceCube Collaboration, kind: collaboration}
 date_published: 2019
-license: unknown
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
 access: open
 distributions:
   - {url: "https://icecube.wisc.edu/data-releases/2019/05/three-year-high-statistics-neutrino-oscillation-samples/", host: institutional, role: primary}
@@ -19,6 +20,7 @@ references:
   - {doi: 10.1103/PhysRevLett.120.071801, relation: describes}
   - {doi: 10.1103/PhysRevD.99.032007, relation: describes}
 relations:
+  - {rel: is_part_of, target: icecube-data-releases}
   - {rel: compares_with, target: icecube-deepcore-3y-chi2-maps}
 experiments: [deepcore]
 sources: [atmospheric]
@@ -39,4 +41,3 @@ curation:
   status: curated
   added: 2026-10-23
   source: manual
-  quality_notes: ["DataCite record carries no licence; check the release page", "public sample is a close variant, not the exact sample, of the papers"]

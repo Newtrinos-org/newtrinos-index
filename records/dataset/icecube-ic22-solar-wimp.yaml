@@ -1,0 +1,43 @@
+id: icecube-ic22-solar-wimp
+type: dataset
+title: 'IceCube-22 Solar WIMP Data: Searching for Muon Neutrinos from Dark Matter Annihilations in the Sun'
+short: 'IceCube-22 search for neutrinos from dark-matter annihilation in the Sun: data'
+description: Relic dark matter in the galactic halo may become gravitationally trapped in the Sun and accumulate in its center, where it can annihilate each other, producing standard model particles, which may decay creating neutrinos. A search was performed using data from the IceCube detector in its 22 string configuration. The experimental dataset consists of 104.26 days livetime, corresponding to a set of runs recorded during the period when the Sun was below the horizon at the South Pole, between March 21st and September 23rd.
+doi: 10.21234/b4g59s
+url_landing: https://icecube.wisc.edu/science/data/ic22-solar-wimp
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2009'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4g59s
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/physrevlett.102.201302
+  relation: describes
+experiments:
+- icecube
+sources:
+- none
+topics:
+- dark-matter
+data:
+  levels:
+  - events
+  result_of: 10.1103/physrevlett.102.201302
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

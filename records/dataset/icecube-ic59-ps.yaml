@@ -1,0 +1,44 @@
+id: icecube-ic59-ps
+type: dataset
+title: 'IceCube-59: Search for point sources using muon events'
+short: 'IceCube-59 point-source search with muon events: data'
+description: A search for neutrino point sources using 3 years of IceCube data, including the 59-string configuration (May 2009 - May 2010), was performed. An all-sky scan was performed to look for spatial clustering of a fitting for the flux level and the spectral index.
+doi: 10.21234/b47p4w
+url_landing: https://icecube.wisc.edu/science/data/IC59-point-source
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2015'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b47p4w
+  host: institutional
+  role: primary
+references:
+- doi: 10.1088/0004-637x/779/2/132
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  - response
+  result_of: 10.1088/0004-637x/779/2/132
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

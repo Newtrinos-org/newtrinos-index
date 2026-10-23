@@ -1,0 +1,62 @@
+id: hepdata-icarus-ccqe-like-numi
+type: dataset
+title: Measurement of muon (anti-)neutrino charged-current quasielastic-like cross section using off-axis NuMI beam at ICARUS
+short: 'HEPData: ICARUS ν/ν̄ CCQE-like cross section with the off-axis NuMI beam'
+description: 'Data release for the neutrino cross-section measurement from the ICARUS detector at Fermilab, using NuMI (Neutrinos at the Main Injector) beam data collected from two beam operation periods corresponding to $2.5\times10^{20}$ protons-on-target in neutrino beam mode.
+
+  The signal is defined by events with no pions produced in the final state, a topology dominated by charged-current quasielastic-like (CCQE-like) signatures.
+
+  The measurement is reported as flux-averaged differential cross sections as functions of kinematic variables that provide sensitivity to the complex nuclear effects which often dominate the systematic uncertainty budgets of neutrino oscillation measurements.
+
+  Specifically, this work reports cross sections in two angular variables---the angle of the outgoing lepton and the opening angle between the lepton and leading proton---and two variables characterizing the kinematic imbalance between the muon and proton in the plane transverse to the incoming neutrino.
+
+  These results are compared against predictions from a variety of neutrino event generators, with $p$-values calculated between the extracted cross sections and each prediction.
+
+  Overall, the predictions agree with the data; however, the current budget of uncertainties does not yet provide sufficient discriminating power to favor a specific model.
+
+  arXiv: https://arxiv.org/abs/2604.24925'
+doi: 10.17182/hepdata.181802.v1
+url_landing: https://www.hepdata.net/record/ins3149758?version=1
+creators:
+- name: ICARUS Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: 2026
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.181802.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/3jfl-dczc
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- icarus
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- ccqe
+data:
+  levels:
+  - summary
+  result_of: 10.1103/3jfl-dczc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

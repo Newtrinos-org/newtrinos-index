@@ -1,0 +1,40 @@
+id: icecube-ps-2010-2012
+type: dataset
+title: 'All-sky point-source IceCube data: years 2010-2012'
+short: IceCube all-sky point-source events, 2010–2012
+description: This data release includes 3 years of track-like neutrino candidates detected by IceCube between June 2010 and May 2013.
+doi: 10.21234/b4f04v
+url_landing: https://icecube.wisc.edu/science/data/PS-3years
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2018'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4f04v
+  host: institutional
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

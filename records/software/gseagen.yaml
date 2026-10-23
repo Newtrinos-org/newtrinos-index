@@ -1,0 +1,45 @@
+id: gseagen
+type: software
+title: 'gSeaGen: The KM3NeT GENIE-based code for neutrino telescopes'
+short: 'gSeaGen: KM3NeT GENIE-based neutrino event generator for neutrino telescopes'
+description: The gSeaGen code is a GENIE-based application developed to efficiently generate high statistics samples of events, induced by neutrino interactions, detectable in a neutrino telescope. The gSeaGen code is able to generate events induced by all neutrino flavours, considering topological differences between track-type and shower-like events. Neutrino interactions are simulated taking into account the density and the composition of the media surrounding the detector. The main features of gSeaGen are presented together with some examples of its application within the KM3NeT project.
+doi: 10.17632/ymgxvy2br4.1
+url_landing: https://data.mendeley.com/datasets/ymgxvy2br4/1
+creators:
+- name: KM3NeT Collaboration
+  kind: collaboration
+publisher:
+  name: Mendeley
+  kind: organization
+date_published: '2020-08-04'
+license: unknown
+access: open
+distributions:
+- url: https://doi.org/10.17632/ymgxvy2br4.1
+  host: other
+  role: primary
+references:
+- doi: 10.1016/j.cpc.2020.107477
+  relation: describes
+experiments:
+- km3net-orca
+- km3net-arca
+sources:
+- atmospheric
+- astrophysical
+topics:
+- cross-section
+software:
+  languages:
+  - C++
+  purposes:
+  - event-generator
+  interfaces:
+  - cli
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+  - no licence in the DataCite record

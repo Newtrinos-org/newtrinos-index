@@ -1,0 +1,52 @@
+id: hepdata-t2k-cc1pi-water
+type: dataset
+title: First Measurement of the Muon Neutrino Charged Current Single Pion Production Cross Section on Water with the T2K Near Detector
+short: 'HEPData: T2K first νμ CC single-pion production cross section on water'
+description: 'KEK. The T2K off-axis near detector, ND280, is used to make the first differential cross section measurements of muon neutrino charged current single positive pion production on a water target at energies ${\sim}0.8$ GeV. The differential measurements are presented as a function of muon and pion kinematics, in the restricted phase-space defined by $p_{\pi^+} > 200$ MeV/c, $p_{\mu^-} > 200$ MeV/c, $\cos\theta_{\pi^+} > 0.3$ and $\cos\theta_{\mu^-} > 0.3$. The total flux integrated $\nu_\mu$ charged current single positive pion production cross section on water in the restricted phase-space is measured to be $\langle\sigma\rangle_\phi=4.25\pm0.48~(\mathrm{stat})\pm1.56~(\mathrm{syst})\times10^{-40}~\mathrm{cm}^{2}/\mathrm{nucleon}$.
+
+  Data points taken from attached tar file available at http://t2k-experiment.org/results/.'
+doi: 10.17182/hepdata.73182.v1
+url_landing: https://www.hepdata.net/record/ins1465650?version=1
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2016'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.73182.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.95.012010
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- res
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevd.95.012010
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

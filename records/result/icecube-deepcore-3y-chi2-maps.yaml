@@ -7,13 +7,15 @@ doi: 10.21234/B4105H
 url_landing: "http://icecube.wisc.edu/science/data/2018nuosc"
 creators: [{name: IceCube Collaboration, kind: collaboration}]
 date_published: 2018
-license: unknown
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
 access: open
 distributions:
   - {url: "https://doi.org/10.21234/B4105H", host: institutional, role: primary}
 references:
   - {doi: 10.1103/PhysRevLett.120.071801, relation: describes}
 relations:
+  - {rel: is_part_of, target: icecube-data-releases}
   - {rel: compares_with, target: icecube-deepcore-3y-highstats}
 experiments: [deepcore]
 sources: [atmospheric]

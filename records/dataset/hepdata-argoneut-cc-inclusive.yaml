@@ -1,0 +1,50 @@
+id: hepdata-argoneut-cc-inclusive
+type: dataset
+title: Measurements of Inclusive Muon Neutrino and Antineutrino Charged Current Differential Cross Sections on Argon in the NuMI Antineutrino Beam
+short: 'HEPData: ArgoNeuT inclusive νμ and ν̄μ CC differential cross sections on argon'
+description: FNAL-T. The ArgoNeuT collaboration presents measurements of inclusive muon neutrino and antineutrino charged current differential cross sections on argon in the Fermilab NuMI beam operating in the low energy antineutrino mode. The data used in this analysis were collected between September 2009 and February 2010 and correspond to 1.20*10**20 protons on target. The results are reported in terms of outgoing muon angle and momentum at a mean neutrino energy of 9.6 GeV (neutrinos) and 3.6 GeV (antineutrinos), in the range 0 < THETA(MU) < 36 degrees and 0 < P(MU) < 25 GeV, for both neutrinos and antineutrinos.
+doi: 10.17182/hepdata.64419.v1
+url_landing: https://www.hepdata.net/record/ins1291281?version=1
+creators:
+- name: ArgoNeuT Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2014'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.64419.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.89.112003
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- argoneut
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevd.89.112003
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

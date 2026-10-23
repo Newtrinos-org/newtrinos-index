@@ -1,0 +1,50 @@
+id: hepdata-minerva-kplus-production
+type: dataset
+title: Measurement of $K^{+}$ production in charged-current $\nu_{\mu}$ interactions
+short: 'HEPData: MINERvA K⁺ production in CC νμ interactions'
+description: Numbers taken from tables 1, 5, 6, 7, 8. of arXiv:1604.03920v3.
+doi: 10.17182/hepdata.78539.v1
+url_landing: https://www.hepdata.net/record/ins1446753?version=1
+creators:
+- name: MINERvA Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2017'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.78539.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.94.012002
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevd.94.012002
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

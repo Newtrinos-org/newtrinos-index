@@ -1,0 +1,40 @@
+id: icecube-ps-7y-bayesian-posterior
+type: result
+title: Bayesian posterior for IceCube 7 year point-source search with neutrino-count statistics
+short: Bayesian posterior of the IceCube 7-year point-source search (neutrino counts)
+description: The IceCube 7 year point-source search with neutrino-count statistics applies the non-Poissonian template fitting technique to IceCube high-energy neutrino data for the purpose of characterizing populations of point-sources. This analysis produces point-source population model posterior distributions for spatial templates that are correlated with the Milky Way, the Fermi bubbles, the Schlegel, Finkbeiner, and Davis dust map, the isotropic extragalactic sky, and the northern-sky. This data release includes the posterior samples produced by the analysis for these five templates, as well as an example Python program for making use of the samples, which can be used to establish limits on specific population models that would contribute to the observed IceCube neutrino flux.
+doi: 10.21234/dtrs-e557
+url_landing: https://icecube.wisc.edu/science/data/NPTF_7yr_posterior
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: 2019
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/dtrs-e557
+  host: institutional
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+- statistics
+data:
+  levels:
+  - posterior
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

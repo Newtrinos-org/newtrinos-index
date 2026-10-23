@@ -1,0 +1,44 @@
+id: icecube-oscillations-3y-2015
+type: dataset
+title: 'IceCube Oscillations: 3 years muon neutrino disappearance data'
+short: IceCube DeepCore 3-year νμ disappearance data (2015 release)
+description: In the 1990s, Super-Kamiokande’s measurements of atmospheric neutrinos led to the acceptance of the mass-induced oscillation model. As of today, the three mixing angles, the solar mass splitting and the absolute value of the atmospheric mass splitting that control the oscillation phenomenon have been measured. We present a measurement of neutrino oscillations via atmospheric muon neutrino disappearance with three years of data of the completed IceCube neutrino detector. DeepCore, a region of denser instrumentation, enables the detection and reconstruction of atmospheric muon neutrinos between 10 GeV and 100 GeV, where a strong disappearance signal is expected.
+doi: 10.21234/b4059f
+url_landing: https://icecube.wisc.edu/science/data/nu_osc
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2015'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4059f
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/physrevd.91.072004
+  relation: describes
+experiments:
+- deepcore
+sources:
+- atmospheric
+topics:
+- oscillation
+data:
+  levels:
+  - binned
+  - mc
+  result_of: 10.1103/physrevd.91.072004
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

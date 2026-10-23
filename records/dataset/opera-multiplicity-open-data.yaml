@@ -1,0 +1,45 @@
+id: opera-multiplicity-open-data
+type: dataset
+title: OPERA open data for charged-track multiplicity studies
+short: OPERA electronic-detector and emulsion data for charged-track multiplicity studies (CERN Open Data, CC0)
+description: 'Event-level data released by OPERA on the CERN Open Data portal for charged-track multiplicity studies: electronic-detector data (10.7483/OPENDATA.OPERA.HJC7.3DCC) and emulsion data (10.7483/OPENDATA.OPERA.BVC1.UI85), with per-event records for the candidate events.'
+url_landing: https://doi.org/10.7483/OPENDATA.OPERA.HJC7.3DCC
+creators:
+- name: OPERA Collaboration
+  kind: collaboration
+publisher:
+  name: CERN Open Data Portal
+  kind: organization
+date_published: 2018
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.7483/OPENDATA.OPERA.HJC7.3DCC
+  host: cern-opendata
+  role: primary
+  label: electronic-detector data
+- url: https://doi.org/10.7483/OPENDATA.OPERA.BVC1.UI85
+  host: cern-opendata
+  role: primary
+  label: emulsion data
+relations:
+- rel: is_part_of
+  target: opera-cern-open-data
+experiments:
+- opera
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+- nc
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: CERN Open Data API'
+  quality_notes:
+  - two DOIs (electronic, emulsion); the per-event records are covered by the collection

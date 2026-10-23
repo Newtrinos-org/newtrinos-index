@@ -1,0 +1,51 @@
+id: hepdata-minerva-dis-nuclear-effects
+type: dataset
+title: Measurement of Partonic Nuclear Effects in Deep-Inelastic Neutrino Scattering using MINERvA
+short: 'HEPData: MINERvA partonic nuclear effects in DIS (C, Fe, Pb / CH ratios)'
+description: Numbers taken from .cc ancillary files provided with arXiv:1601.06313v3.
+doi: 10.17182/hepdata.77044.v1
+url_landing: https://www.hepdata.net/record/ins1416818?version=1
+creators:
+- name: MINERvA Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2017'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.77044.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.93.071101
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- dis
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevd.93.071101
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

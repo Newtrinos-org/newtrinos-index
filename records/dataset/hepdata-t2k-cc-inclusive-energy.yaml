@@ -1,0 +1,50 @@
+id: hepdata-t2k-cc-inclusive-energy
+type: dataset
+title: Measurement of the muon neutrino inclusive charged-current cross section in the energy range of 1-3 GeV with the T2K INGRID detector
+short: 'HEPData: T2K νμ CC inclusive cross section vs energy'
+description: No data abstract available.
+doi: 10.17182/hepdata.80058.v1
+url_landing: https://www.hepdata.net/record/ins1394549?version=1
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2017'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.80058.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.93.072002
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevd.93.072002
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

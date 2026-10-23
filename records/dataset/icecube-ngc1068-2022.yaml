@@ -1,0 +1,39 @@
+id: icecube-ngc1068-2022
+type: dataset
+title: Evidence for neutrino emission from the nearby active galaxy NGC 1068
+short: 'IceCube NGC 1068 evidence (2022): event data for the point-source analysis'
+description: This data release accompanies results published to Science reporting on evidence for neutrino emission from the nearby active galaxy NGC 1068.
+doi: 10.21234/03fq-rh11
+url_landing: https://icecube.wisc.edu/science/data/neutrino-emission-from-ngc-1068
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: 2022
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/03fq-rh11
+  host: institutional
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

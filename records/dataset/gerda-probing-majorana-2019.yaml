@@ -1,0 +1,37 @@
+id: gerda-probing-majorana-2019
+type: dataset
+title: Dataset for Probing Majorana neutrinos with double-β decay
+short: 'GERDA "Probing Majorana neutrinos with double-β decay": dataset'
+description: This dataset includes the plots in the publication "Probing Majorana neutrinos with double-β decay" and its supplementary materials.
+doi: 10.5281/zenodo.3354301
+url_landing: https://zenodo.org/record/3354301
+creators:
+- name: GERDA Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+version: v3
+date_published: '2019-07-29'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.3354301
+  host: zenodo
+  role: primary
+experiments:
+- gerda
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

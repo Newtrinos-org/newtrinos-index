@@ -1,0 +1,50 @@
+id: super-k-atm-neutron-production-2025
+type: dataset
+title: 'Data Release: Measurement of neutron production in atmospheric neutrino interactions at Super-Kamiokande'
+short: 'Super-K neutron production in atmospheric-ν interactions: data release'
+description: 'This data release accompanies the article ["Measurement of neutron production in atmospheric neutrino interactions at Super-Kamiokande"](https://arxiv.org/abs/2505.04409). The data provided here includes observed average neutron multiplicity in atmospheric neutrino interactions at Super-Kamiokande (SK) as a function of the event''s visible energy, along with model predictions using various combinations of final-state interaction (FSI) models and secondary hadron interaction models.
+
+  For details on the data selection and compared models, please refer to the associated article on [arXiv](https://arxiv.org/abs/2505.04409).
+
+  Files Included:
+
+  1. `x_bin_edges.txt`:Contains the x bin edges for all data, formatted as a list, which is equivalent to `np.logspace(np.log10(30), 4, 51)` in `numpy`. The bin edges are common for all event types included in the two comma-delimited csv files below.
+
+  2. `data_observations.csv`:Contains the observed SK data.  - `event_type`: (`all`, `sr`, `mr`)    - `all`: All events that pass the selection criteria.    - `sr`: Single-ring events only.    - `mr`: Multi-ring events only.  - `x_bin_id`: Bin ID to match between data observations and model predictions.  - `x_bin_center`: Mean value of visible energy for events in the x bin.  - `y_nmult_est`: Average estimated neutron multiplicity for events in the x bin.
+
+  Data includes estimated y errors:  - `yerr_total`: Total uncertainty for the observed `y_nmult_est`, calculated as the L2 norm of the following …'
+doi: 10.5281/zenodo.15392411
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15392411
+creators:
+- name: Super-Kamiokande Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2025-05-16'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15392411
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2505.04409'
+  relation: describes
+experiments:
+- super-k
+sources:
+- atmospheric
+topics:
+- cross-section
+- nuclear-model
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

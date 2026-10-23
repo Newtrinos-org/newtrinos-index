@@ -1,0 +1,51 @@
+id: hepdata-microboone-nc-delta-radiative
+type: dataset
+title: Enhanced Search for Neutral Current $\Delta$ Radiative Single-Photon Production in MicroBooNE
+short: 'HEPData: MicroBooNE enhanced search for NC Δ radiative single-photon production'
+description: Data release for Enhanced Search for Neutral Current $\Delta$ Radiative Single-Photon Production in MicroBooNE. https://arxiv.org/abs/2502.05750. We report results from an updated search for neutral current (NC) resonant $\Delta$(1232) baryon production and subsequent $\Delta$ radiative decay (NC $\Delta\rightarrow N \gamma$). We consider events with and without final state protons; events with a proton can be compared with the kinematics of a $\Delta(1232)$ baryon decay, while events without a visible proton represent a more generic phase space. In order to maximize sensitivity to each topology, we simultaneously make use of two different reconstruction paradigms, Pandora and Wire-Cell, which have complementary strengths, and select mostly orthogonal sets of events. Considering an overall scaling of the NC $\Delta\rightarrow N \gamma$ rate as an explanation of the MiniBooNE anomaly, our data exclude this hypothesis at 94.4% CL. When we decouple the expected correlations between NC $\Delta\rightarrow N \gamma$ events with and without final state protons, and allow independent scaling of both types of events, our data exclude explanations in which excess events have associated protons, and do not exclude explanations in which excess events have no associated protons. Example code using this data release is available at https://github.com/eyandel/microboone-data-release.
+doi: 10.17182/hepdata.158441.v1
+url_landing: https://www.hepdata.net/record/ins2878288?version=1
+creators:
+- name: MicroBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2025'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.158441.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/49ds-5hfh
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- bsm-other
+- cross-section
+channels:
+- nc
+data:
+  levels:
+  - summary
+  result_of: 10.1103/49ds-5hfh
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

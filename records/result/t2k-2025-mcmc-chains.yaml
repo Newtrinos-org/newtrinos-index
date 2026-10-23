@@ -1,0 +1,45 @@
+id: t2k-2025-mcmc-chains
+type: result
+title: Markov Chain Monte Carlo chain release for "Results from the T2K experiment on neutrino mixing including a new far detector muon-like sample"
+short: 'T2K 2025 oscillation analysis: MCMC posterior chains'
+description: 'Markov Chain Monte Carlo chain release for the Neutrino Oscillation Analysis of the T2K experiment reported in arXiv:2506.05889v2
+
+  The format is consistent with the NuMCMCTools, and is produced without a prior reactor constraint on theta_13. Examples of how to make plots, change priors etc. can be found on the NuMCMCTools github repository (https://github.com/NuMCMCTools/NuMCMCTools).
+
+  The chains released here are from a simultaneous fit between ND280 and SK data and include a smearing on delta m^2_32 due to out-of-model biases that were checked during the analysis.'
+doi: 10.5281/zenodo.17312779
+url_landing: https://zenodo.org/doi/10.5281/zenodo.17312779
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2025-10-10'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.17312779
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2506.05889'
+  relation: describes
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- oscillation
+- cp-violation
+- mass-ordering
+data:
+  levels:
+  - posterior
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

@@ -9,7 +9,8 @@ creators:
 - name: IceCube Collaboration
   kind: collaboration
 date_published: 2020
-license: unknown
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
 access: open
 distributions:
 - url: https://doi.org/10.21234/qfz1-yh02
@@ -26,6 +27,8 @@ distributions:
 references:
 - doi: 10.22323/1.358.1031
   relation: describes
+relations:
+  - {rel: is_part_of, target: icecube-data-releases}
 experiments:
 - icecube-upgrade
 sources:

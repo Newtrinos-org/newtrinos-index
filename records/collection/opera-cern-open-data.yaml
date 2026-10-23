@@ -1,0 +1,27 @@
+id: opera-cern-open-data
+type: collection
+title: OPERA data on the CERN Open Data portal
+short: 'OPERA open data: ~900 records — event-level samples and single candidate events (ντ, νe, charm, multiplicity)'
+description: 'All OPERA releases on the CERN Open Data portal (2018–2020): aggregated electronic-detector and emulsion samples for τ- and e-neutrino appearance, charm production and multiplicity studies, plus individual records for every released candidate event, with documentation (event reconstruction guide).'
+url_landing: https://opendata.cern.ch/search?experiment=OPERA
+creators:
+- name: OPERA Collaboration
+  kind: collaboration
+license: CC0-1.0
+access: open
+distributions:
+- url: https://opendata.cern.ch/search?experiment=OPERA
+  host: cern-opendata
+  role: primary
+  n_files: 912
+experiments:
+- opera
+sources:
+- accelerator
+topics:
+- oscillation
+- cross-section
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: CERN Open Data API'

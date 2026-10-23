@@ -12,7 +12,8 @@ publisher:
   name: Zenodo
   kind: organization
 date_published: '2018-04-25'
-license: unknown
+license: CC-BY-4.0
+license_notes: licence from the Zenodo record (the DataCite record has none)
 access: open
 distributions:
 - url: https://doi.org/10.5281/zenodo.1228631
@@ -47,5 +48,3 @@ curation:
   status: curated
   added: '2026-10-23'
   source: Zenodo search (not used by Newtrinos)
-  quality_notes:
-  - Zenodo lists CC-BY-4.0 in search but DataCite has no rights entry; check

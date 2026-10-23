@@ -1,0 +1,44 @@
+id: icecube-ic86-ps-1y
+type: dataset
+title: Search for point sources with first year of IC86 data
+short: 'IceCube point-source search with the first IC86 year: data'
+description: IceCube performed a search for point-like sources of neutrinos using four years of IceCube data, including the first year of data from the completed 86-string detector, taken between May 2011 and May 2012. This release includes only data from the first year of data-taking with the full IC86 configuration.
+doi: 10.21234/b4159r
+url_landing: http://icecube.wisc.edu/science/data/PS-IC86-2011
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2016'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4159r
+  host: institutional
+  role: primary
+references:
+- doi: 10.1088/0004-637x/796/2/109
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  - response
+  result_of: 10.1088/0004-637x/796/2/109
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

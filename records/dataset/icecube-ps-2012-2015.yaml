@@ -1,0 +1,46 @@
+id: icecube-ps-2012-2015
+type: dataset
+title: 'All-sky point-source IceCube data: years 2012-2015'
+short: IceCube all-sky point-source events, 2012–2015
+description: 'IceCube has performed a search for point-like sources of neutrinos using seven years of IceCube data, supplanting the previously available four year analysis. This data release provides tables of the effective area and point spread functions for the 2012-2015 through-going track events and for the 2010-2015 starting track events as well as the pre-trials local p-values for each point on the sky for the augmented complete sample.
+
+  "All-sky Search for Time-integrated Neutrino Emission from Astrophysical Sources with
+
+  7 yr of IceCube Data", IceCube Collaboration: M.G. Aartsen et al. Published in The
+
+  Astrophysical Journal, 835 (2017) 151, doi: 10.3847/1538-4357/835/2/151'
+doi: 10.21234/exm3-tm26
+url_landing: https://icecube.wisc.edu/science/data/7yrPS
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: 2020
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/exm3-tm26
+  host: institutional
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

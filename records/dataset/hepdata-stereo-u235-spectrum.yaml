@@ -1,0 +1,51 @@
+id: hepdata-stereo-u235-spectrum
+type: dataset
+title: First antineutrino energy spectrum from $^{235}$U fissions with the STEREO detector at ILL
+short: 'HEPData: STEREO first ²³⁵U antineutrino spectrum at ILL'
+description: These data support the measurement of the $^{235}$U-induced antineutrino spectrum shape by the STEREO experiment. 43 000 antineutrinos have been detected at about 10 m from the highly enriched core of the ILL reactor during 118 full days equivalent at nominal power. The measured inverse beta decay spectrum is unfolded to provide a pure $^{235}$U spectrum in antineutrino energy. A careful study of the unfolding procedure, including a cross-validation by an independent framework, has shown that no major biases are introduced by the method. A significant local distortion is found with respect to predictions around $E_\nu = 5.3$ MeV. A gaussian fit of this local excess leads to an amplitude of 12.1 $\pm$ 3.4% (3.5$\sigma$).
+doi: 10.17182/hepdata.99805.v1
+url_landing: https://www.hepdata.net/record/ins1821378?version=1
+creators:
+- name: STEREO Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: 2020
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.99805.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1088/1361-6471/abd37a
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- stereo
+sources:
+- reactor
+topics:
+- flux
+channels:
+- ibd
+data:
+  levels:
+  - summary
+  - systematics
+  result_of: 10.1088/1361-6471/abd37a
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

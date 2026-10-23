@@ -1,0 +1,44 @@
+id: icecube-northern-numu-2y
+type: dataset
+title: Astrophysical muon neutrino flux in the northern sky with 2 years of IceCube data
+short: 'IceCube astrophysical νμ flux in the northern sky, 2 years: data'
+description: Results from the IceCube Neutrino Observatory have recently provided compelling evidence for the existence of a high energy astrophysical neutrino flux utilizing a dominantly Southern Hemisphere data set consisting primarily of νe and ντ charged-current and neutral-current (cascade) neutrino interactions. Additionally, a fit for an astrophysical flux with an arbitrary spectral index is performed.
+doi: 10.21234/b4cc75
+url_landing: https://icecube.wisc.edu/science/data/HE_NuMu_diffuse
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2015'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4cc75
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/physrevlett.115.081102
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - events
+  - response
+  result_of: 10.1103/physrevlett.115.081102
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

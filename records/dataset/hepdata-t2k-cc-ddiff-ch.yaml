@@ -1,0 +1,50 @@
+id: hepdata-t2k-cc-ddiff-ch
+type: dataset
+title: Measurement of double-differential muon neutrino charged-current interactions on C$_8$H$_8$ without pions in the final state using the T2K off-axis beam
+short: 'HEPData: T2K double-differential νμ CC interactions on hydrocarbon'
+description: Numbers taken from http://t2k-experiment.org/wp-content/uploads/nd280data-numu-cc0pi-xs-on-c-2015.tar. Cross-section results as a function of muon momentum for different muon angular ranges. To get the total error you need to sum the three covariance matrices. The binning of the covariance matrices starts with the first momentum bin of the first $\cos\theta_\mu$ range and it loops over all the momentum bins of that range then it moves to the second angular range and so on.
+doi: 10.17182/hepdata.77052.v1
+url_landing: https://www.hepdata.net/record/ins1421157?version=1
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2017'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.77052.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.93.112012
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevd.93.112012
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

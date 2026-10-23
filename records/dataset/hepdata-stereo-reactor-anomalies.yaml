@@ -1,0 +1,52 @@
+id: hepdata-stereo-reactor-anomalies
+type: dataset
+title: Interpreting Reactor Antineutrino Anomalies with STEREO data
+short: 'HEPData: STEREO data interpreting the reactor antineutrino anomalies'
+description: These data support the final STEREO results.
+doi: 10.17182/hepdata.132368.v2
+url_landing: https://www.hepdata.net/record/ins2165649?version=2
+creators:
+- name: STEREO Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '2'
+date_published: '2023'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.132368.v2
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1038/s41586-022-05568-2
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- stereo
+sources:
+- reactor
+topics:
+- flux
+- sterile
+channels:
+- ibd
+data:
+  levels:
+  - summary
+  - systematics
+  result_of: 10.1038/s41586-022-05568-2
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

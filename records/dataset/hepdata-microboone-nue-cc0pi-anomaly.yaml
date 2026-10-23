@@ -1,0 +1,50 @@
+id: hepdata-microboone-nue-cc0pi-anomaly
+type: dataset
+title: Search for an Anomalous Production of Charged-Current $ν_e$ Interactions Without Visible Pions Across Multiple Kinematic Observables in MicroBooNE
+short: 'HEPData: MicroBooNE search for anomalous CC νe interactions without visible pions'
+description: Data release for the results of the search for anomalous production of charged-current $\nu_e$ interactions without visible pions across multiple kinematic observables in MicroBooNE, corresponding to information from arXiv:2412.14407. This analysis presents an investigation of low-energy electron-neutrino interactions in the Fermilab Booster Neutrino Beam by the MicroBooNE experiment, motivated by the excess of electron-neutrino-like events observed by the MiniBooNE experiment. This is the first measurement to use data from all five years of operation of the MicroBooNE experiment, corresponding to an exposure of $1.11\times 10^{21}$ protons on target, a $70\%$ increase on past results. Two samples of electron neutrino interactions without visible pions are used, one with visible protons and one without any visible protons. The MicroBooNE data show reasonable agreement with the nominal prediction, with $p$-values $\ge 26.7\%$ when the two $\nu_e$ samples are combined, though the prediction exceeds the data in limited regions of phase space. The data is further compared to two empirical models that modify the predicted rate of electron-neutrino interactions in different variables in the simulation to match the unfolded MiniBooNE low energy excess. In the first model, this unfolding is performed as a function of electron neutrino energy, while the second model aims to match the observed shower energy and angle distributions of the MiniBooNE excess. This measurement excludes an …
+doi: 10.17182/hepdata.159762.v1
+url_landing: https://www.hepdata.net/record/ins2861683?version=1
+creators:
+- name: MicroBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2025'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.159762.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/x259-z6mf
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- sterile
+channels:
+- cc
+data:
+  levels:
+  - summary
+  result_of: 10.1103/x259-z6mf
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

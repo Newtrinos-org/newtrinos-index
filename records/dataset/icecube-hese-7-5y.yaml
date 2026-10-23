@@ -1,0 +1,41 @@
+id: icecube-hese-7-5y
+type: dataset
+title: HESE 7.5 year data release
+short: 'IceCube HESE 7.5-year sample: events, MC and likelihood code for the diffuse astrophysical flux'
+description: This data release accompanies results published in Physical Review D describing a revisited analysis of the HESE (high-energy starting events) sample with an additional 4.5 years of data, newer glacial ice models, and improved systematics treatment.
+doi: 10.21234/4eqj-bb17
+url_landing: https://icecube.wisc.edu/science/data/HESE-7-5-yr
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: 2021
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/4eqj-bb17
+  host: institutional
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - events
+  - mc
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

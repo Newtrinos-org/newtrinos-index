@@ -1,0 +1,51 @@
+id: hepdata-t2k-antinumu-disappearance-2016
+type: dataset
+title: Measurement of Muon Antineutrino Oscillations with an Accelerator-Produced Off-Axis Beam
+short: 'HEPData: T2K first ν̄μ disappearance measurement (2016)'
+description: 'KEK. T2K reports its first measurements of the parameters governing the disappearance of $\bar{\nu}_\mu$ in an off-axis beam due to flavor change induced by neutrino oscillations. The quasimonochromatic $\bar{\nu}_\mu$ beam, produced with a peak energy of 0.6 GeV at J-PARC, is observed at the far detector Super-Kamiokande, 295 km away, where the $\bar{\nu}_\mu$ survival probability is expected to be minimal. Using a dataset corresponding to $4.01 \times 10^{20}$ protons on target, $34$ fully contained $\mu$-like events were observed. The best-fit oscillation parameters are $\sin^2 (\bar{\theta}_{23}) = 0.45$ and $|\Delta\bar{m}^2_{32}| = 2.51 \times 10^{-3}$ eV$^2$ with 68% confidence intervals of 0.38 - 0.64 and 2.26 - 2.80 $\times 10^{-3}$ eV$^2$ respectively. These results are in agreement with existing antineutrino parameter measurements and also with the $\nu_\mu$ disappearance parameters measured by T2K.
+
+  Data points taken from attached tar file available at http://t2k-experiment.org/results/.'
+doi: 10.17182/hepdata.73984.v1
+url_landing: https://www.hepdata.net/record/ins1408741?version=1
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2016'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.73984.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevlett.116.181801
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - summary
+  - contours
+  result_of: 10.1103/physrevlett.116.181801
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

@@ -1,0 +1,43 @@
+id: icecube-ic79-dark-matter
+type: dataset
+title: The 79-string IceCube search for dark matter
+short: 'IceCube-79 search for dark matter: data'
+description: Searches for high-energy neutrinos from the Sun are currently the most sensitive means of probing spin-dependent interactions between protons and most models for dark matter. In 2013, the IceCube Collaboration published the world's best limits on the spin-dependent cross section for weakly interacting dark matter particles. This is the data release accompanying this paper. We are also providing the nulike code, which allows to apply the new likelihood formalism to arbitrary dark matter models.
+doi: 10.21234/b4mw2m
+url_landing: https://icecube.wisc.edu/science/data/ic79-solar-wimp
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2016'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4mw2m
+  host: institutional
+  role: primary
+references:
+- doi: 10.1088/1475-7516/2016/04/022
+  relation: describes
+experiments:
+- icecube
+sources:
+- none
+topics:
+- dark-matter
+data:
+  levels:
+  - events
+  result_of: 10.1088/1475-7516/2016/04/022
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

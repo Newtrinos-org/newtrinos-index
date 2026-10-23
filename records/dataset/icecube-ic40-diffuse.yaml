@@ -1,0 +1,44 @@
+id: icecube-ic40-diffuse
+type: dataset
+title: 'IceCube-40 String Data: Searching for a Diffuse Flux of Astrophysical Muon Neutrinos'
+short: 'IceCube-40 search for a diffuse astrophysical νμ flux: data'
+description: One of the main strategies used to look for astrophysical neutrinos with IceCube is the search for a diffuse flux of high-energy neutrinos from unresolved sources. A search was performed using data from the IceCube detector collected in its half completed configuration in which 40 strings operated between April 2008 and May 2009. 12,877 candidate neutrino events were obtained from this data sample.
+doi: 10.21234/b4kw29
+url_landing: https://icecube.wisc.edu/science/data/ic40
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2011'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4kw29
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/physrevd.84.082001
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - events
+  - response
+  result_of: 10.1103/physrevd.84.082001
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

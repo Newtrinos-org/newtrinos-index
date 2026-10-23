@@ -1,0 +1,44 @@
+id: icecube-combined-diffuse-2015
+type: dataset
+title: A combined maximum-likelihood analysis of the astrophysical neutrino flux
+short: 'IceCube combined maximum-likelihood analysis of the astrophysical flux: data'
+description: The IceCube Collaboration revisited six previous studies investigating the nature of the astrophysical neutrino flux in a combined maximum-likelihood analysis that used up to three observables—energy, zenith angle and event topology—to derive improved constraints on the energy spectrum and the composition of neutrino flavors (νe , νμ , ντ) of the astrophysical neutrino flux.
+doi: 10.21234/b4wc7t
+url_landing: http://icecube.wisc.edu/science/data/combined-fit
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2016'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4wc7t
+  host: institutional
+  role: primary
+references:
+- doi: 10.1088/0004-637x/809/1/98
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - likelihood
+  - summary
+  result_of: 10.1088/0004-637x/809/1/98
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

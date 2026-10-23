@@ -1,0 +1,43 @@
+id: icecube-hese-4y
+type: dataset
+title: Observation of Astrophysical Neutrinos in Four Years of IceCube Data
+short: IceCube HESE 4-year sample (observation of astrophysical neutrinos)
+description: The spectrum of cosmic rays includes the most energetic particles ever observed. The mechanism of their acceleration and their sources are, however, still mostly unknown. Observing astrophysical neutrinos can help solve this problem. This update extends the data-taking period by one more year to four years from 2010 to 2014 for a total livetime of 1347 days.
+doi: 10.21234/b4h593
+url_landing: https://icecube.wisc.edu/science/data/HE-nu-2010-2014
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2015'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4h593
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/physrevlett.113.101101
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - events
+  result_of: 10.1103/physrevlett.113.101101
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

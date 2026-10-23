@@ -60,3 +60,5 @@
 - {id: nomad, name: NOMAD, collaboration: NOMAD, sources: [accelerator], technology: [other], site: CERN WANF, start: 1995, end: 1998}
 - {id: anl-12ft, name: ANL 12-foot bubble chamber, aliases: [ANL], collaboration: ANL, sources: [accelerator], technology: [other], site: Argonne (USA)}
 - {id: bnl-7ft, name: BNL 7-foot bubble chamber, aliases: [BNL], collaboration: BNL, sources: [accelerator], technology: [other], site: Brookhaven (USA)}
+- {id: argoneut, name: ArgoNeuT, collaboration: ArgoNeuT, sources: [accelerator], technology: [lartpc], site: Fermilab (USA), start: 2009, end: 2010}
+- {id: majorana, name: Majorana Demonstrator, aliases: [MJD, Majorana], collaboration: Majorana, sources: [nuclear-decay], technology: [germanium], site: SURF (USA), start: 2015, end: 2021}

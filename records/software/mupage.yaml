@@ -1,0 +1,52 @@
+id: mupage
+type: software
+title: 'MUPAGE : a MUon GEnerator from PArametric formulas'
+short: 'MUPAGE: parametric atmospheric-muon bundle generator for underwater/ice neutrino telescopes'
+description: 'The MUPAGE code was developed for the production of atmospheric muon bundles on the underwater detector CAN surface, without a full Monte Carlo simulation but using parametric formulas described in [1].
+
+  The first release was written by G. Carminati, M. Bazzotti, A. Margiotta, M. Spurio in 2007 within the ANTARES Collaboration and described in [2].
+
+  The code is maintained by the KM3NeT collaboration since v3r5.
+
+  [1] A parameterisation of single and multiple muons in the deep water or ice doi:10.1016/j.astropartphys.2005.10.005
+
+  [2] Atmospheric MUons from PArametric formulas: a fast GEnerator for neutrino telescopes (MUPAGE) doi:10.1016/j.cpc.2008.07.014'
+doi: 10.5281/zenodo.23414737
+url_landing: https://zenodo.org/doi/10.5281/zenodo.23414737
+creators:
+- name: KM3NeT Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+version: v7.0
+date_published: '2026-10-16'
+license: BSD-3-Clause
+license_url: https://opensource.org/licenses/BSD-3-Clause
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.23414737
+  host: zenodo
+  role: primary
+experiments:
+- km3net-orca
+- km3net-arca
+sources:
+- atmospheric
+- astrophysical
+topics:
+- cross-section
+software:
+  languages:
+  - C++
+  purposes:
+  - event-generator
+  - detector-simulation
+  interfaces:
+  - cli
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

@@ -1,0 +1,49 @@
+id: hepdata-microboone-sterile-two-beams
+type: dataset
+title: Search for light sterile neutrinos with two neutrino beams at MicroBooNE
+short: 'HEPData: MicroBooNE light-sterile-neutrino search with two beams (BNB + NuMI)'
+description: Data release for the MicroBooNE BNB+NuMI 3+1 oscillation analysis. A coarse grid of $\Delta \chi^2$ as a function of $\Delta m^2$, $\sin^2 \theta_{14}$, $\sin^2 \theta_{24}$ is provided as an additional resource. A finer grid is available upon request.
+doi: 10.17182/hepdata.166435.v1
+url_landing: https://www.hepdata.net/record/ins3088922?version=1
+creators:
+- name: MicroBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: 2025
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.166435.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1038/s41586-025-09757-7
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- sterile
+data:
+  levels:
+  - summary
+  - contours
+  result_of: 10.1038/s41586-025-09757-7
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

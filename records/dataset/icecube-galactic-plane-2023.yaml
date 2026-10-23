@@ -1,0 +1,40 @@
+id: icecube-galactic-plane-2023
+type: dataset
+title: Observation of high-energy neutrinos from the galactic plane
+short: 'IceCube observation of high-energy neutrinos from the Galactic plane (2023): data release'
+description: This data release accompanies results submitted to Science describing the observation of neutrinos from the galactic plane.
+doi: 10.21234/8v5d-rn16
+url_landing: https://icecube.wisc.edu/science/data/neutrino-emission-galactic-plane
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: 2023
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/8v5d-rn16
+  host: institutional
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

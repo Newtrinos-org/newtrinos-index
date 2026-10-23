@@ -1,0 +1,37 @@
+id: exo-200-public-data-ai-ml
+type: dataset
+title: EXO-200 Public Data Release for AI/ML Applications
+short: EXO-200 public data release for AI/ML applications
+description: 'The enclosed data release consists of a subset of the Th-228 calibration data from the EXO-200 experiment. Each event is provided in HDF5 format and includes raw waveforms and reconstructed event quantities, such as charge energy, light energy, rotated energy, and charge-cluster information. This release is specifically designed to support the training and testing of artificial intelligence and machine learning (AI/ML) algorithms.  Please read the following arXiv posting before using this dataset: https://arxiv.org/abs/2609.34304. Please direct questions about the material provided within this release to liyang@ucsd.edu (L. Yang).'
+doi: 10.5281/zenodo.20419163
+url_landing: https://zenodo.org/doi/10.5281/zenodo.20419163
+creators:
+- name: EXO-200 Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2026-08-29'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.20419163
+  host: zenodo
+  role: primary
+experiments:
+- exo-200
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - raw
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

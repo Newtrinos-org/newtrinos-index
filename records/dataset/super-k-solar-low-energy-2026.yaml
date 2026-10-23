@@ -1,0 +1,49 @@
+id: super-k-solar-low-energy-2026
+type: dataset
+title: Data release for "Measurement of the solar neutrino interaction rate below 3.49 MeV in Super-Kamiokande-IV"
+short: 'Super-K solar ν interaction rate below 3.49 MeV: data release'
+description: 'This data release accompanies the article "Measurement of the solar neutrino interaction rate below 3.49 MeV in Super-Kamiokande-IV" published as Phys. Rev. D 113, 112001. It includes solar angle distributions for each selection bin and the fits to the electron neutrino survival probability as a function of neutrino energy.
+
+  Solar Angle Distributions
+
+  The solar angle distributions are given as 51 ROOT histograms in a single file, "solar_angle.root", which can be used to reproduce the solar angle distributions in Figures 5-8 and 11.The histogram names corresponding to the data begin with "data_" followed by the dataset name [WIT, SLE 34-hit period, SLE 31-hit period, Combined], the lower energy bound in electron kinetic energy, the upper energy bound, the lower multiple scattering goodness (MSG) bound, and the upper MSG bound.Distributions are provided in 2.49 MeV - 2.99 MeV and 2.99 MeV - 3.49 MeV for the WIT dataset and 2.99 MeV - 3.49 MeV for all others.While the plots in the paper use 25 bins, 200 finer bins are provided here to allow the user to choose the binning.
+
+  Histograms beginning with "backshape" correspond to the data-driven fit to the background distribution ("background shape") according to the "scramble" method (see Section V).
+
+  Histograms begging with "totshape" correspond to the background shape added to the polynomial fit to the solar signal simulation distribution ("signal shape"). For the purposes of these plots, the signal shape is scaled to match the actual …'
+doi: 10.5281/zenodo.19702888
+url_landing: https://zenodo.org/doi/10.5281/zenodo.19702888
+creators:
+- name: Super-Kamiokande Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: 2026-04
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.19702888
+  host: zenodo
+  role: primary
+references:
+- doi: 10.1103/yz79-h758
+  relation: describes
+experiments:
+- super-k
+sources:
+- solar
+topics:
+- flux
+- oscillation
+data:
+  levels:
+  - binned
+  result_of: 10.1103/yz79-h758
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

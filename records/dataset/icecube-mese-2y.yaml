@@ -1,0 +1,43 @@
+id: icecube-mese-2y
+type: dataset
+title: Search for contained neutrino events at energies greater than 1 TeV in 2 years of data
+short: IceCube contained events above 1 TeV in 2 years (MESE)
+description: The IceCube Neutrino Observatory was designed primarily to search for high-energy (TeV--PeV) neutrinos produced in distant astrophysical objects. Here we present the results of a search for neutrino interactions inside IceCube's instrumented volume between 1 TeV and 1 PeV in 641 days of data taken from 2010--2012. From these data we derive new constraints on the diffuse astrophysical neutrino spectrum,as well as the strongest upper limit yet on the flux of neutrinos from charmed-meson decay in the atmosphere.
+doi: 10.21234/b43w2z
+url_landing: https://icecube.wisc.edu/science/data/HEnu_above1tev
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2015'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b43w2z
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/physrevd.91.022001
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - events
+  result_of: 10.1103/physrevd.91.022001
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

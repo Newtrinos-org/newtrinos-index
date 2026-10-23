@@ -1,0 +1,49 @@
+id: hepdata-microboone-single-photon-inclusive
+type: dataset
+title: Inclusive Search for Anomalous Single-Photon Production in MicroBooNE
+short: 'HEPData: MicroBooNE inclusive search for anomalous single-photon production'
+description: Data release for the first results from MicroBooNE's inclusive single photon search using Wire-Cell reconstruction, corresponding to information from arXiv:2502.06064. We present an inclusive search for anomalous production of single-photon events from neutrino interactions in the MicroBooNE experiment. The search and its signal definition are motivated by the previous observation of a low-energy excess of electromagnetic shower events from the MiniBooNE experiment. We use the Wire-Cell reconstruction framework to select a sample of inclusive single-photon final-state interactions with a final efficiency and purity of 7.0\% and 40.2\%, respectively. We leverage simultaneous measurements of sidebands of charged current $\nu_{\mu}$ interactions and neutral current interactions producing $\pi^{0}$ mesons to constrain signal and background predictions and reduce uncertainties. We perform a blind analysis using a dataset collected from February 2016 to July 2018, corresponding to an exposure of $6.34\times10^{20}$ protons on target from the Booster Neutrino Beam (BNB) at Fermilab. In the full signal region, we observe agreement between the data and the prediction, with a goodness-of-fit $p$-value of 0.11. We then isolate a sub-sample of these events containing no visible protons, and observe $93\pm22\text{(stat.)}\pm35\text{(syst.)}$ data events above prediction, corresponding to just above $2\sigma$ local significance, concentrated at shower energies below 600 MeV. Example code …
+doi: 10.17182/hepdata.158440.v1
+url_landing: https://www.hepdata.net/record/ins2878293?version=1
+creators:
+- name: MicroBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2025'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.158440.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/89qs-4lcp
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- bsm-other
+- cross-section
+data:
+  levels:
+  - summary
+  result_of: 10.1103/89qs-4lcp
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

@@ -1,0 +1,40 @@
+id: t2k-nc-neutron-multiplicity-2025
+type: dataset
+title: Data release for "First neutron capture multiplicity measurement of neutrino-oxygen neutral-current quasi-elastic-like interactions using an accelerator neutrino beam"
+short: 'T2K first neutron-capture multiplicity in ν–oxygen NC interactions: data release'
+description: This archive contains a ROOT file and this README document, for which the ROOT file include the related prompt event and delayed signal features in neutral-current quasi-elastic (NCQE) neutrino interactions, which are used to conclude the measurements of mean neutron multiplicity. The results are based on Run 11, corresponding to Super-Kamiokande VI using a dedicated neutron detection algorithm, NTag.The paper is published in Physical Review D and is available on the arXiv:2505.22547 [hep-ex].
+doi: 10.5281/zenodo.15577121
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15577121
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2025-06-02'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15577121
+  host: zenodo
+  role: primary
+experiments:
+- t2k
+- super-k
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- nc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

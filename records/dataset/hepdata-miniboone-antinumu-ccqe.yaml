@@ -1,0 +1,50 @@
+id: hepdata-miniboone-antinumu-ccqe
+type: dataset
+title: First Measurement of the Muon Anti-Neutrino Double-Differential Charged Current Quasi-Elastic Cross Section
+short: 'HEPData: MiniBooNE ν̄μ double-differential CCQE cross section'
+description: The largest sample ever recorded of $\bar{\nu}_\mu$ charged-current quasielastic (CCQE, $\bar{\nu}_\mu p \to \mu^{+} n$) candidate events is used to produce the minimally model-dependent, flux-integrated double-differential cross section $\frac{d^{2}\sigma}{dT_\mu d\textrm{cos}\, \theta_\mu}$ for $\bar{\nu}_\mu$ CCQE for a mineral oil target. This measurement exploits the large statistics of the MiniBooNE antineutrino-mode sample and provides the most complete information of this process to date. In order to facilitate historical comparisons, the flux-unfolded total cross section and single-differential cross section on both mineral oil and on carbon are also reported. Numbers are taken from the MiniBooNE Data Release (http://www-boone.fnal.gov/for_physicists/data_release/ccqe_nubar/).
+doi: 10.17182/hepdata.82211.v1
+url_landing: https://www.hepdata.net/record/ins1216885?version=1
+creators:
+- name: MiniBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2018'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.82211.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.88.032001
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- ccqe
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevd.88.032001
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

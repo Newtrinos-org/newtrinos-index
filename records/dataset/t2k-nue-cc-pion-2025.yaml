@@ -1,0 +1,51 @@
+id: t2k-nue-cc-pion-2025
+type: dataset
+title: Data release for the "First Measurement of the Electron Neutrino Charged-Current Pion Production Cross Section on Carbon with the T2K Near Detector"
+short: 'T2K first νe CC pion-production cross section: data release'
+description: 'This is the data release for the "First Measurement of the Electron Neutrino Charged-Current Pion Production Cross Section on Carbon with the T2K Near Detector".It paper is published in Phsical Review Letters and is also available on the arXiv:2505.00516 [hep-ex].
+
+  The tarball contains three files with the following columns in order:
+
+  The cross section results file xsec.csv (bin | p_e1 | p_e2 | costheta_e1 | costheta_e2 | p_pi1 | p_pi2 | xsec)
+
+  The cross section result covariance matrix file cov.csv (bin1 | bin2 | cov)
+
+  The flux file flux.csv (bin | E_1 | E_2 | flux_nue_best_fit | flux_nue_nominal)'
+doi: 10.5281/zenodo.15316318
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15316318
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2025-05-01'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15316318
+  host: zenodo
+  role: primary
+references:
+- doi: 10.1103/klhv-7t6h
+  relation: describes
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- res
+data:
+  levels:
+  - summary
+  - systematics
+  result_of: 10.1103/klhv-7t6h
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

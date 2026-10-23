@@ -1,0 +1,43 @@
+id: t2k-coherent-pion-2023
+type: dataset
+title: Data release for "Measurements of the muon-neutrino and muon-antineutrino-induced coherent charged pion production cross sections on Carbon-12 by the T2K experiment"
+short: 'T2K νμ and ν̄μ CC coherent pion production: data release'
+description: 'The T2K experiment reports the measurement of the flux averaged charged current coherent pion production cross section for neutrino and anti-neutrino scattering from  a Carbon nucleus.  These results are at a mean (anti)neutrino energy of 0.85~GeV in a restricted final state kinematic phase space. The neutrino measurement is an update to a previous result with systematic uncertainties reduced by a half. The antineutrino measurement is the first measurement of this cross section to be made at these energies. We find that the neutrino and antineutrino cross sections are consistent, as expected from theory, and that both agree with the current theoretical models, the Rein-Sehgal and Berger-Sehgal models.
+
+  The data release contains a summary of these results as well as neutrino and antineutrino flux histograms with which the reader can make their own flux averaged cross section calculation.
+
+  The paper is published in Physical Review D and is available on the arXiv:2308.16606 [hep-ex].'
+doi: 10.5281/zenodo.8279704
+url_landing: https://zenodo.org/doi/10.5281/zenodo.8279704
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2023-08-24'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.8279704
+  host: zenodo
+  role: primary
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- coherent-pion
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

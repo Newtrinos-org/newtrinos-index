@@ -1,0 +1,51 @@
+id: t2k-cc0pi-ddiff-2026
+type: dataset
+title: Data release for the "First double-differential measurement of pionless charged-current muon neutrino interactions using kinematic imbalance observables on carbon and oxygen with the T2K experiment"
+short: 'T2K first double-differential pionless CC νμ measurement: data release'
+description: 'AbstractThis data release provides the results regarding the cross-section measurement of pionless charged-current muon neutrino interactions with kinematic imbalance observables on carbon and oxygen using data from the ND280 detector of the T2K experiment. The release consists of the differential cross-section results, the covariance matrices of the cross-section results and the best-fit T2K neutrino fluxes in CSV files. For full details, please read README.txt which is included in the release and copied below.README.txtThis data release for the numuCC0piNp cross-section measurement with kinematic imbalance observables on carbon and oxygen by the T2K experiment.
+
+  The release contains following results:
+
+  1. Differential cross-section results.
+
+  -- The results in dpt-dalphat space are included in "xsec_carbon_dpt_dalphat.csv" and "xsec_oxygen_dpt_dalphat.csv" for carbon and oxygen targets respectively. 2D bin information is included as well. The cross-section is shown in the unit of "d^2sigma / (dpt dalphat) [cm^2 / (degree * GeV/c * nucleon)]".
+
+  -- The results in pn-costhetamu space are included in "xsec_carbon_pn_costhetamu.csv" and "xsec_oxygen_pn_costhetamu.csv" for carbon and oxygen targets respectively. 2D bin information is included as well. The cross-section is shown in the unit of "d^2sigma / (dpn dcosthetamu) [cm^2 / (GeV/c * nucleon)]".
+
+  2. Covariance matrices of cross-section results.
+
+  -- The covariance matrix in dpt-dalphat space is included in …'
+doi: 10.5281/zenodo.21293843
+url_landing: https://zenodo.org/doi/10.5281/zenodo.21293843
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2026-07-10'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.21293843
+  host: zenodo
+  role: primary
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

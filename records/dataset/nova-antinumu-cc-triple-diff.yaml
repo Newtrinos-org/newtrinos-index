@@ -1,0 +1,48 @@
+id: nova-antinumu-cc-triple-diff
+type: dataset
+title: Data Release for First inclusive triple-differential measurement of the muon-antineutrino charged-current cross section using the NOvA Near Detector
+short: 'NOvA first inclusive triple-differential ν̄μ CC cross section: data release'
+description: 'This is the Data release for the NOvA NuMuBar CC Inclusive Cross section measurement 2026.
+
+  The full collaboration author list is included as a supplementary file.
+
+  We present the first measurement of the triple-differential muon antineutrino charged-current inclusive cross section, using the NOvA Near Detector and 12.5e20 protons on target data in the NuMI beam.
+
+  The signal definition is NumuBar CC interactions within the fiducial volume of the NOvA near detector.
+
+  Our measurement is the triple-differential cross section as a function of the final-state antimuon kinetic energy, cosine of final state antimuon angle with respect to the beam direction, and the available energy of interaction.Available energy is a proxy for visible hadronic energy, defined as the sum of the total energies of neutral pions and kinetic energies of protons and charged pions in the final state. Additionally, the total cross section for (anti)neutrino energy, the single differential cross section for Q^2 (four momentum transfer) are also published.
+
+  This Data release zip file includes following files1. README.txt: It explains how to understand data in Data release zip file2. NOvA_DataRelease_2026_NuMuBarCC_Inclusive_CrossSectionAnalysis.root: This file includes the cross section results, and the total covariance matrices for statistical and systematic uncertainties.   Strucure of this file is described later in this file.3. Mapping_ReducedBinNum_To_3DBinNums.txt: It contains a mapping from a 3D bin of …'
+doi: 10.5281/zenodo.18867875
+url_landing: https://zenodo.org/doi/10.5281/zenodo.18867875
+creators:
+- name: NOvA Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+date_published: '2026-03-04'
+license: none-stated
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.18867875
+  host: zenodo
+  role: primary
+experiments:
+- nova
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

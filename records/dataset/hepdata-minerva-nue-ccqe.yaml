@@ -1,0 +1,52 @@
+id: hepdata-minerva-nue-ccqe
+type: dataset
+title: Measurement of electron neutrino quasielastic and quasielastic-like scattering on hydrocarbon at $\langle E_{\nu} \rangle $ = 3.6 GeV
+short: 'HEPData: MINERvA νe CCQE and CCQE-like scattering on hydrocarbon'
+description: 'Fermilab-NuMI. The first direct measurement of electron-neutrino quasielastic and quasielastic-like scattering on hydrocarbon in the few-GeV region of incident neutrino energy has been carried out using the MINERvA detector in the NuMI beam at Fermilab. The flux-integrated differential cross sections in electron production angle, electron energy and $Q^{2}$ are presented. The ratio of the quasielastic, flux-integrated differential cross section in $Q^{2}$ for $\nu_{e}$ with that of similarly-selected $\nu_{\mu}$-induced events from the same exposure is used to probe assumptions that underpin conventional treatments of charged-current $\nu_{e}$ interactions used by long-baseline neutrino oscillation experiments. The data are found to be consistent with lepton universality and are well-described by the predictions of the neutrino event generator GENIE.
+
+  Data points taken from ancillary files included with arXiv:1509.05729v9.'
+doi: 10.17182/hepdata.75538
+url_landing: https://www.hepdata.net/record/ins1393997
+creators:
+- name: MINERvA Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2016'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.75538
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevlett.116.081802
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- ccqe
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevlett.116.081802
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

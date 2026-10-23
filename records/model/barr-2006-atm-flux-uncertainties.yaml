@@ -44,4 +44,4 @@ curation:
   added: '2026-10-23'
   source: 'wave 1: Newtrinos.jl / verifications inventory'
   quality_notes:
-  - Newtrinos ships digitised Barr curves (src/physics/*updown.csv etc.) that are not loaded by any code
+  - digitised curves kept (unused) in Newtrinos.jl src/physics/barr2006/ (feature/provenance)

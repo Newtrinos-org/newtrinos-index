@@ -1,0 +1,54 @@
+id: hepdata-miniboone-nue-appearance
+type: dataset
+title: A Search for electron neutrino appearance at the Delta m**2 ~ 1- eV**2 scale
+short: 'HEPData: MiniBooNE search for νe appearance at Δm² ~ 1 eV²'
+description: 'The MiniBooNE Collaboration reports first results of a search for $\nu_e$ appearance in a $\nu_\mu$ beam. With two largely independent analyses, we observe no significant excess of events above background for reconstructed neutrino energies above 475 MeV. The data are consistent with no oscillations within a two-neutrino appearance-only oscillation model.
+
+  The data release is intended to enable the oscillation fit in two different energy ranges: the default energy range (475 MeV - 3000 MeV), and the low energy threshold range (300 MeV - 3000 MeV).
+
+  Instructions on how to use the data release and an example FORTRAN program are provided in the additional resources.
+
+  Files and numbers are taken from the MiniBooNE Data Release (http://www-boone.fnal.gov/for_physicists/data_release/nue/). Original data release files are available in the additional resources.'
+doi: 10.17182/hepdata.113834.v1
+url_landing: https://www.hepdata.net/record/ins748380?version=1
+creators:
+- name: MiniBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2021'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.113834.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevlett.98.231801
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- sterile
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevlett.98.231801
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

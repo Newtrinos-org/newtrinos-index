@@ -1,0 +1,50 @@
+id: hepdata-minerva-antinumu-cc-pi0
+type: dataset
+title: Single neutral pion production by charged-current $\bar{\nu}_\mu$ interactions on hydrocarbon at $\langle E_\nu \rangle = $ 3.6 GeV
+short: 'HEPData: MINERvA single π⁰ production in CC ν̄μ interactions on hydrocarbon'
+description: Fermilab-NuMI. Single neutral pion production via muon antineutrino charged-current interactions in plastic scintillator (CH) is studied using the MINERvA detector exposed to the NuMI low-energy, wideband antineutrino beam at Fermilab. Measurement of this process constrains models of neutral pion production in nuclei, which is important because the neutral-current analog is a background for $\bar{\nu}_e$ appearance oscillation experiments. The differential cross sections for $\pi^0$ momentum and production angle, for events with a single observed $\pi^0$ and no charged pions, are presented and compared to model predictions. These results comprise the first measurement of the $\pi^0$ kinematics for this process.
+doi: 10.17182/hepdata.73317.v1
+url_landing: https://www.hepdata.net/record/ins1351216?version=1
+creators:
+- name: MINERvA Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2016'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.73317.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1016/j.physletb.2015.07.039
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- res
+data:
+  levels:
+  - summary
+  result_of: 10.1016/j.physletb.2015.07.039
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

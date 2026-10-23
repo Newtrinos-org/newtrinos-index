@@ -1,0 +1,46 @@
+id: gerda-final-0vbb-supplement
+type: dataset
+title: Supplemental Material for "Final Results of GERDA on the Search for Neutrinoless Double-𝛽 Decay"
+short: 'GERDA final 0νββ results: supplemental material'
+description: 'This data set supplements "Final Results of GERDA on the Search for Neutrinoless Double-𝛽 Decay" and includes further information about the statistical analysis complementing what is provided in the in the Supplemental Material of the original publication.
+
+  [gerda-event-list.csv] Table of events detected by GERDA in the [1930, 2160] keV HPGe energy range surviving all cuts.
+
+  [gerda-partition-parameters.csv] Table of GERDA experimental parameters for each HPGe detector and each time period characterized by stable performance. The combined 0vbb acceptance incorporates all other acceptances and enrichment fractions, with uncertainties added in quadrature. energy_bias_in_keV is defined as the Q-value of double-beta decay (2039.06 keV) minus calibrated energy. See "Final Results of GERDA on the Search for Neutrinoless Double-𝛽 Decay" for more details about the definition of these parameters and how they are used in the likelihood function for the 0vbb analysis.'
+doi: 10.5281/zenodo.15031465
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15031465
+creators:
+- name: GERDA Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+version: v1.0.0
+date_published: '2025-03-15'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15031465
+  host: zenodo
+  role: primary
+references:
+- doi: 10.1103/PhysRevLett.125.252502
+  relation: describes
+experiments:
+- gerda
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - events
+  - summary
+  result_of: 10.1103/PhysRevLett.125.252502
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

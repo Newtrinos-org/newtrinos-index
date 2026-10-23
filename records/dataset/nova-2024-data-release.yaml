@@ -11,6 +11,8 @@ url_landing: "https://zenodo.org/doi/10.5281/zenodo.17822358"
 creators: [{name: NOvA Collaboration, kind: collaboration}]
 publisher: {name: Zenodo, kind: organization}
 date_published: 2026-07-09
+versions:
+  - {version: "2026-07-09", doi: 10.5281/zenodo.21284589, notes: "version DOI; 10.5281/zenodo.17822358 is the concept DOI"}
 license: CC-BY-4.0
 access: open
 distributions:

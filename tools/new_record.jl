@@ -90,7 +90,8 @@ function from_doi(doi; type = nothing)
         end
     end
     rec["distributions"] = [dist]
-    refs = [OrderedDict{String, Any}("doi" => r["relatedIdentifier"], "relation" => "describes")
+    bare(x) = replace(strip(x), r"^(https?://(dx\.)?doi\.org/|doi:)"i => "")
+    refs = [OrderedDict{String, Any}("doi" => bare(r["relatedIdentifier"]), "relation" => "describes")
             for r in get(d, "relatedIdentifiers", []) if r["relatedIdentifierType"] == "DOI" && r["relationType"] in ("IsSupplementTo", "IsDocumentedBy", "IsDescribedBy")]
     append!(refs, [OrderedDict{String, Any}("arxiv" => replace(r["relatedIdentifier"], r"^arXiv:"i => ""), "relation" => "describes")
                    for r in get(d, "relatedIdentifiers", []) if r["relatedIdentifierType"] == "arXiv"])

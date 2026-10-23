@@ -1,0 +1,47 @@
+id: icecube-alert-catalog-2017
+type: dataset
+title: IceCube catalog of alert events up through IceCube-170922A
+short: IceCube catalogue of alert events up to IceCube-170922A
+description: 'A high-energy neutrino event alert was issued by IceCube on 22 September 2017 and was found coincident in direction
+
+  and time with a gamma-ray flare from the blazar TXS 0506+056. As part of the analysis of this multimessenger signal,
+
+  all previous neutrinos that issued alerts within the realtime alert system (DOI:10.1016/j.astropartphys.2017.05.002), or would have since the 2010 operational season were also investigated for correlation with Fermi-LAT signals'
+doi: 10.21234/b4ks6s
+url_landing: https://icecube.wisc.edu/science/data/TXS0506_alerts
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2018'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4ks6s
+  host: institutional
+  role: primary
+references:
+- doi: 10.1126/science.aat1378
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  result_of: 10.1126/science.aat1378
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

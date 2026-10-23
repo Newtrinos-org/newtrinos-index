@@ -1,0 +1,48 @@
+id: hepdata-super-k-atm-flux-2016
+type: dataset
+title: 'Measurements of the atmospheric neutrino flux by Super-Kamiokande: energy spectra, geomagnetic effects, and solar modulation'
+short: 'HEPData: Super-K atmospheric neutrino flux energy spectra, geomagnetic and solar-modulation effects'
+description: Super-Kamiokande. A comprehensive study on the atmospheric neutrino flux in the energy region from sub-GeV up to several TeV using the Super-Kamiokande water Cherenkov detector is presented in this paper. The energy and azimuthal spectra of the atmospheric ${\nu}_e+{\bar{\nu}}_e$ and ${\nu}_{\mu}+{\bar{\nu}}_{\mu}$ fluxes are measured. The energy spectra are obtained using an iterative unfolding method by combining various event topologies with differing energy responses. The azimuthal spectra depending on energy and zenith angle, and their modulation by geomagnetic effects, are also studied. A predicted east-west asymmetry is observed in both the ${\nu}_e$ and ${\nu}_{\mu}$ samples at 8.0 ${\sigma}$ and 6.0 ${\sigma}$ significance, respectively, and an indication that the asymmetry dipole angle changes depending on the zenith angle was seen at the 2.2 ${\sigma}$ level. The measured energy and azimuthal spectra are consistent with the current flux models within the estimated systematic uncertainties. A study of the long-term correlation between the atmospheric neutrino flux and the solar magnetic activity cycle is also performed, and a weak indication of a correlation was seen at the 1.1 ${\sigma}$ level, using SK I-IV data spanning a 20 year period. For particularly strong solar activity periods known as Forbush decreases, no theoretical prediction is available, but a deviation below the typical neutrino event rate is seen at the 2.4 ${\sigma}$ level.
+doi: 10.17182/hepdata.76912.v1
+url_landing: https://www.hepdata.net/record/ins1401192?version=1
+creators:
+- name: Super-Kamiokande Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+  kind: organization
+version: '1'
+date_published: '2017'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.76912.v1
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/physrevd.94.052001
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- super-k
+sources:
+- atmospheric
+topics:
+- flux
+data:
+  levels:
+  - summary
+  result_of: 10.1103/physrevd.94.052001
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract

@@ -1,0 +1,44 @@
+id: icecube-sterile-1y
+type: dataset
+title: Search for sterile neutrinos with one year of IceCube data
+short: 'IceCube 1-year search for eV-scale sterile neutrinos (IC86 2011): data and MC'
+description: The IceCube neutrino telescope at the South Pole has measured the atmospheric muon neutrino spectrum as a function of zenith angle and energy to search for the oscillation signatures of light sterile neutrinos. The primary result of this search derives from the first year of data, taken during 2011, of the full 86-string IceCube configuration.
+doi: 10.21234/b4rp4j
+url_landing: https://icecube.wisc.edu/science/data/IC86-sterile-neutrino
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: IceCube Neutrino Observatory
+  kind: organization
+date_published: '2016'
+license: none-stated
+license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+access: open
+distributions:
+- url: https://doi.org/10.21234/b4rp4j
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/physrevlett.117.071801
+  relation: describes
+experiments:
+- icecube
+sources:
+- atmospheric
+topics:
+- sterile
+data:
+  levels:
+  - binned
+  - mc
+  result_of: 10.1103/physrevlett.117.071801
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

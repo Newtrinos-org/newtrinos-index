@@ -1,0 +1,38 @@
+id: super-k-dsnb-2021
+type: dataset
+title: Diffuse Supernova Neutrino Background search at Super-Kamiokande (arXiv:2109.11174, PRD 104, 122002)
+short: 'Super-K diffuse supernova neutrino background search (PRD 104, 122002): data release'
+description: This is the data release for the PRD 104, 122002 article about the Diffuse Supernova Background search at Super-Kamiokande. The figures which can be reproduced with this release are listed in the README of the data_release folder. The spectral_analysis_npy.SKMC.tar.gz folder contains the files needed to reproduce the spectral analysis in section VII of the paper. To incorporate it to the spectral analysis code please follow the instructions given in the README of the spectral analysis Github folder.
+doi: 10.5281/zenodo.5779985
+url_landing: https://zenodo.org/record/5779985
+creators:
+- name: Super-Kamiokande Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+  kind: organization
+version: '1.0'
+date_published: '2021-12-14'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.5779985
+  host: zenodo
+  role: primary
+experiments:
+- super-k
+sources:
+- supernova
+topics:
+- flux
+data:
+  levels:
+  - binned
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1b: DataCite (collaboration / prefix search)'
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
