@@ -6,6 +6,7 @@
 #   julia --project tools/paper_scan.jl comments    arXiv API (100 ids / request): URLs in comments and abstracts
 #   julia --project tools/paper_scan.jl anc         arXiv abstract pages: ancillary files (1 request / 3 s)
 #   julia --project tools/paper_scan.jl fulltext    ar5iv HTML of collaboration papers: links in the text (1 / 3 s)
+#   julia --project tools/paper_scan.jl publisher   Springer / IOP / AAS / Elsevier article pages: supplements, links
 #   julia --project tools/paper_scan.jl report      candidates/PAPERS.md + candidates/papers_hits.jsonl
 # Cache: .harvest_cache/papers/ (gitignored). Output in candidates/ (local review queue, not published).
 include("common.jl")
@@ -129,6 +130,30 @@ function stage_fulltext(; limit = typemax(Int))
 end
 fulltext_links(id) = (f = cpath("ar5iv", id); isfile(f) ? unique(clean.([m[1] for m in eachmatch(r"href=\"(https?://[^\"#]+)\"", read(f, String))])) : String[])
 
+# ------------------------------------------------------------------------------------------------ publisher pages
+# Springer (JHEP, EPJC, …) and IOP / AAS (JCAP, JINST, ApJ) article pages: supplementary files and links in the text
+# (e.g. "Data availability" statements). APS and ScienceDirect refuse automated requests from this host.
+const PUBLISHER_DOI = r"^10\.(1007|1140|1088|3847|1016)/"
+function stage_publisher(; limit = typemax(Int))
+    ps = filter(p -> any(d -> occursin(PUBLISHER_DOI, d), get(p, "dois", [])), load_papers()); n = 0
+    for p in ps
+        n >= limit && break
+        doi = first(filter(d -> occursin(PUBLISHER_DOI, d), p["dois"]))
+        isfile(cpath("publisher", p["arxiv"])) && continue
+        fetch_cached("publisher", p["arxiv"], "https://doi.org/$doi"; pause = 2.0); n += 1
+        n % 200 == 0 && println("  publisher: $n pages fetched")
+    end
+    println("publisher: $n new article pages fetched")
+end
+function publisher_links(id)
+    f = cpath("publisher", id); isfile(f) || return String[]
+    h = read(f, String); startswith(h, "HTTP ") && return String[]
+    esm = [m[1] for m in eachmatch(r"\"(https?://static-content\.springer\.com/esm/[^\"]+)\"", h)]
+    iop = [m[1] for m in eachmatch(r"\"(https?://(?:content\.cld\.iop\.org|iopscience\.iop\.org)/[^\"]*(?:suppdata|/media/)[^\"]*)\"", h)]
+    txt = [m[1] for m in eachmatch(r"href=\"(https?://[^\"#]+)\"", h)]
+    unique(vcat(esm, iop, clean.(txt)))
+end
+
 # ------------------------------------------------------------------------------------------------ report
 function stage_report()
     ps = load_papers(); com = parse_comments()
@@ -152,6 +177,10 @@ function stage_report()
             for m in eachmatch(URL_RE, s); u = clean(m[1]); interesting(u) && (links[u] = "abstract"); end
         end
         for u in fulltext_links(id); interesting(u) && !haskey(links, u) && (links[u] = "fulltext"); end
+        for u in publisher_links(id)
+            occursin(r"static-content\.springer\.com/esm|suppdata|iop\.org/.*/media/", u) ? (links[u] = "publisher-supplement") :
+                (interesting(u) && !occursin(r"springer|nature\.com|iop\.org|elsevier|sciencedirect|aas\.org", u) && !haskey(links, u) && (links[u] = "publisher-page"))
+        end
         anc = anc_files(id)
         isempty(anc) && isempty(links) && continue
         push!(hits, Dict("arxiv" => id, "title" => p["title"], "citations" => p["citations"], "tags" => p["tags"],
@@ -183,6 +212,6 @@ function main(args)
     stage = isempty(args) ? "report" : args[1]
     lim = something(tryparse(Int, get(args, 2, "")), typemax(Int))
     stage == "papers" ? stage_papers() : stage == "comments" ? stage_comments() : stage == "anc" ? stage_anc(; limit = lim) :
-    stage == "fulltext" ? stage_fulltext(; limit = lim) : stage_report()
+    stage == "fulltext" ? stage_fulltext(; limit = lim) : stage == "publisher" ? stage_publisher(; limit = lim) : stage_report()
 end
 abspath(PROGRAM_FILE) == (@__FILE__) && main(ARGS)
