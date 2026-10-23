@@ -26,6 +26,10 @@ distributions:
   - csv
   - json
   - root
+- url: https://web.archive.org/web/20150622021650/http://t2k-experiment.org:80/results/nd280data-energy-dependent-ccqe-xsec-2014/
+  host: wayback
+  role: archive
+  label: "collaboration data release (archived copy): T2K ND280 energy-dependent νμ CCQE cross section on carbon: data relea"
 references:
 - doi: 10.1103/physrevd.92.112003
   relation: describes

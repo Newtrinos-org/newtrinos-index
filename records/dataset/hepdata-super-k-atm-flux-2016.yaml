@@ -24,6 +24,10 @@ distributions:
   - csv
   - json
   - root
+- url: https://web.archive.org/web/20250110080346/https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/fluxpaper2016_data.zip
+  host: wayback
+  role: archive
+  label: "collaboration data release (archived copy): Super-Kamiokande atmospheric neutrino flux measurement (PRD 94, 052001"
 references:
 - doi: 10.1103/physrevd.94.052001
   relation: describes

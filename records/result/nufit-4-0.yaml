@@ -1,0 +1,46 @@
+id: nufit-4-0
+type: result
+title: 'NuFIT 4.0: three-neutrino global fit (data available November 2018) — Δχ² tables'
+short: NuFIT 4.0 global three-flavour fit (landing page and release notes archived; Δχ² tables not)
+description: NuFIT 4.0 release page with parameter-range tables, mixing-matrix ranges and figures, plus one- and two-dimensional Δχ² projections for NO and IO, without and with the tabulated Super-Kamiokande atmospheric χ² as compressed plain-text tables, documented in the release-notes PDF.
+url_landing: https://web.archive.org/web/20250113090329/http://www.nu-fit.org/?q=node/177
+license: none-stated
+access: open
+distributions:
+- url: https://web.archive.org/web/20250113090329/http://www.nu-fit.org/?q=node/177
+  host: wayback
+  role: primary
+- url: http://www.nu-fit.org/?q=node/177
+  host: institutional
+  role: mirror
+- url: https://web.archive.org/web/20220121014434/http://www.nu-fit.org/sites/default/files/v40.release-notes.pdf
+  host: wayback
+  role: mirror
+references:
+- doi: 10.1007/JHEP01(2019)106
+  relation: describes
+- arxiv: '1811.05487'
+  relation: describes
+relations:
+- rel: is_part_of
+  target: nufit-archive-earlier-releases
+sources:
+- solar
+- atmospheric
+- reactor
+- accelerator
+topics:
+- oscillation
+- global-fit
+data:
+  levels:
+  - likelihood
+  - contours
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (archives, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened archived page https://web.archive.org/web/20250113090329/http://www.nu-fit.org/?q=node/177 (capture 20250113); title ''v4.0: Three-neutrino fit based on data available in Nov'
+  - Catalogue already has a single umbrella record 'nufit-archive-earlier-releases' (v1.0-v5.3 pages, chi2 tables, release notes); this is the per-version split requested. The Δχ² data files linked from this page (v40.release-SKoff-NO.txt.gz, v40.release

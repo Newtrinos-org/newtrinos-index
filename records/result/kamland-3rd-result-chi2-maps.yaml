@@ -1,0 +1,41 @@
+id: kamland-3rd-result-chi2-maps
+type: result
+title: KamLAND χ² map release accompanying the 3rd reactor result (PRL 100, 221803)
+short: KamLAND 3rd-result Δχ² maps, KamLAND-only and KamLAND+solar (PRL 100, 221803; archived)
+description: '''KamLAND-only'' and ''KamLAND + Solar'' Δχ² tables used for the oscillation-parameter constraints of ''Precise Measurement of Neutrino Oscillation Parameters with KamLAND''; plain text with three columns log(tan²θ), log(Δm²), Δχ². Best fits quoted: (0.56, 7.58e-5 eV²) KamLAND-only, (0.47, 7.59e-5 eV²) KamLAND+Solar.'
+url_landing: https://web.archive.org/web/20140118114813/http://www.awa.tohoku.ac.jp/KamLAND/chi2map_3rdresult/chi2map.html
+license: none-stated
+access: open
+distributions:
+- url: https://web.archive.org/web/20140118114813/http://www.awa.tohoku.ac.jp/KamLAND/chi2map_3rdresult/chi2map.html
+  host: wayback
+  role: primary
+- url: https://www.awa.tohoku.ac.jp/KamLAND/chi2map_3rdresult/chi2map.html
+  host: institutional
+  role: mirror
+- url: https://web.archive.org/web/20140118114842/http://www.awa.tohoku.ac.jp/KamLAND/chi2map_3rdresult/chi2map_files/chi2_KL.dat
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20221202055045/https://www.awa.tohoku.ac.jp/KamLAND/chi2map_3rdresult/chi2map_files/chi2_Global.dat
+  host: wayback
+  role: mirror
+references:
+- arxiv: '0801.4589'
+  relation: describes
+experiments:
+- kamland
+sources:
+- reactor
+- solar
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (archives, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened https://web.archive.org/web/20140118114813/http://www.awa.tohoku.ac.jp/KamLAND/chi2map_3rdresult/chi2map.html (capture 20140118). Both .dat files are captured (chi2_KL.dat 2'
+  - Distinct from the catalogued 2nd-result (2005), 4th-result (PRD 83) and 2013 releases.

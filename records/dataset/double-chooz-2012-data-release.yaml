@@ -1,0 +1,52 @@
+id: double-chooz-2012-data-release
+type: dataset
+title: Double Chooz data release for 'Reactor electron antineutrino disappearance in the Double Chooz experiment' (DC 2nd publication)
+short: 'Double Chooz 2012 data release: spectra, backgrounds and covariance (arXiv:1207.6632; archived)'
+description: 'Supplement to the paper: prompt-energy spectra for two integration periods (36 bins of 0.5 MeV) as text vectors — data, best-fit signal, no-oscillation prediction, Li-9, fast-neutron/stopping-muon and accidental backgrounds, bin boundaries — plus systematic and total covariance matrices (TMatrixD in a ROOT file) and a fitter package (DC_Data_Release_Fitter.tar.gz) to reproduce the oscillation fit (best fit sin²2θ13 = 0.109, Δm² = 2.32e-3 eV²).'
+url_landing: https://web.archive.org/web/20230327180458/http://doublechooz.in2p3.fr/Scientific/Data_release/
+license: none-stated
+access: open
+distributions:
+- url: https://web.archive.org/web/20230327180458/http://doublechooz.in2p3.fr/Scientific/Data_release/
+  host: wayback
+  role: primary
+- url: http://doublechooz.in2p3.fr/Scientific/Data_release/
+  host: institutional
+  role: mirror
+- url: https://web.archive.org/web/20180406212612/http://doublechooz.in2p3.fr:80/Scientific/Data_release/dc2p_txt/BinBoundaries.txt
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20210613202322/http://doublechooz.in2p3.fr/Scientific/Data_release/dc2p_txt/DataVector.txt
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20210613194003/http://doublechooz.in2p3.fr/Scientific/Data_release/dc2p_txt/BestFit.txt
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20210613194737/http://doublechooz.in2p3.fr/Scientific/Data_release/dc2p_txt/Unoscillated.txt
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20210613193913/http://doublechooz.in2p3.fr/Scientific/Data_release/dc2p_txt/LithiumVector.txt
+  host: wayback
+  role: mirror
+references:
+- arxiv: '1207.6632'
+  relation: describes
+experiments:
+- double-chooz
+sources:
+- reactor
+topics:
+- oscillation
+channels:
+- ibd
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (archives, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened archived page https://web.archive.org/web/20230327180458/http://doublechooz.in2p3.fr/Scientific/Data_release/ (capture 20230327; page last modified 30 April 2013). doublecho'
+  - Not in the catalogue. The fitter package DC_Data_Release_Fitter.tar.gz linked from the page has no Wayback capture; the text vectors and AbsoluteMatrices.root are captured. Superseded by later Double Chooz results, but this is the only DC data releas

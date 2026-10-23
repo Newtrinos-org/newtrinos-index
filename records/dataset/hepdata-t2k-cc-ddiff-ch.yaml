@@ -24,6 +24,10 @@ distributions:
   - csv
   - json
   - root
+- url: https://web.archive.org/web/20180518162338/http://t2k-experiment.org:80/results/nd280data-numu-cc0pi-xs-on-c-2015/
+  host: wayback
+  role: archive
+  label: "collaboration data release (archived copy): T2K ND280 double-differential νμ CC0π cross section on hydrocarbon (C8"
 references:
 - doi: 10.1103/physrevd.93.112012
   relation: describes

@@ -1,0 +1,43 @@
+id: minerva-docdb-numi-flux-tables-2008
+type: dataset
+title: MINERvA public DocDB NuMI flux tables (LE/ME, neutrino and antineutrino, He-filled decay pipe), 2007-2008
+short: MINERvA public DocDB NuMI flux tables (2007–08; historical, superseded)
+description: 'Two public DocDB documents by L. Loiacono: MINERvA-doc-2004-v3 ''Updated MINERvA Neutrino Flux Files with He in the Decay Pipe'' and MINERvA-doc-3042-v1 ''MINERvA ANTI-neutrino flux files for the LE and ME Beams''; .dat tables per flavour (νμ, ν̄μ, νe, ν̄e, all) in 0.2 GeV bins, normalised per GeV/m² per 4e20 POT (LE), 12e20 POT (ME) or 16e20 POT (combined), plus an LE:ME composition spreadsheet.'
+url_landing: https://web.archive.org/web/20100527195641/http://minerva-docdb.fnal.gov/cgi-bin/ShowDocument?docid=2004
+license: none-stated
+access: open
+distributions:
+- url: https://web.archive.org/web/20100527195641/http://minerva-docdb.fnal.gov/cgi-bin/ShowDocument?docid=2004
+  host: wayback
+  role: primary
+- url: https://web.archive.org/web/20100527195555/http://minerva-docdb.fnal.gov/cgi-bin/ShowDocument?docid=3042
+  host: wayback
+  role: mirror
+- url: http://minerva-docdb.fnal.gov/cgi-bin/ShowDocument?docid=2004
+  host: institutional
+  role: mirror
+- url: http://minerva-docdb.fnal.gov/cgi-bin/ShowDocument?docid=3042
+  host: institutional
+  role: mirror
+- url: http://minerva-docdb.fnal.gov/0020/002004/003/
+  host: institutional
+  role: mirror
+- url: http://minerva-docdb.fnal.gov/0030/003042/001/
+  host: institutional
+  role: mirror
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (archives, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened archived ShowDocument pages for docid 2004 and 3042 (captures 20100527); both marked ''Viewable by: Public document''. Created 30 Oct 2007 (rev. 1 Nov 2007) and 17 Nov 2008.'
+  - 'Pre-data design-era flux predictions, superseded by the published MINERvA flux (catalogued: minerva-numi-flux-prediction-le-data-release, ME constrained fluxes). Historical interest only. All other minerva-docdb directories in the scan (talks, procee'

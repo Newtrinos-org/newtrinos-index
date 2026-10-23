@@ -1,0 +1,49 @@
+id: miniboone-antinumu-ccqe-ddiff
+type: dataset
+title: MiniBooNE antineutrino CCQE double-differential cross section data release
+short: 'MiniBooNE ν̄μ CCQE double-differential cross section: data release'
+description: 'Tables for ''First Measurement of the Muon Anti-Neutrino Double-Differential Charged Current Quasi-Elastic Cross Section'': flux-integrated d²σ/dTμ dcosθμ on mineral oil (CH2) and carbon, shape errors, QE-like and CC π− background tables, Eν-dependent cross sections and bins (26 plain-text files); antineutrino-mode flux table referenced from the flux release.'
+url_landing: https://web.archive.org/web/20150912072724/http://www-boone.fnal.gov/for_physicists/data_release/ccqe_nubar/
+license: none-stated
+access: open
+distributions:
+- url: https://web.archive.org/web/20150912072724/http://www-boone.fnal.gov/for_physicists/data_release/ccqe_nubar/
+  host: wayback
+  role: primary
+- url: http://www-boone.fnal.gov/for_physicists/data_release/ccqe_nubar/
+  host: institutional
+  role: mirror
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/ccqe_nubar/
+  host: institutional
+  role: mirror
+- url: https://web.archive.org/web/20130223163338/http://www-boone.fnal.gov/for_physicists/data_release/ccqe_nubar/dblDifflXsecCH2.txt
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20130223172620/http://www-boone.fnal.gov/for_physicists/data_release/ccqe_nubar/dblDifflXsec12C.txt
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20130223163331/http://www-boone.fnal.gov/for_physicists/data_release/ccqe_nubar/dblDifflBins.txt
+  host: wayback
+  role: mirror
+references:
+- arxiv: '1301.7067'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- ccqe
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (archives, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened archived FNAL page https://web.archive.org/web/20150912072724/http://www-boone.fnal.gov/for_physicists/data_release/ccqe_nubar/ (capture 20150912) and the live IU mirror htt'
+  - The catalogue has the IU-mirror index and the neutrino CCQE release, but no record for this antineutrino CCQE release; the IU mirror is a live copy and may be a better primary URL. Page cites arXiv:1301.7067 only (no journal reference shown).

@@ -1,0 +1,31 @@
+id: katrin-knm1-fig3a-data
+type: dataset
+title: 'KATRIN first neutrino-mass result (KNM1, PRL 123, 221802): data for Fig. 3a'
+short: 'KATRIN first neutrino-mass result (KNM1, PRL 123, 221802): Fig. 3a data'
+description: 'Plain-text table ''Data for figure 3a of PHYSICAL REVIEW LETTERS 123, 221802 (2019)'': measured tritium β-spectrum rate (s⁻¹) versus retarding energy (eV, ~18535-18620 eV) from the first KATRIN campaign.'
+url_landing: https://web.archive.org/web/20210418021159/https://www.katrin.kit.edu/publikationen/Data_figure_3a_of_PHYSICAL_REVIEW_LETTERS123.txt
+license: none-stated
+access: open
+distributions:
+- url: https://web.archive.org/web/20210418021159/https://www.katrin.kit.edu/publikationen/Data_figure_3a_of_PHYSICAL_REVIEW_LETTERS123.txt
+  host: wayback
+  role: primary
+- url: https://www.katrin.kit.edu/publikationen/Data_figure_3a_of_PHYSICAL_REVIEW_LETTERS123.txt
+  host: institutional
+  role: mirror
+experiments:
+- katrin
+sources:
+- nuclear-decay
+topics:
+- absolute-mass
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (archives, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened the archived file itself (capture 20210418). No archived landing page found: the publications page capture redirects to a 404. www.katrin.kit.edu returned HTTP 403 to script'
+  - Uncertainty columns, if any, are not visible in the text rendering (stray non-ASCII characters after the rate). The KNM1-5 JSON files in the same directory were judged to duplicate the catalogued 259-day Zenodo record (10.5281/zenodo.13644899) and ar

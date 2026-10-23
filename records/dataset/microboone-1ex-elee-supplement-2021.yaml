@@ -1,0 +1,34 @@
+id: microboone-1ex-elee-supplement-2021
+type: dataset
+title: 'MicroBooNE 2021 inclusive electron-neutrino (1eX) low-energy-excess analysis: supplementary covariance files'
+short: MicroBooNE 2021 inclusive νe (1eX) low-energy-excess supplementary covariances
+description: Tar (~0.4 MB) of plain-text 7-channel covariance matrices for different eLEE signal strengths (7channelCovariance_eLEE00.txt, ...eLEE01, ...), dated Nov 2021.
+url_landing: https://web.archive.org/web/20240303052207/https://microboone.fnal.gov/wp-content/uploads/paper_suppl_electron_analysis_1ex_2021.tar
+license: none-stated
+access: open
+distributions:
+- url: https://web.archive.org/web/20240303052207/https://microboone.fnal.gov/wp-content/uploads/paper_suppl_electron_analysis_1ex_2021.tar
+  host: wayback
+  role: primary
+- url: https://microboone.fnal.gov/wp-content/uploads/paper_suppl_electron_analysis_1ex_2021.tar
+  host: institutional
+  role: mirror
+- url: https://web.archive.org/web/20240303050029/https://microboone.fnal.gov/wp-content/uploads/paper_suppl_electron_analysis_1e1p_ccqe_2021.pdf
+  host: wayback
+  role: mirror
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- sterile
+data:
+  levels:
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (archives, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened the archived tar itself (capture 20240303) and listed its first members; no archived landing page found, and the live MicroBooNE publications page (HTTP 200 on 2026-10-23) d'
+  - 'Paper not stated anywhere I saw. The ''1eX'' name and 7-channel covariances (file owner ''weihy'') suggest the Wire-Cell inclusive νe CC eLEE paper (arXiv:2110.13978, PRD 105, 112005), but that is an inference: verify before cataloguing. A sibling file p'

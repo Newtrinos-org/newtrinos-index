@@ -1,0 +1,58 @@
+id: nufit-5-0
+type: result
+title: 'NuFIT 5.0: three-neutrino global fit (data available July 2020) — Δχ² tables'
+short: NuFIT 5.0 global three-flavour fit (Δχ² tables archived)
+description: NuFIT 5.0 release page with parameter-range tables, mixing-matrix ranges and figures, plus one-, two- and three-dimensional Δχ² projections for NO and IO, without and with the tabulated Super-Kamiokande atmospheric χ² as compressed plain-text tables, documented in the release-notes PDF.
+url_landing: https://web.archive.org/web/20241223161202/http://www.nu-fit.org/?q=node/228
+license: none-stated
+access: open
+distributions:
+- url: https://web.archive.org/web/20241223161202/http://www.nu-fit.org/?q=node/228
+  host: wayback
+  role: primary
+- url: http://www.nu-fit.org/?q=node/228
+  host: institutional
+  role: mirror
+- url: https://web.archive.org/web/20220322130844/http://www.nu-fit.org/sites/default/files/v50.release-SKoff-NO.txt.xz
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20220322130908/http://www.nu-fit.org/sites/default/files/v50.release-SKoff-IO.txt.xz
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20220322130909/http://www.nu-fit.org/sites/default/files/v50.release-SKyes-NO.txt.xz
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20220322130915/http://www.nu-fit.org/sites/default/files/v50.release-SKyes-IO.txt.xz
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20220322131104/http://www.nu-fit.org/sites/default/files/v50.release-notes.pdf
+  host: wayback
+  role: mirror
+references:
+- doi: 10.1007/JHEP09(2020)178
+  relation: describes
+- arxiv: '2007.14792'
+  relation: describes
+relations:
+- rel: is_part_of
+  target: nufit-archive-earlier-releases
+sources:
+- solar
+- atmospheric
+- reactor
+- accelerator
+topics:
+- oscillation
+- global-fit
+data:
+  levels:
+  - likelihood
+  - contours
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (archives, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened archived page https://web.archive.org/web/20241223161202/http://www.nu-fit.org/?q=node/228 (capture 20241223); title ''v5.0: Three-neutrino fit based on data available in Jul'
+  - Catalogue already has a single umbrella record 'nufit-archive-earlier-releases' (v1.0-v5.3 pages, chi2 tables, release notes); this is the per-version split requested. All Δχ² tables linked from the page are captured in the Wayback Machine. Page asks

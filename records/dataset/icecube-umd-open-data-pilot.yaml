@@ -1,0 +1,47 @@
+id: icecube-umd-open-data-pilot
+type: dataset
+title: 'IceCube Open Data Format pilot (UMD): calibrated photo-electron level events and Python tools'
+short: 'IceCube open data format pilot (UMD): calibrated event samples and Python tools'
+description: 'IceCube ''Public Data Project'' under Data Release Set 2 of the IceCube open-data policy: calibrated IC86 events without reconstruction (run, trigger time/type, photo-electron charge, DOM position, time) in a documented binary bytestream (''.odf''), with a large-NChannel sample (27 Apr 2013), a neutrino-enriched sample (run 121585, 10 Jan 2013), test data, a lightweight Python reader/event viewer, and per-season trigger/geometry documentation.'
+url_landing: https://web.archive.org/web/20150424150952/http://icecube.umd.edu/PublicData/
+license: none-stated
+access: open
+distributions:
+- url: https://web.archive.org/web/20150424150952/http://icecube.umd.edu/PublicData/
+  host: wayback
+  role: primary
+- url: https://icecube.umd.edu/PublicData/
+  host: institutional
+  role: mirror
+- url: https://web.archive.org/web/20250827015615/https://icecube.umd.edu/PublicData/data/
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20240913190706/https://icecube.umd.edu/PublicData/data/LargeNChSample_122252.odf.gz
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20241118154602/https://icecube.umd.edu/PublicData/data/neutrinos_run_121585.odf.gz
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20240913182107/https://icecube.umd.edu/PublicData/data/odf_tools.tgz
+  host: wayback
+  role: mirror
+- url: https://web.archive.org/web/20240914052332/https://icecube.umd.edu/PublicData/data/test-data.tgz
+  host: wayback
+  role: mirror
+experiments:
+- icecube
+sources:
+- atmospheric
+- astrophysical
+topics:
+- detector-response
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (archives, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened archived page https://web.archive.org/web/20150424150952/http://icecube.umd.edu/PublicData/ (capture 20150424) and the data directory listing (capture 20250827, files dated '
+  - The planned ~10 TB/yr full datasets were never offered here; only these samples exist. Not related to the icecube.wisc.edu data releases already catalogued.
