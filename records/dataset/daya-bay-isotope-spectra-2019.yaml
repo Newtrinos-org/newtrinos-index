@@ -1,0 +1,48 @@
+id: daya-bay-isotope-spectra-2019
+type: dataset
+title: Daya Bay ²³⁵U and ²³⁹Pu antineutrino spectra (ancillary data)
+short: Daya Bay decomposed ²³⁵U and ²³⁹Pu prompt spectra with covariance, fission fractions and response (PRL 123, 111801)
+description: 'Ancillary files of the extraction of the ²³⁵U and ²³⁹Pu antineutrino spectra at Daya Bay: decomposed spectra with and without corrections, Pu-combo spectra, fission fractions, input ²³⁸U/²⁴¹Pu spectra and detector response matrix.'
+url_landing: https://arxiv.org/abs/1904.07812
+creators:
+- name: Daya Bay Collaboration
+  kind: collaboration
+date_published: 2019
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1904.07812
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+  formats:
+  - txt
+references:
+- doi: 10.1103/PhysRevLett.123.111801
+  arxiv: '1904.07812'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- flux
+channels:
+- ibd
+flavors:
+- nuebar
+data:
+  levels:
+  - binned
+  - response
+  - systematics
+  has_covariance: true
+  formats:
+  - txt
+  result_of: 10.1103/PhysRevLett.123.111801
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: arXiv ancillary files'
+  quality_notes:
+  - file list read from the arXiv abstract page (2026-10-23)

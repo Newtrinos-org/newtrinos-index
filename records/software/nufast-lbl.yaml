@@ -1,0 +1,45 @@
+id: nufast-lbl
+type: software
+title: NuFast-LBL
+short: 'NuFast: fast and accurate long-baseline oscillation probabilities in matter (C++, Fortran, Python)'
+description: Implementation of the NuFast algorithm for three-flavour oscillation probabilities in constant-density matter, designed for speed in long-baseline fits.
+url_landing: https://github.com/PeterDenton/NuFast-LBL
+creators:
+- name: Peter B. Denton
+- name: Stephen J. Parke
+owner:
+  name: PeterDenton
+  kind: person
+date_published: '2024-04-18'
+date_updated: '2026-06-29'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/PeterDenton/NuFast-LBL
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1103/PhysRevD.110.073005
+references:
+- doi: 10.1103/PhysRevD.110.073005
+  citation: Denton & Parke, Phys. Rev. D 110, 073005 (2024)
+  relation: describes
+sources:
+- accelerator
+topics:
+- oscillation
+software:
+  repository: https://github.com/PeterDenton/NuFast-LBL
+  languages:
+  - C++
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'

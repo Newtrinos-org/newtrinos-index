@@ -1,0 +1,47 @@
+id: cudaprob3
+type: software
+title: CUDAProb3
+short: 'CUDAProb3: GPU (CUDA) and multi-core implementation of Prob3++ atmospheric oscillation probabilities'
+description: Massively parallel computation of atmospheric neutrino oscillation probabilities on CUDA GPUs and CPUs, following Prob3++.
+url_landing: https://github.com/fkallen/CUDAProb3
+creators:
+- name: Felix Kallenborn
+owner:
+  name: fkallen
+  kind: person
+date_published: '2018-03-15'
+date_updated: '2021-11-07'
+license: LGPL-3.0-or-later
+access: open
+distributions:
+- url: https://github.com/fkallen/CUDAProb3
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1016/j.cpc.2018.07.022
+references:
+- doi: 10.1016/j.cpc.2018.07.022
+  citation: Kallenborn et al., Comput. Phys. Commun. 234, 235 (2019)
+  relation: describes
+sources:
+- atmospheric
+topics:
+- oscillation
+software:
+  repository: https://github.com/fkallen/CUDAProb3
+  languages:
+  - C++
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'
+relations:
+- rel: derived_from
+  target: prob3plusplus

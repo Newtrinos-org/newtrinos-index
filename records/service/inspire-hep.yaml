@@ -1,0 +1,30 @@
+id: inspire-hep
+type: service
+title: INSPIRE-HEP
+short: 'INSPIRE: HEP literature, data and software records, with citation graphs and a REST API'
+description: 'The high-energy-physics literature database: papers, theses, conference contributions, experiment records and links to HEPData; its citation graph is the basis of the "used by" harvesting of this index.'
+url_landing: https://inspirehep.net
+owner:
+  name: CERN, DESY, Fermilab, IHEP, SLAC
+  kind: organization
+license: CC0-1.0
+access: open
+distributions:
+- url: https://inspirehep.net
+  host: institutional
+  role: primary
+sources:
+- none
+topics:
+- oscillation
+service:
+  operator:
+    name: CERN, DESY, Fermilab, IHEP, SLAC
+    kind: organization
+  api_kind: rest
+  api: https://inspirehep.net/api
+license_notes: INSPIRE metadata is CC0
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: wave 1c

@@ -1,0 +1,56 @@
+id: snewpy
+type: software
+title: SNEWPY
+short: 'SNEWPY: Python pipeline from supernova simulations to neutrino fluxes and detector event rates'
+description: Python package giving uniform access to many published core-collapse supernova simulation outputs, flavour-transformation prescriptions and SNOwGLoBES-based event rates in neutrino detectors.
+url_landing: https://snewpy.readthedocs.io
+creators:
+- name: SNEWS 2.0
+  kind: collaboration
+owner:
+  name: SNEWS2
+  kind: organization
+date_published: '2019-11-14'
+date_updated: '2026-10-20'
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/SNEWS2/snewpy
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.3847/1538-4357/ac350f
+- doi:10.21105/joss.03772
+references:
+- doi: 10.3847/1538-4357/ac350f
+  citation: SNEWS, Astrophys. J. 925, 107 (2022)
+  relation: describes
+- doi: 10.21105/joss.03772
+  citation: J. Open Source Softw. 6, 3772 (2021)
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+- multi-messenger
+software:
+  repository: https://github.com/SNEWS2/snewpy
+  languages:
+  - Python
+  purposes:
+  - astrophysics
+  - sensitivity
+  interfaces:
+  - library
+  development_status: active
+  dependencies:
+  - SNOwGLoBES (optional)
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'
+relations:
+- rel: uses
+  target: snowglobes

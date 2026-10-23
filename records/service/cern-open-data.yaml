@@ -1,0 +1,29 @@
+id: cern-open-data
+type: service
+title: CERN Open Data Portal
+short: 'CERN Open Data portal: releases of LHC and other CERN experiments, incl. OPERA neutrino data'
+description: CERN's open-data portal with DOIs for every record; for neutrino physics it hosts the OPERA releases.
+url_landing: https://opendata.cern.ch
+owner:
+  name: CERN
+  kind: organization
+license: none-stated
+access: open
+distributions:
+- url: https://opendata.cern.ch
+  host: institutional
+  role: primary
+sources:
+- none
+topics:
+- oscillation
+service:
+  operator:
+    name: CERN
+    kind: organization
+  api_kind: rest
+  api: https://opendata.cern.ch/api/records/
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: wave 1c

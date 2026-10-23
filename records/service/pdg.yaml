@@ -1,0 +1,32 @@
+id: pdg
+type: service
+title: Particle Data Group (Review of Particle Physics)
+short: 'PDG: Review of Particle Physics — neutrino properties, mixing, reviews and averaged measurements'
+description: The Review of Particle Physics with the neutrino listings (masses, mixing, magnetic moments), the neutrino reviews (oscillations, mass, double beta decay), and machine-readable data via the pdgApi / pdg Python package.
+url_landing: https://pdg.lbl.gov
+owner:
+  name: Particle Data Group (LBNL)
+  kind: organization
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://pdg.lbl.gov
+  host: institutional
+  role: primary
+sources:
+- none
+topics:
+- oscillation
+- absolute-mass
+- double-beta
+service:
+  operator:
+    name: Particle Data Group (LBNL)
+    kind: organization
+  api_kind: rest
+  api: https://pdgapi.lbl.gov
+license_notes: Review content published under CC BY 4.0 (Prog. Theor. Exp. Phys. / Phys. Rev. D open access)
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: wave 1c

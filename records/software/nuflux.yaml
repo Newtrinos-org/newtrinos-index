@@ -1,0 +1,45 @@
+id: nuflux
+type: software
+title: nuflux
+short: 'nuflux: IceCube library of atmospheric neutrino flux models (Honda, Bartol, Sarcevic, …) in C++/Python'
+description: Library providing parameterisations and tables of conventional and prompt atmospheric neutrino fluxes (e.g. HKKM, Bartol, Enberg/Sarcevic, MCEq-based models) behind a common interface.
+url_landing: https://docs.icecube.aq/nuflux/main
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+owner:
+  name: icecube
+  kind: organization
+date_published: '2018-10-12'
+date_updated: '2026-10-06'
+license: LGPL-3.0-or-later
+access: open
+distributions:
+- url: https://github.com/icecube/nuflux
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- atmospheric
+topics:
+- flux
+software:
+  repository: https://github.com/icecube/nuflux
+  languages:
+  - C++
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: active
+  dependencies:
+  - Boost
+  - photospline
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'
+relations:
+- rel: uses
+  target: honda-atmospheric-flux-tables

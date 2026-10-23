@@ -1,0 +1,48 @@
+id: nufate
+type: software
+title: nuFATE
+short: 'nuFATE: high-energy neutrino attenuation through the Earth (cascade equation solver)'
+description: Solves the cascade equation for neutrino propagation through the Earth including absorption, NC regeneration and tau regeneration.
+url_landing: https://github.com/aaronvincent/nuFATE
+creators:
+- name: Aaron C. Vincent
+- name: Carlos A. Argüelles
+- name: Ali Kheirandish
+owner:
+  name: aaronvincent
+  kind: person
+date_published: '2017-04-06'
+date_updated: '2026-01-21'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/aaronvincent/nuFATE
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1088/1475-7516/2017/11/012
+references:
+- doi: 10.1088/1475-7516/2017/11/012
+  citation: Vincent, Argüelles, Kheirandish, JCAP 11 (2017) 012
+  relation: describes
+sources:
+- astrophysical
+- atmospheric
+topics:
+- earth-model
+- cross-section
+software:
+  repository: https://github.com/aaronvincent/nuFATE
+  languages:
+  - C++
+  purposes:
+  - earth-model
+  interfaces:
+  - library
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'

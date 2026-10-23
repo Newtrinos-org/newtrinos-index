@@ -1,0 +1,31 @@
+id: km3net-open-data
+type: service
+title: KM3NeT Open Data portal
+short: 'KM3NeT open-data Dataverse: ORCA and ARCA releases, ANTARES legacy data'
+description: Dataverse instance of the KM3NeT collaboration hosting its public data sets (ORCA oscillation data, ANTARES point-source data, KM3-230213A event).
+url_landing: https://opendata.km3net.de
+owner:
+  name: KM3NeT Collaboration
+  kind: organization
+license: none-stated
+access: open
+distributions:
+- url: https://opendata.km3net.de
+  host: institutional
+  role: primary
+sources:
+- atmospheric
+- astrophysical
+topics:
+- oscillation
+- multi-messenger
+service:
+  operator:
+    name: KM3NeT Collaboration
+    kind: organization
+  api_kind: rest
+  api: https://opendata.km3net.de/api
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: wave 1c

@@ -1,0 +1,39 @@
+id: neurthino-jl
+type: software
+title: Neurthino.jl
+short: 'Neurthino.jl: Julia package for neutrino oscillation probabilities in vacuum and matter (KM3NeT)'
+description: Julia implementation of three- and n-flavour oscillation probabilities in vacuum and layered matter (PREM), developed within KM3NeT.
+url_landing: https://github.com/KM3NeT/Neurthino.jl
+creators:
+- name: KM3NeT Collaboration
+  kind: collaboration
+owner:
+  name: KM3NeT
+  kind: organization
+date_published: '2020-07-08'
+date_updated: '2024-12-06'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/KM3NeT/Neurthino.jl
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- atmospheric
+topics:
+- oscillation
+software:
+  repository: https://github.com/KM3NeT/Neurthino.jl
+  languages:
+  - Julia
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: maintained
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'

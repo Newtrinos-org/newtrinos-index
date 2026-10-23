@@ -1,0 +1,44 @@
+id: snowglobes
+type: software
+title: SNOwGLoBES
+short: 'SNOwGLoBES: event rates of supernova neutrinos in many detector types (built on GLoBES)'
+description: Fast computation of interaction rates and smeared spectra of supernova neutrinos for a range of detector materials and configurations (water, scintillator, argon, lead, …), built on GLoBES.
+url_landing: https://github.com/SNOwGLoBES/snowglobes
+creators:
+- name: Kate Scholberg
+owner:
+  name: SNOwGLoBES
+  kind: organization
+date_published: '2016-12-12'
+date_updated: '2025-10-13'
+license: GPL-2.0-only
+access: open
+distributions:
+- url: https://github.com/SNOwGLoBES/snowglobes
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- supernova
+topics:
+- flux
+software:
+  repository: https://github.com/SNOwGLoBES/snowglobes
+  languages:
+  - Jupyter Notebook
+  purposes:
+  - sensitivity
+  - astrophysics
+  interfaces:
+  - library
+  development_status: active
+  dependencies:
+  - GLoBES
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'
+relations:
+- rel: uses
+  target: globes

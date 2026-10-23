@@ -1,0 +1,47 @@
+id: nuradiomc
+type: software
+title: NuRadioMC
+short: 'NuRadioMC: Monte Carlo of radio emission from neutrino interactions in ice, propagation and detector response'
+description: 'Simulation framework for in-ice radio neutrino detectors (ARA, ARIANNA, RNO-G, IceCube-Gen2 radio): neutrino interactions, Askaryan emission, propagation and detector response.'
+url_landing: https://github.com/nu-radio/NuRadioMC
+creators:
+- name: NuRadioMC developers
+  kind: collaboration
+owner:
+  name: nu-radio
+  kind: organization
+date_published: '2018-01-27'
+date_updated: '2026-10-23'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/nu-radio/NuRadioMC
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1140/epjc/s10052-020-7612-8
+references:
+- doi: 10.1140/epjc/s10052-020-7612-8
+  citation: Glaser et al., Eur. Phys. J. C 80, 77 (2020)
+  relation: describes
+sources:
+- astrophysical
+- cosmogenic
+topics:
+- flux
+software:
+  repository: https://github.com/nu-radio/NuRadioMC
+  languages:
+  - Python
+  purposes:
+  - detector-simulation
+  - event-generator
+  interfaces:
+  - library
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'

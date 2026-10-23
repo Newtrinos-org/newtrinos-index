@@ -1,0 +1,57 @@
+id: gibuu
+type: software
+title: GiBUU — Giessen Boltzmann-Uehling-Uhlenbeck transport model
+short: 'GiBUU: transport-theoretical event generator for lepton- and hadron-nucleus reactions, incl. neutrino interactions'
+description: Fortran transport model describing elementary reactions on nuclei (neutrino, electron, photon, hadron and heavy-ion induced) with consistent nuclear ground state and final-state interactions; widely used as a neutrino event generator.
+url_landing: https://gibuu.hepforge.org
+creators:
+- name: GiBUU group (U. Giessen)
+  kind: collaboration
+license: GPL-2.0-only
+access: registration
+distributions:
+- url: https://gibuu.hepforge.org
+  host: institutional
+  role: primary
+  formats:
+  - source-code
+  notes: download after registration
+- url: https://github.com/gibuu
+  host: github
+  role: archive
+  label: older yearly releases (GiBUU_2016, GiBUU_2017)
+cite_as:
+- doi:10.1016/j.physrep.2011.12.001
+references:
+- doi: 10.1016/j.physrep.2011.12.001
+  citation: Buss et al., Phys. Rept. 512, 1 (2012)
+  relation: describes
+sources:
+- accelerator
+- atmospheric
+topics:
+- cross-section
+- nuclear-model
+channels:
+- ccqe
+- mec
+- res
+- dis
+- nc
+software:
+  repository: https://gibuu.hepforge.org
+  languages:
+  - Fortran
+  purposes:
+  - event-generator
+  - nuclear-model
+  interfaces:
+  - cli
+  - config-files
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: wave 1c
+  quality_notes:
+  - licence GPL-2.0 as on the archived GitHub releases; check the current HepForge terms

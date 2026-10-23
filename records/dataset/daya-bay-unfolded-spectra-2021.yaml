@@ -1,0 +1,48 @@
+id: daya-bay-unfolded-spectra-2021
+type: dataset
+title: Daya Bay unfolded antineutrino energy spectra (ancillary data)
+short: Daya Bay unfolded total and isotopic (²³⁵U, Pu-combo) ν̄e spectra with covariance and response matrices (Wiener-SVD)
+description: 'Ancillary files of the antineutrino energy-spectrum unfolding based on the Daya Bay measurement: unfolded total and isotopic spectra (Wiener-SVD), covariance, smearing and response matrices, prompt spectra in fine bins.'
+url_landing: https://arxiv.org/abs/2102.04614
+creators:
+- name: Daya Bay Collaboration
+  kind: collaboration
+date_published: 2021
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2102.04614
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+  formats:
+  - txt
+references:
+- doi: 10.1088/1674-1137/abfc38
+  arxiv: '2102.04614'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- flux
+channels:
+- ibd
+flavors:
+- nuebar
+data:
+  levels:
+  - binned
+  - response
+  - systematics
+  has_covariance: true
+  formats:
+  - txt
+  result_of: 10.1088/1674-1137/abfc38
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: arXiv ancillary files'
+  quality_notes:
+  - file list read from the arXiv abstract page (2026-10-23)

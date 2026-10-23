@@ -1,0 +1,47 @@
+id: peanuts
+type: software
+title: PEANUTS
+short: 'PEANUTS: solar neutrino flux at Earth vs mixing parameters (MSW + Earth regeneration), Python'
+description: Python package computing solar neutrino survival probabilities and fluxes at Earth for arbitrary mixing parameters, including Earth regeneration with a layered Earth model.
+url_landing: https://github.com/michelelucente/PEANUTS
+creators:
+- name: Michele Lucente
+- name: Tomás E. Gonzalo
+owner:
+  name: michelelucente
+  kind: person
+date_published: '2022-02-04'
+date_updated: '2026-10-09'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/michelelucente/PEANUTS
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1140/epjc/s10052-024-12423-3
+references:
+- doi: 10.1140/epjc/s10052-024-12423-3
+  citation: Gonzalo & Lucente, Eur. Phys. J. C 84, 119 (2024)
+  relation: describes
+sources:
+- solar
+topics:
+- oscillation
+- solar-model
+software:
+  repository: https://github.com/michelelucente/PEANUTS
+  languages:
+  - Python
+  purposes:
+  - oscillation-probability
+  - astrophysics
+  interfaces:
+  - library
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'

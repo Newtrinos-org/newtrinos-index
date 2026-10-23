@@ -1,0 +1,48 @@
+id: proposal
+type: software
+title: PROPOSAL
+short: 'PROPOSAL: propagation of charged leptons (μ, τ, e) through media, C++ with Python bindings'
+description: Monte Carlo library propagating charged leptons and photons through media with all relevant energy-loss processes; used for muon and tau propagation in neutrino telescopes.
+url_landing: https://github.com/tudo-astroparticlephysics/PROPOSAL
+creators:
+- name: Jan-Hendrik Koehne
+- name: Tomasz Fuchs
+- name: Jan Soedingrekso
+owner:
+  name: tudo-astroparticlephysics
+  kind: organization
+date_published: '2017-05-18'
+date_updated: '2026-05-19'
+license: LGPL-3.0-or-later
+access: open
+distributions:
+- url: https://github.com/tudo-astroparticlephysics/PROPOSAL
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1016/j.cpc.2013.04.001
+references:
+- doi: 10.1016/j.cpc.2013.04.001
+  citation: Koehne et al., Comput. Phys. Commun. 184, 2070 (2013)
+  relation: describes
+sources:
+- atmospheric
+- astrophysical
+topics:
+- detector-response
+software:
+  repository: https://github.com/tudo-astroparticlephysics/PROPOSAL
+  languages:
+  - C++
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  - python-bindings
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'

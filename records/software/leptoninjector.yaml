@@ -1,0 +1,46 @@
+id: leptoninjector
+type: software
+title: LeptonInjector and LeptonWeighter
+short: 'LeptonInjector/LeptonWeighter: neutrino event injection and weighting for large-volume neutrino observatories'
+description: Standalone generator that injects leptons and hadronic showers from neutrino interactions in large volumes, with LeptonWeighter to reweight to arbitrary fluxes and cross sections.
+url_landing: https://github.com/icecube/LeptonInjector
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+owner:
+  name: icecube
+  kind: organization
+date_published: '2019-08-26'
+date_updated: '2026-10-06'
+license: LGPL-3.0-or-later
+access: open
+distributions:
+- url: https://github.com/icecube/LeptonInjector
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- doi:10.1016/j.cpc.2021.108018
+references:
+- doi: 10.1016/j.cpc.2021.108018
+  citation: IceCube, Comput. Phys. Commun. 266, 108018 (2021)
+  relation: describes
+sources:
+- atmospheric
+- astrophysical
+topics:
+- cross-section
+software:
+  repository: https://github.com/icecube/LeptonInjector
+  languages:
+  - C++
+  purposes:
+  - event-generator
+  interfaces:
+  - library
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: 'wave 1c: GitHub API + INSPIRE/Crossref'
