@@ -99,7 +99,7 @@ h3 { font-size: 1.05rem; margin: 0 0 0.5rem; }
 .tag.status-partial, .tag.status-in-progress { background: var(--warn-soft); color: var(--warn); border-color: transparent; }
 
 .browse { display: grid; grid-template-columns: 230px 1fr; gap: 1.5rem; align-items: start; }
-.facets { position: sticky; top: 1rem; }
+.facets { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; overscroll-behavior: contain; padding-right: 0.3rem; }
 .facet { margin-bottom: 1.2rem; }
 .facet h4 { margin: 0 0 0.4rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
 .facet label { display: flex; justify-content: space-between; gap: 0.5rem; padding: 0.2rem 0.4rem; border-radius: 6px; cursor: pointer; font-size: 0.92rem; }
@@ -142,7 +142,7 @@ th, td { padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); text-al
 
 @media (max-width: 760px) {
   .browse { grid-template-columns: 1fr; }
-  .facets { position: static; }
+  .facets { position: static; max-height: none; overflow: visible; }
   .pair { grid-template-columns: 1fr; }
   .kv th { width: auto; }
   h1 { font-size: 1.45rem; }
