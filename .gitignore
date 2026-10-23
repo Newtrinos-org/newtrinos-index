@@ -2,3 +2,5 @@ public/
 /status/
 *.swp
 .harvest_cache/
+candidates/*/
+candidates/HARVEST.md
