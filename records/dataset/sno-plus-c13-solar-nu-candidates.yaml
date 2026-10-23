@@ -1,0 +1,38 @@
+id: sno-plus-c13-solar-nu-candidates
+type: dataset
+title: 'SNO+ first evidence of solar ν on ¹³C: candidate event list'
+short: 'SNO+ first evidence of solar ν on ¹³C: candidate event list'
+description: Supplemental PDF with key event variables of every coincidence candidate, and the same event list as CSV on the SNO+ web site.
+url_landing: https://snoplus.phy.queensu.ca/data/c13_2025_data.csv
+license: none-stated
+access: open
+distributions:
+- url: https://snoplus.phy.queensu.ca/data/c13_2025_data.csv
+  host: institutional
+  role: primary
+- url: https://doi.org/10.1103/1frl-95gj
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/1frl-95gj
+  relation: describes
+- arxiv: '2508.20844'
+  relation: describes
+experiments:
+- sno-plus
+sources:
+- solar
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: Supplemental_Material_For_The_First_Evidence_of_Solar_Neutrino_Interact.pdf'
+  - SM PDF contains event-list tables; also CSV event list on SNO+ site

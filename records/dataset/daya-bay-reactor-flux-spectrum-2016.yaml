@@ -1,0 +1,39 @@
+id: daya-bay-reactor-flux-spectrum-2016
+type: dataset
+title: 'Daya Bay reactor antineutrino flux and spectrum (2016): extracted spectrum'
+short: 'Daya Bay reactor antineutrino flux and spectrum (2016): extracted spectrum'
+description: 'APS supplemental files: extracted reactor antineutrino spectrum with covariance, target mass and fission fractions (TXT and ROOT), plus a note on how to apply it.'
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.116.061801
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.116.061801
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.116.061801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.116.061801
+  relation: describes
+- arxiv: '1508.04233'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- flux
+channels:
+- ibd
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: SupplementalMaterial.txt, SupplementalMaterial.root, reactor_antineutrino_spectrum_application.pdf'
+  - Daya Bay reactor flux/spectrum

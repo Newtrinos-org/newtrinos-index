@@ -1,0 +1,37 @@
+id: super-k-neutron-decay-antinu-k0-release
+type: dataset
+title: 'Super-K search for n → ν̄ K⁰ (0.401 Mt·yr): data release'
+short: 'Super-K search for n → ν̄ K⁰ (0.401 Mt·yr): data release'
+description: Zenodo data release with the numerical data behind the figures and tables.
+url_landing: https://doi.org/10.5281/zenodo.15779744
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15779744
+  host: zenodo
+  role: primary
+- url: https://doi.org/10.1103/thqt-8fp1
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/thqt-8fp1
+  relation: describes
+- arxiv: '2506.14406'
+  relation: describes
+experiments:
+- super-k
+sources:
+- none
+topics:
+- bsm-other
+data:
+  levels:
+  - tables
+  - digitized
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23'
+  - PRD; supplemental page 404; ref 44 Zenodo data release

@@ -1,0 +1,39 @@
+id: daya-bay-fuel-evolution-2022
+type: dataset
+title: 'Daya Bay improved reactor flux and spectrum evolution with fuel composition (2022): data'
+short: 'Daya Bay improved reactor flux and spectrum evolution with fuel composition (2022): data'
+description: 'APS supplemental files: Fig. 4 data, total and differential IBD-yield evolution and the systematic covariance matrices of the fit parameters.'
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.130.211801
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.130.211801
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.130.211801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.130.211801
+  relation: describes
+- arxiv: '2210.01068'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- flux
+channels:
+- ibd
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: Fig4.txt, IBDYieldEvolutionInformation.txt, Q_cov_syst.txt, U_cov_syst.txt, V_cov_syst.txt, Q_matrix_pic.pdf, U_mat'
+  - Daya Bay fuel evolution data + covariances

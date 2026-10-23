@@ -1,0 +1,36 @@
+id: gerda-2vbb-final-figure-data
+type: dataset
+title: 'GERDA final 2νββ half-life of ⁷⁶Ge: figure data'
+short: 'GERDA final 2νββ half-life of ⁷⁶Ge: figure data'
+description: 'APS supplemental files: dead-layer thickness per detector before/after data taking (Fig. 2) and the fitted spectrum histogram with 2νββ and background components (Fig. 3).'
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.131.142501
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.131.142501
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.131.142501
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.131.142501
+  relation: describes
+- arxiv: '2308.09795'
+  relation: describes
+experiments:
+- gerda
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - binned
+  - digitized
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: fig2-data.txt, fig3-data.txt'

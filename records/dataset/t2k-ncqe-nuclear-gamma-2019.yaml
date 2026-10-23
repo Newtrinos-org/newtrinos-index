@@ -1,0 +1,39 @@
+id: t2k-ncqe-nuclear-gamma-2019
+type: dataset
+title: 'T2K neutrino and antineutrino NCQE-like interactions on oxygen (2019): data release'
+short: 'T2K neutrino and antineutrino NCQE-like interactions on oxygen (2019): data release'
+description: T2K public results page for the NCQE-like measurement via nuclear de-excitation γ rays in Super-K.
+url_landing: http://t2k-experiment.org/results/2019-NCQE-nuclear-gamma
+license: none-stated
+access: open
+distributions:
+- url: http://t2k-experiment.org/results/2019-NCQE-nuclear-gamma
+  host: institutional
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.100.112009
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.100.112009
+  relation: describes
+- arxiv: '1910.09439'
+  relation: describes
+experiments:
+- t2k
+- super-k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- nc
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23'
+  - T2K results page (ref 71)

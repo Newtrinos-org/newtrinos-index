@@ -1,0 +1,36 @@
+id: daya-bay-he8-li9-yields-tables
+type: dataset
+title: 'Daya Bay cosmogenic ⁸He/⁹Li yields: measured and simulated yield tables'
+short: 'Daya Bay cosmogenic ⁸He/⁹Li yields: measured and simulated yield tables'
+description: 'Supplemental PDFs: summary of measured and Geant4/FLUKA-simulated production yields, and the Geant4 hadronic model configurations.'
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.110.L011101
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.110.L011101
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.110.L011101
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.110.L011101
+  relation: describes
+- arxiv: '2402.05383'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- cosmogenic
+topics:
+- detector-response
+data:
+  levels:
+  - tables
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: Supplemental1_Summary_of_measured_and_simulated_yields.pdf, Supplemental2_hadronic_models_in_Geant4.pdf'
+  - PDF with data tables (yields)

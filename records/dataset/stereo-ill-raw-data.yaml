@@ -1,0 +1,37 @@
+id: stereo-ill-raw-data
+type: dataset
+title: STEREO raw data at the ILL (run cycles 163–181 and later)
+short: STEREO raw data at the ILL (run cycles 163–181 and later)
+description: ILL data DOIs for the STEREO run cycles (e.g. 10.5291/ILL-DATA.ST-6 … ST-12), cited by the STEREO PRL papers.
+url_landing: https://doi.org/10.5291/ILL-DATA.ST-9
+license: none-stated
+access: registration
+distributions:
+- url: https://doi.org/10.5291/ILL-DATA.ST-9
+  host: institutional
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.125.201801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.125.201801
+  relation: describes
+- arxiv: '2004.04075'
+  relation: describes
+experiments:
+- stereo
+sources:
+- reactor
+topics:
+- sterile
+- flux
+data:
+  levels:
+  - raw
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23'
+  - supplemental page 404; STEREO run-cycle ILL raw datasets; zenodo = FIFRELIN Gd gamma data

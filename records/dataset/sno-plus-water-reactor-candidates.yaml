@@ -1,0 +1,38 @@
+id: sno-plus-water-reactor-candidates
+type: dataset
+title: 'SNO+ reactor antineutrinos in pure water: candidate event table'
+short: 'SNO+ reactor antineutrinos in pure water: candidate event table'
+description: Supplemental PDF with the significance formula and the event variables of all reactor-antineutrino candidates.
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.130.091801
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.130.091801
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.130.091801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.130.091801
+  relation: describes
+- arxiv: '2210.14154'
+  relation: describes
+experiments:
+- sno-plus
+sources:
+- reactor
+topics:
+- flux
+channels:
+- ibd
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: SNOplus_ReactorNuWater_Supplemental.pdf'
+  - PDF contains event-list table

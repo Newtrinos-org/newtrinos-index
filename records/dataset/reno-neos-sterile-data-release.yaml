@@ -1,0 +1,40 @@
+id: reno-neos-sterile-data-release
+type: dataset
+title: 'RENO + NEOS joint sterile-neutrino search: spectrum and covariance data release'
+short: 'RENO + NEOS joint sterile-neutrino search: spectrum and covariance data release'
+description: 'APS supplemental RENO_NEOS_data_releaseV2.txt: the antineutrino spectrum ratio data and covariance matrix of the joint analysis.'
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.105.L111101
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.105.L111101
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.105.L111101
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.105.L111101
+  relation: describes
+- arxiv: '2011.00896'
+  relation: describes
+experiments:
+- reno
+- neos
+sources:
+- reactor
+topics:
+- sterile
+channels:
+- ibd
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: RENO_NEOS_data_releaseV2.txt'
+  - RENO+NEOS data release

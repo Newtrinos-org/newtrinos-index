@@ -1,0 +1,40 @@
+id: reno-flux-spectrum-2021
+type: dataset
+title: 'RENO reactor antineutrino flux and spectrum (2021): data'
+short: 'RENO reactor antineutrino flux and spectrum (2021): data'
+description: 'APS supplemental RENOsupplementaryData202111.txt: prompt and antineutrino spectra with covariances and the response matrix.'
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.104.L111301
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.104.L111301
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.104.L111301
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.104.L111301
+  relation: describes
+- arxiv: '2010.14989'
+  relation: describes
+experiments:
+- reno
+sources:
+- reactor
+topics:
+- flux
+channels:
+- ibd
+data:
+  levels:
+  - binned
+  - systematics
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: RENOsupplementaryData202111.txt'
+  - data file (txt)

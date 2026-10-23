@@ -11,8 +11,14 @@ distributions:
   host: arxiv
   role: primary
   label: arXiv ancillary files (listed on the abstract page)
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.128.151801
+  host: journal-supplement
+  role: mirror
+  label: 'APS Supplemental Material: Supplemental.pdf, microboone_cc_inclusive_addtl_smr_mat.txt, microboone_cc_inclusive_cov_mat.txt, microboone_cc_inclusive_cross_section.txt'
 references:
 - arxiv: '2110.14023'
+  relation: describes
+- doi: 10.1103/PhysRevLett.128.151801
   relation: describes
 experiments:
 - microboone

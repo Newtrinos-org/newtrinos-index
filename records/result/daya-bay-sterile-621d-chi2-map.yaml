@@ -1,0 +1,36 @@
+id: daya-bay-sterile-621d-chi2-map
+type: result
+title: 'Daya Bay light sterile neutrino search, 621 days: χ² map'
+short: 'Daya Bay light sterile neutrino search, 621 days: χ² map'
+description: APS supplemental chiSquareMap_DayaBay_621days.dat with readme on how to draw the 95% CL contour.
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.117.151802
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.117.151802
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.117.151802
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.117.151802
+  relation: describes
+- arxiv: '1607.01174'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- sterile
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: chiSquareMap_DayaBay_621days.dat, readme.pdf'
+  - chi2 map data file

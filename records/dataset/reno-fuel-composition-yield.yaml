@@ -1,0 +1,39 @@
+id: reno-fuel-composition-yield
+type: dataset
+title: 'RENO fuel-composition dependent reactor antineutrino yield: figure data'
+short: 'RENO fuel-composition dependent reactor antineutrino yield: figure data'
+description: APS supplemental text files with the data of Figs. 1, 2 and 5.
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.122.232501
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.122.232501
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.122.232501
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.122.232501
+  relation: describes
+- arxiv: '1806.00574'
+  relation: describes
+experiments:
+- reno
+sources:
+- reactor
+topics:
+- flux
+channels:
+- ibd
+data:
+  levels:
+  - binned
+  - digitized
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: supplemental_fig1.txt, supplemental_fig2.txt, supplemental_fig5.txt'
+  - data files (txt)

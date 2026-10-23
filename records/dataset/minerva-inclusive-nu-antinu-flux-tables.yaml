@@ -1,0 +1,39 @@
+id: minerva-inclusive-nu-antinu-flux-tables
+type: dataset
+title: 'MINERvA inclusive ν and ν̄ CC cross sections and flux: tables'
+short: 'MINERvA inclusive ν and ν̄ CC cross sections and flux: tables'
+description: Supplemental PDF with bin contents and weighted bin centres of the inclusive cross sections and flux (a covariance file is mentioned but was not listed).
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.94.112007
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.94.112007
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.94.112007
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.94.112007
+  relation: describes
+- arxiv: '1610.04746'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+- flux
+channels:
+- cc
+data:
+  levels:
+  - tables
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: minerva-inclusive_suppl.pdf'
+  - MINERvA; page mentions a second file with covariance matrices for six results that was not listed by the fetch

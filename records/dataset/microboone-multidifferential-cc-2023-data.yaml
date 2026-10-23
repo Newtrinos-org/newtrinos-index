@@ -1,0 +1,39 @@
+id: microboone-multidifferential-cc-2023-data
+type: dataset
+title: 'MicroBooNE multidifferential νμ CC cross sections (2023): supplemental data release'
+short: 'MicroBooNE multidifferential νμ CC cross sections (2023): supplemental data release'
+description: Supplemental PDF; the article states that it contains the data release.
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.108.053002
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.108.053002
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.108.053002
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.108.053002
+  relation: describes
+- arxiv: '2301.03700'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - tables
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: supp.pdf'
+  - MicroBooNE; data release reportedly inside supp.pdf

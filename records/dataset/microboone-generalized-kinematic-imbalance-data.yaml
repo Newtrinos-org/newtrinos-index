@@ -1,0 +1,40 @@
+id: microboone-generalized-kinematic-imbalance-data
+type: dataset
+title: 'MicroBooNE nuclear effects via generalised kinematic imbalance: supplemental data release'
+short: 'MicroBooNE nuclear effects via generalised kinematic imbalance: supplemental data release'
+description: Supplemental PDF; the article states that it contains the data release (cross sections, covariances, smearing).
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.109.092007
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.109.092007
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.109.092007
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.109.092007
+  relation: describes
+- arxiv: '2310.06082'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- ccqe
+data:
+  levels:
+  - tables
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: supp.pdf'
+  - MicroBooNE; data release reportedly inside supp.pdf

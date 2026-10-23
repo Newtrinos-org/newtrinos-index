@@ -1,0 +1,39 @@
+id: minos-daya-bay-bugey-sterile-cls
+type: result
+title: 'MINOS/MINOS+, Daya Bay and Bugey-3 combined sterile search: CLs maps'
+short: 'MINOS/MINOS+, Daya Bay and Bugey-3 combined sterile search: CLs maps'
+description: APS supplemental ROOT histograms and text tables of the CLs maps for Daya Bay+Bugey-3, MINOS/MINOS+ and the combination.
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.125.071801
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.125.071801
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.125.071801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.125.071801
+  relation: describes
+- arxiv: '2002.00301'
+  relation: describes
+experiments:
+- minos
+- daya-bay
+- bugey
+sources:
+- reactor
+- accelerator
+topics:
+- sterile
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: dyb_bgy_cls_map_histogram.root, dyb_bgy_cls_map_table.txt, dyb_bgy_minos_minosplus_cls_map_histogram.root, minos_mi'
+  - data files (root/txt); descriptions inferred from names

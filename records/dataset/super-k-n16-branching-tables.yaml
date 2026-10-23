@@ -1,0 +1,37 @@
+id: super-k-n16-branching-tables
+type: dataset
+title: 'Super-K ¹⁶N branching-ratio measurement: tables and figure data'
+short: 'Super-K ¹⁶N branching-ratio measurement: tables and figure data'
+description: Zip of tables and figure data on the Super-K publications data page.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/tables_figures.zip
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/tables_figures.zip
+  host: institutional
+  role: primary
+- url: https://doi.org/10.1103/b93l-dbpj
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/b93l-dbpj
+  relation: describes
+- arxiv: '2508.18110'
+  relation: describes
+experiments:
+- super-k
+sources:
+- cosmogenic
+topics:
+- detector-response
+data:
+  levels:
+  - tables
+  - digitized
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23'
+  - PRC; supplemental page 404; ref 91 links SK tables/figures data zip

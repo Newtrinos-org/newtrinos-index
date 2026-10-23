@@ -1,0 +1,40 @@
+id: minerva-shallow-inelastic-xsec-tables
+type: dataset
+title: 'MINERvA νμ and ν̄μ shallow-inelastic cross sections: tables'
+short: 'MINERvA νμ and ν̄μ shallow-inelastic cross sections: tables'
+description: Supplementary PDF with measured cross sections, uncertainties and systematic covariances.
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/vq38-kmxq
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/vq38-kmxq
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/vq38-kmxq
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/vq38-kmxq
+  relation: describes
+- arxiv: '2503.20043'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- res
+- dis
+data:
+  levels:
+  - tables
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: SIS_supplementary_data.pdf'
+  - PDF with data tables + covariances

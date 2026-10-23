@@ -11,8 +11,14 @@ distributions:
   host: arxiv
   role: primary
   label: arXiv ancillary files (listed on the abstract page)
+- url: https://journals.aps.org/prl/supplemental/10.1103/mv5z-pfb7
+  host: journal-supplement
+  role: mirror
+  label: 'APS Supplemental Material: Supplemental.pdf, tabulated_supplemental.zip'
 references:
 - arxiv: '2511.11856'
+  relation: describes
+- doi: 10.1103/mv5z-pfb7
   relation: describes
 experiments:
 - sno-plus

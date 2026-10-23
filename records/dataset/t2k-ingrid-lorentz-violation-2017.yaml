@@ -1,0 +1,36 @@
+id: t2k-ingrid-lorentz-violation-2017
+type: dataset
+title: 'T2K INGRID search for Lorentz and CPT violation (sidereal time): data release'
+short: 'T2K INGRID search for Lorentz and CPT violation (sidereal time): data release'
+description: T2K public data page for the sidereal-time-dependence search with the INGRID on-axis near detector.
+url_landing: http://t2k-experiment.org/results/Ingrid-leptonviolation-2017
+license: none-stated
+access: open
+distributions:
+- url: http://t2k-experiment.org/results/Ingrid-leptonviolation-2017
+  host: institutional
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.95.111101
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.95.111101
+  relation: describes
+- arxiv: '1703.01361'
+  relation: describes
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- lorentz-violation
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23'
+  - T2K public data page (ref 28)

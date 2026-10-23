@@ -1,0 +1,40 @@
+id: minerva-me-low-recoil-inclusive
+type: dataset
+title: 'MINERvA medium-energy inclusive CC low-recoil cross sections: supplemental data'
+short: 'MINERvA medium-energy inclusive CC low-recoil cross sections: supplemental data'
+description: APS supplemental supplementalMELowRecoilData.txt with flux, cross section and covariance.
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.106.032001
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.106.032001
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.106.032001
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.106.032001
+  relation: describes
+- arxiv: '2110.13372'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- cc
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: supplementalMELowRecoilData.txt'
+  - data file (txt)

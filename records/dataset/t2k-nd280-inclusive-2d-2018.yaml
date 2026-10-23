@@ -1,0 +1,39 @@
+id: t2k-nd280-inclusive-2d-2018
+type: dataset
+title: 'T2K ND280 inclusive νμ CC double-differential cross section on CH (2018): data'
+short: 'T2K ND280 inclusive νμ CC double-differential cross section on CH (2018): data'
+description: 'APS supplemental files: unfolded cross sections with GENIE and NEUT priors, covariance matrices, flux and ROOT histograms.'
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.98.012004
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.98.012004
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.98.012004
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.98.012004
+  relation: describes
+- arxiv: '1801.05148'
+  relation: describes
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: covariance_matrix_genie.txt, covariance_matrix_neut.txt, data_unfold_with_genie.txt, data_unfold_with_neut.txt, flu'
+  - T2K CC0pi data release (README in package)

@@ -1,0 +1,40 @@
+id: microboone-qe-angle-reconstruction-data-release
+type: dataset
+title: 'MicroBooNE neutrino-angle reconstruction with QE-like events: supplemental data release'
+short: 'MicroBooNE neutrino-angle reconstruction with QE-like events: supplemental data release'
+description: Supplemental PDF with the data release tables, fake-data studies, covariance and regularisation matrices.
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/f8nt-ygng
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/f8nt-ygng
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/f8nt-ygng
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/f8nt-ygng
+  relation: describes
+- arxiv: '2504.17758'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+- detector-response
+channels:
+- ccqe
+data:
+  levels:
+  - tables
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: supp.pdf'
+  - SM PDF contains the data release tables (MicroBooNE)

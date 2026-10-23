@@ -1,0 +1,38 @@
+id: ninja-cc-inclusive-water-2020a
+type: dataset
+title: 'NINJA ν̄μ and νμ CC inclusive interactions on water: data release 2020a'
+short: 'NINJA ν̄μ and νμ CC inclusive interactions on water: data release 2020a'
+description: NINJA emulsion-detector data release page for the first CC-inclusive measurement on water.
+url_landing: https://flab.phys.nagoya-u.ac.jp/ninja/data-release-2020a/
+license: none-stated
+access: open
+distributions:
+- url: https://flab.phys.nagoya-u.ac.jp/ninja/data-release-2020a/
+  host: institutional
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.102.072006
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.102.072006
+  relation: describes
+- arxiv: '2008.03895'
+  relation: describes
+experiments:
+- ninja
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23'
+  - NINJA data release (ref 44)

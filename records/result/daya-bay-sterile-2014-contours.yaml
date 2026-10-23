@@ -1,0 +1,36 @@
+id: daya-bay-sterile-2014-contours
+type: result
+title: 'Daya Bay first light sterile neutrino search (2014): exclusion contours'
+short: 'Daya Bay first light sterile neutrino search (2014): exclusion contours'
+description: 'APS supplemental material: Feldman–Cousins 90% and CLs 95% exclusion contours (PDF and TeX).'
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.113.141802
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.113.141802
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.113.141802
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.113.141802
+  relation: describes
+- arxiv: '1407.7259'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- sterile
+data:
+  levels:
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: data_contour_90.pdf, supplemental.bbl, supplemental.pdf, supplemental.tex'
+  - contour values possibly in tex tables (unverified)

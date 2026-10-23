@@ -1,0 +1,36 @@
+id: kamland-zen-800-delta-chi2
+type: result
+title: 'KamLAND-Zen 800 Majorana search in the inverted-ordering region: Δχ² profile'
+short: 'KamLAND-Zen 800 Majorana search in the inverted-ordering region: Δχ² profile'
+description: APS supplemental SupplementaryData_KamLANDZen_20220304.txt with the Δχ² profile in the 0νββ rate.
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.130.051801
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.130.051801
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.130.051801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.130.051801
+  relation: describes
+- arxiv: '2203.02139'
+  relation: describes
+experiments:
+- kamland-zen
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: SupplementaryData_KamLANDZen_20220304.txt'
+  - data file (txt)

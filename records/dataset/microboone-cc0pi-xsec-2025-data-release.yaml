@@ -1,0 +1,40 @@
+id: microboone-cc0pi-xsec-2025-data-release
+type: dataset
+title: 'MicroBooNE νμ CC0π cross sections in pμ, cos θμ and 2D (2025): data release'
+short: 'MicroBooNE νμ CC0π cross sections in pμ, cos θμ and 2D (2025): data release'
+description: 'APS supplemental files: measured cross sections, covariance matrices, Wiener-SVD additional smearing matrices and binning for 1D cos θμ, 1D pμ and 2D, plus a PDF with binning, migrations and generator comparisons.'
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/xfs2-94m3
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/xfs2-94m3
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/xfs2-94m3
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/xfs2-94m3
+  relation: describes
+- arxiv: '2507.00921'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- ccqe
+data:
+  levels:
+  - binned
+  - systematics
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: SupplementalMaterial.pdf, ac_1d_costhetamu.txt, ac_1d_pmu.txt, ac_2d.txt, bins_1d_ctmu.txt, bins_1d_pmu.txt, bins_2'
+  - MicroBooNE CC0pi xsec data release in SM (txt descriptions inferred from names)

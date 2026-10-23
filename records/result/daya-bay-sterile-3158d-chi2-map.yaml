@@ -1,0 +1,36 @@
+id: daya-bay-sterile-3158d-chi2-map
+type: result
+title: 'Daya Bay sub-eV sterile neutrino search, full dataset: χ² map'
+short: 'Daya Bay sub-eV sterile neutrino search, full dataset: χ² map'
+description: APS supplemental chiSquareMap_DayaBay_3158days.dat with readme on how to build the contours, and a comparison with other experiments.
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.133.051801
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.133.051801
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.133.051801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.133.051801
+  relation: describes
+- arxiv: '2404.01687'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- sterile
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: comparisson-with-others.pdf, chiSquareMap_DayaBay_3158days.dat, readme.pdf, shape_rate.pdf'
+  - chi2 map data file

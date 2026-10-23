@@ -1,0 +1,37 @@
+id: gerda-bosonic-superwimp-data
+type: dataset
+title: 'GERDA search for bosonic super-WIMPs: spectra and coupling limits'
+short: 'GERDA search for bosonic super-WIMPs: spectra and coupling limits'
+description: 'APS supplemental CSV files: analysed BEGe and coax spectra, example signal fits, and coupling-strength limits.'
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.125.011801
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.125.011801
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.125.011801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.125.011801
+  relation: describes
+- arxiv: '2005.14184'
+  relation: describes
+experiments:
+- gerda
+sources:
+- nuclear-decay
+topics:
+- dark-matter
+data:
+  levels:
+  - binned
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: 1_gerda_spectrum_bege.csv, 1_gerda_spectrum_coax.csv, 2_signal_fit_87keV.csv, 2_signal_fit_520keV.csv, 3_results_co'
+  - GERDA spectra CSVs

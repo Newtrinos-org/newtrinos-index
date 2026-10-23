@@ -1,0 +1,39 @@
+id: reno-2200d-spectra
+type: dataset
+title: 'RENO oscillation amplitude and frequency (2018, ~2200 days): spectra data'
+short: 'RENO oscillation amplitude and frequency (2018, ~2200 days): spectra data'
+description: 'APS supplemental text files: observed and expected near/far prompt spectra (Fig. 1), far spectrum vs no-oscillation prediction (Fig. 2), Fig. 4 data, and a table of IBD signal losses.'
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.121.201801
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.121.201801
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.121.201801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.121.201801
+  relation: describes
+- arxiv: '1806.00248'
+  relation: describes
+experiments:
+- reno
+sources:
+- reactor
+topics:
+- oscillation
+channels:
+- ibd
+data:
+  levels:
+  - binned
+  - digitized
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: Table_signal_loss.pdf, supplemental_fig1.txt, supplemental_fig2.txt, supplemental_fig4.txt'
+  - RENO 2200-day spectra

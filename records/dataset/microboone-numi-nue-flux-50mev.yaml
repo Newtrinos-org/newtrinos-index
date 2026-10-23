@@ -1,0 +1,35 @@
+id: microboone-numi-nue-flux-50mev
+type: dataset
+title: MicroBooNE NuMI νe and ν̄e fluxes at MicroBooNE (50 MeV bins)
+short: MicroBooNE NuMI νe and ν̄e fluxes at MicroBooNE (50 MeV bins)
+description: APS supplemental text files with the NuMI νe and ν̄e flux predictions at MicroBooNE in 50 MeV bins.
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.104.052002
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/PhysRevD.104.052002
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevD.104.052002
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevD.104.052002
+  relation: describes
+- arxiv: '2101.04228'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: MicroBooNE_NuMI_Nue_Flux_50MeVBins.txt, MicroBooNE_NuMI_Nuebar_Flux_50MeVBins.txt'

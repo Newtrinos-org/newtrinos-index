@@ -1,0 +1,36 @@
+id: sno-plus-cosmogenic-neutron-yield-tables
+type: dataset
+title: 'SNO+ cosmogenic neutron production in water: binned data tables'
+short: 'SNO+ cosmogenic neutron production in water: binned data tables'
+description: Supplemental PDF with histograms and tables of selected muons, neutrons and random backgrounds.
+url_landing: https://journals.aps.org/prd/supplemental/10.1103/vs3y-sbb2
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prd/supplemental/10.1103/vs3y-sbb2
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/vs3y-sbb2
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/vs3y-sbb2
+  relation: describes
+- arxiv: '2511.04600'
+  relation: describes
+experiments:
+- sno-plus
+sources:
+- cosmogenic
+topics:
+- detector-response
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: supp_mat.pdf'
+  - supplement PDF contains binned data tables

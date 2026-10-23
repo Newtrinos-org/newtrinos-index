@@ -1,0 +1,38 @@
+id: minerva-nc-kplus-tables
+type: dataset
+title: 'MINERvA neutral-current K⁺ production: cross-section tables'
+short: 'MINERvA neutral-current K⁺ production: cross-section tables'
+description: Supplemental PDF with tables of differential cross sections and stat/syst uncertainties.
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.119.011802
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.119.011802
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.119.011802
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.119.011802
+  relation: describes
+- arxiv: '1611.02224'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- nc
+data:
+  levels:
+  - tables
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: supplement.pdf'
+  - MINERvA; PDF data tables

@@ -1,0 +1,40 @@
+id: prospect-final-u235-spectrum
+type: dataset
+title: 'PROSPECT final ²³⁵U antineutrino spectrum: data release'
+short: 'PROSPECT final ²³⁵U antineutrino spectrum: data release'
+description: 'APS supplemental files: joint response matrix, prompt spectrum and covariance, unfolded antineutrino spectrum and covariance, smearing matrix.'
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.131.021802
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.131.021802
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.131.021802
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.131.021802
+  relation: describes
+- arxiv: '2212.10669'
+  relation: describes
+experiments:
+- prospect
+sources:
+- reactor
+topics:
+- flux
+channels:
+- ibd
+data:
+  levels:
+  - binned
+  - systematics
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: Joint_Response_Matrix.txt, Joint_Prompt_Spectrum_.txt, Joint_Prompt_Covariance_SM.txt, UnfoldAntineutrinoSpectrum.t'
+  - data files (txt); descriptions inferred from names

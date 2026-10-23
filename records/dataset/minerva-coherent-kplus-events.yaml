@@ -11,8 +11,14 @@ distributions:
   host: arxiv
   role: primary
   label: arXiv ancillary files (listed on the abstract page)
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.117.061802
+  host: journal-supplement
+  role: mirror
+  label: 'APS Supplemental Material: supplement.pdf'
 references:
 - arxiv: '1606.08890'
+  relation: describes
+- doi: 10.1103/PhysRevLett.117.061802
   relation: describes
 experiments:
 - minerva

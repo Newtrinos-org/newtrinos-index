@@ -1,0 +1,36 @@
+id: icarus-kaon-scalar-dimuon-limits
+type: result
+title: 'ICARUS hidden-sector scalar from kaon decay (dimuon): limit table'
+short: 'ICARUS hidden-sector scalar from kaon decay (dimuon): limit table'
+description: Supplementary PDF with the annotated 90% CL limits vs lifetime, mass and branching ratio.
+url_landing: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.134.151801
+license: none-stated
+access: open
+distributions:
+- url: https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.134.151801
+  host: journal-supplement
+  role: primary
+- url: https://doi.org/10.1103/PhysRevLett.134.151801
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/PhysRevLett.134.151801
+  relation: describes
+- arxiv: '2411.02727'
+  relation: describes
+experiments:
+- icarus
+sources:
+- accelerator
+topics:
+- bsm-other
+data:
+  levels:
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: APS supplemental-material scan (collaboration papers, 2026-10-23)
+  quality_notes:
+  - 'found by the APS supplemental-material scan: APS supplemental page listed by agent fetch, 2026-10-23 ; files: Supplementary.pdf'
+  - ICARUS; ref 77 describes supplement as annotated machine-readable limit table
