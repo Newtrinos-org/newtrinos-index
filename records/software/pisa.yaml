@@ -26,10 +26,8 @@ references:
 - doi: 10.1016/j.nima.2020.164332
   citation: IceCube, Nucl. Instrum. Meth. A 977, 164332 (2020)
   relation: describes
-experiments:
-- icecube
-- deepcore
-- icecube-upgrade
+experiments: [icecube]
+detectors: [deepcore, icecube-upgrade]
 sources:
 - atmospheric
 topics:

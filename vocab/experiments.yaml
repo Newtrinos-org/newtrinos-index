@@ -42,12 +42,34 @@
 - {id: coherent, name: COHERENT, collaboration: COHERENT, sources: [spallation], technology: [crystal, lartpc, germanium], site: SNS (USA), start: 2015, website: "https://sites.duke.edu/coherent/"}
 - {id: conus, name: CONUS, aliases: [CONUS+], collaboration: CONUS, sources: [reactor], technology: [germanium], site: Brokdorf / Leibstadt}
 # --- neutrino telescopes ---
-- {id: icecube, name: IceCube, aliases: [IceCube Neutrino Observatory, IC86, IC79, IC40], collaboration: IceCube, sources: [astrophysical, atmospheric, supernova], technology: [ice-cherenkov], site: South Pole, start: 2011, website: "https://icecube.wisc.edu"}
-- {id: deepcore, name: IceCube DeepCore, aliases: [DeepCore], collaboration: IceCube, sources: [atmospheric], technology: [ice-cherenkov], site: South Pole, start: 2011}
-- {id: icecube-upgrade, name: IceCube Upgrade, collaboration: IceCube, sources: [atmospheric], technology: [ice-cherenkov], site: South Pole}
-- {id: km3net-orca, name: KM3NeT/ORCA, aliases: [ORCA, ORCA6, ORCA115], collaboration: KM3NeT, sources: [atmospheric], technology: [water-cherenkov-open], site: Toulon (France), start: 2017, website: "https://www.km3net.org"}
-- {id: km3net-arca, name: KM3NeT/ARCA, aliases: [ARCA], collaboration: KM3NeT, sources: [astrophysical, atmospheric], technology: [water-cherenkov-open], site: Capo Passero (Italy), website: "https://www.km3net.org"}
-- {id: antares, name: ANTARES, collaboration: ANTARES, sources: [astrophysical, atmospheric], technology: [water-cherenkov-open], site: Toulon (France), start: 2008, end: 2022}
+- {id: amanda, name: AMANDA, aliases: [AMANDA-II, AMANDA-B10], collaboration: AMANDA, sources: [astrophysical, atmospheric], technology: [ice-cherenkov], site: South Pole, start: 1997, end: 2009, successor: icecube}
+- id: icecube
+  name: IceCube
+  aliases: [IceCube Neutrino Observatory, IC86, IC79, IC59, IC40, IC22]
+  collaboration: IceCube
+  sources: [astrophysical, atmospheric, supernova]
+  technology: [ice-cherenkov]
+  site: South Pole
+  start: 2011
+  website: "https://icecube.wisc.edu"
+  predecessor: amanda
+  detectors:
+    - {id: deepcore, name: DeepCore, aliases: [IceCube DeepCore, oscNext, GRECO], description: "densely instrumented low-energy (GeV) sub-array", start: 2011}
+    - {id: icecube-upgrade, name: IceCube Upgrade, aliases: [Upgrade], description: "seven new strings inside DeepCore, under construction"}
+    - {id: icetop, name: IceTop, description: "surface air-shower array"}
+- id: km3net
+  name: KM3NeT
+  collaboration: KM3NeT
+  sources: [atmospheric, astrophysical]
+  technology: [water-cherenkov-open]
+  site: Mediterranean Sea
+  start: 2017
+  website: "https://www.km3net.org"
+  predecessor: antares
+  detectors:
+    - {id: orca, name: ORCA, aliases: [KM3NeT/ORCA, ORCA6, ORCA115], description: "dense GeV detector off Toulon (France): oscillations, mass ordering", start: 2017}
+    - {id: arca, name: ARCA, aliases: [KM3NeT/ARCA], description: "TeV–PeV detector off Capo Passero (Italy): neutrino astronomy"}
+- {id: antares, name: ANTARES, collaboration: ANTARES, sources: [astrophysical, atmospheric], technology: [water-cherenkov-open], site: Toulon (France), start: 2008, end: 2022, successor: km3net}
 - {id: baikal-gvd, name: Baikal-GVD, collaboration: Baikal-GVD, sources: [astrophysical, atmospheric], technology: [water-cherenkov-open], site: Lake Baikal (Russia)}
 # --- absolute mass / double beta ---
 - {id: katrin, name: KATRIN, collaboration: KATRIN, sources: [nuclear-decay], technology: [spectrometer], site: KIT (Germany), start: 2018, website: "https://www.katrin.kit.edu"}

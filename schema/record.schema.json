@@ -439,6 +439,15 @@
       "type": "array",
       "uniqueItems": true
     },
+    "detectors": {
+      "description": "sub-detectors / parts of an experiment (e.g. IceCube DeepCore, KM3NeT/ORCA); their experiment must be listed in `experiments`",
+      "items": {
+        "enum": ["deepcore", "icecube-upgrade", "icetop", "orca", "arca"],
+        "x-vocab": "detectors"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
     "distributions": {
       "items": {
         "$ref": "#/definitions/distribution"
@@ -472,7 +481,7 @@
     },
     "experiments": {
       "items": {
-        "enum": ["homestake", "gallex", "gno", "sage", "best", "kamiokande", "super-k", "hyper-k", "sno", "sno-plus", "borexino", "kamland", "daya-bay", "double-chooz", "chooz", "reno", "juno", "bugey", "prospect", "stereo", "danss", "neos", "k2k", "t2k", "nova", "minos", "opera", "icarus", "microboone", "sbnd", "miniboone", "lsnd", "karmen", "minerva", "dune", "coherent", "conus", "icecube", "deepcore", "icecube-upgrade", "km3net-orca", "km3net-arca", "antares", "baikal-gvd", "katrin", "gerda", "legend", "cuore", "kamland-zen", "exo-200", "nomad", "anl-12ft", "bnl-7ft", "argoneut", "majorana"],
+        "enum": ["homestake", "gallex", "gno", "sage", "best", "kamiokande", "super-k", "hyper-k", "sno", "sno-plus", "borexino", "kamland", "daya-bay", "double-chooz", "chooz", "reno", "juno", "bugey", "prospect", "stereo", "danss", "neos", "k2k", "t2k", "nova", "minos", "opera", "icarus", "microboone", "sbnd", "miniboone", "lsnd", "karmen", "minerva", "dune", "coherent", "conus", "amanda", "icecube", "km3net", "antares", "baikal-gvd", "katrin", "gerda", "legend", "cuore", "kamland-zen", "exo-200", "nomad", "anl-12ft", "bnl-7ft", "argoneut", "majorana"],
         "x-vocab": "experiments"
       },
       "type": "array",

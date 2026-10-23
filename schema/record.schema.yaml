@@ -155,6 +155,7 @@ properties:
 
   # ---------------------------------------------------------------- neutrino physics classification
   experiments: {type: array, items: {$vocab: experiments}, uniqueItems: true}
+  detectors: {type: array, items: {$vocab: detectors}, uniqueItems: true, description: "sub-detectors / parts of an experiment (e.g. IceCube DeepCore, KM3NeT/ORCA); their experiment must be listed in `experiments`"}
   collaborations: {$ref: "#/definitions/text_list"}
   sources: {type: array, items: {$vocab: sources}, uniqueItems: true}
   topics: {type: array, items: {$vocab: topics}, uniqueItems: true}

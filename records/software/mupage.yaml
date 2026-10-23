@@ -28,9 +28,8 @@ distributions:
 - url: https://doi.org/10.5281/zenodo.23414737
   host: zenodo
   role: primary
-experiments:
-- km3net-orca
-- km3net-arca
+experiments: [km3net]
+detectors: [orca, arca]
 sources:
 - atmospheric
 - astrophysical

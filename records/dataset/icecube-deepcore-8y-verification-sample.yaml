@@ -33,8 +33,8 @@ references:
   relation: describes
 relations:
   - {rel: is_part_of, target: icecube-data-releases}
-experiments:
-- deepcore
+experiments: [icecube]
+detectors: [deepcore]
 sources:
 - atmospheric
 topics:

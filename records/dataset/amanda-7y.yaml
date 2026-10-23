@@ -22,8 +22,7 @@ distributions:
 references:
 - doi: 10.1103/physrevd.79.062001
   relation: describes
-experiments:
-- icecube
+experiments: [amanda]
 sources:
 - astrophysical
 topics:

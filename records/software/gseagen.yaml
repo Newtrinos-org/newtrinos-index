@@ -21,9 +21,8 @@ distributions:
 references:
 - doi: 10.1016/j.cpc.2020.107477
   relation: describes
-experiments:
-- km3net-orca
-- km3net-arca
+experiments: [km3net]
+detectors: [orca, arca]
 sources:
 - atmospheric
 - astrophysical

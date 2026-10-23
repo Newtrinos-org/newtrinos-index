@@ -10,6 +10,7 @@
     { key: "type", label: "Kind", get: (e) => [e.type_label] },
     { key: "source", label: "Neutrino source", get: (e) => e.sources },
     { key: "experiment", label: "Experiment", get: (e) => e.experiments },
+    { key: "detector", label: "Detector", get: (e) => e.detectors || [] },
     { key: "topic", label: "Topic", get: (e) => e.topics },
     { key: "level", label: "Data level", get: (e) => e.levels },
     { key: "access", label: "Access", get: (e) => [e.access] },
@@ -35,12 +36,12 @@
       if (!f.get(e).some((v) => state[f.key].has(v))) return false;
     }
     const words = search.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
-    const hay = [e.title, e.short, e.doi, e.id, e.keywords, e.experiments.join(" "), e.sources.join(" "), e.topics.join(" ")].join(" ").toLowerCase();
+    const hay = [e.title, e.short, e.doi, e.id, e.keywords, e.experiments.join(" "), (e.detectors || []).join(" "), e.sources.join(" "), e.topics.join(" ")].join(" ").toLowerCase();
     return words.every((w) => hay.includes(w));
   }
 
   function card(e) {
-    const tags = `<span class="tag cat">${esc(e.type_label)}</span> ` + e.experiments.map((x) => `<span class="tag exp">${esc(x)}</span>`).join(" ") +
+    const tags = `<span class="tag cat">${esc(e.type_label)}</span> ` + e.experiments.concat(e.detectors || []).map((x) => `<span class="tag exp">${esc(x)}</span>`).join(" ") +
       " " + e.sources.filter((s) => s !== "Not source-specific").map((x) => `<span class="tag">${esc(x)}</span>`).join(" ") +
       ` <span class="tag status-${e.status}">${esc(STATUS[e.status] || e.status)}</span>`;
     return `<article class="card">

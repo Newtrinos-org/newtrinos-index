@@ -14,9 +14,8 @@ distributions:
 - url: https://icecube.wisc.edu/science/data-releases/
   host: institutional
   role: primary
-experiments:
-- icecube
-- deepcore
+experiments: [icecube]
+detectors: [deepcore, icecube-upgrade]
 sources:
 - atmospheric
 - astrophysical

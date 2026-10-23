@@ -22,7 +22,8 @@ references:
 relations:
   - {rel: is_part_of, target: icecube-data-releases}
   - {rel: compares_with, target: icecube-deepcore-3y-chi2-maps}
-experiments: [deepcore]
+experiments: [icecube]
+detectors: [deepcore]
 sources: [atmospheric]
 topics: [oscillation, mass-ordering]
 channels: [cc, nc]

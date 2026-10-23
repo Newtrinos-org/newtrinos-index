@@ -29,8 +29,8 @@ references:
   relation: describes
 relations:
   - {rel: is_part_of, target: icecube-data-releases}
-experiments:
-- icecube-upgrade
+experiments: [icecube]
+detectors: [icecube-upgrade]
 sources:
 - atmospheric
 topics:

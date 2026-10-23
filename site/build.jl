@@ -121,6 +121,7 @@ end
 
 vlabel(vocab, name, id) = (i = findfirst(e -> e["id"] == id, vocab[name]); i === nothing ? id : vocab[name][i]["label"])
 exp_name(vocab, id) = (i = findfirst(e -> e["id"] == id, vocab["experiments"]); i === nothing ? id : vocab["experiments"][i]["name"])
+det_name(vocab, id) = (i = findfirst(e -> e["id"] == id, vocab["detectors"]); i === nothing ? id : vocab["detectors"][i]["label"])
 
 function index_record(rec, vocab, rels)
     data = get(rec, "data", Dict())
@@ -128,6 +129,7 @@ function index_record(rec, vocab, rels)
          "title" => rec["title"], "short" => rec["short"], "doi" => get(rec, "doi", ""),
          "year" => string(get(rec, "date_published", ""))[1:min(end, 4)],
          "experiments" => [exp_name(vocab, e) for e in get(rec, "experiments", [])],
+         "detectors" => [det_name(vocab, d) for d in get(rec, "detectors", [])],
          "sources" => [vlabel(vocab, "sources", s) for s in get(rec, "sources", [])],
          "topics" => [vlabel(vocab, "topics", s) for s in get(rec, "topics", [])],
          "levels" => [vlabel(vocab, "data_levels", s) for s in get(data, "levels", [])],
@@ -176,6 +178,7 @@ end
 function record_card(rec, vocab; r = "")
     tags = join(vcat([tag(type_label(rec["type"]); cls = "cat")],
                      [tag(exp_name(vocab, e); cls = "exp") for e in get(rec, "experiments", [])],
+                     [tag(det_name(vocab, d); cls = "exp") for d in get(rec, "detectors", [])],
                      [tag(vlabel(vocab, "sources", s)) for s in get(rec, "sources", []) if s != "none"],
                      [tag(STATUS_LABEL[rec["curation"]["status"]]; cls = "status-$(rec["curation"]["status"])")]), " ")
     """
@@ -303,6 +306,7 @@ function record_page(rec, vocab, byid, rels, status)
                                                                   """ <span class="tag status-candidate" title="checked $(esc(get(st, "checked", "")))">unreachable ($(esc(linkstat[url]["code"])))</span>""") : ""
     tags = join(vcat([tag(type_label(rec["type"]); cls = "cat")],
                      [tag(exp_name(vocab, e); cls = "exp") for e in get(rec, "experiments", [])],
+                     [tag(det_name(vocab, d); cls = "exp") for d in get(rec, "detectors", [])],
                      [tag(vlabel(vocab, "sources", s)) for s in get(rec, "sources", []) if s != "none"],
                      [tag(vlabel(vocab, "topics", t); cls = "param") for t in get(rec, "topics", [])],
                      [tag(STATUS_LABEL[rec["curation"]["status"]]; cls = "status-$(rec["curation"]["status"])")]), " ")
@@ -356,6 +360,7 @@ $(kv(rows))"""
         ("Licence", lic_html),
         ("Access", ACCESS_LABEL[rec["access"]]),
         ("Experiments", join([""" <a href="$(r)experiments/$(e)/">$(esc(exp_name(vocab, e)))</a>""" for e in get(rec, "experiments", [])], ", ")),
+        ("Detectors", esc(join([det_name(vocab, d) for d in get(rec, "detectors", [])], ", "))),
         ("Collaborations", esc(join(get(rec, "collaborations", []), ", "))),
         ("Channels", esc(join([vlabel(vocab, "channels", c) for c in get(rec, "channels", [])], ", "))),
         ("Flavours", esc(join(get(rec, "flavors", []), ", "))),
@@ -447,6 +452,7 @@ function experiment_page(e, records, vocab)
                ("Technology", esc(join([vlabel(vocab, "detector_technologies", s) for s in get(e, "technology", [])], ", "))),
                ("Site", esc(get(e, "site", ""))), ("Data taking", "$(get(e, "start", ""))–$(get(e, "end", ""))"),
                ("Website", haskey(e, "website") ? """<a href="$(esc(e["website"]))">$(esc(e["website"]))</a>""" : ""),
+               ("Detectors", join(["$(esc(d["name"]))$(haskey(d, "description") ? " <span class=\"muted\">— $(esc(d["description"]))</span>" : "") ($(count(r -> d["id"] in get(r, "detectors", []), rs)) records)" for d in get(e, "detectors", [])], "<br>")),
                ("Predecessor", haskey(e, "predecessor") ? link(e["predecessor"]) : ""), ("Successor", haskey(e, "successor") ? link(e["successor"]) : "")])
     body = """<nav class="crumbs"><a href="../">Experiments</a> / <span>$(esc(e["name"]))</span></nav>
 <h1>$(esc(e["name"]))</h1>$info
@@ -497,10 +503,10 @@ The catalogued resources keep their own licences; the index only links to them.<
 end
 
 function catalog_csv(records, vocab)
-    cols = ["id", "type", "title", "doi", "url", "experiments", "sources", "topics", "license", "access", "date_published", "version", "status"]
+    cols = ["id", "type", "title", "doi", "url", "experiments", "detectors", "sources", "topics", "license", "access", "date_published", "version", "status"]
     q(s) = "\"" * replace(string(s), "\"" => "\"\"") * "\""
     rows = [join(q.([r["id"], r["type"], r["title"], get(r, "doi", ""), get(r, "url_landing", r["distributions"][1]["url"]),
-                     join(get(r, "experiments", []), ";"), join(get(r, "sources", []), ";"), join(get(r, "topics", []), ";"),
+                     join(get(r, "experiments", []), ";"), join(get(r, "detectors", []), ";"), join(get(r, "sources", []), ";"), join(get(r, "topics", []), ";"),
                      r["license"], r["access"], get(r, "date_published", ""), get(r, "version", ""), r["curation"]["status"]]), ",") for r in records]
     join(vcat(join(cols, ","), rows), "\n") * "\n"
 end

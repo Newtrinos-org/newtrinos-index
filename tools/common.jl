@@ -13,9 +13,13 @@ plain(x) = x
 
 loadyaml(path) = plain(YAML.load_file(path))
 
-"vocab name → vector of entries (each a Dict with at least `id`)"
-load_vocab() = Dict(splitext(f)[1] => loadyaml(joinpath(ROOT, "vocab", f))
-                    for f in readdir(joinpath(ROOT, "vocab")) if endswith(f, ".yaml"))
+"vocab name → vector of entries (each a Dict with at least `id`); `detectors` is derived from the experiment registry"
+function load_vocab()
+    v = Dict(splitext(f)[1] => loadyaml(joinpath(ROOT, "vocab", f)) for f in readdir(joinpath(ROOT, "vocab")) if endswith(f, ".yaml"))
+    v["detectors"] = [merge(d, Dict("experiment" => e["id"], "label" => "$(e["name"]) $(d["name"])"))
+                      for e in v["experiments"] for d in get(e, "detectors", [])]
+    v
+end
 
 "All record files: (path, record) for records/<type>/<id>.yaml and candidates/<type>/<id>.yaml"
 function load_records(; dirs = RECORD_DIRS)

@@ -18,6 +18,7 @@ dir(d) = sort(filter(f -> endswith(f, ".yaml"), readdir(joinpath(@__DIR__, d), j
     @testset "catalogue" begin
         r = Report()
         vocab = load_vocab()
+        DETECTORS[] = vocab["detectors"]
         check_vocab(vocab, r)
         check_records(load_records(), SCHEMA, Set{String}(), r)
         @test isempty(r.errors)

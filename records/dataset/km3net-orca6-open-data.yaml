@@ -40,8 +40,8 @@ relations:
 - rel: uses
   target: honda-atmospheric-flux-tables
   notes: prescribed flux table
-experiments:
-- km3net-orca
+experiments: [km3net]
+detectors: [orca]
 sources:
 - atmospheric
 topics:

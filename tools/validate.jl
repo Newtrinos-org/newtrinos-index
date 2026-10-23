@@ -8,6 +8,8 @@ using JSONSchema
 
 const VERIFICATIONS = joinpath(dirname(ROOT), "newtrinos-verifications", "entries")
 
+const DETECTORS = Ref{Vector}([])
+
 struct Report
     errors::Vector{String}
     warnings::Vector{String}
@@ -45,6 +47,10 @@ function check_vocab(vocab, r)
         end
         for s in get(e, "sources", []); s in sources || err!(r, w, "unknown source $s"); end
         for t in get(e, "technology", []); t in techs || err!(r, w, "unknown technology $t"); end
+        for d in get(e, "detectors", []), n in unique(lowercase.(vcat(d["id"], get(d, "aliases", String[]))))
+            haskey(names, n) && names[n] != e["id"] && err!(r, w, "detector name/alias \"$n\" also used by $(names[n])")
+            names[n] = e["id"]
+        end
         for n in unique(lowercase.(vcat(e["id"], e["name"], get(e, "aliases", String[]))))
             haskey(names, n) && names[n] != e["id"] && err!(r, w, "name/alias \"$n\" also used by $(names[n])")
             names[n] = e["id"]
@@ -78,6 +84,12 @@ function check_records(records, schema, only, r)
         startswith(rel, "records") && get(cur, "status", "") == "candidate" && warn!(r, rel, "candidate record in records/ (move to candidates/ or curate)")
         any(d -> d["role"] == "primary", get(rec, "distributions", [])) || warn!(r, rel, "no distribution with role primary")
         get(rec, "access", "") == "open" && get(rec, "license", "") in ("unknown",) && warn!(r, rel, "open access but licence not checked yet")
+        for d in get(rec, "detectors", [])
+            i = findfirst(x -> x["id"] == d, DETECTORS[])
+            i === nothing && continue    # unknown ids are reported by the schema
+            DETECTORS[][i]["experiment"] in get(rec, "experiments", []) ||
+                err!(r, rel, "detector $d belongs to $(DETECTORS[][i]["experiment"]), which is not in experiments")
+        end
     end
     # cross-references
     for (path, rec) in records
@@ -103,6 +115,7 @@ end
 function main(args)
     r = Report()
     vocab = load_vocab()
+    DETECTORS[] = vocab["detectors"]
     check_vocab(vocab, r)
     schema_text(build_schema(vocab)) == (isfile(SCHEMA_JSON) ? read(SCHEMA_JSON, String) : "") ||
         err!(r, "schema/record.schema.json", "out of date: run julia --project tools/gen_schema.jl")
