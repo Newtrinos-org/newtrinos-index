@@ -1,0 +1,39 @@
+id: darwin-solar-neutrino-sensitivity
+type: software
+title: 'DARWIN solar-neutrino ES sensitivity studies: code and data'
+short: Code and inputs of the DARWIN sensitivity study to solar neutrinos via electron scattering.
+description: Code and inputs of the DARWIN sensitivity study to solar neutrinos via electron scattering.
+url_landing: https://github.com/Physik-Institut-UZH/DARWIN-Sensitivity-Studies/tree/master/solar_neutrinos_electron_scattering
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/Physik-Institut-UZH/DARWIN-Sensitivity-Studies/tree/master/solar_neutrinos_electron_scattering
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2006.03114
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2006.03114'
+  relation: describes
+sources:
+- solar
+topics:
+- oscillation
+- flux
+channels:
+- es
+software:
+  repository: https://github.com/Physik-Institut-UZH/DARWIN-Sensitivity-Studies/tree/master/solar_neutrinos_electron_scattering
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'
+  - licence not read (GitHub API rate-limited)

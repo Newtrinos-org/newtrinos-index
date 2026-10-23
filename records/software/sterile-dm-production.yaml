@@ -1,0 +1,36 @@
+id: sterile-dm-production
+type: software
+title: 'sterile-dm: sterile-neutrino dark matter production code'
+short: Code for resonant sterile-neutrino dark-matter production including weak interactions in the QCD epoch.
+description: Code for resonant sterile-neutrino dark-matter production including weak interactions in the QCD epoch.
+url_landing: https://github.com/ntveem/sterile-dm
+license: GPL-2.0-only
+access: open
+distributions:
+- url: https://github.com/ntveem/sterile-dm
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1507.06655
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1507.06655'
+  relation: describes
+sources:
+- cosmology
+topics:
+- sterile
+- dark-matter
+software:
+  repository: https://github.com/ntveem/sterile-dm
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

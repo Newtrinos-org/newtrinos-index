@@ -1,0 +1,36 @@
+id: class-neutrino-long-range
+type: software
+title: CLASS with neutrino long-range interactions
+short: CLASS extension for long-range interactions of neutrinos in cosmology.
+description: CLASS extension for long-range interactions of neutrinos in cosmology.
+url_landing: https://github.com/jsalvado/class_public_lrs
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/jsalvado/class_public_lrs
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2101.05804
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2101.05804'
+  relation: describes
+sources:
+- cosmology
+topics:
+- nsi
+- bsm-other
+software:
+  repository: https://github.com/jsalvado/class_public_lrs
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

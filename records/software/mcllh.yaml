@@ -1,0 +1,37 @@
+id: mcllh
+type: software
+title: 'MCLLH: binned likelihood for stochastic (MC-limited) models'
+short: Likelihood accounting for finite MC statistics, used in IceCube analyses.
+description: Likelihood accounting for finite MC statistics, used in IceCube analyses.
+url_landing: https://github.com/austinschneider/MCLLH
+license: LGPL-3.0-or-later
+access: open
+distributions:
+- url: https://github.com/austinschneider/MCLLH
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1901.04645
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1901.04645'
+  relation: describes
+experiments:
+- icecube
+topics:
+- statistics
+sources:
+- none
+software:
+  repository: https://github.com/austinschneider/MCLLH
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

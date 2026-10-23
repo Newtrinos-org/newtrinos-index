@@ -1,0 +1,37 @@
+id: mubhnl
+type: software
+title: 'muBHNL: MicroBooNE NuMI-absorber heavy neutral lepton sensitivity'
+short: Code for HNLs produced in the NuMI absorber decaying in MicroBooNE.
+description: Code for HNLs produced in the NuMI absorber decaying in MicroBooNE.
+url_landing: https://github.com/kjkellyphys/muBHNL
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/kjkellyphys/muBHNL
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2106.06548
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2106.06548'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- bsm-other
+software:
+  repository: https://github.com/kjkellyphys/muBHNL
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

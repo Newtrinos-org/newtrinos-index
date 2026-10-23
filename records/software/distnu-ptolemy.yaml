@@ -1,0 +1,35 @@
+id: distnu-ptolemy
+type: software
+title: 'DistNuAndPtolemy: cosmic neutrino background detection in large-mass cosmologies'
+short: Code for relic-neutrino distribution functions and PTOLEMY-like detection rates.
+description: Code for relic-neutrino distribution functions and PTOLEMY-like detection rates.
+url_landing: https://github.com/james-alvey-42/DistNuAndPtolemy
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/james-alvey-42/DistNuAndPtolemy
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2111.14870
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2111.14870'
+  relation: describes
+sources:
+- relic
+topics:
+- absolute-mass
+software:
+  repository: https://github.com/james-alvey-42/DistNuAndPtolemy
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

@@ -20,6 +20,10 @@ distributions:
 - url: https://doi.org/10.5281/zenodo.8257026
   host: zenodo
   role: primary
+- url: https://dataplanet.ucsd.edu/dataset.xhtml?persistentId=perma:83.ucsddata/UQWQAV
+  host: dataverse
+  role: mirror
+  label: UCSD DataPlanet copy
 experiments:
 - majorana
 sources:

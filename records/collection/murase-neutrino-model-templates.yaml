@@ -1,0 +1,29 @@
+id: murase-neutrino-model-templates
+type: collection
+title: Murase neutrino model templates (supernovae, GRBs, …)
+short: Tabulated high-energy neutrino flux templates of astrophysical source models (e.g. interacting supernovae, GRB 221009A).
+description: Tabulated high-energy neutrino flux templates of astrophysical source models (e.g. interacting supernovae, GRB 221009A).
+url_landing: https://github.com/pegasuskmurase/ModelTemplates
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/pegasuskmurase/ModelTemplates
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1705.04750
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1705.04750'
+  relation: describes
+sources:
+- astrophysical
+- supernova
+topics:
+- flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

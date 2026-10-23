@@ -1,0 +1,41 @@
+id: novarwgt-public
+type: software
+title: 'NOvARwgt: NOvA neutrino-interaction model reweighting (public)'
+short: Public version of the NOvA cross-section tune and uncertainty reweighting for GENIE events.
+description: Public version of the NOvA cross-section tune and uncertainty reweighting for GENIE events.
+url_landing: https://github.com/novaexperiment/NOvARwgt-public
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/novaexperiment/NOvARwgt-public
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2006.08727
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2006.08727'
+  relation: describes
+relations:
+- rel: uses
+  target: genie-generator
+experiments:
+- nova
+sources:
+- accelerator
+topics:
+- cross-section
+software:
+  repository: https://github.com/novaexperiment/NOvARwgt-public
+  purposes:
+  - event-generator
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

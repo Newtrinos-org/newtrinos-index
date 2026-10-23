@@ -1,0 +1,36 @@
+id: hermes-galactic-emission
+type: software
+title: 'HERMES: Galactic multi-messenger emission maps (incl. neutrinos)'
+short: Code for sky maps of Galactic radio, gamma-ray and neutrino emission.
+description: Code for sky maps of Galactic radio, gamma-ray and neutrino emission.
+url_landing: https://github.com/cosmicrays/hermes/releases/tag/v1.0.0
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/cosmicrays/hermes/releases/tag/v1.0.0
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2105.13165
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2105.13165'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- flux
+- multi-messenger
+software:
+  repository: https://github.com/cosmicrays/hermes/releases/tag/v1.0.0
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

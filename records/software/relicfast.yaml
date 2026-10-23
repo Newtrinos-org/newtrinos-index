@@ -1,0 +1,35 @@
+id: relicfast
+type: software
+title: 'RelicFast: galaxy bias with neutrinos and other relics'
+short: Fast computation of scale-dependent galaxy bias in cosmologies with massive neutrinos and light relics.
+description: Fast computation of scale-dependent galaxy bias in cosmologies with massive neutrinos and light relics.
+url_landing: https://github.com/JulianBMunoz/RelicFast
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/JulianBMunoz/RelicFast
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1805.11623
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1805.11623'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+software:
+  repository: https://github.com/JulianBMunoz/RelicFast
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

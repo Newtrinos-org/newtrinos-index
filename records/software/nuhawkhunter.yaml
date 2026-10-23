@@ -1,0 +1,37 @@
+id: nuhawkhunter
+type: software
+title: 'nuHawkHunter: neutrino limits on primordial black holes'
+short: Code computing neutrino fluxes from evaporating PBHs and limits from neutrino experiments.
+description: Code computing neutrino fluxes from evaporating PBHs and limits from neutrino experiments.
+url_landing: https://github.com/vmmunoza/nuHawkHunter
+license: MIT
+access: open
+distributions:
+- url: https://github.com/vmmunoza/nuHawkHunter
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2203.14979
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2203.14979'
+  relation: describes
+sources:
+- astrophysical
+- cosmology
+topics:
+- bsm-other
+- dark-matter
+software:
+  repository: https://github.com/vmmunoza/nuHawkHunter
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

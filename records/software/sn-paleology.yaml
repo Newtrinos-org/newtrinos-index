@@ -1,0 +1,37 @@
+id: sn-paleology
+type: software
+title: 'SN-paleology: paleodetectors for Galactic supernova neutrinos'
+short: Code for tracks of supernova-neutrino-induced nuclear recoils in ancient minerals.
+description: Code for tracks of supernova-neutrino-induced nuclear recoils in ancient minerals.
+url_landing: https://github.com/tedwards2412/SN-paleology
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/tedwards2412/SN-paleology
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1906.05800
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1906.05800'
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+channels:
+- cevns
+software:
+  repository: https://github.com/tedwards2412/SN-paleology
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

@@ -1,0 +1,33 @@
+id: lz-run1-er-data-release
+type: dataset
+title: LZ first-exposure low-energy electron-recoil data release
+short: Data release of the LZ search for new physics in low-energy electron recoils (solar neutrinos, neutrino magnetic moment,
+description: Data release of the LZ search for new physics in low-energy electron recoils (solar neutrinos, neutrino magnetic moment, ALPs).
+url_landing: https://tinyurl.com/LZDataReleaseRun1ER
+license: none-stated
+access: open
+distributions:
+- url: https://tinyurl.com/LZDataReleaseRun1ER
+  host: institutional
+  role: primary
+- url: https://arxiv.org/abs/2307.15753
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2307.15753'
+  relation: describes
+sources:
+- solar
+topics:
+- magnetic-moment
+- bsm-other
+data:
+  levels:
+  - binned
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

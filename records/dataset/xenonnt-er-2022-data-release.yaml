@@ -1,0 +1,35 @@
+id: xenonnt-er-2022-data-release
+type: dataset
+title: 'XENONnT electronic-recoil search: data release'
+short: Data release of the XENONnT search for new physics in electronic recoils (incl. solar-neutrino and neutrino-magnetic-mom
+description: Data release of the XENONnT search for new physics in electronic recoils (incl. solar-neutrino and neutrino-magnetic-moment interpretations).
+url_landing: https://zenodo.org/record/7311940
+license: none-stated
+access: open
+distributions:
+- url: https://zenodo.org/record/7311940
+  host: zenodo
+  role: primary
+- url: https://arxiv.org/abs/2207.11330
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2207.11330'
+  relation: describes
+experiments:
+- xenonnt
+sources:
+- solar
+topics:
+- magnetic-moment
+- bsm-other
+data:
+  levels:
+  - binned
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

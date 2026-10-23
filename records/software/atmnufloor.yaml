@@ -1,0 +1,37 @@
+id: atmnufloor
+type: software
+title: 'AtmNuFloor: the atmospheric neutrino floor at high WIMP masses'
+short: Code for the atmospheric-neutrino background (neutrino floor) of direct dark-matter searches.
+description: Code for the atmospheric-neutrino background (neutrino floor) of direct dark-matter searches.
+url_landing: https://github.com/cajohare/AtmNuFloor
+license: MIT
+access: open
+distributions:
+- url: https://github.com/cajohare/AtmNuFloor
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2002.07499
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2002.07499'
+  relation: describes
+sources:
+- atmospheric
+topics:
+- dark-matter
+channels:
+- cevns
+software:
+  repository: https://github.com/cajohare/AtmNuFloor
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

@@ -1,0 +1,37 @@
+id: minos-dayabay-bugey-sterile-2016
+type: result
+title: 'MINOS / Daya Bay / Bugey-3 joint sterile-neutrino disappearance limits: data release'
+short: Data release (on the MINOS 'for scientists' page) of the combined MINOS, Daya Bay and Bugey-3 limits on active-to-steril
+description: Data release (on the MINOS 'for scientists' page) of the combined MINOS, Daya Bay and Bugey-3 limits on active-to-sterile mixing.
+url_landing: http://www-numi.fnal.gov/PublicInfo/forscientists.html
+license: none-stated
+access: open
+distributions:
+- url: http://www-numi.fnal.gov/PublicInfo/forscientists.html
+  host: institutional
+  role: primary
+- url: https://arxiv.org/abs/1607.01177
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1607.01177'
+  relation: describes
+experiments:
+- minos
+- daya-bay
+- bugey
+sources:
+- accelerator
+- reactor
+topics:
+- sterile
+data:
+  levels:
+  - contours
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

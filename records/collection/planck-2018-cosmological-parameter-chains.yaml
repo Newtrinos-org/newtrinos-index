@@ -1,0 +1,28 @@
+id: planck-2018-cosmological-parameter-chains
+type: collection
+title: 'Planck Legacy Archive: cosmological parameter chains (incl. Σmν, N_eff)'
+short: Planck 2018 MCMC chains and likelihoods, including neutrino-mass and N_eff extensions.
+description: Planck 2018 MCMC chains and likelihoods, including neutrino-mass and N_eff extensions.
+url_landing: https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/Cosmological_Parameters
+license: none-stated
+access: open
+distributions:
+- url: https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/Cosmological_Parameters
+  host: institutional
+  role: primary
+- url: https://arxiv.org/abs/1807.06209
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1807.06209'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

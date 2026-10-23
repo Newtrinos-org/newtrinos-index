@@ -1,0 +1,35 @@
+id: reps-massive-neutrino-ics
+type: software
+title: 'REPS: initial conditions for N-body simulations with massive neutrinos'
+short: Rescaled power spectra for accurate initial conditions in massive-neutrino cosmologies.
+description: Rescaled power spectra for accurate initial conditions in massive-neutrino cosmologies.
+url_landing: https://github.com/matteozennaro/reps
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/matteozennaro/reps
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1605.05283
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1605.05283'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+software:
+  repository: https://github.com/matteozennaro/reps
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

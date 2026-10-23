@@ -1,0 +1,36 @@
+id: icecube-he-sterile-8y-data-release
+type: dataset
+title: 'IceCube 8-year high-energy sterile-neutrino search: data release'
+short: Data release of the IceCube eV-scale sterile-neutrino search with eight years of up-going atmospheric νμ (binned data, M
+description: Data release of the IceCube eV-scale sterile-neutrino search with eight years of up-going atmospheric νμ (binned data, MC and likelihood).
+url_landing: https://github.com/icecube/HE-Sterile-8year-data-release
+license: LGPL-2.1-only
+license_notes: LGPL-2.1
+access: open
+distributions:
+- url: https://github.com/icecube/HE-Sterile-8year-data-release
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2005.12942
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2005.12942'
+  relation: describes
+experiments:
+- icecube
+sources:
+- atmospheric
+topics:
+- sterile
+data:
+  levels:
+  - binned
+  - mc
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

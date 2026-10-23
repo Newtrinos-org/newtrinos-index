@@ -1,0 +1,37 @@
+id: callat-0vbb-lattice
+type: software
+title: CalLat 0νββ heavy-physics matrix elements from lattice QCD
+short: Analysis code and data of the lattice-QCD calculation of short-range 0νββ matrix elements.
+description: Analysis code and data of the lattice-QCD calculation of short-range 0νββ matrix elements.
+url_landing: https://github.com/callat-qcd/project_0vbb
+license: proprietary
+license_notes: "licence file in the repository is not a standard SPDX licence (GitHub: NOASSERTION)"
+access: open
+distributions:
+- url: https://github.com/callat-qcd/project_0vbb
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1805.02634
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1805.02634'
+  relation: describes
+sources:
+- nuclear-decay
+topics:
+- double-beta
+software:
+  repository: https://github.com/callat-qcd/project_0vbb
+  purposes:
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'
+  - licence file not standard (NOASSERTION)

@@ -1,0 +1,38 @@
+id: charon
+type: software
+title: 'χaroν: neutrino fluxes from dark-matter annihilation and decay'
+short: Tool for neutrino flux generation from WIMP annihilation/decay including propagation (Sun, Earth, Galaxy).
+description: Tool for neutrino flux generation from WIMP annihilation/decay including propagation (Sun, Earth, Galaxy).
+url_landing: https://github.com/IceCubeOpenSource/charon
+license: LGPL-3.0-or-later
+access: open
+distributions:
+- url: https://github.com/IceCubeOpenSource/charon
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2007.15010
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2007.15010'
+  relation: describes
+experiments:
+- icecube
+sources:
+- solar
+- astrophysical
+topics:
+- dark-matter
+software:
+  repository: https://github.com/IceCubeOpenSource/charon
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

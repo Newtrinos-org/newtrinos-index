@@ -1,0 +1,36 @@
+id: kspace-neutrino
+type: software
+title: 'kspace-neutrino: massive neutrinos in non-linear structure formation (Gadget)'
+short: Implementation of massive neutrinos in N-body simulations (k-space method).
+description: Implementation of massive neutrinos in N-body simulations (k-space method).
+url_landing: http://github.com/downloads/sbird/fs-neutrino/kspace-neutrino-2.tar.gz
+license: none-stated
+access: open
+distributions:
+- url: http://github.com/downloads/sbird/fs-neutrino/kspace-neutrino-2.tar.gz
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1209.0461
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1209.0461'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+software:
+  repository: http://github.com/downloads/sbird/fs-neutrino/kspace-neutrino-2.tar.gz
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'
+  - licence not read (GitHub API rate-limited)

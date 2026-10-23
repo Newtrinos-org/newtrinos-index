@@ -1,0 +1,37 @@
+id: neutrino-priors-mass-ordering
+type: software
+title: 'neutrino-priors: Bayesian evidence for the mass ordering'
+short: Code of the Bayesian analysis of the neutrino mass ordering with cosmological and oscillation data.
+description: Code of the Bayesian analysis of the neutrino mass ordering with cosmological and oscillation data.
+url_landing: https://github.com/frgsimpson/neutrino-priors
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/frgsimpson/neutrino-priors
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1703.03425
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1703.03425'
+  relation: describes
+sources:
+- cosmology
+topics:
+- mass-ordering
+- absolute-mass
+- statistics
+software:
+  repository: https://github.com/frgsimpson/neutrino-priors
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

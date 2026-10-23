@@ -1,0 +1,39 @@
+id: conudl
+type: software
+title: 'Conudl: CEvNS light-mediator sensitivity code'
+short: Code probing light mediators with ultralow-threshold CEvNS detectors.
+description: Code probing light mediators with ultralow-threshold CEvNS detectors.
+url_landing: https://github.com/jaydenn/Conudl
+license: GPL-2.0-only
+access: open
+distributions:
+- url: https://github.com/jaydenn/Conudl
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1612.06350
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1612.06350'
+  relation: describes
+sources:
+- reactor
+- spallation
+topics:
+- nsi
+- bsm-other
+channels:
+- cevns
+software:
+  repository: https://github.com/jaydenn/Conudl
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

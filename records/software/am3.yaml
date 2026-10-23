@@ -1,0 +1,36 @@
+id: am3
+type: software
+title: 'AM³: time-dependent lepto-hadronic modelling of astrophysical sources'
+short: Open-source code for coupled lepto-hadronic emission (photons and neutrinos) of astrophysical sources.
+description: Open-source code for coupled lepto-hadronic emission (photons and neutrinos) of astrophysical sources.
+url_landing: https://gitlab.desy.de/am3/am3
+license: none-stated
+access: open
+distributions:
+- url: https://gitlab.desy.de/am3/am3
+  host: gitlab
+  role: primary
+- url: https://arxiv.org/abs/2312.13371
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2312.13371'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- flux
+- multi-messenger
+software:
+  repository: https://gitlab.desy.de/am3/am3
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

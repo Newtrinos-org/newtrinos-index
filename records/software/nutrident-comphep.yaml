@@ -1,0 +1,36 @@
+id: nutrident-comphep
+type: software
+title: 'NuTrident (CompHEP): atmospheric trident production'
+short: CompHEP models for neutrino trident production probing new physics.
+description: CompHEP models for neutrino trident production probing new physics.
+url_landing: https://gitlab.com/gesf/NuTrident_CompHEP
+license: none-stated
+access: open
+distributions:
+- url: https://gitlab.com/gesf/NuTrident_CompHEP
+  host: gitlab
+  role: primary
+- url: https://arxiv.org/abs/1702.02617
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1702.02617'
+  relation: describes
+sources:
+- atmospheric
+topics:
+- cross-section
+- bsm-other
+software:
+  repository: https://gitlab.com/gesf/NuTrident_CompHEP
+  purposes:
+  - event-generator
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'

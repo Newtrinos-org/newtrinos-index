@@ -1,0 +1,35 @@
+id: neutrino-w-boson-trident
+type: software
+title: 'W-boson and trident production in TeV–PeV neutrino telescopes: code and tables'
+short: Cross sections for on-shell W production and tridents in high-energy neutrino interactions.
+description: Cross sections for on-shell W production and tridents in high-energy neutrino interactions.
+url_landing: https://github.com/bei-zhou/neutrino-W-boson-and-trident-production
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/bei-zhou/neutrino-W-boson-and-trident-production
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/1910.10720
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1910.10720'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- cross-section
+software:
+  repository: https://github.com/bei-zhou/neutrino-W-boson-and-trident-production
+  purposes:
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (paper_links, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: link found in the paper''s arXiv comment/abstract or INSPIRE record (paper_scan.jl)'
