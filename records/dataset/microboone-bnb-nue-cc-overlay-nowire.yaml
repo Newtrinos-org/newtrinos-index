@@ -1,0 +1,39 @@
+id: microboone-bnb-nue-cc-overlay-nowire
+type: dataset
+title: 'MicroBooNE Public Dataset: BNB electron-neutrino CC overlay sample (NoWire)'
+short: Simulated CC nu_e interactions in the active TPC overlaid on cosmic data, reconstructed info without wires; HDF5 (89,339
+description: Simulated CC nu_e interactions in the active TPC overlaid on cosmic data, reconstructed info without wires; HDF5 (89,339 events, 20 files, 31 GB) plus artroot (761 GB).
+doi: 10.5281/zenodo.7261921
+url_landing: https://doi.org/10.5281/zenodo.7261921
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.7261921
+  host: zenodo
+  role: primary
+- url: https://microboone.fnal.gov/documents-publications/public-datasets/
+  host: institutional
+  role: mirror
+- url: https://github.com/uboone/OpenSamples/tree/v02
+  host: github
+  role: mirror
+references:
+- arxiv: '2309.15362'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+- detector-response
+data:
+  levels:
+  - events
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on MicroBooNE Public Datasets page (fetched)'

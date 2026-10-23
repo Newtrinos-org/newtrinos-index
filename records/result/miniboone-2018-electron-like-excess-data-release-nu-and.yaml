@@ -1,0 +1,32 @@
+id: miniboone-2018-electron-like-excess-data-release-nu-and
+type: result
+title: MiniBooNE 2018 electron-like excess data release (nu and nubar modes, combined)
+short: Per-mode pages (numode/nubarmode/combined) with binned nue/numu data, background predictions, covariance matrices and fi
+description: Per-mode pages (numode/nubarmode/combined) with binned nue/numu data, background predictions, covariance matrices and fit results for the 2018 MiniBooNE excess.
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/nue2018/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/nue2018/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1805.12028'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

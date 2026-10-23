@@ -1,0 +1,31 @@
+id: t2k-cp-violation-search-with-2-2e21-pot-2017-joint-nu-nubar
+type: result
+title: T2K CP-violation search with 2.2E21 POT (2017 joint nu/nubar) data release
+short: Oscillation fit results (contours, delta_CP likelihoods) for PRL 121, 171802.
+description: Oscillation fit results (contours, delta_CP likelihoods) for PRL 121, 171802.
+url_landing: https://t2k-experiment.org/results/t2kdata-cp-nu-antinu-2017/
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/t2kdata-cp-nu-antinu-2017/
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/wp-content/uploads/T2KJointNuNuBarOscillation_Run18_2017-1.tar
+  host: institutional
+  role: mirror
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed with download link on t2k-experiment.org/results pages 2-4 (fetched)'

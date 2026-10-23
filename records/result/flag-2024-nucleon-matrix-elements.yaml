@@ -1,0 +1,36 @@
+id: flag-2024-nucleon-matrix-elements
+type: result
+title: 'FLAG Review 2024: nucleon matrix elements (lattice g_A, g_S, g_T, sigma terms)'
+short: 'FLAG 2024: lattice averages of nucleon matrix elements (g_A, …)'
+description: Flavour Lattice Averaging Group averages with downloadable figures and bibtex; nucleon section gives lattice averages of isovector axial charge g_A and scalar/tensor charges (inputs to axial form factor normalisation and CEvNS/BSM couplings); webupdate June 2026.
+url_landing: http://flag.itp.unibe.ch/2024/
+license: none-stated
+access: open
+distributions:
+- url: http://flag.itp.unibe.ch/2024/
+  host: institutional
+  role: primary
+- url: http://flag.itp.unibe.ch/2024/Nucleon%20matrix%20elements
+  host: institutional
+  role: mirror
+- url: https://journals.aps.org/prd/abstract/10.1103/nfzp-p5dn
+  host: journal-supplement
+  role: mirror
+references:
+- doi: 10.1103/nfzp-p5dn
+  relation: describes
+topics:
+- nuclear-model
+- cross-section
+sources:
+- none
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched FLAG 2024 main page via curl (flag.unibe.ch redirects to flag.itp.unibe.ch).'
+  - Averages, not form-factor shapes; axial form factor Q2 dependence not averaged by FLAG.

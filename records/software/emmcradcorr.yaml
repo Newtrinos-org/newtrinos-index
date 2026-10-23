@@ -1,0 +1,36 @@
+id: emmcradcorr
+type: software
+title: 'emMCRadCorr: radiative corrections for neutrino generators in electron mode (e4nu)'
+short: 'emMCRadCorr: QED radiative corrections for neutrino generators in electron-scattering mode (e4nu)'
+description: Package that adds QED radiative corrections to electron-scattering output of neutrino event generators (NuHepMC format or GENIE gst files) for comparisons with e4nu/CLAS data.
+url_landing: https://github.com/e4nu/emMCRadCorr
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/e4nu/emMCRadCorr
+  host: github
+  role: primary
+- url: https://github.com/e4nu
+  host: github
+  role: mirror
+relations:
+- rel: uses
+  target: genie-generator
+topics:
+- cross-section
+sources:
+- none
+software:
+  repository: https://github.com/e4nu/emMCRadCorr
+  purposes:
+  - event-generator
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub org listing via API.'
+  - e4nu org also hosts GENIE branches (MAID, radiative, HOvER, BY21) and analysis code; no public e4nu cross-section data tables found there.

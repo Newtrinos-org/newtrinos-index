@@ -1,0 +1,32 @@
+id: miniboone-neutrino-nc-elastic-differential-cross-section
+type: dataset
+title: MiniBooNE neutrino NC elastic differential cross section data release
+short: Tabulated NCE dsigma/dQ2 and high-energy p/(p+n) tables (.tab) with flux link.
+description: Tabulated NCE dsigma/dQ2 and high-energy p/(p+n) tables (.tab) with flux link.
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/ncel/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/ncel/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1007.4730'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

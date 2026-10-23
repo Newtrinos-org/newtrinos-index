@@ -1,0 +1,31 @@
+id: miniboone-beam-dump-dark-matter-search-prd-2018-data-release
+type: result
+title: MiniBooNE beam-dump dark matter search (PRD 2018) data release
+short: Off-target flux, pi0/eta production averages, vector-portal limit curves (nucleon, electron, timing).
+description: Off-target flux, pi0/eta production averages, vector-portal limit curves (nucleon, electron, timing).
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/dark_matter_prd/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/dark_matter_prd/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1807.06137'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- bsm-other
+data:
+  levels:
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

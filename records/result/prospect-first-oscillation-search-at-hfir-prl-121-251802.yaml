@@ -1,0 +1,32 @@
+id: prospect-first-oscillation-search-at-hfir-prl-121-251802
+type: result
+title: 'PROSPECT first oscillation search at HFIR (PRL 121, 251802): ancillary data'
+short: Relative spectra, delta-chi2 map, critical chi2 maps (Feldman-Cousins) and 90/95% exclusion curves.
+description: Relative spectra, delta-chi2 map, critical chi2 maps (Feldman-Cousins) and 90/95% exclusion curves.
+url_landing: https://arxiv.org/abs/1806.02784
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1806.02784
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '1806.02784'
+  relation: describes
+experiments:
+- prospect
+sources:
+- reactor
+topics:
+- sterile
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv ancillary listing fetched (HTTP 200), file names listed'

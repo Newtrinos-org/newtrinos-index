@@ -1,0 +1,31 @@
+id: minerva-coherent-pi-on-carbon-differential-mislivec-2018
+type: dataset
+title: MINERvA coherent pi+- on carbon differential (Mislivec 2018) data release
+short: Differential cross sections and covariance.
+description: Differential cross sections and covariance.
+url_landing: http://minerva.fnal.gov/coherent-pion-differential-cross-section-data-release-page/
+license: none-stated
+access: open
+distributions:
+- url: http://minerva.fnal.gov/coherent-pion-differential-cross-section-data-release-page/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1711.01178'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

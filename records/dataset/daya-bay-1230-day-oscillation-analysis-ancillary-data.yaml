@@ -1,0 +1,32 @@
+id: daya-bay-1230-day-oscillation-analysis-ancillary-data
+type: dataset
+title: 'Daya Bay 1230-day oscillation analysis: ancillary data'
+short: Per-hall antineutrino and nominal background spectra plus supporting text files for the 1230-day nGd analysis.
+description: Per-hall antineutrino and nominal background spectra plus supporting text files for the 1230-day nGd analysis.
+url_landing: https://arxiv.org/abs/1610.04802
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1610.04802
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '1610.04802'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv ancillary listing fetched (HTTP 200), file names listed'

@@ -1,0 +1,31 @@
+id: minerva-le-neutrino-double-differential-ccqe-like-data
+type: dataset
+title: MINERvA LE neutrino double-differential CCQE-like data release
+short: Cross-section and covariance tables for 3.5 GeV CCQE-like (pt,p||).
+description: Cross-section and covariance tables for 3.5 GeV CCQE-like (pt,p||).
+url_landing: http://minerva.fnal.gov/low-energy-neutrino-double-differential-ccqe-like-data-release-page/
+license: none-stated
+access: open
+distributions:
+- url: http://minerva.fnal.gov/low-energy-neutrino-double-differential-ccqe-like-data-release-page/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1811.02774'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

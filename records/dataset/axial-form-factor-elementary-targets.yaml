@@ -1,0 +1,41 @@
+id: axial-form-factor-elementary-targets
+type: dataset
+title: 'The Nucleon Axial Form Factor from Elementary Target Data: supplemental files'
+short: 'Nucleon axial form factor from elementary-target data: digitised deuterium and MINERvA H distributions'
+description: Digitised event distributions vs E_nu (_E) and Q2 (_N) from historical deuterium bubble-chamber experiments, MINERvA 2023 antineutrino-hydrogen cross section, flux and covariance (CSV), plus a Python script for z-expansion axial form factor fits with up to 4 sum rules.
+doi: 10.5281/zenodo.18522194
+url_landing: https://doi.org/10.5281/zenodo.18522194
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.18522194
+  host: zenodo
+  role: primary
+- url: https://zenodo.org/records/18522195
+  host: zenodo
+  role: mirror
+references:
+- arxiv: '2512.14097'
+  relation: describes
+experiments:
+- anl-12ft
+- bnl-7ft
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- ccqe
+data:
+  levels:
+  - digitized
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API metadata and file list (ANL_1979_E.dat, BEBC_1990_N.dat, minerva_2023_xsec.csv, minerva_2023_cov_tot.csv, ...).'
+  - Complements the older Meyer et al. deuterium analysis (arXiv:1603.03048), which had no public files.

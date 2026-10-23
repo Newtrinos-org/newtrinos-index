@@ -1,0 +1,23 @@
+id: act-dr6-likelihoods-chains
+type: collection
+title: ACT DR6 maps, likelihoods and MCMC chains (LAMBDA)
+short: ACT DR6 maps, likelihoods and MCMC chains (LAMBDA), incl. neutrino-mass extensions
+description: ACT DR6 products incl. act_dr6_mflike and CMB-only likelihoods, power-spectrum pipeline files, and MCMC chains from the Louis et al. and Calabrese et al. analyses (which include sum m_nu and N_eff extensions).
+url_landing: https://lambda.gsfc.nasa.gov/product/act/act_dr6.02/
+license: none-stated
+access: open
+distributions:
+- url: https://lambda.gsfc.nasa.gov/product/act/act_dr6.02/
+  host: institutional
+  role: primary
+sources:
+- cosmology
+topics:
+- absolute-mass
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched LAMBDA page; CHAINS and likelihood sections present.'
+  - Cosmology; included for neutrino-mass/N_eff likelihood use.

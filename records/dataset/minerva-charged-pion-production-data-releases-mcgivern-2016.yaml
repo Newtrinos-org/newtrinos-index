@@ -1,0 +1,38 @@
+id: minerva-charged-pion-production-data-releases-mcgivern-2016
+type: dataset
+title: MINERvA charged-pion production data releases (McGivern 2016, Eberly 2015 updated)
+short: LaTeX tables of CC1pi+/pi0 cross sections vs muon and pion kinematics; updated 1pi data superseding 1406.6415.
+description: LaTeX tables of CC1pi+/pi0 cross sections vs muon and pion kinematics; updated 1pi data superseding 1406.6415.
+url_landing: http://minerva.fnal.gov/pion-data-release/
+license: none-stated
+access: open
+distributions:
+- url: http://minerva.fnal.gov/pion-data-release/
+  host: institutional
+  role: primary
+- url: https://arxiv.org/src/1606.07127v3/anc
+  host: arxiv
+  role: mirror
+- url: http://minerva.fnal.gov/wp-content/uploads/2017/03/Updated_1pi_data.pdf
+  host: institutional
+  role: mirror
+references:
+- arxiv: '1606.07127'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'
+  - 1503.02107 part is on HEPData already.

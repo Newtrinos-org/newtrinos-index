@@ -1,0 +1,31 @@
+id: t2k-first-combined-nu-nubar-oscillation-analysis-2016-data
+type: result
+title: T2K first combined nu/nubar oscillation analysis (2016) data release
+short: Contours and likelihoods for the 2016 joint analysis.
+description: Contours and likelihoods for the 2016 joint analysis.
+url_landing: https://t2k-experiment.org/results/t2kdata-nu-antinu-joint-analysis-2016/
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/t2kdata-nu-antinu-joint-analysis-2016/
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/wp-content/uploads/T2KJointNuNuBarOscillation_Run17c_2016.tar
+  host: institutional
+  role: mirror
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed with download link on t2k-experiment.org/results pages 2-4 (fetched)'

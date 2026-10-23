@@ -1,0 +1,31 @@
+id: minerva-ccqe-proton-kinematics-walton-2015-data-release
+type: dataset
+title: MINERvA CCQE proton-kinematics (Walton 2015) data release
+short: 'CSV supplemental tables: flux, proton and muon cross sections, correlation matrix.'
+description: 'CSV supplemental tables: flux, proton and muon cross sections, correlation matrix.'
+url_landing: https://minerva.fnal.gov/proton-ccqe-data-release-page/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/proton-ccqe-data-release-page/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1409.4497'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

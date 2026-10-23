@@ -1,0 +1,33 @@
+id: kotila-iachello-phase-space-factors
+type: model
+title: Double beta decay phase-space factors (Kotila & Iachello, Yale)
+short: Double-beta-decay phase-space factors and electron spectra for 19 isotopes (Kotila & Iachello)
+description: Table of 2nbb and 0nbb phase-space factors G for 19 isotopes plus per-isotope zip files with single-electron, summed-electron, angular-correlation and 2D electron spectra (full range in 1 keV steps; 0-20 keV low-energy 2nbb spectra in 100 eV steps).
+url_landing: https://nucleartheory.yale.edu/double-beta-decay-phase-space-factors
+license: none-stated
+access: open
+distributions:
+- url: https://nucleartheory.yale.edu/double-beta-decay-phase-space-factors
+  host: institutional
+  role: primary
+- url: https://nucleartheory.yale.edu/sites/default/files/files/What_does_the_package_include.pdf
+  host: institutional
+  role: mirror
+references:
+- doi: 10.1103/PhysRevC.85.034316
+  relation: describes
+sources:
+- nuclear-decay
+topics:
+- double-beta
+model:
+  quantities:
+  - phase-space factors
+  - electron spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page; table and zip download pattern ([isotope]_2vbb.zip, _0vbb.zip, _low.zip) listed.'
+  - Values exclude g_A; exact (Dirac) electron wave functions with finite nuclear size and screening.

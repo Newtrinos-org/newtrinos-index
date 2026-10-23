@@ -1,0 +1,32 @@
+id: minerva-tki-vs-a-ccqe-like-on-c-ch-h2o-fe-pb-data-release
+type: dataset
+title: MINERvA TKI vs A (CCQE-like on C, CH, H2O, Fe, Pb) data release
+short: 'Text files per variable and target: absolute cross sections, covariance and correlation matrices, ratios to CH with cova'
+description: 'Text files per variable and target: absolute cross sections, covariance and correlation matrices, ratios to CH with covariances (tkivsa_release_txt.zip).'
+url_landing: https://minerva.fnal.gov/tki_vs_a_datarelease/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/tki_vs_a_datarelease/
+  host: institutional
+  role: primary
+references:
+- arxiv: '2503.15047'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'
+  - ROOT files only with FNAL login.

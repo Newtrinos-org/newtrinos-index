@@ -1,0 +1,38 @@
+id: ricochet-cevns-spectra
+type: software
+title: Ricochet reactor antineutrino spectra and CEvNS spectra
+short: Reactor antineutrino and CEvNS recoil spectra for Ricochet and other reactor CEvNS experiments
+description: Code to compute reactor antineutrino spectra and CEvNS recoil spectra/rates for Ricochet (ILL) and other reactor CEvNS experiments.
+url_landing: https://github.com/jjohnston203/ricochet_cevns_spectra
+license: MIT
+access: open
+distributions:
+- url: https://github.com/jjohnston203/ricochet_cevns_spectra
+  host: github
+  role: primary
+- url: https://github.com/jjohnston203/ricochet_ill_reactor_spectra
+  host: github
+  role: mirror
+experiments:
+- ricochet
+sources:
+- reactor
+topics:
+- flux
+- cross-section
+channels:
+- cevns
+software:
+  repository: https://github.com/jjohnston203/ricochet_cevns_spectra
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata / search result.'
+  - Small personal repos (2023).

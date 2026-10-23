@@ -1,0 +1,31 @@
+id: dune-neutrino-flux-files-generated-with-g4lbnf-notre-dame
+type: dataset
+title: DUNE neutrino flux files generated with G4LBNF (Notre Dame flux page)
+short: Public LBNF/DUNE flux histograms (ROOT) and GLoBES flux files for ND and FD for several beam designs (2017 TDR, Jan 2021
+description: Public LBNF/DUNE flux histograms (ROOT) and GLoBES flux files for ND and FD for several beam designs (2017 TDR, Jan 2021, Sept 2021 optimized 3-horn), plus limited TTree samples incl. alternate hadron-production models.
+url_landing: https://glaucus.crc.nd.edu/DUNEFluxes/
+license: none-stated
+access: open
+distributions:
+- url: https://glaucus.crc.nd.edu/DUNEFluxes/
+  host: institutional
+  role: primary
+- url: https://glaucus.crc.nd.edu/DUNEFluxes/documentation.html
+  host: institutional
+  role: mirror
+experiments:
+- dune
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Seen in web search results (page title, documentation and directory index snippets); direct fetch failed with connection reset from this host'
+  - Re-verify reachability; maintainer Laura Fields.

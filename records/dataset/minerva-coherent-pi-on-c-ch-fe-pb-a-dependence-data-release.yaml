@@ -1,0 +1,31 @@
+id: minerva-coherent-pi-on-c-ch-fe-pb-a-dependence-data-release
+type: dataset
+title: MINERvA coherent pi+ on C, CH, Fe, Pb (A-dependence) data release
+short: CSV cross sections with total covariance (CC_Coherent_pion_vs_A__totalXSecCov.csv) and ratio covariance.
+description: CSV cross sections with total covariance (CC_Coherent_pion_vs_A__totalXSecCov.csv) and ratio covariance.
+url_landing: https://minerva.fnal.gov/nuclear-target-coherent-pion-data-release/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/nuclear-target-coherent-pion-data-release/
+  host: institutional
+  role: primary
+references:
+- arxiv: '2210.01285'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

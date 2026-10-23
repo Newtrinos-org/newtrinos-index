@@ -1,0 +1,38 @@
+id: desi-dr2-bao-chains
+type: result
+title: DESI DR2 BAO cosmology chains (incl. sum of neutrino masses)
+short: DESI DR2 BAO cosmology chains, incl. ΛCDM + Σmν and dataset combinations
+description: Cobaya MCMC chains and iminuit posterior maximisation results for DR2 BAO cosmology across models (incl. LCDM+sum m_nu) and dataset combinations (CMB, SNe), with likelihood documentation; DR1 BAO and full-shape chains also public as VACs.
+url_landing: https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html
+license: none-stated
+access: open
+distributions:
+- url: https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html
+  host: institutional
+  role: primary
+- url: https://www.desi.lbl.gov/2025/10/06/desi-dr2-cosmology-chains-and-data-products-released/
+  host: institutional
+  role: mirror
+- url: https://data.desi.lbl.gov/doc/releases/dr1/vac/bao-cosmo-params/
+  host: institutional
+  role: mirror
+- url: https://data.desi.lbl.gov/doc/releases/dr1/vac/full-shape-cosmo-params/
+  host: institutional
+  role: mirror
+references:
+- arxiv: '2503.14738'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+data:
+  levels:
+  - posterior
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched DESI blog post and README page; directory structure (cobaya/, iminuit/) described.'
+  - 'Cosmology; neutrino-mass runs among many model scenarios. Paper arXiv number from memory: confirm.'

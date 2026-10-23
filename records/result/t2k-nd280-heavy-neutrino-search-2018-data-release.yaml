@@ -1,0 +1,30 @@
+id: t2k-nd280-heavy-neutrino-search-2018-data-release
+type: result
+title: T2K ND280 heavy neutrino search 2018 data release
+short: Main tar plus per-mass histogram tarballs (140-490 MeV) for the ND280 heavy neutral lepton search.
+description: Main tar plus per-mass histogram tarballs (140-490 MeV) for the ND280 heavy neutral lepton search.
+url_landing: https://t2k-experiment.org/results/nd280-heavy-neutrino-search-2018-datarelease/
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/nd280-heavy-neutrino-search-2018-datarelease/
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/wp-content/uploads/nd280-heavy-neutrino-search-2018_main.tar
+  host: institutional
+  role: mirror
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- bsm-other
+data:
+  levels:
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed with download link on t2k-experiment.org/results pages 2-4 (fetched)'

@@ -1,0 +1,31 @@
+id: t2k-nue-appearance-2012-2013-observation-data-release
+type: result
+title: T2K nue appearance (2012/2013 observation) data release
+short: Far-detector nue candidate (p,theta) data, predictions and contours.
+description: Far-detector nue candidate (p,theta) data, predictions and contours.
+url_landing: https://t2k-experiment.org/results/t2k-nue-2012/
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/t2k-nue-2012/
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/wp-content/uploads/T2K-nueAppearanceData-2012.tar
+  host: institutional
+  role: mirror
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed with download link on t2k-experiment.org/results pages 2-4 (fetched)'

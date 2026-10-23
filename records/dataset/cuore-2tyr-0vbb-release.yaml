@@ -1,0 +1,33 @@
+id: cuore-2tyr-0vbb-release
+type: dataset
+title: 'CUORE 2 tonne-yr 0nbb search: data release (figure data and likelihood macros)'
+short: 'CUORE 2 t·yr 0νββ search: figure data and likelihood scripts'
+description: 'Zip (1.7 MB) of ROOT macros and Python scripts carrying the data behind all main and supplementary figures: exposure by tower, resolution, ROI fit, full spectrum, lineshape, posterior distributions, profile likelihood, exclusion sensitivity and m_bb limit; CSV/TXT exposure tables.'
+doi: 10.5281/zenodo.15742645
+url_landing: https://doi.org/10.5281/zenodo.15742645
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15742645
+  host: zenodo
+  role: primary
+- url: https://zenodo.org/records/17642962
+  host: zenodo
+  role: mirror
+experiments:
+- cuore
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - summary
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API metadata; downloaded zip and read README and file list.'
+  - Concept DOI given; version record 17642962. Data are embedded in .C macros (TGraph arrays), not standalone tables. Paper venue from memory.

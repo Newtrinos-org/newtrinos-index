@@ -1,0 +1,31 @@
+id: t2k-numu-disappearance-run-1-4-2014-data-release
+type: result
+title: T2K numu disappearance Run 1-4 (2014) data release
+short: SK spectra, predictions and contours for PRL 112, 181801.
+description: SK spectra, predictions and contours for PRL 112, 181801.
+url_landing: https://t2k-experiment.org/results/t2k-numu-disapp-2014/
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/t2k-numu-disapp-2014/
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/wp-content/uploads/T2K-numuDisappearanceData-Run1to4-2014.tar
+  host: institutional
+  role: mirror
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed with download link on t2k-experiment.org/results pages 2-4 (fetched)'

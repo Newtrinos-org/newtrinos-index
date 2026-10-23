@@ -1,0 +1,32 @@
+id: miniboone-cc-pi0-production-cross-sections-data-release
+type: dataset
+title: MiniBooNE CC pi0 production cross sections data release
+short: 'Text tables: total and differential cross sections in Q2, E_mu, cos(mu), p_pi, cos(pi) plus flux.'
+description: 'Text tables: total and differential cross sections in Q2, E_mu, cos(mu), p_pi, cos(pi) plus flux.'
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/ccpi0/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/ccpi0/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1010.3264'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

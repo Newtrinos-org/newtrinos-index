@@ -1,0 +1,30 @@
+id: nai-quenching-factor-compilation
+type: dataset
+title: 'naiQFcomparisons: literature compilation of NaI[Tl] nuclear-recoil quenching factors'
+short: NaI[Tl] nuclear-recoil quenching-factor compilation (literature data + script)
+description: Data directory of literature NaI[Tl] quenching-factor measurements with a Python script to adjust and plot them globally.
+url_landing: https://github.com/gcrich/naiQFcomparisons
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/gcrich/naiQFcomparisons
+  host: github
+  role: primary
+experiments:
+- coherent
+sources:
+- spallation
+topics:
+- detector-response
+channels:
+- cevns
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata and contents (data/, globalPlot_NaI-Tl.py).'
+  - Small, last updated 2020.

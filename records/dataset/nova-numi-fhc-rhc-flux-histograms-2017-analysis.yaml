@@ -1,0 +1,30 @@
+id: nova-numi-fhc-rhc-flux-histograms-2017-analysis
+type: dataset
+title: NOvA NuMI FHC/RHC flux histograms (2017 analysis)
+short: 'ND flux histograms for numu, numubar, nue, nuebar in FHC and RHC: ROOT and text files (Geant4 v9.2.p03).'
+description: 'ND flux histograms for numu, numubar, nue, nuebar in FHC and RHC: ROOT and text files (Geant4 v9.2.p03).'
+url_landing: https://publicdocs.fnal.gov/cgi-bin/ShowDocument?docid=8
+license: none-stated
+access: open
+distributions:
+- url: https://publicdocs.fnal.gov/cgi-bin/ShowDocument?docid=8
+  host: institutional
+  role: primary
+- url: https://novaexperiment.fnal.gov/data-releases/
+  host: institutional
+  role: mirror
+experiments:
+- nova
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on NOvA data-releases page; Fermilab public DocDB entry fetched, file names listed'

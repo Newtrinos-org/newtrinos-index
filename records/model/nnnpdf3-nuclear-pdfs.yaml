@@ -1,0 +1,31 @@
+id: nnnpdf3-nuclear-pdfs
+type: model
+title: nNNPDF3.0 nuclear PDFs (NNPDF)
+short: nNNPDF3.0 nuclear PDFs (LHAPDF), fit incl. neutrino DIS
+description: LHAPDF-format NLO nuclear PDF sets for A=2...208 and bound-proton PDFs (tar.gz per nucleus) from a global fit incl. fixed-target DIS (incl. neutrino) and LHC p-Pb data, with UHE neutrino-nucleon cross-section predictions.
+url_landing: https://nnpdf.mi.infn.it/nnnpdf3-0/
+license: none-stated
+access: open
+distributions:
+- url: https://nnpdf.mi.infn.it/nnnpdf3-0/
+  host: institutional
+  role: primary
+references:
+- arxiv: '2201.12363'
+  relation: describes
+sources:
+- accelerator
+topics:
+- nuclear-model
+channels:
+- dis
+model:
+  quantities:
+  - nuclear PDFs
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page via curl; per-nucleus tarballs listed.'
+  - Paper arXiv number from memory.

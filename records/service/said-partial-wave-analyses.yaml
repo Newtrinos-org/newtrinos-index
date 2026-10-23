@@ -1,0 +1,36 @@
+id: said-partial-wave-analyses
+type: service
+title: SAID partial-wave analyses (GWU Data Analysis Center)
+short: 'SAID partial-wave analyses (GWU): πN and pion photo-/electroproduction amplitudes'
+description: Interactive partial-wave analyses and databases for pion-nucleon, pion photo- and electroproduction, NN and others; resonance-region amplitudes used to constrain neutrino single-pion (Delta and higher resonance) production models and pion FSI.
+url_landing: https://gwdac.phys.gwu.edu/
+license: none-stated
+access: open
+distributions:
+- url: https://gwdac.phys.gwu.edu/
+  host: institutional
+  role: primary
+- url: https://gwdac.phys.gwu.edu/analysis/pr_analysis.html
+  host: institutional
+  role: mirror
+- url: https://gwdac.phys.gwu.edu/analysis/epr_analysis.html
+  host: institutional
+  role: mirror
+- url: https://gwdac.phys.gwu.edu/analysis/pin_analysis.html
+  host: institutional
+  role: mirror
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+service:
+  query_interface: https://gwdac.phys.gwu.edu/
+  api_kind: none
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched landing page via curl; analysis subpages listed.'
+  - Electromagnetic/hadronic input to neutrino models, not neutrino data.

@@ -1,0 +1,27 @@
+id: cevns-data-standards
+type: collection
+title: CEvNS data standards (CEvNS-data)
+short: 'CEvNS data standards: community proposal for CEvNS data releases'
+description: Community proposal of standards for CEvNS data sharing and releases (formats/content for experiment data products, from the Magnificent CEvNS community).
+url_landing: https://github.com/CEvNS-data/data-standards
+license: unknown
+license_notes: LGPL-2.1
+access: open
+distributions:
+- url: https://github.com/CEvNS-data/data-standards
+  host: github
+  role: primary
+sources:
+- spallation
+- reactor
+topics:
+- cross-section
+channels:
+- cevns
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata (last push 2024-06).'
+  - Content not inspected in detail.

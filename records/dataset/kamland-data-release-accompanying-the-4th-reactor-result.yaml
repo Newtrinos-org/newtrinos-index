@@ -1,0 +1,32 @@
+id: kamland-data-release-accompanying-the-4th-reactor-result
+type: dataset
+title: KamLAND data release accompanying the 4th reactor result (PRD 83, 052002)
+short: 'KamLAND data release of the 4th reactor result (PRD 83, 052002): spectra and Δχ² map'
+description: Prompt-energy spectrum in 0.1 MeV bins with reactor (no-osc and 3-flavour best fit), background and geo-neutrino components; plain-text chi2 map (~56 MB).
+url_landing: https://www.awa.tohoku.ac.jp/KamLAND/4th_result_data_release/4th_result_data_release.html
+license: none-stated
+access: open
+distributions:
+- url: https://www.awa.tohoku.ac.jp/KamLAND/4th_result_data_release/4th_result_data_release.html
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/PhysRevD.83.052002
+  relation: describes
+experiments:
+- kamland
+sources:
+- reactor
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Seen in web search results (title + content snippet); direct fetch returns HTTP 403 from this host (likely IP/geo restriction)'
+  - Official release, distinct from the Newtrinos figure-extracted 2011 spectrum.

@@ -1,0 +1,36 @@
+id: nest
+type: software
+title: 'NEST: Noble Element Simulation Technique'
+short: 'NEST: scintillation and ionisation yields in noble elements (CEvNS / solar ν / DM detectors)'
+description: Semi-empirical model of scintillation and ionisation yields (and quenching) for nuclear and electronic recoils in liquid/gaseous xenon and argon; standard tool for CEvNS (8B, SNS) signal modelling in noble-liquid detectors.
+url_landing: https://github.com/NESTCollaboration/nest
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/NESTCollaboration/nest
+  host: github
+  role: primary
+- url: https://nest.physics.ucdavis.edu/
+  host: institutional
+  role: mirror
+sources:
+- solar
+- spallation
+topics:
+- detector-response
+channels:
+- cevns
+software:
+  repository: https://github.com/NESTCollaboration/nest
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub page meta description fetched.'
+  - Homepage URL from memory, not fetched; licence not checked (API rate-limited).

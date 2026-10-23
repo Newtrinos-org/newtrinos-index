@@ -1,0 +1,35 @@
+id: nova-2020-official-oscillation-data-release-13-6e20-nu-12
+type: result
+title: NOvA 2020 official oscillation data release (13.6E20 nu + 12.5E20 nubar POT)
+short: 'NOvA_2020_data_release.zip: best fits, contours, chi2 surfaces, FD data and prediction histograms for the joint nue/numu'
+description: 'NOvA_2020_data_release.zip: best fits, contours, chi2 surfaces, FD data and prediction histograms for the joint nue/numu analysis.'
+url_landing: https://publicdocs.fnal.gov/cgi-bin/ShowDocument?docid=17
+license: none-stated
+access: open
+distributions:
+- url: https://publicdocs.fnal.gov/cgi-bin/ShowDocument?docid=17
+  host: institutional
+  role: primary
+- url: https://novaexperiment.fnal.gov/data-releases/
+  host: institutional
+  role: mirror
+references:
+- doi: 10.1103/PhysRevD.106.032004
+  relation: describes
+experiments:
+- nova
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on NOvA data-releases page; Fermilab public DocDB entry fetched, file names listed'
+  - Older NOvA releases (2016-2019) link to nova-docdb which requires login.

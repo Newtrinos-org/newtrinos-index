@@ -1,0 +1,39 @@
+id: pygama
+type: software
+title: 'pygama: LEGEND germanium data processing and analysis'
+short: 'pygama: LEGEND HPGe waveform processing, calibration and PSD (Python)'
+description: Python package for HPGe waveform DSP, energy calibration, pulse-shape discrimination and event building used by LEGEND-200; companion legend-pydataobj defines the LH5 data format used in LEGEND/MJD releases.
+url_landing: https://github.com/legend-exp/pygama
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/legend-exp/pygama
+  host: github
+  role: primary
+- url: https://pygama.readthedocs.io
+  host: institutional
+  role: mirror
+- url: https://github.com/legend-exp/legend-pydataobj
+  host: github
+  role: mirror
+experiments:
+- legend
+- majorana
+sources:
+- nuclear-decay
+topics:
+- double-beta
+software:
+  repository: https://github.com/legend-exp/pygama
+  purposes:
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata and readthedocs homepage.'
+  - Needed to read the catalogued Majorana AI/ML release (LH5).

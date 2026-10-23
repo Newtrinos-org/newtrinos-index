@@ -1,0 +1,32 @@
+id: minerva-qe-like-triple-differential-proton-lepton
+type: dataset
+title: MINERvA QE-like triple-differential (proton+lepton kinematics) ancillary data
+short: ROOT and CSV files of triple-differential cross sections (pt,pz,sum Tp; q0,E_qe,sum Tp) with covariances.
+description: ROOT and CSV files of triple-differential cross sections (pt,pz,sum Tp; q0,E_qe,sum Tp) with covariances.
+url_landing: https://arxiv.org/abs/2203.08022
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2203.08022
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2203.08022'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

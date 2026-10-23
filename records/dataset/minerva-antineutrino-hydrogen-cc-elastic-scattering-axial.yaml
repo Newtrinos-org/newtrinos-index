@@ -1,0 +1,34 @@
+id: minerva-antineutrino-hydrogen-cc-elastic-scattering-axial
+type: dataset
+title: MINERvA antineutrino-hydrogen CC elastic scattering / axial form factor data release
+short: 'Cross section vs Q2 (CSV), total and statistical covariances, nu-e-constrained RHC antineutrino flux (CSV), Z-expansion '
+description: Cross section vs Q2 (CSV), total and statistical covariances, nu-e-constrained RHC antineutrino flux (CSV), Z-expansion fit supplement.
+url_landing: https://minerva.fnal.gov/hydrogen-scattering-data-release-page/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/hydrogen-scattering-data-release-page/
+  host: institutional
+  role: primary
+- url: https://minerva.fnal.gov/wp-content/uploads/2023/02/Hydrogen_CCE_data_release.tar
+  host: institutional
+  role: mirror
+references:
+- doi: 10.1038/s41586-022-05478-3
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

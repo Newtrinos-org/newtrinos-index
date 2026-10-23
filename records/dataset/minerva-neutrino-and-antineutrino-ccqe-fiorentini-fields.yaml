@@ -1,0 +1,39 @@
+id: minerva-neutrino-and-antineutrino-ccqe-fiorentini-fields
+type: dataset
+title: MINERvA neutrino and antineutrino CCQE (Fiorentini/Fields 2013) updated data release
+short: Updated CSV CCQE dsigma/dQ2 with updated flux constraint (all angles and <20 deg).
+description: Updated CSV CCQE dsigma/dQ2 with updated flux constraint (all angles and <20 deg).
+url_landing: https://minerva.fnal.gov/neutrino-ccqe-data-release-page/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/neutrino-ccqe-data-release-page/
+  host: institutional
+  role: primary
+- url: https://minerva.fnal.gov/antineutrino-ccqe-data-release-page/
+  host: institutional
+  role: mirror
+- url: http://minerva.fnal.gov/wp-content/uploads/2016/04/finalUpdateCCQE-nu-anuWandCconstrained.csv
+  host: institutional
+  role: mirror
+references:
+- arxiv: '1305.2243'
+  relation: describes
+- arxiv: '1305.2234'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

@@ -1,0 +1,27 @@
+id: ame2020-atomic-masses
+type: dataset
+title: AME2020 Atomic Mass Evaluation (masses and Q-values)
+short: 'AME2020 atomic mass evaluation: masses and Q-values (incl. ββ and tritium endpoints)'
+description: ASCII tables of atomic masses, mass excesses, beta-decay energies, reaction energies incl. Q(2B-) for double-beta candidates and covariance file; reference Q-values for 0nbb ROIs, tritium and 163Ho endpoint comparisons.
+url_landing: https://amdc.impcas.ac.cn/web/masseval.html
+license: none-stated
+access: open
+distributions:
+- url: https://amdc.impcas.ac.cn/web/masseval.html
+  host: institutional
+  role: primary
+sources:
+- nuclear-decay
+topics:
+- double-beta
+- absolute-mass
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched AMDC page; five ASCII files listed.'
+  - General nuclear data, not neutrino-specific.

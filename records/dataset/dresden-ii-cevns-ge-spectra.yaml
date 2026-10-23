@@ -1,0 +1,45 @@
+id: dresden-ii-cevns-ge-spectra
+type: dataset
+title: 'Dresden-II reactor CEvNS (Ge) data: arXiv ancillary files'
+short: 'Dresden-II reactor CEvNS (Ge PPC): reactor-on/off spectra 0.2–1.5 keVee (arXiv ancillary)'
+description: Reactor-on and reactor-off energy spectra (0.2-1.5 keVee, 10 eV bins, counts and errors) from the p-type point-contact Ge detector at Dresden-II, plus iron-filter and photo-neutron quenching-factor inputs and a READ_ME pdf.
+url_landing: https://arxiv.org/abs/2202.09672
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2202.09672
+  host: arxiv
+  role: primary
+- url: https://arxiv.org/src/2202.09672v2/anc/data.txt
+  host: arxiv
+  role: mirror
+- url: https://arxiv.org/src/2202.09672v2/anc/READ_ME.pdf
+  host: arxiv
+  role: mirror
+- url: https://arxiv.org/src/2202.09672v2/anc/iron_filter.txt
+  host: arxiv
+  role: mirror
+- url: https://arxiv.org/src/2202.09672v2/anc/photo_neutron.txt
+  host: arxiv
+  role: mirror
+references:
+- arxiv: '2202.09672'
+  relation: describes
+experiments:
+- dresden-ii
+sources:
+- reactor
+topics:
+- cross-section
+channels:
+- cevns
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv abs page lists anc files; downloaded data.txt (5 columns per bin).'
+  - Interpretation depends on Ge quenching factor choice (iron-filter vs photo-neutron files).

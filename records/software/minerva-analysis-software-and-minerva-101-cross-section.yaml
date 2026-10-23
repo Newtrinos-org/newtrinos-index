@@ -1,0 +1,38 @@
+id: minerva-analysis-software-and-minerva-101-cross-section
+type: software
+title: MINERvA analysis software and MINERvA-101 cross-section tutorial
+short: Tutorial and tools (MAT systematics framework, reweighting to MINERvA tunes) to make cross-section measurements from the
+description: Tutorial and tools (MAT systematics framework, reweighting to MINERvA tunes) to make cross-section measurements from the MINERvA open-data ntuples.
+url_landing: https://github.com/MinervaExpt/MINERvA-101-Cross-Section
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/MinervaExpt/MINERvA-101-Cross-Section
+  host: github
+  role: primary
+- url: https://github.com/MinervaExpt
+  host: github
+  role: mirror
+- url: https://minerva.fnal.gov/minerva-tunes/
+  host: institutional
+  role: mirror
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+software:
+  repository: https://github.com/MinervaExpt/MINERvA-101-Cross-Section
+  purposes:
+  - tooling
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Linked from MINERvA opendata page (fetched)'
+  - GitHub org may have been harvested; tutorial repo specifically for the open data.

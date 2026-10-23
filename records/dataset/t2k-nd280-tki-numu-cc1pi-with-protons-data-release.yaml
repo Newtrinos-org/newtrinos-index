@@ -1,0 +1,34 @@
+id: t2k-nd280-tki-numu-cc1pi-with-protons-data-release
+type: dataset
+title: T2K ND280 TKI numu CC1pi+ with protons data release
+short: Cross sections and covariances for transverse kinematic imbalance in CC1pi+Np on hydrocarbon.
+description: Cross sections and covariances for transverse kinematic imbalance in CC1pi+Np on hydrocarbon.
+url_landing: https://t2k-experiment.org/wp-content/uploads/nd280_TKI_data_release-1.tar
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/wp-content/uploads/nd280_TKI_data_release-1.tar
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/results/
+  host: institutional
+  role: mirror
+references:
+- arxiv: '2102.03346'
+  relation: describes
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on https://t2k-experiment.org/results/ (fetched); file HEAD request 200'

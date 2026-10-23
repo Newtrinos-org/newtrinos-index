@@ -1,0 +1,32 @@
+id: miniboone-2010-antineutrino-appearance-nuebar-excess-data
+type: result
+title: MiniBooNE 2010 antineutrino appearance (nuebar excess) data release
+short: 'Text files: nuebar/numubar data and MC, bin boundaries, full fractional covariance, sensitivity and contours (1sigma/90/'
+description: 'Text files: nuebar/numubar data and MC, bin boundaries, full fractional covariance, sensitivity and contours (1sigma/90/99%), likelihood surface.'
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/nuebar2010/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/nuebar2010/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1007.1150'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

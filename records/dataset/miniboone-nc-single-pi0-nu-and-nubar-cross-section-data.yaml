@@ -1,0 +1,32 @@
+id: miniboone-nc-single-pi0-nu-and-nubar-cross-section-data
+type: dataset
+title: MiniBooNE NC single pi0 (nu and nubar) cross section data release
+short: Text tables of dsigma/dp_pi0 and dsigma/dcos(theta_pi0) with error matrices for neutrino and antineutrino modes.
+description: Text tables of dsigma/dp_pi0 and dsigma/dcos(theta_pi0) with error matrices for neutrino and antineutrino modes.
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/ncpi0/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/ncpi0/
+  host: institutional
+  role: primary
+references:
+- arxiv: '0911.2063'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

@@ -1,0 +1,33 @@
+id: cevnstensor
+type: software
+title: 'CEvNSTensor: nuclear response functions and tensor-interaction CEvNS cross sections'
+short: 'CEvNSTensor: nuclear responses and tensor-interaction CEvNS cross sections'
+description: Python script evaluating nuclear response functions and cross sections for tensor interactions in CEvNS.
+url_landing: https://github.com/zhangblong/CEvNSTensor
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/zhangblong/CEvNSTensor
+  host: github
+  role: primary
+sources:
+- spallation
+topics:
+- cross-section
+- nsi
+channels:
+- cevns
+software:
+  repository: https://github.com/zhangblong/CEvNSTensor
+  purposes:
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata.'
+  - No licence; describing paper not stated in repo metadata.

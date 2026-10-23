@@ -1,0 +1,31 @@
+id: minerva-antineutrino-ccqe-like-double-differential-patrick
+type: dataset
+title: MINERvA antineutrino CCQE-like double-differential (Patrick 2018) data release
+short: CSV files with cross sections, uncertainties and correlation matrices (10^-41 cm^2).
+description: CSV files with cross sections, uncertainties and correlation matrices (10^-41 cm^2).
+url_landing: https://minerva.fnal.gov/data-release-for-patrick-et-al-2018-measurement-of-the-muon-antineutrino-double-differential-cross-section-for-quasielastic-like-scattering-on-hydrocarbon-at-e%CE%BD%E2%88%BC3-5gev
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/data-release-for-patrick-et-al-2018-measurement-of-the-muon-antineutrino-double-differential-cross-section-for-quasielastic-like-scattering-on-hydrocarbon-at-e%CE%BD%E2%88%BC3-5gev
+  host: institutional
+  role: primary
+references:
+- arxiv: '1801.01197'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

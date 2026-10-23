@@ -1,0 +1,32 @@
+id: miniboone-2012-combined-nue-nuebar-appearance-oscillation
+type: result
+title: MiniBooNE 2012 combined nue + nuebar appearance oscillation data release
+short: Data, predictions, fractional covariance and fit contours for 200 and 475 MeV thresholds, neutrino, antineutrino and com
+description: Data, predictions, fractional covariance and fit contours for 200 and 475 MeV thresholds, neutrino, antineutrino and combined modes.
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/nue_nuebar_2012/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/nue_nuebar_2012/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1207.4809'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

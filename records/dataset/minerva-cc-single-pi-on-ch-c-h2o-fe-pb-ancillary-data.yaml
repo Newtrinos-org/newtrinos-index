@@ -1,0 +1,34 @@
+id: minerva-cc-single-pi-on-ch-c-h2o-fe-pb-ancillary-data
+type: dataset
+title: 'MINERvA CC single pi+ on CH, C, H2O, Fe, Pb: ancillary data'
+short: 'Table_Var_Xsec.csv and Table_Var_Ratio.csv: absolute cross sections vs E_nu and T_pi with covariance; ratios to CH with '
+description: 'Table_Var_Xsec.csv and Table_Var_Ratio.csv: absolute cross sections vs E_nu and T_pi with covariance; ratios to CH with covariance.'
+url_landing: https://minerva.fnal.gov/nuclear-target-charged-current-pi-production-data-release-page/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/nuclear-target-charged-current-pi-production-data-release-page/
+  host: institutional
+  role: primary
+- url: https://arxiv.org/src/2209.07852v3/anc
+  host: arxiv
+  role: mirror
+references:
+- arxiv: '2209.07852'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

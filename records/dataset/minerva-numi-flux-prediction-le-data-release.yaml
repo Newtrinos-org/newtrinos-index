@@ -1,0 +1,37 @@
+id: minerva-numi-flux-prediction-le-data-release
+type: dataset
+title: MINERvA NuMI flux prediction (LE) data release
+short: 'Low-energy NuMI flux predictions for all four flavours in FHC and RHC: ROOT file, Python reader, and text files with flu'
+description: 'Low-energy NuMI flux predictions for all four flavours in FHC and RHC: ROOT file, Python reader, and text files with flux, uncertainty and 200x200 covariance (0.5 GeV bins to 100 GeV).'
+url_landing: http://minerva.fnal.gov/numi-flux-prediction-data-release/
+license: none-stated
+access: open
+distributions:
+- url: http://minerva.fnal.gov/numi-flux-prediction-data-release/
+  host: institutional
+  role: primary
+- url: https://arxiv.org/src/1607.00704v2/anc/minerva_flux.root
+  host: arxiv
+  role: mirror
+- url: https://arxiv.org/src/1607.00704v2/anc/read_flux.py
+  host: arxiv
+  role: mirror
+references:
+- arxiv: '1607.00704'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page fetched, arXiv anc files listed'
+  - Unconstrained (pre nu-e scattering) prediction.

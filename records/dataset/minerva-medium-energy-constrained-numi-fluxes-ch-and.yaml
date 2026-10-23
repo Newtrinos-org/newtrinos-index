@@ -1,0 +1,39 @@
+id: minerva-medium-energy-constrained-numi-fluxes-ch-and
+type: dataset
+title: MINERvA medium-energy constrained NuMI fluxes (CH and nuclear targets)
+short: ME four-flavour fluxes constrained by nu-e scattering (both modes) and inverse muon decay, with uncertainties and covari
+description: ME four-flavour fluxes constrained by nu-e scattering (both modes) and inverse muon decay, with uncertainties and covariance (Excel archive); per-nuclear-target constrained nu_mu fluxes (ROOT); earlier nu-e-constrained flux (arXiv anc).
+url_landing: https://minerva.fnal.gov/minerva-fluxes/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/minerva-fluxes/
+  host: institutional
+  role: primary
+- url: https://minerva.fnal.gov/wp-content/uploads/2023/06/improved_flux_constrain_datarelease_excelformat.zip
+  host: institutional
+  role: mirror
+- url: https://minerva.fnal.gov/wp-content/uploads/2023/06/MINERvA_ME_NuMu_Flux_Nuclear_Targets_Constrained.root_.zip
+  host: institutional
+  role: mirror
+- url: https://arxiv.org/src/1906.00111v4/anc
+  host: arxiv
+  role: mirror
+references:
+- arxiv: '2209.05540'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page fetched, download links listed'

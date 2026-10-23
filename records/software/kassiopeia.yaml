@@ -1,0 +1,44 @@
+id: kassiopeia
+type: software
+title: Kassiopeia particle-tracking and field simulation (KATRIN)
+short: 'Kassiopeia: field computation and charged-particle tracking framework (KATRIN, Project 8)'
+description: C++ framework for electromagnetic field computation and charged-particle tracking (generators, trajectories, interactions, detection) developed for the KATRIN tritium beta spectrometer and used by Project 8.
+url_landing: https://github.com/KATRIN-Experiment/Kassiopeia
+license: proprietary
+license_notes: as in repo (custom, NOASSERTION in GitHub API)
+access: open
+distributions:
+- url: https://github.com/KATRIN-Experiment/Kassiopeia
+  host: github
+  role: primary
+- url: https://katrin-experiment.github.io/Kassiopeia/index.html
+  host: institutional
+  role: mirror
+- url: https://github.com/project8/Kassiopeia
+  host: github
+  role: mirror
+references:
+- arxiv: '1612.00262'
+  relation: describes
+experiments:
+- katrin
+- project-8
+sources:
+- nuclear-decay
+topics:
+- absolute-mass
+- detector-response
+software:
+  repository: https://github.com/KATRIN-Experiment/Kassiopeia
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata and homepage link; actively maintained (2026).'
+  - Simulation tool, not the KATRIN spectrum-fit software (which is not public).

@@ -1,0 +1,32 @@
+id: bsg-beta-spectrum-generator
+type: software
+title: 'BSG: Beta Spectrum Generator (Hayen et al.)'
+short: 'BSG: high-precision allowed β spectrum shapes (reactor fluxes, β-decay neutrino physics)'
+description: C++ code for high-precision allowed beta spectrum shapes including all known corrections (finite size, screening, recoil, radiative, atomic exchange, shape factors); applicable to tritium endpoint and reactor/beta-spectrum studies.
+url_landing: https://github.com/leenderthayen/BSG
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/leenderthayen/BSG
+  host: github
+  role: primary
+sources:
+- nuclear-decay
+- reactor
+topics:
+- flux
+- absolute-mass
+software:
+  repository: https://github.com/leenderthayen/BSG
+  purposes:
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub page meta description fetched.'
+  - Paper association from memory.

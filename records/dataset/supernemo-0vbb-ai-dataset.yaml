@@ -1,0 +1,32 @@
+id: supernemo-0vbb-ai-dataset
+type: dataset
+title: SuperNEMO Demonstrator simulated dataset (0vbb AI Summer School 2026)
+short: SuperNEMO Demonstrator simulated 0νββ / 2νββ / background events for ML (HDF5)
+description: HDF5 simulated events (~23 GB) for 82Se 0nbb signal and 2nbb, 208Tl, 214Bi backgrounds in the SuperNEMO Demonstrator, plus PDF description, for ML training.
+doi: 10.5281/zenodo.20698788
+url_landing: https://doi.org/10.5281/zenodo.20698788
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.20698788
+  host: zenodo
+  role: primary
+- url: https://zenodo.org/records/20698789
+  host: zenodo
+  role: mirror
+experiments:
+- supernemo
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API metadata and file list.'
+  - Third companion of the summer-school datasets (NEXT, single-phase Xe).

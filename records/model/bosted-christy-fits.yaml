@@ -1,0 +1,44 @@
+id: bosted-christy-fits
+type: model
+title: Bosted–Christy fits to inclusive electron scattering (F1F207 / F1F209 FORTRAN codes)
+short: Bosted–Christy fits (F1F207/F1F209) to inclusive electron scattering on nucleons and nuclei
+description: FORTRAN parametrisations of F1/F2 for proton, deuteron, neutron and nuclei (QE + resonance + inelastic, 2009 A>2 fit with JLab data) with C++ wrapper and deuteron error matrix; widely used for e/nu resonance-region and QE-tail modelling.
+url_landing: https://userweb.jlab.org/~bosted/fits.html
+license: none-stated
+access: open
+distributions:
+- url: https://userweb.jlab.org/~bosted/fits.html
+  host: institutional
+  role: primary
+- url: https://userweb.jlab.org/~bosted/F1F209.f
+  host: institutional
+  role: mirror
+- url: https://userweb.jlab.org/~bosted/F1F207.f
+  host: institutional
+  role: mirror
+- url: https://userweb.jlab.org/~bosted/pbmodel.tar.gz
+  host: institutional
+  role: mirror
+- url: https://userweb.jlab.org/~bosted/F1F207D2emat.dat
+  host: institutional
+  role: mirror
+references:
+- arxiv: '0711.0159'
+  relation: describes
+- arxiv: '1203.2262'
+  relation: describes
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+model:
+  quantities:
+  - structure functions
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched fits page; code links listed.'
+  - Works up to Cu; 3He less reliable per author.

@@ -1,0 +1,35 @@
+id: t2k-nd280-electron-neutrino-cc-inclusive-cross-sections
+type: dataset
+title: T2K ND280 electron-neutrino CC inclusive cross sections data release
+short: nue/nuebar CC inclusive cross sections (NEUT and GENIE based) with covariances and e-/e+ smearing matrices.
+description: nue/nuebar CC inclusive cross sections (NEUT and GENIE based) with covariances and e-/e+ smearing matrices.
+url_landing: https://t2k-experiment.org/wp-content/uploads/data_release_CCNueXs.zip
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/wp-content/uploads/data_release_CCNueXs.zip
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/results/
+  host: institutional
+  role: mirror
+references:
+- arxiv: '2002.11986'
+  relation: describes
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on https://t2k-experiment.org/results/ (fetched); file HEAD request 200'
+  - Paper ID from my knowledge where not on page; check.

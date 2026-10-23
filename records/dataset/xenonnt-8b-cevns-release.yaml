@@ -1,0 +1,40 @@
+id: xenonnt-8b-cevns-release
+type: dataset
+title: XENONnT solar 8B CEvNS and light dark matter data release
+short: 'XENONnT first indication of solar ⁸B CEvNS: event data, binning and likelihood templates'
+description: Post-selection 4D event data (cS2, S2 pre-activity quantile, S1/S2 BDT scores) per science run as CSV, YAML bin edges, HDF5 likelihood templates (AC, ER, neutron, monoenergetic NR efficiency templates with light/charge-yield nuisances), 90% CL limits and example notebook.
+doi: 10.5281/zenodo.20576156
+url_landing: https://github.com/XENONnT/cevns_data_release
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://github.com/XENONnT/cevns_data_release
+  host: github
+  role: primary
+- url: https://doi.org/10.5281/zenodo.20576156
+  host: zenodo
+  role: documentation
+references:
+- arxiv: '2408.02877'
+  relation: describes
+experiments:
+- xenonnt
+sources:
+- solar
+topics:
+- cross-section
+- dark-matter
+channels:
+- cevns
+data:
+  levels:
+  - events
+  - prediction
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API: repo contents and README read; Zenodo DOI badge in README.'
+  - Monoenergetic NR templates let users fold in their own recoil spectra; paper link inferred from topic (8B CEvNS search), check README for the exact citation.

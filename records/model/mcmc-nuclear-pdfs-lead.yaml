@@ -1,0 +1,35 @@
+id: mcmc-nuclear-pdfs-lead
+type: model
+title: 'MCMC-based nuclear PDFs for lead: posterior samples and LHAPDF grids'
+short: 'MCMC-based nuclear PDFs for lead: posterior samples and LHAPDF grids'
+description: Posterior parameter samples (CSV) and LHAPDF grids (zip, ~1.4 GB total) for Pb-only and multi-nuclei MCMC nPDF fits; relevant to nuclear corrections in neutrino DIS on heavy targets.
+doi: 10.5281/zenodo.19204900
+url_landing: https://doi.org/10.5281/zenodo.19204900
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.19204900
+  host: zenodo
+  role: primary
+- url: https://zenodo.org/records/19204901
+  host: zenodo
+  role: mirror
+references:
+- arxiv: '2603.13150'
+  relation: describes
+sources:
+- accelerator
+topics:
+- nuclear-model
+channels:
+- dis
+model:
+  quantities:
+  - nuclear PDFs
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API metadata and file list.'
+  - Not neutrino-specific; check whether neutrino DIS data enter the fit.

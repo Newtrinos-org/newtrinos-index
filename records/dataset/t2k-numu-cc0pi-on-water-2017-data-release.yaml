@@ -1,0 +1,31 @@
+id: t2k-numu-cc0pi-on-water-2017-data-release
+type: dataset
+title: T2K numu CC0pi on water (2017) data release
+short: Double-differential CC0pi on H2O (P0D) with covariance.
+description: Double-differential CC0pi on H2O (P0D) with covariance.
+url_landing: https://t2k-experiment.org/results/2017-cc0pi-water-xsec/
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/2017-cc0pi-water-xsec/
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/wp-content/uploads/nd280data-numu-cc0pi-xs-on-h2o-2017.tar.gz
+  host: institutional
+  role: mirror
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed with download link on t2k-experiment.org/results pages 2-4 (fetched)'

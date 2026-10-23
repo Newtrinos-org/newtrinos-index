@@ -1,0 +1,30 @@
+id: bxdecay0
+type: software
+title: 'BxDecay0: C++ port of Decay0/GENBB double-beta and radioactive decay generator'
+short: 'BxDecay0: C++ Decay0/GENBB generator for radioactive and double-beta decays'
+description: Event generator for standard radioactive decays and 2nbb/0nbb processes (many modes, Majoron, excited states) for nuclides of interest; C++ library with Geant4-friendly interface.
+url_landing: https://github.com/BxCppDev/bxdecay0
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/BxCppDev/bxdecay0
+  host: github
+  role: primary
+sources:
+- nuclear-decay
+topics:
+- double-beta
+software:
+  repository: https://github.com/BxCppDev/bxdecay0
+  purposes:
+  - event-generator
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata (active 2026).'
+  - Original Fortran Decay0 by Ponkratenko, Tretyak, Zdesenko.

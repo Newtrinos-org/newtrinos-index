@@ -1,0 +1,34 @@
+id: nuhepmc
+type: software
+title: 'NuHepMC: standardized event record format for neutrino event generators'
+short: 'NuHepMC: standardised HepMC3-based event record for neutrino event generators'
+description: Specification (conventions and attributes layered on HepMC3) for neutrino generator event output, enabling generator-agnostic analyses (used by GENIE, NEUT, NuWro, Achilles, NUISANCE).
+url_landing: https://github.com/NuHepMC/Spec
+license: MIT
+access: open
+distributions:
+- url: https://github.com/NuHepMC/Spec
+  host: github
+  role: primary
+references:
+- arxiv: '2310.13211'
+  relation: describes
+topics:
+- cross-section
+sources:
+- none
+software:
+  repository: https://github.com/NuHepMC/Spec
+  purposes:
+  - event-generator
+  - tooling
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata.'
+  - Spec repo; reference implementations in sibling repos of the NuHepMC org.

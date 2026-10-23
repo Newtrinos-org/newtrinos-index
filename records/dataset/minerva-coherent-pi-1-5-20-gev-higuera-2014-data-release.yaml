@@ -1,0 +1,31 @@
+id: minerva-coherent-pi-1-5-20-gev-higuera-2014-data-release
+type: dataset
+title: MINERvA coherent pi+- 1.5-20 GeV (Higuera 2014) data release
+short: 'CSV tables: backgrounds, fractional systematics, dsigma/dE_pi, dsigma/dtheta_pi.'
+description: 'CSV tables: backgrounds, fractional systematics, dsigma/dE_pi, dsigma/dtheta_pi.'
+url_landing: https://minerva.fnal.gov/coherent-pion-data-release-page/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/coherent-pion-data-release-page/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1409.3835'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

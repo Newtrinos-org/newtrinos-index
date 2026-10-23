@@ -1,0 +1,32 @@
+id: microboone-mesonless-numu-cc-single-double-differential
+type: dataset
+title: 'MicroBooNE mesonless numu CC single/double-differential cross sections (blockwise unfolding): basic data release'
+short: 'basic_data_release/: cross-section tables, additional smearing, total/flux/detector/model covariance tables, chi2 script'
+description: 'basic_data_release/: cross-section tables, additional smearing, total/flux/detector/model covariance tables, chi2 scripts (C and Python).'
+url_landing: https://arxiv.org/abs/2403.19574
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2403.19574
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2403.19574'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv ancillary listing fetched (HTTP 200), file names listed'

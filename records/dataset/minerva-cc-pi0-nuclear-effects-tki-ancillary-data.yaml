@@ -1,0 +1,32 @@
+id: minerva-cc-pi0-nuclear-effects-tki-ancillary-data
+type: dataset
+title: MINERvA CC pi0 nuclear-effects (TKI) ancillary data
+short: SupplementalMaterial2.root / .txt with differential cross sections and covariances.
+description: SupplementalMaterial2.root / .txt with differential cross sections and covariances.
+url_landing: https://arxiv.org/abs/2002.05812
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2002.05812
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2002.05812'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

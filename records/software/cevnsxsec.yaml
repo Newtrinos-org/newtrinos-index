@@ -1,0 +1,35 @@
+id: cevnsxsec
+type: software
+title: 'CEvNSXsec: CEvNS cross sections with radiative corrections for 40Ar (Tomalak)'
+short: 'CEvNSXsec: CEvNS on ⁴⁰Ar with flavour-dependent QED/electroweak radiative corrections (Mathematica)'
+description: Mathematica notebook computing CEvNS cross sections on 40Ar including flavour-dependent QED/electroweak radiative corrections and flavour differences.
+url_landing: https://github.com/tomalak7/CEvNSXsec
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/tomalak7/CEvNSXsec
+  host: github
+  role: primary
+references:
+- arxiv: '2011.05960'
+  relation: describes
+sources:
+- spallation
+topics:
+- cross-section
+channels:
+- cevns
+software:
+  repository: https://github.com/tomalak7/CEvNSXsec
+  purposes:
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API: repo contents (single .nb + README).'
+  - No licence stated; paper association inferred from title/author.

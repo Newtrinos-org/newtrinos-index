@@ -92,3 +92,11 @@
 - {id: nutev, name: NuTeV, collaboration: NuTeV, sources: [accelerator], technology: [iron-calorimeter], site: Fermilab (USA), start: 1996, end: 1997}
 - {id: chorus, name: CHORUS, collaboration: CHORUS, sources: [accelerator], technology: [emulsion], site: CERN, start: 1994, end: 1997}
 - {id: sciboone, name: SciBooNE, collaboration: SciBooNE, sources: [accelerator], technology: [segmented-scintillator], site: Fermilab (USA), start: 2007, end: 2008}
+# --- dark-matter / low-background detectors with neutrino results, future 0νββ / mass ---
+- {id: xenonnt, name: XENONnT, collaboration: XENON, sources: [solar], technology: [xenon-tpc], site: LNGS (Italy), start: 2021}
+- {id: pandax, name: PandaX-4T, aliases: [PandaX], collaboration: PandaX, sources: [solar, nuclear-decay], technology: [xenon-tpc], site: CJPL (China), start: 2020}
+- {id: project-8, name: Project 8, collaboration: Project 8, sources: [nuclear-decay], technology: [other], site: University of Washington (USA)}
+- {id: supernemo, name: SuperNEMO, aliases: [SuperNEMO Demonstrator, NEMO-3], collaboration: SuperNEMO, sources: [nuclear-decay], technology: [other], site: LSM (France)}
+- {id: next, name: NEXT, aliases: [NEXT-White, NEXT-100], collaboration: NEXT, sources: [nuclear-decay], technology: [xenon-tpc], site: LSC (Spain)}
+- {id: ricochet, name: Ricochet, collaboration: Ricochet, sources: [reactor], technology: [bolometer], site: ILL (France)}
+- {id: dresden-ii, name: Dresden-II reactor CEvNS (NCC-1701), aliases: [NCC-1701], collaboration: Dresden-II, sources: [reactor], technology: [germanium], site: Dresden-II reactor (USA)}

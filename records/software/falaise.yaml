@@ -1,0 +1,35 @@
+id: falaise
+type: software
+title: 'Falaise: SuperNEMO simulation, reconstruction and analysis software'
+short: 'Falaise: SuperNEMO simulation, reconstruction and analysis software'
+description: Full software chain of the SuperNEMO 82Se double-beta tracker-calorimeter demonstrator (Geant4 simulation via Bayeux, reconstruction, analysis modules).
+url_landing: https://github.com/SuperNEMO-DBD/Falaise
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/SuperNEMO-DBD/Falaise
+  host: github
+  role: primary
+- url: http://supernemo.org/Falaise
+  host: institutional
+  role: mirror
+experiments:
+- supernemo
+sources:
+- nuclear-decay
+topics:
+- double-beta
+software:
+  repository: https://github.com/SuperNEMO-DBD/Falaise
+  purposes:
+  - detector-simulation
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata.'

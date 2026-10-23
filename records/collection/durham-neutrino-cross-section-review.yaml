@@ -1,0 +1,35 @@
+id: durham-neutrino-cross-section-review
+type: collection
+title: 'Durham HepData Reaction Database: neutrino cross-section review (archived)'
+short: 'Durham HepData neutrino cross-section review: historical measurements by channel (Wayback copy)'
+description: Legacy Durham compilation of historical neutrino cross-section measurements (CC total, QE, single/double pion, NC) organised by experiment and channel, with per-paper data tables and summary plots; linked from the NuSTEC resources page.
+url_landing: http://web.archive.org/web/20161103124506/http://hepdata.cedar.ac.uk/review/neutrino/
+license: none-stated
+access: open
+distributions:
+- url: http://web.archive.org/web/20161103124506/http://hepdata.cedar.ac.uk/review/neutrino/
+  host: hepdata
+  role: primary
+- url: http://hepdata.cedar.ac.uk/review/neutrino/
+  host: hepdata
+  role: mirror
+- url: https://nustec.fnal.gov/resources/
+  host: institutional
+  role: mirror
+experiments:
+- anl-12ft
+- bnl-7ft
+- charm
+- ccfr
+- lsnd
+sources:
+- accelerator
+topics:
+- cross-section
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Original host redirects to hepdata.net; Wayback Machine snapshot (2016/2017) frames fetched, experiment and channel index with data links present.'
+  - Only reachable via the Internet Archive; many tables have since migrated to hepdata.net records (some already catalogued).

@@ -1,0 +1,31 @@
+id: t2k-nd280-numu-cc-inclusive-double-differential-with-4pi
+type: dataset
+title: T2K ND280 numu CC inclusive double-differential with 4pi acceptance (2018) data release
+short: Double-differential CC inclusive cross section on carbon with covariance.
+description: Double-differential CC inclusive cross section on carbon with covariance.
+url_landing: https://t2k-experiment.org/results/2018-ccinc-4pi/
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/2018-ccinc-4pi/
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/wp-content/uploads/nd280data-numu-cc-inc-xs-on-c-2018.tar
+  host: institutional
+  role: mirror
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed with download link on t2k-experiment.org/results pages 2-4 (fetched)'

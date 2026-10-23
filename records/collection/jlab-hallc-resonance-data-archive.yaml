@@ -1,0 +1,38 @@
+id: jlab-hallc-resonance-data-archive
+type: collection
+title: JLab Hall C Resonance Data Archive (inclusive e-p / e-d resonance-region data) and DIS data archive
+short: JLab Hall C archive of resonance-region inclusive electron-scattering data and fits
+description: Hampton U./Hall C archive of global resonance-region inclusive electron scattering datasets (elastic e-p, hydrogen, deuterium) organised by lab and experiment, plus fit-code tarballs (Christy-Bosted F1F209, sftm) and the E99-118 low-Q2 DIS L/T-separated H/D data archive. Key input for neutrino resonance/SIS (Bodek-Yang-like) modelling.
+url_landing: http://hallcweb.jlab.org/resdata/
+license: none-stated
+access: open
+distributions:
+- url: http://hallcweb.jlab.org/resdata/
+  host: institutional
+  role: primary
+- url: http://hallcweb.jlab.org/resdata/database/
+  host: institutional
+  role: mirror
+- url: http://hallcweb.jlab.org/resdata/codes/
+  host: institutional
+  role: mirror
+- url: http://hallcweb.jlab.org/disdata/index.html
+  host: institutional
+  role: mirror
+- url: https://www.jlab.org/resdata/
+  host: institutional
+  role: mirror
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- res
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched resdata home, database, codes and disdata pages via curl.'
+  - Marked 'preliminary webpage'; nuclear targets mostly in the UVA QES archive.

@@ -1,0 +1,30 @@
+id: t2k-neutrino-beam-flux-prediction-2016
+type: dataset
+title: T2K neutrino beam flux prediction 2016
+short: ND280 and SK flux predictions with covariance (2016 tune), intermediate between catalogued 2013 and 2020 releases.
+description: ND280 and SK flux predictions with covariance (2016 tune), intermediate between catalogued 2013 and 2020 releases.
+url_landing: https://t2k-experiment.org/results/neutrino-beam-flux-prediction-2016/
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/neutrino-beam-flux-prediction-2016/
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/wp-content/uploads/T2Kflux2016.tar
+  host: institutional
+  role: mirror
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed with download link on t2k-experiment.org/results pages 2-4 (fetched)'

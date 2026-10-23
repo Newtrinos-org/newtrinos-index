@@ -1,0 +1,32 @@
+id: miniboone-cc-pi-production-cross-sections-on-mineral-oil
+type: dataset
+title: MiniBooNE CC pi+ production cross sections on mineral oil data release
+short: ccpipXSecs.root and ccpipXSecTables.txt with single and double differential cross sections.
+description: ccpipXSecs.root and ccpipXSecTables.txt with single and double differential cross sections.
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/ccpip/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/ccpip/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1011.3572'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

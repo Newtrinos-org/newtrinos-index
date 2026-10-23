@@ -1,0 +1,35 @@
+id: pycevns
+type: software
+title: 'pyCEvNS: Python package for CEvNS rates and BSM fits'
+short: 'pyCEvNS: CEvNS and ν–e rates with NSI / light-mediator fits to COHERENT data'
+description: Python package computing CEvNS (and nu-e) cross sections, fluxes (SNS, reactor, solar) and detector rates, with NSI/light-mediator fits to COHERENT data.
+url_landing: https://github.com/Ikaroshu/pyCEvNS
+license: MIT
+access: open
+distributions:
+- url: https://github.com/Ikaroshu/pyCEvNS
+  host: github
+  role: primary
+sources:
+- spallation
+- reactor
+- solar
+topics:
+- cross-section
+- nsi
+channels:
+- cevns
+- es
+software:
+  repository: https://github.com/Ikaroshu/pyCEvNS
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata (active 2026).'

@@ -1,0 +1,35 @@
+id: qes-archive
+type: collection
+title: Quasielastic Electron Nucleus Scattering Archive (UVA, Benhar–Day–Sick)
+short: 'Quasielastic electron–nucleus scattering archive (Benhar, Day, Sick): ~19 000 (e,e'') points for ν-interaction modelling'
+description: Compilation of radiatively corrected inclusive (e,e') quasielastic cross sections, ~600 target/energy/angle combinations and ~19,000 points, for nuclei from 2H to 238U; plain text 8-column files (Z, A, E, theta, nu, sigma, error, citation) per target plus PDF plots. Standard benchmark for neutrino-nucleus QE/2p2h models.
+url_landing: https://discovery.phys.virginia.edu/research/groups/qes-archive/
+license: none-stated
+access: open
+distributions:
+- url: https://discovery.phys.virginia.edu/research/groups/qes-archive/
+  host: institutional
+  role: primary
+- url: https://discovery.phys.virginia.edu/research/groups/qes-archive/data/index.html
+  host: institutional
+  role: mirror
+- url: https://discovery.phys.virginia.edu/research/groups/qes-archive/notes.html
+  host: institutional
+  role: mirror
+references:
+- arxiv: nucl-ex/0603032
+  relation: describes
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- ccqe
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched landing and data pages; format and per-target download pages confirmed; updated with 2024 12C Q2=0.8 data.'
+  - Cross sections only, no separated response functions; Coulomb corrections not applied unless stated.

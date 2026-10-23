@@ -1,0 +1,39 @@
+id: nu-e-scattering-tomalak-hill
+type: software
+title: 'Elastic neutrino-electron scattering theory: arXiv ancillary Mathematica notebook (Tomalak & Hill)'
+short: ν–e elastic scattering with O(α) radiative corrections (Tomalak, Hill; arXiv ancillary notebook)
+description: Notebook computing nu-e elastic scattering recoil spectra and total cross sections with O(alpha) radiative corrections and hadronic uncertainties, used for flux normalisation at accelerator near detectors.
+url_landing: https://arxiv.org/abs/1907.03379
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1907.03379
+  host: arxiv
+  role: primary
+- url: https://arxiv.org/src/1907.03379/anc/neutrino_electron_scattering_energy_spectra_and_total_xsection.nb
+  host: arxiv
+  role: mirror
+references:
+- arxiv: '1907.03379'
+  relation: describes
+sources:
+- solar
+- accelerator
+topics:
+- cross-section
+channels:
+- es
+software:
+  repository: https://arxiv.org/abs/1907.03379
+  purposes:
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv abs page lists the anc .nb file.'
+  - Mathematica required.

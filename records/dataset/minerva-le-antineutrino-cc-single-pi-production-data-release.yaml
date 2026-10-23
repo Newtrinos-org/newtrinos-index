@@ -1,0 +1,31 @@
+id: minerva-le-antineutrino-cc-single-pi-production-data-release
+type: dataset
+title: MINERvA LE antineutrino CC single pi- production data release
+short: Supplemental LaTeX tables of cross sections and covariance.
+description: Supplemental LaTeX tables of cross sections and covariance.
+url_landing: https://minerva.fnal.gov/low-energy-antineutrino-pi-production/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/low-energy-antineutrino-pi-production/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1906.08300'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

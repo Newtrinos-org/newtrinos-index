@@ -1,0 +1,40 @@
+id: microboone-bnb-inclusive-overlay-withwire
+type: dataset
+title: 'MicroBooNE Public Dataset: BNB Inclusive overlay sample (WithWire)'
+short: 'Simulated BNB neutrino interactions (all flavours, cryostat) overlaid on cosmic data, including wire-level information; '
+description: Simulated BNB neutrino interactions (all flavours, cryostat) overlaid on cosmic data, including wire-level information; HDF5 (24,332 events, 18 files, 44 GB) plus artroot via xrootd list (136 GB).
+doi: 10.5281/zenodo.7262009
+url_landing: https://doi.org/10.5281/zenodo.7262009
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.7262009
+  host: zenodo
+  role: primary
+- url: https://microboone.fnal.gov/documents-publications/public-datasets/
+  host: institutional
+  role: mirror
+- url: https://github.com/uboone/OpenSamples/tree/v02
+  host: github
+  role: mirror
+references:
+- arxiv: '2309.15362'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+- detector-response
+data:
+  levels:
+  - events
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on MicroBooNE Public Datasets page (fetched)'
+  - Companion to the already catalogued NoWire inclusive sample (zenodo 8370883).

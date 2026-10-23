@@ -1,0 +1,38 @@
+id: qed-corrections-ccqe-notebook
+type: software
+title: 'QED radiative corrections for accelerator neutrinos: arXiv ancillary notebook (Tomalak et al.)'
+short: QED radiative corrections to (anti)neutrino–nucleon CCQE and e/μ flavour ratios (arXiv ancillary notebook)
+description: Mathematica notebook giving (anti)neutrino-nucleon CCQE cross sections and e/mu flavour ratios with virtual, soft and jet-function radiative corrections (E_nu=2 GeV, photon threshold 10 MeV), with a PDF description.
+url_landing: https://arxiv.org/abs/2105.07939
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2105.07939
+  host: arxiv
+  role: primary
+- url: https://arxiv.org/src/2105.07939/anc/description_of_nb_file.pdf
+  host: arxiv
+  role: mirror
+references:
+- arxiv: '2105.07939'
+  relation: describes
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- ccqe
+software:
+  repository: https://arxiv.org/abs/2105.07939
+  purposes:
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv abs page lists anc files cross_sections_and_flavor_ratios_..._10MeV.nb and description_of_nb_file.pdf.'
+  - Mathematica required.

@@ -1,0 +1,36 @@
+id: clas-physics-database
+type: service
+title: CLAS Physics Database (Jefferson Lab Hall B / MSU SINP)
+short: 'CLAS physics database: JLab Hall B electro-/photoproduction observables (inputs to ν-interaction models)'
+description: Searchable database of CLAS measured observables since 1998 (integrated and multi-differential cross sections, asymmetries, structure functions) for exclusive photo- and electroproduction off proton, neutron and nuclei, W<4 GeV, Q2<5 GeV2; mirrored at MSU. Pion electroproduction in the resonance region is a key input to neutrino resonance models.
+url_landing: https://clasweb.jlab.org/physicsdb/
+license: none-stated
+access: open
+distributions:
+- url: https://clasweb.jlab.org/physicsdb/
+  host: institutional
+  role: primary
+- url: http://clasweb.jlab.org/cgi-bin/clasdb/db.cgi
+  host: institutional
+  role: mirror
+- url: http://depni.sinp.msu.ru/cgi-bin/jlab/db.cgi
+  host: institutional
+  role: mirror
+- url: http://clasweb.jlab.org/physicsdb/Data_Format.html
+  host: institutional
+  role: mirror
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+service:
+  query_interface: https://clasweb.jlab.org/physicsdb/
+  api_kind: none
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched intro page via curl; search engine and data format links present.'
+  - Mainly nucleon targets; e4nu nuclear data not included.

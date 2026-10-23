@@ -1,0 +1,25 @@
+id: minerva-cross-section-publication-data-releases-index
+type: collection
+title: MINERvA cross-section publication data releases (index)
+short: Index of ~43 MINERvA cross-section papers with links to data release pages / arXiv ancillary files (CSV/text cross secti
+description: Index of ~43 MINERvA cross-section papers with links to data release pages / arXiv ancillary files (CSV/text cross sections, covariance and correlation matrices, flux files).
+url_landing: https://minerva.fnal.gov/data-release-page/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/data-release-page/
+  host: institutional
+  role: primary
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page fetched, 43 entries listed'
+  - Individual releases listed separately below where not already catalogued.

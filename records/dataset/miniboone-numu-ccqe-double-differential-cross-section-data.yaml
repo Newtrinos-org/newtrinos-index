@@ -1,0 +1,32 @@
+id: miniboone-numu-ccqe-double-differential-cross-section-data
+type: dataset
+title: MiniBooNE numu CCQE double-differential cross section data release (2010)
+short: Text tables of double-differential CCQE cross section, errors, backgrounds, Q2 and E_nu distributions.
+description: Text tables of double-differential CCQE cross section, errors, backgrounds, Q2 and E_nu distributions.
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/ccqe/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/ccqe/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1002.2680'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

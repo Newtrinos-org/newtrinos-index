@@ -1,0 +1,35 @@
+id: t2k-oa2019-oscillation-analysis-data-release-3-13e21-pot
+type: result
+title: T2K OA2019 oscillation analysis data release (3.13E21 POT, Nature-era improved constraints)
+short: Tar (3.5 MB) with oscillation analysis inputs/outputs for the 3.13E21 POT result (PRD 2021, 'Improved constraints on neu
+description: Tar (3.5 MB) with oscillation analysis inputs/outputs for the 3.13E21 POT result (PRD 2021, 'Improved constraints on neutrino mixing').
+url_landing: https://t2k-experiment.org/wp-content/uploads/oa2019.tar
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/wp-content/uploads/oa2019.tar
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/results/
+  host: institutional
+  role: mirror
+references:
+- arxiv: '2101.03779'
+  relation: describes
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on https://t2k-experiment.org/results/ (fetched); file HEAD request 200'
+  - Paper ID from my knowledge where not on page; check.

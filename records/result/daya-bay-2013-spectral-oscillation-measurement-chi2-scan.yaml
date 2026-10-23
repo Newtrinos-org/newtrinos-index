@@ -1,0 +1,32 @@
+id: daya-bay-2013-spectral-oscillation-measurement-chi2-scan
+type: result
+title: 'Daya Bay 2013 spectral oscillation measurement: chi2 scan'
+short: chi2_scan.dat over (sin^2 2theta13, |Delta m^2_ee|) for the first spectral analysis (PRL 112, 061801).
+description: chi2_scan.dat over (sin^2 2theta13, |Delta m^2_ee|) for the first spectral analysis (PRL 112, 061801).
+url_landing: https://arxiv.org/abs/1310.6732
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1310.6732
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '1310.6732'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv ancillary listing fetched (HTTP 200), file names listed'

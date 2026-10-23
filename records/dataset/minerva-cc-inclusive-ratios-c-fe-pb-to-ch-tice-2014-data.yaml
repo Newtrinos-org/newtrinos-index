@@ -1,0 +1,31 @@
+id: minerva-cc-inclusive-ratios-c-fe-pb-to-ch-tice-2014-data
+type: dataset
+title: MINERvA CC inclusive ratios C/Fe/Pb to CH (Tice 2014) data release
+short: CSV tables of cross-section ratios vs x and E, target masses, flux, ratio correlations.
+description: CSV tables of cross-section ratios vs x and E, target masses, flux, ratio correlations.
+url_landing: https://minerva.fnal.gov/nuclear-target-ratios-data-release-page/
+license: none-stated
+access: open
+distributions:
+- url: https://minerva.fnal.gov/nuclear-target-ratios-data-release-page/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1403.2103'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: release page / arXiv anc listing fetched (HTTP 200), files listed'

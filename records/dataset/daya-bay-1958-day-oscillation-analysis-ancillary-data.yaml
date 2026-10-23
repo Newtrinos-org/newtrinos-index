@@ -1,0 +1,32 @@
+id: daya-bay-1958-day-oscillation-analysis-ancillary-data
+type: dataset
+title: 'Daya Bay 1958-day oscillation analysis: ancillary data'
+short: Per-hall IBD prompt and background spectra, delta-chi2 surface, detector-model response (Etrue->Edep->Erec) text files f
+description: Per-hall IBD prompt and background spectra, delta-chi2 surface, detector-model response (Etrue->Edep->Erec) text files for 1958 days.
+url_landing: https://arxiv.org/abs/1809.02261
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1809.02261
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '1809.02261'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv ancillary listing fetched (HTTP 200), file names listed'

@@ -1,0 +1,31 @@
+id: miniboone-data-releases-public-mirror-of-all-fnal-data
+type: collection
+title: MiniBooNE Data Releases (public mirror of all FNAL data-release pages)
+short: Index of 17 MiniBooNE data releases 2007-2021 (oscillation nue/nuebar, numu disappearance, low-E excess, flux, CCQE, NCE
+description: Index of 17 MiniBooNE data releases 2007-2021 (oscillation nue/nuebar, numu disappearance, low-E excess, flux, CCQE, NCEL, NCpi0, CCpi+, CCpi0, KDAR, dark-matter beam dump) with text data files, predictions and covariance matrices.
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/
+  host: institutional
+  role: primary
+- url: https://arxiv.org/abs/2110.15055
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2110.15055'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- cross-section
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page fetched; 17 entries listed; flux sub-page fetched'
+  - Original FNAL pages now behind Fermilab login; this IU mirror is the public copy. nue2020 marked under construction. Several also on HEPData (2007 nue, CCQE nubar, 2021 osc).

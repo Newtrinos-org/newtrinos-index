@@ -1,0 +1,40 @@
+id: pandax-4t-scalar-neutrino-open-data
+type: dataset
+title: 'PandaX-4T scalar-neutrino and scalar-dark-matter interactions: open data (spectrum + background model incl. 136Xe 2nbb and solar pp)'
+short: 'PandaX-4T scalar-neutrino interactions: ER spectrum and background components incl. 2νββ, solar pp'
+description: 'Experimental ER energy spectrum (Data.csv) and per-component background CSVs: detector materials, Xe isotopes, 136Xe 2nbb, 212Pb, 214Pb, 85Kr, 125I, solar pp neutrinos, and total background model; used to constrain scalar-mediated neutrino-electron interactions.'
+url_landing: https://pandax.sjtu.edu.cn/node/498
+license: none-stated
+access: open
+distributions:
+- url: https://pandax.sjtu.edu.cn/node/498
+  host: institutional
+  role: primary
+- url: https://static.pandax.sjtu.edu.cn/download/data-share/p4-nuDM/open-data.tar.gz
+  host: institutional
+  role: mirror
+- url: https://doi.org/10.1103/pn9y-g5k7
+  host: journal-supplement
+  role: documentation
+references:
+- doi: 10.1103/pn9y-g5k7
+  relation: describes
+experiments:
+- pandax
+sources:
+- solar
+- nuclear-decay
+topics:
+- nsi
+- double-beta
+data:
+  levels:
+  - binned
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched PandaX data release page listing file descriptions and tarball link.'
+  - Useful for nu-e BSM reinterpretation and 136Xe 2nbb spectral template.

@@ -1,0 +1,35 @@
+id: epps21-nuclear-pdfs
+type: model
+title: EPPS21 nuclear PDFs (Jyväskylä)
+short: EPPS21 nuclear PDFs (A = 3…208) with interface routines and error sets
+description: NLO nuclear PDF grids per mass number (A=3...208) with Fortran and C++ interface routines and error sets; also hosts earlier EPPS16, EPS09, EKS98 etc. Used for nuclear corrections in neutrino DIS cross sections.
+url_landing: https://research.hip.fi/qcdtheory/nuclear-pdfs/epps21/
+license: none-stated
+access: open
+distributions:
+- url: https://research.hip.fi/qcdtheory/nuclear-pdfs/epps21/
+  host: institutional
+  role: primary
+- url: https://research.hip.fi/qcdtheory/nuclear-pdfs/
+  host: institutional
+  role: mirror
+references:
+- doi: 10.1140/epjc/s10052-022-10359-0
+  relation: describes
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- dis
+model:
+  quantities:
+  - nuclear PDFs
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page via curl; grid files and drivers listed.'
+  - Also distributed via LHAPDF. Not neutrino-specific; EPPS21 includes neutrino DIS (CHORUS) data in fit.

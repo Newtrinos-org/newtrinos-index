@@ -1,0 +1,36 @@
+id: yadism
+type: software
+title: 'yadism: Yet Another DIS Module (NNPDF)'
+short: 'yadism: DIS structure functions and cross sections (NC/CC incl. neutrinos, up to N³LO)'
+description: Python DIS structure-function and cross-section calculator (NC and CC including neutrino/antineutrino, heavy-quark schemes, up to N3LO coefficient functions); the engine behind NNSFnu neutrino structure functions.
+url_landing: https://github.com/NNPDF/yadism
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/NNPDF/yadism
+  host: github
+  role: primary
+- url: https://yadism.readthedocs.io
+  host: institutional
+  role: mirror
+sources:
+- accelerator
+- atmospheric
+topics:
+- cross-section
+channels:
+- dis
+software:
+  repository: https://github.com/NNPDF/yadism
+  purposes:
+  - nuclear-model
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub API metadata.'
+  - NNSFnu itself is catalogued (nnusf).

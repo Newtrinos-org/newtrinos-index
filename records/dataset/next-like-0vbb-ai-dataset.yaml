@@ -1,0 +1,32 @@
+id: next-like-0vbb-ai-dataset
+type: dataset
+title: NEXT-like 0nbb vs 214Bi simulation dataset (0vbb AI Summer School, UC Irvine 2026)
+short: NEXT-like 0νββ vs ²¹⁴Bi simulated events for ML (0νββ AI summer school)
+description: Simulated 0nbb signal and 214Bi background events in high-pressure xenon gas TPC (NEXT-like), multiple ~0.9 GB tar parts, for ML signal/background classification.
+doi: 10.5281/zenodo.18927783
+url_landing: https://doi.org/10.5281/zenodo.18927783
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.18927783
+  host: zenodo
+  role: primary
+- url: https://zenodo.org/records/18927784
+  host: zenodo
+  role: mirror
+experiments:
+- next
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API metadata and file list.'
+  - Companion to the catalogued single-phase Xe TPC summer-school dataset (zenodo.20776760).

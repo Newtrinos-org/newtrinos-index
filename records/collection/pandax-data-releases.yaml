@@ -1,0 +1,36 @@
+id: pandax-data-releases
+type: collection
+title: PandaX data release page (PandaX-4T open data)
+short: PandaX-4T open data releases (dark matter, solar neutrinos, ¹³⁶Xe)
+description: 'Collaboration data releases: 1.54 t-yr DM search open data (PRL 134, 011805), scalar-neutrino interaction release, 259-day light-DM run0/run1 CSVs (low-energy region where 8B CEvNS is a background/signal), Run0 S2-only release, commissioning-run data.'
+url_landing: https://pandax.sjtu.edu.cn/public/data_release
+license: none-stated
+access: open
+distributions:
+- url: https://pandax.sjtu.edu.cn/public/data_release
+  host: institutional
+  role: primary
+- url: https://static.pandax.sjtu.edu.cn/download/data-share/p4-DM/opendata.tar.gz
+  host: institutional
+  role: mirror
+- url: https://static.pandax.sjtu.edu.cn/download/data-share/p4-light-dark-matter/run0_data.csv
+  host: institutional
+  role: mirror
+- url: https://static.pandax.sjtu.edu.cn/download/data-share/p4-first-analysis/s2only_data_release.zip
+  host: institutional
+  role: mirror
+experiments:
+- pandax
+sources:
+- solar
+- nuclear-decay
+topics:
+- dark-matter
+- double-beta
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched data release index; direct download links present.'
+  - Mostly DM-focused; no dedicated 8B CEvNS or 136Xe 0nbb release found.

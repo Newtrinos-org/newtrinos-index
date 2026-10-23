@@ -1,0 +1,32 @@
+id: prospect-i-final-short-baseline-oscillation-search-data
+type: dataset
+title: 'PROSPECT-I final short-baseline oscillation search: data release'
+short: Per-period, per-baseline spectra and detector responses, true baselines, background/stat/syst covariance matrices, delta
+description: Per-period, per-baseline spectra and detector responses, true baselines, background/stat/syst covariance matrices, delta-chi2 map, CLs exclusions, Python parsers.
+url_landing: https://arxiv.org/abs/2406.10408
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2406.10408
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2406.10408'
+  relation: describes
+experiments:
+- prospect
+sources:
+- reactor
+topics:
+- sterile
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv ancillary listing fetched (HTTP 200), file names listed'

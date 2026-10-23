@@ -1,0 +1,46 @@
+id: minerva-open-data-product-event-level-ntuples-le-and-me
+type: dataset
+title: MINERvA Open Data Product (event-level ntuples, LE and ME, data + MC)
+short: Full MINERvA neutrino and antineutrino data and simulation as flat ROOT n-tuples (LE ~3 GeV and ME ~6 GeV, FHC/RHC playl
+description: Full MINERvA neutrino and antineutrino data and simulation as flat ROOT n-tuples (LE ~3 GeV and ME ~6 GeV, FHC/RHC playlists) with flux, interaction and detector systematics; xrootd access with per-playlist file lists.
+doi: 10.15484/3022562
+url_landing: https://minerva.fnal.gov/opendata/
+license: CC0-1.0
+access: open
+distributions:
+- url: https://minerva.fnal.gov/opendata/
+  host: institutional
+  role: primary
+- url: https://doi.org/10.15484/3022562
+  host: institutional
+  role: documentation
+- url: https://minerva.fnal.gov/getdata
+  host: institutional
+  role: mirror
+- url: https://inspirehep.net/literature/3128404
+  host: institutional
+  role: mirror
+- url: https://github.com/MinervaExpt/Tuple-Documentation
+  host: github
+  role: mirror
+references:
+- arxiv: literature/3128404
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+- detector-response
+data:
+  levels:
+  - events
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: opendata and getdata pages fetched; access via xrootd root://fndcadoor.fnal.gov:1095/pnfs/fnal.gov/usr/minerva/persistent/OpenData/'
+  - Very large; access via xrootd (no login mentioned).

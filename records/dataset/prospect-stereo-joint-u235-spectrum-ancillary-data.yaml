@@ -1,0 +1,33 @@
+id: prospect-stereo-joint-u235-spectrum-ancillary-data
+type: dataset
+title: 'PROSPECT + STEREO joint U235 spectrum: ancillary data'
+short: Joint unfolding (Tikhonov and Wiener) spectra, covariance and filter matrices, PROSPECT prompt covariance and response m
+description: Joint unfolding (Tikhonov and Wiener) spectra, covariance and filter matrices, PROSPECT prompt covariance and response matrix, Huber model, README notebook.
+url_landing: https://arxiv.org/abs/2107.03371
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2107.03371
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2107.03371'
+  relation: describes
+experiments:
+- prospect
+- stereo
+sources:
+- reactor
+topics:
+- flux
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv ancillary listing fetched (HTTP 200), file names listed'

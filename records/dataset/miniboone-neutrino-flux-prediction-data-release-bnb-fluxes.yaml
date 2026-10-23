@@ -1,0 +1,31 @@
+id: miniboone-neutrino-flux-prediction-data-release-bnb-fluxes
+type: dataset
+title: MiniBooNE neutrino flux prediction data release (BNB fluxes per species, both horn polarities)
+short: Text files pospolarity_fluxes.dat and negpolarity_fluxes.dat with BNB flux for nu_mu, nu_mu-bar, nu_e, nu_e-bar at MiniB
+description: Text files pospolarity_fluxes.dat and negpolarity_fluxes.dat with BNB flux for nu_mu, nu_mu-bar, nu_e, nu_e-bar at MiniBooNE in neutrino and antineutrino modes.
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/flux/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/flux/
+  host: institutional
+  role: primary
+references:
+- arxiv: '0806.1449'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page fetched, two files listed'
+  - Widely used as SBN BNB flux reference.

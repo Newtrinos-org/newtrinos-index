@@ -1,0 +1,32 @@
+id: microboone-nue-nuebar-measurement-2025-data-release
+type: dataset
+title: 'MicroBooNE nue/nuebar measurement (2025): data release'
+short: DataRelease.root, nue and nuebar flux ROOT files, README.
+description: DataRelease.root, nue and nuebar flux ROOT files, README.
+url_landing: https://arxiv.org/abs/2503.23384
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2503.23384
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2503.23384'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv ancillary listing fetched (HTTP 200), file names listed'

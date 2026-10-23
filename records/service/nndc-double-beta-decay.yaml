@@ -1,0 +1,32 @@
+id: nndc-double-beta-decay
+type: service
+title: NNDC Double-Beta Decay Nuclear Data (adopted half-lives and experimental compilation)
+short: 'NNDC double-beta-decay data: evaluated 2νββ half-lives and experiment compilation'
+description: BNL/NNDC evaluated (adopted) 2nbb half-lives for 48Ca, 76Ge, 82Se, 96Zr, 100Mo, 116Cd, 128,130Te, 136Xe, 130Ba, 150Nd, 238U (2025 evaluation superseding 2013/2006) and a searchable database of experimental double-beta decay results from NSR (2b-, 2EC, b+b+, resonant modes).
+url_landing: https://www.nndc.bnl.gov/bbdecay/
+license: none-stated
+access: open
+distributions:
+- url: https://www.nndc.bnl.gov/bbdecay/
+  host: institutional
+  role: primary
+- url: https://www.nndc.bnl.gov/bbdecay/help.html
+  host: institutional
+  role: mirror
+references:
+- doi: 10.1016/j.nds.2014.07.018
+  relation: describes
+sources:
+- nuclear-decay
+topics:
+- double-beta
+service:
+  query_interface: https://www.nndc.bnl.gov/bbdecay/
+  api_kind: none
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page (curl); 2025 evaluation and search form present.'
+  - Web query interface; older evaluations linked.

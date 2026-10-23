@@ -1,0 +1,32 @@
+id: miniboone-kdar-236-mev-monoenergetic-numu-cc-data-release
+type: dataset
+title: MiniBooNE KDAR 236 MeV monoenergetic numu CC data release
+short: Measured spectrum and example model predictions (GENIE, NuWro, Martini, NUANCE, Singh, best fit) in text files.
+description: Measured spectrum and example model predictions (GENIE, NuWro, Martini, NUANCE, Singh, best fit) in text files.
+url_landing: https://rtayloe.pages.iu.edu/MB/data-releases/kdar/
+license: none-stated
+access: open
+distributions:
+- url: https://rtayloe.pages.iu.edu/MB/data-releases/kdar/
+  host: institutional
+  role: primary
+references:
+- arxiv: '1801.03848'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: IU mirror sub-page fetched (HTTP 200), file links listed'
+  - File links on mirror page; some point to www-boone.fnal.gov which may require FNAL login.

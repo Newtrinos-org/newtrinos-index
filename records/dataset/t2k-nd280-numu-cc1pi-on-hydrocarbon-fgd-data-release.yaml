@@ -1,0 +1,31 @@
+id: t2k-nd280-numu-cc1pi-on-hydrocarbon-fgd-data-release
+type: dataset
+title: T2K ND280 numu CC1pi+ on hydrocarbon (FGD) data release
+short: Cross sections and covariances for CC1pi+ on CH (2020).
+description: Cross sections and covariances for CC1pi+ on CH (2020).
+url_landing: https://t2k-experiment.org/results/data-release-for-measurement-of-the-muon-neutrino-charged-current-single-pi-production-on-hydrocarbon-using-the-t2k-off-axis-near-detector-nd280/
+license: none-stated
+access: open
+distributions:
+- url: https://t2k-experiment.org/results/data-release-for-measurement-of-the-muon-neutrino-charged-current-single-pi-production-on-hydrocarbon-using-the-t2k-off-axis-near-detector-nd280/
+  host: institutional
+  role: primary
+- url: https://t2k-experiment.org/wp-content/uploads/DataRelease_CC1pi_FGD.zip
+  host: institutional
+  role: mirror
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (accel_reactor, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed with download link on t2k-experiment.org/results pages 2-4 (fetched)'

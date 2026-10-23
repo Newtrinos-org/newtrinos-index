@@ -511,7 +511,7 @@
     },
     "experiments": {
       "items": {
-        "enum": ["homestake", "gallex", "gno", "sage", "best", "kamiokande", "super-k", "hyper-k", "sno", "sno-plus", "borexino", "kamland", "daya-bay", "double-chooz", "chooz", "reno", "juno", "bugey", "prospect", "stereo", "danss", "neos", "k2k", "t2k", "nova", "minos", "opera", "icarus", "microboone", "sbnd", "miniboone", "lsnd", "karmen", "minerva", "dune", "coherent", "conus", "amanda", "icecube", "km3net", "antares", "baikal-gvd", "katrin", "gerda", "legend", "cuore", "kamland-zen", "exo-200", "nomad", "anl-12ft", "bnl-7ft", "argoneut", "majorana", "connie", "ninja", "ccfr", "charm", "nutev", "chorus", "sciboone"],
+        "enum": ["homestake", "gallex", "gno", "sage", "best", "kamiokande", "super-k", "hyper-k", "sno", "sno-plus", "borexino", "kamland", "daya-bay", "double-chooz", "chooz", "reno", "juno", "bugey", "prospect", "stereo", "danss", "neos", "k2k", "t2k", "nova", "minos", "opera", "icarus", "microboone", "sbnd", "miniboone", "lsnd", "karmen", "minerva", "dune", "coherent", "conus", "amanda", "icecube", "km3net", "antares", "baikal-gvd", "katrin", "gerda", "legend", "cuore", "kamland-zen", "exo-200", "nomad", "anl-12ft", "bnl-7ft", "argoneut", "majorana", "connie", "ninja", "ccfr", "charm", "nutev", "chorus", "sciboone", "xenonnt", "pandax", "project-8", "supernemo", "next", "ricochet", "dresden-ii"],
         "x-vocab": "experiments"
       },
       "type": "array",

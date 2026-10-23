@@ -1,0 +1,30 @@
+id: christy-f1f221-fit
+type: model
+title: Christy et al. F1F221 inclusive electron-scattering fit (2021 package)
+short: Christy et al. F1F221 global fit to inclusive electron-scattering structure functions (2021)
+description: Updated (2021) global fit package to inclusive electron-nucleon/nucleus structure functions (tar, 21 MB, version 0.995), successor of the Bosted–Christy F1F209 fit.
+url_landing: https://userweb.jlab.org/~christy/Fits/
+license: none-stated
+access: open
+distributions:
+- url: https://userweb.jlab.org/~christy/Fits/
+  host: institutional
+  role: primary
+- url: https://userweb.jlab.org/~christy/Fits/f1f221v0.995.tar
+  host: institutional
+  role: mirror
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+model:
+  quantities:
+  - structure functions
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (xsec_cevns_mass_bb, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Directory listing fetched via curl showing f1f221v0.995.tar (2021-02-24).'
+  - No landing documentation on the page; describing paper not stated there (Christy, Gautam, Bodek et al. 2021-2022 fits, check).
