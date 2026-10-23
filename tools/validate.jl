@@ -83,7 +83,8 @@ function check_records(records, schema, only, r)
         startswith(rel, "candidates") && get(cur, "status", "") != "candidate" && err!(r, rel, "records in candidates/ must have curation.status candidate")
         startswith(rel, "records") && get(cur, "status", "") == "candidate" && warn!(r, rel, "candidate record in records/ (move to candidates/ or curate)")
         any(d -> d["role"] == "primary", get(rec, "distributions", [])) || warn!(r, rel, "no distribution with role primary")
-        get(rec, "access", "") == "open" && get(rec, "license", "") in ("unknown",) && warn!(r, rel, "open access but licence not checked yet")
+        startswith(rel, "records") && get(rec, "access", "") == "open" && get(rec, "license", "") == "unknown" &&
+            warn!(r, rel, "open access but licence not checked yet")
         for d in get(rec, "detectors", [])
             i = findfirst(x -> x["id"] == d, DETECTORS[])
             i === nothing && continue    # unknown ids are reported by the schema

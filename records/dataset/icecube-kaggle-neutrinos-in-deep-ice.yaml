@@ -1,0 +1,45 @@
+id: icecube-kaggle-neutrinos-in-deep-ice
+type: dataset
+title: "IceCube – Neutrinos in Deep Ice (Kaggle competition data)"
+short: "IceCube Kaggle challenge (2023): simulated events (pulses per sensor) with true directions, for ML reconstruction"
+description: |-
+  Data of the public Kaggle competition "IceCube – Neutrinos in Deep Ice" (2023), organised by the IceCube
+  Collaboration: simulated neutrino events as lists of pulses (sensor, time, charge) with the sensor geometry and the
+  true neutrino direction, for the task of reconstructing the arrival direction with machine-learning methods. One of
+  the largest public neutrino-telescope simulation samples and a standard benchmark for ML reconstruction.
+url_landing: "https://www.kaggle.com/competitions/icecube-neutrinos-in-deep-ice"
+creators: [{name: IceCube Collaboration, kind: collaboration}]
+publisher: {name: Kaggle, kind: organization}
+date_published: 2023
+license: proprietary
+license_notes: "Kaggle competition data: use under the competition rules (Kaggle account and acceptance of the rules required)"
+access: registration
+distributions:
+  - {url: "https://www.kaggle.com/competitions/icecube-neutrinos-in-deep-ice/data", host: other, role: primary, label: Kaggle competition data, formats: [parquet]}
+references:
+  - {doi: 10.22323/1.444.1609, arxiv: "2307.15289", relation: describes, citation: "IceCube, Public Kaggle Competition \"IceCube – Neutrinos in Deep Ice\", PoS(ICRC2023)1609"}
+  - {doi: 10.1140/epjc/s10052-024-12977-2, arxiv: "2310.15674", relation: describes, citation: "IceCube, The top 3 solutions from the public Kaggle competition, Eur. Phys. J. C 84 (2024)"}
+relations:
+  - {rel: is_part_of, target: icecube-data-releases}
+used_by:
+  - {kind: paper, target: "doi:10.1140/epjc/s10052-024-12977-2", label: "Top-3 Kaggle solutions (EPJC 84, 2024)", notes: "winning direction-reconstruction methods applied to IceCube"}
+experiments: [icecube]
+sources: [atmospheric, astrophysical]
+topics: [detector-response, statistics]
+detector_technologies: [ice-cherenkov]
+data:
+  levels: [mc]
+  observables: [pulse sensor id, time, charge, true direction]
+  has_mc: true
+  formats: [parquet]
+card:
+  summary: "Large simulated IceCube event sample with ground-truth directions, released as an ML challenge."
+  intended_use: "Developing and benchmarking machine-learning event reconstruction for neutrino telescopes."
+  out_of_scope_use: "Physics analyses: the events are simulated, not detector data, and come without the full systematics treatment."
+  known_limitations: "Access requires a Kaggle account and acceptance of the competition rules; no DOI."
+  fair: {findable: true, accessible: false, interoperable: true, reusable: false, notes: "registration; competition-rules licence"}
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual (user suggestion)
+  quality_notes: ["sample size and file layout not recorded here (Kaggle data page needs a login)"]

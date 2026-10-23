@@ -287,6 +287,18 @@ properties:
       reviewed_by: {type: string}
       source: {type: string, description: "how the record was found (manual, harvest:zenodo, ...)"}
       quality_notes: {$ref: "#/definitions/text_list"}
+      harvest:
+        description: "written by tools/harvest.jl: where the candidate came from and its ranking metrics"
+        type: object
+        properties:
+          source: {type: string}
+          query: {type: string}
+          harvested: {$ref: "#/definitions/date"}
+          score: {type: number}
+          citations: {type: integer}
+          views: {type: integer}
+          downloads: {type: integer}
+          stars: {type: integer}
 
 allOf:
   - if: {properties: {type: {enum: [dataset, result]}}}

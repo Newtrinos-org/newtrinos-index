@@ -347,6 +347,36 @@
         "added_by": {
           "type": "string"
         },
+        "harvest": {
+          "description": "written by tools/harvest.jl: where the candidate came from and its ranking metrics",
+          "properties": {
+            "citations": {
+              "type": "integer"
+            },
+            "downloads": {
+              "type": "integer"
+            },
+            "harvested": {
+              "$ref": "#/definitions/date"
+            },
+            "query": {
+              "type": "string"
+            },
+            "score": {
+              "type": "number"
+            },
+            "source": {
+              "type": "string"
+            },
+            "stars": {
+              "type": "integer"
+            },
+            "views": {
+              "type": "integer"
+            }
+          },
+          "type": "object"
+        },
         "last_reviewed": {
           "$ref": "#/definitions/date"
         },
@@ -540,7 +570,7 @@
       "$ref": "#/definitions/text_list"
     },
     "license": {
-      "enum": ["none-stated", "unknown", "proprietary", "CC0-1.0", "CC-BY-4.0", "CC-BY-3.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "ODbL-1.0", "MIT", "BSD-2-Clause", "BSD-3-Clause", "Apache-2.0", "GPL-2.0-only", "GPL-2.0-or-later", "GPL-3.0-only", "GPL-3.0-or-later", "LGPL-2.1-or-later", "LGPL-3.0-or-later", "MPL-2.0"],
+      "enum": ["none-stated", "unknown", "proprietary", "CC0-1.0", "CC-BY-4.0", "CC-BY-3.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "ODbL-1.0", "MIT", "BSD-2-Clause", "BSD-3-Clause", "Apache-2.0", "GPL-2.0-only", "GPL-2.0-or-later", "GPL-3.0-only", "GPL-3.0-or-later", "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-3.0-or-later", "MPL-2.0"],
       "x-maps-to": "DataCite rights (SPDX)",
       "x-vocab": "licenses"
     },

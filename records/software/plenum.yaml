@@ -1,0 +1,38 @@
+id: plenum
+type: software
+title: PLEnuM software tools
+short: "PLEnuM: tools to assess a PLanEtary NeUtrino Monitoring network of neutrino telescopes (diffuse and point sources)"
+description: |-
+  Code and notebooks quantifying the potential of a global network of neutrino telescopes (PLEnuM) for the diffuse
+  astrophysical flux and point-like sources, with telescopes modelled on IceCube's public 10-year data release.
+url_landing: "https://github.com/PLEnuM-group/Plenum"
+creators: [{name: Lisa Johanna Schumacher}, {name: Matthias Huber}, {name: Mauricio Bustamante}]
+owner: {name: PLEnuM-group, kind: organization}
+date_published: 2021-01-27
+date_updated: 2025-10-31
+license: BSD-2-Clause
+access: open
+distributions:
+  - {url: "https://github.com/PLEnuM-group/Plenum", host: github, role: primary, formats: [source-code]}
+cite_as: ["https://github.com/PLEnuM-group/Plenum", "arXiv:2503.07549"]
+references:
+  - {doi: 10.22323/1.395.1185, relation: describes, citation: "PoS(ICRC2021)1185"}
+  - {doi: 10.22323/1.444.0991, arxiv: "2308.12759", relation: describes, citation: "Prospects for the detection of transient neutrino sources with PLEnuM, PoS(ICRC2023)991"}
+  - {arxiv: "2503.07549", relation: describes, citation: "point-source prospects (submitted to PRD)"}
+relations:
+  - {rel: uses, target: icecube-ps-2008-2018}
+  - {rel: uses, target: mceq}
+experiments: [icecube]
+sources: [astrophysical]
+topics: [multi-messenger, flux]
+software:
+  repository: "https://github.com/PLEnuM-group/Plenum"
+  languages: [Python, Jupyter Notebook]
+  purposes: [sensitivity]
+  dependencies: [MCEq, mephistogram, scikit-learn]
+  interfaces: [library]
+  development_status: maintained
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual (user suggestion)

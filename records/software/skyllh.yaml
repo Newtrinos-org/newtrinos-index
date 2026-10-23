@@ -1,0 +1,37 @@
+id: skyllh
+type: software
+title: SkyLLH
+short: "SkyLLH: Python framework for unbinned log-likelihood (point-source) analyses, incl. IceCube public-data analyses"
+description: |-
+  Generalised Python tool for log-likelihood analyses in multi-messenger astronomy, developed in IceCube; supports
+  time-integrated and time-dependent point-source searches and analyses of the IceCube 10-year public point-source
+  data.
+url_landing: "https://icecube.github.io/skyllh/"
+creators: [{name: IceCube Collaboration, kind: collaboration}]
+owner: {name: icecube, kind: organization}
+date_published: 2020-03-17
+date_updated: 2026-10-23
+license: GPL-3.0-only
+access: open
+distributions:
+  - {url: "https://github.com/icecube/skyllh", host: github, role: primary, formats: [source-code]}
+cite_as: ["doi:10.22323/1.358.1035"]
+references:
+  - {doi: 10.22323/1.358.1035, arxiv: "1908.05181", relation: describes, citation: "PoS(ICRC2019)1035"}
+  - {doi: 10.22323/1.395.1073, arxiv: "2107.08934", relation: describes, citation: "The SkyLLH framework for IceCube point-source search, PoS(ICRC2021)1073"}
+  - {doi: 10.22323/1.444.1061, arxiv: "2308.12733", relation: describes, citation: "Extending SkyLLH for analyses with 10 years of IceCube public data, PoS(ICRC2023)1061"}
+relations:
+  - {rel: uses, target: icecube-ps-2008-2018, notes: "public-data point-source analyses"}
+experiments: [icecube]
+sources: [astrophysical]
+topics: [multi-messenger, statistics]
+software:
+  repository: "https://github.com/icecube/skyllh"
+  languages: [Python]
+  purposes: [fitting]
+  interfaces: [library]
+  development_status: active
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual (user suggestion)

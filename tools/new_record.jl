@@ -11,7 +11,7 @@ getjson(url; headers = []) = JSON.parse(String(HTTP.get(url, vcat(UA, headers); 
 tryjson(url; kw...) = try getjson(url; kw...) catch e; @warn "request failed" url exception = e; nothing end
 
 today() = Dates.format(Dates.today(), "yyyy-mm-dd")
-slug(s) = strip(replace(lowercase(s), r"[^a-z0-9]+" => "-"), '-')[1:min(end, 60)]
+slug(s) = strip(first(strip(replace(lowercase(s), r"[^a-z0-9]+" => "-"), '-'), 60), '-')
 striphtml(s) = strip(replace(replace(s, r"<br\s*/?>|</p>" => "\n"), r"<[^>]+>" => "", "&nbsp;" => " ", "&amp;" => "&", r"\n{3,}" => "\n\n"))
 
 const EXT_FORMAT = Dict("csv" => "csv", "tsv" => "csv", "txt" => "txt", "dat" => "txt", "json" => "json", "yaml" => "yaml",
@@ -49,10 +49,21 @@ function agent(c)
     a
 end
 
+bare_doi(x) = replace(strip(x), r"^(https?://(dx\.)?doi\.org/|doi:)"i => "")
+
 function from_doi(doi; type = nothing)
-    doi = replace(doi, r"^https?://(dx\.)?doi\.org/" => "", r"^doi:" => "")
-    d = getjson("https://api.datacite.org/dois/$(HTTP.escapeuri(doi))")["data"]["attributes"]
-    title = d["titles"][1]["title"]
+    doi = bare_doi(doi)
+    from_datacite(getjson("https://api.datacite.org/dois/$(HTTP.escapeuri(doi))")["data"]["attributes"], doi; type)
+end
+
+"""
+    from_datacite(attributes, doi; type = nothing, enrich = true)
+
+Record skeleton from DataCite `attributes` (as returned by the single-DOI and search APIs). With `enrich`, file lists
+(Zenodo) and licences missing from DataCite (Dataverse) are fetched from the repository.
+"""
+function from_datacite(d, doi; type = nothing, enrich = true)
+    title = strip(d["titles"][1]["title"])
     rtype = get(d["types"], "resourceTypeGeneral", "")
     type = something(type, rtype == "Software" ? "software" : rtype == "Collection" ? "collection" : "dataset")
     rights = get(d, "rightsList", [])
@@ -62,7 +73,7 @@ function from_doi(doi; type = nothing)
     issued = [x["date"] for x in get(d, "dates", []) if x["dateType"] == "Issued"]
     updated = [x["date"] for x in get(d, "dates", []) if x["dateType"] == "Updated"]
     rec = OrderedDict{String, Any}(
-        "id" => slug(title), "type" => type, "title" => title, "short" => title[1:min(end, 120)],
+        "id" => slug(title), "type" => type, "title" => title, "short" => first(title, 120),
         "description" => isempty(desc) ? "TODO" : striphtml(desc[1]),
         "doi" => doi, "url_landing" => d["url"],
         "creators" => agent.(d["creators"]),
@@ -77,7 +88,7 @@ function from_doi(doi; type = nothing)
     host = startswith(doi, "10.5281/zenodo") ? "zenodo" : startswith(doi, "10.7910/DVN") ? "dataverse" :
            startswith(doi, "10.17182/hepdata") ? "hepdata" : "institutional"
     dist = OrderedDict{String, Any}("url" => "https://doi.org/$doi", "host" => host, "role" => "primary")
-    if host == "zenodo"
+    if enrich && host == "zenodo"
         z = tryjson("https://zenodo.org/api/records/$(split(doi, '.')[end])")
         if z !== nothing
             files = get(z, "files", [])
@@ -89,14 +100,13 @@ function from_doi(doi; type = nothing)
                                                                  rec["identifiers"] = OrderedDict("zenodo" => z["id"]))
         end
     end
-    if host == "dataverse" && rec["license"] == "unknown"   # Dataverse licences are often missing in DataCite
+    if enrich && host == "dataverse" && rec["license"] == "unknown"   # Dataverse licences are often missing in DataCite
         dv = tryjson("https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:$doi")
         l = dv === nothing ? nothing : get(get(dv["data"], "latestVersion", Dict()), "license", nothing)
         l isa AbstractDict && (rec["license"] = spdx(get(l, "rightsIdentifier", "")); rec["license_url"] = l["uri"])
     end
     rec["distributions"] = [dist]
-    bare(x) = replace(strip(x), r"^(https?://(dx\.)?doi\.org/|doi:)"i => "")
-    refs = [OrderedDict{String, Any}("doi" => bare(r["relatedIdentifier"]), "relation" => "describes")
+    refs = [OrderedDict{String, Any}("doi" => bare_doi(r["relatedIdentifier"]), "relation" => "describes")
             for r in get(d, "relatedIdentifiers", []) if r["relatedIdentifierType"] == "DOI" && r["relationType"] in ("IsSupplementTo", "IsDocumentedBy", "IsDescribedBy")]
     append!(refs, [OrderedDict{String, Any}("arxiv" => replace(r["relatedIdentifier"], r"^arXiv:"i => ""), "relation" => "describes")
                    for r in get(d, "relatedIdentifiers", []) if r["relatedIdentifierType"] == "arXiv"])
@@ -106,11 +116,15 @@ end
 
 function from_github(url)
     m = match(r"github\.com/([^/]+)/([^/#?]+)", url)
-    repo = getjson("https://api.github.com/repos/$(m[1])/$(replace(m[2], r"\.git$" => ""))")
+    from_github_repo(getjson("https://api.github.com/repos/$(m[1])/$(replace(m[2], r"\.git$" => ""))"))
+end
+
+"Record skeleton from a GitHub API repository object (single-repo or search result)"
+function from_github_repo(repo)
     lic = repo["license"] === nothing ? "none-stated" : spdx(repo["license"]["spdx_id"])
     rec = OrderedDict{String, Any}(
         "id" => slug(repo["name"]), "type" => "software", "title" => repo["name"],
-        "short" => something(repo["description"], repo["name"])[1:min(end, 120)],
+        "short" => first(something(repo["description"], repo["name"]), 120),
         "description" => something(repo["description"], "TODO"),
         "url_landing" => isempty(something(repo["homepage"], "")) ? repo["html_url"] : repo["homepage"],
         "owner" => OrderedDict("name" => repo["owner"]["login"], "kind" => repo["owner"]["type"] == "Organization" ? "organization" : "person"),

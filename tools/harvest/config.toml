@@ -1,0 +1,51 @@
+# Harvester configuration (tools/harvest.jl). Edit freely; the harvesters only propose candidates.
+
+[filters]
+# DataCite resource types that can become records (everything else, e.g. Text, Image, Presentation, is skipped)
+resource_types = ["Dataset", "Software", "Collection", "Model", "Workflow"]
+# titles matching any of these (case-insensitive regex) are dropped: not neutrino physics, or too fine-grained
+exclude_title = [
+  "proton decay", "nucleon decay", "neutron decay", "p ?-> ?e", "dark photon",
+  "cosmic[- ]ray anisotropy", "air shower", "muons? in air", "ice temperature", "muon charge ratio",
+  "^OPERA .*\\bevent \\d+$", "^\"?Table \\d+\"? of", "poster", "slides", "presentation",
+  # fringe uploads that free-text searches pull in
+  "theory of everything", "unified (field|framework|theory)", "toroidal", "octonion", "consciousness", "torsion",
+  "physical constants from", "emergent particle", "zero operator", "concealment", "fold theory", "ki-net",
+  "game engine", "informational coherence", "quantum traction", "causality pandora", "leech lattice", "hamzah",
+  # GitHub projects that are merely named "neutrino"
+  "kernel", "android", "redmi", "oneplus", "xiaomi", "sm8\\d50", "sdm8", "planner", "gis platform", "wireless", "ps2",
+]
+# a candidate must mention one of these (title, description, subjects) unless it matches a registry experiment
+neutrino_keywords = ["neutrino", "antineutrino", "ν", "CEvNS", "double[- ]beta", "0νββ", "IBD", "oscillation"]
+
+[datacite]
+# one query per experiment in vocab/experiments.yaml: creators.name:"<collaboration> Collaboration"
+by_collaboration = true
+# whole DOI prefixes owned by neutrino collaborations
+prefixes = ["10.21234"]
+# extra free queries (DataCite query syntax), each restricted to resource_types
+queries = [
+  'titles.title:neutrino AND publisher:Zenodo',
+  'titles.title:neutrino AND publisher:"Harvard Dataverse"',
+  'subjects.subject:neutrino',
+]
+max_per_query = 1000
+
+[[dataverse]]
+base = "https://dataverse.harvard.edu"
+subtree = "icecube"
+[[dataverse]]
+base = "https://opendata.km3net.de"
+subtree = ""
+
+[hepdata]
+# HEPData records per collaboration (names as HEPData spells them)
+collaborations = ["T2K", "MINERvA", "MicroBooNE", "MiniBooNE", "NOvA", "ArgoNeuT", "ICARUS", "SBND", "MINOS", "NOMAD",
+                  "Super-Kamiokande", "IceCube", "ANTARES", "STEREO", "PROSPECT", "Daya Bay", "Double Chooz", "RENO",
+                  "KamLAND", "Borexino", "COHERENT", "CONUS", "GERDA", "CUORE", "KATRIN", "DUNE", "ProtoDUNE", "CHORUS",
+                  "CHARM", "CDHS", "CCFR", "NuTeV", "SciBooNE", "K2K", "LSND", "KARMEN", "OPERA", "Baikal"]
+
+[github]
+topics = ["neutrino", "neutrinos", "neutrino-physics", "neutrino-oscillations", "neutrino-oscillation"]
+queries = ["neutrino in:name,description stars:>=10"]
+min_stars = 3

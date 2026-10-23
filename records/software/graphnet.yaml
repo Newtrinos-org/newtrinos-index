@@ -1,0 +1,35 @@
+id: graphnet
+type: software
+title: GraphNeT
+short: "GraphNeT: deep-learning (graph neural network) library for event reconstruction in neutrino telescopes"
+description: |-
+  Python library for deep-learning-based reconstruction and classification of events in neutrino telescopes
+  (IceCube, KM3NeT, P-ONE, …): data converters, graph representations of detector hits, GNN models and training
+  pipelines, with pretrained models.
+url_landing: "https://graphnet-team.github.io/graphnet/"
+creators: [{name: GraphNeT team, kind: collaboration}]
+owner: {name: graphnet-team, kind: organization}
+date_published: 2021-04-12
+date_updated: 2026-10-18
+license: Apache-2.0
+access: open
+distributions:
+  - {url: "https://github.com/graphnet-team/graphnet", host: github, role: primary, formats: [source-code]}
+cite_as: ["doi:10.21105/joss.04971"]
+references:
+  - {doi: 10.21105/joss.04971, arxiv: "2210.12194", relation: describes, citation: "GraphNeT, J. Open Source Softw. 8, 4971 (2023)"}
+  - {arxiv: "2501.03817", relation: describes, citation: "GraphNeT 2.0"}
+experiments: [icecube, km3net]
+sources: [atmospheric, astrophysical]
+topics: [detector-response]
+software:
+  repository: "https://github.com/graphnet-team/graphnet"
+  languages: [Python]
+  purposes: [reconstruction]
+  dependencies: [PyTorch, PyTorch Geometric]
+  interfaces: [library]
+  development_status: active
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual

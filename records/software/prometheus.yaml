@@ -1,0 +1,37 @@
+id: prometheus
+type: software
+title: "Prometheus: An open-source neutrino telescope simulation"
+short: "Prometheus: Python framework simulating neutrino telescopes in ice and water, from injection to photon detection"
+description: |-
+  Simulation package for neutrino telescopes of arbitrary geometry in ice or water: neutrino injection
+  (LeptonInjector), charged-lepton propagation (PROPOSAL), photon propagation and detector response, with
+  configurations for existing and proposed detectors. Used to generate NuBench.
+url_landing: "https://harvard-neutrino.github.io/prometheus/"
+creators: [{name: Jeffrey Lazar}, {name: Stephan Meighen-Berger}, {name: Christian Haack}, {name: David Kim}, {name: Santiago Giner}, {name: Carlos A. Argüelles}]
+owner: {name: Harvard-Neutrino, kind: organization}
+date_published: 2022-11-03
+date_updated: 2026-09-21
+license: LGPL-2.1-only
+access: open
+distributions:
+  - {url: "https://github.com/Harvard-Neutrino/prometheus", host: github, role: primary, formats: [source-code]}
+cite_as: ["doi:10.1016/j.cpc.2024.109298"]
+references:
+  - {doi: 10.1016/j.cpc.2024.109298, arxiv: "2304.14526", relation: describes, citation: "Lazar et al., Comput. Phys. Commun. 304, 109298 (2024)"}
+relations:
+  - {rel: uses, target: leptoninjector}
+  - {rel: uses, target: proposal}
+sources: [atmospheric, astrophysical]
+topics: [detector-response]
+detector_technologies: [ice-cherenkov, water-cherenkov-open]
+software:
+  repository: "https://github.com/Harvard-Neutrino/prometheus"
+  languages: [Python]
+  purposes: [detector-simulation, event-generator]
+  interfaces: [library]
+  development_status: active
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual (user suggestion)
+  quality_notes: ["author list from the CPC paper as far as known; check order and completeness"]

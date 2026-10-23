@@ -1,0 +1,48 @@
+id: nubench
+type: dataset
+title: "NuBench: open benchmark datasets for deep-learning event reconstruction in neutrino telescopes"
+short: "NuBench: 7 simulated neutrino-telescope datasets (~130 M νμ events, 6 geometries) for ML reconstruction"
+description: |-
+  Seven large-scale simulated datasets with nearly 130 million charged- and neutral-current muon-neutrino
+  interactions from 10 GeV to 100 TeV, generated for six detector geometries inspired by existing and proposed
+  neutrino telescopes in water and ice ("Cluster", "Flower S/L/XL", "Hexagon", "Hexagon Ice LE", "Triangle").
+  Pulse- and event-level information for energy and direction reconstruction, topology classification, vertex and
+  inelasticity estimation, with train/test selections, the predictions of four reference models (ParticleNeT,
+  DynEdge, GRIT, DeepIce) and their trained model artifacts. Compatible with the GraphNeT dataset classes.
+url_landing: "https://github.com/graphnet-team/NuBench"
+creators: [{name: Rasmus F. Ørsøe}, {name: Stephan Meighen-Berger}, {name: Jeffrey Lazar}, {name: Jorge Prado}, {name: Ivan Mozun-Mateo}, {name: Aske Rosted}, {name: Philip Weigel}, {name: Arturo Llorente Anaya}]
+owner: {name: graphnet-team, kind: organization}
+date_published: 2025-11
+license: none-stated
+access: open
+distributions:
+  - {url: "https://github.com/graphnet-team/NuBench", host: github, role: documentation, label: catalogue and download links}
+  - {url: "https://sid.erda.dk/", host: institutional, role: primary, label: "ERDA (University of Copenhagen): per-dataset SQLite / Parquet, predictions and model artifacts (tar.gz)", formats: [parquet, tarball]}
+cite_as: ["arXiv:2511.13111"]
+references:
+  - {arxiv: "2511.13111", relation: describes, citation: "Ørsøe et al., NuBench: An Open Benchmark for Deep Learning-Based Event Reconstruction in Neutrino Telescopes (prepared for JINST)"}
+relations:
+  - {rel: derived_from, target: prometheus, notes: "simulation cited in the catalogue README"}
+  - {rel: uses, target: graphnet}
+sources: [atmospheric, astrophysical]
+topics: [detector-response, statistics]
+channels: [cc, nc]
+flavors: [numu, numubar]
+detector_technologies: [ice-cherenkov, water-cherenkov-open]
+energy_range: {min: 10, max: 100000, unit: GeV, quantity: true neutrino energy}
+data:
+  levels: [mc]
+  observables: [pulses, event-level truth]
+  n_events: 130000000
+  has_mc: true
+  formats: [parquet]
+card:
+  summary: "Cross-experiment ML benchmark for neutrino-telescope reconstruction."
+  intended_use: "Training and comparing reconstruction / classification models across detector geometries."
+  out_of_scope_use: "Physics results: geometries are inspired by, not identical to, real detectors; no detector data."
+  known_limitations: "No DOI or licence; files hosted via ERDA share links listed in the GitHub README."
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual (user suggestion)
+  quality_notes: ["the per-dataset ERDA share links are in the README; n_events is the approximate total from the abstract"]
