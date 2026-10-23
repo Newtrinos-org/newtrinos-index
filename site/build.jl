@@ -83,6 +83,7 @@ $head</head>
     <span class="brand"><a href="https://newtrinos-org.github.io/" title="Newtrinos home"><picture><source srcset="$(r)assets/logo-dark.svg" media="(prefers-color-scheme: dark)"><img class="brand-logo" src="$(r)assets/logo.svg" alt="Newtrinos home" width="32" height="32"></picture></a> <a href="$r">$(SITE.name)</a></span>
     <nav class="main-nav">
       $(nav("records/", "Browse", "records"))
+      $(nav("software/", "Software", "software"))
       $(nav("experiments/", "Experiments", "experiments"))
       $(nav("about/", "Schema & about", "about"))
     </nav>
@@ -142,7 +143,10 @@ function index_record(rec, vocab, rels)
          "license" => rec["license"], "access" => ACCESS_LABEL[rec["access"]],
          "status" => rec["curation"]["status"], "added" => string(rec["curation"]["added"]),
          "newtrinos" => haskey(rec, "newtrinos") ? "Used by Newtrinos" : "",
-         "card" => card_score(rec), "users" => n_users(rec, rels), "keywords" => join(vcat(get(rec, "keywords", []), get(rec, "aliases", [])), " "))
+         "card" => card_score(rec), "users" => n_users(rec, rels), "updated" => string(get(rec, "date_updated", "")),
+         "purposes" => [vlabel(vocab, "software_purposes", p) for p in get(get(rec, "software", Dict()), "purposes", [])],
+         "languages" => get(get(rec, "software", Dict()), "languages", String[]),
+         "devstatus" => get(get(rec, "software", Dict()), "development_status", ""), "keywords" => join(vcat(get(rec, "keywords", []), get(rec, "aliases", [])), " "))
 end
 
 # ------------------------------------------------------------------------------------------------
@@ -200,7 +204,7 @@ end
 function home_page(records, vocab)
     nexp = length(unique(e for rec in records for e in get(rec, "experiments", [])))
     ncodes = count(r -> r["type"] == "software", records)
-    tiles = join(["""<a class="cat-tile" href="records/?type=$(esc(label))"><h3>$(esc(label))</h3><p>$(esc(desc))</p>
+    tiles = join(["""<a class="cat-tile" href="$(t == "software" ? "software/" : "records/?type=$(esc(label))")"><h3>$(esc(label))</h3><p>$(esc(desc))</p>
 <span class="muted small">$(count(r -> r["type"] == t, records)) records</span></a>""" for (t, label, desc) in TYPE_INFO], "\n")
     srcs = sort(unique(s for rec in records for s in get(rec, "sources", []) if s != "none"))
     srctiles = join(["""<a class="exp-tile" href="records/?source=$(esc(vlabel(vocab, "sources", s)))">$(esc(vlabel(vocab, "sources", s))) <b>$(count(r -> s in get(r, "sources", []), records))</b></a>""" for s in srcs], "\n")
@@ -232,10 +236,13 @@ function home_page(records, vocab)
     page(SITE.name, body)
 end
 
-function records_page(records, vocab)
+"Faceted list page; `kind` restricts it to one record type (e.g. the Software page) and selects that type's facets"
+function records_page(records, vocab; kind = "", heading = "Browse", intro = "", key = "records")
+    shown = isempty(kind) ? records : filter(r -> r["type"] == kind, records)
     body = """
-<h1>Browse</h1>
-<div class="browse">
+<h1>$heading</h1>
+$(isempty(intro) ? "" : "<p class=\"summary\">$intro</p>")
+<div class="browse" data-kind="$kind">
   <aside class="facets" id="facets"><p class="muted">Loading…</p></aside>
   <section>
     <div class="toolbar">
@@ -244,17 +251,18 @@ function records_page(records, vocab)
         <option value="title">Title A–Z</option>
         <option value="added">Recently added</option>
         <option value="newest">Newest first</option>
+        <option value="updated">Recently updated upstream</option>
         <option value="card">Best documented</option>
         <option value="users">Most used</option>
       </select>
     </div>
     <p class="muted" id="count"></p>
     <div class="cards" id="list">
-      $(join(record_card.(records, Ref(vocab); r = "../"), "\n"))
+      $(join(record_card.(shown, Ref(vocab); r = "../"), "\n"))
     </div>
   </section>
 </div>"""
-    page("Browse · $(SITE.name)", body; depth = 1, active = "records")
+    page("$heading · $(SITE.name)", body; depth = 1, active = key)
 end
 
 function kv(rows)
@@ -534,7 +542,9 @@ function build()
     cp(joinpath(@__DIR__, "assets"), joinpath(OUT, "assets"); force = true)
     mkpath(joinpath(OUT, "schema")); cp(SCHEMA_JSON, joinpath(OUT, "schema", "record.schema.json"); force = true)
     write(joinpath(OUT, "index.html"), home_page(records, vocab))
-    for (d, html) in (("records", records_page(records, vocab)), ("experiments", experiments_page(records, vocab)), ("about", about_page(vocab, schema)))
+    for (d, html) in (("records", records_page(records, vocab)),
+                      ("software", records_page(records, vocab; kind = "software", heading = "Software", key = "software",
+                           intro = "Codes for neutrino physics: oscillation calculators, event generators, flux and detector simulations, fitters and analysis tools.")), ("experiments", experiments_page(records, vocab)), ("about", about_page(vocab, schema)))
         mkpath(joinpath(OUT, d)); write(joinpath(OUT, d, "index.html"), html)
     end
     for rec in records

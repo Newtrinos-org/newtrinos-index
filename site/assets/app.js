@@ -6,7 +6,18 @@
   const facetsEl = document.getElementById("facets");
   if (!list || !facetsEl) return;
 
-  const FACETS = [
+  const kind = (document.querySelector(".browse") || {}).dataset?.kind || "";
+  const SOFTWARE_FACETS = [
+    { key: "purpose", label: "Purpose", get: (e) => e.purposes || [] },
+    { key: "language", label: "Language", get: (e) => e.languages || [] },
+    { key: "source", label: "Neutrino source", get: (e) => e.sources },
+    { key: "topic", label: "Topic", get: (e) => e.topics },
+    { key: "experiment", label: "Experiment", get: (e) => e.experiments },
+    { key: "devstatus", label: "Development", get: (e) => (e.devstatus ? [e.devstatus] : []) },
+    { key: "license", label: "Licence", get: (e) => [e.license] },
+    { key: "newtrinos", label: "Newtrinos", get: (e) => (e.newtrinos ? [e.newtrinos] : []) },
+  ];
+  const FACETS = kind === "software" ? SOFTWARE_FACETS : [
     { key: "type", label: "Kind", get: (e) => [e.type_label] },
     { key: "source", label: "Neutrino source", get: (e) => e.sources },
     { key: "experiment", label: "Experiment", get: (e) => e.experiments },
@@ -79,6 +90,7 @@
       added: (a, b) => b.added.localeCompare(a.added),
       newest: (a, b) => (b.year || "").localeCompare(a.year || ""),
       card: (a, b) => b.card - a.card || a.title.localeCompare(b.title),
+      updated: (a, b) => (b.updated || "").localeCompare(a.updated || ""),
       users: (a, b) => b.users - a.users || a.title.localeCompare(b.title),
     }[sort.value]);
     list.innerHTML = shown.map(card).join("") || `<p class="muted">No records match.</p>`;
@@ -93,6 +105,6 @@
 
   search.addEventListener("input", update);
   sort.addEventListener("change", update);
-  fetch(`${root}index.json`).then((r) => r.json()).then((d) => { records = d; update(); })
+  fetch(`${root}index.json`).then((r) => r.json()).then((d) => { records = kind ? d.filter((e) => e.type === kind) : d; update(); })
     .catch(() => { facetsEl.innerHTML = `<p class="muted">Filters unavailable (index.json could not be loaded).</p>`; });
 })();
