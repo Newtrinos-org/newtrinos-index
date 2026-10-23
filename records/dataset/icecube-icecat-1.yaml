@@ -1,0 +1,64 @@
+id: icecube-icecat-1
+type: dataset
+title: 'ICECAT-1: IceCube Event Catalog of Alert Tracks'
+short: 'IceCat-1: IceCube Event Catalog of Alert Tracks (275 events, 2011–2020)'
+description: '<h1> ICECAT-1: IceCube Event Catalog of Alert Tracks </h1>
+
+  This catalog represents the first catalog of alerts from the IceCube Neutrino Gold and Bronze Track Alert program. Each catalog entry represents a single neutrino event potentially of astrophysical origin. This catalog includes alerts issued in realtime via GCN notices/circulars, as well as events observed in IceCube since the start of data collection with the complete IceCube detector in 2011 that would have triggered an alert had the program been in operation.<br>
+
+  <br>
+
+  The events in this catalog consist of muon track events generated from the charge-current interaction of high-energy (greater than ~100 TeV) neutrino events observed in the IceCube Neutrino Observatory (https://icecube.wisc.edu) located beneath the geographic South Pole, Antarctica. At these energies, neutrino events have a significant probability to be from an astrophysical source.<br>
+
+  <br>
+
+  The best-fit direction is derived from an iterative maximum-likelihood scan of all potential event directions that is performed after the alert event is identified, and is published as an update for realtime alerts. The directions and likelihood maps from this scan are used in this catalog.<br>
+
+  <br>
+
+  Additional information on these alerts can be found in publication: R. Abbasi et al 2023 ApJS 269 25 (https://arxiv.org/abs/2304.01174)
+
+  <br>
+
+  <h3> Major updates </h1>
+
+  Oct 30, 2023: Added an additional 73 alerts that occurred between Jan 1, 2021 and Oct 14, …'
+doi: 10.7910/DVN/SCRUCD
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/SCRUCD
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '4.0'
+date_published: '2023'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/SCRUCD
+  host: dataverse
+  role: primary
+references:
+- doi: 10.3847/1538-4365/acfa95
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  result_of: 10.3847/1538-4365/acfa95
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

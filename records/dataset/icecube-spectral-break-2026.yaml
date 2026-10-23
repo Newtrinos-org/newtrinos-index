@@ -1,0 +1,41 @@
+id: icecube-spectral-break-2026
+type: dataset
+title: Data release for the paper "Evidence for a Spectral Break or Curvature in the Spectrum of Astrophysical Neutrinos from 5 TeV–10 PeV"
+short: 'IceCube evidence for a spectral break or curvature in the astrophysical neutrino spectrum: data release'
+description: 'This data release accompanies the paper describing the spectral break we measure with IceCube with two analyses: MESE analysis (using staring events) and Combined Fit analysis (using cascades and tracks samples). Data points to reproduce the plots in the paper are included here, along with a script to reproduce the plots.'
+doi: 10.7910/DVN/ZBO52I
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/ZBO52I
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '1.1'
+date_published: '2026'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/ZBO52I
+  host: dataverse
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - likelihood
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

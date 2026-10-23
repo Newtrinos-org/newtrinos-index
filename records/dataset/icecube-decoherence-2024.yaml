@@ -1,0 +1,45 @@
+id: icecube-decoherence-2024
+type: dataset
+title: 'Replication Data for: Searching for Decoherence from Quantum Gravity at the IceCube South Pole Neutrino Observatory'
+short: 'IceCube search for decoherence from quantum gravity (Nature Physics 2024): data release'
+description: A description of the dataset is contained in <code>README.md</code>.
+doi: 10.7910/DVN/9WGYQN
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/9WGYQN
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '1.0'
+date_published: '2024'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/9WGYQN
+  host: dataverse
+  role: primary
+references:
+- doi: 10.48550/arxiv.2308.00105
+  relation: describes
+experiments:
+- icecube
+sources:
+- atmospheric
+topics:
+- decoherence
+data:
+  levels:
+  - binned
+  - likelihood
+  result_of: 10.48550/arxiv.2308.00105
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

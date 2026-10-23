@@ -1,0 +1,43 @@
+id: icecube-gollumfit-example-mc
+type: dataset
+title: Example IceCube Monte Carlo for GollumFit Examples
+short: Example IceCube Monte Carlo for the GollumFit fitting framework
+description: IceCube Monte Carlo examples required to run the GollumFit fitting framework examples. Instructions for use are available at https://docs.icecube.aq/gollumfit/main/index.html
+doi: 10.7910/DVN/5DSDTD
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/5DSDTD
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '1.0'
+date_published: '2025'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/5DSDTD
+  host: dataverse
+  role: primary
+references:
+- arxiv: https://www.arxiv.org/abs/2506.04491
+  relation: describes
+experiments:
+- icecube
+sources:
+- atmospheric
+topics:
+- statistics
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

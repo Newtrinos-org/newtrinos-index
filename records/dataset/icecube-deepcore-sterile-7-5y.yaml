@@ -1,0 +1,59 @@
+id: icecube-deepcore-sterile-7-5y
+type: dataset
+title: Results of the Search for eV-scale sterile neutrinos with 7.5 years of DeepCore data
+short: 'IceCube DeepCore 7.5-year search for eV-scale sterile neutrinos: results release'
+description: 'Results of the Search for eV-scale sterile neutrinos with the DeepCore "golden" sample in machine readable format. Allows reproduction of Figure 5 of the publication.
+
+  <ul>
+
+  <li> The file "wilks_contour_90pct.csv" contains the 90% contour line in CSV format. The columns "U\mu4_sq" and "U\tau4_sq" correspond to the _squared_ elements of the 3+1 mixing matrix, |U_{&mu;4}|^2 and |U_{&tau;4}|^2, respectively. The contour was drawn assuming that Wilks'' theorem holds with two degrees of freedom. The points are ordered by nearest neighbors. </li>
+
+  <li> The file "expected_sensitivity_90pct.csv" contains the expected sensitivity at 90% CL of the analysis for Asimov data produced at the null hypothesis. The format is identical to that of the result. </li>
+
+  <li> The files "marginalized_umu4_sq.csv" and "marginalized_utau4_sq.csv" contain the marginalized scan of the test statistic over the matrix elements. The column "Metric Difference" refers to the delta chi-square metric used in the analysis. Since this metric is a delta chi-square (rather than a likelihood), it should _not_ be multiplied by two when calculating significances. They allow reproduction of the top and right panels of Figure 5 of the publication. </li>
+
+  <li> The file "real_data_wilks_contours_reprod_mar_2025_best_fit_points.tab" contains the best-fit values of all free nuisance parameters in a |U_{&mu;4}|^2 and |U_{&tau;4}|^2 scan. </li>
+
+  <li> The file "real_data_wilks_contours_reprod_mar_2025_metric_diff.tab" contains the …'
+doi: 10.7910/DVN/QKL28Z
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/QKL28Z
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '1.0'
+date_published: '2025'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/QKL28Z
+  host: dataverse
+  role: primary
+references:
+- doi: 10.1103/physrevd.110.072007
+  relation: describes
+experiments:
+- icecube
+detectors:
+- deepcore
+sources:
+- atmospheric
+topics:
+- sterile
+data:
+  levels:
+  - likelihood
+  - summary
+  result_of: 10.1103/physrevd.110.072007
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

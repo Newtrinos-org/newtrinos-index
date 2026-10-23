@@ -1,0 +1,59 @@
+id: icecube-icetracks-dr2
+type: dataset
+title: 'IceCube Second Track Data Release IceTracks-DR2: Data from 2008-2022 for Neutrino Source Searches'
+short: 'IceTracks-DR2: IceCube track data 2008–2022 for neutrino source searches'
+description: 'The events contained in this release make up the event sample commonly used for IceCube''s time-integrated neutrino point source searches. Events in this sample are track-like neutrino candidates detected by IceCube between April 2008 and May 2022.<br>
+
+  <br>
+
+  This data release (referred to as "IceTracks-DR2") is an evolution of the previous 10-year version of this data sample that has been made publicly available here: https://doi.org/10.7910/DVN/VKL316 (referred to as "IceTracks-DR1"). In comparison with IceTracks-DR1, IceTracks-DR2 includes four additional years of data collected with the full IceCube detector configuration and incorporates improved calibrations. See [1] for more details. IceTracks-DR2 is intended to supersede IceTracks-DR1, and events from IceTracks-DR2 are not intended to be combined with other IceCube public data releases. <br>
+
+  <br>
+
+  Standardized checks of generic point source results using this sample (including results associated with notable astrophysical neutrino source candidates such as NGC 1068 and TXS 0506+056) have been compiled in [1]. <br>
+
+  <br>
+
+  Data files:<br>
+
+  <ul>
+
+  <li>Read Me: A file describing each field of the data, uptime, and tabulated response files.</li>
+
+  <li>The “events” subfolder contains the events observed in the 14-year sample of IceCube’s point source neutrino selection. Each file corresponds to a single season of IceCube data taking, including roughly one year of data. For each event, reconstructed particle information is …'
+doi: 10.7910/DVN/MMIIZA
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/MMIIZA
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '3.1'
+date_published: 2026
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/MMIIZA
+  host: dataverse
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

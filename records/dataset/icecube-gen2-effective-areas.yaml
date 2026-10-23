@@ -1,0 +1,94 @@
+id: icecube-gen2-effective-areas
+type: dataset
+title: Neutrino effective area tables for IceCube-Gen2
+short: IceCube-Gen2 neutrino effective-area tables (optical + radio) for sensitivity studies
+description: '<h1 id="neutrino-effective-area-tables-for-icecube-gen2">Neutrino
+
+  effective area tables for IceCube-Gen2</h1>
+
+  <p>This package contains tabulated neutrino effective areas for the
+
+  detector described in the <a href="">Technical Design Report for the
+
+  IceCube-Gen2 Neutrino Observatory</a>.</p>
+
+  <p>The effective areas are stored in a JSON file
+
+  <code>gen2_tdr_effective_areas.json</code>. The top-level object
+
+  contains metadata relating to how the table was made, while effective
+
+  areas are stored in the <code>data</code> object. Each element of this
+
+  array is an object representing the effective area of a particular event
+
+  selection (<code>channel</code>) and detector (<code>detector</code>).
+
+  The attributes of this object are:</p>
+
+  <ul>
+
+  <li><code>detector</code>: the detector used (IceCube, Gen2-Optical,
+
+  Gen2-Radio)</li>
+
+  <li><code>channel</code>: event signature for optical detection
+
+  (shadowed_tracks, unshadowed_tracks, cascades, starting_tracks,
+
+  double_cascades)</li>
+
+  <li><code>energy</code>: 1-D array of bin edges in neutrino energy at
+
+  the surface of the Earth, in GeV</li>
+
+  <li><code>cos_zenith</code>: 1-D array of bin edges in cosine of zenith
+
+  angle of the neutrino arrival direction. At the South Pole,
+
+  <code>cos(zenith) =~ -sin(declination)</code>.</li>
+
+  <li><code>area</code>: 3-D array of effective areas in m^2. The
+
+  dimensions are: neutrino type (anti-electron neutrino, electron
+
+  neutrino, anti-muon neutrino, muon neutrino, anti-tau neutrino, tau
+
+  neutrino), neutrino energy (in bins given …'
+doi: 10.7910/DVN/XANWAT
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/XANWAT
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '1.0'
+date_published: '2025'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/XANWAT
+  host: dataverse
+  role: primary
+experiments:
+- icecube
+detectors:
+- icecube-gen2
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

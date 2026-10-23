@@ -19,6 +19,11 @@ distributions:
 - url: https://doi.org/10.21234/sxvs-mt83
   host: institutional
   role: primary
+- url: https://doi.org/10.7910/DVN/VKL316
+  host: dataverse
+  role: mirror
+  label: Harvard Dataverse copy (2026, CC0 1.0)
+  size_bytes: 415189500
 experiments:
 - icecube
 sources:

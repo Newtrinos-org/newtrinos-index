@@ -1,0 +1,62 @@
+id: icecube-gw-joint-sources-2026
+type: dataset
+title: 'Replication Data for: Deep Search for Joint Sources of Gravitational Waves and High-Energy Neutrinos with IceCube During the Third Observing Run of the LIGO and Virgo'
+short: 'IceCube deep search for joint gravitational-wave and high-energy neutrino sources: replication data'
+description: '<p>Data and plotting scripts for reproducing figures from the paper "Deep Search for Joint Sources of Gravitational Waves and High-Energy Neutrinos with IceCube During the Third Observing Run of the LIGO and Virgo"</p>
+
+  <p>CONTENT</p>
+
+  <ul>
+
+  <li>Data folders for reproducing Figure 1 (1262142545.615) and Figure 3 (1241247887.938). In each of these folders, Icecube neutrino data +/-500 s around the GPS time indicated by the folder name is contained in the icecube_neutrino_list.json file, while the lvc_skymap.fits.gz represents the gravitational wave skymap.</li>
+
+  <li>gwhen_o3_UL.csv file contains the upper limit results.
+
+  <li>O3_I3-LVK-search-data_release.ipynb: Python notebook to recreate the figures.
+
+  <li>table1.csv is Table 1. presented in the Appendix of the paper. (Properties of the coincident neutrinos that produce a p-value of 0.01 or less.)
+
+  </li>
+
+  </ul>
+
+  The Python notebook uses hpmoc, an ultra-high-performance, cross-platform toolset for working with multi-order coordinate HEALPix_ images. For installation, please visit https://github.com/markalab/hpmoc.git.'
+doi: 10.7910/DVN/34B5AP
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/34B5AP
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '1.0'
+date_published: '2026'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/34B5AP
+  host: dataverse
+  role: primary
+references:
+- arxiv: https://arxiv.org/abs/2601.07595
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

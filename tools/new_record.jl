@@ -89,6 +89,11 @@ function from_doi(doi; type = nothing)
                                                                  rec["identifiers"] = OrderedDict("zenodo" => z["id"]))
         end
     end
+    if host == "dataverse" && rec["license"] == "unknown"   # Dataverse licences are often missing in DataCite
+        dv = tryjson("https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:$doi")
+        l = dv === nothing ? nothing : get(get(dv["data"], "latestVersion", Dict()), "license", nothing)
+        l isa AbstractDict && (rec["license"] = spdx(get(l, "rightsIdentifier", "")); rec["license_url"] = l["uri"])
+    end
     rec["distributions"] = [dist]
     bare(x) = replace(strip(x), r"^(https?://(dx\.)?doi\.org/|doi:)"i => "")
     refs = [OrderedDict{String, Any}("doi" => bare(r["relatedIdentifier"]), "relation" => "describes")

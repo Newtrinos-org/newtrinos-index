@@ -1,0 +1,65 @@
+id: icecube-upgrade-physics-potential-2025
+type: dataset
+title: 'Replication Data for: Physics potential of the IceCube Upgrade for atmospheric neutrino oscillations'
+short: 'IceCube Upgrade physics potential for atmospheric oscillations: replication data (MC)'
+description: 'Data and plotting scripts for reproducing plots from "Physics potential of the IceCube Upgrade for atmospheric neutrino oscillations". Please refer to the related publication for a detailed explanation of the sample and analysis.
+
+  <br><br>
+
+  Contents:
+
+  <ol>
+
+  <li> <code>README.md</code> contains useful information about the contents of this data release.</li>
+
+  <li> <code>example.py</code> Example script demonstrating how to load the csv files, plot the chi squared map, and extract the 90% sensitivity contours shown in Figures 11 and 15.</li>
+
+  <li> <code>modchi2map_nufitwoSK.csv</code> chi2 map used to produce Figure 11 (left), in which the injected truth point is the best fit point from <a href="http://www.nu-fit.org/sites/default/files/v52.tbl-parameters.pdf">NuFit 5.2 w/o SK (upper panel)</a>, sin<sup>2</sup>(&theta;<sub>23</sub>)=0.572 and &Delta;m<sup>2</sup><sub>32</sub>=2.43&times;10<sup>-3</sup> eV<sup>2</sup>.</li>
+
+  <li> <code>modchi2map_nufitwSK.csv</code> chi2 map used to produce Figure 11 (right), in which the injected truth point is the best fit point from <a href="http://www.nu-fit.org/sites/default/files/v52.tbl-parameters.pdf">NuFit 5.2 w/ SK (lower panel)</a>, sin<sup>2</sup>(&theta;<sub>23</sub>)=0.451 and &Delta;m<sup>2</sup><sub>32</sub>=2.43&times;10<sup>-3</sup> eV<sup>2</sup>.</li>
+
+  <li> <code>modchi2map_icecube.csv</code> chi2 map used to produce Figure 15, in which the injected truth point is the best fit point from the latest published IceCube DeepCore …'
+doi: 10.7910/DVN/OSPLDG
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/OSPLDG
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '1.0'
+date_published: '2025'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/OSPLDG
+  host: dataverse
+  role: primary
+references:
+- doi: 10.48550/arxiv.2509.13066
+  relation: describes
+experiments:
+- icecube
+detectors:
+- icecube-upgrade
+- deepcore
+sources:
+- atmospheric
+topics:
+- oscillation
+- mass-ordering
+data:
+  levels:
+  - mc
+  - binned
+  result_of: 10.48550/arxiv.2509.13066
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

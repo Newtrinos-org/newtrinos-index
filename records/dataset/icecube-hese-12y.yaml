@@ -1,0 +1,52 @@
+id: icecube-hese-12y
+type: dataset
+title: IceCube HESE 12-year data release
+short: 'IceCube HESE 12-year sample (DirectFit reconstruction): events, MC and likelihood'
+description: '<p>This data release describes a revisited analysis of the IceCube high-energy starting events (HESE) sample with an additional 4.5 years of data that employs a full-resimulation reconstruction approach, <a href="https://arxiv.org/abs/1309.7010">DirectFit</a>, which exactly incorporates recent updates in glacial ice modeling. These updates include a microscopic description of the observed ice anisotropy due to <a href="http://doi.org/10.5194/tc-2022-174">birefringence</a> and a full description of ice layer undulations in three dimensions. Each event is reconstructed with the Approximate Bayesian Computation method, with the posterior sample points then fitted to an asymmetric directional probability density function.
+
+  </p>
+
+  <p>For further details, refer to the IceCube publication <a href="https://pos.sissa.it/444/1030/pdf">PoS-ICRC23-1030</a> / <a href="https://arxiv.org/abs/2307.13878">arXiv:2307.13878</a></p>
+
+  <h3>Note on interpretation</h3>
+
+  <p>
+
+  Reconstructed quantities for subsets of these events have been published previously. IceCube utilizes several event reconstructions, each with different strengths and employed in different contexts. DirectFit, the reconstruction in this data release, performs accurate event reconstruction, but is too computationally expensive to run on large scale Monte Carlo (MC). <b>Therefore this data release should not be employed in a forward-folding likelihood fit for MC-based spectral analyses</b>. Instead, as the reconstruction utilizes a …'
+doi: 10.7910/DVN/PZNO2T
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/PZNO2T
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '2.0'
+date_published: '2023'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/PZNO2T
+  host: dataverse
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - events
+  - mc
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

@@ -1,0 +1,97 @@
+id: icecube-ehe-12-6y
+type: dataset
+title: Data release for A search for extremely-high-energy neutrinos and first constraints on the ultra-high-energy cosmic-ray proton fraction with IceCube
+short: 'IceCube 12.6-year extremely-high-energy neutrino search: data release'
+description: '<h1 id="summary">Summary</h1>
+
+  <p>Title: Data Release for A search for extremely-high-energy neutrinos and first constraints on the ultra-high-energy cosmic-ray proton fraction with IceCube</p>
+
+  <p>The IceCube observatory analyzed 12.6 years of data
+
+  in search of extremely-high-energy (EHE) neutrinos above 5 PeV.
+
+  The resultant limit of the search (Fig 1),
+
+  and the effective area of the event selection (Fig 7),
+
+  are provided in this data release.</p>
+
+  <h1 id="contents">Contents</h1>
+
+  <ul>
+
+  <li><p>README file: this file</p>
+
+  </li>
+
+  <li><p><code>differential_limit_and_sensitivity.csv</code>: a comma separated value file,
+
+  giving the observed experimental differential limit,
+
+  and sensitivity, of the search as a function of neutrino energy.
+
+  This is the content of Fig 1 in the paper.
+
+  The first column is the neutrino energy in GeV.
+
+  The second column is the limit in units of GeV/cm2/s/sr.
+
+  The third column is the sensitivity in units of GeV/cm2/s/sr.</p>
+
+  </li>
+
+  <li><p><code>effective_area.csv</code>: a comma separated value file,
+
+  giving the effective area of the search as a function of energy.
+
+  This is the content of Fig 7 in the paper.
+
+  The first column is the neutrino energy in GeV.
+
+  The second column is the total effective area of the search,
+
+  summed across neutrino flavors,
+
+  and averaged across neutrinos and antineutrinos, in meters-squared.
+
+  The third column is the effective area of the search for the average of electron neutrino and electron antineutrinos in units of meters-squared.
+
+  The fourth …'
+doi: 10.7910/DVN/JHK49D
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/JHK49D
+creators:
+- name: IceCube Collaboration
+  kind: collaboration
+publisher:
+  name: Harvard Dataverse
+  kind: organization
+version: '1.0'
+date_published: '2025'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.7910/DVN/JHK49D
+  host: dataverse
+  role: primary
+experiments:
+- icecube
+sources:
+- cosmogenic
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - events
+  - response
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: IceCube Harvard Dataverse collection (subtree icecube)
+  quality_notes:
+  - metadata from DataCite; physics tags assigned by the curator from title and abstract
+relations:
+- rel: is_part_of
+  target: icecube-data-releases

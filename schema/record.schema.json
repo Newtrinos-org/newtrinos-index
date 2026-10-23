@@ -442,7 +442,7 @@
     "detectors": {
       "description": "sub-detectors / parts of an experiment (e.g. IceCube DeepCore, KM3NeT/ORCA); their experiment must be listed in `experiments`",
       "items": {
-        "enum": ["deepcore", "icecube-upgrade", "icetop", "orca", "arca"],
+        "enum": ["deepcore", "icecube-upgrade", "icetop", "icecube-gen2", "orca", "arca"],
         "x-vocab": "detectors"
       },
       "type": "array",

@@ -57,6 +57,7 @@
     - {id: deepcore, name: DeepCore, aliases: [IceCube DeepCore, oscNext, GRECO], description: "densely instrumented low-energy (GeV) sub-array", start: 2011}
     - {id: icecube-upgrade, name: IceCube Upgrade, aliases: [Upgrade], description: "seven new strings inside DeepCore, under construction"}
     - {id: icetop, name: IceTop, description: "surface air-shower array"}
+    - {id: icecube-gen2, name: IceCube-Gen2, aliases: [Gen2], description: "planned next-generation optical + radio extension"}
 - id: km3net
   name: KM3NeT
   collaboration: KM3NeT

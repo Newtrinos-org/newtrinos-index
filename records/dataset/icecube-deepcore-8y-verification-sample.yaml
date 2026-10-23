@@ -13,8 +13,9 @@ publisher:
   kind: organization
 version: '1.0'
 date_published: 2025
-license: none-stated
-license_notes: "IceCube release pages give a suggested citation but no licence (checked 2026-10-23)"
+license: CC0-1.0
+license_url: http://creativecommons.org/publicdomain/zero/1.0
+license_notes: licence from the Harvard Dataverse record (not in DataCite)
 access: open
 distributions:
 - url: https://doi.org/10.7910/DVN/B4RITM
