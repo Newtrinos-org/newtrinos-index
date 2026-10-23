@@ -1,0 +1,34 @@
+id: achilles
+type: software
+title: "ACHILLES: A CHIcagoLand Lepton Event Simulator"
+short: "ACHILLES: event generator for electron– and neutrino–nucleus scattering with spectral functions and cascade"
+description: |-
+  Event generator for lepton–nucleus scattering that combines ab-initio-inspired nuclear models (spectral functions)
+  with a factorised treatment of the hard interaction and a semi-classical intranuclear cascade, validated on
+  electron scattering and applied to neutrino interactions.
+url_landing: "https://github.com/AchillesGen/Achilles"
+creators: [{name: Joshua Isaacson}, {name: William I. Jay}, {name: Alessandro Lovato}, {name: Pedro A. N. Machado}, {name: Noemi Rocco}]
+owner: {name: AchillesGen, kind: organization}
+date_published: 2018-10-05
+date_updated: 2026-10-22
+license: proprietary
+license_notes: "licence file in the repository is not a standard SPDX licence (GitHub: NOASSERTION)"
+access: open
+distributions:
+  - {url: "https://github.com/AchillesGen/Achilles", host: github, role: primary, formats: [source-code]}
+cite_as: ["doi:10.1103/PhysRevD.107.033007"]
+references:
+  - {doi: 10.1103/PhysRevD.107.033007, arxiv: "2205.06378", relation: describes, citation: "Isaacson, Jay, Lovato, Machado, Rocco, Phys. Rev. D 107, 033007 (2023)"}
+sources: [accelerator]
+topics: [cross-section, nuclear-model]
+channels: [ccqe, nc]
+software:
+  repository: "https://github.com/AchillesGen/Achilles"
+  languages: [C++]
+  purposes: [event-generator, nuclear-model]
+  interfaces: [cli, library]
+  development_status: active
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual (via ADoNIS)

@@ -1,0 +1,36 @@
+id: daemonflux
+type: software
+title: "daemonflux: data-driven muon-calibrated neutrino flux"
+short: "daemonflux: atmospheric ν flux calibrated on muon data, with a full covariance of flux uncertainties (Python)"
+description: |-
+  Atmospheric neutrino flux model obtained by calibrating hadronic-interaction and cosmic-ray models (MCEq) on
+  atmospheric muon data, providing fluxes together with a complete, data-driven covariance of their uncertainties; a
+  modern alternative to Honda/Bartol-style uncertainty schemes.
+url_landing: "https://github.com/mceq-project/daemonflux"
+creators: [{name: Juan Pablo Yañez}, {name: Anatoli Fedynitch}]
+owner: {name: mceq-project, kind: organization}
+license: unknown
+access: open
+distributions:
+  - {url: "https://github.com/mceq-project/daemonflux", host: github, role: primary, formats: [source-code]}
+cite_as: ["doi:10.1103/PhysRevD.107.123037"]
+references:
+  - {doi: 10.1103/PhysRevD.107.123037, arxiv: "2303.00022", relation: describes, citation: "Yañez & Fedynitch, Phys. Rev. D 107, 123037 (2023)"}
+  - {doi: 10.22323/1.444.1215, relation: describes, citation: "PoS(ICRC2023)1215"}
+relations:
+  - {rel: uses, target: mceq}
+used_by:
+  - {kind: paper, target: "doi:10.22323/1.501.0459", label: "KM3NeT atmospheric muons with daemonflux (ICRC2025)"}
+sources: [atmospheric]
+topics: [flux]
+software:
+  repository: "https://github.com/mceq-project/daemonflux"
+  languages: [Python]
+  purposes: [flux-calculation]
+  interfaces: [library]
+  development_status: unknown
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual (via P. Granger's repositories)
+  quality_notes: ["licence and dates not read (GitHub API rate-limited on 2026-10-23)"]

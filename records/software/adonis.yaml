@@ -1,0 +1,37 @@
+id: adonis
+type: software
+title: "ADoNIS: A Differentiable generatOr of Neutrino Interaction Samples"
+short: "ADoNIS: fully differentiable neutrino interaction event generator (exact gradients through the whole simulation)"
+description: |-
+  Neutrino interaction event generator that is differentiable end to end: exact derivatives with respect to physics
+  parameters are propagated through the nuclear ground state, the hard-scattering amplitudes and the stochastic
+  intranuclear cascade, so reweighting and its gradients are directly available. Follows the physics choices of
+  ACHILLES and agrees with it for neutrino, electron and hadron probes; the Jacobian shows which measurements constrain
+  which parameters, for fit, tuning, measurement and experiment design, and feeds frequentist or Bayesian inference.
+url_landing: "https://github.com/cesarjesusvalls/ADoNIS"
+creators: [{name: César Jesús-Valls}]
+owner: {name: cesarjesusvalls, kind: person}
+date_published: 2026-06-03
+date_updated: 2026-09-16
+license: MIT
+access: open
+distributions:
+  - {url: "https://github.com/cesarjesusvalls/ADoNIS", host: github, role: primary, formats: [source-code]}
+cite_as: ["arXiv:2608.25107"]
+references:
+  - {arxiv: "2608.25107", relation: describes, citation: "C. Jesús-Valls, ADoNIS: A Differentiable generatOr of Neutrino Interaction Samples"}
+relations:
+  - {rel: derived_from, target: achilles, notes: "follows ACHILLES' physics choices"}
+sources: [accelerator]
+topics: [cross-section, nuclear-model, statistics]
+channels: [ccqe, nc]
+software:
+  repository: "https://github.com/cesarjesusvalls/ADoNIS"
+  languages: [Python]
+  purposes: [event-generator, nuclear-model]
+  interfaces: [library]
+  development_status: active
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual (user suggestion)

@@ -1,0 +1,26 @@
+id: pylarevd
+type: software
+title: pylarevd
+short: "pylarevd: LArSoft event display in pure Python, reading art-ROOT files directly with uproot"
+description: Event display for LArSoft (LArTPC) data that reads art-ROOT files directly with uproot, without ROOT, art or LArSoft installations.
+url_landing: "https://github.com/pgranger23/pylarevd"
+creators: [{name: Pierre Granger}]
+owner: {name: pgranger23, kind: person}
+license: unknown
+access: open
+distributions:
+  - {url: "https://github.com/pgranger23/pylarevd", host: github, role: primary, formats: [source-code]}
+experiments: [dune]
+sources: [accelerator]
+topics: [detector-response]
+software:
+  repository: "https://github.com/pgranger23/pylarevd"
+  languages: [Python]
+  purposes: [plotting, data-access]
+  interfaces: [library]
+  development_status: active
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual (via P. Granger's repositories)
+  quality_notes: ["licence and dates not read (GitHub API rate-limited on 2026-10-23)"]

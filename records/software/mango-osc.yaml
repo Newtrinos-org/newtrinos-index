@@ -26,6 +26,14 @@ distributions:
 - url: https://doi.org/10.5281/zenodo.21774110
   host: zenodo
   role: primary
+- url: https://github.com/pgranger23/mango-osc
+  host: github
+  role: mirror
+  label: GitHub repository
+references:
+- arxiv: '2608.13429'
+  relation: describes
+  citation: 'P. Granger, MANGO: An Autodiff Neutrino Oscillation Engine for Differentiable Analysis Pipelines'
 sources:
 - none
 topics:
