@@ -1,0 +1,38 @@
+id: dune-lblpwgtools
+type: software
+title: 'DUNE lblpwgtools: Long-Baseline Physics Working Group tools (CAFAna)'
+short: 'lblpwgtools: DUNE long-baseline physics working group tools (CAFAna)'
+description: Public repository of DUNE's CAFAna-based long-baseline oscillation analysis framework used for the TDR sensitivity studies (fits, systematics, state files).
+url_landing: https://github.com/DUNE/lblpwgtools
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/DUNE/lblpwgtools
+  host: github
+  role: primary
+references:
+- arxiv: '2002.03005'
+  relation: describes
+- arxiv: '2006.16043'
+  relation: describes
+experiments:
+- dune
+sources:
+- accelerator
+topics:
+- oscillation
+software:
+  repository: https://github.com/DUNE/lblpwgtools
+  purposes:
+  - fitting
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README (public repo in DUNE org).'
+  - Builds rely on Fermilab cvmfs containers; input CAFs are collaboration-internal. Paper ids verified via arXiv API.

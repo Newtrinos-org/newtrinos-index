@@ -1,0 +1,36 @@
+id: senscalc
+type: software
+title: 'SensCalc: sensitivities to feebly interacting particles incl. heavy neutral leptons'
+short: 'SensCalc: sensitivities of beam-dump and collider experiments to HNLs and other FIPs'
+description: Mathematica package computing expected long-lived particle decay events and sensitivity curves for lifetime-frontier experiments; includes HNLs with arbitrary mixing patterns.
+url_landing: https://github.com/maksymovchynnikov/SensCalc
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/maksymovchynnikov/SensCalc
+  host: github
+  role: primary
+- url: https://zenodo.org/records/8353682
+  host: zenodo
+  role: mirror
+references:
+- arxiv: '2305.13383'
+  relation: describes
+sources:
+- accelerator
+topics:
+- bsm-other
+software:
+  repository: https://github.com/maksymovchynnikov/SensCalc
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened GitHub repo (README, licence).'
+  - Zenodo record seen in search results only.

@@ -1,0 +1,37 @@
+id: nusquids-lv
+type: software
+title: 'nuSQuIDS_LV: nuSQuIDS with Lorentz-violation operators'
+short: 'nuSQuIDS_LV: nuSQuIDS with Lorentz-violation operators'
+description: Fork/extension of nuSQuIDS adding Lorentz-violating terms to the neutrino Hamiltonian for atmospheric/astrophysical propagation studies.
+url_landing: https://github.com/Harvard-Neutrino/nuSQuIDS_LV
+license: LGPL-3.0-or-later
+access: open
+distributions:
+- url: https://github.com/Harvard-Neutrino/nuSQuIDS_LV
+  host: github
+  role: primary
+- url: https://github.com/arguelles/LVTools
+  host: github
+  role: mirror
+relations:
+- rel: uses
+  target: nusquids
+sources:
+- atmospheric
+- astrophysical
+topics:
+- lorentz-violation
+software:
+  repository: https://github.com/Harvard-Neutrino/nuSQuIDS_LV
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page (description, licence).'
+  - Related to arguelles/LVTools; might merge as one entry.

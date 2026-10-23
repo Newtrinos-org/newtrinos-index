@@ -1,0 +1,32 @@
+id: feynrules-hnl-meson-model
+type: model
+title: 'FeynRules HNLs model: heavy neutral lepton with effective meson interactions'
+short: FeynRules HNL model with effective meson interactions
+description: FeynRules model files for Dirac and Majorana HNLs coupling to pions, kaons, D, B mesons via low-energy effective operators (meson production/decay of HNLs), with form-factor generator script and README.
+url_landing: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HNLs
+license: none-stated
+access: open
+distributions:
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HNLs
+  host: institutional
+  role: primary
+- url: https://arxiv.org/abs/2007.03701
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2007.03701'
+  relation: describes
+sources:
+- accelerator
+topics:
+- bsm-other
+model:
+  quantities:
+  - UFO model
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened FeynRules wiki page.'
+  - Coloma, Fernandez-Martinez, Gonzalez-Lopez, Hernandez-Garcia.

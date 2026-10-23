@@ -1,0 +1,39 @@
+id: ppfx
+type: software
+title: 'PPFX: Package to Predict the FluX (NuMI/LBNF hadron-production flux reweighting)'
+short: 'PPFX: hadron-production-constrained NuMI / LBNF flux prediction'
+description: Official PPFX code (Aliaga, Kordosky) correcting Geant4 beam simulations with hadron-production data (NA49, MIPP, ...) and producing flux central values and uncertainty universes from dk2nu files.
+url_landing: https://github.com/NuFluxSoftware/ppfx
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/NuFluxSoftware/ppfx
+  host: github
+  role: primary
+- url: https://github.com/NuSoftHEP/ppfx
+  host: github
+  role: mirror
+- url: https://cdcvs.fnal.gov/redmine/projects/ppfx/wiki/PPFX
+  host: institutional
+  role: mirror
+experiments:
+- minerva
+- nova
+sources:
+- accelerator
+topics:
+- flux
+software:
+  repository: https://github.com/NuFluxSoftware/ppfx
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README (redirect kordosky/ppfx -> NuFluxSoftware/ppfx).'
+  - Pairs with g4numi and dk2nu below.

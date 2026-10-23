@@ -1,0 +1,41 @@
+id: nu-osc-kopp
+type: software
+title: 'nu-osc: GLoBES-based framework for sensitivity studies and global fits (incl. sterile neutrinos)'
+short: 'nu-osc: GLoBES-based sensitivity and global-fit framework (J. Kopp et al.)'
+description: C/C++ code (J. Kopp) for oscillation simulations in SM and BSM; command-line parameter scans/marginalisation with many experiments implemented natively in GLoBES or via external codes (e.g. MiniBooNE); full branch (nuSQuIDS, ROOT) and lightweight GLoBES+GSL branch.
+url_landing: https://github.com/koppj/nu-osc
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/koppj/nu-osc
+  host: github
+  role: primary
+references:
+- arxiv: '1303.3011'
+  relation: describes
+- arxiv: '1803.10661'
+  relation: describes
+relations:
+- rel: uses
+  target: globes
+sources:
+- accelerator
+- reactor
+topics:
+- sterile
+- global-fit
+software:
+  repository: https://github.com/koppj/nu-osc
+  purposes:
+  - global-fit
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README.'
+  - No licence file shown; installation described as 'good luck!'. Likely the closest public thing to the Kopp-Machado-Maltoni-Schwetz sterile global-fit code.

@@ -1,0 +1,41 @@
+id: feynrules-neutrino-mass-models
+type: collection
+title: FeynRules neutrino-mass model collection (Type-III seesaw, Weinberg operator, scotogenic, effective LRSM)
+short: FeynRules neutrino-mass model collection (Type-III seesaw, Weinberg operator, scotogenic, LRSM)
+description: 'FeynRules model-database section listing UFO/FeynRules implementations of neutrino-mass models: Type-III seesaw (and MLFV variant), SM+Weinberg operator, scotogenic models, effective left-right symmetric model with heavy Majorana neutrinos, plus HeavyN/HNLs/pSPSS.'
+url_landing: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/SimpleExtensions
+license: none-stated
+access: open
+distributions:
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/SimpleExtensions
+  host: institutional
+  role: primary
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/TypeIIISeeSaw
+  host: institutional
+  role: mirror
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/SMWeinberg
+  host: institutional
+  role: mirror
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/ScotoSinglet
+  host: institutional
+  role: mirror
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/2IDM3N
+  host: institutional
+  role: mirror
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/EffLRSM
+  host: institutional
+  role: mirror
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/MLFVtIIIseesaw
+  host: institutional
+  role: mirror
+topics:
+- bsm-other
+sources:
+- none
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened FeynRules ''Simple extensions'' page (model list).'
+  - Individual subpages other than HeavyN, HNLs, pSPSS not opened.

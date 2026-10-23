@@ -1,0 +1,40 @@
+id: dayabay-sterile-decoherence
+type: software
+title: 'DayaBaySterileDecoherence: low-energy reactor sterile/decoherence analysis code'
+short: Daya Bay low-energy sterile / decoherence reanalysis code
+description: 'Python program analysing low-energy (reactor and radioactive-source) sterile-neutrino experiments with oscillation damping from finite wave-packet separation (paper: Impact of Wave Packet Separation in Low-Energy Sterile Neutrino Searches).'
+url_landing: https://github.com/Harvard-Neutrino/DayaBaySterileDecoherence
+license: LGPL-2.1-only
+license_notes: LGPL-2.1
+access: open
+distributions:
+- url: https://github.com/Harvard-Neutrino/DayaBaySterileDecoherence
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2201.05108
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2201.05108'
+  relation: describes
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- sterile
+- decoherence
+software:
+  repository: https://github.com/Harvard-Neutrino/DayaBaySterileDecoherence
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page (description, licence).'
+  - Exact experiment list not checked.

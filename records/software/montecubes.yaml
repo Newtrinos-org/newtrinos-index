@@ -1,0 +1,43 @@
+id: montecubes
+type: software
+title: 'MonteCUBES: MCMC sampler plugin for GLoBES'
+short: 'MonteCUBES: MCMC sampler plugin for GLoBES'
+description: C library plugin replacing the GLoBES minimiser with Markov Chain Monte Carlo; includes non-unitary mixing and NSI engines plus a Matlab GUI for analysing chains.
+url_landing: https://github.com/enfmarti/MCUBES
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/enfmarti/MCUBES
+  host: github
+  role: primary
+- url: https://www.mpi-hd.mpg.de/personalhomes/globes/tools.html
+  host: institutional
+  role: mirror
+- url: https://arxiv.org/abs/0903.3985
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '0903.3985'
+  relation: describes
+relations:
+- rel: uses
+  target: globes
+sources:
+- accelerator
+- reactor
+topics:
+- oscillation
+- statistics
+software:
+  repository: https://github.com/enfmarti/MCUBES
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on the GLoBES tools page; GitHub API confirms repo enfmarti/MCUBES exists (no licence).'

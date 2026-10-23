@@ -9,7 +9,7 @@ description: |-
 url_landing: "https://github.com/mceq-project/daemonflux"
 creators: [{name: Juan Pablo Yañez}, {name: Anatoli Fedynitch}]
 owner: {name: mceq-project, kind: organization}
-license: unknown
+license: BSD-3-Clause
 access: open
 distributions:
   - {url: "https://github.com/mceq-project/daemonflux", host: github, role: primary, formats: [source-code]}
@@ -33,4 +33,3 @@ curation:
   status: curated
   added: 2026-10-23
   source: manual (via P. Granger's repositories)
-  quality_notes: ["licence and dates not read (GitHub API rate-limited on 2026-10-23)"]

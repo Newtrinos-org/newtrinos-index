@@ -1,0 +1,31 @@
+id: pspss-model
+type: model
+title: 'FeynRules pSPSS model: phenomenological symmetry protected seesaw scenario (pseudo-Dirac HNLs)'
+short: 'pSPSS: phenomenological symmetry-protected seesaw scenario (FeynRules / UFO)'
+description: FeynRules model and UFO (pSPSS.fr, pSPSS_UFO.zip) for a pseudo-Dirac heavy-neutrino pair with mass splitting, simulating heavy neutrino-antineutrino oscillations and decoherence at colliders.
+url_landing: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/pSPSS
+license: none-stated
+access: open
+distributions:
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/pSPSS
+  host: institutional
+  role: primary
+- url: https://arxiv.org/abs/2210.10738
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2210.10738'
+  relation: describes
+sources:
+- accelerator
+topics:
+- bsm-other
+model:
+  quantities:
+  - UFO model
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened FeynRules wiki page.'

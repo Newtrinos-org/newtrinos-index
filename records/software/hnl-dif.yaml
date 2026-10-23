@@ -1,0 +1,32 @@
+id: hnl-dif
+type: software
+title: 'HNL-DIF: heavy neutral lepton decays in flight at accelerator neutrino experiments'
+short: 'HNL-DIF: heavy-neutral-lepton decays in flight at accelerator neutrino experiments'
+description: Python module and notebooks computing HNL fluxes, decay rates, event rates and limits for HNL decays in flight, with an HNL event MC generator.
+url_landing: https://github.com/mhostert/HNL-DIF
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/mhostert/HNL-DIF
+  host: github
+  role: primary
+- url: https://inspirehep.net/literature/1919114
+  host: institutional
+  role: mirror
+sources:
+- accelerator
+topics:
+- bsm-other
+software:
+  repository: https://github.com/mhostert/HNL-DIF
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README.'

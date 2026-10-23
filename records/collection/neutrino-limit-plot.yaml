@@ -1,0 +1,24 @@
+id: neutrino-limit-plot
+type: collection
+title: 'NeutrinoLimitPlot: compilation and plot of leading UHE neutrino flux limits'
+short: 'NeutrinoLimitPlot: compilation of ultra-high-energy neutrino flux limits with plotting code'
+description: Self-contained Python/matplotlib script with tabulated peer-reviewed ultra-high-energy neutrino flux limits and sensitivities (flux vs energy), producing a publication-style comparison plot.
+url_landing: https://github.com/clark2668/NeutrinoLimitPlot
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/clark2668/NeutrinoLimitPlot
+  host: github
+  role: primary
+sources:
+- astrophysical
+- cosmogenic
+topics:
+- flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README; licence on repo page.'
+  - Astro-UHE scope; experiment list from general knowledge of the plot, not checked file by file.

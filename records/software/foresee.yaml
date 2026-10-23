@@ -1,0 +1,33 @@
+id: foresee
+type: software
+title: 'FORESEE: FORward Experiment SEnsitivity Estimator (incl. HNL models)'
+short: 'FORESEE: forward-experiment sensitivity estimator (incl. HNLs, FPF neutrinos)'
+description: Python package simulating forward LHC particle production and long-lived particle sensitivity; model library includes heavy neutral leptons via HNLCalc and also forward neutrino fluxes.
+url_landing: https://github.com/KlingFelix/FORESEE
+license: MIT
+access: open
+distributions:
+- url: https://github.com/KlingFelix/FORESEE
+  host: github
+  role: primary
+references:
+- arxiv: '2105.07077'
+  relation: describes
+sources:
+- accelerator
+topics:
+- bsm-other
+software:
+  repository: https://github.com/KlingFelix/FORESEE
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page reachable, MIT licence; HNL link from HNLCalc README.'
+  - General LLP tool; neutrino relevance via HNL models.

@@ -1,0 +1,40 @@
+id: icecube-masterclass-harvard
+type: dataset
+title: 'IceCube MasterClass at Harvard: student notebooks with simulated IceCube events'
+short: IceCube MasterClass notebooks with simulated events (Harvard; Prometheus-based)
+description: Teaching materials (Jupyter notebooks + Prometheus-simulated IceCube events) for the 2023-2026 IceCube Masterclasses; complements the official IceCube Masterclass web apps (event displays of the 37 HESE events, data-vs-MC selection tuning).
+url_landing: https://github.com/Harvard-Neutrino/IceCube_MasterClass_at_Harvard
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/Harvard-Neutrino/IceCube_MasterClass_at_Harvard
+  host: github
+  role: primary
+- url: https://github.com/Harvard-Neutrino/IceCube_MasterClass_at_Harvard2024
+  host: github
+  role: mirror
+- url: https://github.com/jlazar17/IceCube_Masterclass_MoonShadow
+  host: github
+  role: mirror
+- url: https://masterclass.icecube.wisc.edu/en/analyses/
+  host: institutional
+  role: mirror
+references:
+- arxiv: '2304.14526'
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- detector-response
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub READMEs; opened official masterclass analyses page.'
+  - Educational; simulated not real data in notebooks.

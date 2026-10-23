@@ -1,0 +1,30 @@
+id: tridentsmite
+type: software
+title: 'TridentSmite: SM/BSM neutrino trident event generator'
+short: 'TridentSmite: SM and BSM neutrino trident event generator'
+description: Monte Carlo generator for neutrino trident production (SM and BSM, e.g. Z') on nuclei and nucleons.
+url_landing: https://github.com/mhostert/TridentSmite
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/mhostert/TridentSmite
+  host: github
+  role: primary
+sources:
+- accelerator
+topics:
+- cross-section
+- bsm-other
+software:
+  repository: https://github.com/mhostert/TridentSmite
+  purposes:
+  - event-generator
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page and README header.'

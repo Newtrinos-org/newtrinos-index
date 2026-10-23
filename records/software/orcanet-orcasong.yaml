@@ -1,0 +1,50 @@
+id: orcanet-orcasong
+type: software
+title: 'OrcaNet and OrcaSong: KM3NeT deep-learning framework and image/graph data preparation'
+short: 'OrcaNet / OrcaSong: KM3NeT deep-learning framework and image/graph data generation'
+description: OrcaNet (Keras/TensorFlow NN training for KM3NeT) and OrcaSong (turns hit information of neutrino events into images/graphs for NN input).
+url_landing: https://git.km3net.de/ml/OrcaNet
+license: unknown
+license_notes: "AGPL (version not stated on the page)"
+access: open
+distributions:
+- url: https://git.km3net.de/ml/OrcaNet
+  host: institutional
+  role: primary
+- url: https://git.km3net.de/ml/OrcaSong
+  host: institutional
+  role: mirror
+- url: https://pypi.org/project/orcanet/
+  host: package-registry
+  role: mirror
+- url: https://pypi.org/project/orcasong/
+  host: package-registry
+  role: mirror
+- url: https://arxiv.org/abs/2004.08254
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2004.08254'
+  relation: describes
+experiments:
+- km3net
+detectors:
+- orca
+sources:
+- atmospheric
+topics:
+- detector-response
+software:
+  repository: https://git.km3net.de/ml/OrcaNet
+  purposes:
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: KM3NeT GitLab pages reachable (HTTP 200); PyPI metadata (summary, AGPL licence).'
+  - No public ML training set found; KM3NeT open data (ORCA6) catalogued.

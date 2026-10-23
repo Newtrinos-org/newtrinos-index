@@ -1,0 +1,36 @@
+id: hnlcalc
+type: software
+title: 'HNLCalc: Heavy Neutral Lepton Calculator'
+short: 'HNLCalc: heavy-neutral-lepton production and decay calculator'
+description: Python tool for HNL production rates (>150 channels), decay widths (>100 modes) and lifetimes with arbitrary e/mu/tau mixing up to 10 GeV.
+url_landing: https://github.com/KlingFelix/HNLCalc
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/KlingFelix/HNLCalc
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2405.07330
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2405.07330'
+  relation: describes
+sources:
+- accelerator
+topics:
+- bsm-other
+software:
+  repository: https://github.com/KlingFelix/HNLCalc
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README.'
+  - Used to extend FORESEE.

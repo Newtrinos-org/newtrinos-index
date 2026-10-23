@@ -1,0 +1,38 @@
+id: snu-globes-engine
+type: software
+title: 'snu: sterile neutrino and NSI oscillation engine for GLoBES'
+short: 'snu: sterile-neutrino and NSI oscillation engine for GLoBES (J. Kopp)'
+description: J. Kopp's GLoBES probability engine supporting up to six sterile flavours and non-standard interactions (v1.0 Nov 2010, v1.1 Jan 2011), C source plus PDF documentation.
+url_landing: https://www.mpi-hd.mpg.de/personalhomes/globes/tools.html
+license: none-stated
+access: open
+distributions:
+- url: https://www.mpi-hd.mpg.de/personalhomes/globes/tools.html
+  host: institutional
+  role: primary
+- url: https://www.mpi-hd.mpg.de/personalhomes/globes/tools/snu-1.1.tar.gz
+  host: institutional
+  role: mirror
+relations:
+- rel: uses
+  target: globes
+sources:
+- accelerator
+- reactor
+topics:
+- sterile
+- nsi
+software:
+  repository: https://www.mpi-hd.mpg.de/personalhomes/globes/tools.html
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened GLoBES ''tools'' page listing snu with download links.'
+  - Basis for many sterile/NSI phenomenology studies; same page also hosts Kopp's event-rate degeneracy finder (degfinder-1.0).

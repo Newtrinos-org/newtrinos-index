@@ -1,0 +1,31 @@
+id: heavyn-ufo
+type: model
+title: 'HeavyN: Standard Model + heavy neutrinos at NLO in QCD (FeynRules/UFO models)'
+short: 'HeavyN: SM + heavy Majorana/Dirac neutrinos at NLO in QCD (FeynRules / UFO, incl. Type-I seesaw)'
+description: FeynRules model files and MadGraph UFOs for Majorana and Dirac heavy neutrinos (LO/NLO, CKM/all-masses variants), a nuSMEFT dim-6 extension and older Type-I seesaw UFOs (SM_HeavyN_NLO_UFO.tgz, SM_HeavyN_Dirac_NLO_UFO.tgz, Seesaw_TypeI_UFO.tgz, ...).
+url_landing: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HeavyN
+license: none-stated
+access: open
+distributions:
+- url: https://cp3.irmp.ucl.ac.be/projects/feynrules/wiki/HeavyN
+  host: institutional
+  role: primary
+references:
+- arxiv: '1602.06957'
+  relation: describes
+- arxiv: '1411.7305'
+  relation: describes
+sources:
+- accelerator
+topics:
+- bsm-other
+model:
+  quantities:
+  - UFO model
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened the FeynRules wiki page; attachments listed.'
+  - Standard UFO used by ATLAS/CMS HNL searches.

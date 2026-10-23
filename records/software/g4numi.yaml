@@ -1,0 +1,33 @@
+id: g4numi
+type: software
+title: 'g4numi: NuMI beamline Geant4 simulation'
+short: 'g4numi: Geant4 simulation of the NuMI beamline'
+description: Geant4 simulation of the Fermilab NuMI target, horns and decay pipe used to produce neutrino flux predictions.
+url_landing: https://github.com/NuSoftHEP/g4numi
+license: MIT
+access: open
+distributions:
+- url: https://github.com/NuSoftHEP/g4numi
+  host: github
+  role: primary
+experiments:
+- minerva
+- nova
+- minos
+sources:
+- accelerator
+topics:
+- flux
+software:
+  repository: https://github.com/NuSoftHEP/g4numi
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page (title, licence).'

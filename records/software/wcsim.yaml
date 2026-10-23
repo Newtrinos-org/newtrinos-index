@@ -1,0 +1,34 @@
+id: wcsim
+type: software
+title: 'WCSim: Water Cherenkov detector Geant4 simulation'
+short: 'WCSim: Geant4 water Cherenkov detector simulation (Hyper-K, IWCD)'
+description: Open Geant4 application simulating water Cherenkov detectors (geometry, PMTs, photon propagation, electronics) widely used by Hyper-K and ML studies (WatChMaL).
+url_landing: https://github.com/WCSim/WCSim
+license: MIT
+access: open
+distributions:
+- url: https://github.com/WCSim/WCSim
+  host: github
+  role: primary
+experiments:
+- hyper-k
+- super-k
+sources:
+- accelerator
+- atmospheric
+topics:
+- detector-response
+software:
+  repository: https://github.com/WCSim/WCSim
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page (title, licence).'
+  - Catalogued 'pmt-response-water-cherenkov-wcsim' is a dataset, not the code.

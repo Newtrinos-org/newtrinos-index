@@ -1,0 +1,32 @@
+id: edep-sim
+type: software
+title: 'edep-sim: Geant4 energy-deposition simulation (DUNE ND)'
+short: 'edep-sim: Geant4 energy-deposition simulation (DUNE near detector)'
+description: General Geant4 wrapper producing energy-deposit ROOT trees for detector simulation; standard input stage for larnd-sim and DUNE ND/2x2 simulations.
+url_landing: https://github.com/DUNE/edep-sim
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/DUNE/edep-sim
+  host: github
+  role: primary
+experiments:
+- dune
+sources:
+- accelerator
+topics:
+- detector-response
+software:
+  repository: https://github.com/DUNE/edep-sim
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README.'
+  - General tool; larnd-sim already catalogued.

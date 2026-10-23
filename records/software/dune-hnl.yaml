@@ -1,0 +1,38 @@
+id: dune-hnl
+type: software
+title: 'dune-hnl: HNL sensitivity study at the DUNE near detector'
+short: 'dune-hnl: heavy-neutral-lepton sensitivity at the DUNE near detector'
+description: Python code for heavy neutral lepton sensitivity at the DUNE near detector reproducing arXiv:2102.03383.
+url_landing: https://github.com/koppj/dune-hnl
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/koppj/dune-hnl
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2102.03383
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2102.03383'
+  relation: describes
+experiments:
+- dune
+sources:
+- accelerator
+topics:
+- bsm-other
+software:
+  repository: https://github.com/koppj/dune-hnl
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page (description, licence).'
+  - Check against catalogued 'dune-dipole-portal-code' (different paper).

@@ -1,0 +1,37 @@
+id: nuoscillator
+type: software
+title: 'NuOscillator: wrapper framework for neutrino oscillation probability engines'
+short: 'NuOscillator: common wrapper around neutrino oscillation engines (CUDAProb3, Prob3++, NuFast, …)'
+description: C++ wrapper providing a common interface to CUDAProb3, Prob3++, ProbGPU, NuFAST, OscProb, NuSQuIDS etc. for beam, atmospheric, sterile and NSI oscillations; integrated with MaCh3; GPU/multithreaded options, container image.
+doi: 10.5281/zenodo.14771935
+url_landing: https://github.com/dbarrow257/NuOscillator
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/dbarrow257/NuOscillator
+  host: github
+  role: primary
+- url: https://dbarrow257.github.io/NuOscillator/
+  host: institutional
+  role: mirror
+- url: https://doi.org/10.5281/zenodo.14771935
+  host: zenodo
+  role: documentation
+sources:
+- accelerator
+- atmospheric
+topics:
+- oscillation
+software:
+  repository: https://github.com/dbarrow257/NuOscillator
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README (Zenodo badge DOI) and licence on repo page.'

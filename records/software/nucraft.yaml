@@ -1,0 +1,40 @@
+id: nucraft
+type: software
+title: 'nuCraft: oscillation probabilities of atmospheric neutrinos'
+short: 'nuCraft: oscillation probabilities of atmospheric neutrinos through the Earth (Python)'
+description: Python (NumPy/SciPy) numerical Schroedinger-equation solver for atmospheric neutrino oscillations with continuous Earth models, production-height smearing, arbitrary number of sterile flavours.
+doi: 10.17632/x43r47vcs6.1
+url_landing: https://nucraft.hepforge.org/
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://nucraft.hepforge.org/
+  host: institutional
+  role: primary
+- url: https://data.mendeley.com/datasets/x43r47vcs6/1
+  host: institutional
+  role: mirror
+- url: https://www.ascl.net/1602.008
+  host: institutional
+  role: mirror
+references:
+- arxiv: '1409.1387'
+  relation: describes
+sources:
+- atmospheric
+topics:
+- oscillation
+software:
+  repository: https://nucraft.hepforge.org/
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened HEPForge project page and Mendeley Data record.'
+  - Source via SVN/tarball on HEPForge.

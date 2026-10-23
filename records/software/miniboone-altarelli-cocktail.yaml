@@ -1,0 +1,35 @@
+id: miniboone-altarelli-cocktail
+type: software
+title: MiniBooNE background analysis codes (Altarelli cocktail)
+short: MiniBooNE background-reanalysis codes ("an Altarelli cocktail", Brdar & Kopp)
+description: Jupyter notebook framework analysing GENIE, GiBUU, NUANCE and NuWro output for MiniBooNE backgrounds (figs. 1-5 of the paper).
+url_landing: https://github.com/koppj/MiniBooNE
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/koppj/MiniBooNE
+  host: github
+  role: primary
+references:
+- arxiv: '2109.08157'
+  relation: describes
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- sterile
+software:
+  repository: https://github.com/koppj/MiniBooNE
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README.'
+  - MC output (>100 GB) and global-fit code only on request; arXiv id verified via arXiv API.

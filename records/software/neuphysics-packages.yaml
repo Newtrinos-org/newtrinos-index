@@ -1,0 +1,36 @@
+id: neuphysics-packages
+type: software
+title: 'NeuPhysics packages: Python/Mathematica tools for neutrino oscillations in various environments'
+short: 'NeuPhysics: Python / Mathematica tools for neutrino oscillations and collective effects'
+description: Documentation and code (NeuOsc package v0.0.2) for neutrino oscillations in matter, supernova and other environments, by the NeuPhysics group (L. Ma).
+url_landing: https://neupackage.readthedocs.io/en/latest/index.html
+license: none-stated
+access: open
+distributions:
+- url: https://neupackage.readthedocs.io/en/latest/index.html
+  host: institutional
+  role: primary
+- url: https://github.com/NeuPhysics/neupackage
+  host: github
+  role: mirror
+- url: https://github.com/neuphysics
+  host: github
+  role: mirror
+topics:
+- oscillation
+sources:
+- none
+software:
+  repository: https://neupackage.readthedocs.io/en/latest/index.html
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched readthedocs page title; GitHub repo description.'
+  - Low maturity; include only if educational codes are wanted.

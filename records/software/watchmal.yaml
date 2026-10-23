@@ -1,0 +1,31 @@
+id: watchmal
+type: software
+title: 'WatChMaL: Water Cherenkov Machine Learning framework'
+short: 'WatChMaL: machine-learning framework for water Cherenkov detectors (Hyper-K, IWCD)'
+description: PyTorch+Hydra framework for training and applying ML models (CNN, ResNet, PointNet, GNN) for event reconstruction/classification in water Cherenkov detectors.
+url_landing: https://github.com/WatChMaL/WatChMaL
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/WatChMaL/WatChMaL
+  host: github
+  role: primary
+sources:
+- accelerator
+- atmospheric
+topics:
+- detector-response
+software:
+  repository: https://github.com/WatChMaL/WatChMaL
+  purposes:
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README and licence.'
+  - No public training datasets found.

@@ -1,0 +1,35 @@
+id: pilarnet-m
+type: dataset
+title: PILArNet-Medium (PILArNet-M) LArTPC 3D particle-imaging dataset
+short: 'PILArNet-M: ~1.2 M simulated LArTPC 3D particle-imaging events for ML (HDF5, Hugging Face)'
+description: ~1.2M simulated LArTPC events (train/val/test) in HDF5 (~168 GB) with voxel points, semantic labels (shower/track/Michel/delta/LED), particle IDs, instance and interaction grouping, momenta.
+url_landing: https://huggingface.co/datasets/DeepLearnPhysics/PILArNet-M
+license: Apache-2.0
+access: open
+distributions:
+- url: https://huggingface.co/datasets/DeepLearnPhysics/PILArNet-M
+  host: other
+  role: primary
+- url: https://arxiv.org/abs/2006.01993
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2502.02558'
+  relation: describes
+- arxiv: '2006.01993'
+  relation: describes
+experiments: []
+sources:
+- accelerator
+topics:
+- detector-response
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened Hugging Face dataset card.'
+  - Continuation of the 2020 PILArNet public dataset (300k events).

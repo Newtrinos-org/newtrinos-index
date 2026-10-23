@@ -1,0 +1,34 @@
+id: gambit-three-rhn-fit
+type: result
+title: 'Supplementary Data: A Frequentist Analysis of Three Right-Handed Neutrinos with GAMBIT'
+short: 'GAMBIT frequentist analysis of three right-handed neutrinos: supplementary samples (38 GB)'
+description: GAMBIT global-fit samples (HDF5, ~38 GB) for the three right-handed neutrino (Type-I seesaw HNL) model, NH and IH, with YAML input files, pippi plotting files and README.
+doi: 10.5281/zenodo.3842838
+url_landing: https://zenodo.org/records/3842838
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://zenodo.org/records/3842838
+  host: zenodo
+  role: primary
+- url: https://zenodo.org/records/3334971
+  host: zenodo
+  role: mirror
+references:
+- arxiv: '1908.02302'
+  relation: describes
+sources:
+- accelerator
+topics:
+- bsm-other
+- global-fit
+data:
+  levels:
+  - posterior
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API record: title, licence, file list (RHN_IH.hdf5, RHN_yaml_files.tar.gz, README_RHN.md ...).'
+  - v1 (2019) is record 3334971; paper arXiv id confirmed via arXiv API.

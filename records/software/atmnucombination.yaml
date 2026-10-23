@@ -1,0 +1,37 @@
+id: atmnucombination
+type: software
+title: 'AtmNuCombination: combined atmospheric neutrino oscillation analysis (IceCube Upgrade + Super-K)'
+short: 'AtmNuCombination: combined atmospheric-oscillation analysis framework (Super-K / IceCube-like samples)'
+description: Python (nuSQuIDS, nuflux) simulation and 3-flavour oscillation analysis code with source and detector systematics for atmospheric experiments and their combination; uses the catalogued Fernandez/Martinez-Soler atmospheric MC files.
+url_landing: https://github.com/Harvard-Neutrino/AtmNuCombination
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/Harvard-Neutrino/AtmNuCombination
+  host: github
+  role: primary
+- url: https://doi.org/10.7910/DVN/OS5N7U
+  host: institutional
+  role: documentation
+experiments:
+- super-k
+- icecube
+sources:
+- atmospheric
+topics:
+- oscillation
+- mass-ordering
+software:
+  repository: https://github.com/Harvard-Neutrino/AtmNuCombination
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README; licence on repo page.'
+  - Companion to catalogued dataset atmospheric-neutrino-mc-fernandez-martinez-soler.

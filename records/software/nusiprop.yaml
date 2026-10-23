@@ -1,0 +1,35 @@
+id: nusiprop
+type: software
+title: 'nuSIprop: astrophysical neutrino propagation with neutrino self-interactions'
+short: 'nuSIprop: astrophysical neutrino propagation with neutrino self-interactions'
+description: C++ code with Python interface computing flavour-resolved astrophysical neutrino fluxes after propagation with secret neutrino self-interactions; Details.pdf documents the algorithm.
+url_landing: https://github.com/ivan-esteban-phys/nuSIprop
+license: GPL-2.0-only
+access: open
+distributions:
+- url: https://github.com/ivan-esteban-phys/nuSIprop
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2107.13568
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2107.13568'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- nsi
+software:
+  repository: https://github.com/ivan-esteban-phys/nuSIprop
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page (description, licence).'

@@ -1,0 +1,35 @@
+id: miniboone-darknews
+type: software
+title: 'MiniBooNE-DarkNews: fast MC of the MiniBooNE detector for dark neutrino models'
+short: 'MiniBooNE-DarkNews: fast MiniBooNE detector MC for dark-neutrino models'
+description: Fast Monte Carlo of MiniBooNE detector response used to fit dark-neutrino/HNL explanations of the MiniBooNE excess with DarkNews events.
+url_landing: https://github.com/mhostert/MiniBooNE-DarkNews
+license: MIT
+access: open
+distributions:
+- url: https://github.com/mhostert/MiniBooNE-DarkNews
+  host: github
+  role: primary
+relations:
+- rel: uses
+  target: darknews
+experiments:
+- miniboone
+sources:
+- accelerator
+topics:
+- bsm-other
+software:
+  repository: https://github.com/mhostert/MiniBooNE-DarkNews
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page (description, licence).'
+  - DarkNews itself is catalogued.

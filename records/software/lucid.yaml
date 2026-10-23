@@ -1,0 +1,37 @@
+id: lucid
+type: software
+title: 'LUCiD: end-to-end differentiable optical detector simulation (water Cherenkov, WbLS, neutrino telescopes)'
+short: 'LUCiD: end-to-end differentiable optical simulation of water Cherenkov detectors'
+description: JAX-based differentiable simulation of optical photon emission, propagation, scattering and PMT response for gradient-based calibration and track reconstruction; used to produce the WAND public water-Cherenkov dataset.
+url_landing: https://github.com/CIDeR-ML/LUCiD
+license: unknown
+license_notes: stated in repo (type not parsed)
+access: open
+distributions:
+- url: https://github.com/CIDeR-ML/LUCiD
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2602.24129
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2602.24129'
+  relation: describes
+sources:
+- accelerator
+topics:
+- detector-response
+software:
+  repository: https://github.com/CIDeR-ML/LUCiD
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README.'
+  - WAND dataset itself (talk at NPML 2026, arXiv:2609.00611) - public download location not found.

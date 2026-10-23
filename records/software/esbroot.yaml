@@ -1,0 +1,40 @@
+id: esbroot
+type: software
+title: 'EsbRoot: ESSnuSB simulation, reconstruction and analysis software'
+short: 'EsbRoot: ESSnuSB simulation, reconstruction and analysis software'
+description: FairRoot-based official ESSnuSB physics simulation framework (detectors, GENIE interface, reconstruction); companion repo EsbTargetStation simulates the target station/beam for flux production.
+url_landing: https://github.com/ESSnuSB/EsbRoot
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/ESSnuSB/EsbRoot
+  host: github
+  role: primary
+- url: https://essnusb.irb.hr/doxygen/
+  host: institutional
+  role: mirror
+- url: https://github.com/ESSnuSB/EsbTargetStation
+  host: github
+  role: mirror
+references:
+- arxiv: '2303.17356'
+  relation: describes
+sources:
+- accelerator
+topics:
+- detector-response
+software:
+  repository: https://github.com/ESSnuSB/EsbRoot
+  purposes:
+  - detector-simulation
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README; ESSnuSB org repository list.'
+  - No public flux tables found; installation guide references private docdb.

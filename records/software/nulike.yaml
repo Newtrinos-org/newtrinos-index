@@ -1,0 +1,44 @@
+id: nulike
+type: software
+title: 'nulike: neutrino telescope likelihood tools (IceCube event-level DM likelihoods)'
+short: 'nulike: event-level neutrino-telescope likelihoods (IceCube DM searches)'
+description: Fortran/C library implementing full event-level likelihoods for neutrino-telescope dark-matter annihilation searches; ships IceCube 79-string likelihood data; used by GAMBIT/DarkBit.
+url_landing: https://nulike.hepforge.org/
+license: none-stated
+access: open
+distributions:
+- url: https://nulike.hepforge.org/
+  host: institutional
+  role: primary
+- url: https://arxiv.org/abs/1207.0810
+  host: arxiv
+  role: documentation
+- url: https://arxiv.org/abs/1601.00653
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1207.0810'
+  relation: describes
+- arxiv: '1601.00653'
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+- solar
+topics:
+- dark-matter
+software:
+  repository: https://nulike.hepforge.org/
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened HEPForge project page.'
+  - Neutrino telescope + DM; catalogued icecube-ic79-dark-matter is the physics result.

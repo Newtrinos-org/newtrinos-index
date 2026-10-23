@@ -1,0 +1,38 @@
+id: microboone-analysis-2021-reinterpretation
+type: software
+title: 'MicroBooNE-analysis-2021: 3+1 sterile reinterpretation of MicroBooNE first results'
+short: MicroBooNE 2021 3+1 sterile reinterpretation code (Argüelles et al.)
+description: Python/emcee code and bundled MicroBooNE (Wire-Cell inclusive, deep-learning CCQE) and 2018 MiniBooNE data-release files for a 3+1 oscillation fit of the MicroBooNE electron-neutrino results.
+url_landing: https://github.com/Harvard-Neutrino/MicroBooNE-analysis-2021
+license: LGPL-2.1-only
+license_notes: LGPL-2.1
+access: open
+distributions:
+- url: https://github.com/Harvard-Neutrino/MicroBooNE-analysis-2021
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2111.10359
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2111.10359'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- sterile
+software:
+  repository: https://github.com/Harvard-Neutrino/MicroBooNE-analysis-2021
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README; licence on repo page.'

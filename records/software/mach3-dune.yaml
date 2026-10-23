@@ -1,0 +1,38 @@
+id: mach3-dune
+type: software
+title: 'MaCh3_DUNE: DUNE implementation of the MaCh3 Bayesian oscillation fitter'
+short: 'MaCh3_DUNE: DUNE implementation of the MaCh3 Bayesian oscillation fitter'
+description: DUNE-specific samples/systematics layer for MaCh3 (MCMC oscillation fits) with CUDAProb3 options and duneanaobj interface.
+url_landing: https://github.com/DUNE/MaCh3_DUNE
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/DUNE/MaCh3_DUNE
+  host: github
+  role: primary
+- url: https://github.com/mach3-software/MaCh3
+  host: github
+  role: mirror
+relations:
+- rel: uses
+  target: mach3
+experiments:
+- dune
+sources:
+- accelerator
+topics:
+- oscillation
+software:
+  repository: https://github.com/DUNE/MaCh3_DUNE
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README; licence on repo page.'
+  - MaCh3 core is catalogued; this is the experiment implementation.

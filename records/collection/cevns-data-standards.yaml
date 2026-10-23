@@ -4,8 +4,8 @@ title: CEvNS data standards (CEvNS-data)
 short: 'CEvNS data standards: community proposal for CEvNS data releases'
 description: Community proposal of standards for CEvNS data sharing and releases (formats/content for experiment data products, from the Magnificent CEvNS community).
 url_landing: https://github.com/CEvNS-data/data-standards
-license: unknown
-license_notes: LGPL-2.1
+license: LGPL-2.1-only
+
 access: open
 distributions:
 - url: https://github.com/CEvNS-data/data-standards

@@ -1,0 +1,42 @@
+id: nufit-archive-earlier-releases
+type: result
+title: NuFIT archive of earlier releases (v1.0-v5.3 result pages, chi2 tables, release notes)
+short: 'NuFIT archive of earlier releases v1.0–5.3: results pages and Δχ² tables'
+description: nu-fit.org keeps one page per past release (e.g. v5.3, node/278, data as of March 2024) with best-fit tables, 1D/2D/3D Delta-chi2 data files and release notes listing updated data sets.
+url_landing: http://www.nu-fit.org/?q=node/278
+license: none-stated
+access: open
+distributions:
+- url: http://www.nu-fit.org/?q=node/278
+  host: institutional
+  role: primary
+- url: http://www.nu-fit.org/sites/default/files/v53.release-notes.pdf
+  host: institutional
+  role: mirror
+references:
+- arxiv: '2007.14792'
+  relation: describes
+- arxiv: '1811.05487'
+  relation: describes
+relations:
+- rel: superseded_by
+  target: nufit-6
+sources:
+- solar
+- atmospheric
+- reactor
+- accelerator
+topics:
+- oscillation
+- global-fit
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: NOT opened: nu-fit.org refused connections from this environment (ports 80/443); URLs and content from search-engine results only.'
+  - Catalogued 'nufit-6' points to the same site; decide whether older versions merit separate records. Needs manual check.

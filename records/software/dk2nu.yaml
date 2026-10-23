@@ -1,0 +1,29 @@
+id: dk2nu
+type: software
+title: 'dk2nu: standard neutrino-beam decay ntuple format and tools'
+short: 'dk2nu: standard neutrino-beam decay ntuple format and tools'
+description: ROOT-based format and library for hadron-decay records from beam simulations (g4numi, g4lbnf) used for flux calculation, reweighting (PPFX) and GENIE flux drivers.
+url_landing: https://github.com/NuSoftHEP/dk2nu
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/NuSoftHEP/dk2nu
+  host: github
+  role: primary
+sources:
+- accelerator
+topics:
+- flux
+software:
+  repository: https://github.com/NuSoftHEP/dk2nu
+  purposes:
+  - tooling
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page reachable.'

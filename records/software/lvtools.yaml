@@ -1,0 +1,35 @@
+id: lvtools
+type: software
+title: 'LVTools: nuSQuIDS Lorentz-violation implementation'
+short: 'LVTools: nuSQuIDS implementation of Lorentz-violating neutrino propagation (IceCube LV search)'
+description: nuSQuIDS extension implementing Lorentz-violating Hamiltonians for atmospheric neutrino propagation.
+url_landing: https://github.com/arguelles/LVTools
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/arguelles/LVTools
+  host: github
+  role: primary
+relations:
+- rel: uses
+  target: nusquids
+experiments:
+- icecube
+sources:
+- atmospheric
+topics:
+- lorentz-violation
+software:
+  repository: https://github.com/arguelles/LVTools
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page (description).'
+  - nuSQuIDS extension; sparse documentation.

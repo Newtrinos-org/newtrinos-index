@@ -1,0 +1,39 @@
+id: km3flux
+type: software
+title: 'km3flux: collection of neutrino flux models and weighting utilities (KM3NeT)'
+short: 'km3flux: neutrino flux models and weighting utilities (KM3NeT)'
+description: Python package bundling atmospheric/astrophysical neutrino flux model tables (e.g. Honda) with utilities for computing event weights.
+url_landing: https://git.km3net.de/km3py/km3flux
+license: none-stated
+access: open
+distributions:
+- url: https://git.km3net.de/km3py/km3flux
+  host: institutional
+  role: primary
+- url: https://pypi.org/project/km3flux/
+  host: package-registry
+  role: mirror
+- url: https://km3py.pages.km3net.de/km3flux
+  host: institutional
+  role: mirror
+experiments:
+- km3net
+sources:
+- atmospheric
+- astrophysical
+topics:
+- flux
+software:
+  repository: https://git.km3net.de/km3py/km3flux
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: PyPI JSON description; GitLab page reachable.'
+  - Which flux tables are bundled not checked in detail.

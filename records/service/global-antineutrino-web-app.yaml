@@ -1,0 +1,39 @@
+id: global-antineutrino-web-app
+type: service
+title: Global antineutrino modeling web application (reactors.geoneutrinos.org)
+short: 'Global antineutrino modelling web app: reactor and geoneutrino spectra at any location'
+description: Interactive web app computing reactor (all registered power reactors), crust/mantle geoneutrino and other antineutrino signals and spectra at any location for IBD and elastic scattering, with downloadable spectra/plots and significance calculator.
+url_landing: https://reactors.geoneutrinos.org/
+license: none-stated
+access: open
+distributions:
+- url: https://reactors.geoneutrinos.org/
+  host: institutional
+  role: primary
+- url: https://geoneutrinos.org/reactors/
+  host: institutional
+  role: mirror
+- url: https://github.com/geoneutrinos/reactors
+  host: github
+  role: mirror
+- url: https://arxiv.org/abs/1510.05633
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '1510.05633'
+  relation: describes
+sources:
+- reactor
+- geo
+topics:
+- flux
+service:
+  query_interface: https://reactors.geoneutrinos.org/
+  api_kind: none
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched live site (description meta) and GitHub repo geoneutrinos/reactors.'
+  - Different from catalogued AGM2015.

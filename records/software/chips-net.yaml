@@ -1,0 +1,36 @@
+id: chips-net
+type: software
+title: 'chips-net: CNN reconstruction for the CHIPS water Cherenkov R&D project'
+short: 'chips-net: CNN reconstruction for the CHIPS water Cherenkov R&D detectors'
+description: TensorFlow multi-GPU CNN code for cosmic rejection, beam-event classification and energy estimation in CHIPS water Cherenkov detectors.
+url_landing: https://github.com/chipsneutrino/chips-net
+license: MIT
+access: open
+distributions:
+- url: https://github.com/chipsneutrino/chips-net
+  host: github
+  role: primary
+- url: https://arxiv.org/abs/2206.14904
+  host: arxiv
+  role: documentation
+references:
+- arxiv: '2206.14904'
+  relation: describes
+sources:
+- accelerator
+topics:
+- detector-response
+software:
+  repository: https://github.com/chipsneutrino/chips-net
+  purposes:
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page (description, licence).'
+  - No public training data found.

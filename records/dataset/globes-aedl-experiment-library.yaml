@@ -1,0 +1,42 @@
+id: globes-aedl-experiment-library
+type: dataset
+title: GLoBES pre-defined AEDL experiment library
+short: GLoBES pre-defined AEDL experiment definitions (beams, reactors, superbeams, neutrino factories)
+description: Official collection of GLoBES .glb experiment definitions (superbeams T2K/T2HK/NOvA/SPL, reactors Reactor-I/II/Double Chooz/RENO, beta-beams, neutrino factories) with per-file pages listing data files and references.
+url_landing: https://www.mpi-hd.mpg.de/personalhomes/globes/experiments.html
+license: none-stated
+license_notes: "no licence; the AEDL files ask users to cite the references in their headers"
+access: open
+distributions:
+- url: https://www.mpi-hd.mpg.de/personalhomes/globes/experiments.html
+  host: institutional
+  role: primary
+- url: https://www.mpi-hd.mpg.de/personalhomes/globes/glb/T2HK.html
+  host: institutional
+  role: mirror
+- url: https://www.mpi-hd.mpg.de/personalhomes/globes/glb/Reactor2.html
+  host: institutional
+  role: mirror
+references:
+- arxiv: hep-ph/0407333
+  relation: describes
+- arxiv: hep-ph/0701187
+  relation: describes
+relations:
+- rel: uses
+  target: globes
+sources:
+- accelerator
+- reactor
+topics:
+- oscillation
+data:
+  levels:
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened GLoBES experiments page and individual glb pages via search.'
+  - Part of the GLoBES site (catalogued as 'globes'); include only if sub-resources are wanted. Files are dated (T2HK at 4 MW).

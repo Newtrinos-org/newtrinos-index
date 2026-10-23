@@ -1,0 +1,33 @@
+id: nunsi
+type: software
+title: 'NuNSI: numerical tools for neutrino non-standard interactions'
+short: 'NuNSI: numerical tools for neutrino non-standard interactions'
+description: Python package of numerical tools for NSI oscillation phenomenology (P. Chimenti); same author has a JUNO Bayesian oscillation analysis repo (Apache-2.0).
+url_landing: https://github.com/pietro-chimenti/NuNSI
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/pietro-chimenti/NuNSI
+  host: github
+  role: primary
+- url: https://github.com/pietro-chimenti/JunoBayesianAnalysis
+  host: github
+  role: mirror
+topics:
+- nsi
+sources:
+- none
+software:
+  repository: https://github.com/pietro-chimenti/NuNSI
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: GitHub repo page and README (one-line).'
+  - Small research code, minimal docs.

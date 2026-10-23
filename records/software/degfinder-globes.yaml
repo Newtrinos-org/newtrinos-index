@@ -1,0 +1,39 @@
+id: degfinder-globes
+type: software
+title: Event-rate based degeneracy finder for GLoBES (degfinder)
+short: 'degfinder: event-rate based degeneracy finder for GLoBES'
+description: J. Kopp's GLoBES add-on that performs a fast coarse scan of parameter space then refines local minima with the GLoBES minimiser (v1.0, 2010), source and PDF docs.
+url_landing: https://www.mpi-hd.mpg.de/personalhomes/globes/tools/degfinder-1.0.tar.gz
+license: none-stated
+access: open
+distributions:
+- url: https://www.mpi-hd.mpg.de/personalhomes/globes/tools/degfinder-1.0.tar.gz
+  host: institutional
+  role: primary
+- url: https://www.mpi-hd.mpg.de/personalhomes/globes/tools.html
+  host: institutional
+  role: mirror
+- url: https://www.mpi-hd.mpg.de/personalhomes/globes/tools/degfinder-1.0.pdf
+  host: institutional
+  role: mirror
+relations:
+- rel: uses
+  target: globes
+sources:
+- accelerator
+topics:
+- oscillation
+software:
+  repository: https://www.mpi-hd.mpg.de/personalhomes/globes/tools/degfinder-1.0.tar.gz
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Opened GLoBES tools page.'
+  - Small tool; listed separately from GLoBES core.

@@ -1,0 +1,32 @@
+id: duneanafluxtools
+type: software
+title: 'duneanafluxtools: DUNE flux reweighting tools for CAFs'
+short: 'duneanafluxtools: DUNE flux reweighting tools for CAFs'
+description: ROOT-based app/library adding flux (systematic) weights to DUNE CAF analysis files, with bundled flux input file.
+url_landing: https://github.com/DUNE/duneanafluxtools
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/DUNE/duneanafluxtools
+  host: github
+  role: primary
+experiments:
+- dune
+sources:
+- accelerator
+topics:
+- flux
+software:
+  repository: https://github.com/DUNE/duneanafluxtools
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README.'
+  - Whether bundled flux histograms are public-usable not checked.

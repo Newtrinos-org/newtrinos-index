@@ -1,0 +1,32 @@
+id: heavy-neutrino-limits
+type: collection
+title: 'Heavy-Neutrino-Limits (HNLimits): database of heavy neutral lepton constraints'
+short: 'Heavy-Neutrino-Limits: database of HNL mixing constraints with plotting tools'
+description: Curated, continuously updated collection of HNL mixing limits (electron/muon/tau dominance, 1 MeV-100 GeV) and nuSMEFT Wilson-coefficient limits, with digitised curves, Google Sheets index and Python package to plot/produce LaTeX.
+url_landing: https://github.com/mhostert/Heavy-Neutrino-Limits
+license: MIT
+access: open
+distributions:
+- url: https://github.com/mhostert/Heavy-Neutrino-Limits
+  host: github
+  role: primary
+- url: https://docs.google.com/spreadsheets/d/1TIpmkgOa63-8Sy75qh0YutI5XdRtiClU3aquUdmjqpc/edit?usp=sharing
+  host: institutional
+  role: mirror
+- url: https://pypi.org/project/HNLimits/
+  host: package-registry
+  role: mirror
+references:
+- arxiv: '2304.06772'
+  relation: describes
+sources:
+- accelerator
+topics:
+- bsm-other
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (fits_pheno_lists, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Read GitHub README; licence from repo page.'
+  - Maintained by Hernandez-Garcia, Hostert et al.
