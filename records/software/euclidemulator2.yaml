@@ -1,0 +1,32 @@
+id: euclidemulator2
+type: software
+title: 'EuclidEmulator2: matter power spectrum emulator with massive neutrinos'
+short: 'EuclidEmulator2: non-linear matter power spectrum emulator with massive neutrinos'
+description: Emulator of the non-linear matter power spectrum including massive neutrinos and dynamical dark energy.
+url_landing: https://github.com/miknab/EuclidEmulator2
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/miknab/EuclidEmulator2
+  host: github
+  role: primary
+references:
+- arxiv: '2010.11288'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+software:
+  repository: https://github.com/miknab/EuclidEmulator2
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

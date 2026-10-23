@@ -1,0 +1,36 @@
+id: microboone-numu-cc-pi0-xsec-2024
+type: dataset
+title: 'MicroBooNE νμ CC π⁰ differential cross sections: supplemental tables'
+short: 'MicroBooNE νμ CC π⁰ differential cross sections: tables, covariances and smearing matrices'
+description: 'Supplemental PDF (17 pp.): background-subtracted event counts and unfolded cross sections in π⁰ momentum and other variables (tables); response, covariance and Wiener-SVD additional-smearing matrices shown as figures; efficiencies.'
+url_landing: https://arxiv.org/abs/2404.09949
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2404.09949
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2404.09949'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- res
+data:
+  levels:
+  - tables
+  - systematics
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - supplement PDF read (table captions) on 2026-10-23

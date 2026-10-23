@@ -1,0 +1,32 @@
+id: exo-200-mev-dark-matter-figure6
+type: result
+title: 'EXO-200 search for MeV electron recoils from dark matter: Figure 6 data'
+short: 'EXO-200 MeV electron-recoil dark-matter search: data behind Figure 6'
+description: 'arXiv ancillary figure6_data.txt: data behind the limit figure.'
+url_landing: https://arxiv.org/abs/2207.00897
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2207.00897
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2207.00897'
+  relation: describes
+experiments:
+- exo-200
+sources:
+- none
+topics:
+- dark-matter
+data:
+  levels:
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - description inferred from the ancillary file names and the paper; files not opened

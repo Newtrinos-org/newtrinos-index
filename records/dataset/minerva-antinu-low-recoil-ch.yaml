@@ -1,0 +1,37 @@
+id: minerva-antinu-low-recoil-ch
+type: dataset
+title: 'MINERvA antineutrino CC low-momentum-transfer cross sections on hydrocarbon: supplemental data'
+short: MINERvA ν̄μ CC low-momentum-transfer cross sections on hydrocarbon (supplemental table)
+description: arXiv ancillary Supplemental.txt with the double-differential cross section in (q3, available energy) and its covariance for antineutrino CC reactions on CH.
+url_landing: https://arxiv.org/abs/1803.09377
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1803.09377
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '1803.09377'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- cc
+- mec
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - description inferred from the ancillary file names and the paper; files not opened

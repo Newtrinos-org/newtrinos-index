@@ -1,0 +1,35 @@
+id: clsim
+type: software
+title: 'clsim: OpenCL photon propagation for IceCube'
+short: 'clsim: OpenCL photon propagation for IceCube (standalone repository)'
+description: OpenCL ray-tracing photon propagation simulation used in IceCube/DeepCore (standalone repository; later merged into IceTray).
+url_landing: https://github.com/claudiok/clsim
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/claudiok/clsim
+  host: github
+  role: primary
+references:
+- arxiv: '1707.07081'
+  relation: describes
+experiments:
+- icecube
+sources:
+- atmospheric
+- astrophysical
+topics:
+- detector-response
+software:
+  repository: https://github.com/claudiok/clsim
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

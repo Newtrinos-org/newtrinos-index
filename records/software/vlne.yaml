@@ -1,0 +1,35 @@
+id: vlne
+type: software
+title: 'vlne: framework for neutrino energy estimators (NOvA / DUNE)'
+short: 'vlne: framework to train ML neutrino energy estimators'
+description: Framework to develop and train ML energy estimators for CC neutrino events.
+url_landing: https://github.com/usert5432/vlne
+license: MIT
+access: open
+distributions:
+- url: https://github.com/usert5432/vlne
+  host: github
+  role: primary
+references:
+- arxiv: '2406.10123'
+  relation: describes
+experiments:
+- nova
+- dune
+sources:
+- accelerator
+topics:
+- detector-response
+software:
+  repository: https://github.com/usert5432/vlne
+  purposes:
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

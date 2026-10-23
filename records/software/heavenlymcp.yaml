@@ -1,0 +1,32 @@
+id: heavenlymcp
+type: software
+title: 'HeavenlyMCP: millicharged particles from cosmic rays in neutrino detectors'
+short: 'HeavenlyMCP: atmospheric millicharged particles and their signatures in neutrino detectors'
+description: Simulation of atmospheric millicharged-particle fluxes and their single/multiple-scattering signatures in large neutrino detectors.
+url_landing: https://github.com/Harvard-Neutrino/HeavenlyMCP
+license: LGPL-2.1-only
+access: open
+distributions:
+- url: https://github.com/Harvard-Neutrino/HeavenlyMCP
+  host: github
+  role: primary
+references:
+- arxiv: '2104.13924'
+  relation: describes
+sources:
+- atmospheric
+topics:
+- bsm-other
+software:
+  repository: https://github.com/Harvard-Neutrino/HeavenlyMCP
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

@@ -75,7 +75,7 @@ const URL_RE = r"(https?://[^\s\"'<>\)\]\}\\,;]+|www\.[a-z0-9.-]+\.[a-z]{2,}[^\s
 # links that are citations / infrastructure, not resources
 const BORING = r"(arxiv\.org/(abs|pdf|licenses|help)|doi\.org/|dx\.doi|inspirehep|inspire-hep|creativecommons|w3\.org|mathjax|ar5iv|arxiv\.org/html|journals\.aps\.org/[a-z]+/abstract|link\.springer|sciencedirect|iopscience|ams\.org|crossref|orcid|scholar\.google|semanticscholar|adsabs|harvard\.edu/abs|cern\.ch/record|indico|youtube|twitter|facebook|wikipedia|latexml|cornell\.edu|simonsfoundation|slac\.stanford\.edu/spires|cds\.cern\.ch/record|pdg\.lbl\.gov/20\d\d/reviews)"i
 # preprint servers, document libraries, news and press: never resources
-const NOISE = r"(lss\.fnal\.gov|weblib\.cern|slac\.stanford\.edu|cdsweb|iop\.org/EJ|pos\.sissa|interactions\.org|fnal\.gov/pub/today|news\.|/news/|physics\.aps\.org|symmetrymagazine|phys\.org|physicsworld|scientificamerican|nature\.com/articles/d4|livescience|quantamagazine|sciencenews|mathnet|edpsciences|link\.aip|library\.desy|ictp\.|jlab\.org/(Ul|ul)/publications|misportal|th-www\.if\.uj\.edu\.pl/acta|science\.energy\.gov|press|atlas\.web\.cern|cms-results|lhcbproject|cern\.ch/lhcbproject|rivet\.hepforge|proceedings|/econf/|preprint|/papers?/[^/]*\.(pdf|ps)|\.ps(\.gz)?$)"i
+const NOISE = r"(lss\.fnal\.gov|weblib\.cern|slac\.stanford\.edu|cdsweb|iop\.org/EJ|pos\.sissa|interactions\.org|fnal\.gov/pub/today|news\.|/news/|physics\.aps\.org|symmetrymagazine|phys\.org|physicsworld|scientificamerican|nature\.com/articles/d4|livescience|quantamagazine|sciencenews|mathnet|edpsciences|link\.aip|library\.desy|ictp\.|jlab\.org/(Ul|ul)/publications|misportal|th-www\.if\.uj\.edu\.pl/acta|science\.energy\.gov|press|atlas\.web\.cern|cms-results|lhcbproject|cern\.ch/lhcbproject|rivet\.hepforge|ncbi\.nlm\.nih|copyright\.com|perfdrive|proceedings|/econf/|preprint|/papers?/[^/]*\.(pdf|ps)|\.ps(\.gz)?$)"i
 # code / data hosts, or paths that look like data
 const DATAHOST = r"(github\.com|gitlab|zenodo|hepforge|figshare|dataverse|sourceforge|bitbucket|osf\.io|huggingface|kaggle|data\.mendeley|codeocean|software\.|pypi\.org)"i
 const DATAPATH = r"(data|release|download|files|tables?|code|software|results/|public|supplement|anc|\.(txt|dat|csv|zip|tar|gz|root|h5|hdf5|json|npz)$)"i
@@ -131,9 +131,10 @@ end
 fulltext_links(id) = (f = cpath("ar5iv", id); isfile(f) ? unique(clean.([m[1] for m in eachmatch(r"href=\"(https?://[^\"#]+)\"", read(f, String))])) : String[])
 
 # ------------------------------------------------------------------------------------------------ publisher pages
-# Springer (JHEP, EPJC, …) and IOP / AAS (JCAP, JINST, ApJ) article pages: supplementary files and links in the text
-# (e.g. "Data availability" statements). APS and ScienceDirect refuse automated requests from this host.
-const PUBLISHER_DOI = r"^10\.(1007|1140|1088|3847|1016)/"
+# Springer (JHEP, EPJC, …) article pages: supplementary files and links in the text (e.g. "Data availability"
+# statements). IOP / AAS answer with a captcha, ScienceDirect with a JavaScript redirect, and APS refuses automated
+# requests from this host, so those are not fetched (APS supplements are checked by hand).
+const PUBLISHER_DOI = r"^10\.(1007|1140)/"
 function stage_publisher(; limit = typemax(Int))
     ps = filter(p -> any(d -> occursin(PUBLISHER_DOI, d), get(p, "dois", [])), load_papers()); n = 0
     for p in ps
@@ -147,8 +148,8 @@ function stage_publisher(; limit = typemax(Int))
 end
 function publisher_links(id)
     f = cpath("publisher", id); isfile(f) || return String[]
-    h = read(f, String); startswith(h, "HTTP ") && return String[]
-    esm = [m[1] for m in eachmatch(r"\"(https?://static-content\.springer\.com/esm/[^\"]+)\"", h)]
+    h = read(f, String); (startswith(h, "HTTP ") || occursin(r"perfdrive|<title>Redirecting", h)) && return String[]
+    esm = [m[1] for m in eachmatch(r"\"(https?://(?:static-content\.springer\.com|media\.springernature\.com/[^\"]*?)/esm/[^\"]+)\"", h)]
     iop = [m[1] for m in eachmatch(r"\"(https?://(?:content\.cld\.iop\.org|iopscience\.iop\.org)/[^\"]*(?:suppdata|/media/)[^\"]*)\"", h)]
     txt = [m[1] for m in eachmatch(r"href=\"(https?://[^\"#]+)\"", h)]
     unique(vcat(esm, iop, clean.(txt)))
@@ -178,7 +179,7 @@ function stage_report()
         end
         for u in fulltext_links(id); interesting(u) && !haskey(links, u) && (links[u] = "fulltext"); end
         for u in publisher_links(id)
-            occursin(r"static-content\.springer\.com/esm|suppdata|iop\.org/.*/media/", u) ? (links[u] = "publisher-supplement") :
+            occursin(r"springer[a-z.]*\.com/.*esm/|suppdata|iop\.org/.*/media/", u) ? (links[u] = "publisher-supplement") :
                 (interesting(u) && !occursin(r"springer|nature\.com|iop\.org|elsevier|sciencedirect|aas\.org", u) && !haskey(links, u) && (links[u] = "publisher-page"))
         end
         anc = anc_files(id)

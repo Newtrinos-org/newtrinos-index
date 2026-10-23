@@ -1,0 +1,36 @@
+id: microboone-nue-cc0pi-xsec-2022
+type: dataset
+title: 'MicroBooNE νe CC 0π differential cross sections: supplemental tables'
+short: 'MicroBooNE νe CC0π differential cross sections: tables with covariance and response matrices'
+description: 'Supplemental PDF (7 pp.): tables of the unfolded cross sections in electron energy and angle, their covariance matrices, total-prediction covariances, response matrices and generator compatibility tests.'
+url_landing: https://arxiv.org/abs/2208.02348
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2208.02348
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2208.02348'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - tables
+  - systematics
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - supplement PDF read (table captions) on 2026-10-23

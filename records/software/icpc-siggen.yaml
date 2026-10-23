@@ -1,0 +1,35 @@
+id: icpc-siggen
+type: software
+title: 'icpc_siggen: signal generation for inverted-coaxial point-contact Ge detectors'
+short: 'icpc_siggen: field and signal simulation for ICPC germanium detectors'
+description: Field and signal calculation for ICPC germanium detectors (LEGEND, MAJORANA).
+url_landing: https://github.com/radforddc/icpc_siggen
+license: BSD-2-Clause
+access: open
+distributions:
+- url: https://github.com/radforddc/icpc_siggen
+  host: github
+  role: primary
+references:
+- arxiv: '2107.11462'
+  relation: describes
+experiments:
+- legend
+sources:
+- nuclear-decay
+topics:
+- double-beta
+- detector-response
+software:
+  repository: https://github.com/radforddc/icpc_siggen
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

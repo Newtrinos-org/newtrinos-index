@@ -1,0 +1,36 @@
+id: microboone-cc-inclusive-energy-dependent
+type: dataset
+title: 'MicroBooNE energy-dependent inclusive νμ CC cross section on argon: data release'
+short: MicroBooNE σ(Eν) for inclusive νμ CC on argon, with covariance and smearing matrix
+description: 'arXiv ancillary files: unfolded σ(Eν) on argon, covariance matrix, additional smearing matrix (Wiener-SVD) and supplemental PDF.'
+url_landing: https://arxiv.org/abs/2110.14023
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2110.14023
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2110.14023'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - binned
+  - systematics
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - description inferred from the ancillary file names and the paper; files not opened

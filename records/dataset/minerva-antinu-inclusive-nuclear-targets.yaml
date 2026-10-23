@@ -1,0 +1,36 @@
+id: minerva-antinu-inclusive-nuclear-targets
+type: dataset
+title: 'MINERvA inclusive CC ν̄μ scattering on C, CH, Fe and Pb at ⟨E⟩≈6 GeV: data release'
+short: MINERvA ν̄μ inclusive CC cross sections on C, CH, Fe and Pb vs muon pT, with covariances and fluxes
+description: 'About 100 arXiv ancillary files: per-target cross sections in muon pT, covariance, correlation and SVD-decomposed covariance matrices, fluxes per target, MnvH ROOT and plain ROOT versions.'
+url_landing: https://arxiv.org/abs/2604.07091
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2604.07091
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2604.07091'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- cc
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - description inferred from the ancillary file names and the paper; files not opened

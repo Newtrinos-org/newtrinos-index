@@ -1,0 +1,33 @@
+id: axioncamb
+type: software
+title: 'axionCAMB: CAMB with ultralight axions and massive neutrinos'
+short: 'axionCAMB: CAMB with ultralight axions and massive neutrinos'
+description: CAMB modification for ultralight axion dark matter together with massive neutrinos.
+url_landing: https://github.com/dgrin1/axionCAMB
+license: MIT
+access: open
+distributions:
+- url: https://github.com/dgrin1/axionCAMB
+  host: github
+  role: primary
+references:
+- arxiv: '1607.08208'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+- bsm-other
+software:
+  repository: https://github.com/dgrin1/axionCAMB
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

@@ -1,0 +1,34 @@
+id: minerva-coherent-kplus-events
+type: dataset
+title: 'MINERvA coherent K⁺ production: the six candidate events'
+short: 'MINERvA: kinematics of the six coherent K⁺ production candidates'
+description: 'arXiv ancillary coh_six_events.csv: kinematics of the six coherent K⁺ candidate events.'
+url_landing: https://arxiv.org/abs/1606.08890
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1606.08890
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '1606.08890'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - description inferred from the ancillary file names and the paper; files not opened

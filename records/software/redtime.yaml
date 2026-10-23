@@ -1,0 +1,32 @@
+id: redtime
+type: software
+title: 'redTime: time-RG perturbation theory with massive neutrinos'
+short: 'redTime: time-RG redshift-space power spectra with massive neutrinos'
+description: Redshift-space power spectra with the Time-Renormalization Group, including massive neutrinos.
+url_landing: https://github.com/upadhye/redTime
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/upadhye/redTime
+  host: github
+  role: primary
+references:
+- arxiv: '1707.09354'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+software:
+  repository: https://github.com/upadhye/redTime
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

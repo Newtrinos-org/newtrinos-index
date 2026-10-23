@@ -1,0 +1,32 @@
+id: hmcode
+type: software
+title: 'HMcode: halo-model matter power spectra with massive neutrinos'
+short: 'HMcode: halo-model non-linear power spectra with massive neutrinos'
+description: Augmented halo model for non-linear power spectra, including massive neutrinos and baryonic feedback.
+url_landing: https://github.com/alexander-mead/HMcode
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/alexander-mead/HMcode
+  host: github
+  role: primary
+references:
+- arxiv: '1602.02154'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+software:
+  repository: https://github.com/alexander-mead/HMcode
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

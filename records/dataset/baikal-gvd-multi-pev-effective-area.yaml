@@ -1,0 +1,32 @@
+id: baikal-gvd-multi-pev-effective-area
+type: dataset
+title: 'Baikal-GVD multi-PeV diffuse flux search: effective area'
+short: Baikal-GVD effective area for the multi-PeV diffuse-flux constraint
+description: 'arXiv ancillary effarea.txt: Baikal-GVD effective area used for the multi-PeV diffuse astrophysical neutrino constraint.'
+url_landing: https://arxiv.org/abs/2507.05769
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2507.05769
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2507.05769'
+  relation: describes
+experiments:
+- baikal-gvd
+sources:
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - description inferred from the ancillary file names and the paper; files not opened

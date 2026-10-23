@@ -1,0 +1,36 @@
+id: minerva-inclusive-numu-ptpl-6gev
+type: dataset
+title: 'MINERvA inclusive CC νμ double-differential cross section in pT, p∥ at ⟨Eν⟩≈6 GeV: data release'
+short: MINERvA inclusive νμ CC cross section in (pT, p∥) at 6 GeV on CH, with covariances and GENIE predictions
+description: 'arXiv ancillary files: 2D cross section in muon transverse/longitudinal momentum, total and per-source covariances (stat, flux, energy scale), bin mapping, GENIE 2.12.6 model predictions with and without the low-recoil enhancement; README.'
+url_landing: https://arxiv.org/abs/2106.16210
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2106.16210
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2106.16210'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - binned
+  - systematics
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - description inferred from the ancillary file names and the paper; files not opened

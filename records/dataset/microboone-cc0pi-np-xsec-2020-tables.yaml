@@ -1,0 +1,36 @@
+id: microboone-cc0pi-np-xsec-2020-tables
+type: dataset
+title: 'MicroBooNE νμ CC0π Np differential cross sections (2020): supplemental tables'
+short: 'MicroBooNE νμ CC0πNp cross sections (2020): tables of values, covariances and smearing'
+description: 'Supplemental PDF (12 pp.): tables of cross-section values, covariances and smearing matrices for cos θμ, cos θp, pp and the other measured variables.'
+url_landing: https://arxiv.org/abs/2010.02390
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2010.02390
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2010.02390'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- ccqe
+data:
+  levels:
+  - tables
+  - systematics
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - supplement PDF read (table captions) on 2026-10-23

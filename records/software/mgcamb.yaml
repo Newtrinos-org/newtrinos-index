@@ -1,0 +1,33 @@
+id: mgcamb
+type: software
+title: 'MGCAMB: modified-gravity CAMB with massive neutrinos'
+short: 'MGCAMB: modified-gravity CAMB including massive neutrinos'
+description: CAMB patch for modified growth with massive neutrinos and dynamical dark energy.
+url_landing: https://github.com/sfu-cosmo/MGCAMB
+license: unknown
+access: open
+distributions:
+- url: https://github.com/sfu-cosmo/MGCAMB
+  host: github
+  role: primary
+references:
+- arxiv: '1901.05956'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+software:
+  repository: https://github.com/sfu-cosmo/MGCAMB
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - licence NOASSERTION on GitHub (CAMB licence)

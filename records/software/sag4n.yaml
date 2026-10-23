@@ -1,0 +1,32 @@
+id: sag4n
+type: software
+title: 'SaG4n: (α,n) neutron yields and spectra with Geant4'
+short: 'SaG4n: Geant4 (α,n) neutron yields and spectra for detector backgrounds'
+description: Geant4 application computing (α,xn) neutron yields and spectra; used for ¹³C(α,n)¹⁶O backgrounds in liquid-scintillator detectors.
+url_landing: https://github.com/UIN-CIEMAT/SaG4n
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/UIN-CIEMAT/SaG4n
+  host: github
+  role: primary
+references:
+- arxiv: '2503.00968'
+  relation: describes
+sources:
+- none
+topics:
+- detector-response
+software:
+  repository: https://github.com/UIN-CIEMAT/SaG4n
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

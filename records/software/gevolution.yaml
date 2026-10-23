@@ -1,0 +1,32 @@
+id: gevolution
+type: software
+title: 'gevolution: relativistic N-body code with massive neutrinos'
+short: 'gevolution: relativistic N-body code with massive neutrino particles (archived)'
+description: Relativistic N-body code (weak-field GR); version 1.1 adds massive neutrinos as particles. Repository archived.
+url_landing: https://github.com/gevolution-code/gevolution-1.1
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/gevolution-code/gevolution-1.1
+  host: github
+  role: primary
+references:
+- arxiv: '1707.06938'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+software:
+  repository: https://github.com/gevolution-code/gevolution-1.1
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

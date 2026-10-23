@@ -1,0 +1,34 @@
+id: larcv
+type: software
+title: 'LArCV: liquid-argon computer vision data format and tools'
+short: 'LArCV: image data format and tools for deep learning on LArTPC events'
+description: Image-format data handling for deep learning on LArTPC events (MicroBooNE CNN studies).
+url_landing: https://github.com/LArbys/LArCV
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/LArbys/LArCV
+  host: github
+  role: primary
+references:
+- arxiv: '1611.05531'
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- detector-response
+software:
+  repository: https://github.com/LArbys/LArCV
+  purposes:
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

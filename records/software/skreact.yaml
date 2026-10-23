@@ -1,0 +1,35 @@
+id: skreact
+type: software
+title: 'SKReact: reactor antineutrino simulator for Super-Kamiokande'
+short: 'SKReact: reactor antineutrino flux, oscillation and interaction simulator for Super-K'
+description: Python reactor-neutrino simulator (production from reactor power data, oscillation, interaction) for SK.
+url_landing: https://github.com/Goldie643/SKReact
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/Goldie643/SKReact
+  host: github
+  role: primary
+references:
+- arxiv: '2109.11174'
+  relation: describes
+experiments:
+- super-k
+sources:
+- reactor
+topics:
+- flux
+- oscillation
+software:
+  repository: https://github.com/Goldie643/SKReact
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'

@@ -1,0 +1,36 @@
+id: minerva-cc0pi-mu-p-correlations
+type: dataset
+title: 'MINERvA final-state correlations in CC0π μ–p production on CH: data release'
+short: MINERvA CC0π μ–p final-state correlation cross sections on CH (ROOT + tables)
+description: 'arXiv ancillary files: ROOT file with cross sections in transverse-kinematic-imbalance and related variables plus covariances, supplemental tables (PDF, txt).'
+url_landing: https://arxiv.org/abs/1805.05486
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1805.05486
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '1805.05486'
+  relation: describes
+experiments:
+- minerva
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+channels:
+- ccqe
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: paper scan (arXiv ancillary files and full text, 2026-10-23)
+  quality_notes:
+  - 'found by the paper scan (tools/paper_scan.jl): link from paper scan (arXiv ancillary / full text), 2026-10-23'
+  - description inferred from the ancillary file names and the paper; files not opened
