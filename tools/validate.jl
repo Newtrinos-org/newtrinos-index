@@ -86,6 +86,11 @@ function check_records(records, schema, only, r)
             t = x["target"]
             startswith(t, "doi:") || startswith(t, "http") || haskey(ids, t) || err!(r, rel, "relation $(x["rel"]) → unknown record \"$t\"")
         end
+        for key in ("uses", "used_by"), x in get(rec, key, [])
+            t = x["target"]
+            haskey(ids, t) && (err!(r, rel, "$key → $t is a catalogue record: use relations ($(key == "uses" ? "uses: $t here" : "uses: $(rec["id"]) on $t"))"); continue)
+            occursin(r"^(doi:10\.|arXiv:|https?://)"i, t) || err!(r, rel, "$key → \"$t\" must be doi:, arXiv: or a URL")
+        end
         if isdir(VERIFICATIONS)
             for v in get(get(rec, "newtrinos", Dict()), "verifications", [])
                 isdir(joinpath(VERIFICATIONS, v)) || warn!(r, rel, "verification entry $v not found in $(VERIFICATIONS)")

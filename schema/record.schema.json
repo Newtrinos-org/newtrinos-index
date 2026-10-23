@@ -223,6 +223,28 @@
     "url": {
       "pattern": "^https?://",
       "type": "string"
+    },
+    "usage": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": ["paper", "software", "dataset", "model", "analysis", "global-fit", "experiment", "other"]
+        },
+        "label": {
+          "description": "display name, e.g. 'NuFIT 6.0' or 'Smith et al. 2025'",
+          "type": "string"
+        },
+        "notes": {
+          "description": "how it is used",
+          "type": "string"
+        },
+        "target": {
+          "description": "doi:10.xxx/..., arXiv:NNNN.NNNNN, or a URL (catalogue records: use relations)",
+          "type": "string"
+        }
+      },
+      "required": ["kind", "target"],
+      "type": "object"
     }
   },
   "properties": {
@@ -732,6 +754,20 @@
     "url_landing": {
       "$ref": "#/definitions/url",
       "description": "main human-facing page"
+    },
+    "used_by": {
+      "description": "Known users outside the catalogue: papers, analyses, codes, global fits. Catalogue records that use this one are listed via their own `uses` relation, Newtrinos via `newtrinos`; the site merges all three.",
+      "items": {
+        "$ref": "#/definitions/usage"
+      },
+      "type": "array"
+    },
+    "uses": {
+      "description": "External inputs this resource depends on (papers, codes, data not in the catalogue). Catalogue records go in `relations` as `uses`; the site merges both.",
+      "items": {
+        "$ref": "#/definitions/usage"
+      },
+      "type": "array"
     },
     "version": {
       "type": "string"

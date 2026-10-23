@@ -79,7 +79,6 @@ $head</head>
       $(nav("records/", "Browse", "records"))
       $(nav("experiments/", "Experiments", "experiments"))
       $(nav("about/", "Schema & about", "about"))
-      <a href="https://newtrinos-org.github.io/newtrinos-verifications/">Verifications</a>
     </nav>
   </div>
 </header>
@@ -123,7 +122,7 @@ end
 vlabel(vocab, name, id) = (i = findfirst(e -> e["id"] == id, vocab[name]); i === nothing ? id : vocab[name][i]["label"])
 exp_name(vocab, id) = (i = findfirst(e -> e["id"] == id, vocab["experiments"]); i === nothing ? id : vocab["experiments"][i]["name"])
 
-function index_record(rec, vocab)
+function index_record(rec, vocab, rels)
     data = get(rec, "data", Dict())
     Dict("id" => rec["id"], "type" => rec["type"], "type_label" => type_label(rec["type"]),
          "title" => rec["title"], "short" => rec["short"], "doi" => get(rec, "doi", ""),
@@ -135,7 +134,7 @@ function index_record(rec, vocab)
          "license" => rec["license"], "access" => ACCESS_LABEL[rec["access"]],
          "status" => rec["curation"]["status"], "added" => string(rec["curation"]["added"]),
          "newtrinos" => haskey(rec, "newtrinos") ? "Used by Newtrinos" : "",
-         "card" => card_score(rec), "keywords" => join(vcat(get(rec, "keywords", []), get(rec, "aliases", [])), " "))
+         "card" => card_score(rec), "users" => n_users(rec, rels), "keywords" => join(vcat(get(rec, "keywords", []), get(rec, "aliases", [])), " "))
 end
 
 # ------------------------------------------------------------------------------------------------
@@ -237,6 +236,7 @@ function records_page(records, vocab)
         <option value="added">Recently added</option>
         <option value="newest">Newest first</option>
         <option value="card">Best documented</option>
+        <option value="users">Most used</option>
       </select>
     </div>
     <p class="muted" id="count"></p>
@@ -255,6 +255,44 @@ end
 agent_html(a) = esc(a["name"]) * (haskey(a, "orcid") ? """ <a href="https://orcid.org/$(a["orcid"])">ORCID</a>""" : "") *
                 (haskey(a, "affiliation") ? " <span class=\"muted\">($(esc(a["affiliation"])))</span>" : "") *
                 (haskey(a, "contact") ? " · <span class=\"muted\">$(esc(a["contact"]))</span>" : "")
+
+"Usage links in one direction: catalogue relations (incl. derived inverses) + external `uses` / `used_by` entries"
+function usage(rec, rels, key)
+    out = [(kind = "record", target = t, label = "", notes = n) for (rl, t, n) in rels if rl == key]
+    append!(out, [(kind = x["kind"], target = x["target"], label = get(x, "label", ""), notes = get(x, "notes", "")) for x in get(rec, key, [])])
+    out
+end
+n_users(rec, rels) = (nt = haskey(rec, "newtrinos") && rec["id"] != "newtrinos-jl"; count(u -> !(nt && u.target == "newtrinos-jl"), usage(rec, rels, "used_by")) + nt)
+
+const VERIF = "https://newtrinos-org.github.io/newtrinos-verifications/entries/"
+function usage_item(u, byid; r = "")
+    kind = u.kind == "record" ? type_label(byid[u.target]["type"]) : uppercasefirst(replace(u.kind, "-" => " "))
+    text = isempty(u.label) ? u.target : u.label
+    link = haskey(byid, u.target) ? target_html(u.target, byid; r) :
+           startswith(lowercase(u.target), "arxiv:") ? """<a href="https://arxiv.org/abs/$(esc(u.target[7:end]))">$(esc(text))</a>""" :
+           startswith(u.target, "doi:") ? """<a href="https://doi.org/$(esc(u.target[5:end]))">$(esc(text))</a>""" :
+           """<a href="$(esc(u.target))">$(esc(text))</a>"""
+    "<li>$(tag(kind)) $link$(isempty(u.notes) ? "" : " <span class=\"muted\">— $(esc(u.notes))</span>")</li>"
+end
+
+function usage_html(rec, rels, byid; r = "")
+    uses = [usage_item(u, byid; r) for u in usage(rec, rels, "uses")]
+    users = String[]
+    nt = get(rec, "newtrinos", Dict())
+    if !isempty(nt) && rec["id"] != "newtrinos-jl"
+        parts = String[]
+        isempty(get(nt, "modules", [])) || push!(parts, "modules " * join(["<code>$(esc(m))</code>" for m in nt["modules"]], ", "))
+        isempty(get(nt, "verifications", [])) || push!(parts, "verified in " * join(["""<a href="$(VERIF)$(esc(v))/">$(esc(v))</a>""" for v in nt["verifications"]], ", "))
+        haskey(nt, "notes") && push!(parts, "<span class=\"muted\">$(esc(nt["notes"]))</span>")
+        push!(users, """<li>$(tag("Newtrinos"; cls = "cat")) <a href="$(r)records/newtrinos-jl/">Newtrinos.jl</a>$(isempty(parts) ? "" : " — " * join(parts, "; "))</li>""")
+    end
+    # Newtrinos.jl's own `uses` relations duplicate the `newtrinos` block shown above
+    append!(users, [usage_item(u, byid; r) for u in usage(rec, rels, "used_by") if !(!isempty(users) && u.target == "newtrinos-jl")])
+    out = ""
+    isempty(uses) || (out *= """<h2>Uses</h2><ul class="usedby">$(join(uses, "\n"))</ul>\n""")
+    isempty(users) || (out *= """<h2>Used by</h2><ul class="usedby">$(join(users, "\n"))</ul>\n""")
+    out * """<p class="muted small">Know of another paper or code that uses this, or an input it depends on? <a href="$(SITE.repo)/issues/new?title=$(HTTP_escape("Uses / used by for $(rec["id"]): "))">Tell us</a>.</p>"""
+end
 
 function record_page(rec, vocab, byid, rels, status)
     id = rec["id"]
@@ -282,7 +320,7 @@ function record_page(rec, vocab, byid, rels, status)
     cardhtml = if isempty(card)
         ""
     else
-        secs = join(["""<div class="card-sec"><h4>$label</h4>$(md(card[k]))</div>""" for (k, label) in CARD_SECTIONS if haskey(card, k)], "\n")
+        secs = join(["""<dt>$label</dt><dd>$(md(card[k]))</dd>""" for (k, label) in CARD_SECTIONS if haskey(card, k)], "\n")
         extra = String[]
         haskey(card, "dphep_level") && push!(extra, "DPHEP preservation level $(card["dphep_level"])")
         if haskey(card, "fair")
@@ -291,7 +329,7 @@ function record_page(rec, vocab, byid, rels, status)
                          (haskey(f, "notes") ? " ($(esc(f["notes"])))" : ""))
         end
         """<h2>Data card <span class="muted small">$(card_score(rec))/$(length(CARD_SECTIONS)) sections</span></h2>
-<div class="datacard">$secs</div>$(isempty(extra) ? "" : "<p class=\"muted small\">" * join(extra, " · ") * "</p>")"""
+<dl class="datacard">$secs</dl>$(isempty(extra) ? "" : "<p class=\"muted small\">" * join(extra, " · ") * "</p>")"""
     end
 
     dists = join(["""<tr><td><a href="$(esc(d["url"]))">$(esc(get(d, "label", d["url"])))</a>$(badge(d["url"]))$(haskey(d, "notes") ? "<br><span class=\"muted small\">$(esc(d["notes"]))</span>" : "")</td>
@@ -343,7 +381,8 @@ function record_page(rec, vocab, byid, rels, status)
         ("API", haskey(sv, "api") ? """<a href="$(esc(sv["api"]))">$(esc(sv["api"]))</a> ($(esc(get(sv, "api_kind", ""))))""" : ""),
     ])
 
-    relhtml = isempty(rels) ? "" : "<h2>Related</h2><ul>" * join(["<li>$(esc(rel_label(rl))) $(target_html(t, byid; r))$(isempty(n) ? "" : " <span class=\"muted\">— $(esc(n))</span>")</li>" for (rl, t, n) in rels]) * "</ul>"
+    others = filter(x -> !(x[1] in ("uses", "used_by")), rels)
+    relhtml = isempty(others) ? "" : "<h2>Related</h2><ul>" * join(["<li>$(esc(rel_label(rl))) $(target_html(t, byid; r))$(isempty(n) ? "" : " <span class=\"muted\">— $(esc(n))</span>")</li>" for (rl, t, n) in others]) * "</ul>"
     refs = get(rec, "references", [])
     refhtml = isempty(refs) ? "" : "<h2>Papers</h2><ul>" * join(map(refs) do x
         parts = filter(!isempty, [haskey(x, "citation") ? esc(x["citation"]) : "", haskey(x, "doi") ? doi_link(x["doi"]) : "",
@@ -353,11 +392,7 @@ function record_page(rec, vocab, byid, rels, status)
     end) * "</ul>"
     cite = get(rec, "cite_as", [])
     citehtml = isempty(cite) ? "" : "<h2>How to cite</h2><ul>" * join(["<li>$(startswith(c, "doi:") ? doi_link(c[5:end]) : esc(c))</li>" for c in cite]) * "</ul>"
-    nt = get(rec, "newtrinos", Dict())
-    nthtml = isempty(nt) ? "" : """<h2>In Newtrinos</h2><div class="tool">
-$(isempty(get(nt, "modules", [])) ? "" : "<p>Modules: " * join(["<code>$(esc(m))</code>" for m in nt["modules"]], ", ") * "</p>")
-$(isempty(get(nt, "verifications", [])) ? "" : "<p>Verification entries: " * join(["""<a href="https://newtrinos-org.github.io/newtrinos-verifications/entries/$(esc(v))/">$(esc(v))</a>""" for v in nt["verifications"]], ", ") * "</p>")
-$(haskey(nt, "notes") ? "<p class=\"muted small\">$(esc(nt["notes"]))</p>" : "")</div>"""
+    usedby = usage_html(rec, rels, byid; r)
     cur = rec["curation"]
     curhtml = """<h2>Curation</h2>""" * kv([
         ("Status", STATUS_LABEL[cur["status"]] * " <span class=\"muted small\">(candidate: harvested, not reviewed · curated: reviewed metadata · verified: resource downloaded and checked against its paper)</span>"),
@@ -382,7 +417,7 @@ $cardhtml
 <div class="table-scroll"><table class="files"><tr><th>Location</th><th>Role</th><th>Host</th><th>Formats</th><th>Size</th></tr>$dists</table></div>
 <h2>Metadata</h2>
 $meta
-$nthtml
+$usedby
 $refhtml
 $citehtml
 $relhtml
@@ -480,10 +515,11 @@ function build()
     rels = all_relations(records)
     status = load_status()
     schema = JSON.parsefile(SCHEMA_JSON)
-    rm(OUT, recursive = true, force = true)
+    # on NFS, rm can fail with ENOTEMPTY while .nfs* files are released: then overwrite in place
+    try rm(OUT, recursive = true, force = true) catch e; @warn "could not clear $OUT, overwriting" e end
     mkpath(OUT)
-    cp(joinpath(@__DIR__, "assets"), joinpath(OUT, "assets"))
-    mkpath(joinpath(OUT, "schema")); cp(SCHEMA_JSON, joinpath(OUT, "schema", "record.schema.json"))
+    cp(joinpath(@__DIR__, "assets"), joinpath(OUT, "assets"); force = true)
+    mkpath(joinpath(OUT, "schema")); cp(SCHEMA_JSON, joinpath(OUT, "schema", "record.schema.json"); force = true)
     write(joinpath(OUT, "index.html"), home_page(records, vocab))
     for (d, html) in (("records", records_page(records, vocab)), ("experiments", experiments_page(records, vocab)), ("about", about_page(vocab, schema)))
         mkpath(joinpath(OUT, d)); write(joinpath(OUT, d, "index.html"), html)
@@ -497,7 +533,7 @@ function build()
         dst = joinpath(OUT, "experiments", e["id"]); mkpath(dst)
         write(joinpath(dst, "index.html"), experiment_page(e, records, vocab))
     end
-    write(joinpath(OUT, "index.json"), JSON.json(index_record.(records, Ref(vocab))))
+    write(joinpath(OUT, "index.json"), JSON.json([index_record(r, vocab, rels[r["id"]]) for r in records]))
     write(joinpath(OUT, "catalog.jsonld"), sorted_json(Dict("@context" => "https://schema.org", "@type" => "DataCatalog",
         "name" => SITE.name, "description" => SITE.tagline, "url" => "https://newtrinos-org.github.io/newtrinos-index/",
         "license" => "https://creativecommons.org/publicdomain/zero/1.0/", "dataset" => [jsonld(r, vocab) for r in records])) * "\n")

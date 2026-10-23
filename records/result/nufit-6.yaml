@@ -21,6 +21,8 @@ distributions:
   - {url: "http://www.nu-fit.org", host: institutional, role: primary, formats: [txt, pdf, image], notes: "tables v60.release-TB{off,yes}-{NO,IO}.txt.xz"}
   - {url: "https://web.archive.org/web/2025/http://www.nu-fit.org/", host: wayback, role: archive, notes: "used when nu-fit.org was unreachable (Oct 2026)"}
 cite_as: ["doi:10.1007/JHEP12(2024)216"]
+relations:
+  - {rel: uses, target: b23-standard-solar-models, notes: "MB22-met is the NuFIT 6.0 reference solar model"}
 references:
   - {doi: 10.1007/JHEP12(2024)216, arxiv: "2410.05380", relation: describes}
 sources: [solar, atmospheric, reactor, accelerator]

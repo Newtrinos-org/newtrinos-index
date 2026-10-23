@@ -61,6 +61,15 @@ definitions:
       checksum: {type: string, pattern: "^(sha256|sha1|md5):[0-9a-f]+$"}
       archived: {$ref: "#/definitions/date", description: "date this copy was made (archives and mirrors)"}
       notes: {type: string}
+  usage:
+    type: object
+    additionalProperties: false
+    required: [kind, target]
+    properties:
+      kind: {enum: [paper, software, dataset, model, analysis, global-fit, experiment, other]}
+      target: {type: string, description: "doi:10.xxx/..., arXiv:NNNN.NNNNN, or a URL (catalogue records: use relations)"}
+      label: {type: string, description: "display name, e.g. 'NuFIT 6.0' or 'Smith et al. 2025'"}
+      notes: {type: string, description: "how it is used"}
   card_text:
     description: "Markdown text"
     type: string
@@ -135,6 +144,14 @@ properties:
         rel: {enum: [is_part_of, has_part, is_version_of, supersedes, superseded_by, derived_from, source_of, uses, used_by, mirror_of, documents, reproduces, compares_with]}
         target: {type: string, description: "record id, or doi:10.xxx/..., or a URL"}
         notes: {type: string}
+  uses:
+    description: "External inputs this resource depends on (papers, codes, data not in the catalogue). Catalogue records go in `relations` as `uses`; the site merges both."
+    type: array
+    items: {$ref: "#/definitions/usage"}
+  used_by:
+    description: "Known users outside the catalogue: papers, analyses, codes, global fits. Catalogue records that use this one are listed via their own `uses` relation, Newtrinos via `newtrinos`; the site merges all three."
+    type: array
+    items: {$ref: "#/definitions/usage"}
 
   # ---------------------------------------------------------------- neutrino physics classification
   experiments: {type: array, items: {$vocab: experiments}, uniqueItems: true}

@@ -46,7 +46,7 @@
     return `<article class="card">
       <a class="card-link" href="${root}records/${esc(e.id)}/"><h3>${esc(e.title)}</h3><p class="muted">${esc(e.short)}</p></a>
       <div class="tags">${tags}</div>
-      <div class="meta muted">${e.year ? esc(e.year) + " · " : ""}${esc(e.license)} · ${esc(e.access)}${e.card ? ` · data card ${e.card}/11` : ""}</div>
+      <div class="meta muted">${e.year ? esc(e.year) + " · " : ""}${esc(e.license)} · ${esc(e.access)}${e.card ? ` · data card ${e.card}/11` : ""}${e.users ? ` · used by ${e.users}` : ""}</div>
     </article>`;
   }
 
@@ -78,6 +78,7 @@
       added: (a, b) => b.added.localeCompare(a.added),
       newest: (a, b) => (b.year || "").localeCompare(a.year || ""),
       card: (a, b) => b.card - a.card || a.title.localeCompare(b.title),
+      users: (a, b) => b.users - a.users || a.title.localeCompare(b.title),
     }[sort.value]);
     list.innerHTML = shown.map(card).join("") || `<p class="muted">No records match.</p>`;
     document.getElementById("count").textContent = `${shown.length} / ${records.length} records`;

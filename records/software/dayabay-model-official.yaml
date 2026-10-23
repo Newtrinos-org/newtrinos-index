@@ -16,6 +16,7 @@ distributions:
   - {url: "https://github.com/dagflow-team/dayabay-analysis", host: github, role: documentation, label: "analysis examples (dayabay-analysis)", formats: [source-code]}
 relations:
   - {rel: uses, target: daya-bay-full-data-release}
+  - {rel: uses, target: huber-mueller-reactor-spectra, notes: "reactor flux model"}
 experiments: [daya-bay]
 sources: [reactor]
 topics: [oscillation]

@@ -46,8 +46,8 @@ cite_as:
 references:
   - {doi: 10.1103/PhysRevLett.130.161802, relation: describes}
   - {arxiv: "2211.14988", relation: describes}
-relations:
-  - {rel: used_by, target: dayabay-model-official}
+used_by:
+  - {kind: software, target: "https://github.com/dagflow-team/dayabay-analysis", label: dayabay-analysis, notes: "official analysis examples and the full oscillation fit"}
 experiments: [daya-bay]
 collaborations: [Daya Bay]
 sources: [reactor]

@@ -43,7 +43,9 @@ julia --project site/build.jl && python3 -m http.server -d public  # preview
 ```
 
 When you add an entry to `vocab/`, regenerate the schema with `julia --project tools/gen_schema.jl`.
-Relations are stated on one side only (e.g. `uses`); the site shows the inverse (`used by`).
+Relations between catalogue records are stated on one side only (`relations: [{rel: uses, target: <id>}]`); the site
+shows the inverse (`used by`). External inputs and users (papers, codes not in the catalogue) go in `uses:` / `used_by:`
+(kind + `doi:`, `arXiv:` or URL); the record page merges both, plus Newtrinos modules and verification entries.
 
 ## Licences
 
