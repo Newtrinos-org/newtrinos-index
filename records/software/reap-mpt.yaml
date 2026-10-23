@@ -1,0 +1,45 @@
+id: reap-mpt
+type: software
+title: REAP / MPT
+short: 'REAP and MPT: renormalisation-group evolution of neutrino masses, angles and phases (Mathematica)'
+description: Mathematica packages for the renormalisation-group Evolution of Angles and Phases (REAP) of the neutrino mass matrix in the SM, MSSM and seesaw extensions, with Mixing Parameter Tools (MPT).
+url_landing: https://reapmpt.hepforge.org/
+creators:
+- name: Stefan Antusch
+- name: Jörn Kersten
+- name: Manfred Lindner
+- name: Michael Ratz
+- name: Michael A. Schmidt
+license: unknown
+access: open
+distributions:
+- url: https://reapmpt.hepforge.org/
+  host: institutional
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:hep-ph/0501272
+references:
+- arxiv: hep-ph/0501272
+  relation: describes
+sources:
+- none
+topics:
+- bsm-other
+- oscillation
+software:
+  repository: https://reapmpt.hepforge.org/
+  languages:
+  - Mathematica
+  purposes:
+  - tooling
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23
+  quality_notes:
+  - licence not checked on HepForge

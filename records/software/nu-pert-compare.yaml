@@ -1,0 +1,43 @@
+id: nu-pert-compare
+type: software
+title: Nu-Pert-Compare
+short: 'Nu-Pert-Compare: comparison of approximate expressions for oscillation probabilities in matter'
+description: 'Nu-Pert-Compare: comparison of approximate expressions for oscillation probabilities in matter'
+url_landing: https://github.com/PeterDenton/Nu-Pert-Compare
+creators:
+- name: Peter B. Denton
+owner:
+  name: PeterDenton
+  kind: person
+date_published: '2019-01-16'
+date_updated: '2019-11-05'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/PeterDenton/Nu-Pert-Compare
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:1902.00517
+references:
+- arxiv: '1902.00517'
+  relation: describes
+sources:
+- accelerator
+topics:
+- oscillation
+software:
+  repository: https://github.com/PeterDenton/Nu-Pert-Compare
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

@@ -1,0 +1,50 @@
+id: nutausim
+type: software
+title: NuTauSim
+short: 'NuTauSim: Monte Carlo of ντ / τ propagation through the Earth for Earth-skimming detection'
+description: 'NuTauSim: Monte Carlo of ντ / τ propagation through the Earth for Earth-skimming detection'
+url_landing: https://github.com/harmscho/NuTauSim
+creators:
+- name: Jaime Alvarez-Muñiz
+- name: Washington R. Carvalho Jr
+- name: Kévin Payet
+- name: Andrés Romero-Wolf
+- name: Harm Schoorlemmer
+- name: Enrique Zas
+owner:
+  name: harmscho
+  kind: person
+date_published: '2017-06-25'
+date_updated: '2020-02-03'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/harmscho/NuTauSim
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:1707.00334
+references:
+- arxiv: '1707.00334'
+  relation: describes
+sources:
+- astrophysical
+- cosmogenic
+topics:
+- earth-model
+software:
+  repository: https://github.com/harmscho/NuTauSim
+  purposes:
+  - detector-simulation
+  - earth-model
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

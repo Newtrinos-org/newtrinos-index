@@ -1,0 +1,33 @@
+id: denton-icecube-invisible-decay-data
+type: result
+title: 'Invisible neutrino decay resolves IceCube''s track and cascade tension: figure data'
+short: 'Invisible neutrino decay resolves IceCube''s track and cascade tension: figure data'
+description: Data files of the figures of arXiv:1805.05950 (descriptions in the files).
+url_landing: https://peterdenton.github.io/Data/IC_Decay/index.html
+creators:
+- name: Peter B. Denton
+license: none-stated
+access: open
+distributions:
+- url: https://peterdenton.github.io/Data/IC_Decay/index.html
+  host: personal
+  role: primary
+  formats:
+  - txt
+references:
+- doi: 10.1103/PhysRevLett.121.121802
+  arxiv: '1805.05950'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- decay
+data:
+  levels:
+  - summary
+  - contours
+  result_of: 10.1103/PhysRevLett.121.121802
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's data page (peterdenton.github.io/Data), 2026-10-23

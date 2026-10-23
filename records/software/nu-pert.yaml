@@ -1,0 +1,43 @@
+id: nu-pert
+type: software
+title: Nu-Pert
+short: 'Nu-Pert: perturbative oscillation probabilities in matter (Denton, Minakata, Parke)'
+description: 'Nu-Pert: perturbative oscillation probabilities in matter (Denton, Minakata, Parke)'
+url_landing: https://github.com/PeterDenton/Nu-Pert
+creators:
+- name: Peter B. Denton
+owner:
+  name: PeterDenton
+  kind: person
+date_published: '2016-04-11'
+date_updated: '2017-09-29'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/PeterDenton/Nu-Pert
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:1604.08167
+references:
+- arxiv: '1604.08167'
+  relation: describes
+sources:
+- accelerator
+topics:
+- oscillation
+software:
+  repository: https://github.com/PeterDenton/Nu-Pert
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

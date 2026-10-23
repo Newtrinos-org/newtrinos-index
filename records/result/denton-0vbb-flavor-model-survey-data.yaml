@@ -1,0 +1,33 @@
+id: denton-0vbb-flavor-model-survey-data
+type: result
+title: 'Survey of neutrino flavour models and the 0νββ funnel: figure data'
+short: 'Survey of neutrino flavour models and the 0νββ funnel: figure data'
+description: Data files of the figures of arXiv:2308.09737 (descriptions in the files).
+url_landing: https://peterdenton.github.io/Data/0nubb_Survey/index.html
+creators:
+- name: Peter B. Denton
+license: none-stated
+access: open
+distributions:
+- url: https://peterdenton.github.io/Data/0nubb_Survey/index.html
+  host: personal
+  role: primary
+  formats:
+  - txt
+references:
+- doi: 10.1103/PhysRevD.109.055028
+  arxiv: '2308.09737'
+  relation: describes
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - summary
+  - contours
+  result_of: 10.1103/PhysRevD.109.055028
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's data page (peterdenton.github.io/Data), 2026-10-23

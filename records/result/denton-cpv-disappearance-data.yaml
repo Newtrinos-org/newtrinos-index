@@ -1,0 +1,34 @@
+id: denton-cpv-disappearance-data
+type: result
+title: 'CP violation with neutrino disappearance: figure data'
+short: 'CP violation with neutrino disappearance: figure data'
+description: Data files of the figures of arXiv:2309.03262 (descriptions in the files).
+url_landing: https://peterdenton.github.io/Data/CPV_Dis/index.html
+creators:
+- name: Peter B. Denton
+license: none-stated
+access: open
+distributions:
+- url: https://peterdenton.github.io/Data/CPV_Dis/index.html
+  host: personal
+  role: primary
+  formats:
+  - txt
+references:
+- doi: 10.1103/PhysRevLett.133.031801
+  arxiv: '2309.03262'
+  relation: describes
+sources:
+- accelerator
+- reactor
+topics:
+- cp-violation
+data:
+  levels:
+  - summary
+  - contours
+  result_of: 10.1103/PhysRevLett.133.031801
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's data page (peterdenton.github.io/Data), 2026-10-23

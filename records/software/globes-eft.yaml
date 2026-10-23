@@ -1,0 +1,50 @@
+id: globes-eft
+type: software
+title: GLoBES-EFT
+short: 'GLoBES-EFT: GLoBES plugin for WEFT / SMEFT effects in production, detection and propagation'
+description: GLoBES plugin for simulating the effects of WEFT and SMEFT on neutrino production, detection, and propagation.
+url_landing: https://github.com/SalvaUrrea2/GLoBES-EFT
+creators:
+- name: Joachim Kopp
+- name: Zahra Tabrizi
+- name: Salvador Urrea
+owner:
+  name: SalvaUrrea2
+  kind: person
+date_published: '2025-07-24'
+date_updated: '2026-02-03'
+license: GPL-2.0-only
+access: open
+distributions:
+- url: https://github.com/SalvaUrrea2/GLoBES-EFT
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2509.21537
+references:
+- arxiv: '2509.21537'
+  relation: describes
+relations:
+- rel: uses
+  target: globes
+sources:
+- accelerator
+- reactor
+topics:
+- nsi
+- bsm-other
+software:
+  repository: https://github.com/SalvaUrrea2/GLoBES-EFT
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  languages:
+  - C
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

@@ -1,0 +1,50 @@
+id: globesfit
+type: software
+title: GLoBESfit
+short: 'GLoBESfit: global fits of short-baseline / sterile data with GLoBES'
+description: 'GLoBESfit: global fits of short-baseline / sterile data with GLoBES'
+url_landing: https://github.com/JMBerryman/GLoBESfit
+creators:
+- name: Jeffrey M. Berryman
+- name: Patrick Huber
+owner:
+  name: JMBerryman
+  kind: person
+date_published: '2020-02-20'
+date_updated: '2020-06-05'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/JMBerryman/GLoBESfit
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2005.01756
+references:
+- arxiv: '2005.01756'
+  relation: describes
+relations:
+- rel: uses
+  target: globes
+sources:
+- accelerator
+- reactor
+topics:
+- sterile
+- oscillation
+- global-fit
+software:
+  repository: https://github.com/JMBerryman/GLoBESfit
+  purposes:
+  - global-fit
+  interfaces:
+  - library
+  languages:
+  - C
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

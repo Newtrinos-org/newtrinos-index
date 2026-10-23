@@ -17,6 +17,10 @@ distributions:
 - url: https://doi.org/10.17632/rzd24f34h2.1
   host: institutional
   role: primary
+- url: https://github.com/iamholger/ulysses
+  host: github
+  role: mirror
+  label: earlier GitHub repository (Moffat, Turner, Schulz)
 references:
 - doi: 10.1016/j.cpc.2020.107813
   relation: describes

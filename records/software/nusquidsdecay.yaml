@@ -1,0 +1,51 @@
+id: nusquidsdecay
+type: software
+title: nuSQUIDSDecay
+short: 'nuSQUIDSDecay: nuSQuIDS extension for neutrino decay'
+description: 'nuSQUIDSDecay: nuSQuIDS extension for neutrino decay'
+url_landing: https://github.com/arguelles/nuSQUIDSDecay
+creators:
+- name: Zander Moss
+- name: Marjon Moulai
+- name: Carlos Argüelles
+- name: Janet Conrad
+owner:
+  name: arguelles
+  kind: person
+date_published: '2016-07-19'
+date_updated: '2019-07-23'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/arguelles/nuSQUIDSDecay
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:1711.05921
+references:
+- arxiv: '1711.05921'
+  relation: describes
+relations:
+- rel: uses
+  target: nusquids
+sources:
+- atmospheric
+- astrophysical
+topics:
+- decay
+- sterile
+software:
+  repository: https://github.com/arguelles/nuSQUIDSDecay
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

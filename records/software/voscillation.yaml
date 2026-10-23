@@ -1,0 +1,50 @@
+id: voscillation
+type: software
+title: vOscillation
+short: 'vOscillation: computation and simulation of neutrino propagation and interaction'
+description: a software package for computation and simulation of neutrino propagation and interaction.
+url_landing: https://github.com/railroad2/vOscillation
+creators:
+- name: Seonghyeok Jang
+- name: Eunju Jeon
+- name: Eunil Won
+- name: Young Ju Ko
+- name: Kyungmin Lee
+owner:
+  name: railroad2
+  kind: person
+date_published: '2023-08-10'
+date_updated: '2024-07-11'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/railroad2/vOscillation
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2401.13215
+references:
+- arxiv: '2401.13215'
+  relation: describes
+sources:
+- none
+topics:
+- oscillation
+- bsm-other
+- cross-section
+software:
+  repository: https://github.com/railroad2/vOscillation
+  purposes:
+  - oscillation-probability
+  - event-generator
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: maintained
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

@@ -1,0 +1,22 @@
+id: richers-group-resources
+type: collection
+title: Richers group resources (neutrino transport and flavour codes)
+short: 'Resource list of the Richers group: neutrino transport, flavour-instability codes and data'
+description: 'Resource list of the Richers group: neutrino transport, flavour-instability codes and data.'
+url_landing: https://sites.google.com/view/sherwoodrichers/resources
+license: none-stated
+access: open
+distributions:
+- url: https://sites.google.com/view/sherwoodrichers/resources
+  host: personal
+  role: primary
+  formats:
+  - html
+sources:
+- none
+topics:
+- oscillation
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

@@ -1,0 +1,48 @@
+id: nuoscparam
+type: software
+title: NuOscParam
+short: 'NuOscParam: ML estimation of oscillation parameters from oscillation-probability maps'
+description: Neutrino Parameter Estimation from Oscillation Probability Maps.
+url_landing: https://github.com/GiorgioMorales/NuOscParam
+creators:
+- name: Giorgio Morales
+- name: Gregory Lehaut
+- name: Antonin Vacheret
+- name: Frederic Jurie
+- name: Jalal Fadili
+owner:
+  name: GiorgioMorales
+  kind: person
+date_published: '2026-01-22'
+date_updated: '2026-01-23'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/GiorgioMorales/NuOscParam
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2603.22342
+references:
+- arxiv: '2603.22342'
+  relation: describes
+sources:
+- atmospheric
+topics:
+- oscillation
+- statistics
+software:
+  repository: https://github.com/GiorgioMorales/NuOscParam
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  languages:
+  - Jupyter Notebook
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

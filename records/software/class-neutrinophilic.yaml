@@ -1,0 +1,46 @@
+id: class-neutrinophilic
+type: software
+title: CLASS Neutrinophilic
+short: 'CLASS_neutrinophilic: cosmic evolution of a neutrinophilic eV-scale boson'
+description: Calculates the cosmic evolution of a joined eV scale boson.
+url_landing: https://github.com/stefanmarinus/CLASS_neutrinophilic
+creators:
+- name: Stefan Sandner
+- name: Miguel Escudero
+- name: Samuel J. Witte
+owner:
+  name: stefanmarinus
+  kind: person
+date_published: '2023-04-28'
+date_updated: '2023-05-07'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/stefanmarinus/CLASS_neutrinophilic
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2305.01692
+references:
+- arxiv: '2305.01692'
+  relation: describes
+sources:
+- cosmology
+topics:
+- bsm-other
+- nsi
+software:
+  repository: https://github.com/stefanmarinus/CLASS_neutrinophilic
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  languages:
+  - C
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

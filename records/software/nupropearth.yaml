@@ -1,0 +1,48 @@
+id: nupropearth
+type: software
+title: NuPropEarth
+short: 'NuPropEarth: propagation of high-energy neutrinos through the Earth'
+description: 'NuPropEarth: propagation of high-energy neutrinos through the Earth'
+url_landing: https://github.com/pochoarus/NuPropEarth
+creators:
+- name: Alfonso Garcia
+- name: Rhorry Gauld
+- name: Aart Heijboer
+- name: Juan Rojo
+- name: Victor Valera
+owner:
+  name: pochoarus
+  kind: person
+date_published: '2019-11-26'
+date_updated: '2023-04-22'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/pochoarus/NuPropEarth
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2004.04756
+references:
+- arxiv: '2004.04756'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- earth-model
+- cross-section
+software:
+  repository: https://github.com/pochoarus/NuPropEarth
+  purposes:
+  - earth-model
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

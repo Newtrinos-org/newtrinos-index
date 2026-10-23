@@ -1,0 +1,45 @@
+id: nudice
+type: software
+title: nuDICE
+short: 'nuDICE: neutrino decay and interference computational engine'
+description: neutrino Decay and Interference Computational Engine.
+url_landing: https://github.com/george-parker/nuDICE
+creators:
+- name: Joachim Kopp
+- name: George Parker
+owner:
+  name: george-parker
+  kind: person
+date_published: '2026-04-10'
+date_updated: '2026-04-15'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/george-parker/nuDICE
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2604.09776
+references:
+- arxiv: '2604.09776'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- decay
+- oscillation
+software:
+  repository: https://github.com/george-parker/nuDICE
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  languages:
+  - Jupyter Notebook
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

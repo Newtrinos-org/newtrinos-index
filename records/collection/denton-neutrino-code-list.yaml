@@ -1,0 +1,24 @@
+id: denton-neutrino-code-list
+type: collection
+title: Peter Denton's list of neutrino codes
+short: Curated list of public neutrino codes (oscillation, BSM, astro, interactions) by Peter B. Denton
+description: Curated list of public neutrino codes (oscillation, BSM, astro, interactions) by Peter B. Denton.
+url_landing: https://peterdenton.github.io/Code/index.html
+license: none-stated
+access: open
+distributions:
+- url: https://peterdenton.github.io/Code/index.html
+  host: github
+  role: primary
+  formats:
+  - html
+sources:
+- none
+topics:
+- statistics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23
+creators:
+- name: Peter B. Denton

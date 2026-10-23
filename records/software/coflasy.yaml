@@ -1,0 +1,46 @@
+id: coflasy
+type: software
+title: COFLASY
+short: 'COFLASY: evolution of primordial lepton-flavour asymmetries from the early Universe to BBN'
+description: Mathematica and C++ code to study the evolution of primordial lepton flavour asymmetries from the early Universe to BBN.
+url_landing: https://github.com/mariofnavarro/COFLASY
+creators:
+- name: Valerie Domcke
+- name: Miguel Escudero
+- name: Mario Fernandez Navarro
+- name: Stefan Sandner
+owner:
+  name: mariofnavarro
+  kind: person
+date_published: '2025-01-09'
+date_updated: '2026-02-13'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/mariofnavarro/COFLASY
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2510.02438
+references:
+- arxiv: '2510.02438'
+  relation: describes
+sources:
+- cosmology
+topics:
+- bsm-other
+software:
+  repository: https://github.com/mariofnavarro/COFLASY
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  languages:
+  - Wolfram Language
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

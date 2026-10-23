@@ -1,0 +1,44 @@
+id: astro-nu-decay
+type: software
+title: Astro-Nu-Decay
+short: 'Astro-Nu-Decay: visible decay of astrophysical neutrinos at IceCube'
+description: 'Astro-Nu-Decay: visible decay of astrophysical neutrinos at IceCube'
+url_landing: https://github.com/PeterDenton/Astro-Nu-Decay
+creators:
+- name: Asli Abdullahi
+- name: Peter B. Denton
+owner:
+  name: PeterDenton
+  kind: person
+date_published: '2020-04-10'
+date_updated: '2020-05-18'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/PeterDenton/Astro-Nu-Decay
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2005.07200
+references:
+- arxiv: '2005.07200'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- decay
+software:
+  repository: https://github.com/PeterDenton/Astro-Nu-Decay
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

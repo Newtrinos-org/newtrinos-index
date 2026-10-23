@@ -1,0 +1,48 @@
+id: phylino
+type: software
+title: PhyLiNO
+short: 'PhyLiNO: forward-folding likelihood-fit framework for neutrino oscillation physics'
+description: A Forward-Folding Likelihood-Fit Framework for Neutrino Oscillation Physics.
+url_landing: https://github.com/psoldin/PhyLiNO
+creators:
+- name: Denise Hellwig
+- name: Stefan Schoppmann
+- name: Philipp Soldin
+- name: Achim Stahl
+- name: Christopher Wiebusch
+owner:
+  name: psoldin
+  kind: person
+date_published: '2023-07-21'
+date_updated: '2026-08-26'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/psoldin/PhyLiNO
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:2502.15253
+references:
+- arxiv: '2502.15253'
+  relation: describes
+sources:
+- reactor
+topics:
+- oscillation
+- statistics
+software:
+  repository: https://github.com/psoldin/PhyLiNO
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

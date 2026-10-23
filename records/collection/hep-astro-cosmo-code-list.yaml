@@ -1,0 +1,22 @@
+id: hep-astro-cosmo-code-list
+type: collection
+title: HEP-ASTRO-COSMO code list
+short: Community list of open codes for high-energy physics, astrophysics and cosmology (N. Šarčević)
+description: Community list of open codes for high-energy physics, astrophysics and cosmology (N. Šarčević).
+url_landing: https://github.com/nikosarcevic/HEP-ASTRO-COSMO
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/nikosarcevic/HEP-ASTRO-COSMO
+  host: github
+  role: primary
+  formats:
+  - html
+sources:
+- none
+topics:
+- statistics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

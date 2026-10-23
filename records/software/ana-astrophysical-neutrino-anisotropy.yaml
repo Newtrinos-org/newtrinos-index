@@ -1,0 +1,43 @@
+id: ana-astrophysical-neutrino-anisotropy
+type: software
+title: 'ANA: Astrophysical Neutrino Anisotropy'
+short: 'ANA: anisotropy of the astrophysical neutrino flux'
+description: 'ANA: anisotropy of the astrophysical neutrino flux'
+url_landing: https://github.com/PeterDenton/ANA
+creators:
+- name: Peter B. Denton
+owner:
+  name: PeterDenton
+  kind: person
+date_published: '2017-03-14'
+date_updated: '2017-04-07'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/PeterDenton/ANA
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:1703.09721
+references:
+- arxiv: '1703.09721'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- multi-messenger
+software:
+  repository: https://github.com/PeterDenton/ANA
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: dormant
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23

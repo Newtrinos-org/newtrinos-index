@@ -1,0 +1,34 @@
+id: denton-nova-t2k-cp-nsi-data
+type: result
+title: 'CP-violating NSI in long-baseline accelerator data (NOvA + T2K): figure data'
+short: 'CP-violating NSI in long-baseline accelerator data (NOvA + T2K): figure data'
+description: Data files of the figures of arXiv:2008.01110 (descriptions in the files).
+url_landing: https://peterdenton.github.io/Data/NOvA+T2K_NSI/index.html
+creators:
+- name: Peter B. Denton
+license: none-stated
+access: open
+distributions:
+- url: https://peterdenton.github.io/Data/NOvA+T2K_NSI/index.html
+  host: personal
+  role: primary
+  formats:
+  - txt
+references:
+- doi: 10.1103/PhysRevLett.126.051801
+  arxiv: '2008.01110'
+  relation: describes
+sources:
+- accelerator
+topics:
+- nsi
+- cp-violation
+data:
+  levels:
+  - summary
+  - contours
+  result_of: 10.1103/PhysRevLett.126.051801
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's data page (peterdenton.github.io/Data), 2026-10-23

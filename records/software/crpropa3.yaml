@@ -1,0 +1,55 @@
+id: crpropa3
+type: software
+title: CRPropa3
+short: 'CRPropa 3: propagation of cosmic rays, photons and secondary (cosmogenic) neutrinos'
+description: 'CRPropa 3: propagation of cosmic rays, photons and secondary (cosmogenic) neutrinos'
+url_landing: https://crpropa.desy.de
+creators:
+- name: Rafael Alves Batista
+- name: Andrej Dundovic
+- name: Martin Erdmann
+- name: Karl-Heinz Kampert
+- name: Daniel Kuempel
+- name: Gero Müller
+- name: Guenter Sigl
+- name: Arjen van Vliet
+- name: David Walz
+- name: Tobias Winchen
+owner:
+  name: CRPropa
+  kind: organization
+date_published: '2013-10-28'
+date_updated: '2026-10-20'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/CRPropa/CRPropa3
+  host: github
+  role: primary
+  formats:
+  - source-code
+cite_as:
+- arXiv:1603.07142
+references:
+- arxiv: '1603.07142'
+  relation: describes
+- arxiv: '2208.00107'
+  relation: describes
+sources:
+- cosmogenic
+- astrophysical
+topics:
+- flux
+software:
+  repository: https://github.com/CRPropa/CRPropa3
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  languages:
+  - C++
+  development_status: active
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: Peter Denton's neutrino code list (peterdenton.github.io/Code), 2026-10-23
