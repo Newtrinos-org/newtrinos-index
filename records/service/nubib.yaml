@@ -1,7 +1,7 @@
 id: nubib
 type: service
 title: NuBib — neutrino measurements, in one place
-short: "NuBib: continuously updated index of published neutrino interaction and oscillation measurements (≈500 papers, 61 experiments)"
+short: "NuBib: continuously updated index of published neutrino interaction and oscillation measurements"
 description: |-
   Curated, searchable bibliography of published neutrino measurements, covering interaction (cross-section) and
   oscillation results from 1972 to today. Papers can be filtered by experiment, channel and more, with links to
