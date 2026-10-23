@@ -1,0 +1,48 @@
+id: hepdata-microboone-inclusive-nue-wirecell
+type: dataset
+title: Search for an anomalous excess of inclusive charged-current $\nu_e$ interactions in the MicroBooNE experiment using Wire-Cell reconstruction
+short: 'HEPData: MicroBooNE inclusive CC νe excess search (Wire-Cell)'
+description: Data release for the first results from MicroBooNE's inclusive $\nu_e$CC search using Wire-Cell reconstruction, corresponding to information from arXiv:2110.13978. Attached is a python script which shows an example of how to use this data release to plot the unconstrained and constrained $\nu_e$CC FC data and predictions. Version 2 adds $\nu_\mu$CC energy resolution matrices, and fixes a small issue in the previous version in which the bins in the $\nu_e$CC energy resolution matrices were shifted by 50 MeV.
+doi: 10.17182/hepdata.114862
+url_landing: https://www.hepdata.net/record/ins1953539
+creators:
+- name: MicroBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '2'
+date_published: '2022'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.114862
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1103/physrevd.105.112005
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- sterile
+channels:
+- cc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"MicroBooNE Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

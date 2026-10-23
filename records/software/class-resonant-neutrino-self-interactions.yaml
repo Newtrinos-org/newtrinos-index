@@ -1,0 +1,90 @@
+id: class-resonant-neutrino-self-interactions
+type: software
+title: 'JorgeVenzor/class_resonant_self-interacting_neutrinos: CLASS: Resonant neutrino self-interactions'
+short: 'CLASS extension: resonant neutrino self-interactions'
+description: '# CLASS with self-interacting neutrinos
+
+
+  This is a modified version of the CLASS code v3.1 (see http://class-code.net and https://github.com/lesgourg/class_public). It computes the interaction rate of resonant neutrino self-interactions.
+
+
+  It computes the neutrino distribution pertubations at linear order.
+
+
+  The implementation is based on:
+
+
+  https://arxiv.org/abs/2303.12792
+
+
+  ----------------------------------------
+
+
+  ## Implementation
+
+
+  **Resonant neutrino self-interactions:**
+
+
+  We modified the Boltzmann equations in the background and perturbation modules, to account for resonant neutrino self-interactions as presented in arXiv:2309.03941. We use precomputed interaction rates (in this code you compute new ones using the resonance.py script) you will find the precomputed files in the folder tables_Gamma_resonance.
+
+
+  ## Running this code
+
+
+  Tu run the code, you need to set the see the example.ini file. Additionaly, You can find example python scripts in the folder resonance_scripts.
+
+
+  -------------------------------------------
+
+
+  ## Using this code
+
+
+  If you use the resonant neutrino self-interactions implementation please cite https://arxiv.org/abs/2303.12792 and https://arxiv.org/abs/2506.07994.
+
+
+  ------------------------------------------'
+doi: 10.5281/zenodo.19802609
+url_landing: https://zenodo.org/doi/10.5281/zenodo.19802609
+creators:
+- name: Venzor, Jorge
+  orcid: 0000-0003-4510-2089
+- name: Garcia-Arroyo, Gabriela
+  orcid: 0000-0002-0599-7036
+publisher:
+  name: Zenodo
+version: v1.0
+date_published: '2026-04-26'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.19802609
+  host: zenodo
+  role: primary
+sources:
+- cosmology
+topics:
+- nsi
+software:
+  purposes:
+  - astrophysics
+  repository: https://doi.org/10.5281/zenodo.19802609
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,48 @@
+id: hepdata-lsnd-nue-c12
+type: dataset
+title: Measurements of charged current reactions of nu/e on C-12.
+short: 'HEPData: LSND charged-current νe reactions on ¹²C (decay-at-rest)'
+description: LAMPF. Measurements of charged current reactions of NUE on C12. Nue arised from MU+ decay at rest.
+doi: 10.17182/hepdata.41705
+url_landing: https://www.hepdata.net/record/ins557014
+creators:
+- name: LSND Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '1'
+date_published: '1995'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.41705
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1103/physrevc.64.065501
+  relation: describes
+experiments:
+- lsnd
+sources:
+- spallation
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"LSND Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

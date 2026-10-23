@@ -1,0 +1,51 @@
+id: super-k-atm-simulation-fernandez
+type: dataset
+title: Super-Kamiokande Atmospheric Neutrino Simulation
+short: Super-K-like atmospheric-neutrino simulation built from public information (HDF5; Fernández, Argüelles)
+description: Simulation of SK atmospheric neutrinos using external information in hdf5 format.
+doi: 10.7910/dvn/e1nvla
+url_landing: https://dataverse.harvard.edu/citation?persistentId=doi:10.7910/DVN/E1NVLA
+creators:
+- name: Fernandez, Pablo
+  affiliation: Universidade de Santiago de Compostela
+- name: Argüelles-Delgado, Carlos
+  orcid: 0000-0003-4186-4182
+  affiliation: Harvard University
+- name: Jin, Miaochen
+  orcid: 0000-0003-0487-5595
+  affiliation: Harvard University
+- name: Iván Martínez-Soler
+  orcid: 0000-0002-0308-3003
+  affiliation: Universidad Autónoma de Madrid
+publisher:
+  name: Harvard Dataverse
+version: '1.0'
+date_published: 2026
+license: CC0-1.0
+license_url: http://creativecommons.org/publicdomain/zero/1.0
+access: open
+distributions:
+- url: https://doi.org/10.7910/dvn/e1nvla
+  host: institutional
+  role: primary
+sources:
+- atmospheric
+topics:
+- oscillation
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:"Harvard Dataverse"
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,47 @@
+id: single-source-class-diffuse-flux-models
+type: model
+title: Supplementary model data for "Single-source-class interpretation of the diffuse astrophysical neutrino flux"
+short: 'Model data: single-source-class interpretation of the diffuse astrophysical neutrino flux'
+description: 'Model data: single-source-class interpretation of the diffuse astrophysical neutrino flux'
+doi: 10.5281/zenodo.19820788
+url_landing: https://zenodo.org/doi/10.5281/zenodo.19820788
+creators:
+- name: Winter, Walter
+  affiliation: Deutsches Elektronen-Synchrotron DESY
+- name: Fiorillo, Damiano
+  affiliation: Istituto Nazionale di Fisica Nucleare, Sezione di Napoli
+- name: Buson, Sara
+  orcid: 0000-0002-3308-324X
+  affiliation: Deutsches Elektronen-Synchrotron DESY
+publisher:
+  name: Zenodo
+version: v0
+date_published: '2026-04-27'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.19820788
+  host: zenodo
+  role: primary
+sources:
+- astrophysical
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

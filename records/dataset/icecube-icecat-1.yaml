@@ -40,6 +40,10 @@ distributions:
 - url: https://doi.org/10.7910/DVN/SCRUCD
   host: dataverse
   role: primary
+- url: https://doi.org/10.26093/cds/vizier.22690025
+  host: institutional
+  role: mirror
+  label: IceCube Event Catalog of Alert Tracks (ICECAT-1)
 references:
 - doi: 10.3847/1538-4365/acfa95
   relation: describes

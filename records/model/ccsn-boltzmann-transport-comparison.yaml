@@ -1,0 +1,54 @@
+id: ccsn-boltzmann-transport-comparison
+type: model
+title: A Detailed Comparison Of Multi-Dimensional Boltzmann Neutrino Transport Methods In Core-Collapse Supernovae
+short: Comparison of multi-dimensional Boltzmann neutrino transport in core-collapse supernovae (Richers et al. 2017)
+description: 'This dataset contains results of 1D and 2D static neutrino transport calculations using discrete ordinates and Monte Carlo methods, as described in the 2017 paper by the same name. The results include the neutrino momentum space grids used for the simulations, the full spectral and angular distribution functions, energy-dependent angular moments of the distribution functions, and neutrino heating rates. The HDF5 dataset name corresponds to the simulation of the same name in the 2017 paper, Table 1. Also included are the fluid backgrounds and opacities. See the readme for a description of all quantities in the datasets.
+
+
+  There are also two simulation setups including all initial conditions and parameters for 1D and 2D Monte Carlo calculations using the open-source code Sedonu. This accompanies Sedonu commit 8bd509b27aa0461df26b194df65b4526d6c153fe.'
+doi: 10.5281/zenodo.807765
+url_landing: https://zenodo.org/record/807765
+creators:
+- name: Richers, Sherwood
+  affiliation: Caltech
+- name: Nagakura, Hiroki
+  affiliation: Caltech
+- name: Ott, Christian
+  affiliation: Caltech, YITP
+- name: Dolence, Joshua
+  affiliation: Los Alamos National Lab
+- name: Sumiyoshi, Kohsuke
+  affiliation: Numazu College of Technology
+- name: Yamada, Shoichi
+  affiliation: Waseda University
+publisher:
+  name: Zenodo
+date_published: '2017-06-14'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.807765
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 20.0
+    citations: 2
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

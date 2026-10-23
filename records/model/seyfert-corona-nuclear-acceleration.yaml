@@ -1,0 +1,49 @@
+id: seyfert-corona-nuclear-acceleration
+type: model
+title: Multimessenger Constraints on Nuclear Acceleration in Neutrino-Emitting Seyfert Coronae
+short: 'Nuclear cascades in neutrino-emitting Seyfert coronae: model outputs and scripts'
+description: 'Data and plotting scripts for nuclear cascades in Seyfert coronae
+
+
+  This archive contains selected model outputs and standalone Python scripts for plotting cosmic-ray distributions, interaction rates, nuclear cascades, and radiation spectra for NGC 1068 and NGC 7469. It also includes the Fe momentum-diffusion sensitivity test and a nuclear Bethe–Heitler (BH) pair-radiation comparison.
+
+
+  The scripts read saved data; they do not rerun acceleration, nuclear transport, or radiation calculations.'
+doi: 10.5281/zenodo.23220903
+url_landing: https://zenodo.org/doi/10.5281/zenodo.23220903
+creators:
+- name: Yuan, Chengchao
+  orcid: 0000-0003-0327-6136
+  affiliation: Université Libre de Bruxelles
+publisher:
+  name: Zenodo
+version: 0.1.0
+date_published: '2026-10-20'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.23220903
+  host: zenodo
+  role: primary
+sources:
+- astrophysical
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

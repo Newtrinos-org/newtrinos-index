@@ -1,0 +1,47 @@
+id: presn-trigger
+type: software
+title: 'presn-trigger: Systematic Pre-Supernova Neutrino Trigger Pipeline'
+short: 'presn-trigger: pre-supernova neutrino trigger pipeline across progenitor models'
+description: Reproducible pipeline for evaluating pre-supernova neutrino trigger performance across published progenitor models. Implements the full chain from SNEWPY-based luminosity extraction through detector response, Poisson Monte Carlo injection, sliding-window cumulative significance, isotonic calibration, and tiered alert logic. Applied to nine models from four independent simulation groups (Yoshida 2016, Kato 2017, Patton 2017, Odrzywolek 2010) spanning 12–30 solar masses.
+doi: 10.5281/zenodo.19243986
+url_landing: https://zenodo.org/doi/10.5281/zenodo.19243986
+creators:
+- name: Balfagon, Christian
+publisher:
+  name: Zenodo
+date_published: '2026-03-27'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.19243986
+  host: zenodo
+  role: primary
+relations:
+- rel: uses
+  target: snewpy
+sources:
+- supernova
+topics:
+- multi-messenger
+software:
+  purposes:
+  - sensitivity
+  repository: https://doi.org/10.5281/zenodo.19243986
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

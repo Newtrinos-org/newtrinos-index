@@ -1,0 +1,45 @@
+id: mo100-2vbb-pileup-simulation
+type: dataset
+title: simulation date
+short: Simulated ¹⁰⁰Mo 2νββ pile-up events for pile-up discrimination studies
+description: 'This dataset contains full-process MATLAB simulation data for the discrimination of pile-up events originating from the two-neutrino double-beta decay (2νββ) of 100Mo. First, analytical theoretical formulas are adopted to generate the energy spectra of single decay events and pile-up events. A double-exponential model is used to construct standard pulse waveforms of transition-edge sensor (TES) detectors, followed by superposition of Gaussian white noise with adjustable signal-to-noise ratios (SNRs). Double pile-up waveforms are formed by time-delayed superposition of two individual pulse signals.Four waveform discrimination algorithms are simulated separately: the mean-time method, constant-threshold time-over-threshold (TOT) method, dynamic-threshold TOT method, and rise-time method. For each algorithm, 10,000 single-event waveform samples and 10,000 pile-up waveform samples are generated. The 90% quantile of single-event characteristic parameters is set as the discrimination threshold, and the pile-up rejection efficiency is calculated across varying SNRs.A two-dimensional parameter space scanning covering detector rise time and signal-to-noise ratio is performed to compute the corresponding background indices induced by pile-up events, producing heatmap distribution data. Furthermore, a generalized weighted mean-time algorithm is developed and combined with the TOT and rise-time methods, to compare the discrimination performance of optimized composite algorithms.All data are pure numerical simulation outputs without any experimental measured raw data. The dataset is exclusively utilized for evaluating the performance of background suppression algorithms in neutrinoless double-beta decay experiments employing cryogenic scintillating bolometers.'
+doi: 10.57760/sciencedb.j00186.01241
+url_landing: https://www.scidb.cn/detail?dataSetId=3030114877cf419e930103ff24c6a1e1
+creators:
+- name: Wangyu
+  affiliation: China
+- name: Jianjie Zhang
+  affiliation: China
+publisher:
+  name: Science Data Bank
+version: V1
+date_published: '2026-09-03'
+date_updated: '2026-08-12'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.57760/sciencedb.j00186.01241
+  host: institutional
+  role: primary
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,51 @@
+id: cevns-bradkav
+type: software
+title: CEvNS
+short: 'CEvNS: cross sections, recoil spectra and new-physics constraints from COHERENT-2017 (Python)'
+description: Code for calculating Coherent Elastic Neutrino-Nucleus Scattering (CEvNS) cross sections and recoil spectra. Also includes code for obtaining New Physics constraints from the COHERENT-2017 results.
+url_landing: https://github.com/bradkav/CEvNS
+owner:
+  name: bradkav
+  kind: person
+date_published: '2017-01-25'
+date_updated: '2024-05-06'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/bradkav/CEvNS
+  host: github
+  role: primary
+  formats:
+  - source-code
+experiments:
+- coherent
+sources:
+- spallation
+- reactor
+topics:
+- cross-section
+- nsi
+channels:
+- cevns
+software:
+  repository: https://github.com/bradkav/CEvNS
+  languages:
+  - Jupyter Notebook
+  purposes:
+  - nuclear-model
+  - sensitivity
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrinos stars:>=3
+    harvested: '2026-10-23'
+    score: 36.0
+    stars: 18
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

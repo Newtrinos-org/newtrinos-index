@@ -1,0 +1,63 @@
+id: icecube-caz-blazar-light-curves
+type: dataset
+title: IceCube neutrinos-CAZ blazar light curves assoc.
+short: IceCube neutrinos vs CAZ blazar radio light curves (Kouch, Hovatta et al., VizieR)
+description: IceCube neutrinos vs CAZ blazar radio light curves (Kouch, Hovatta et al., VizieR)
+doi: 10.26093/cds/vizier/bc-p4/ldid
+url_landing: https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/708/A383
+creators:
+- name: Kouch P.M
+  orcid: 0000-0002-9328-2750
+  affiliation: Department of Physics and Astronomy, University of Turku, FI-20014, Turku, Finland
+- name: Hovatta T
+  orcid: 0000-0002-2024-8199
+  affiliation: Finnish Centre for Astronomy with ESO (FINCA), Quantum, Vesilinnantie 5, University of Turku, FI-20014, Turku, Finland
+- name: Lindfors E
+  orcid: 0000-0002-9155-6199
+  affiliation: Department of Physics and Astronomy, University of Turku, FI-20014, Turku, Finland
+- name: Liodakis I
+  orcid: 0000-0001-9200-4006
+  affiliation: Institute of Astrophysics, Foundation for Research and Technology-Hellas, GR-71110, Heraklion, Greece
+- name: Koljonen K.I.I
+  orcid: 0000-0002-9677-1533
+  affiliation: Institutt for Fysikk, Norwegian University of Science and Technology, Høgskloreringen 5, Trondheim, 7491, Norway
+- name: Paggi A
+  orcid: 0000-0002-5646-2410
+  affiliation: Institute of Astrophysics, Foundation for Research and Technology-Hellas, GR-71110, Heraklion, Greece
+publisher:
+  name: Centre de Donnees Strasbourg (CDS)
+date_published: 2026
+license: none-stated
+license_url: https://cds.unistra.fr/vizier-org/licences_vizier.html
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.26093/cds/vizier/bc-p4/ldid
+  host: institutional
+  role: primary
+references:
+- doi: 10.1051/0004-6361/202557584
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

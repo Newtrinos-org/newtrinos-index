@@ -1,0 +1,45 @@
+id: titus-gallery-framework
+type: software
+title: gallery-framework
+short: 'TITUS gallery-framework: event display for the Fermilab SBN detectors'
+description: The event display for SBN at Fermilab
+url_landing: https://doi.org/10.3390/instruments4040031
+owner:
+  name: TITUS-EVD
+  kind: organization
+date_published: '2017-03-09'
+date_updated: '2026-03-09'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/TITUS-EVD/gallery-framework
+  host: github
+  role: primary
+  formats:
+  - source-code
+experiments:
+- sbnd
+- icarus
+sources:
+- accelerator
+software:
+  repository: https://github.com/TITUS-EVD/gallery-framework
+  languages:
+  - C++
+  purposes:
+  - plotting
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrino stars:>=3
+    harvested: '2026-10-23'
+    score: 10.0
+    stars: 5
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

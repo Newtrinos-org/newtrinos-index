@@ -1,0 +1,49 @@
+id: km3net-clb-embedded-software
+type: software
+title: Embedded software of the KM3NeT central logic board
+short: Embedded software of the KM3NeT central logic board
+description: The KM3NeT Collaboration is building and operating two deep sea neutrino telescopes at the bottom of the Mediterranean Sea. The telescopes consist of latices of photomultiplier tubes housed in pressure-resistant glass spheres, called digital optical modules and arranged in vertical detection units. The two main scientific goals are the determination of the neutrino mass ordering and the discovery and observation of high-energy neutrino sources in the Universe. Neutrinos are detected via the Cherenkov light, which is induced by charged particles originated in neutrino interactions. The photomultiplier tubes convert the Cherenkov light into electrical signals that are acquired and timestamped by the acquisition electronics. Each optical module houses the acquisition electronics for collecting and timestamping the photomultiplier signals with one nanosecond accuracy. Once finished, the two telescopes will have installed more than six thousand optical acquisition nodes, completing one of the more complex networks in the world in terms of operation and synchronization. The embedded software running in the acquisition nodes has been designed to provide a framework that will operate with different hardware versions and functionalities. The hardware will not be accessible once in operation, which complicates the embedded software architecture. The embedded software provides a set of tools to facilitate remote manageability of the deployed hardware, including safe reconfiguration of the firmware. This paper presents the architecture and the techniques, methods and implementation of the embedded software running in the acquisition nodes of the KM3NeT neutrino telescopes.
+doi: 10.17632/s847hpsns4
+url_landing: https://data.mendeley.com/datasets/s847hpsns4
+creators:
+- name: Ballantyne, John
+publisher:
+  name: Mendeley Data
+date_published: '2023-12-12'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.17632/s847hpsns4
+  host: institutional
+  role: primary
+references:
+- doi: 10.1016/j.cpc.2023.109036
+  relation: describes
+experiments:
+- km3net
+sources:
+- none
+topics:
+- detector-response
+software:
+  repository: https://doi.org/10.17632/s847hpsns4
+  purposes:
+  - tooling
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.9
+    citations: 0
+    views: 86
+    downloads: 9
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

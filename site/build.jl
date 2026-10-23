@@ -55,6 +55,12 @@ card_score(rec) = count(s -> !isempty(strip(string(get(get(rec, "card", Dict()),
 # ------------------------------------------------------------------------------------------------
 # page frame (shared look with newtrinos-verifications)
 # ------------------------------------------------------------------------------------------------
+"Short content hash of the site assets, appended to their URLs so browsers fetch new versions after a deploy"
+const ASSET_VERSION = let io = IOBuffer()
+    for f in ("style.css", "app.js"); write(io, read(joinpath(@__DIR__, "assets", f))); end
+    string(hash(take!(io)), base = 16)[1:8]
+end
+
 function page(title, body; depth = 0, description = SITE.tagline, active = "", head = "")
     r = depth == 0 ? "./" : "../"^depth
     nav(href, label, key) = """<a href="$r$href"$(active == key ? " class=\"active\"" : "")>$label</a>"""
@@ -67,7 +73,7 @@ function page(title, body; depth = 0, description = SITE.tagline, active = "", h
 <title>$(esc(title))</title>
 <meta name="description" content="$(esc(description))">
 <link rel="icon" type="image/svg+xml" href="$(r)assets/logo.svg">
-<link rel="stylesheet" href="$(r)assets/style.css">
+<link rel="stylesheet" href="$(r)assets/style.css?v=$(ASSET_VERSION)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 $head</head>
@@ -95,7 +101,7 @@ $body
     the catalogued resources keep their own licences · exports: <a href="$(r)index.json">JSON</a>, <a href="$(r)catalog.jsonld">JSON-LD</a>, <a href="$(r)catalog.csv">CSV</a>
   </div>
 </footer>
-<script src="$(r)assets/app.js"></script>
+<script src="$(r)assets/app.js?v=$(ASSET_VERSION)"></script>
 </body>
 </html>
 """

@@ -1,0 +1,57 @@
+id: nn-mass-ordering-nova-like
+type: dataset
+title: 'Companion data for "Predicting the Neutrino Mass Ordering Using Neural Networks": pre-trained models and training dataset'
+short: 'Neural-network vs likelihood mass-ordering determination in a NOvA-like experiment: models and training data'
+description: 'Companion data for the study comparing a neural-network classifier against standard log-likelihood (LLH) minimisation for determining the neutrino mass ordering (Normal vs Inverted) in a NOvA-like long-baseline experiment, described in https://arxiv.org/abs/2606.03745This archive (companion_data.tar.gz) contains the pre-trained Keras models and the 2-million-sample training dataset needed to reproduce the figures in the paper without regenerating the data from scratch.Unpack it into the root of the analysis code repository.
+
+
+  Contents - train_sample.pkl — 3-flavour training dataset (2 M Poisson-fluctuated pseudo-spectra) - MO_model.h5 — trained 3-flavour mass-ordering NN classifier - dm2_model.h5 — trained 2-flavour Δm² NN regressor - NO_output.pkl, IO_output.pkl — 3-flavour 1000-toy results - 2f_results.pkl — 2-flavour 1000-toy + bootstrap resultsAnalysis code: https://github.com/universityofsussex-mps/nn-vs-llh-mass-ordering'
+doi: 10.5281/zenodo.20492585
+url_landing: https://zenodo.org/doi/10.5281/zenodo.20492585
+creators:
+- name: Junqueira de Castro Bezerra, Thiago
+  orcid: 0000-0002-0424-7903
+  affiliation: University of Sussex
+- name: Asquith, Lily
+  orcid: 0000-0001-8035-7162
+  affiliation: University of Sussex
+- name: Bannister, Emerson
+  orcid: 0000-0002-7535-5856
+- name: Shorrock, Wilf
+  orcid: 0000-0002-7221-1910
+  affiliation: University of Sussex
+publisher:
+  name: Zenodo
+version: '1.0'
+date_published: '2026-06-01'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.20492585
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2606.03745'
+  relation: describes
+sources:
+- accelerator
+topics:
+- mass-ordering
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

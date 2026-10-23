@@ -20,3 +20,5 @@
 - {id: LGPL-2.1-or-later, label: LGPL 2.1 or later}
 - {id: LGPL-3.0-or-later, label: LGPL 3.0 or later}
 - {id: MPL-2.0, label: MPL 2.0}
+- {id: AGPL-3.0-only, label: AGPL 3.0 only}
+- {id: BSD-3-Clause-Clear, label: BSD 3-Clause Clear}

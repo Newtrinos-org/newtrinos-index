@@ -1,0 +1,50 @@
+id: nugraph2-graph-dataset
+type: dataset
+title: NuGraph2 graph dataset
+short: 'NuGraph2: processed MicroBooNE open-data graph dataset and trained model checkpoint'
+description: 'This dataset contains the processed graph dataset and trained model checkpoint for the NuGraph2 model architecture, as described in arXiv:2403.11872, compressed into a single zip archive. The graph dataset is derived from the MicroBooNE open dataset, and is stored in HDF5 file format as NuGraph2-paper.gnn.h5. A trained model architecture is also provided as NuGraph2-paper.ckpt. The repository containing the dataloader and model architecture used to interface with this dataset is available on GitHub, and can be installed via PyPi or conda.
+
+
+  We acknowledge the MicroBooNE Collaboration for making publicly available the data sets [DOIs 10.5281/zenodo.8370883 and 10.5281/zenodo.7261921] employed in this work. These data sets consist of simulated neutrino interactions from the Booster Neutrino Beamline overlaid on top of cosmic data collected with the MicroBooNE detector [2017 JINST 12 P02017].'
+doi: 10.5281/zenodo.12169755
+url_landing: https://zenodo.org/doi/10.5281/zenodo.12169755
+creators:
+- name: hewes, v
+  orcid: 0000-0001-8637-3067
+  affiliation: University of Cincinnati
+publisher:
+  name: Zenodo
+date_published: '2024-06-19'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.12169755
+  host: zenodo
+  role: primary
+relations:
+- rel: uses
+  target: nugraph
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- detector-response
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

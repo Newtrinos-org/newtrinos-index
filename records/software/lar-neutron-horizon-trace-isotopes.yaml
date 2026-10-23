@@ -1,0 +1,56 @@
+id: lar-neutron-horizon-trace-isotopes
+type: software
+title: 'Trace isotopes set the neutron horizon of liquid argon: analysis code and simulation data'
+short: 'Trace isotopes and the neutron horizon of liquid argon: code and simulation data'
+description: 'This record contains the analysis code and supporting simulation data for the manuscript Trace isotopes set the neutron horizon of liquid argon.
+
+
+  The files include Python scripts for neutron cross-section comparisons, analysis of ARTIE transmission data, effective argon-36 constraints and neutron transport calculations. FLUKA input decks and per-cycle scoring outputs are provided for the long-distance transport calculations and the DUNE-scale and ProtoDUNE-sized detector models.
+
+
+  The repository includes the numerical records used to study argon-41 capture distributions, together with run identifiers, processed nuclear-data checksums and instructions for reproducing the analyses.
+
+
+  The transport simulations used FLUKA 4-5.2 and neutron evaluations including JEFF-3.3, JENDL-5, ENDF/B-VIII.1 and JEFF-4.0. FLUKA and third-party nuclear-data libraries are not redistributed. The original experimental measurements are attributed to ARTIE and the corresponding nuclear-data sources.'
+doi: 10.5281/zenodo.23238538
+url_landing: https://zenodo.org/doi/10.5281/zenodo.23238538
+creators:
+- name: MAGHRBI, YASSER
+  orcid: 0000-0002-4960-7458
+publisher:
+  name: Zenodo
+date_published: '2026-10-08'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.23238538
+  host: zenodo
+  role: primary
+experiments:
+- dune
+sources:
+- none
+topics:
+- detector-response
+software:
+  purposes:
+  - detector-simulation
+  repository: https://doi.org/10.5281/zenodo.23238538
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

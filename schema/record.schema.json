@@ -511,7 +511,7 @@
     },
     "experiments": {
       "items": {
-        "enum": ["homestake", "gallex", "gno", "sage", "best", "kamiokande", "super-k", "hyper-k", "sno", "sno-plus", "borexino", "kamland", "daya-bay", "double-chooz", "chooz", "reno", "juno", "bugey", "prospect", "stereo", "danss", "neos", "k2k", "t2k", "nova", "minos", "opera", "icarus", "microboone", "sbnd", "miniboone", "lsnd", "karmen", "minerva", "dune", "coherent", "conus", "amanda", "icecube", "km3net", "antares", "baikal-gvd", "katrin", "gerda", "legend", "cuore", "kamland-zen", "exo-200", "nomad", "anl-12ft", "bnl-7ft", "argoneut", "majorana"],
+        "enum": ["homestake", "gallex", "gno", "sage", "best", "kamiokande", "super-k", "hyper-k", "sno", "sno-plus", "borexino", "kamland", "daya-bay", "double-chooz", "chooz", "reno", "juno", "bugey", "prospect", "stereo", "danss", "neos", "k2k", "t2k", "nova", "minos", "opera", "icarus", "microboone", "sbnd", "miniboone", "lsnd", "karmen", "minerva", "dune", "coherent", "conus", "amanda", "icecube", "km3net", "antares", "baikal-gvd", "katrin", "gerda", "legend", "cuore", "kamland-zen", "exo-200", "nomad", "anl-12ft", "bnl-7ft", "argoneut", "majorana", "connie", "ninja", "ccfr", "charm", "nutev", "chorus", "sciboone"],
         "x-vocab": "experiments"
       },
       "type": "array",
@@ -570,7 +570,7 @@
       "$ref": "#/definitions/text_list"
     },
     "license": {
-      "enum": ["none-stated", "unknown", "proprietary", "CC0-1.0", "CC-BY-4.0", "CC-BY-3.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "ODbL-1.0", "MIT", "BSD-2-Clause", "BSD-3-Clause", "Apache-2.0", "GPL-2.0-only", "GPL-2.0-or-later", "GPL-3.0-only", "GPL-3.0-or-later", "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-3.0-or-later", "MPL-2.0"],
+      "enum": ["none-stated", "unknown", "proprietary", "CC0-1.0", "CC-BY-4.0", "CC-BY-3.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "ODbL-1.0", "MIT", "BSD-2-Clause", "BSD-3-Clause", "Apache-2.0", "GPL-2.0-only", "GPL-2.0-or-later", "GPL-3.0-only", "GPL-3.0-or-later", "LGPL-2.1-only", "LGPL-2.1-or-later", "LGPL-3.0-or-later", "MPL-2.0", "AGPL-3.0-only", "BSD-3-Clause-Clear"],
       "x-maps-to": "DataCite rights (SPDX)",
       "x-vocab": "licenses"
     },

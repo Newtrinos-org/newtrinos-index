@@ -1,0 +1,52 @@
+id: atlas-hnl-reinterpretation-ancillary
+type: result
+title: 'Ancillary files for "Reinterpreting the ATLAS bounds on heavy neutral leptons in a realistic neutrino oscillation model [arXiv: 2107.12980]"'
+short: ATLAS heavy-neutral-lepton bounds reinterpreted in realistic oscillation-compatible HNL models
+description: '(Description copied from Appendix A "Ancillary files" of the companion paper) In order to simplify the interpretation of experimental results within realistic HNL models, we are including a number of data files along with the present publication. They can be used to generate the relevant signal samples, or to implement the extrapolation method presented in section 3.2. Card files for the Monte-Carlo event generation The /attachments/card_files folder contains the MadGraph card files (ending in .dat) and scripts (ending in .txt) for generating the signal samples used in this analysis, as well as for computing the total HNL width. Due to the OSSF veto, only processes with no opposite-charge same-flavor lepton pairs have been included. Additional relevant processes can easily be added by modifying the generate and add process lines in the *.txt files. All samples (except the ones used to compute the HNL width, which are generated at parton level) are generated at leading order, include up to two hard jets, and are showered and hadronized using Pythia 8. This is essential for obtaining a realistic W spectrum. The shower parameters could probably benefit from further tuning, and further improvements in the W spectrum accuracy are expected at NLO (using a suitable model). To allow computing the signal efficiencies, all cuts have been disabled in the run card (with the exception of the maximum \(|\eta_{\mathrm{jet}}|\) which needs to be set to 5 for correct matching). Signal cross sections The cross sections for the various processes considered in this analysis, as well as the total HNL width (both computed using MadGraph as described in section 3.2), are provided as JSON files in the /attachments/cross_sections folder. The file total_hnl_width.json contains the total HNL width \(\hat{\Gamma}_{\alpha}(M_N)\) (expressed in GeV), computed for the 5 mass points used in this analysis, and under the assumption of unit mixing with a single flavor \(\alpha\), for each flavor. The total HNL width can then be computed for any combinations of mixing angles using eq. (3.2). The file is organized as two nested dictionaries, with the first key denoting the HNL mass \(M_N\), and the second one the flavor \(\alpha\) for which the total width \(\hat{\Gamma}_{\alpha}(M_N)\) has been computed for a unit mixing angle \(|\Theta_{\alpha}|^2 = 1\) (with Wtot_e for \(\alpha=e\), Wtot_mu for \(\mu\) and Wtot_tau for \(\tau\)). The file cross_sections.json contains the reference cross sections \(\sigma_P^{\mathrm{ref}}\) (in pb) for all the processes P considered in this analysis, expressed for \(|\Theta|_{\mathrm{ref}}^2 = 1\) and \(\Gamma_{\mathrm{ref}} = 10^{-5}\,\mathrm{GeV}\). The file is organized as two nested dictionaries, with the first key denoting the HNL mass \(M_N \) and the second the process P. The correspondence between the key and the physical process can be found in table 7. Signal efficiencies The efficiencies resulting from the event selection described in section 3.1, as well as their parametrization according to eq. (3.6) (as discussed in section 3.3) can respectively be found in the files efficiencies.json and fitted_efficiencies.json in the /attachments/efficiencies folder. The file efficiencies.json is organized as follows. The data is located in a triply nested dictionary under the data key: the first level corresponds to the HNL mass hypothesis \(M_N\), the second to the process key (cf. table 7) and the third to the \(M(l_{\mathrm{sublead}},l'')\) bin for which the efficiency is computed. The values of the bottom-most dictionary are lists containing the efficiencies for a number of HNL lifetimes, as listed in meters in levels/lifetime. Finally, the file fitted_efficiencies.json is also organized as a triply nested dictionary, with the first level corresponding to the HNL mass \(M_N\), the second to the process key, and where the third level denotes the fit parameter from eq. (3.6). tau0 is for \(\tau_0\), epsilon0_total for \(\epsilon_0\) (the unbinned prompt efficiency), and epsilon0_binned is a list containing the prompt efficiencies \(\epsilon_{0,b}\) for the five \(M(l_{\mathrm{sublead}},l'')\) bins b (in the same order as in efficiencies.json). The layout described here (or a similar one) can be used by experiments to report their signal efficiencies in a way that allows theorists to compute the expected signal for arbitrary choices of mixing angles.'
+doi: 10.5281/zenodo.5547940
+url_landing: https://zenodo.org/record/5547940
+creators:
+- name: Tastet, Jean-Loup
+  orcid: 0000-0003-1763-378X
+  affiliation: Niels Bohr Institute and EPFL
+- name: Ruchayskiy, Oleg
+  orcid: 0000-0001-8073-3068
+  affiliation: Niels Bohr Institute
+- name: Timiryasov, Inar
+  orcid: 0000-0001-9547-1347
+  affiliation: EPFL
+publisher:
+  name: Zenodo
+version: v1.0
+date_published: '2021-07-27'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.5547940
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2107.12980'
+  relation: describes
+sources:
+- none
+topics:
+- bsm-other
+data:
+  levels:
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

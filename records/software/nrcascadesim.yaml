@@ -1,0 +1,57 @@
+id: nrcascadesim
+type: software
+title: '`nrCascadeSim` - A simulation tool for nuclear recoil cascades resulting from neutron capture'
+short: 'nrCascadeSim: nuclear-recoil cascades after neutron capture (calibration of CEvNS / DM detectors)'
+description: The purpose of this code is to simulate energy deposits due to cascading of energy levels following neutron capture. This code was written for use in nuclear recoil calibration for dark matter detectors, but may be useful in other particle physics applications as well, including coherent elastic neutrino nucleus scattering (CEνNS). Currently, we use a constant acceleration model for the atom slowing down and calculation of the ionization energy. We also use the Lindhard model for calculating the ionization, but the output is complete enough to allow the user to choose their ionization yield model after simulation. The code currently supports Neon, Argon, Silicon, and Germanium cascades slowing down in a lattice of like material.
+doi: 10.5281/zenodo.5579858
+url_landing: https://zenodo.org/record/5579858
+creators:
+- name: Villano, Anthony
+  orcid: 0000-0002-3893-7259
+  affiliation: University of Colorado Denver
+- name: Harris, Kathryn
+  orcid: 0000-0001-5406-8367
+  affiliation: University of Colorado Denver
+- name: Brown, Staci
+  affiliation: University of New Mexico
+publisher:
+  name: Zenodo
+version: v1.0.6
+date_published: '2021-10-20'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.5579858
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2104.02742'
+  relation: describes
+sources:
+- none
+topics:
+- detector-response
+channels:
+- cevns
+software:
+  purposes:
+  - detector-simulation
+  repository: https://doi.org/10.5281/zenodo.5579858
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

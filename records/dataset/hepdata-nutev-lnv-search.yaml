@@ -1,0 +1,52 @@
+id: hepdata-nutev-lnv-search
+type: dataset
+title: 'HEPData: Search for the lepton number violating process anti-nu/mu e- --> mu- anti-nu/e.'
+short: 'HEPData: NuTeV search for lepton-number-violating ν̄μ e⁻ → μ⁻ ν̄e'
+description: The NuTeV experiment at Fermilab has used a sign-selected neutrino beam to perform a search for the lepton number violating process $\bar{\nu}_mu e^- \to \mu^- \bar{\nu}_e$, and to measure the cross-section of the Standard Model inverse muon decay process $\nu_{\mu} e^- \to \mu^- \nu_e$. NuTeV measures the inverse muon decay asymptotic cross-section $\sigma/E$ to be 13.8 $\pm$ 1.2 $\pm$ 1.4 x $10^{-42} cm^2$/GeV. The experiment also observes no evidence for lepton number violation and places one of the most restrictive limits on the LNV/IMD cross-section ratio at $\sigma (\bar{\nu}_{\mu} e^- \to \mu^- \bar{\nu}_e) /\sigma (\nu_{\mu}e^- \to \mu^- \nu_e$) $\le$ 1.7% at 90% C.L. for V-A couplings and $\le$ 0.6% for scalar couplings.
+doi: 10.17182/hepdata.42668
+identifiers:
+  inspire: 555474
+  hepdata: ins555474
+url_landing: https://www.hepdata.net/record/ins555474
+creators:
+- name: NuTeV Collaboration
+  kind: collaboration
+date_published: '2001'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins555474
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/PhysRevLett.87.071803
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- nutev
+sources:
+- accelerator
+topics:
+- bsm-other
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: NuTeV
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,46 @@
+id: larnd-sim
+type: software
+title: larnd-sim
+short: 'larnd-sim: simulation of pixelated LArTPCs (DUNE ND-LAr)'
+description: Simulation framework for a pixelated Liquid Argon TPC
+url_landing: https://github.com/DUNE/larnd-sim
+owner:
+  name: DUNE
+  kind: organization
+date_published: '2020-04-01'
+date_updated: '2026-10-19'
+license: Apache-2.0
+access: open
+distributions:
+- url: https://github.com/DUNE/larnd-sim
+  host: github
+  role: primary
+  formats:
+  - source-code
+experiments:
+- dune
+sources:
+- accelerator
+topics:
+- detector-response
+software:
+  repository: https://github.com/DUNE/larnd-sim
+  languages:
+  - Python
+  purposes:
+  - detector-simulation
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrino stars:>=3
+    harvested: '2026-10-23'
+    score: 22.0
+    stars: 11
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

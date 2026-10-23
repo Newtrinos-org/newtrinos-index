@@ -1,0 +1,97 @@
+id: pks0215-vlba-neutrino-coincidence
+type: dataset
+title: Rapid jet ejection from PKS 0215+015 coincident with a high-energy neutrino event - VLBA BE082 data
+short: VLBA data of the PKS 0215+015 jet ejection coincident with a high-energy neutrino
+description: 'This repository contains the VLBA data presented in Eppel et al. (2026) "Rapid jet ejection from PKS 0215+015 coincident with a high-energy neutrino event"
+
+
+  Self-calibrated .uvf files are located in the "uvf_files" folder."clean_windows" includes all .win files used for the final cleaning"fits_images" includes all Stokes I images"fits_images_q" includes all Stokes Q images"fits_images_u" includes all Stokes U images"stacked_fits_maps" includes full polarization stacked maps for 15, 24 and 43 GHz"model_mod_files" includes all .mod files readable with DIFMAP (or plain text editor).'
+doi: 10.5281/zenodo.17913817
+url_landing: https://zenodo.org/doi/10.5281/zenodo.17913817
+creators:
+- name: Eppel, Florian
+  orcid: 0000-0001-7112-9942
+  affiliation: University of Würzburg
+- name: Kadler, Matthias
+  orcid: 0000-0001-5606-6154
+  affiliation: University of Würzburg
+- name: Ros, Eduardo
+  affiliation: Max-Planck-Institut für Radioastronomie
+- name: Benke, Petra
+  orcid: 0009-0006-4186-9978
+  affiliation: Max-Planck-Institut für Radioastronomie
+- name: Debbrecht, Lena Carolin
+  orcid: 0009-0003-8342-4561
+  affiliation: Max-Planck-Institut für Radioastronomie
+- name: Eich, Julia
+  affiliation: University Würzburg
+- name: Edwards, Phil
+  affiliation: CSIRO Space and Astronomy
+- name: Giroletti, Marcello
+  orcid: 0000-0002-8657-8852
+  affiliation: National Institute for Astrophysics
+- name: Gokus, Andrea
+  orcid: 0000-0002-5726-5216
+  affiliation: Washington University in St. Louis
+- name: Hämmerich, Steven
+- name: Heßdörfer, Jonas
+  affiliation: University Würzburg
+- name: Janssen, Michael
+  affiliation: Radboud University Nijmegen
+- name: Kim, Sanghyun
+  affiliation: Korea Astronomy and Space Science Institute
+- name: Kirchner, Dana
+  affiliation: University Würzburg
+- name: Kovalev, Yuri
+  orcid: 0000-0001-9303-3263
+  affiliation: Max Planck Institute for Radio Astronomy
+- name: Krichbaum, T. P.
+  orcid: 0000-0002-4892-9586
+  affiliation: Max Planck Institute for Radioastronomy
+- name: Ojha, Roopesh
+  affiliation: National Aeronautics and Space Administration
+- name: Paraschos, Georgios Filippos
+  affiliation: Finnish Centre for Astronomy with ESO
+- name: Rösch, Florian
+  orcid: 0000-0002-9041-8448
+  affiliation: University Würzburg
+- name: Schulga, Wladislaw
+  affiliation: University Würzburg
+- name: Sinapius, Jonas
+  orcid: 0009-0004-8608-0853
+  affiliation: Deutsches Elektronen-Synchrotron DESY
+- name: Stevens, Jamie
+publisher:
+  name: Zenodo
+date_published: '2026-02-27'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.17913817
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2603.02325'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

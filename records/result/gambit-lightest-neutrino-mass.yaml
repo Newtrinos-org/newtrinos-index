@@ -1,0 +1,45 @@
+id: gambit-lightest-neutrino-mass
+type: result
+title: 'Supplementary Data: Strengthening the bound on the mass of the lightest neutrino with terrestrial and cosmological experiments (arXiv:2009.03287)'
+short: 'GAMBIT: bound on the lightest neutrino mass from terrestrial and cosmological data (scan data)'
+description: 'Supplementary Data Strengthening the bound on the mass of the lightest neutrino with terrestrial and cosmological experiments (arXiv:2009.03287) The files in this record contain data from the scans of the models considered in the GAMBIT paper on neutrino masses. The files consist of 21 .yaml files corresponding to different models, sampling parameters and/or priors 11 final .hdf5 files, containing the results of running GAMBIT with each yaml file 10 .margestats files containing 1D credible regions for parameters and observables, obtained by running getdist on the hdf5 files An example file 3-NHB_Neff2_PC500_pp.pip file for plotting the results of a single hdf5 file with pippi A tarball including all files in this record except the hdf5 files. The different yaml, hdf5 and margestats files corresponding to different models, priors or setttings follow the naming scheme [scan index]-[hierarchy][m_nu0 prior]_[Neff prior]_[scanner]_[extra]_[step].[extension], where scan index = 1-11 hierarchy = NH (normal hierarchy), IH (inverted hierarchy) m_nu0 pior = A (linear-log prior on m_nu0), B (linear prior on m_nu0) Neff prior = 0 (Delta N_eff = 0), 1 (Delta N_eff &gt; 0), 2 (Delta N_eff free) scanner = PC500 (Polychord with 500 live points), DIV10k (Diver with NP=1e4) extra = blank (standard likelihood combination), Lyalpha (likelihood also includes eBOSS DR14 Lyman-alpha BAO scale measurements) step = blank (main scan), pp (postprocessing of outputs of main scan). extension = yaml, margestats, hdf5/hdf5.tar.gz A few caveats to keep in mind: The YAML files are designed to work with the tagged release of GAMBIT 1.5.0, and the pip file is tested with pippi 2.1. They may or may not work with later versions of either software (but you can of course always obtain the version that they do work with via the git history). The pip file is an example only. Users wishing to reproduce the more advanced plots in any of the GAMBIT papers should contact us for tips or scripts, or experiment for themselves. Many of these scripts are in multiple parts and require undocumented manual interventions and steps in order to implement various plot-specific customisations, so please do not expect the same level of polish as for files provided here or in the GAMBIT repo.'
+doi: 10.5281/zenodo.4005381
+url_landing: https://zenodo.org/record/4005381
+creators:
+- name: Workgroup, The GAMBIT Cosmology
+publisher:
+  name: Zenodo
+date_published: '2020-09-08'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.4005381
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2009.03287'
+  relation: describes
+sources:
+- cosmology
+- nuclear-decay
+topics:
+- absolute-mass
+- global-fit
+data:
+  levels:
+  - posterior
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

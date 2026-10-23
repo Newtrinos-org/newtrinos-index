@@ -1,0 +1,77 @@
+id: vartanyan-ccsn-neutrino-signals
+type: model
+title: 11, 12.25, and 14 Neutrino Data
+short: Neutrino signals of 3D core-collapse supernova simulations, 11–100 M☉ (Vartanyan et al.)
+description: Neutrino signals of 3D core-collapse supernova simulations, 11–100 M☉ (Vartanyan et al.)
+doi: 10.5281/zenodo.14397745
+url_landing: https://zenodo.org/doi/10.5281/zenodo.14397745
+creators:
+- name: Vartanyan, David
+  orcid: 0000-0003-1938-9282
+publisher:
+  name: Zenodo
+date_published: '2024-12-11'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.14397745
+  host: zenodo
+  role: primary
+- url: https://doi.org/10.5281/zenodo.14397754
+  host: zenodo
+  role: mirror
+  label: 15.01, 16, and 16.5 Neutrino Data
+- url: https://doi.org/10.5281/zenodo.14397760
+  host: zenodo
+  role: mirror
+  label: 17 and 18.5 Neutrino Data
+- url: https://doi.org/10.5281/zenodo.14751158
+  host: zenodo
+  role: mirror
+  label: 18 Neutrino Data
+- url: https://doi.org/10.5281/zenodo.14397776
+  host: zenodo
+  role: mirror
+  label: 19.56 and 20 Neutrino Data
+- url: https://doi.org/10.5281/zenodo.14751154
+  host: zenodo
+  role: mirror
+  label: 19 Neutrino Data
+- url: https://doi.org/10.5281/zenodo.14401630
+  host: zenodo
+  role: mirror
+  label: 21.68 and 23 Neutrino Data
+- url: https://doi.org/10.5281/zenodo.14400122
+  host: zenodo
+  role: mirror
+  label: 24 and 25 Neutrino Data
+- url: https://doi.org/10.5281/zenodo.14518302
+  host: zenodo
+  role: mirror
+  label: 40, 60, and 100 Neutrino Data
+- url: https://doi.org/10.5281/zenodo.14401801
+  host: zenodo
+  role: mirror
+  label: u8.1, z9.6, 9a, 9b, 9.25, and 9.5 Neutrino Data
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

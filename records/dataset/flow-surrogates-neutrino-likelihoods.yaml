@@ -1,0 +1,52 @@
+id: flow-surrogates-neutrino-likelihoods
+type: dataset
+title: Flow-Based Surrogates for High-Dimensional Likelihoods in Experimental Neutrino Physics
+short: 'Flow-based surrogates for high-dimensional likelihoods: GUNDAM-formatted near-detector pseudo-data and MC'
+description: Dataset of simulated neutrino-nucleus interactions formatted for GUNDAM and used in the Near Detector fit described in the paper, including FHC (neutrino) and RHC (antineutrino) pseudo-data and MC inputs. File-by-file details and usage instructions are provided in README.md.
+doi: 10.5281/zenodo.21104523
+url_landing: https://zenodo.org/doi/10.5281/zenodo.21104523
+creators:
+- name: El Baz, Mathias
+  orcid: 0000-0002-9562-3897
+- name: Giannessi, Lorenzo
+  orcid: 0000-0001-6899-7116
+- name: Blanchet, Adrien
+  orcid: 0000-0002-4992-0161
+  affiliation: University of Geneva
+- name: Sanchez Nieto, Federico
+  orcid: 0000-0003-0320-3623
+  affiliation: University of Geneva
+publisher:
+  name: Zenodo
+date_published: '2026-07-03'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.21104523
+  host: zenodo
+  role: primary
+relations:
+- rel: uses
+  target: gundam
+sources:
+- accelerator
+topics:
+- statistics
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

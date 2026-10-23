@@ -1,0 +1,46 @@
+id: hepdata-nomad-dstar-production
+type: dataset
+title: Study of D*+ production in nu/mu charged current interactions in the NOMAD experiment.
+short: 'HEPData: NOMAD D*⁺ production in νμ CC interactions'
+description: CERN-SPS. Study of charged D* meson production in neutrino charged current interactions. The D*+ yield per CC rate is measured together with distributions and mean values of the Feynman X scaling variable (XL), the transverse momenta (PT) and the production of the total hadronic jet energy carried by the D*+- (Z). Numerical values supplied by F. Juget.
+doi: 10.17182/hepdata.49701
+url_landing: https://www.hepdata.net/record/ins567771
+creators:
+- name: NOMAD Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '1'
+date_published: '2002'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.49701
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1016/s0370-2693(01)01493-9
+  relation: describes
+experiments:
+- nomad
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"NOMAD Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

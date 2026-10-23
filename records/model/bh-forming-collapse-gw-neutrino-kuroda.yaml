@@ -1,0 +1,58 @@
+id: bh-forming-collapse-gw-neutrino-kuroda
+type: model
+title: Gravitational waveforms and neutrino profiles from collapse of rotating massive stars into a black hole
+short: GW waveforms and neutrino profiles from collapse of rotating massive stars into black holes (Kuroda)
+description: 'Gravitational waveforms and neutrino profiles from massive stellar collapse to a BH in 2D axisymmetry.
+
+
+  The progenitor is a zero metallicity 70 Msun model of Takahashi et al. 2014 (10.1088/0004-637X/794/1/40).
+
+
+  All models are reported in https://academic.oup.com/mnrasl/article/533/1/L107/7718093, though without GWs.
+
+
+  GWs only for a non-rotating model (R0B00) are discussed in https://academic.oup.com/mnras/article/526/1/152/7264868.
+
+
+  GWs: From left, file number, time relative to the first bounce (i.e. usual post bounce time) [ms], time relative to the BH formation [ms], Dh+ [cm], where D and h+ are the source distance and the only non-vanishing GW strain observed along equator, respectively. (Note that model R1B12 does not provide GWs from slightly before the BH formation, because of the lack of original simulation datas.)
+
+
+  Neutrinos: From left, file number, time relative to the first bounce (i.e. usual post bounce time) [ms], spherically averaged neutrino luminosity, spherically averaged neutrino mean energy, neutrino luminosity along the pole, neutrino luminosity along the equator, neutrino mean energy along the pole, neutrino mean energy along the equator. Neutrino luminosity and mean energy are for nu_e, bar_nu_e, and nu_x.'
+doi: 10.5281/zenodo.19201847
+url_landing: https://zenodo.org/doi/10.5281/zenodo.19201847
+creators:
+- name: Kuroda, Takami
+  orcid: 0000-0001-5168-6792
+publisher:
+  name: Zenodo
+date_published: '2026-03-24'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.19201847
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+- multi-messenger
+model:
+  quantities:
+  - multi-messenger signals
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

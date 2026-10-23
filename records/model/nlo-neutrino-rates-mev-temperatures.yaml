@@ -1,0 +1,58 @@
+id: nlo-neutrino-rates-mev-temperatures
+type: model
+title: Tabulation and interpolation of NLO neutrino-antineutrino production and scattering rates at MeV temperatures
+short: 'NLO neutrino–antineutrino production and scattering rates at MeV temperatures: tables'
+description: 'This record contains data used in the paper "Neutrino-antineutrino production, annihilation, and scattering at MeV temperatures and NLO accuracy" 2412.03958. Please consult the main text for details on the tabulated coefficients and their proper implementations.
+
+
+  We provide numerical data and an interpolation routine (c-code) for evaluating double-differential rates, intended to facilitate possible studies of the full kinetic equations for neutrino decoupling in the early universe. These data can also be used to obtain integrated quantities, such as the energy density transfer rates, or neutrino interaction rates (e.g. 2312.07015). The QED corrections to the spectral functions were computed using an adapted version of the public code: https://doi.org/10.5281/zenodo.3478143 .
+
+
+  The archive file contains:
+
+
+  grid_ABCD.dat : recorded coefficients A, B, C, D (on p+,p- grid in units of QED plasma temperature)
+
+
+  interpolation.c : code to interpolate and calculate the (integrated) energy density transfer rates
+
+
+  aux/... : additional files needed for multidimensional integration routine "cubature"'
+doi: 10.5281/zenodo.14217712
+url_landing: https://zenodo.org/doi/10.5281/zenodo.14217712
+creators:
+- name: Jackson, Greg
+  orcid: 0000-0003-1283-3264
+  affiliation: Laboratoire de Physique Subatomique et des Technologies Associées
+publisher:
+  name: Zenodo
+version: v1
+date_published: '2024-11-25'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.14217712
+  host: zenodo
+  role: primary
+sources:
+- cosmology
+topics:
+- cross-section
+model:
+  quantities:
+  - interaction rates / cross sections
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,45 @@
+id: ninja-protons-pions-iron
+type: dataset
+title: Data release for the paper "Measurements of protons and charged pions emitted from the $\nu_{\mu}$ charged-current interactions on iron at a mean neutrino energy of 1.49 GeV using a nuclear emulsion detector"
+short: 'NINJA emulsion detector: protons and charged pions from νμ CC interactions on iron'
+description: 'This data release is associated with the paper "Measurements of protons and charged pions emitted from the \(\nu_{\mu}\) charged-current interactions on iron at a mean neutrino energy of 1.49 GeV using a nuclear emulsion detector". It is currently available on arXiv:2203.08367 and to be submitted to Phys. Rev. D. When citing this data release, please cite as well the paper. The provided zip file contains the data as below. event.root: Event by event information of 183 iron-target interactions. plot.root: Plot information as shown in the paper. detector_efficiency.root: Detectrion efficiencies for muons, charged pions, and protons. momentum_resolution.root: Relation between true and reconstructed momentum for muons, charged pions, and protons. misPID.root: Mis-PID rates of protons and pions. syscov.root: Covariance matrices of systematic uncertainties. flux.root: The neutrino flux and the covariance matrix of the flux error. The zip file also contains a README.pdf file with detailed information on the included files. Please read it.'
+doi: 10.5281/zenodo.6355555
+url_landing: https://zenodo.org/record/6355555
+creators:
+- name: Experiment, The NINJA
+publisher:
+  name: Zenodo
+version: '1'
+date_published: '2022-03-16'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.6355555
+  host: zenodo
+  role: primary
+experiments:
+- ninja
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

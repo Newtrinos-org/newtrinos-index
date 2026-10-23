@@ -1,0 +1,54 @@
+id: hepdata-nutev-strange-asymmetry
+type: dataset
+title: 'HEPData: Measurement of the Nucleon Strange-Antistrange Asymmetry at Next-to-Leading Order in QCD from NuTeV Dimuon Data'
+short: 'HEPData: NuTeV strange–antistrange asymmetry from dimuon data (NLO)'
+description: We present a new measurement of the difference between the nucleon strange and antistrange quark distributions from dimuon events recorded by the NuTeV experiment at Fermilab. This analysis is the first to use a complete next to leading order QCD d escription of charm production from neutrino scattering. Dimuon events in neutrino deep inelastic scattering allow direct and independent study of the strange and antistrange content of the nucleon. We find a positive strange asymmetry with a significance of 1.6sigma . We also report a new measurement of the charm mass.
+doi: 10.17182/hepdata.42701
+identifiers:
+  inspire: 774494
+  hepdata: ins774494
+url_landing: https://www.hepdata.net/record/ins774494
+creators:
+- name: NuTeV Collaboration
+  kind: collaboration
+date_published: '2007'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins774494
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/PhysRevLett.99.192001
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- nutev
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- dis
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: NuTeV
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

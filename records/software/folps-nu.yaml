@@ -1,0 +1,44 @@
+id: folps-nu
+type: software
+title: FOLPS-nu
+short: 'FOLPSν: redshift-space power spectrum with massive neutrinos'
+description: FOLPSν is a code for efficiently evaluating the redshift space power spectrum in the presence of massive neutrinos
+url_landing: https://github.com/henoriega/FOLPS-nu
+owner:
+  name: henoriega
+  kind: person
+date_published: '2022-05-28'
+date_updated: '2025-06-22'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/henoriega/FOLPS-nu
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- cosmology
+topics:
+- absolute-mass
+software:
+  repository: https://github.com/henoriega/FOLPS-nu
+  languages:
+  - Jupyter Notebook
+  purposes:
+  - astrophysics
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: neutrino in:name,description stars:>=10
+    harvested: '2026-10-23'
+    score: 22.0
+    stars: 11
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,54 @@
+id: hepdata-ccfr-low-x-structure-functions
+type: dataset
+title: 'HEPData: A first measurement of low x low Q**2 structure functions in neutrino scattering.'
+short: 'HEPData: CCFR low-x, low-Q² structure functions in neutrino scattering'
+description: A new structure function analysis of CCFR deep inelastic nu-N and nubar-N scattering data is presented for previously unexplored kinematic regions down to Bjorken x=0.0045 and Q^2=0.3 GeV^2. Comparisons to charged lepton scattering data from NMC and E665 experiments are made and the behavior of the structure function F2_nu is studied in the limit Q^2 -> 0.
+doi: 10.17182/hepdata.19408
+identifiers:
+  inspire: 537572
+  hepdata: ins537572
+url_landing: https://www.hepdata.net/record/ins537572
+creators:
+- name: CCFR Collaboration
+  kind: collaboration
+date_published: '2001'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins537572
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/PhysRevLett.86.5430
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- ccfr
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- dis
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: CCFR
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

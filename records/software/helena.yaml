@@ -1,0 +1,46 @@
+id: helena
+type: software
+title: 'HELENA: High-Energy Lepto-hadronic Emission and Neutrino Analysis'
+short: 'HELENA: lepto-hadronic jet emission model with photon and neutrino spectra'
+description: HELENA calculates coupled particle transport and photon and neutrino emission in a one-zone steady-state jet model. Its maintained inference and differentiation path is photon-only; neutrino spectra are post-fit predictions. BSD-3-Clause applies to HELENA software, not additional rights in third-party example data or reference products; source-specific notices and attribution are documented in examples/README.md.
+doi: 10.5281/zenodo.22499659
+url_landing: https://zenodo.org/doi/10.5281/zenodo.22499659
+creators:
+- name: Li, Yangji
+publisher:
+  name: Zenodo
+version: v0.1.0
+date_published: '2026-09-06'
+license: BSD-3-Clause
+license_url: https://opensource.org/licenses/BSD-3-Clause
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.22499659
+  host: zenodo
+  role: primary
+sources:
+- astrophysical
+topics:
+- flux
+- multi-messenger
+software:
+  purposes:
+  - astrophysics
+  repository: https://doi.org/10.5281/zenodo.22499659
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

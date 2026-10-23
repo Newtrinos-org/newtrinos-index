@@ -1,0 +1,44 @@
+id: presnnu-presupernova-spectra
+type: model
+title: 'yosshiida/presnnu: Data for presupernova neutrino spectra'
+short: Presupernova neutrino spectra for 12, 15 and 20 M☉ stars (Yoshida)
+description: 'The numerical data of the time variation of the neutrino spectra released from presupernova stars. v1.0: The data of the spectra of neutrinos from 12, 15, and 20 solar-mass during presupernova stage are released. ytui2016: Yoshida, Takahashi, Umeda, & Ishidoshiro (2016, PRD 93, 123012).'
+doi: 10.5281/zenodo.3778014
+url_landing: https://zenodo.org/record/3778014
+creators:
+- name: Yoshida, Takashi
+  orcid: 0000-0002-8967-7063
+publisher:
+  name: Zenodo
+version: v1.0
+date_published: '2020-04-30'
+license: none-stated
+license_notes: 'Zenodo licence id: other-open'
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.3778014
+  host: zenodo
+  role: primary
+  size_bytes: 13248358
+  n_files: 1
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

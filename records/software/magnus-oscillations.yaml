@@ -1,0 +1,50 @@
+id: magnus-oscillations
+type: software
+title: 'Magnus: neutrino oscillation probabilities for any Hermitian Hamiltonian, any number of flavors, and any matter profile'
+short: 'Magnus: oscillation probabilities for any Hamiltonian, number of flavours and matter profile (Magnus expansion)'
+description: Neutrino oscillation probabilities computed with the Magnus expansion, for an arbitrary number of flavors and any Hamiltonian, time-dependent or not. Every truncation of the series lives in the Lie algebra, so the evolution operator it exponentiates is unitary exactly rather than to the accuracy of the truncation.
+doi: 10.5281/zenodo.23160509
+url_landing: https://zenodo.org/doi/10.5281/zenodo.23160509
+creators:
+- name: Bustamante, Mauricio
+  orcid: 0000-0001-6923-0865
+  affiliation: University of Copenhagen
+publisher:
+  name: Zenodo
+version: 1.2.0
+date_published: '2026-10-05'
+license: none-stated
+license_url: https://www.gnu.org/licenses/agpl.txt
+license_notes: 'Zenodo licence id: apgl-v3'
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.23160509
+  host: zenodo
+  role: primary
+  size_bytes: 92559731
+  n_files: 1
+sources:
+- none
+topics:
+- oscillation
+software:
+  purposes:
+  - oscillation-probability
+  repository: https://doi.org/10.5281/zenodo.23160509
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

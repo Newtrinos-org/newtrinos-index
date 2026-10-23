@@ -1,0 +1,46 @@
+id: hepdata-nomad-strange-particles
+type: dataset
+title: A study of strange particle production in nu/mu charged current interactions in the NOMAD experiment.
+short: 'HEPData: NOMAD strange-particle production in νμ CC interactions'
+description: CERN-SPS. Measurement of the yields and ratios of the production of the strange particles K0S, LAMBDA and LAMBDABAR in charged current (CC) neutrino interactions with a broad band neutrino beam (0-200 GeV) of mean energy of 45.3 GeV. The data come from the analysis of 1.3 million muon-neutrino CC interactions collected from 1995-1998.. Numerical values supplied by D Naumov. Note that several of the distributions presented here were not in the paper, but in the supplied data. These are flagged as such.
+doi: 10.17182/hepdata.48925
+url_landing: https://www.hepdata.net/record/ins566751
+creators:
+- name: NOMAD Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '1'
+date_published: '2002'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.48925
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1016/s0550-3213(01)00584-3
+  relation: describes
+experiments:
+- nomad
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"NOMAD Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,43 @@
+id: neutrino-luminosity-gw-memory
+type: model
+title: Neutrino Luminosity for Gravitational Wave Memory
+short: Neutrino luminosities for gravitational-wave memory from CCSN simulations (Vartanyan)
+description: Neutrino luminosities for gravitational-wave memory from CCSN simulations (Vartanyan)
+doi: 10.5281/zenodo.14921461
+url_landing: https://zenodo.org/doi/10.5281/zenodo.14921461
+creators:
+- name: Vartanyan, David
+  orcid: 0000-0003-1938-9282
+publisher:
+  name: Zenodo
+date_published: '2025-02-25'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.14921461
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+- multi-messenger
+model:
+  quantities:
+  - multi-messenger signals
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

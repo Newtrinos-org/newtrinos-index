@@ -1,0 +1,51 @@
+id: pic-fast-flavor-instability-1d
+type: model
+title: Particle-in-cell Simulation of the Neutrino Fast Flavor Instability
+short: 'Particle-in-cell simulation of the neutrino fast flavour instability: data and scripts'
+description: 1D_fiducial.tgz contains the input parameters and simulation output data from the fiducial simulation. Each timestamp with output data is stored in a plt* directory. scripts.tgz contains the data reduction and plotting scripts used in the paper. We require yt to read the data with our scripts. inputs.tgz contains input files for each of the simulations in the paper. The test problem inputs (MSW, bipolar, homogeneous FFI, inhomogeneous FFI) are part of the test suite in Emu. Simulations are run using the version of Emu (v1.1) at http://doi.org/10.5281/zenodo.4423166 or https://github.com/AMReX-Astro/Emu.
+doi: 10.5281/zenodo.4423095
+url_landing: https://zenodo.org/record/4423095
+creators:
+- name: Richers, Sherwood
+  orcid: 0000-0001-5031-6829
+  affiliation: University of California Berkeley
+- name: Willcox, Donald
+  orcid: 0000-0003-2300-5165
+  affiliation: Lawrence Berkeley National Lab
+- name: Ford, Nicole
+  orcid: 0000-0001-8921-3624
+  affiliation: Lawrence Berkeley National Lab
+- name: Myers, Andrew
+  orcid: 0000-0001-8427-8330
+  affiliation: Lawrence Berkeley National Lab
+publisher:
+  name: Zenodo
+date_published: '2021-01-07'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.4423095
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- oscillation
+model:
+  quantities:
+  - flavour evolution
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

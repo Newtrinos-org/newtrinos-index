@@ -1,0 +1,52 @@
+id: icecube-neutrinos-4fgl-2sxps-crates
+type: dataset
+title: IceCube's neutrinos with 4FGL, 2SXPS &amp; CRATES data
+short: IceCube neutrinos cross-matched with 4FGL, 2SXPS and CRATES sources (Kun, Bartos et al., VizieR)
+description: IceCube neutrinos cross-matched with 4FGL, 2SXPS and CRATES sources (Kun, Bartos et al., VizieR)
+doi: 10.26093/cds/vizier.19340180
+url_landing: https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/934/180
+creators:
+- name: Kun, E.
+  orcid: 0000-0003-2769-3591
+- name: Bartos, I.
+- name: Becker Tjus, J.
+- name: Biermann, P.L.
+- name: Franckowiak, A.
+- name: Halzen, F.
+publisher:
+  name: Centre de Donnees Strasbourg (CDS)
+date_published: '2024'
+license: none-stated
+license_url: https://cds.unistra.fr/vizier-org/licences_vizier.html
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.26093/cds/vizier.19340180
+  host: institutional
+  role: primary
+references:
+- doi: 10.3847/1538-4357/ac7f3a
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

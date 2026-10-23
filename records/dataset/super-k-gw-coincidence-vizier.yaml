@@ -1,0 +1,259 @@
+id: super-k-gw-coincidence-vizier
+type: dataset
+title: Neutrinos in coincidence with GWs from LIGO/Virgo
+short: Super-K search for neutrinos in coincidence with LIGO/Virgo gravitational waves (VizieR)
+description: Super-K search for neutrinos in coincidence with LIGO/Virgo gravitational waves (VizieR)
+doi: 10.26093/cds/vizier.19180078
+url_landing: https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/918/78
+creators:
+- name: Abe, K.
+- name: Bronner, C.
+- name: Hayato, Y.
+- name: Ikeda, M.
+- name: Imaizumi, S.
+- name: Kameda, J.
+- name: Kanemura, Y.
+- name: Kataoka, Y.
+- name: Miki, S.
+- name: Miura, M.
+- name: Moriyama, S.
+- name: Nagao, Y.
+- name: Nakahata, M.
+- name: Nakayama, S.
+- name: Okada, T.
+- name: Okamoto, K.
+- name: Orii, A.
+- name: Pronost, G.
+- name: Sekiya, H.
+- name: Shiozawa, M.
+- name: Sonoda, Y.
+- name: Suzuki, Y.
+- name: Takeda, A.
+- name: Takemoto, Y.
+- name: Takenaka, A.
+- name: Tanaka, H.
+- name: Watanabe, S.
+- name: Yano, T.
+- name: Han, S.
+- name: Kajita, T.
+- name: Okumura, K.
+- name: Tashiro, T.
+- name: Wang, R.
+- name: Xia, J.
+- name: Megias, G.D.
+- name: Bravo-Berguno, D.
+- name: Labarga, L.
+- name: Marti, L.
+- name: Zaldivar, B.
+- name: Pointon, B.W.
+- name: ' Blaszczyk F.D.M.'
+- name: Kearns, E.
+- name: Raaf, J.L.
+- name: Stone, J.L.
+- name: Wan, L.
+- name: Wester, T.
+- name: Bian, J.
+- name: Griskevich, N.J.
+- name: Kropp, W.R.
+- name: Locke, S.
+- name: Mine, S.
+- name: Smy, M.B.
+- name: Sobel, H.W.
+- name: Takhistov, V.
+- name: Weatherly, P.
+- name: Hill, J.
+- name: Kim, J.Y.
+- name: Lim, I.T.
+- name: Park, R.G.
+- name: Bodur, B.
+- name: Scholberg, K.
+- name: Walter, C.W.
+- name: Bernard, L.
+- name: Coffani, A.
+- name: Drapier, O.
+- name: El Hedri, S.
+- name: Giampaolo, A.
+- name: Gonin, M.
+- name: Mueller, T.A.
+- name: Paganini, P.
+- name: Quilain, B.
+- name: Ishizuka, T.
+- name: Nakamura, T.
+- name: Jang, J.S.
+- name: Learned, J.G.
+- name: L.H.V., Anthony
+- name: D.G.R., Martin
+- name: Sztuc, A.A.
+- name: Uchida, Y.
+- name: Berardi, V.
+- name: Catanesi, M.G.
+- name: Radicioni, E.
+- name: Calabria, N.F.
+- name: Machado, L.N.
+- name: De Rosa, G.
+- name: Collazuol, G.
+- name: Iacob, F.
+- name: Lamoureux, M.
+- name: Ospina, N.
+- name: Ludovici, L.
+- name: Maekawa, Y.
+- name: Nishimura, Y.
+- name: Cao, S.
+- name: Friend, M.
+- name: Hasegawa, T.
+- name: Ishida, T.
+- name: Jakkapu, M.
+- name: Kobayashi, T.
+- name: Matsubara, T.
+- name: Nakadaira, T.
+- name: Nakamura, K.
+- name: Oyama, Y.
+- name: Sakashita, K.
+- name: Sekiguchi, T.
+- name: Tsukamoto, T.
+- name: Kotsar, Y.
+- name: Nakano, Y.
+- name: Ozaki, H.
+- name: Shiozawa, T.
+- name: Suzuki, A.T.
+- name: Takeuchi, Y.
+- name: Yamamoto, S.
+- name: Ali, A.
+- name: Ashida, Y.
+- name: Feng, J.
+- name: Hirota, S.
+- name: Kikawa, T.
+- name: Mori, M.
+- name: Nakaya, T.
+- name: Wendell, R.A.
+- name: Yasutome, K.
+- name: Fernandez, P.
+- name: Mccauley, N.
+- name: Mehta, P.
+- name: Pritchard, A.
+- name: Tsui, K.M.
+- name: Fukuda, Y.
+- name: Itow, Y.
+- name: Menjo, H.
+- name: Niwa, T.
+- name: Sato, K.
+- name: Tsukada, M.
+- name: Mijakowski, P.
+- name: Jiang, J.
+- name: Jung, C.K.
+- name: Vilela, C.
+- name: Wilking, M.J.
+- name: Yanagisawa, C.
+- name: Hagiwara, K.
+- name: Harada, M.
+- name: Horai, T.
+- name: Ishino, H.
+- name: Ito, S.
+- name: Koshio, Y.
+- name: Kitagawa, H.
+- name: Ma, W.
+- name: Piplani, N.
+- name: Sakai, S.
+- name: Kuno, Y.
+- name: Barr, G.
+- name: Barrow, D.
+- name: Cook, L.
+- name: Goldsack, A.
+- name: Samani, S.
+- name: Simpson, C.
+- name: Wark, D.
+- name: Nova, F.
+- name: Boschi, T.
+- name: Di Lodovico, F.
+- name: Migenda, J.
+- name: Molina Sedgwick, S.
+- name: Taani, M.
+- name: Zsoldos, S.
+- name: Yang, J.Y.
+- name: Jenkins, S.J.
+- name: Malek, M.
+- name: Mcelwee, J.M.
+- name: Stone, O.
+- name: Thiesse, M.D.
+- name: Thompson, L.F.
+- name: Okazawa, H.
+- name: Kim, S.B.
+- name: Yu, I.
+- name: Nishijima, K.
+- name: Koshiba, M.
+- name: Iwamoto, K.
+- name: Nakajima, Y.
+- name: Ogawa, N.
+- name: Yokoyama, M.
+- name: Martens, K.
+- name: Vagins, M.R.
+- name: Izumiyama, S.
+- name: Kuze, M.
+- name: Tanaka, M.
+- name: Yoshida, T.
+- name: Inomoto, M.
+- name: Ishitsuka, M.
+- name: Ito, H.
+- name: Matsumoto, R.
+- name: Ohta, K.
+- name: Shinoki, M.
+- name: Martin, J.F.
+- name: Tanaka, H.A.
+- name: Towstego, T.
+- name: Akutsu, R.
+- name: Hartz, M.
+- name: Konaka, A.
+- name: De Perio, P.
+- name: Prouse, N.W.
+- name: Chen, S.
+- name: Xu, B.D.
+- name: Posiadala-Zezula, M.
+- name: Hadley, D.
+- name: Richards, B.
+- name: Jamieson, B.
+- name: Walker, J.
+- name: Minamino, A.
+- name: Okamoto, K.
+- name: Pintaudi, G.
+- name: Sano, S.
+- name: Sasaki, R.
+- name: Ichikawa, A.K.
+- name: Nakamura, K.
+- name: Collaboration, The Super-Kamiokande
+publisher:
+  name: Centre de Donnees Strasbourg (CDS)
+date_published: '2023'
+license: none-stated
+license_url: https://cds.unistra.fr/vizier-org/licences_vizier.html
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.26093/cds/vizier.19180078
+  host: institutional
+  role: primary
+references:
+- doi: 10.3847/1538-4357/ac0d5a
+  relation: describes
+experiments:
+- super-k
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

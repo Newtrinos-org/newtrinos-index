@@ -1,0 +1,53 @@
+id: km3buu
+type: software
+title: 'KM3NeT/km3buu: KM3BUU v1.8.0'
+short: 'KM3BUU: GiBUU-based neutrino event generation for KM3NeT'
+description: Fixes and generation flux information to km3net dataformat header
+doi: 10.5281/zenodo.8243040
+url_landing: https://zenodo.org/doi/10.5281/zenodo.8243040
+creators:
+- name: Johannes Schumann
+  affiliation: Erlangen Centre for Astroparticle Physics
+- name: Rodri
+  affiliation: Erlangen Centre for Astroparticle Physics
+publisher:
+  name: Zenodo
+version: v1.8.0
+date_published: '2024-04-08'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.8243040
+  host: zenodo
+  role: primary
+relations:
+- rel: uses
+  target: gibuu
+experiments:
+- km3net
+sources:
+- none
+topics:
+- cross-section
+software:
+  purposes:
+  - event-generator
+  repository: https://doi.org/10.5281/zenodo.8243040
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

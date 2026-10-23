@@ -1,0 +1,48 @@
+id: neutrino-fog
+type: software
+title: NeutrinoFog
+short: 'NeutrinoFog: neutrino fog and floor for direct dark-matter searches'
+description: Neutrino fog and floor for direct dark matter searches
+url_landing: https://github.com/cajohare/NeutrinoFog
+owner:
+  name: cajohare
+  kind: person
+date_published: '2021-09-07'
+date_updated: '2022-06-07'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/cajohare/NeutrinoFog
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- solar
+- atmospheric
+- supernova
+topics:
+- dark-matter
+channels:
+- cevns
+software:
+  repository: https://github.com/cajohare/NeutrinoFog
+  languages:
+  - Jupyter Notebook
+  purposes:
+  - sensitivity
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: neutrino in:name,description stars:>=10
+    harvested: '2026-10-23'
+    score: 56.0
+    stars: 28
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

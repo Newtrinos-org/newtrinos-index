@@ -1,0 +1,45 @@
+id: special-blend
+type: software
+title: SPECIAL_BLEND
+short: 'SPECIAL_BLEND: supernova parameter estimation from neutrino events in Super/Hyper-K-like detectors'
+description: The supernova parameter estimation code with neutrino events at Super-/Hyper-Kamiokande-like detectors
+url_landing: https://github.com/akira-harada/SPECIAL_BLEND
+owner:
+  name: akira-harada
+  kind: person
+date_published: '2022-09-30'
+date_updated: '2026-02-18'
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/akira-harada/SPECIAL_BLEND
+  host: github
+  role: primary
+  formats:
+  - source-code
+experiments:
+- super-k
+- hyper-k
+sources:
+- supernova
+software:
+  repository: https://github.com/akira-harada/SPECIAL_BLEND
+  languages:
+  - Fortran
+  purposes:
+  - fitting
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrino stars:>=3
+    harvested: '2026-10-23'
+    score: 8.0
+    stars: 4
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

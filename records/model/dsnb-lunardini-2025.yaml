@@ -1,0 +1,75 @@
+id: dsnb-lunardini-2025
+type: model
+title: 'The diffuse supernova neutrino background: an update with modern population synthesis and core collapse simulations'
+short: Diffuse supernova neutrino background with modern population synthesis and CCSN simulations
+description: 'We provide the integrated diffuse supernova neutrino background, see arXiv:2506.22699 for the detail. The files correspond to the solid lines in fig. 6 of arXiv:2506.22699 , which is the case including binary effects and black hole forming collapses. Results are for un-oscillated neutrino fluxes (no flavor mixing) and are given for the BPASS case (file ..._BPASS.txt ) and the KIHNN case (file ..._KIHNN.txt). 
+
+
+  Data Format:
+
+
+  The data are in ASCII format and the meaning of the columns are as follows. 
+
+
+  1: neutrino energy [MeV]
+
+
+  2: electron-type neutrino flux [cm^-2 MeV^-1 s^-1]
+
+
+  3: anti-electron-type neutrino flux [cm^-2 MeV^-1 s^-1]
+
+
+  4: x-type neutrino flux [cm^-2 MeV^-1 s^-1]'
+doi: 10.5281/zenodo.15876032
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15876032
+creators:
+- name: Lunardini, Cecilia
+  orcid: 0000-0002-9253-1663
+  affiliation: Arizona State University
+- name: Takiwaki, Tomoya
+  orcid: 0000-0003-0304-9283
+  affiliation: National Astronomical Observatory of Japan
+- name: Kinugawa, Tomoya
+  orcid: 0000-0002-3033-4576
+  affiliation: Shinshu University
+- name: Horiuchi, Shunsaku
+  orcid: 0000-0001-6142-6556
+  affiliation: Virginia Tech
+- name: Kotake, Kei
+  orcid: 0000-0003-2456-6183
+  affiliation: Fukuoka University
+publisher:
+  name: Zenodo
+date_published: '2025-07-14'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15876032
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2506.22699'
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

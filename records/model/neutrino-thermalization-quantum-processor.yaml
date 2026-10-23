@@ -1,0 +1,92 @@
+id: neutrino-thermalization-quantum-processor
+type: model
+title: Neutrino thermalization via randomization on a quantum processor
+short: 'Neutrino thermalisation via randomisation on a quantum processor: experimental and processed data'
+description: 'Dataset generated in the context of the following paper: https://arxiv.org/abs/2510.24841.
+
+
+  This dataset contains experimental and processed data from quantum simulations of all-to-all spin Hamiltonians with random couplings, modeling neutrino flavor evolution in supernovae. The data includes raw measurement counts from IBM quantum devices, readout calibration matrices, twirling data for error mitigation, and computed expectation values with different levels of error correction and symmetry verification. 
+
+
+  These simulations were performed using random quantum circuits to emulate non-local dynamics in systems of up to over 100 qubits. The dataset enables analysis of thermalization behavior, providing access to both raw hardware outputs and processed observables for reproducibility and further study. 
+
+
+  The dataset is organized by the number of qubits and by Hamiltonian seed. Each seed folder contains the following data types:
+
+
+  Raw counts (counts_*.npy): Direct measurement results from IBM quantum devices.
+
+
+  Calibration matrices (cals_*.npy): Single-qubit readout calibrations for each time step.
+
+
+  Twirling data (trex_.npy, trex_nr_.npy): Used to mitigate readout errors and normalize measurement results.
+
+
+  Observables (observable_*.npy): Computed expectation values of qubit measurements. Variants correspond to different error-mitigation methods:
+
+
+  Raw
+
+
+  Noise renormalized (_nr)
+
+
+  Symmetry-verified (_sv)
+
+
+  Both renormalized and symmetry-verified (_nr_sv)
+
+
+  The repository also includes scripts for data generation and processing:
+
+
+  hardware_run.py: Prepares quantum circuits, submits jobs to IBM quantum devices, and stores raw counts.
+
+
+  post_processing.py: Loads the raw data and applies the error mitigation pipeline.
+
+
+  requirements.txt: Lists Python dependencies for reproducing the data processing environment.'
+doi: 10.5281/zenodo.18525169
+url_landing: https://zenodo.org/doi/10.5281/zenodo.18525169
+creators:
+- name: Kiss, Oriel
+  orcid: 0000-0001-7461-3342
+- name: Tavernelli, Ivano
+- name: Tacchino, Francesco
+  orcid: 0000-0003-2008-5956
+- name: Lacroix, Denis
+- name: Roggero, Alessandro
+  orcid: 0000-0002-8334-1120
+publisher:
+  name: Zenodo
+date_published: '2026-02-08'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.18525169
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- oscillation
+model:
+  quantities:
+  - flavour evolution
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

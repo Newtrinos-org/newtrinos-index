@@ -1,0 +1,58 @@
+id: mesa-stellar-neutrino-emission
+type: model
+title: 'MESA model files and data for: ''Stellar Neutrino Emission Across The Mass-Metallicity Plane'''
+short: 'MESA models: stellar neutrino emission across the mass–metallicity plane'
+description: Example MESA model files and stellar evolution tracks for download from "Stellar Neutrino Emission Across The Mass-Metallicity Plane".
+doi: 10.5281/zenodo.8327401
+url_landing: https://zenodo.org/doi/10.5281/zenodo.8327401
+creators:
+- name: Ebraheem Farag
+  orcid: 0000-0002-5794-4286
+  affiliation: Arizona State University
+- name: F. X. Timmes
+  orcid: 0000-0002-0474-159X
+  affiliation: Arizona State University
+- name: Morgan T. Chidester
+  orcid: 0000-0002-5107-8639
+  affiliation: Arizona State University
+- name: Samalka Anandagoda
+  orcid: 0000-0002-5490-2689
+  affiliation: Clemson University
+- name: Dieter Hartmann
+  orcid: 0000-0002-8028-0991
+  affiliation: Clemson University
+publisher:
+  name: Zenodo
+version: '1'
+date_published: '2023-11-14'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.8327401
+  host: zenodo
+  role: primary
+references:
+- doi: 10.3847/1538-4365/ad0787
+  relation: describes
+sources:
+- astrophysical
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

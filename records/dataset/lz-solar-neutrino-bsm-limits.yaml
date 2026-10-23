@@ -1,0 +1,80 @@
+id: lz-solar-neutrino-bsm-limits
+type: dataset
+title: 'Data Analysis Results for: Solar Neutrino Probes of Light New Physics: Updated Limits from LUX-ZEPLIN Experiment'
+short: 'Solar-neutrino probes of light new physics: limits from LUX-ZEPLIN data (analysis results)'
+description: 'This dataset contains the numerical analysis results and source data files (in ASCII .txt format) associated with the research paper titled "Solar Neutrino Probes of Light New Physics: Updated Limits from LUX-ZEPLIN Experiment".
+
+
+  The data specifically covers the exclusion limits (90% C.L.) derived from the latest LUX-ZEPLIN (LZ) electron recoil (ER) datasets via elastic neutrino-electron scattering. The analysis results included in this repository pertain to:
+
+
+  Universal light mediator models: Constraints for scalar, vector, and tensor interactions consistent with Lorentz invariance.
+
+
+  Anomaly-free leptophilic U(1)′ gauge extensions: Results for models featuring new vector mediators associated with Le−Lμ, Le−Lτ, Lμ−Lτ, and Le+2Lμ+2Lτ symmetries.
+
+
+  Data Format: The provided files are in plain text (ASCII .txt) format. Each file represents the 90% Confidence Level (C.L.) upper limit curve for a specific model. The data is organized in columns:
+
+
+  Column 1: Mediator Mass (mϕ, mZ′, or mT) in MeV.
+
+
+  Column 2: Coupling Constant (gϕ, gZ′, or gT).
+
+
+  Software & Visualization: To ensure reproducibility, this repository includes an interactive Jupyter Notebook(plot_limits.ipynb) used to generate the exclusion limit plots presented in the manuscript.
+
+
+  File: plot_limits.ipynb
+
+
+  Function: Automatically reads the provided .txt data files (upper_limits_90CL_...) and generates high-quality PDF plots comparing the results from the 2022 and 2024 LZ datasets.
+
+
+  Requirements: Python 3, Jupyter Notebook (or JupyterLab), matplotlib, numpy.
+
+
+  Usage: Simply place the notebook in the same directory as the data files, open it, and run all cells.'
+doi: 10.5281/zenodo.18462143
+url_landing: https://zenodo.org/doi/10.5281/zenodo.18462143
+creators:
+- name: Demirci, Mehmet
+  orcid: 0000-0003-2504-6251
+  affiliation: Karadeniz Technical University
+- name: Mustamin, M. F.
+  orcid: 0000-0003-3996-4651
+  affiliation: Karadeniz Technical University
+publisher:
+  name: Zenodo
+date_published: '2026-02-02'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.18462143
+  host: zenodo
+  role: primary
+sources:
+- solar
+topics:
+- bsm-other
+- nsi
+data:
+  levels:
+  - summary
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,43 @@
+id: prospect-short-wavelength-oscillations-thesis
+type: dataset
+title: Short-Wavelength Reactor Neutrino Oscillations with the PROSPECT Experiment
+short: 'PROSPECT short-wavelength reactor oscillation analysis: thesis (Drexel)'
+description: The Precision Reactor Oscillation and SPECTrum Experiment (PROSPECT) is designed to probe short baseline oscillations of electron antineutrinos in search of eV-scale sterile neutrinos and precisely measure the U-235 reactor antineutrino spectrum from the High Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratory. The PROSPECT antineutrino detector (AD) provides excellent background rejection and position resolution due to its segmented design and use of Li-6-loaded liquid scintillator. In order to understand relative volume variation effects, which could affect an oscillation measurement, Ac-227 was added as a calibration source that was dissolved isotropically throughout the liquid scintillator. Using the correlated production of alphas from Rn-219 -&gt; Po-215 -&gt; Pb-211 in the Ac-227 decay chain I measured the rate of Ac-227 in each segment of the detector as well as the decay rate of Ac-227 events over the lifetime of the detector. The measured Ac-227 half-life suggests a rate of events falling 1.56 +/- 0.21% faster than expectation. The results of these studies were then applied as corrections to the measurement of antineutrino event rates as a function of distance from the reactor. This thesis will present the testing of Ac-227 as a calibration source before its addition to the AD, analysis methods, results of Ac-227 in the AD, and its application to the oscillation analysis.
+doi: 10.34944/dspace/2052
+url_landing: https://scholarshare.temple.edu/handle/20.500.12613/2070
+creators:
+- name: (:Unkn) Unknown
+publisher:
+  name: Temple University. Libraries
+date_published: '2019'
+license: none-stated
+license_url: http://rightsstatements.org/vocab/InC/1.0/
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.34944/dspace/2052
+  host: institutional
+  role: primary
+experiments:
+- prospect
+sources:
+- reactor
+topics:
+- sterile
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

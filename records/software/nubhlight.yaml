@@ -1,0 +1,46 @@
+id: nubhlight
+type: software
+title: nubhlight
+short: 'nubhlight: GR neutrino radiation MHD for neutron-star-merger disks'
+description: General Relativistic Neutrino Radiation Magnetohydrodynamics for Neutron Star Merger Disks
+url_landing: https://github.com/lanl/nubhlight
+owner:
+  name: lanl
+  kind: organization
+date_published: '2020-02-05'
+date_updated: '2026-09-10'
+license: proprietary
+license_url: https://github.com/lanl/nubhlight/blob/master/LICENSE
+license_notes: "licence file in the repository is not a standard SPDX licence (GitHub: NOASSERTION)"
+access: open
+distributions:
+- url: https://github.com/lanl/nubhlight
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- astrophysical
+topics:
+- flux
+software:
+  repository: https://github.com/lanl/nubhlight
+  languages:
+  - C
+  purposes:
+  - astrophysics
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: neutrino in:name,description stars:>=10
+    harvested: '2026-10-23'
+    score: 78.0
+    stars: 39
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

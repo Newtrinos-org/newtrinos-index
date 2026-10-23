@@ -1,0 +1,55 @@
+id: hepdata-ccfr-weak-mixing-angle
+type: dataset
+title: 'HEPData: A Precise measurement of the weak mixing angle in neutrino nucleon scattering'
+short: 'HEPData: CCFR weak mixing angle from NC/CC in ν–N scattering'
+description: 'We report a precise measurement of the weak mixing angle from the ratio of neutral current to charged current inclusive cross-sections in deep-inelastic neutrino-nucleon scattering. The data were gathered at the CCFR neutrino detector in the Fermilab quadrupole-triplet neutrino beam, with neutrino energies up to 600 GeV. Using the on-shell definition, ${\rm sin ~2\theta_W} \equiv 1 - \frac{{\rm M_W} ~2}{{\rm M_Z} ~2}$, we obtain ${\rm sin ~2\theta_W} = 0.2218 \pm 0.0025 ({\rm stat.}) \pm 0.0036 ({\rm exp.\: syst.}) \pm 0.0040 ({\rm model})$.'
+doi: 10.17182/hepdata.37276
+identifiers:
+  inspire: 360411
+  hepdata: ins360411
+url_landing: https://www.hepdata.net/record/ins360411
+creators:
+- name: CCFR Collaboration
+  kind: collaboration
+date_published: '1994'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins360411
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/PhysRevLett.72.3452
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- ccfr
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- nc
+- cc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: CCFR
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

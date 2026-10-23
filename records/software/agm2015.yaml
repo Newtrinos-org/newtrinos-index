@@ -1,0 +1,46 @@
+id: agm2015
+type: software
+title: agm2015
+short: 'AGM2015 code: global map of natural (geo) and reactor antineutrino emissions (MATLAB)'
+description: MATLAB code for AGM2015, the Antineutrino Global Map of natural and reactor emissions.
+url_landing: https://ultralytics.com
+owner:
+  name: ultralytics
+  kind: organization
+date_published: '2018-05-19'
+date_updated: '2026-08-28'
+license: AGPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/ultralytics/agm2015
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- geo
+- reactor
+topics:
+- flux
+- earth-model
+software:
+  repository: https://github.com/ultralytics/agm2015
+  languages:
+  - MATLAB
+  purposes:
+  - flux-calculation
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrino stars:>=3
+    harvested: '2026-10-23'
+    score: 136.0
+    stars: 68
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

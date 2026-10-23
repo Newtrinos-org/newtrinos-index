@@ -1,0 +1,48 @@
+id: t2k-neutrino-2022-results
+type: dataset
+title: Oscillation results from Neutrino 2022
+short: T2K oscillation results shown at Neutrino 2022 (ROOT)
+description: "This archive contains the electronic version (ROOT format) of the results of the measurements of oscillation parameters presented by T2K at Neutrino 2022 (Updated run 1-10 results with the additional multi-ring sample at SK). Both Bayesian and frequentist results are provided for the different oscillation parameters, with 2D confidence/credible regions and 1D DeltaChi2/posterior probability distributions. The Bayesian and frequentist results are separated into two different files, and additionally a tag in the TGraph and histogram names allow differentiating them. In addition to the results in each mass hierarchy hypothesis, the Bayesian file also includes the results marginalized over the mass hierarchy, denoted by a tag \"both\" in the object names. Please note that Bayesian and frequentist results use different conventions for the mass splitting in the inverted hierarchy: the Bayesian results are in terms of \\(\\Delta m^2_{32}\\) for both normal (NH) and inverted (IH) hierarchies, whereas the frequentist results are plotted versus \\(\\Delta m^2_{32}\\) for the NH, and \\(\\left| \\Delta m^2_{31} \\right|\\) for the IH. When used, the constraint on theta13 from reactor experiment results corresponds to the value in the PDG 2020 summary table: \\(\\sin^2(\\theta_{13})=(2.20\\pm0.07)\\times10^{-2}\\) Objects inside the ROOT files\n ROOT objects contained inside the file are named first with an identifier of which parameter(s) are being shown, followed by a tag \"wRC\" or \"woRC\" - indicating whether or not the PDG constraint on theta13 has been applied, followed by another tag \"NH\", \"IH\" or \"both\" - indicating whether the result is respectively for the normal hierarchy, inverted hierarchy or marginalized over the mass hierarchy (this last case is only included in the Bayesian result file). 2D regions\n Objects of the form gr2D_varX_varY_&lt;wRC,woRC&gt;_&lt;NH,IH,both&gt;_&lt;conf,cred&gt;&lt;68,90,955,997&gt;(_N) are TGraphs corresponding to the 2D confidence (\"conf\") or credible (\"cred\") regions for the 2 variables (varX, varY). N is the iterator for different TGraphs corresponding to the same region. 68, 90, 955, 997 correspond respectively to 1-sigma, 90%, 2-sigma, and 3-sigma regions. The best-fit markers are also provided for the 2D results:\n gr2D_varX_varY_&lt;wRC,woRC&gt;_&lt;NH,IH,both&gt;_bestfit The best fit markers and contour lines are computed for each MH *separately*, i.e. assuming DeltaChi2 is 0 at the minimum or that the total posterior probability integrates to 1 in the mass hierarchy considered. 1D properties\n Objects of the form h1D_var&lt;chi2,posterior&gt;_&lt;wRC,woRC&gt;_&lt;NH,IH&gt; are TH1D of the DeltaChi2 (\"chi2\") or posterior probability (\"posterior\") for oscillation parameter \"var\". The Bayesian and frequentist results use different conventions with respect to the mass hierarchy:\n - 1D DeltaChi2 plots use a global minimum over both hierarchies\n - each 1D posterior probability plot integrates to unity *individually*"
+doi: 10.5281/zenodo.6908532
+url_landing: https://zenodo.org/record/6908532
+creators:
+- name: T2K Collaboration
+publisher:
+  name: Zenodo
+date_published: '2022-07-26'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.6908532
+  host: zenodo
+  role: primary
+references:
+- doi: 10.5281/zenodo.6683821
+  relation: describes
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- oscillation
+- cp-violation
+- mass-ordering
+data:
+  levels:
+  - likelihood
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"T2K Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

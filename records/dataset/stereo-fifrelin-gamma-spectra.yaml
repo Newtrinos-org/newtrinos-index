@@ -1,0 +1,130 @@
+id: stereo-fifrelin-gamma-spectra
+type: dataset
+title: 'Data from: Improved STEREO simulation with a new gamma ray spectrum of excited gadolinium isotopes using FIFRELIN'
+short: 'STEREO simulation with FIFRELIN γ spectra of excited Gd isotopes: supplemental files'
+description: 'Supplemental material to the article “Improved STEREO simulation with a new gamma ray spectrum of excited gadolinium isotopes using FIFRELIN”
+
+
+  The files available are aimed to simulate the de-excitation cascade following neutron capture on 155Gd and 157Gd. Therefore, the FIFRELIN simulation was done for the 156Gd and 158Gd isotopes, with the initial condition of an excitation energy of E* = Sn, the neutron separation energy.
+
+
+  Please cite this publication when using the provided files:
+
+
+  arXiv:1905.11967 [physics.ins-det]'
+doi: 10.5281/zenodo.2653787
+url_landing: https://zenodo.org/record/2653787
+creators:
+- name: Almazán Molina, Helena
+  orcid: 0000-0003-1772-2598
+  affiliation: Max-Planck-Institut für Kernphysik
+- name: Bernard, Laura
+  orcid: 0000-0002-6698-5645
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3
+- name: Blanchet, Adrien
+  orcid: 0000-0002-4992-0161
+  affiliation: IRFU, CEA, Université Paris-Saclay
+- name: Bonhomme, Aurélie
+  orcid: 0000-0002-0218-2835
+  affiliation: Max-Planck-Institut für Kernphysik
+- name: Buck, Christian
+  affiliation: Max-Planck-Institut für Kernphysik
+- name: Chebboubi, Abdelaziz
+  affiliation: CEA, DEN, DER, SPRC
+- name: del Amo Sánchez, Pablo
+  orcid: 0000-0002-0326-7806
+  affiliation: Univ. Grenoble Alpes, Université Savoie Mont Blanc, CNRS/IN2P3, LAPP
+- name: El Atmani, Ilham
+  orcid: 0000-0002-8396-1901
+  affiliation: IRFU, CEA, Université Paris-Saclay
+- name: Haser, Julia
+  affiliation: Max-Planck-Institut für Kernphysik
+- name: Kandzia, Felix
+  affiliation: Institut Laue-Langevin
+- name: Kox, Serge
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3
+- name: Labit, Loïc
+  orcid: 0000-0003-2179-7787
+  affiliation: Univ. Grenoble Alpes, Université Savoie Mont Blanc, CNRS/IN2P3, LAPP
+- name: Lamblin, Jacob
+  orcid: 0000-0003-0031-263X
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3
+- name: Letourneau, Alain
+  affiliation: IRFU, CEA, Université Paris-Saclay
+- name: Lhuillier, David
+  orcid: 0000-0003-2324-0149
+  affiliation: IRFU, CEA, Université Paris-Saclay
+- name: Lindner, Manfred
+  orcid: 0000-0002-3704-6016
+  affiliation: Max-Planck-Institut für Kernphysik
+- name: Litaize, Olivier
+  orcid: 0000-0003-2627-4045
+  affiliation: CEA, DEN, DER, SPRC
+- name: Materna, Thomas
+  affiliation: IRFU, CEA, Université Paris-Saclay
+- name: Minotti, Alessandro
+  affiliation: IRFU, CEA, Université Paris-Saclay
+- name: Pessard, Henri
+  orcid: 0000-0002-1627-129X
+  affiliation: Univ. Grenoble Alpes, Université Savoie Mont Blanc, CNRS/IN2P3, LAPP
+- name: Réal, Jean-Sébastien
+  orcid: 0000-0003-1584-783X
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3
+- name: Roca Català, Christian
+  affiliation: Max-Planck-Institut für Kernphysik
+- name: Salagnac, Thomas
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3
+- name: Savu, Vladimir George
+  affiliation: IRFU, CEA, Université Paris-Saclay
+- name: Schoppmann, Stefan
+  orcid: 0000-0002-7208-0578
+  affiliation: Max-Planck-Institut für Kernphysik
+- name: Sergeyeva, Viktoriya
+  affiliation: Univ. Grenoble Alpes, Université Savoie Mont Blanc, CNRS/IN2P3, LAPP
+- name: Soldner, Torsten
+  orcid: 0000-0003-2468-5182
+  affiliation: Institut Laue-Langevin
+- name: Stutz, Anne
+  orcid: 0000-0003-3213-118X
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3
+- name: Thulliez, Loïc
+  affiliation: CEA, DEN, DER, SPRC
+- name: Vialat, Mathieu
+  orcid: 0000-0001-7581-6053
+  affiliation: Institut Laue-Langevin
+publisher:
+  name: Zenodo
+date_published: '2019-05-28'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.2653787
+  host: zenodo
+  role: primary
+references:
+- arxiv: '1905.11967'
+  relation: describes
+experiments:
+- stereo
+sources:
+- reactor
+topics:
+- detector-response
+data:
+  levels:
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 2
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,48 @@
+id: darknews
+type: software
+title: DarkNews-generator
+short: 'DarkNews: event generator for heavy-neutral-lepton production in ν–nucleus scattering'
+description: A lightweight event generator for new physics in neutrino-nucleus scattering.
+url_landing: https://pypi.org/project/DarkNews/
+owner:
+  name: mhostert
+  kind: person
+date_published: '2021-12-03'
+date_updated: '2026-08-08'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/mhostert/DarkNews-generator
+  host: github
+  role: primary
+  formats:
+  - source-code
+- url: https://doi.org/10.17632/k9nh5fn4pw
+  host: institutional
+  role: mirror
+  label: 'DarkNews: A Python-based event generator for heavy neutral lepton production in neutrino-nucleus sca'
+sources:
+- accelerator
+topics:
+- bsm-other
+software:
+  repository: https://github.com/mhostert/DarkNews-generator
+  languages:
+  - Python
+  purposes:
+  - event-generator
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrinos stars:>=3
+    harvested: '2026-10-23'
+    score: 32.0
+    stars: 16
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

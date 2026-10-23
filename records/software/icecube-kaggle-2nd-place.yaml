@@ -1,0 +1,49 @@
+id: icecube-kaggle-2nd-place
+type: software
+title: icecube-2nd-place
+short: 2nd-place solution of the IceCube Kaggle challenge (transformer + GNN direction reconstruction)
+description: IceCube Neutrino Detection | Transformer + GNN |EPJC 2025
+url_landing: https://github.com/DrHB/icecube-2nd-place
+owner:
+  name: DrHB
+  kind: person
+date_published: '2023-04-21'
+date_updated: '2026-01-28'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/DrHB/icecube-2nd-place
+  host: github
+  role: primary
+  formats:
+  - source-code
+relations:
+- rel: uses
+  target: icecube-kaggle-neutrinos-in-deep-ice
+experiments:
+- icecube
+sources:
+- none
+topics:
+- detector-response
+software:
+  repository: https://github.com/DrHB/icecube-2nd-place
+  languages:
+  - Python
+  purposes:
+  - reconstruction
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrino stars:>=3
+    harvested: '2026-10-23'
+    score: 46.0
+    stars: 23
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

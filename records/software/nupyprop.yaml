@@ -1,0 +1,46 @@
+id: nupyprop
+type: software
+title: nupyprop
+short: 'nuPyProp: propagation of high-energy neutrinos and τ/μ leptons through the Earth'
+description: Python package for simulating high-energy neutrino and charged lepton propagation through the Earth. Supports tau and muon propagation with stochastic and continuous energy loss, multiple cross-section and photonuclear models.
+url_landing: https://github.com/NuSpaceSim/nupyprop
+owner:
+  name: NuSpaceSim
+  kind: organization
+date_published: '2021-01-09'
+date_updated: '2026-09-25'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/NuSpaceSim/nupyprop
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- astrophysical
+- cosmogenic
+topics:
+- earth-model
+software:
+  repository: https://github.com/NuSpaceSim/nupyprop
+  languages:
+  - Python
+  purposes:
+  - earth-model
+  - detector-simulation
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: neutrino in:name,description stars:>=10
+    harvested: '2026-10-23'
+    score: 32.0
+    stars: 16
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

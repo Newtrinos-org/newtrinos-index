@@ -1,0 +1,44 @@
+id: spine
+type: software
+title: spine
+short: 'SPINE: modular deep-learning reconstruction for particle-imaging (LArTPC) detectors'
+description: Modular deep learning framework for particle imaging detector reconstruction
+url_landing: https://github.com/DeepLearnPhysics/spine
+owner:
+  name: DeepLearnPhysics
+  kind: organization
+date_published: '2024-03-27'
+date_updated: '2026-10-23'
+license: MIT
+access: open
+distributions:
+- url: https://github.com/DeepLearnPhysics/spine
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- accelerator
+topics:
+- detector-response
+software:
+  repository: https://github.com/DeepLearnPhysics/spine
+  languages:
+  - Python
+  purposes:
+  - reconstruction
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrino-physics stars:>=3
+    harvested: '2026-10-23'
+    score: 18.0
+    stars: 9
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

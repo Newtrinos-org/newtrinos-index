@@ -1,0 +1,54 @@
+id: hepdata-charm-nc-x-distributions
+type: dataset
+title: 'HEPData: Experimental Study of X Distributions in Semileptonic Neutral Current Neutrino and Anti-neutrino Reactions'
+short: 'HEPData: CHARM x distributions in semileptonic NC ν and ν̄ reactions'
+description: Using the CHARM detector 36 000 deep inelastic neutral-current reactions of neutrinos (and 2000 of antineutrinos) from the 160 GeV narrow-band beam were recorded. The differential cross section d σ d x in the Bjorken scaling variable x was computed by unfolding the effects of limited acceptance and of resolution of the detector as well as the ambiguity of the energy of the incoming neutrinos (produced by π- or K-decay). Combining the results from the neutrino and antineutrino data, the structure functions F 2 and xF 3 and the antiquark momentum distribution measured via the NC coupling were determined. The distributions are in agreement with the corresponding CC distibutions. Comparisons with deep inelastic muon scattering confirm the universality of nuclear structure functions as probed by the weak and the electromagnetic currents.
+doi: 10.17182/hepdata.29877
+identifiers:
+  inspire: 264997
+  hepdata: ins264997
+url_landing: https://www.hepdata.net/record/ins264997
+creators:
+- name: CHARM Collaboration
+  kind: collaboration
+date_published: '1988'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins264997
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1016/0370-2693(88)91309-3
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- charm
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- nc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: CHARM
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

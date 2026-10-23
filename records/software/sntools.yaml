@@ -1,0 +1,48 @@
+id: sntools
+type: software
+title: sntools
+short: 'sntools: event generator for supernova burst neutrinos in large detectors'
+description: Event generator for supernova burst neutrinos
+url_landing: https://github.com/SNEWS2/sntools
+owner:
+  name: SNEWS2
+  kind: organization
+date_published: '2017-03-08'
+date_updated: '2026-04-10'
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/SNEWS2/sntools
+  host: github
+  role: primary
+  formats:
+  - source-code
+- url: https://doi.org/10.5281/zenodo.4688040
+  host: zenodo
+  role: mirror
+  label: 'sntools: An event generator for supernova burst neutrinos'
+sources:
+- supernova
+topics:
+- flux
+software:
+  repository: https://github.com/SNEWS2/sntools
+  languages:
+  - Python
+  purposes:
+  - event-generator
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: neutrino in:name,description stars:>=10
+    harvested: '2026-10-23'
+    score: 28.0
+    stars: 14
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

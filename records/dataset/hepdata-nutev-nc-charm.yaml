@@ -1,0 +1,54 @@
+id: hepdata-nutev-nc-charm
+type: dataset
+title: 'HEPData: Observation of neutral current charm production in nu/mu Fe scattering at the Tevatron.'
+short: 'HEPData: NuTeV neutral-current charm production in νμ Fe'
+description: We report on the first observation of open charm production in neutral current deep inelastic neutrino scattering as seen in the NuTeV detector at Fermilab. The production rate is shown to be consistent with a pure gluon-$% Z^{0}$ boson production model, and the observed level of charm production is used to determine the effective charm mass. As part of our analysis, we also obtain a new measurement for the proton-nucleon charm production cross section at $\sqrt{s}=38.8$ GeV.
+doi: 10.17182/hepdata.41724
+identifiers:
+  inspire: 532481
+  hepdata: ins532481
+url_landing: https://www.hepdata.net/record/ins532481
+creators:
+- name: NuTeV Collaboration
+  kind: collaboration
+date_published: '2001'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins532481
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/PhysRevD.64.012002
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- nutev
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- nc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: NuTeV
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

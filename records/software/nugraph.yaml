@@ -1,0 +1,44 @@
+id: nugraph
+type: software
+title: nugraph
+short: 'NuGraph: graph neural network for LArTPC neutrino event reconstruction'
+description: graph neural network for neutrino physics event reconstruction
+url_landing: https://github.com/nugraph/nugraph
+owner:
+  name: nugraph
+  kind: organization
+date_published: '2023-05-22'
+date_updated: '2026-10-22'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/nugraph/nugraph
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- accelerator
+topics:
+- detector-response
+software:
+  repository: https://github.com/nugraph/nugraph
+  languages:
+  - Python
+  purposes:
+  - reconstruction
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: neutrino in:name,description stars:>=10
+    harvested: '2026-10-23'
+    score: 28.0
+    stars: 14
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

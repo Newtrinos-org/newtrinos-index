@@ -1,0 +1,65 @@
+id: valencia-global-fit-chi2-profiles
+type: result
+title: Chi2 profiles from Valencia neutrino global fit
+short: 'Valencia global fit of neutrino oscillations (de Salas et al.): 1D and 2D Δχ² profiles'
+description: We provide here the 1D and 2D chi2 profiles from our most recent global fit of neutrino oscillation data (DOI:10.1007/JHEP02(2021)071). The files are available at https://globalfit.astroparticles.es/.
+doi: 10.5281/zenodo.4726908
+url_landing: https://zenodo.org/record/4726908
+creators:
+- name: P. F. De Salas
+  affiliation: The Oskar Klein Centre for Cosmoparticle Physics, Department of Physics, Stockholm University, Stockholm, Sweden
+- name: D. V. Forero
+  affiliation: Universidad de Medellín, Medellín, Colombia
+- name: S. Gariazzo
+  affiliation: Instituto de Física Corpuscular, CSIC-Universitat de Valencia, Spain and INFN, Sezione di Torino, Torino, Italy
+- name: P. Martínez-Miravé
+  affiliation: Instituto de Física Corpuscular, CSIC-Universitat de Valencia, Spain
+- name: O. Mena
+  affiliation: Instituto de Física Corpuscular, CSIC-Universitat de Valencia, Spain
+- name: C. A. Ternes
+  affiliation: Instituto de Física Corpuscular, CSIC-Universitat de Valencia, Spain and INFN, Sezione di Torino, Torino, Italy
+- name: M. Tórtola
+  affiliation: Instituto de Física Corpuscular, CSIC-Universitat de Valencia, Spain
+- name: J. W. F. Valle
+  affiliation: Instituto de Física Corpuscular, CSIC-Universitat de Valencia, Spain
+publisher:
+  name: Zenodo
+version: '2011.1'
+date_published: '2021-02-09'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.4726908
+  host: zenodo
+  role: primary
+references:
+- doi: 10.1007/jhep02(2021)071
+  relation: describes
+sources:
+- solar
+- atmospheric
+- reactor
+- accelerator
+topics:
+- oscillation
+- global-fit
+- mass-ordering
+- cp-violation
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 80.0
+    citations: 8
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

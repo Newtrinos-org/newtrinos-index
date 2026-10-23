@@ -1,0 +1,48 @@
+id: neutrino-tomography-radics
+type: software
+title: 'balintradics/NeutrinoTomography: First release of Neutrino Tomography project'
+short: 'NeutrinoTomography: propagation through a 3D Earth model with radioactive-isotope distributions'
+description: Set of codes to solve the complex diff. equation of neutrino propagation through vacuum/material combined with a customized discretized, full 3D Earth model with Radioactive Isotope (238U, 235U, 232Th, 40K) distribution and Density models. Geoneutrino flux on the Earth's surface can be obtained at any longitude/latitude and used with standard computer tomographic reconstruction libraries by way of a generated sinogram.
+doi: 10.5281/zenodo.5225746
+url_landing: https://zenodo.org/record/5225746
+creators:
+- name: Balint Radics
+publisher:
+  name: Zenodo
+version: v1.0.0
+date_published: '2021-08-20'
+license: none-stated
+license_notes: 'Zenodo licence id: other-open'
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.5225746
+  host: zenodo
+  role: primary
+  size_bytes: 370233
+  n_files: 1
+sources:
+- geo
+- atmospheric
+topics:
+- earth-model
+software:
+  purposes:
+  - earth-model
+  repository: https://doi.org/10.5281/zenodo.5225746
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

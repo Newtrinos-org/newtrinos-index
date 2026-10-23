@@ -1,0 +1,51 @@
+id: fast-flavor-qke-time-dependent
+type: model
+title: 'Dataset: Neutrino quantum kinetics for fast flavor conversion in a time-dependent environment'
+short: 'Neutrino quantum kinetics for fast flavour conversion in a time-dependent environment: data'
+description: 'This dataset includes two types of visualization videos for models including QKE-L, QKE-M, QKE-H, ECT, ECT-a0.1,, ECT-box in the article "Neutrino quantum kinetics for fast flavor conversion in a time-dependent environment".
+
+
+  The first type of videos starting with "profile" shows the time evolution of radial profiles of neutrino number densities for $\nu_e$, $\bar\nu_e$, $\nu_x$, and $\bar\nu_x$, together with three inset figures showing the angular distributions for each species and electron-minus-heavy-flavor lepton number (E-XLN) at three selected radii of 36, 42, and 50 km.
+
+
+  The second type of videos starting with "contour" shows the time evolution of radial and velocity contour profiles for the off-diagonal density matrix element $\langle\varrho_{ex}\rangle_E$ (upper left), the phase angle of the off-diagonal component $\phi_{ex}$ (lower left), the $\nu_e$ number fraction (upper right), and the non-coarse-grained E-XLN angular distribution (lower right).'
+doi: 10.5281/zenodo.21843672
+url_landing: https://zenodo.org/doi/10.5281/zenodo.21843672
+creators:
+- name: Xiong, Zewei
+  orcid: 0000-0002-2385-6771
+  affiliation: GSI Helmholtz Centre for Heavy Ion Research
+- name: Wu, Meng-Ru
+  orcid: 0000-0003-4960-8706
+  affiliation: Academia Sinica
+publisher:
+  name: Zenodo
+date_published: '2026-08-07'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.21843672
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- oscillation
+model:
+  quantities:
+  - flavour evolution
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

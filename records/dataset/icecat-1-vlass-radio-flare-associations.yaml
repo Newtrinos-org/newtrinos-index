@@ -1,0 +1,158 @@
+id: icecat-1-vlass-radio-flare-associations
+type: dataset
+title: Associations of Neutrino Events in IceCat-1 with Radio Flares Detected Between Epochs 1 and 2 of VLASS
+short: Associations of IceCat-1 neutrino events with VLASS radio flares
+description: 'A catalog of associations between radio flares detected by VLASS and IceCube neutrino events included in the IceCat-1 dataset. A brief description of the data model is provided below, and a full description of the association methodology is included in Gordon et al. 2026 (OJAp, submitted; https://arxiv.org/abs/2511.21627) This catalog consists of a single table of 104 rows, where each row is a unique spatial and temporal association between a single radio flare and a single neutrino event. There are 99 unique radio flares, and 46 distinct neutrino events listed in this catalog. The Columns lists the radio source ID in VLASS and the ID of the neutrino event in IceCat-1, both of which can be used to get additional information about the radio source or neutrino from the VLASS and IceCube databases. Also included in this catalog is the time window in which the neutrino was detected relative to the two VLASS observations. The temporal association is defined as:
+
+
+      TVLASS 1 < Tν+l < TVLASS 2,
+
+
+  where TVLASS 1, Tν, and TVLASS 2 are the time of the first VLASS observation, the second VLASS observation, and the neutrino detection time respectively, and l is a ''lag'' that shifts the time window in which a neutrinos are searched for by a given number of days.
+
+
+   
+
+
+  The columns in the file TableA1_assocs.fits are:
+
+
+  Column Name
+
+  Description
+
+
+  VLASS1QLCIR
+
+  ID of the radio source in VLASS Epoch 1
+
+
+  NAME
+
+  ID of the neutrino event in IceCat-1
+
+
+  TLm525
+
+  Does the association satisfy TVLASS 1 < Tν - 525 days < TVLASS 2
+
+
+  TLm450
+
+  Does the association satisfy TVLASS 1 < Tν - 450 days < TVLASS 2
+
+
+  TLm375
+
+  Does the association satisfy TVLASS 1 < Tν - 375 days < TVLASS 2
+
+
+  TLm300
+
+  Does the association satisfy TVLASS 1 < Tν - 300 days < TVLASS 2
+
+
+  TLm225
+
+  Does the association satisfy TVLASS 1 < Tν - 225 days < TVLASS 2
+
+
+  TLm150
+
+  Does the association satisfy TVLASS 1 < Tν - 150 days < TVLASS 2
+
+
+  TLm75
+
+  Does the association satisfy TVLASS 1 < Tν - 75 days < TVLASS 2
+
+
+  TL0
+
+  Does the association satisfy TVLASS 1 < Tν < TVLASS 2
+
+
+  TLp75
+
+  Does the association satisfy TVLASS 1 < Tν + 75 days < TVLASS 2
+
+
+  TLp150
+
+  Does the association satisfy TVLASS 1 < Tν + 150 days < TVLASS 2
+
+
+  TLp225
+
+  Does the association satisfy TVLASS 1 < Tν + 225 days < TVLASS 2
+
+
+  TLp300
+
+  Does the association satisfy TVLASS 1 < Tν + 300 days < TVLASS 2
+
+
+  TLp375
+
+  Does the association satisfy TVLASS 1 < Tν + 375 days < TVLASS 2
+
+
+  TLp450
+
+  Does the association satisfy TVLASS 1 < Tν + 450 days < TVLASS 2
+
+
+  TLp525
+
+  Does the association satisfy TVLASS 1 < Tν + 525 days < TVLASS 2'
+doi: 10.5281/zenodo.21893169
+url_landing: https://zenodo.org/doi/10.5281/zenodo.21893169
+creators:
+- name: Gordon, Yjan
+  orcid: 0000-0003-1432-253X
+  affiliation: University of Wisconsin–Madison
+- name: Ferguson, Peter
+  orcid: 0000-0001-6957-1627
+  affiliation: University of Washington
+- name: Hooper, Eric
+  orcid: 0000-0003-0713-3300
+  affiliation: University of Wisconsin-Madison
+- name: Martinez, Michael
+  orcid: 0000-0002-8397-8412
+  affiliation: University of Wisconsin-Madison
+publisher:
+  name: Zenodo
+date_published: '2026-08-11'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.21893169
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2511.21627'
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

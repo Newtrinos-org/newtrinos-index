@@ -1,0 +1,51 @@
+id: neutrino-quantum-kinetics-compact-objects
+type: model
+title: Neutrino Quantum Kinetics in Compact Objects
+short: 'Neutrino quantum kinetics in compact objects: code and data (Richers et al. 2019)'
+description: "This contains the codebase and data from \"Neutrino Quantum Kinetics in  Compact Objects\" by Sherwood Richers, Gail McLaughlin, Alexey Vlasenko, and James P. Kneller. (2019, submitted to PRD)\n\n \n\n======================\n\nAll f.h5 file contents\n\n======================\n\nr(cm)  - proxy for the time (r=ct)\n\ndr_block(cm) - proxy for the block timestep (dr=cdt). Stored for recovery purposes\n\ndr_int(cm)   - proxy for the interaction integration timestep (dr=cdt). Stored for recovery purposes.\n\ndr_osc(cm)   - proxy for the oscillation integration timestep (dr=cdt). Stored for recovery purposes.\n\nfmatrixf     - dimensionless distribution function. Accessed with [time][helicity][energy][flavor1][flavor2][0=real,1=imaginary]\n\n \n\n==================\n\nDirectory contents\n\n==================\n\nfiducial - simulation output from the fiducial case of a background\n\nwith rho=1e10g/ccm, T=10MeV, Ye=0.3, the HShen EOS, including\n\noscillations, neutrino absorption on nucleons and nuclei, inelastic\n\nelectron scattering, elastic nucleon scattering, electron-positron\n\npair production, effective-absorption nucleon-nucleon bremsstrahlung,\n\nand neutrino-neutrino scattering and pair processes. Using 25 energy\n\nbins covering up to 100 MeV.\n\nnoosc_full - simulation output from the fiducial case with the same\n\ncircumstanses as above, except without oscillations and using 50\n\nenergy bins up to 100 MeV.\n\n*_tdecohere_times.dat - decoherence time (col. 4) for neutrinos at\n\n                        every radial point (col. 1), each helicity\n\n                        (col. 2), and every energy (col. 3).\n\nnoosc_supernova_background.dat - snapshot from a 1D core-collapse\n\n                        supernova simulation. The only relevant\n\n                        quantities are the radius (col. 2), density\n\n                        (col. 3), electron fraction (col. 4),\n\n                        temperature (col. 5), electron chemical\n\n                        potential (col. 9), proton chemical potential\n\n                        (col. 10), and neutron chemical potential\n\n                        (col. 11)\n\nsn_decoherence_full - calculations done including the full set of\n\n                      collision interactions listed in fiducial,\n\n                      using 25 energy bins spanning the appropriate\n\n                      domain.\n\nsn_decoherence_nonu4 - calculations done including the full set of\n\n                       collision interactions listed in fiducial\n\n                       except neutrino-neutrino scattering and pair\n\n                       processes, using 200 energy bins spanning a\n\n                       domain of 200 MeV."
+doi: 10.5281/zenodo.2574228
+url_landing: https://zenodo.org/record/2574228
+creators:
+- name: Richers, Sherwood A.
+  orcid: 0000-0001-5031-6829
+  affiliation: North Carolina State University
+- name: McLaughlin, Gail C.
+  orcid: 0000-0001-6811-6657
+  affiliation: North Carolina State University
+- name: Vlasenko, Alexey
+  orcid: 0000-0001-9828-0386
+  affiliation: North Carolina State University
+- name: Kneller, James P.
+  orcid: 0000-0002-3502-3830
+  affiliation: North Carolina State University
+publisher:
+  name: Zenodo
+date_published: '2019-02-21'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.2574228
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- oscillation
+model:
+  quantities:
+  - flavour evolution
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

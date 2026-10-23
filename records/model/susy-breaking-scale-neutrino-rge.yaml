@@ -1,0 +1,45 @@
+id: susy-breaking-scale-neutrino-rge
+type: model
+title: Effects of variations of SUSY breaking scale on neutrino parameters at low energy scale under radiative corrections
+short: 'SUSY-breaking-scale effects on neutrino masses and mixing under RG running: data'
+description: The paper addresses the effects of the variations of the SUSY breaking scale $m_s$ in the range (2-14) TeV on the three neutrino masses and mixings, in running the renormalization group equations (RGEs) for different input values of high energy seesaw scale $M_R$, in both normal and inverted hierarchical neutrino mass models. The present investigation is a continuation of the earlier works based on the variation of $m_s$ scale. Two approaches are adopted one after another - bottom-up approach for running gauge and Yukawa couplings from low to high energy scale, followed by the top-down approach from high to low energy scale for running neutrino parameters defined at high energy scale, along with gauge and Yukawa couplings. A self-complementarity relation among three mixing angles is also employed in the analysis. Significant effect due to radiative corrections on neutrino parameters with the variation of SUSY breaking scale $m_s$, is observed.
+doi: 10.5281/zenodo.6585699
+url_landing: https://zenodo.org/record/6585699
+creators:
+- name: Kh Helensana Devi
+  affiliation: Manipur university
+- name: K. Sashikanta Singh
+  affiliation: Manipur university
+- name: N.Nimai Singh
+  affiliation: Research Institute of Science and Technology a, Manipur university
+publisher:
+  name: Zenodo
+date_published: '2022-05-27'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.6585699
+  host: zenodo
+  role: primary
+sources:
+- none
+topics:
+- bsm-other
+model:
+  quantities:
+  - model output
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

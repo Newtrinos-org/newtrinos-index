@@ -1,0 +1,57 @@
+id: fast-flavor-asymptotic-distributions-1d
+type: model
+title: 'Dataset: Evaluating approximate asymptotic distributions for fast neutrino flavor conversions in a periodic 1D box'
+short: 'Approximate asymptotic distributions for fast flavour conversion in a periodic 1D box: data'
+description: In this data package we include two txt files and two zip files. The file Gaussian.txt contains 4 columns. The first column shows the indices of the file numbers contained in the file Gaussian_100.zip. The second, third, and fourth columns list the corresponding \(I_{\bar\nu}\), \(F_\nu\), and \(F_{\bar\nu}\), respectively. The file Maxent.txt contains 5 columns. The first column shows the indices of the file numbers contained in the file Maxent_100.zip while the second column lists the corresponding indices in the file Gaussian.txt. The third, fourth, and fifth columns list the corresponding \(I_{\bar\nu}\), \(F_\nu\), and \(F_{\bar\nu}\), respectively. Files Gaussian_100 and Maxent_100 give the asymptotic simulated outcomes of fast neutrino flavor conversions with the initial Gaussian and maximum-entropy distributions, respectively. Each data file xxxx.dat lists four columns for \(v_z\), \(P_{ee}(v_z)\), \(g_\nu(v_z)\), and \(g_{\bar\nu}(v_z)\), respectively. We take 100 \(v_z\) grids for all data.
+doi: 10.5281/zenodo.8167253
+url_landing: https://zenodo.org/record/8167253
+creators:
+- name: Xiong, Zewei
+  orcid: 0000-0002-2385-6771
+  affiliation: GSI Helmholtzzentrum für Schwerionenforschung, Planckstraße 1, 64291 Darmstadt, Germany
+- name: Wu, Meng-Ru
+  orcid: 0000-0003-4960-8706
+  affiliation: Institute of Physics, Academia Sinica, Taipei 11529, Taiwan; Institute of Astronomy and Astrophysics, Academia Sinica, Taipei 10617, Taiwan; Physics Division, National Center for Theoretical Sciences, Taipei 10617, Taiwan
+- name: Abbar, Sajad
+  orcid: 0000-0001-8276-997X
+  affiliation: Max-Planck-Institut für Physik (Werner-Heisenberg-Institut), Föhringer Ring 6, D-80805 München, Germany
+- name: Bhattacharyya, Soumya
+  orcid: 0000-0001-5331-4597
+  affiliation: Institute of Physics, Academia Sinica, Taipei 11529, Taiwan
+- name: George, Manu
+  orcid: 0000-0002-8974-5986
+  affiliation: Institute of Physics, Academia Sinica, Taipei 11529, Taiwan
+- name: Lin, Chun-Yu
+  orcid: 0000-0002-7489-7418
+  affiliation: National Center for High-performance Computing, National Applied Research Laboratories, Hsinchu 30076, Taiwan
+publisher:
+  name: Zenodo
+date_published: '2023-07-20'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.8167253
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- oscillation
+model:
+  quantities:
+  - flavour evolution
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

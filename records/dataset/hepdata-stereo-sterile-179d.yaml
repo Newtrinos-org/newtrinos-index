@@ -1,0 +1,47 @@
+id: hepdata-stereo-sterile-179d
+type: dataset
+title: Improved Sterile Neutrino Constraints from the STEREO Experiment with 179 Days of Reactor-On Data
+short: 'HEPData: STEREO sterile-neutrino constraints with 179 days of reactor-on data'
+description: The STEREO experiment is a very short baseline reactor antineutrino experiment. It is designed to test the hypothesis of light sterile neutrinos being the cause of a deficit of the observed antineutrino interaction rate at short baselines with respect to the predicted rate, known as the Reactor Antineutrino Anomaly. The STEREO experiment measures the antineutrino energy spectrum in six identical detector cells covering baselines between 9 and 11 m from the compact core of the ILL research reactor. In this article, results from 179 days of reactor turned on and 235 days of reactor turned off are reported at a high degree of detail. The current results include improvements in the modelling of detector optical properties and the gamma-cascade after neutron captures by gadolinium, the treatment of backgrounds, and the statistical method of the oscillation analysis. Using a direct comparison between antineutrino spectra of all cells, largely independent of any flux prediction, we find the data compatible with the null oscillation hypothesis. The best-fit point of the Reactor Antineutrino Anomaly is rejected at more than 99.9% C.L. To allow inclusion of this work into global oscillation analyses and further works, we provide various results of our analysis in digitised form.
+doi: 10.17182/hepdata.92323.v3
+url_landing: https://www.hepdata.net/record/ins1770821?version=3
+creators:
+- name: STEREO Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '3'
+date_published: '2021'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.92323.v3
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1103/physrevd.102.052002
+  relation: describes
+experiments:
+- stereo
+sources:
+- reactor
+topics:
+- sterile
+data:
+  levels:
+  - summary
+  - contours
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"STEREO Collaboration"
+    harvested: '2026-10-23'
+    score: 20.0
+    citations: 2
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

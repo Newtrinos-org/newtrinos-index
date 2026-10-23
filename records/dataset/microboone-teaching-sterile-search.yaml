@@ -1,0 +1,51 @@
+id: microboone-teaching-sterile-search
+type: dataset
+title: 'Teaching sterile neutrinos in an undergrad laboratory: a sterile-neutrino search using data from the MicroBooNE liquid-argon time projection chamber performed in an undergraduate teaching laboratory'
+short: MicroBooNE open data for an undergraduate sterile-neutrino teaching lab
+description: 'Dataset associated with "A sterile-neutrino search using data from the MicroBooNE liquid-argon time projection chamber performed in an undergraduate teaching laboratory" an educational paper to teach data analisys within particle physics for 3-4 yr physics major undergrads. Data format are csv, h5 and pkl 
+
+
+  FERMILAB-DATA-2025-01https://inspirehep.net/literature/2971920
+
+
+  Suggested text for acknowledgment is the following:We acknowledge the MicroBooNE Collaboration for making their data available for this project. The samples used in this study are simplified datasets derived from MicroBooNE, intended solely for teaching and pedagogical purposes. They are not representative of full detector performance and are not intended to support physics conclusions. We thank the MicroBooNE Collaboration for providing this resource.'
+doi: 10.5281/zenodo.17174392
+url_landing: https://zenodo.org/doi/10.5281/zenodo.17174392
+creators:
+- name: Gramellini, Elena
+  orcid: 0000-0003-1776-1941
+- name: MicroBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+date_published: '2025-09-22'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.17174392
+  host: zenodo
+  role: primary
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- sterile
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"MicroBooNE Collaboration"
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

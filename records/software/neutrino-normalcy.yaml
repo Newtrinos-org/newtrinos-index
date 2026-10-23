@@ -1,0 +1,47 @@
+id: neutrino-normalcy
+type: software
+title: PeterDenton/Neutrino-Normalcy v1.0.0
+short: 'Neutrino-Normalcy (P. Denton): code for the mass-ordering preference across data sets'
+description: 'Neutrino-Normalcy (P. Denton): code for the mass-ordering preference across data sets'
+doi: 10.5281/zenodo.3709501
+url_landing: https://zenodo.org/record/3709501
+creators:
+- name: Denton, Peter B.
+publisher:
+  name: Zenodo
+version: v1.0.0
+date_published: '2020-03-13'
+license: none-stated
+license_notes: 'Zenodo licence id: other-open'
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.3709501
+  host: zenodo
+  role: primary
+  size_bytes: 2235461
+  n_files: 1
+sources:
+- none
+topics:
+- mass-ordering
+software:
+  purposes:
+  - tooling
+  repository: https://doi.org/10.5281/zenodo.3709501
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 1
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

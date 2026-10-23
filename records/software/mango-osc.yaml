@@ -1,0 +1,53 @@
+id: mango-osc
+type: software
+title: 'mango-osc: MANGO — A Neutrino Gradient Oscillator'
+short: 'MANGO: end-to-end differentiable neutrino oscillation calculator in JAX'
+description: 'MANGO (A Neutrino Gradient Oscillator) is a neutrino oscillation calculator written in JAX, differentiable end-to-end with respect to every input &mdash; not only the oscillation parameters, but the propagation geometry and the matter densities of individual Earth shells, neither of which appears as a parameter of an analytic probability formula.
+
+
+  It covers vacuum, constant-density, layered-PREM, arbitrary-profile and adiabatic solar propagation, together with non-standard interactions, 3+N sterile states, decoherence and non-unitary mixing, through four cross-checked unitary backends and an adaptive ODE integrator. Because the gradient does not stop at the probability, it composes downstream through detector response, event weighting and binning into a likelihood or Fisher information.
+
+
+  This release is the version from which the numbers in the accompanying paper are computed.'
+doi: 10.5281/zenodo.21774110
+url_landing: https://zenodo.org/doi/10.5281/zenodo.21774110
+creators:
+- name: Granger, Pierre
+  orcid: 0000-0002-8333-4393
+  affiliation: CERN
+publisher:
+  name: Zenodo
+version: v0.2.4
+date_published: '2026-08-13'
+license: MIT
+license_url: https://opensource.org/licenses/MIT
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.21774110
+  host: zenodo
+  role: primary
+sources:
+- none
+topics:
+- oscillation
+software:
+  purposes:
+  - oscillation-probability
+  repository: https://doi.org/10.5281/zenodo.21774110
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

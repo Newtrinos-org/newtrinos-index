@@ -1,0 +1,54 @@
+id: hepdata-chorus-lambda-c
+type: dataset
+title: 'HEPData: Measurement of Lambda/c+ production in neutrino charged-current interactions.'
+short: 'HEPData: CHORUS Λc⁺ production in neutrino CC interactions'
+description: A measurement of Λ c + production in neutrino nucleon charged-current interactions is presented. In a subsample of about 50 000 interactions located in the emulsion target of the CHORUS detector, exposed to the wide band neutrino beam of the CERN SPS, candidates for decays of short-lived particles were identified using new automatic scanning systems and later confirmed through visual inspection. Criteria based on the flight length allowed a statistical separation among the different charm species thus enabling a sample particularly rich in Λ c + to be defined. At an average neutrino energy of 27 GeV, the product σ (Λ c + )/ σ (CC)× BR (Λ c + →3 p ) was measured to be (0.37±0.10(stat)±0.02(syst))×10 −2 , while the values of (1.54±0.35(stat)±0.18(syst))×10 −2 and of 0.24±0.07(stat)±0.04(syst) were obtained for σ (Λ c + )/ σ (CC) and BR (Λ c + →3 p ), respectively.
+doi: 10.17182/hepdata.49661
+identifiers:
+  inspire: 613327
+  hepdata: ins613327
+url_landing: https://www.hepdata.net/record/ins613327
+creators:
+- name: CHORUS Collaboration
+  kind: collaboration
+date_published: '2003'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins613327
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1016/S0370-2693(03)00045-5
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- chorus
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: CHORUS
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

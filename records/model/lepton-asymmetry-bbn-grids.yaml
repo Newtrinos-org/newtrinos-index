@@ -1,0 +1,138 @@
+id: lepton-asymmetry-bbn-grids
+type: model
+title: Neutrino asymmetry evolution + BBN | Public grids
+short: 'Primordial lepton asymmetries with full neutrino transport + BBN: public grids (Froustey, Pitrou)'
+description: 'Datasets associated to “Constraints on primordial lepton asymmetries with full neutrino transport”, J. Froustey and C. Pitrou [2405.06509].
+
+
+  We solve the neutrino Quantum Kinetic Equations with the full collision term in the range of temperatures [25 MeV, 0.006 MeV], in order to get the evolution of neutrino distributions. We explore a range of primordial neutrino asymmetries, whose evolution results from a complicated interplay between the Hamiltonian terms (in particular, the self-interaction mean-field) and collisions. The output of this neutrino calculation is used in the Big Bang nucleosynthesis code PRIMAT to determine the primordial abundances obtained in this cosmological scenario.
+
+
+   
+
+
+  The datasets are respectively:
+
+
+  NEVO_PRIMAT_grid_equalxi.csv, used in Section IV.A ;
+
+
+  NEVO_PRIMAT_grid_xiav_xie.csv, used in Section IV.B ;
+
+
+  NEVO_PRIMAT_grid_ximu_xitau.csv, used in Section IV.C ;
+
+
+  NEVO_PRIMAT_grid_xiav_xie_zoom.csv, used in Section V ;
+
+
+  NEVO_PRIMAT_grid_3D.csv, an additional grid exploring the full 3D parameter space (xi_e,xi_mu,xi_tau).
+
+
+  Each dataset has the same format, with 21 columns identified in the header of each file:
+
+
+  xit_av, average of the initial xitilde (= xi + xi^3/pi^2)
+
+
+  xit_e - xit_av, initial difference between the e flavor xitilde and the average
+
+
+  (xit_mu - xit_tau)/2, also called \tilde{Delta}, difference between the mu and tau flavor initial asymmetries
+
+
+  xi_e, reduced initial chemical potential of nu_e (opposite one for nu_ebar)
+
+
+  xi_mu
+
+
+  xi_tau
+
+
+  N_eff, effective number of neutrino species after decoupling (i.e., for T = 0.006 MeV)
+
+
+  Y_He4, primordial helium-4 abundance obtained from PRIMAT (with omega_baryon = 0.02242)
+
+
+  D/H, primordial deuterium abundance obtained from PRIMAT (with omega_baryon = 0.02242)
+
+
+  d[ln(Y_He4)]/d[ln(omega_b)] = dY, relative derivative such that Y_He4(omega) = Y_He4^ref * (1+dY*(omega-omega^ref)/omega^ref)
+
+
+  d[ln(D/H)]/d[ln(omega_b)], same for D/H
+
+
+  eta^f_e, final electron flavor asymmetry, defined as eta_e = (n_nue - n_nuebar)/Tcm^3
+
+
+  eta^f_mu, final muon flavor asymmetry
+
+
+  eta^f_tau, final tau flavor asymmetry
+
+
+  eta^f_1, final asymmetry of the nu_1 mass eigenstate
+
+
+  eta^f_2, final asymmetry of the nu_2 mass eigenstate
+
+
+  eta^f_3, final asymmetry of the nu_3 mass eigenstate. These "mass asymmetries" are determined using the fact that the final density matrix is diagonal in the mass basis, which allows to relate {eta_alpha}_(flavor) to {eta_i}_(mass). Note that we take the mean values of each mixing parameter from the Particle Data Group (2023), neglecting the CP-phase.
+
+
+  rho^f_e, final comoving energy density of nu_e + nu_ebar
+
+
+  rho^f_mu, final comoving energy density of nu_mu + nu_mubar
+
+
+  rho^f_tau, final comoving energy density of nu_tau + nu_taubar
+
+
+  z^f, final dimensionless photon temperature (z = T_gamma/T_cm)'
+doi: 10.5281/zenodo.11123225
+url_landing: https://zenodo.org/doi/10.5281/zenodo.11123225
+creators:
+- name: Froustey, Julien
+  orcid: 0000-0002-6466-8232
+  affiliation: University of California, Berkeley
+- name: Pitrou, Cyril
+  orcid: 0000-0002-1747-7847
+  affiliation: Institut d'Astrophysique de Paris
+publisher:
+  name: Zenodo
+date_published: '2024-05-10'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.11123225
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2405.06509'
+  relation: describes
+sources:
+- cosmology
+topics:
+- bsm-other
+model:
+  quantities:
+  - model output
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

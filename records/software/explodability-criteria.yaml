@@ -1,0 +1,54 @@
+id: explodability-criteria
+type: software
+title: 'kmaltsev/explodability: Explodability criteria for the neutrino-driven supernova mechanism'
+short: Explodability and fallback criteria for the neutrino-driven supernova mechanism (population synthesis)
+description: 'First release of
+
+
+  the explodability and fallback criteria and of
+
+
+  the core collapse supernova recipe for binary population synthesis
+
+
+  for predicting the final fates of massive stars undergoing iron-core collapse at the end of their evolution.
+
+  These are introduced in Maltsev et al. (to-be-submitted).'
+doi: 10.5281/zenodo.15046267
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15046267
+creators:
+- name: kmaltsev
+publisher:
+  name: Zenodo
+version: Explod_v1.0.0
+date_published: '2025-03-18'
+license: Apache-2.0
+license_url: http://www.apache.org/licenses/LICENSE-2.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15046267
+  host: zenodo
+  role: primary
+sources:
+- supernova
+software:
+  purposes:
+  - astrophysics
+  repository: https://doi.org/10.5281/zenodo.15046267
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

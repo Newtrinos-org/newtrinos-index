@@ -1,0 +1,414 @@
+id: microboone-bnb-inclusive-overlay-sample
+type: dataset
+title: MicroBooNE BNB Inclusive Overlay Sample (No Wire Info)
+short: 'MicroBooNE open sample: BNB inclusive overlay (simulation + cosmic data), HDF5 / artroot, no wire info'
+description: "MicroBooNE samples are provided for collaborative development in two different formats: HDF5, targeting the broadest audience, and artroot, targeting users that are familiar with the software infrastructure of Fermilab neutrino experiments and more in general of HEP experiments. The HDF5 files are stored on Zenodo, together with a list of artroot files accessible with xrootd. This sample includes simulated interactions of neutrinos from the Booster Neutrino Beam (BNB), overlaid on top of cosmic ray data. The sample is inclusive, i.e. it includes all types of neutrinos and interactions, with relative abundance matching our nominal flux and cross section models. Interactions are simulated in in the whole cryostat volume. The HDF5 files in this sample do not include the information at the wire waveform level (\"NoWire\" label), allowing for larger number of events to be included in the data set. More documentation, including detailed description of content, recipes, and example usage, at https://github.com/uboone/OpenSamples. Suggested text for acknowledgment is the following:\n We acknowledge the MicroBooNE Collaboration for making publicly available the data sets [data set DOIs] employed in this work. These data sets consist of simulated neutrino interactions from the Booster Neutrino Beamline overlaid on top of cosmic data collected with the MicroBooNE detector [2017 JINST 12 P02017]. In addition, we request that software products resulting from the usage of the datasets are also made publicly available."
+doi: 10.5281/zenodo.8370883
+url_landing: https://zenodo.org/record/8370883
+creators:
+- name: Abratenko, Polina
+  affiliation: Tufts University
+- name: Andrade Aldana, Diego
+  affiliation: Illinois Institute of Technology
+- name: Anthony, Jack
+  affiliation: University of Cambridge
+- name: Arellano, Luciano
+  affiliation: The University of Manchester
+- name: Asaadi, Jonathan
+  affiliation: University of Texas, Arlington
+- name: Ashkenazi, Adi
+  affiliation: Tel Aviv University
+- name: Balasubramanian, Supraja
+  affiliation: Fermi National Accelerator Laboratory
+- name: Baller, Bruce
+  affiliation: Fermi National Accelerator Laboratory
+- name: Barr, Giles
+  affiliation: University of Oxford
+- name: Barrow, Josh
+  affiliation: Massachusetts Institute of Technology and Tel Aviv University
+- name: Basque, Vincent
+  affiliation: Fermi National Accelerator Laboratory
+- name: Bathe-Peters, Lars
+  affiliation: Harvard University
+- name: Benevides Rodriguez, Ohana
+  affiliation: Syracuse University
+- name: Berkman, Sophie
+  affiliation: Fermi National Accelerator Laboratory
+- name: Bhanderi, Aditya
+  affiliation: The University of Manchester
+- name: Bhattacharya, Meghna
+  affiliation: Fermi National Accelerator Laboratory
+- name: Bishai, Mary
+  affiliation: Brookhaven National Laboratory
+- name: Blake, Andy
+  affiliation: Lancaster University
+- name: Bogart, Ben
+  affiliation: University of Michigan
+- name: Bolton, Tim
+  affiliation: Kansas State University
+- name: Book, Julia
+  affiliation: Harvard University
+- name: Camilleri, Leslie
+  affiliation: Columbia University
+- name: Caratelli, David
+  affiliation: University of California, Santa Barbara
+- name: Caro Terrazas, Ivan
+  affiliation: Colorado State University
+- name: Cavanna, Flavio
+  affiliation: Fermi National Accelerator Laboratory
+- name: Cerati, Giuseppe
+  affiliation: Fermi National Accelerator Laboratory
+- name: Chen, Yifan
+  affiliation: SLAC National Accelerator Laboratory
+- name: Conrad, Janet
+  affiliation: Massachusetts Institute of Technology
+- name: Convery, Mark
+  affiliation: SLAC National Accelerator Laboratory
+- name: Cooper-Troendle, London
+  affiliation: Wright Laboratory, Department of Physics, Yale University
+- name: Crespo-Anadon, Jose
+  affiliation: Centro de Investigaciones Energeticas, Medioambientales y Tecnologicas
+- name: DelTutto, Marco
+  affiliation: Fermi National Accelerator Laboratory
+- name: Dennis, Steve
+  affiliation: University of Cambridge
+- name: Detje, Philip
+  affiliation: University of Cambridge
+- name: Devitt, Alesha
+  affiliation: Lancaster University
+- name: Diurba, Richie
+  affiliation: Universitat Bern
+- name: Dorrill, Ryan
+  affiliation: Illinois Institute of Technology
+- name: Duffy, Kirsty
+  affiliation: University of Oxford
+- name: Dytman, Steve
+  affiliation: University of Pittsburgh
+- name: Eberly, Brendan
+  affiliation: University Southern Maine
+- name: Ereditato, Antonio
+  affiliation: Wright Laboratory, Department of Physics, Yale University and Fermi National Accelerator Laboratory
+- name: Evans, Justin
+  affiliation: The University of Manchester
+- name: Fine, Rob
+  affiliation: Los Alamos National Laboratory
+- name: Finnerud, Ole Gunnar
+  affiliation: The University of Manchester
+- name: Foreman, Will
+  affiliation: Illinois Institute of Technology
+- name: Fleming, Bonnie
+  affiliation: Wright Laboratory, Department of Physics, Yale University
+- name: Foppiani, Nicolo
+  affiliation: Harvard University
+- name: Franco, Domenico
+  affiliation: Wright Laboratory, Department of Physics, Yale University
+- name: Furmanski, Andy
+  affiliation: University of Minnesota
+- name: Garcia-Gamez, Diego
+  affiliation: Universidad de Grenada
+- name: Gardiner, Steven
+  affiliation: Fermi National Accelerator Laboratory
+- name: Ge, Guanqun
+  affiliation: Columbia University
+- name: Gollapinni, Sowjanya
+  affiliation: University of Tennessee and Los Alamos National Laboratory
+- name: Goodwin, Owen
+  affiliation: The University of Manchester
+- name: Gramellini, Elena
+  affiliation: Fermi National Accelerator Laboratory
+- name: Green, Patrick
+  affiliation: University of Oxford
+- name: Greenlee, Herb
+  affiliation: Fermi National Accelerator Laboratory
+- name: Gu, Wenqiang
+  affiliation: Brookhaven National Laboratory
+- name: Guenette, Roxanne
+  affiliation: The University of Manchester
+- name: Guzowski, Pawel
+  affiliation: The University of Manchester
+- name: Hagaman, Lee
+  affiliation: Wright Laboratory, Department of Physics, Yale University
+- name: Hen, Or
+  affiliation: Massachusetts Institute of Technology
+- name: Hicks, Rebecca
+  affiliation: Los Alamos National Laboratory
+- name: Hilgenberg, Chris
+  affiliation: University of Minnesota
+- name: Horton-Smith, Glenn
+  affiliation: Kansas State University
+- name: Irwin, Burke
+  affiliation: University of Minnesota
+- name: Itay, Ran
+  affiliation: SLAC National Accelerator Laboratory
+- name: James, Cat
+  affiliation: Fermi National Accelerator Laboratory
+- name: Ji, Xiangpan
+  affiliation: Brookhaven National Laboratory
+- name: Jiang, Libo
+  affiliation: Center for Neutrino Physics, Virginia Tech
+- name: Jo, Jay Hyun
+  affiliation: Wright Laboratory, Department of Physics, Yale University
+- name: Johnson, Randy
+  affiliation: University of Cincinnati
+- name: Jwa, Yeon-Jae
+  affiliation: Columbia University
+- name: Kalra, Daisy
+  affiliation: Columbia University
+- name: Kamp, Nick
+  affiliation: Massachusetts Institute of Technology
+- name: Karagiorgi, Georgia
+  affiliation: Columbia University
+- name: Ketchum, Wes
+  affiliation: Fermi National Accelerator Laboratory
+- name: Kirby, Mike
+  affiliation: Fermi National Accelerator Laboratory
+- name: Kobilarcik, Tom
+  affiliation: Fermi National Accelerator Laboratory
+- name: Kreslo, Igor
+  affiliation: Universitat Bern
+- name: Leibovitch, Madeleine
+  affiliation: University of California, Santa Barbara
+- name: Lepetic, Ivan
+  affiliation: Rutgers University
+- name: Li, Jiaoyang
+  affiliation: University of Edinburgh
+- name: Li, Yichen
+  affiliation: Brookhaven National Laboratory
+- name: Li, Kaicheng
+  affiliation: Wright Laboratory, Department of Physics, Yale University
+- name: Lin, Keng
+  affiliation: Rutgers University
+- name: Littlejohn, Bryce
+  affiliation: Illinois Institute of Technology
+- name: Louis, Bill
+  affiliation: Los Alamos National Laboratory
+- name: Luo, Xiao
+  affiliation: University of California, Santa Barbara
+- name: Manivannan, Kesavan
+  affiliation: Syracuse University
+- name: Mariani, Camillo
+  affiliation: Center for Neutrino Physics, Virginia Tech
+- name: Marsden, David
+  affiliation: The University of Manchester
+- name: Marshall, John
+  affiliation: University of Warwick
+- name: Martinez, Norman
+  affiliation: Kansas State University
+- name: Martinez Caicedo, David
+  affiliation: South Dakota School of Mines and Technology
+- name: Mason, Katie
+  affiliation: Tufts University
+- name: Mastbaum, Andy
+  affiliation: Rutgers University
+- name: McConkey, Nicola
+  affiliation: The University of Manchester
+- name: Meddage, Varuna
+  affiliation: Kansas State University
+- name: Miller, Katrina
+  affiliation: University of Chicago
+- name: Mills, Joshua
+  affiliation: Tufts University
+- name: Mogan, Andrew
+  affiliation: Colorado State University
+- name: Mohayai, Tanaz
+  affiliation: Fermi National Accelerator Laboratory
+- name: Mooney, Mike
+  affiliation: Colorado State University
+- name: Moor, Alexandra
+  affiliation: University of Cambridge
+- name: Moore, Craig
+  affiliation: Fermi National Accelerator Laboratory
+- name: Mora Lepin, Luis
+  affiliation: The University of Manchester
+- name: Mousseau, Joel
+  affiliation: University of Michigan
+- name: Mulleriababu, Shivaraj
+  affiliation: Universitat Bern
+- name: Naples, Donna
+  affiliation: University of Pittsburgh
+- name: Navrer-Agasson, Anyssa
+  affiliation: The University of Manchester
+- name: Nayak, Nitish
+  affiliation: Brookhaven National Laboratory
+- name: Nebot-Guinot, Miquel
+  affiliation: University of Edinburgh
+- name: Nowak, Jarek
+  affiliation: Lancaster University
+- name: Nunes, Monica
+  affiliation: Syracuse University
+- name: Oza, Nupur
+  affiliation: Los Alamos National Laboratory
+- name: Palamara, Ornella
+  affiliation: Fermi National Accelerator Laboratory
+- name: Pallat, Nicole
+  affiliation: University of Minnesota
+- name: Paolone, Vittorio
+  affiliation: University of Pittsburgh
+- name: Papadopoulou, Afroditi
+  affiliation: Massachusetts Institute of Technology
+- name: Papavassiliou, Vassili
+  affiliation: New Mexico State University
+- name: Parkinson, Holly
+  affiliation: University of Edinburgh
+- name: Pate, Steve
+  affiliation: New Mexico State University
+- name: Patel, Niam
+  affiliation: Lancaster University
+- name: Pavlovic, Zarko
+  affiliation: Fermi National Accelerator Laboratory
+- name: Piasetzky, Eli
+  affiliation: Tel Aviv University
+- name: PoncePinto, Iris
+  affiliation: Wright Laboratory, Department of Physics, Yale University
+- name: Pophale, Ishanee
+  affiliation: Lancaster University
+- name: Prince, Sebastien
+  affiliation: Harvard University
+- name: Qian, Xin
+  affiliation: Brookhaven National Laboratory
+- name: Raaf, Jen
+  affiliation: Fermi National Accelerator Laboratory
+- name: Radeka, Veljko
+  affiliation: Brookhaven National Laboratory
+- name: Reggiani Guzzo, Marina
+  affiliation: The University of Manchester
+- name: Ren, Lu
+  affiliation: New Mexico State University
+- name: Rochester, Leon
+  affiliation: SLAC National Accelerator Laboratory
+- name: Rodriguez Rondon, Jairo
+  affiliation: South Dakota School of Mines and Technology
+- name: Rosenberg, Matt
+  affiliation: Tufts University
+- name: Ross-Lonergan, Mark
+  affiliation: Los Alamos National Laboratory
+- name: RudolfvonRohr, Christoph
+  affiliation: Universitat Bern
+- name: Scanavini, Giacomo
+  affiliation: Wright Laboratory, Department of Physics, Yale University
+- name: Schmitz, Dave
+  affiliation: University of Chicago
+- name: Schukraft, Anne
+  affiliation: Fermi National Accelerator Laboratory
+- name: Seligman, Bill
+  affiliation: Columbia University
+- name: Shaevitz, Mike
+  affiliation: Columbia University
+- name: Sharankova, Ralitsa
+  affiliation: Fermi National Accelerator Laboratory
+- name: Shi, Jingyuan
+  affiliation: University of Cambridge
+- name: Smith, Andrew
+  affiliation: University of Cambridge
+- name: Snider, Erica
+  affiliation: Fermi National Accelerator Laboratory
+- name: Soderberg, Mitch
+  affiliation: Syracuse University
+- name: Soldner-Rembold, Stefan
+  affiliation: The University of Manchester
+- name: Spitz, Josh
+  affiliation: University of Michigan
+- name: St.John, Jason
+  affiliation: Fermi National Accelerator Laboratory
+- name: Stancari, Michelle
+  affiliation: Fermi National Accelerator Laboratory
+- name: Strauss, Thomas
+  affiliation: Fermi National Accelerator Laboratory
+- name: Sword-Fehlberg, Samantha
+  affiliation: New Mexico State University
+- name: Szlec, Andrzej
+  affiliation: University of Edinburgh
+- name: Tang, Wei
+  affiliation: University of Tennessee
+- name: Taniuchi, Natsumi
+  affiliation: University of Cambridge
+- name: Terao, Kazu
+  affiliation: SLAC National Accelerator Laboratory
+- name: Thorpe, Christopher
+  affiliation: Lancaster University
+- name: Torbunov, Dmitri
+  affiliation: Brookhaven National Laboratory
+- name: Totani, Dante
+  affiliation: University of California, Santa Barbara
+- name: Toups, Matt
+  affiliation: Fermi National Accelerator Laboratory
+- name: Tsai, Yun-Tse
+  affiliation: SLAC National Accelerator Laboratory
+- name: Tyler, Jennifer
+  affiliation: Kansas State University
+- name: Uchida, Melissa
+  affiliation: University of Cambridge
+- name: Usher, Tracy
+  affiliation: SLAC National Accelerator Laboratory
+- name: Viren, Brett
+  affiliation: Brookhaven National Laboratory
+- name: Weber, Michele
+  affiliation: Universitat Bern
+- name: Wei, Hanyu
+  affiliation: Louisiana State University
+- name: White, Angela
+  affiliation: Wright Laboratory, Department of Physics, Yale University
+- name: Williams, Zach
+  affiliation: University of Texas, Arlington
+- name: Wolbers, Steve
+  affiliation: Fermi National Accelerator Laboratory
+- name: Wongjirad, Taritree
+  affiliation: Tufts University
+- name: Wospakrik, Maya
+  affiliation: Fermi National Accelerator Laboratory
+- name: Wresilo, Karolina
+  affiliation: University of Cambridge
+- name: Wright, Natalie
+  affiliation: Massachusetts Institute of Technology
+- name: Wu, Wanwei
+  affiliation: Fermi National Accelerator Laboratory
+- name: Yandel, Erin
+  affiliation: University of California, Santa Barbara
+- name: Yang, Tingjun
+  affiliation: Fermi National Accelerator Laboratory
+- name: Yates, Lauren
+  affiliation: Fermi National Accelerator Laboratory
+- name: Yu, Haiwang
+  affiliation: Brookhaven National Laboratory
+- name: Zeller, Sam
+  affiliation: Fermi National Accelerator Laboratory
+- name: Zennamo, Joseph
+  affiliation: Fermi National Accelerator Laboratory
+- name: Zhang, Chao
+  affiliation: Brookhaven National Laboratory
+publisher:
+  name: Zenodo
+version: large
+date_published: '2023-09-26'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.8370883
+  host: zenodo
+  role: primary
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- cross-section
+- detector-response
+data:
+  levels:
+  - mc
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 40.0
+    citations: 4
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

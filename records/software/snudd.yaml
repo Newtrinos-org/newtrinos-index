@@ -1,0 +1,47 @@
+id: snudd
+type: software
+title: SNuDD
+short: 'SNuDD: solar-neutrino nuclear and electron recoil spectra at direct-detection experiments'
+description: SNuDD is a Python package for computing the solar neutrino nuclear and electron recoil spectra at direct detection experiments. SNuDD accounts for both solar and terrestrial neutrino propagation effects as well as for modifications of the neutrino-nucleus and -electron scattering cross sections due to new physics, including detector effects.
+url_landing: https://github.com/SNuDD/SNuDD
+owner:
+  name: SNuDD
+  kind: organization
+date_published: '2023-06-23'
+date_updated: '2026-08-21'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/SNuDD/SNuDD
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- solar
+topics:
+- dark-matter
+channels:
+- cevns
+- es
+software:
+  repository: https://github.com/SNuDD/SNuDD
+  languages:
+  - Jupyter Notebook
+  purposes:
+  - sensitivity
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: neutrino in:name,description stars:>=10
+    harvested: '2026-10-23'
+    score: 22.0
+    stars: 11
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

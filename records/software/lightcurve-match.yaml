@@ -1,0 +1,59 @@
+id: lightcurve-match
+type: software
+title: 'lightcurve_match: Combining neutrino experimental light-curves for pointing to the next Galactic Core-Collapse Supernova'
+short: 'lightcurve_match: combining neutrino-detector light curves to point to the next Galactic supernova'
+description: 'Supplementary materials for "Combining neutrino experimental light-curves for pointing to the next Galactic Core-Collapse Supernova" Authors: A. Coleiro, D. Dornic, M. Colomer Molla, M. Lincetto, V. Kulikovskiy Content: simulation: detected neutrino light curve simulation codes (C++) matching: chi-square and cross-correlation matching codes (C++) skymap: HEALPix equatorial skymap creation code and error box area calculation (python) Repository: https://github.com/SNEWS2/lightcurve_match'
+doi: 10.5281/zenodo.3779943
+url_landing: https://zenodo.org/record/3779943
+creators:
+- name: Coleiro, Alexis
+  orcid: 0000-0003-0860-440X
+  affiliation: APC/Université de Paris
+- name: Colomer Molla, Marta
+  orcid: 0000-0003-1801-8121
+  affiliation: IFIC; APC/Université de Paris
+- name: Dornic, Damien
+  orcid: 0000-0001-5729-1468
+  affiliation: CPPM/CNRS
+- name: Lincetto, Massimiliano
+  orcid: 0000-0002-1460-3369
+  affiliation: CPPM/CNRS
+- name: Kulikovskiy, Vladimir
+  orcid: 0000-0003-4096-5934
+  affiliation: INFN Genova
+publisher:
+  name: Zenodo
+version: v1.0.0
+date_published: '2020-04-30'
+license: GPL-3.0-only
+license_url: https://www.gnu.org/licenses/gpl-3.0-standalone.html
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.3779943
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- multi-messenger
+software:
+  purposes:
+  - astrophysics
+  repository: https://doi.org/10.5281/zenodo.3779943
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

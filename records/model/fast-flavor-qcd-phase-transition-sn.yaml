@@ -1,0 +1,63 @@
+id: fast-flavor-qcd-phase-transition-sn
+type: model
+title: 'Dataset: Occurrence of fast neutrino flavor conversions in QCD phase-transition supernovae'
+short: 'Fast flavour conversions in QCD phase-transition supernovae: figure data'
+description: 'This is the data provided in the article "Occurrence of fast neutrino flavor conversions in QCD phase-transition supernovae" to support Figures 7, 8, 9 and 11.
+
+
+  The file data_fig7.txt contains 5 columns. The first and second columns shows the post-second-bounce time in millisecond and radius in kilometer of the fast-flavor-conersion (FFC) region, respectively. The other columns list the corresponding growth rate, $\bar\nu_e$ survival ratio and survival probability, respectively. 
+
+
+  The file data_fig8and9.txt contains 33 columns. The first column shows the post-second-bounce time in millisecond. The other columns list the estimated event rate and the corresponding mean energy for four scenarios of no oscillations, inverted mass ordering (IO), normal ordering (NO), and flavor equipartition in four detection channels. 
+
+
+  The file data_fig11.txt contains 7 columns for the abundance yields as a function of atomic number, Z.'
+doi: 10.5281/zenodo.16778316
+url_landing: https://zenodo.org/doi/10.5281/zenodo.16778316
+creators:
+- name: Xiong, Zewei
+  orcid: 0000-0002-2385-6771
+  affiliation: GSI Helmholtz Centre for Heavy Ion Research
+- name: Wu, Meng-Ru
+  orcid: 0000-0003-4960-8706
+  affiliation: Institute of Physics, Academia Sinica
+- name: Khosravi Largani, Noshad
+  orcid: 0000-0003-1551-0508
+  affiliation: University of Wrocław
+- name: Fischer, Tobias
+  orcid: 0000-0003-2479-344X
+  affiliation: Wrocław University of Science and Technology
+- name: Martínez-Pinedo, Gabriel
+  orcid: 0000-0002-3825-0131
+  affiliation: GSI Helmholtz Centre for Heavy Ion Research
+publisher:
+  name: Zenodo
+date_published: '2025-08-08'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.16778316
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- oscillation
+model:
+  quantities:
+  - flavour evolution
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

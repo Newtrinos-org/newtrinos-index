@@ -1,0 +1,44 @@
+id: nudec-bsm
+type: software
+title: nudec_BSM
+short: 'nudec_BSM: neutrino decoupling in the early Universe beyond the Standard Model'
+description: Neutrino Decoupling Beyond the Standard Model
+url_landing: https://github.com/MiguelEA/nudec_BSM
+owner:
+  name: MiguelEA
+  kind: person
+date_published: '2018-12-14'
+date_updated: '2026-04-29'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/MiguelEA/nudec_BSM
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- cosmology
+topics:
+- bsm-other
+software:
+  repository: https://github.com/MiguelEA/nudec_BSM
+  languages:
+  - Wolfram Language
+  purposes:
+  - astrophysics
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: neutrino in:name,description stars:>=10
+    harvested: '2026-10-23'
+    score: 38.0
+    stars: 19
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

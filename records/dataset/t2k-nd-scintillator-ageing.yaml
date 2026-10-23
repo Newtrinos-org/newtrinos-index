@@ -1,0 +1,54 @@
+id: t2k-nd-scintillator-ageing
+type: dataset
+title: Data release for "Scintillator ageing of the T2K near detectors from 2010 to 2021"
+short: 'T2K near-detector scintillator ageing 2010–2021: data release'
+description: 'The data release is associated with the paper "Scintillator ageing of the T2K near detectors from 2010 to 2021”, published in the Journal of Instrumentation and arXiv:2207.12982 [physics].
+
+
+  The data release contains the data points and associated fits from the paper within two root files:
+
+
+  The file T2KNearDetector_ScintAgeing_Standard_DataRelease.root contains the data points and fits shown in the standard ageing results described in Sections 4 and 5 of the paper.
+
+
+  The file T2KNearDetector_ScintAgeing_ECalSupplemental_DataRelease.root contains the data points and fits shown in the supplemental ageing results described in Section 6 of the paper.
+
+
+  All data points are provided as ROOT TGraphError objects and fit as ROOT TF1 objects. A full description of the contents of each root file is provided in the README.txt.'
+doi: 10.5281/zenodo.6783269
+url_landing: https://zenodo.org/doi/10.5281/zenodo.6783269
+creators:
+- name: T2K Collaboration
+publisher:
+  name: Zenodo
+date_published: '2022-06-30'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.6783269
+  host: zenodo
+  role: primary
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- detector-response
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"T2K Collaboration"
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

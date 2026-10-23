@@ -1,0 +1,49 @@
+id: coherent-csi-quenching-release
+type: dataset
+title: COHERENT Collaboration data release from the measurements of CsI[Na] response to nuclear recoils
+short: 'COHERENT measurements of the CsI[Na] response to nuclear recoils: data release'
+description: The data release from the measurements of the CsI[Na] response to low energy nuclear recoils by the COHERENT collaboration. The release corresponds to the results published in 'D. Akimov et al 2022 JINST 17 P10034.' We share the data in the form of raw ADC waveforms, provide benchmark subselections and event reconstruction scripts to enhance the transparency and reproducibility of our results.
+doi: 10.13139/olcf/1969085
+url_landing: https://www.osti.gov/servlets/purl/1969085
+creators:
+- name: Newby, Jason
+  affiliation: Oak Ridge National Laboratory
+- name: Konovalov, Alexey
+  affiliation: MEPhI
+publisher:
+  name: Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United States)
+date_published: '2023'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.13139/olcf/1969085
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/PhysRevLett.129.081801
+  relation: describes
+experiments:
+- coherent
+sources:
+- spallation
+topics:
+- detector-response
+data:
+  levels:
+  - response
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

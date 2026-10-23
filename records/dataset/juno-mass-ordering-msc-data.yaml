@@ -1,0 +1,47 @@
+id: juno-mass-ordering-msc-data
+type: dataset
+title: Supporting data for JUNO neutrino mass ordering sensitivity analysis
+short: 'JUNO mass-ordering sensitivity (Master''s thesis): simulated spectra and outputs'
+description: This dataset accompanies the Master’s dissertation “Computational Analysis of the JUNO Experiment’s Sensitivity to the Neutrino Mass Ordering”. It includes several NumPy .npy and .txt files with simulated energy spectra, metadata, and statistical analysis results, together with plots generated during the research and the Python .ipynb codes used to produce them. The data support sensitivity studies of the JUNO experiment to the Neutrino Mass Ordering and provide the basis for reproducing and extending the analyses presented in the dissertation.
+doi: 10.25824/redu/pvtmmd
+url_landing: https://redu.unicamp.br/citation?persistentId=doi:10.25824/redu/PVTMMD
+creators:
+- name: Fonseca Filho, Macello Jales de Carvalho
+  affiliation: Universidade Estadual de Campinas (UNICAMP). Instituto de Física Gleb Wataghin
+- name: Holanda, Pedro Cunha de
+  affiliation: Universidade Estadual de Campinas (UNICAMP). Instituto de Física Gleb Wataghin
+publisher:
+  name: Repositório de Dados de Pesquisa da Unicamp
+version: '1.0'
+date_published: 2025
+date_updated: '2025-09-26'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.25824/redu/pvtmmd
+  host: institutional
+  role: primary
+experiments:
+- juno
+sources:
+- reactor
+topics:
+- mass-ordering
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

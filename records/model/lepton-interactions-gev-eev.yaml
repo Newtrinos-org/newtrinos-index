@@ -1,0 +1,60 @@
+id: lepton-interactions-gev-eev
+type: model
+title: Dataset for the analysis of medium to high energies lepton interactions including distinct channels
+short: 'Neutrino interactions from GeV to EeV incl. trident channels: thesis data and code'
+description: 'Esse arquivo contém os dados gerados na pesquisa de doutorado que tem como trabalho final a tese "Interações de neutrinos de GeV à EeV".
+
+  O arquivo "Muon-Trident-main.zip" contém os códigos necessários para obter os resultados do processo de tridente de múon.
+
+  O arquivo "DIS_NNPDF40_cuts_3tr.zip" contém os códigos necessários para reproduzir os resultados de espalhamentos de múons no LHC com o gerador de monte carlo POWHEG-BOX-RES.
+
+  O arquivo "Events-HESE-IceCube-main.zip" contém os códigos necessários para simular eventos de neutrinos astrofísicos no IceCube.
+
+  O arquivo "Neutrino-Transmission-main.zip" contém os códigos necessários para simular a propagação de neutrinos através de meios materiais com e sem física além do modelo padrão da física de partículas.
+
+  O arquivo "images.zip" contém as imagens geradas para a tese, que foram obtidas usando os códigos supracitados.'
+doi: 10.25824/redu/mdczpu
+url_landing: https://redu.unicamp.br/citation?persistentId=doi:10.25824/redu/MDCZPU
+creators:
+- name: Francener, Reinaldo
+  affiliation: Universidade Estadual de Campinas (UNICAMP). Instituto de Física Gleb Wataghin.
+- name: Gratieri, Diego Rossi
+  affiliation: Universidade Estadual de Campinas (UNICAMP). Instituto de Física Gleb Wataghin.
+- name: Gonçalves, Victor Paulo Barros
+  affiliation: Universidade Federal de Pelotas (UFPel).
+publisher:
+  name: Repositório de Dados de Pesquisa da Unicamp
+version: '1.2'
+date_published: 2026
+date_updated: '2026-03-16'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.25824/redu/mdczpu
+  host: institutional
+  role: primary
+references:
+- doi: 10.1088/1361-6471/ade4e4
+  relation: describes
+sources:
+- astrophysical
+topics:
+- cross-section
+model:
+  quantities:
+  - interaction rates / cross sections
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,53 @@
+id: ccsn-3d-rotating-gw-takiwaki
+type: model
+title: Insights into non-axisymmetric instabilities in three-dimensional rotating supernova models with neutrino and gravitational-wave signatures
+short: '3D rotating CCSN models: gravitational waveforms (Takiwaki, Kotake, Foglizzo 2021)'
+description: The data of the gravitational wavefroms of core-collapse supernovae, which are used in Takiwaki, Kotake, and Foglizzo, (2021), Monthly Notices of the Royal Astronomical Society, Volume 508, Issue 1, pp.966-985
+doi: 10.5281/zenodo.5489428
+url_landing: https://zenodo.org/record/5489428
+creators:
+- name: Takiwaki, Tomoya
+  orcid: 0000-0003-0304-9283
+  affiliation: National Astronomical Observatory of Japan
+- name: Kotake, Kei
+  orcid: 0000-0003-2456-6183
+  affiliation: Fukuoka University
+- name: Foglizzo, Thierry
+  affiliation: CEA Saclay
+publisher:
+  name: Zenodo
+version: '1'
+date_published: '2021-09-08'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.5489428
+  host: zenodo
+  role: primary
+references:
+- doi: 10.1093/mnras/stab2607
+  relation: describes
+- arxiv: '2107.02933'
+  relation: describes
+sources:
+- supernova
+topics:
+- multi-messenger
+model:
+  quantities:
+  - multi-messenger signals
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

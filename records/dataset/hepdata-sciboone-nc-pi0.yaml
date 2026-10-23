@@ -1,0 +1,54 @@
+id: hepdata-sciboone-nc-pi0
+type: dataset
+title: 'HEPData: Measurement of Inclusive Neutral Current Neutral Pion Production on Carbon in a Few-GeV Neutrino Beam'
+short: 'HEPData: SciBooNE inclusive NC π⁰ production on carbon'
+description: The SciBooNE Collaboration reports inclusive neutral current neutral pion production by a muon neutrino beam on a polystyrene target (C8H8). We obtain (7.7 \pm 0.5(stat.) \pm 0.5 (sys.)) x 10^(-2) as the ratio of the neutral current neutral pion production to total charged current cross section; the mean energy of neutrinos producing detected neutral pions is 1.1 GeV. The result agrees with the Rein-Sehgal model implemented in our neutrino interaction simulation program with nuclear effects. The spectrum shape of the neutral pion momentum and angle agree with the model. We also measure the ratio of the neutral current coherent pion production to total charged current cross section to be (0.7 \pm 0.4) x 10^(-2).
+doi: 10.17182/hepdata.53757
+identifiers:
+  inspire: 835586
+  hepdata: ins835586
+url_landing: https://www.hepdata.net/record/ins835586
+creators:
+- name: SciBooNE Collaboration
+  kind: collaboration
+date_published: '2010'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins835586
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/PhysRevD.81.033004
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- sciboone
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- nc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: SciBooNE
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

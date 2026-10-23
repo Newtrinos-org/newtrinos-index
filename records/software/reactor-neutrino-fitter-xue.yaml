@@ -1,0 +1,45 @@
+id: reactor-neutrino-fitter-xue
+type: software
+title: 'xue-525/reactor-neutrino-fitter: First public release'
+short: 'reactor-neutrino-fitter: Python IBD and oscillation fitting framework for reactor experiments'
+description: "Reactor Neutrino Fitter\n\nA Python-based analysis framework for reactor neutrino experiments, specifically designed for Inverse Beta Decay (IBD) cross-section calculations and neutrino oscillation parameter fitting.\n\nProject Overview\n\nThis project provides tools for:\n\nComputing IBD differential cross-section matrices\n\nCalculating reactor neutrino expected spectra\n\nPerforming neutrino oscillation parameter fitting\n\nAnalyzing detector responses and energy reconstruction\n\nProject Structure\n\nreactor-neutrino-fitter/\n├── fitter/\n│   ├── src/fitter/\n│   │   ├── analysis/          # Analysis modules\n│   │   │   ├── fitter.py      # Main fitting class\n│   │   │   └── IBDXsec_Vissani.py  # IBD cross-section matrix generator\n│   │   ├── physics/            # Physics calculations\n│   │   │   ├── ibdxsec_Vissani.py      # IBD cross-section physics\n│   │   │   └── surprob_fit_sys.py      # Survival probability calculations\n│   │   ├── reactor/            # Reactor neutrino calculations\n│   │   │   └── reactor_expected.py     # Expected spectrum calculator\n│   │   ├── config/             # Configuration files\n│   │   │   ├── GlobalConfig.py         # Global configuration parameters\n│   │   │   └── ReactorConfig.py        # Reactor-specific settings\n│   │   └── common/             # Common utilities\n│   │       ├── cache_monitor.py        # Caching utilities\n│   │       ├── my_interpolator.py      # Interpolation functions\n│   │       └── nonlinearity_fit.py     # Nonlinearity corrections\n│   ├── data/                   # Data and output directory\n│   │   └── outputs/            # Generated cross-section matrices (large files, not in git)\n│   ├── lib/                    # Library files (e.g., matplotlib styles)\n│   └── paper_figure.ipynb      # Example analysis notebook\n└── README.md\n\nPrerequisites\n\nPython 3.x\n\nPyTorch\n\nNumPy\n\nSciPy\n\nMatplotlib\n\niminuit (for parameter fitting)\n\nuproot (for ROOT file handling)\n\nnumba (for performance optimization)\n\ntqdm (for progress bars)\n\nInstallation\n\nClone the repository:\n\ngit clone \ncd reactor-neutrino-fitter\n\nInstall required dependencies:\n\npip install torch numpy scipy matplotlib iminuit uproot numba tqdm\n\nUsage\n\nStep 1: Generate IBD Cross-Section Matrix\n\nImportant: Before running any analysis, you must first generate the IBD cross-section matrix. This file is too large (>200 MB) to be stored in GitHub, so it needs to be generated locally.\n\nGenerate the cross-section matrix by running:\n\npython3 fitter/src/fitter/analysis/IBDXsec_Vissani.py\n\nThis script will:\n\nCalculate the IBD differential cross-section matrix for neutrino energies from 1.8 to 13.0 MeV\n\nGenerate a matrix with configurable binning (default: 5600 bins, corresponding to ~0.002 MeV step size)\n\nSave the output to fitter/data/outputs/IBDXsec_matrix_enu5600_test.pt\n\nNote: This computation can be memory-intensive and time-consuming. The default configuration with 5600 bins produces a ~240 MB output file.\n\nYou can modify the binning configuration in the script by changing the bin_list parameter at the bottom of the file.\n\nStep 2: Configure Analysis Parameters\n\nEdit fitter/src/fitter/config/GlobalConfig.py to configure:\n\nData file paths\n\nEnergy binning parameters\n\nDetector parameters\n\nOscillation parameters\n\nSystematic uncertainties\n\nKey parameters:\n\ndata_path: Path to the generated IBD cross-section matrix\n\nfile_path: Path to input ROOT data files\n\nn_E_nu_bins: Number of neutrino energy bins (default: 5600)\n\nn_E_dep_bins: Number of deposited energy bins (default: 5600)\n\nStep 3: Run Analysis\n\nExample 1: Calculate Expected Spectrum\n\nfrom fitter.src.fitter.reactor.reactor_expected import ReactorExpected\nimport matplotlib.pyplot as plt\n\n# Initialize reactor expected spectrum calculator\nreactor = ReactorExpected(\n    n_E_nu_bins=5600,   # Neutrino energy bins (step ~0.002 MeV)\n    n_E_dep_bins=5600,  # Deposited energy bins (step ~0.002 MeV)\n    n_E_d_bins=560,     # Detector response bins\n    n_E_p_bins=560,     # Reconstructed energy bins\n)\n\n# Get reconstructed energy spectrum\nE_p_spectrum = reactor.get_E_p_spectrum()\n\n# Plot results\nimport matplotlib.pyplot as plt\nplt.plot(reactor.E_p, E_p_spectrum)\nplt.xlabel(\"Energy (MeV)\")\nplt.ylabel(\"Counts (/ 20keV / year)\")\nplt.title(\"Reconstructed Energy Spectrum\")\nplt.show()\n\nExample 2: Perform Parameter Fitting\n\nfrom iminuit import Minuit\nfrom fitter.src.fitter.analysis.fitter import Fitter\nfrom fitter.src.fitter.config import GlobalConfig as gcfg\n\n# Initialize fitter\nfitter = Fitter(year=1, MO=\"NO\")\n\n# Generate or load observed spectrum\nfitter.get_obs_spectrum(gseed=1)  # gseed=0 for Asimov, >0 for toy data\n\n# Set up Minuit for minimization\nm = Minuit(fitter.chi2, fitter.NO_params_NO, name=fitter.names)\nm.tol = 0.01\n\n# Perform fit\nresults = m.migrad()\nprint(results)\n\nKey Components\n\nIBDXsec_Vissani.py\n\nGenerates the IBD differential cross-section matrix. This is a computationally intensive step that must be run before any analysis. The output matrix maps neutrino energy to deposited energy probabilities.\n\nReactorExpected\n\nCalculates the expected reactor neutrino spectrum, including:\n\nNeutrino energy spectrum from reactors\n\nIBD interaction rates\n\nDetector response and energy reconstruction\n\nBackground contributions\n\nFitter\n\nMain analysis class for parameter fitting:\n\nChi-squared calculation with systematic uncertainties\n\nSupport for neutrino oscillation parameters (θ₁₂, θ₁₃, Δm²₂₁, Δm²₃₁)\n\nReactor and detector systematic uncertainties\n\nBackground rate and shape uncertainties\n\nConfiguration\n\nKey configuration files:\n\nGlobalConfig.py: Global analysis parameters, systematic uncertainties, test statistics\n\nReactorConfig.py: Reactor-specific parameters (power, distance, etc.)\n\nOutput Files\n\nGenerated files are stored in fitter/data/outputs/:\n\nIBD cross-section matrices (.pt format, PyTorch tensors)\n\nThese files are excluded from git due to their large size (>100 MB)\n\nNotes\n\nThe default energy binning (5600 bins) provides ~0.002 MeV resolution\n\nMemory requirements depend on the number of bins used\n\nThe framework supports both Normal Ordering (NO) and Inverted Ordering (IO)\n\nSystematic uncertainties include reactor correlations, detector effects, and background modeling"
+doi: 10.5281/zenodo.17810974
+url_landing: https://zenodo.org/doi/10.5281/zenodo.17810974
+creators:
+- name: 薛景秦
+publisher:
+  name: Zenodo
+version: v1.0.0
+date_published: '2025-12-04'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.17810974
+  host: zenodo
+  role: primary
+sources:
+- reactor
+topics:
+- oscillation
+software:
+  purposes:
+  - fitting
+  repository: https://doi.org/10.5281/zenodo.17810974
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

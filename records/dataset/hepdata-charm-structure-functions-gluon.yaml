@@ -1,0 +1,54 @@
+id: hepdata-charm-structure-functions-gluon
+type: dataset
+title: 'HEPData: Experimental Study of the Nucleon Structure Functions and of the Gluon Distribution from Charged Current Neutrino and anti-neutrinos Interactions'
+short: 'HEPData: CHARM nucleon structure functions and gluon distribution'
+description: Inclusive neutrino and antineutrino charged current interactions were studied in the CHARM detector exposed to neutrino and antineutrino Wide Band Beams of the CERN 400 GeV SPS. The x and Q 2 dependence of the structure functions F 2 and xF 3 and of the antiquark momentum distribution q were determined. The data have been interpreted in terms of QCD theory using the Furmanski-Petronzio method. In this way we have determined Λ LO = [190 −40 +70 ( stat ) ± 70 ( syst .)] MeV and the structure functions of quarks and gluons without specific assumptions on their analytic dependence. The results agree with previous experiments which relied on model assumptions in the analysis. We conclude that the model independent simultaneous analysis of the xF 3 , F 2 , q structure functions gives a more reliable determination of the gluon distribution in the nucleon.
+doi: 10.17182/hepdata.30729
+identifiers:
+  inspire: 181908
+  hepdata: ins181908
+url_landing: https://www.hepdata.net/record/ins181908
+creators:
+- name: CHARM Collaboration
+  kind: collaboration
+date_published: '1983'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins181908
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1016/0370-2693(83)90436-7
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- charm
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- dis
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: CHARM
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

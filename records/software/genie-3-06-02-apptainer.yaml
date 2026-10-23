@@ -1,0 +1,50 @@
+id: genie-3-06-02-apptainer
+type: software
+title: 'GENIE MC Neutrino Generator (Version: 3.06.02) - Apptainer'
+short: GENIE 3.06.02 packaged as an Apptainer container
+description: GENIE 3.06.02 packaged as an Apptainer container
+doi: 10.5281/zenodo.22310541
+url_landing: https://zenodo.org/doi/10.5281/zenodo.22310541
+creators:
+- name: Brandão Magalhães Rodrigues, Luiz Felipe
+  orcid: 0009-0007-4789-3781
+  affiliation: Universidade Federal de Alfenas
+publisher:
+  name: Zenodo
+version: 3.06.02
+date_published: '2026-09-04'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.22310541
+  host: zenodo
+  role: primary
+relations:
+- rel: uses
+  target: genie-generator
+sources:
+- none
+topics:
+- cross-section
+software:
+  purposes:
+  - event-generator
+  repository: https://doi.org/10.5281/zenodo.22310541
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

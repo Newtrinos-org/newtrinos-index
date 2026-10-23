@@ -1,0 +1,44 @@
+id: radiotools
+type: software
+title: radiotools
+short: 'radiotools: utilities for cosmic-ray and neutrino radio detectors'
+description: A tool package for cosmic-ray and neutrino radio detectors
+url_landing: https://github.com/nu-radio/radiotools
+owner:
+  name: nu-radio
+  kind: organization
+date_published: '2017-10-11'
+date_updated: '2026-10-05'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/nu-radio/radiotools
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- astrophysical
+- cosmogenic
+software:
+  repository: https://github.com/nu-radio/radiotools
+  languages:
+  - Python
+  purposes:
+  - detector-simulation
+  - tooling
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrino stars:>=3
+    harvested: '2026-10-23'
+    score: 16.0
+    stars: 8
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

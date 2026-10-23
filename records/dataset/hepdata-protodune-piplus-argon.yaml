@@ -1,0 +1,47 @@
+id: hepdata-protodune-piplus-argon
+type: dataset
+title: Measurement of Exclusive $π^+$--argon Interactions Using ProtoDUNE-SP
+short: 'HEPData: ProtoDUNE-SP exclusive π⁺–argon interactions'
+description: No data abstract available.
+doi: 10.17182/hepdata.169768
+url_landing: https://www.hepdata.net/record/ins3084014
+creators:
+- name: DUNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '1'
+date_published: '2026'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.169768
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1103/nm5s-4cnw
+  relation: describes
+experiments:
+- dune
+sources:
+- none
+topics:
+- detector-response
+- cross-section
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"DUNE Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

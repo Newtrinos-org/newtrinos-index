@@ -1,0 +1,205 @@
+id: vhe-gamma-counterparts-icecube-alerts
+type: dataset
+title: Data for Prompt Searches for Very-High-Energy γ-Ray Counterparts to IceCube Astrophysical Neutrino Alerts
+short: 'VHE γ-ray follow-up of IceCube alerts: SEDs and upper limits (Jin, Schüssler et al.)'
+description: 'This dataset provides the multi-instrument spectral energy distribution (SED) data and upper limits corresponding to Figures 3–7 of the paper “Prompt Searches for Very-High-Energy γ-Ray Counterparts to IceCube Astrophysical Neutrino Alerts.”All data are stored in Enhanced Character-Separated Values (ECSV) format.
+
+
+  🔹 General Format
+
+
+  File type: .ecsv (plain text, comma-delimited)
+
+
+  Standard: Astropy ECSV 0.9–2.0
+
+
+  Delimiter: ,
+
+
+  Encoding: UTF-8
+
+
+  Purpose: Each file lists the energy-binned SED points or upper limits for a given source.
+
+
+  Units: Explicitly stated in the header of each file.
+
+
+  🔹 Column Definitions (common across files)
+
+
+  Column name
+
+  Unit
+
+  Type
+
+  Description
+
+
+  srcname
+
+  —
+
+  string
+
+  Source or neutrino-event identifier
+
+
+  en
+
+  eV or keV
+
+  float
+
+  Bin center energy
+
+
+  en_wlo, en_wup
+
+  same as en
+
+  float
+
+  Lower and upper bin half-widths
+
+
+  nufnu
+
+  erg cm⁻² s⁻¹
+
+  float
+
+  Differential photon flux at bin center
+
+
+  nufnu_elo, nufnu_eup
+
+  erg cm⁻² s⁻¹
+
+  float
+
+  Lower and upper statistical uncertainties in nufnu
+
+
+  dnde
+
+  TeV⁻¹ cm⁻² s⁻¹
+
+  float
+
+  Differential photon flux ($dN/dE$), when used instead of nufnu
+
+
+  dnde_elo, dnde_eup
+
+  TeV⁻¹ cm⁻² s⁻¹
+
+  float
+
+  Lower and upper uncertainty in dnde
+
+
+  tstart, tstop
+
+  MJD
+
+  float
+
+  Start and stop times of the observation
+
+
+  texpo
+
+  s or h
+
+  float
+
+  Effective exposure time
+
+
+  instrument
+
+  —
+
+  string
+
+  Instrument or combined instruments used
+
+
+  dataformat
+
+  —
+
+  string
+
+  “ul” = upper limit; “flux” = measured flux
+
+
+  comments
+
+  —
+
+  string
+
+  Additional notes (e.g. confidence level, campaign, etc.)'
+doi: 10.5281/zenodo.15516095
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15516095
+creators:
+- name: Jin, Weidong
+  orcid: 0000-0002-1089-1754
+  affiliation: University of California, Los Angeles
+- name: Schüssler, Fabian
+  orcid: 0000-0003-1500-6571
+  affiliation: IRFU, CEA, Université Paris-Saclay
+- name: Senniappan, Mohanraj
+  orcid: 0000-0001-6734-7699
+  affiliation: 'Khalifa University: Abu Dhabi, Abu Dhabi, AE'
+- name: Viale, Ilaria
+  orcid: 0000-0001-5031-5930
+  affiliation: INFN Torino
+- name: Buson, Sara
+  orcid: 0000-0002-3308-324X
+  affiliation: University of Wuerzburg
+- name: The IceCube Neutrino Observatory
+  kind: organization
+- name: Dorner, Daniela
+  orcid: 0000-0001-8823-479X
+- name: Schleicher, Bernd
+  orcid: 0009-0001-0870-8594
+  affiliation: Universit¨at W¨urzburg, D-97074 W¨urzburg, Germany
+publisher:
+  name: Zenodo
+version: '1.2'
+date_published: '2025'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15516095
+  host: zenodo
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

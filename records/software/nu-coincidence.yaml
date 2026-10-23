@@ -1,0 +1,44 @@
+id: nu-coincidence
+type: software
+title: nu_coincidence
+short: 'nu_coincidence: simulations of coincident source–neutrino detections'
+description: Investigating coincident source-neutrino detections through simulations.
+url_landing: https://francescacapel.com/nu_coincidence/
+owner:
+  name: cescalara
+  kind: person
+date_published: '2021-02-03'
+date_updated: '2022-07-22'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/cescalara/nu_coincidence
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- astrophysical
+topics:
+- multi-messenger
+software:
+  repository: https://github.com/cescalara/nu_coincidence
+  languages:
+  - Python
+  purposes:
+  - astrophysics
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrinos stars:>=3
+    harvested: '2026-10-23'
+    score: 6.0
+    stars: 3
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

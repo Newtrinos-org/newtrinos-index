@@ -1,0 +1,55 @@
+id: txs0506-blazar-gamma-ray-activity
+type: dataset
+title: 'Analyzing the gamma-ray activity of neutrino emitter candidates: comparing TXS 0506+056 with other blazars'
+short: 'Gamma-ray activity of neutrino-emitter candidates: TXS 0506+056 vs other blazars (data and code)'
+description: 'Data and code for our publication (in MNRAS) described by the title. Following is the abstract for the same article: On 22nd of September 2017 the IceCube collaboration sent an alert for an EHE (Extreme HighEnergy) event, corresponding to the reconstruction of a muonic neutrino (IC-170922A) with energy∼290 TeV. A multi-wavelength follow-up campaign associated this neutrino event with a gamma-ray flaring state of the BL Lac TXS 0506+056 located at z=0.3365. From the same position of the sky a muonic neutrino excess is observed in a time window of 110 days around 13th of December 2014. These observations together suggest TXS 0506+056 as a possible neutrino emitter. We report here a long term gamma-ray monitoring of this source and we compare it with other blazars spatially correlated with astrophysical muonic neutrino events observed by IceCube. We characterize the most significant gamma-ray flares of the blazars in the sample and introduce the blazar duty cycle as an important parameter to be considered when assessing a possible neutrino counterpart. For the selected blazars we show the expected neutrino flux variability with different time binning assuming the gamma-rays observed by Fermi-LAT as a product of a leptohadronic emission scenario. The neutrino expectations from the blazar sample are then compared with the IceCube discovery flux search-ing for the optimal time bin in a multi-messenger context. This analysis indicates that the detection of a single flare represents a challenge for a single cubic kilometer detector, underlining the importance of increasing the size of current neutrino telescopes and obtaining a good monitoring of the entire sky through a global neutrino network.'
+doi: 10.5281/zenodo.4731071
+url_landing: https://zenodo.org/record/4731071
+creators:
+- name: Marinelli, Antonio
+  orcid: 0000-0002-1466-1219
+  affiliation: INFN Napoli, Italy
+- name: Sacahui Reyes, Jose Rodrigo
+  orcid: 0000-0001-5079-5559
+  affiliation: IFIM-USAC, Guatemala
+- name: Sharma, Ankur
+  orcid: 0000-0001-5397-6777
+  affiliation: Uppsala University, Sweden
+- name: Osorio-Archila, Mabel
+  affiliation: IA-UNAM, Mexico
+publisher:
+  name: Zenodo
+date_published: '2021-04-30'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.4731071
+  host: zenodo
+  role: primary
+references:
+- arxiv: '1909.13198'
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

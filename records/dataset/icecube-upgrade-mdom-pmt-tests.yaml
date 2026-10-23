@@ -1,0 +1,142 @@
+id: icecube-upgrade-mdom-pmt-tests
+type: dataset
+title: Acceptance Tests of more than 10 000 Photomultiplier Tubes for the multi-PMT Digital Optical Modules of the IceCube Upgrade
+short: 'Acceptance tests of >10 000 PMTs for the IceCube Upgrade mDOMs: data'
+description: Abstract More than 10000 photomultiplier tubes (PMTs) with a diameter of 80 mm will be installed in multi-PMT Digital Optical Modules (mDOMs) of the IceCube Upgrade. These have been tested and pre-calibrated at two sites. A throughput of more than 1000 PMTs per week with both sites was achieved with a modular design of the testing facilities and highly automated testing procedures. The testing facilities can easily be adapted to other PMTs, such that they can, e.g., be re-used for testing the PMTs for IceCube-Gen2. Single photoelectron response, high voltage dependence, time resolution, prepulse, late pulse, afterpulse probabilities, and dark rates were measured for each PMT. We describe the design of the testing facilities, the testing procedures, and the results of the acceptance tests.
+doi: 10.13016/23ed-uuph
+url_landing: https://drum.lib.umd.edu/handle/1903/35714
+creators:
+- name: Abbasi, R.
+- name: Ackermann, M.
+- name: Adams, J.
+- name: Agarwalla, Sanjib Kumar
+- name: Aguilar, A., J.
+- name: Ahlers, M.
+- name: Alameddine, Jean-Marco
+- name: Amin, N. M.
+- name: Andeen, K.
+- name: Anton, G.
+- name: Arg�_elles, C.
+- name: Ashida, Y.
+- name: Athanasiadou, S.
+- name: Ausborm, L.
+- name: Axani, Spencer
+- name: Bai, X.
+- name: Balagopal, Aswathi
+- name: Baricevic, M.
+- name: Barwick, W., S.
+- name: Bash, Simeon
+- name: Basu, Vedant
+- name: Bay, R.
+- name: Beatty, J., J.
+- name: Tjus, Becker, J.
+- name: Beise, Jakob
+- name: Bellenghi, C.
+- name: Benning, Charlotte
+- name: BenZvi, S.
+- name: Berley, D.
+- name: Bernardini, E.
+- name: Besson, Z., D.
+- name: Blaufuss, E.
+- name: Bloom, Lucas
+- name: Blot, Summer
+- name: Bontempo, F.
+- name: Motzkin, Book, Y., J.
+- name: Meneguolo, Boscolo, Caterina
+- name: B̦ser, S.
+- name: Botner, O.
+- name: B̦ttcher, Jakob
+- name: Braun, J.
+- name: Brinson, B.
+- name: Brostean-Kaiser, Jannes
+- name: Brusa, L.
+- name: Burley, T., Ryan
+- name: Butterfield, Delaney
+- name: Campana, Michael
+- name: Caracas, I.
+- name: Carloni, K.
+- name: Graci���ېCarpio, J.
+- name: Chattopadhyay, Sharmistha
+- name: Chau, Thien Nhan
+- name: Chen, Z.
+- name: Chirkin, D.
+- name: Choi, S.
+- name: Clark, Brian
+- name: Coleman, A.
+- name: Collin, H., G.
+- name: Connolly, A.
+- name: Conrad, M., J.
+- name: Coppin, P.
+- name: Corley, Rebecca
+- name: Correa, Pablo
+- name: Cowen, Doug
+- name: Dave, P.
+- name: Clercq, De, C.
+- name: DeLaunay, J.J.
+- name: Delgado, D.
+- name: Deng, S.
+- name: Desai, Abhishek
+- name: Desiati, P.
+- name: Vries, de, D., K.
+- name: Wasseige, de, G.
+- name: DeYoung, T.
+- name: Diaz, A.
+- name: D�_az���V̩lez, C., J.
+- name: Dierichs, P.
+- name: Dittmer, M.
+- name: Domi, A.
+- name: Draper, Lincoln
+- name: Dujmovic, H.
+- name: Dutta, Kaustav
+- name: DuVernois, A., M.
+- name: Ehrhardt, T.
+- name: Eidenschink, Leonhard
+- name: Eimer, A.
+- name: Eller, P.
+- name: Ellinger, E.
+- name: El Mentawi, Sharif
+- name: Els�_sser, Dominik
+- name: Engel, R.
+- name: Erpenbeck, H.
+- name: Evans, John
+- name: Evenson, P. A.
+- name: Lung Fan, Kwok
+- name: Farrag, Kareem Ramadan
+- name: Fazely, A. R.
+- name: Fedynitch, A.
+- name: Feigl, Nora
+publisher:
+  name: Journal of Instrumentation
+date_published: 2024
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.13016/23ed-uuph
+  host: institutional
+  role: primary
+experiments:
+- icecube
+detectors:
+- icecube-upgrade
+sources:
+- none
+topics:
+- detector-response
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

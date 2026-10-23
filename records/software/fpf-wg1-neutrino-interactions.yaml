@@ -1,0 +1,62 @@
+id: fpf-wg1-neutrino-interactions
+type: software
+title: 'LHCfitNikhef/FPF-WG1: Make Metadata Consistent'
+short: Forward Physics Facility WG1 (neutrino interactions, hadron structure) code and data
+description: Working Group 1 "Neutrino interactions and hadron structure" of the Forward Physics Facility
+doi: 10.5281/zenodo.8355209
+url_landing: https://zenodo.org/record/8355209
+creators:
+- name: Cruz-Martinez, Juan
+  orcid: 0000-0002-8061-1965
+  affiliation: CERN
+- name: Fieg, Max
+  affiliation: University of California
+- name: Giani, Tommaso
+  orcid: 0000-0001-7135-6731
+  affiliation: Nikhef
+- name: Krack, Peter
+  affiliation: Nikhef
+- name: Makela, Toni
+  affiliation: National Center for Nuclear Research, Warsaw
+- name: Rabemananjara, Tanjona
+  orcid: 0000-0002-8395-8059
+  affiliation: Nikhef
+- name: Rojo, Juan
+  orcid: 0000-0003-4279-2192
+  affiliation: Nikhef
+publisher:
+  name: Zenodo
+version: v0.1.1
+date_published: '2023-09-18'
+license: GPL-3.0-only
+license_url: https://www.gnu.org/licenses/gpl-3.0-standalone.html
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.8355209
+  host: zenodo
+  role: primary
+sources:
+- accelerator
+topics:
+- cross-section
+software:
+  purposes:
+  - nuclear-model
+  repository: https://doi.org/10.5281/zenodo.8355209
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

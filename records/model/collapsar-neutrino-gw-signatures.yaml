@@ -1,0 +1,84 @@
+id: collapsar-neutrino-gw-signatures
+type: model
+title: Data for Collapsar Disk Outflows III. Detectable Neutrino and Gravitational Wave Signatures
+short: 'Collapsar disk outflows III: neutrino and gravitational-wave signal time series'
+description: 'Raw time series of neutrino, gravitational wave, and shock data as a function of post-bounce time, obtained by post-processing the simulations reported in arXiv:2507.17836.
+
+
+  Zip file decompresses into two folders:
+
+
+  1) dt_models/
+
+
+  2) PaperI_models/
+
+
+  Files:
+
+
+  1) neutrino_lum_ener_[MODEL].dat: neutrino luminosities and mean energies
+
+
+  2) gw_strain_[MODEL].dat: gravitational wave strain
+
+
+  3) shock_coeff_[MODEL].dat: monopole, dipole, and quadrupole shock coefficients
+
+
+  Where MODEL is the name of each model, following the same notation as in the paper (see Table I). Columns and units are indicated in the header of each file. For Paper I models, all data for 16TI-SFHo is provided (Figure 1), while for the other models only the GW strain is provided (Table III and Figure 4).
+
+
+  Please cite the paper if you use this data in publications.'
+doi: 10.5281/zenodo.17299306
+url_landing: https://zenodo.org/doi/10.5281/zenodo.17299306
+creators:
+- name: Fernández, Rodrigo
+  orcid: 0000-0003-4619-339X
+  affiliation: University of Alberta
+- name: Janke, Silas
+  orcid: 0009-0000-4192-5390
+  affiliation: Heidelberg University
+- name: Dean, Coleman
+  orcid: 0000-0001-9364-4785
+  affiliation: University of Alberta
+- name: Tamborra, Irene
+  orcid: 0000-0001-7449-104X
+  affiliation: Niels Bohr Institute
+publisher:
+  name: Zenodo
+version: Revised Manuscript
+date_published: '2025-10-15'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.17299306
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2507.17836'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- flux
+- multi-messenger
+model:
+  quantities:
+  - multi-messenger signals
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

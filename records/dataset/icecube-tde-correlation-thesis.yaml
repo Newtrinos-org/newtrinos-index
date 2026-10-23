@@ -1,0 +1,42 @@
+id: icecube-tde-correlation-thesis
+type: dataset
+title: SEARCH FOR NEUTRINOS CORRELATED WITH TIDAL DISRUPTION EVENTS IN ICECUBE
+short: 'Search for neutrinos correlated with tidal disruption events in IceCube: thesis data'
+description: Tidal disruption events (TDEs) occur when a star is ripped apart by the tidal forces of a supermassive black hole. TDEs are theorized to produce high energy neutrinos through photohadronic interactions between accelerated protons and multi-wavelength photons in the accretion disk and outflows. Detecting these neutrinos would identify a source class responsible for the production of high energy cosmic rays and provide insight into the dynamics of TDEs. We conduct a dedicated search for neutrinos coincident with TDEs detected in optical/UV and X-ray wavelengths, taking advantage of the recent increase in observed TDEs from wide field-of-view telescopes. We analyzed 89 TDEs using a time-dependent likelihood analysis in two parts. First, we searched for emission from individual sources, where we fit the time window of expected neutrino emission. Second, we performed a study of jetted and non-jetted TDE subpopulations using a stacked search with a fixed one year time window. No significant neutrino excess was observed in either search. The contribution of jetted and non-jetted TDEs detected in optical/UV and X-ray wavelengths to the diffuse astrophysical neutrino flux is found to be less than 1.3% and 14.7%, respectively.
+doi: 10.13016/udgy-d7ba
+url_landing: https://drum.lib.umd.edu/handle/1903/35908
+creators:
+- name: Gray, Shannon Jeanne
+publisher:
+  name: Digital Repository at the University of Maryland
+date_published: 2026
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.13016/udgy-d7ba
+  host: institutional
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

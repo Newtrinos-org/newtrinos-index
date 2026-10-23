@@ -1,0 +1,57 @@
+id: t2k-flux-prediction-2020
+type: dataset
+title: Neutrino beam flux prediction 2020
+short: T2K neutrino beam flux prediction 2020 for ND280 and Super-K
+description: 'The files in the following archive file contain the neutrino and antineutrino beam flux predictions for the T2K ND280 (near) and Super-Kamiokande (far) detectors. It supersedes the previous flux release in 2016.
+
+
+  Since the previous flux release, the flux prediction has been updated to use 2009 replica target data from the NA61/SHINE experiment to tune interactions inside of the neutrino production target. The NA61/SHINE 2009 replica target measurements of π± production are published in Eur. Phys. J. C (2016) 76: 617. The flux prediction released here corresponds to that used in the T2K 2020 oscillation physics result paper (to be submitted to Eur. Phys. J. C).
+
+
+  The provided flux predictions include no neutrino oscillations.
+
+
+  A matrix which encodes the covariance between different energy bins of the fluxes at the near and far detectors for both horn operation modes is also provided in this release.
+
+
+  The provided tar* file contains the flux predictions, covariance matrix, and a README.pdf file with detailed information on the included files.
+
+
+  *Note, although the file name ends .gz, this is a .tar.gz file and should be unpacked as such (tar -xvf).'
+doi: 10.5281/zenodo.5734307
+url_landing: https://zenodo.org/doi/10.5281/zenodo.5734307
+creators:
+- name: T2K Collaboration
+publisher:
+  name: Zenodo
+date_published: '2021-11-29'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.5734307
+  host: zenodo
+  role: primary
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"T2K Collaboration"
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

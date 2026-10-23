@@ -1,0 +1,110 @@
+id: ccsn-3d-24-5msun-gw-neutrino-signals
+type: model
+title: Gravitational-wave and neutrino signals from 3D core-collapse supernova simulations of a 24.5 solar mass progenitor
+short: GW and neutrino signals of three 3D CCSN simulations of a 24.5 M☉ progenitor
+description: 'Gravitational-wave and neutrino signals from 3D core-collapse supernova simulations of a 24.5 solar mass progenitor
+
+
+  Gravitational-wave and neutrino time series from three 3D core-collapsesupernova simulations of the same 24.5 solar mass model. 
+
+
+  All three were run with FLASH 4
+
+
+  ## Simulations
+
+
+  Model name
+
+  Note
+
+  Bounce time
+
+
+  m24.5-3D
+
+  3D FLASH shell-burning model.
+
+  0.327305521281423 s
+
+
+  m24.5-MESA
+
+  1D MESA model  
+
+  0.240793505775091 s
+
+
+  m24.5-SA:
+
+  spherical average of the 3D shell-burning model
+
+  0.323533037201170  s
+
+
+  Column 1 of every file is time relative to core bounce. Negative values arethe collapse phase. 
+
+
+  *_gw.dat
+
+
+  1:  time2-7:  dIdt_xx, dIdt_xy, dIdt_yy, dIdt_xz, dIdt_yz, dIdt_zz
+
+
+  The first time derivative of the mass quadrupole moment, integrated over thewhole star. To obtain the strain, differentiate once more and apply the quadrupoleformula. Rememebr to applty the prefactor G/c**4.
+
+
+  *_neutrinos.dat
+
+
+  1: time2-4: L_nue,L_anue, L_nux (1e51 erg/s)5-7:  Emean_nue, Emean_anue, Emean_nux (MeV)
+
+
+  Energy-integrated luminosities and mean energies from the M1 transport,measured at a radius of 500 km.'
+doi: 10.5281/zenodo.21979612
+url_landing: https://zenodo.org/doi/10.5281/zenodo.21979612
+creators:
+- name: Andresen, Haakon
+  orcid: 0000-0002-4747-8453
+  affiliation: Stockholm University
+- name: O'Connor, Evan
+  orcid: 0000-0002-8228-796X
+  affiliation: Stockholm University
+- name: Fields, C. E.
+  orcid: 0000-0002-8925-057X
+  affiliation: University of Arizona
+- name: Couch, Sean
+  orcid: 0000-0002-5080-5996
+publisher:
+  name: Zenodo
+date_published: '2026-08-17'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.21979612
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+- multi-messenger
+model:
+  quantities:
+  - multi-messenger signals
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

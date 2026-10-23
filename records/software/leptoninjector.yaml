@@ -20,6 +20,10 @@ distributions:
   role: primary
   formats:
   - source-code
+- url: https://doi.org/10.17632/662gkpjfd9
+  host: institutional
+  role: mirror
+  label: 'LeptonInjector and LeptonWeighter: A neutrino event generator and weighter for neutrino observatorie'
 cite_as:
 - doi:10.1016/j.cpc.2021.108018
 references:

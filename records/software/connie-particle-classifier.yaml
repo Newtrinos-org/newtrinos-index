@@ -1,0 +1,60 @@
+id: connie-particle-classifier
+type: software
+title: CONNIE particle classifier
+short: 'CONNIE: ML and image-processing particle classifier for Skipper-CCD data'
+description: Machine learning and image processing tools for particle classification in the CONNIE experiment using Skipper-CCD sensor data. Focused on identifying event types relevant to CEνNS detection.
+doi: 10.25824/redu/rkigpp
+url_landing: https://redu.unicamp.br/citation?persistentId=doi:10.25824/redu/RKIGPP
+creators:
+- name: Santos, Sara Mirthis Dantas dos
+  affiliation: Universidade Estadual de Campinas (UNICAMP). Faculdade de Engenharia Elétrica e de Computação
+- name: Nasteva, Irina Naskova
+  affiliation: Universidade Federal do Rio de Janeiro
+- name: Costa, Paula Dornhofer Paro
+  affiliation: Universidade Estadual de Campinas (UNICAMP). Faculdade de Engenharia Elétrica e de Computação
+publisher:
+  name: Repositório de Dados de Pesquisa da Unicamp
+version: '1.0'
+date_published: 2026
+date_updated: '2026-09-09'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.25824/redu/rkigpp
+  host: institutional
+  role: primary
+references:
+- doi: 10.5753/eniac.2025.14311
+  relation: describes
+- doi: 10.5281/zenodo.22149183
+  relation: describes
+experiments:
+- connie
+sources:
+- reactor
+topics:
+- detector-response
+channels:
+- cevns
+software:
+  repository: https://doi.org/10.25824/redu/rkigpp
+  purposes:
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 20.0
+    citations: 2
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

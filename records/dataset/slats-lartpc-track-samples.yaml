@@ -1,0 +1,53 @@
+id: slats-lartpc-track-samples
+type: dataset
+title: Simple Liquid-Argon Track Samples (SLATS)
+short: 'SLATS: simple liquid-argon track samples in two detector-response domains (ProtoDUNE-SP simulation)'
+description: The data set we release here covers two data domains. Each domain is populated by a variant of a LArTPC detector simulation used in the ProtoDUNE-SP experiment. The two domains differ in one feature—the detector response function. The domain real is generated with a 2D response, and the fake domain is generated with a quasi-1D response. The dataset can be used to train unpaired image translation algorithms.
+doi: 10.5281/zenodo.7809108
+url_landing: https://zenodo.org/record/7809108
+creators:
+- name: Torbunov, Dmitrii
+  affiliation: Brookhaven national laboratory
+- name: Huang, Yi
+  affiliation: Brookhaven national laboratory
+- name: Viren, Brett
+  affiliation: Brookhaven national laboratory
+- name: Yu, Haiwang
+  affiliation: Brookhaven national laboratory
+- name: Huang, Jin
+  affiliation: Brookhaven national laboratory
+- name: Lin, Meifeng
+  affiliation: Brookhaven national laboratory
+- name: Ren, Yihui
+  affiliation: Brookhaven national laboratory
+publisher:
+  name: Zenodo
+date_published: '2023-04-07'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.7809108
+  host: zenodo
+  role: primary
+sources:
+- accelerator
+topics:
+- detector-response
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

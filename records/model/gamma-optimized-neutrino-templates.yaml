@@ -1,0 +1,56 @@
+id: gamma-optimized-neutrino-templates
+type: model
+title: gamma-optimized neutrino templates
+short: Gamma-ray-optimised Galactic diffuse neutrino templates (HEALPix maps)
+description: 'Neutrino flux map predicted in the Max and Min configurations and for three different resolutions (given by their NSIDE value in the name of the files) and adopting Kelner-Aharonian cross sections for neutrino production. Neutrino fluxes produced from the interaction of cosmic rays (protons and helium, in this case) with atomic and molecular gas are given in separated files.
+
+
+  Please, when using these templates, cite the following references:https://iopscience.iop.org/article/10.1088/1475-7516/2025/12/041https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2022.1041838/fullhttps://www.aanda.org/articles/aa/full_html/2023/04/aa43714-22/aa43714-22.html'
+doi: 10.5281/zenodo.20625396
+url_landing: https://zenodo.org/doi/10.5281/zenodo.20625396
+creators:
+- name: De la Torre Luque, Pedro
+  orcid: 0000-0002-4150-2539
+- name: Gaggero, Daniele
+  orcid: 0000-0001-8432-1060
+- name: Marinelli, Antonio
+- name: Grasso, Dario
+  orcid: 0000-0002-5407-1934
+publisher:
+  name: Zenodo
+date_published: '2026-06-10'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.20625396
+  host: zenodo
+  role: primary
+references:
+- doi: 10.1051/0004-6361/202243714
+  relation: describes
+- doi: 10.3389/fspas.2022.1041838
+  relation: describes
+- doi: 10.1088/1475-7516/2025/12/041
+  relation: describes
+sources:
+- astrophysical
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

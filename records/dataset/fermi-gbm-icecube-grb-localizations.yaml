@@ -1,0 +1,48 @@
+id: fermi-gbm-icecube-grb-localizations
+type: dataset
+title: Fermi-GBM Data Release Related to Searches for Neutrinos from Gamma-Ray Bursts using the IceCube Neutrino Observatory
+short: Fermi-GBM GRB localisations used in IceCube searches for neutrinos from gamma-ray bursts
+description: "This data release includes Fermi Gamma-ray Burst Monitor (GBM) localizations used in searches for neutrinos from gamma-ray bursts (GRB) by the IceCube Neutrino Observatory. These localizations are provided publicly to the community since they are generally useful for any analysis that needs the Fermi-GBM localization for a GRB. Full Details: The files contained herein are HEALPix representations of GRB localizations from the Fermi-GBM stored as FITS files and produced according to the automated method described in [1]. Each file represents the probability density (statistical + systematic) for the true source location. By definition, this excludes the Earth occulted region of the sky, which is set to 0 due to the fact that real sources are not visible through the Earth. These files cover a time range spanning the first detection of GRBs by GBM in July 2008 through July 2019 and should be considered preliminary. The files are preliminary in the sense that they contain some key differences to the official files hosted at HEASARC FTP server through the Fermi Science Support Center (FSSC; https://fermi.gsfc.nasa.gov/ssc/data/access/gbm/). We list the key differences here: Fermi began production HEALPix FITS files in early 2018, and files prior to that have not been officially provided. The files in this archive are currently the only version of HEALPix files pre-2018.\n These files were not produced via the standard GBM operational pipeline; however they were produced with the same functional code that is used to make the files. The result of this is that the standard quality checks on the FITS headers by uploading to the FSSC were skipped. The primary header is most affected, with some null values, but these null values do not affect the HEALPix data.\n These localizations may have centroids that are slightly different than reported in the online catalog. This is because an automated algorithm for localization (RoboBA) was used to localize the GRBs and produce these files as opposed to the manual Human-in-the-Loop localization performed for every GRB prior to 2016, and ~15% of GRBs thereafter [1].\n These localizations contain an updated and improved systematic uncertainty model compared to the pre-July 2019 localizations at the FSSC. The new systematic uncertainty model is explained in [1], while the older localizations at the FSSC contain a systematic uncertainty model from [2].\n In general, the official localizations hosted at the FSSC currently do not remove localization probability that overlaps the Earth, but these files do remove the probability that overlaps the Earth and renormalizes the remaining PDF. This encodes the assertion that the localization is indeed of an astrophysical nature. The FITS files are organized with two HDUs: PRIMARY HDU with some basic metadata about the mission from which the data originated\n HEALPIX HDU containing header information about the GBM detector pointings, as well as the Sun and Geocenter localizations with respect to Fermi. There are two data fields contained in the extension: PROBABILITY: the differential localization probability per pixel (NSIDE=128) SIGNIFICANCE: integrated probability for estimating confidence intervals (NSIDE=128) Furthermore, we provide images of each localization. The images are a Mollweide projection of the sky, with the 50% and 90% localization confidence regions marked in shaded purple. The location of the Earth from Fermi's perspective is marked in shaded blue. The GBM trigger number associated with each FITS file and image is listed in the filename. References: [1] Goldstein, A. et al. 2020, ApJ, 895, 40\n [2] Connaughton, V. et al. 2015, ApJS, 216, 32"
+doi: 10.5281/zenodo.6727152
+url_landing: https://zenodo.org/record/6727152
+creators:
+- name: Goldstein, Adam
+  orcid: 0000-0002-0587-7042
+  affiliation: Science and Technology Institute, Universities Space Research Association
+- name: Wood, Joshua
+  orcid: 0000-0001-9012-2463
+  affiliation: NASA Marshall Space Flight Center
+publisher:
+  name: Zenodo
+version: v1
+date_published: '2022-06-24'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.6727152
+  host: zenodo
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

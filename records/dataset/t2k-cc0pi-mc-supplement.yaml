@@ -1,0 +1,43 @@
+id: t2k-cc0pi-mc-supplement
+type: dataset
+title: Data release for simulated muon neutrino charged-current interactions on hydrocarbon without pions in the final state using multiple detectors with correlated energy spectra at T2K.
+short: 'T2K detector MC used for the CC0π cross-section extraction: data release'
+description: This data release provides additional information about the T2K detector Monte Carlo (MC) simulation used in the extraction of the cross-section for muon neutrino charged-current interactions on hydrocarbon without pions in the final state.For a detailed description please see the included README.pdf document.
+doi: 10.5281/zenodo.15183090
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15183090
+creators:
+- name: T2K Collaboration
+  kind: collaboration
+publisher:
+  name: Zenodo
+date_published: '2025-04-09'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15183090
+  host: zenodo
+  role: primary
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"T2K Collaboration"
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

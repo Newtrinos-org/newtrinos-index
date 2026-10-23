@@ -1,0 +1,70 @@
+id: overlapping-sparse-vertex-decomposition
+type: dataset
+title: Datasets and model checkpoints for overlapping-sparse neutrino interaction decomposition
+short: 'Deep-learning decomposition of overlapping-sparse images at neutrino vertices: datasets and checkpoints'
+description: 'Datasets and model checkpoints corresponding to the article: "Deep-learning-based decomposition of overlapping-sparse images: application at the vertex of neutrino interactions." (https://arxiv.org/abs/2310.19695):
+
+
+  dataset_p.tar.gz: proton dataset.
+
+  dataset_mu.tar.gz: muon dataset.
+
+  dataset_D+.tar.gz: deuterium dataset.
+
+  dataset_T+.tar.gz: tritium dataset.
+
+  metadata.tar.gz: datasets metadata.
+
+  checkpoints.tar.gz: checkpoints for the trained neural network models.'
+doi: 10.5281/zenodo.10075199
+url_landing: https://zenodo.org/doi/10.5281/zenodo.10075199
+creators:
+- name: Alonso Monsalve, Saúl
+  orcid: 0000-0002-9678-7121
+  affiliation: ETH Zurich
+- name: Davide, Sgalaberna
+  orcid: 0000-0001-6205-5013
+  affiliation: ETH Zurich
+- name: Xingyu, Zhao
+  orcid: 0000-0003-1348-5732
+  affiliation: ETH Zurich
+- name: Adrien, Molines
+  orcid: 0009-0007-5623-282X
+  affiliation: ETH Zurich
+- name: Clark, McGrew
+  orcid: 0000-0003-2053-3739
+  affiliation: Stony Brook University
+- name: André, Rubbia
+  orcid: 0000-0002-5747-1001
+  affiliation: ETH Zurich
+publisher:
+  name: Zenodo
+date_published: '2023-11-06'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.10075199
+  host: zenodo
+  role: primary
+sources:
+- accelerator
+topics:
+- detector-response
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

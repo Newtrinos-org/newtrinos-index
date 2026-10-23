@@ -1,0 +1,46 @@
+id: nuspacesim
+type: software
+title: nuSpaceSim
+short: 'nuSpaceSim: simulation of space- and balloon-based detection of very-high-energy neutrinos'
+description: The main simulator repository for nuSpaceSim
+url_landing: https://github.com/NuSpaceSim/nuSpaceSim
+owner:
+  name: NuSpaceSim
+  kind: organization
+date_published: '2020-11-24'
+date_updated: '2026-10-08'
+license: BSD-3-Clause-Clear
+access: open
+distributions:
+- url: https://github.com/NuSpaceSim/nuSpaceSim
+  host: github
+  role: primary
+  formats:
+  - source-code
+sources:
+- cosmogenic
+- astrophysical
+topics:
+- flux
+software:
+  repository: https://github.com/NuSpaceSim/nuSpaceSim
+  languages:
+  - Python
+  purposes:
+  - sensitivity
+  - detector-simulation
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrino stars:>=3
+    harvested: '2026-10-23'
+    score: 26.0
+    stars: 13
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

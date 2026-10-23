@@ -1,0 +1,54 @@
+id: hepdata-nutev-dimuon-cross-sections
+type: dataset
+title: 'HEPData: Precise measurement of dimuon production cross-sections in nu/mu Fe and anti-nu/mu Fe deep inelastic scattering at the Tevatron.'
+short: 'HEPData: NuTeV dimuon production cross sections in ν/ν̄ Fe DIS'
+description: We present measurements of the semi-inclusive cross sections for νμ- and ν¯μ-nucleon deep inelastic scattering interactions with two oppositely charged muons in the final state. These events dominantly arise from the production of a charm quark during the scattering process. The measurement was obtained from the analysis of 5102 νμ-induced and 1458 ν¯μ-induced events collected with the NuTeV detector exposed to a sign-selected beam at the Fermilab Tevatron. We also extract a cross-section measurement from a reanalysis of 5030 νμ-induced and 1060 ν¯μ-induced events collected from the exposure of the same detector to a quad-triplet beam by the Chicago Columbia Fermilab Rochester (CCFR) experiment. The results are combined to obtain the most statistically precise measurement of neutrino-induced dimuon production cross sections to date. These measurements should be of broad use to phenomenologists interested in the dynamics of charm production, the strangeness content of the nucleon, and the Cabibbo-Kobayashi-Maskawa matrix element Vcd.
+doi: 10.17182/hepdata.42034
+identifiers:
+  inspire: 553499
+  hepdata: ins553499
+url_landing: https://www.hepdata.net/record/ins553499
+creators:
+- name: NuTeV Collaboration
+  kind: collaboration
+date_published: '2001'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins553499
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/PhysRevD.64.112006
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- nutev
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- dis
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: NuTeV
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

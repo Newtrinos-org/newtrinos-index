@@ -1,0 +1,54 @@
+id: hepdata-ccfr-alpha-s
+type: dataset
+title: 'HEPData: Improved determination of alpha(s) from neutrino nucleon scattering.'
+short: 'HEPData: CCFR F₂, xF₃ and α_s from ν–Fe deep inelastic scattering'
+description: We present an improved determination of the proton structure functions $F_{2}$ and $xF_{3}$ from the CCFR $\nu $-Fe deep inelastic scattering (DIS) experiment. Comparisons to high-statistics charged-lepton scattering results for $F_{2}$ from the NMC, E665, SLAC, and BCDMS experiments, after correcting for quark-charge and heavy-target effects, indicate good agreement for $x>0.1$ but some discrepancy at lower x. The $Q^{2}$ evolution of the structure functions yields the quantum chromodynamics (QCD) scale parameter $\Lambda_{\bar{MS}}^{NLO,(4)}=337 \pm 28$(exp.) MeV. This corresponds to a value of the strong coupling constant at the scale of mass of the Z-boson of $\alpha _{S}(M_{Z}^{2})=0.119 \pm 0.002 (exp.) \pm 0.004 (theory)$ and is one of the most precise measurements of this quantity.
+doi: 10.17182/hepdata.37289
+identifiers:
+  inspire: 448914
+  hepdata: ins448914
+url_landing: https://www.hepdata.net/record/ins448914
+creators:
+- name: CCFR Collaboration
+  kind: collaboration
+date_published: '1997'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins448914
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1103/PhysRevLett.79.1213
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- ccfr
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- dis
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: CCFR
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

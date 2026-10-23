@@ -1,0 +1,50 @@
+id: gollumfit
+type: software
+title: 'GollumFit: An icecube open-source framework for binned-likelihood neutrino telescope analyses'
+short: 'GollumFit: IceCube open-source framework for binned-likelihood neutrino-telescope analyses'
+description: We present GollumFit, a framework designed for performing binned-likelihood analyses on neutrino telescope data. GollumFit incorporates model parameters common to any neutrino telescope and also model parameters specific to the IceCube Neutrino Observatory. We provide a high-level overview of its key features and how the code is organized. We then discuss the performance of the fitting in a typical analysis scenario, highlighting the ability to fit over tens of nuisance parameters. We present some examples showing how to use the package for likelihood minimization tasks. This framework uniquely incorporates the particular model parameters necessary for neutrino telescopes, and solves an associated likelihood problem in a time-efficient manner.
+doi: 10.17632/zhnhk3k8s9
+url_landing: https://data.mendeley.com/datasets/zhnhk3k8s9
+creators:
+- name: Collaboration, The IceCube
+publisher:
+  name: Mendeley Data
+date_published: '2026-06-30'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.17632/zhnhk3k8s9
+  host: institutional
+  role: primary
+references:
+- doi: 10.1016/j.cpc.2026.110195
+  relation: describes
+experiments:
+- icecube
+sources:
+- atmospheric
+- astrophysical
+topics:
+- statistics
+software:
+  repository: https://doi.org/10.17632/zhnhk3k8s9
+  purposes:
+  - fitting
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 6
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

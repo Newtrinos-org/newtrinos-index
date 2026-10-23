@@ -1,0 +1,58 @@
+id: sgrb-neutrino-reproduction
+type: software
+title: 'SGRB Neutrino Reproduction (v1.0): Kimura et al. (2017) Framework and Application to GRB 170817A'
+short: Reproduction of the Kimura et al. (2017) short-GRB neutrino framework applied to GRB 170817A
+description: 'Initial version of SGRB Neutrino Reproduction (Kimura et al. 2017) Includes code for EE-mod reproduction, IceCube event-rate integration, and GRB 170817A application.
+
+
+  ---## 📦 Citation
+
+
+  If you use or build on this code, please cite:
+
+
+  Allada, S. V. (2025). SGRB Neutrino Reproduction (v1.0): Kimura et al. (2017) Framework and Application to GRB 170817A (v1.0). Zenodo. https://doi.org/10.5281/zenodo.17569170---'
+doi: 10.5281/zenodo.17569169
+url_landing: https://zenodo.org/doi/10.5281/zenodo.17569169
+creators:
+- name: Allada, Surya Vamshi
+  orcid: 0000-0002-0514-6178
+publisher:
+  name: Zenodo
+version: v1.0
+date_published: '2025-11-10'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.17569169
+  host: zenodo
+  role: primary
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- flux
+- multi-messenger
+software:
+  purposes:
+  - astrophysics
+  repository: https://doi.org/10.5281/zenodo.17569169
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

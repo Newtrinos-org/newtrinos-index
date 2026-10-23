@@ -1,0 +1,42 @@
+id: daya-bay-nonlinearity-calibration
+type: dataset
+title: 'Data for: A high precision calibration of the nonlinear energy response at Daya Bay'
+short: 'Daya Bay high-precision calibration of the nonlinear energy response: supplementary data'
+description: 'These supplements are about: the predicted beta spectra of B12 and N12, the measured spectrum of B12, positron''s the best fit full nonlinearity, and the best fit scintillation nonlinearities for gamma, electron and positron.'
+doi: 10.17632/2jv89c92ff
+url_landing: https://data.mendeley.com/datasets/2jv89c92ff
+creators:
+- name: Huang, Yongbo
+publisher:
+  name: Mendeley
+date_published: '2019-06-24'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.17632/2jv89c92ff
+  host: institutional
+  role: primary
+experiments:
+- daya-bay
+sources:
+- reactor
+topics:
+- detector-response
+data:
+  levels:
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 13.3
+    citations: 0
+    views: 464
+    downloads: 219
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,48 @@
+id: hepdata-k2k-nc-pi0
+type: dataset
+title: Measurement of single pi0 production in neutral current neutrino interactions with water by a 1.3-GeV wide band muon neutrino beam.
+short: 'HEPData: K2K single π⁰ production in NC interactions on water'
+description: KEK. Measurement of single PI0 production in neutral current neutrino interactions with water with a wide band neutrino beam of mean energy 1.3 GeV.
+doi: 10.17182/hepdata.41903
+url_landing: https://www.hepdata.net/record/ins657451
+creators:
+- name: K2K Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '1'
+date_published: '2004'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.41903
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1016/j.physletb.2005.05.044
+  relation: describes
+experiments:
+- k2k
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- nc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"K2K Collaboration"
+    harvested: '2026-10-23'
+    score: 20.0
+    citations: 2
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,48 @@
+id: hepdata-lsnd-nue-e-scattering
+type: dataset
+title: Measurement of electron-neutrino electron elastic scattering.
+short: 'HEPData: LSND νe–electron elastic scattering'
+description: LAMPF accelerator. Measurement of NUE Electron Elastic Scattering.
+doi: 10.17182/hepdata.41718
+url_landing: https://www.hepdata.net/record/ins552304
+creators:
+- name: LSND Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '1'
+date_published: '2001'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.41718
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1103/physrevd.63.112001
+  relation: describes
+experiments:
+- lsnd
+sources:
+- spallation
+topics:
+- cross-section
+channels:
+- es
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"LSND Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

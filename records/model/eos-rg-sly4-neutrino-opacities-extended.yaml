@@ -1,0 +1,86 @@
+id: eos-rg-sly4-neutrino-opacities-extended
+type: model
+title: Data table for EoS RG(SLY4) with neutrino opacities, extended version nparam=3
+short: EoS RG(SLy4) with neutrino opacities, extended version (CompOSE)
+description: "The data table for the EoS RG(SLY4) with neutrino opacities, extended version of the family General Purpose EoS with 3 parameters \n                can be found via this link  compose.obspm.fr/eos/148 together with additional information on the EoS.\n                 \n                Please be aware that in particular the authors of the equation of state can be found in the references below and on the \n                Compose data base ( compose.obspm.fr/eos/148).\n                Thus if you use this entry, please cite the original references together with the link to the table. We are working currently on rectifying the automatic citation from zenodo with author information on the equation of state.\n                \n                \n                \n                The online service CompOSE provides data tables for different state of the art equations of state (EoS) \n                ready for further usage in astrophysical applications, nuclear physics and beyond.\n                \n                \n                CompOSE would not be possible without the financial and organizational support from a large number of institutions and individual\n                contributors. In particular, we gratefully acknowledge support by :\n                \n\n                \nCompStar, Research Networking Programs of the European Science Foundation (ESF)\n                \nNewCompStar, \"Exploring fundamental physics with compact stars\" (MPNS COST action MP1304). \n                \nPHAROS, \"The multi-messenger physics and astrophysics of neutron stars\" within the EU framework programme (COST action CA16214)."
+doi: 10.5281/zenodo.14515200
+url_landing: https://zenodo.org/doi/10.5281/zenodo.14515200
+creators:
+- name: Chatterjee, Debarati
+  orcid: 0000-0002-0995-2329
+  affiliation: 'Inter-University Centre for Astronomy and Astrophysics: Pune, IN'
+- name: Davis, Philip
+  orcid: 0009-0004-5008-5660
+  affiliation: Laboratoire de Physique Corpusculaire de Caen
+- name: Dexheimer, Veronica
+  orcid: 0000-0001-5578-2626
+  affiliation: Kent State University, Physics, Kent, USA
+- name: Ishizuka, Chikako
+  orcid: 0000-0002-1046-1658
+  affiliation: Tokyo Institute of Technology, Laboratory for Zero-Carbon Energy, Institute of Innovative Research, Tokyo, Japan
+- name: Klähn, Thomas
+  orcid: 0000-0001-5445-9528
+  affiliation: California State University Long Beach, Long Beach, USA
+- name: Mancini, Marco
+  orcid: 0000-0001-8159-3888
+  affiliation: Laboratoire Univers et Théories, Observatoire de Paris, Université PSL, Université Paris-Cité, CNRS, F-92190 Meudon, France
+- name: Oertel, Micaela
+  orcid: 0000-0002-1884-8654
+  affiliation: Observatoire astronomique de Strasbourg (https://ror.org/04xsj2p07)
+- name: Novak, Jêrome
+  orcid: 0000-0002-6029-4712
+  affiliation: Observatoire astronomique de Strasbourg (https://ror.org/04xsj2p07)
+- name: Pais, Helena
+  orcid: 0000-0001-7247-1950
+  affiliation: CFisUC, Deparment of Physics, University of Coimbra, Portugal
+- name: Providência, Constança
+  orcid: 0000-0001-6464-8023
+  affiliation: CFisUC, Deparment of Physics, University of Coimbra, Portugal
+- name: Raduta, Adriana R
+  orcid: 0000-0001-8421-2040
+  affiliation: Department of Nuclear Physics, Horia Hulubei National Institute of Physics and Nuclear Engineering, Măgurele, Romania
+- name: Servillat, Mathieu
+  orcid: 0000-0001-5443-4128
+  affiliation: Laboratoire Univers et Théories, Observatoire de Paris, Université PSL, Université Paris-Cité, CNRS, F-92190 Meudon, France
+- name: Tolos, Laura
+  orcid: 0000-0003-2304-7496
+  affiliation: Institut d'Estudis Espacials de Catalunya (IEEC), Barcelona, Spain
+- name: Typel, Stefan
+  orcid: 0000-0003-3238-9973
+  affiliation: GSI Helmholtzzentrum für Schwerionenforschung GmbH, Theorie, Darmstadt, Germany
+publisher:
+  name: Zenodo
+date_published: '2025-02-05'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.14515200
+  host: zenodo
+  role: primary
+references:
+- doi: 10.1140/epja/s10050-022-00847-y
+  relation: describes
+sources:
+- supernova
+topics:
+- cross-section
+- nuclear-model
+model:
+  quantities:
+  - interaction rates / cross sections
+  - nuclear response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 20.0
+    citations: 2
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

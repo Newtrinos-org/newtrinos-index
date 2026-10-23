@@ -1,0 +1,59 @@
+id: tridas-km3net-italy
+type: software
+title: Trigger and Data Acquisition System (TriDAS) for KM3NeT-Italy
+short: 'TriDAS: trigger and data acquisition system of KM3NeT-Italy'
+description: TriDAS is a software which implements the Trigger and Data Acquisition system for the KM3NeT- Italy underwater neutrino telescope. The detector is based on ”all data to shore” approach in order to reduce the complexity of the submarine hardware. At the shore station the TriDAS collects, processes and filters all the data coming from the detector, storing triggered events to a permanent storage for subsequent analysis.
+doi: 10.5281/zenodo.1246987
+url_landing: https://zenodo.org/record/1246987
+creators:
+- name: Chiarusi, Tommaso
+  affiliation: INFN-Sezione di Bologna
+- name: Giacomini, Francesco
+  affiliation: INFN-CNAF
+- name: Pellegrino, Carmelo
+  affiliation: INFN-Sezione di Bologna
+- name: Manzali, Matteo
+  affiliation: INFN-CNAF
+- name: Favaro, Matteo
+  affiliation: INFN-CNAF
+publisher:
+  name: Zenodo
+version: v3.0
+date_published: '2018-05-15'
+license: none-stated
+license_url: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl
+license_notes: 'Zenodo licence id: eupl-1.1'
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.1246987
+  host: zenodo
+  role: primary
+  size_bytes: 2414017
+  n_files: 1
+experiments:
+- km3net
+sources:
+- none
+topics:
+- detector-response
+software:
+  purposes:
+  - tooling
+  repository: https://doi.org/10.5281/zenodo.1246987
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

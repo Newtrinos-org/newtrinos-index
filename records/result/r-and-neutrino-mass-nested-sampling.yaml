@@ -1,0 +1,127 @@
+id: r-and-neutrino-mass-nested-sampling
+type: result
+title: 'Bayesian evidence for the tensor-to-scalar ratio r and neutrino masses m_nu: Effects of uniform vs logarithmic priors (supplementary inference products)'
+short: 'Nested-sampling products: tensor-to-scalar ratio and neutrino masses, uniform vs log priors'
+description: 'These are the nested sampling inference products and input files that were used to compute results for arXiv:2102.11511.
+
+
+  Example plotting scripts (as .ipynb or as .html files) and figures from the papers are included to demonstrate usage.
+
+
+   
+
+
+  Filename conventions:
+
+
+  lcdm: Concordance cosmological model called \(\Lambda\mathrm{CDM}\) (without extension this assumes \(r=0\) and a single massive neutrino with mass \(m_\nu=0.06\,\mathrm{eV}\)).
+
+
+  _r: \(\Lambda\mathrm{CDM}\) with variable tensor-to-scalar ratio \(r\).
+
+
+  _nu: \(\Lambda\mathrm{CDM}\) with three massive neutrinos, sampling over the lightest neutrino mass \(m_\mathrm{light}\) and the squared mass splittings \(\delta m^2\) and \(\Delta m^2\).
+
+
+  mcmc: Cobaya''s Markov Chain Monte Carlo Metropolis sampler.https://github.com/CobayaSampler/cobaya/releases/tag/v3.0.2
+
+
+  pc#d###: PolyChord run with #d repeats per parameter block (where d is the number of parameters in that block) and with ### live points.https://github.com/PolyChord/PolyChordLite/releases/tag/1.17.1
+
+
+  _class: theory code CLASS.https://github.com/lesgourg/class_public/releases/tag/v2.9.4
+
+
+  _p18_TTTEEElowTE_SZ: Planck 2018 TT,TE,EE+lowl+lowE data.https://pla.esac.esa.int/pla/#cosmology
+
+
+  _nufit50: NuFIT 5.0 data.http://www.nu-fit.org/?q=node/228
+
+
+  _NH and _IH: normal and inverted neutrino hierarchy.
+
+
+  _logr##: logarithmic sampling of tensor-to-scalar ratio \(r\) with lower log bound given .by log10r=-##.
+
+
+  _mdD: sampling over the lightest neutrino mass \(m_\mathrm{light}\) and the squared mass splittings \(\delta m^2\) and \(\Delta m^2\) (medium and heavy neutrino mass are derived parameters) with mass units in eV.
+
+
+  _logmdD##: logarithmic (instead of uniform) sampling of the lightest neutrino mass \(m_\mathrm{light}\) with lower log bound given by log10mlight=-##.
+
+
+   
+
+
+  Datasets used for the nested sampling runs:
+
+
+  Planck 2018 TT,TE,EE+lowl+lowE: https://pla.esac.esa.int/pla/#cosmology
+
+
+  NuFIT 5.0: http://www.nu-fit.org/?q=node/228
+
+
+   
+
+
+  Software used:
+
+
+  Cobaya: https://github.com/CobayaSampler/cobaya/releases/tag/v3.0.2
+
+
+  CLASS: https://github.com/lesgourg/class_public/releases/tag/v2.9.4
+
+
+  PolyChord: https://github.com/PolyChord/PolyChordLite/releases/tag/1.17.1
+
+
+  Anesthetic: https://github.com/lukashergt/anesthetic/tree/138299739544e888cc318746be087c898f1aff15
+
+
+   
+
+
+  For more details see Cobaya''s (https://cobaya.readthedocs.io/en/latest/index.html) and Anesthetic''s (https://anesthetic.readthedocs.io/en/latest/) documentation.'
+doi: 10.5281/zenodo.4556360
+url_landing: https://zenodo.org/doi/10.5281/zenodo.4556360
+creators:
+- name: Hergt, Lukas Tobias
+  orcid: 0000-0003-2730-7419
+  affiliation: University of Cambridge
+publisher:
+  name: Zenodo
+version: 1.0.0
+date_published: '2021-02-23'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.4556360
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2102.11511'
+  relation: describes
+sources:
+- cosmology
+topics:
+- absolute-mass
+data:
+  levels:
+  - posterior
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

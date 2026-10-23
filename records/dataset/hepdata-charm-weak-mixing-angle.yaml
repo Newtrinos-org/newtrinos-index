@@ -1,0 +1,55 @@
+id: hepdata-charm-weak-mixing-angle
+type: dataset
+title: 'HEPData: A Precise Determination of the Electroweak Mixing Angle from Semileptonic Neutrino Scattering'
+short: 'HEPData: CHARM electroweak mixing angle from semileptonic neutrino scattering'
+description: The cross-section ratio of neutral-current and charged-current semileptonic interactions of muon-neutrinos on isoscalar nuclei has been measured with the result:Rv=0.3093±0.0031 for hadronic energy larger than 4 GeV. From this ratio we determined the electroweak mixing angle sin2θW, wheremc is the charm-quark mass in GeV/c2. Comparison with direct measurements ofmw andmz determines the radiative shift of the intermediate boson mass Δr=0.077±0.025(exp.)±0.038(syst.), in agreement with the prediction. Assuming the validity of the electroweak standard theory we determined ϱ=0.990−0.013(mc−1.5)±0.009(exp.)±0.003(theor.).
+doi: 10.17182/hepdata.15697
+identifiers:
+  inspire: 249672
+  hepdata: ins249672
+url_landing: https://www.hepdata.net/record/ins249672
+creators:
+- name: CHARM Collaboration
+  kind: collaboration
+date_published: '1987'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins249672
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1007/BF01630598
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- charm
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- nc
+- cc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: CHARM
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

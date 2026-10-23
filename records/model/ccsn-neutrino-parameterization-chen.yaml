@@ -1,0 +1,48 @@
+id: ccsn-neutrino-parameterization-chen
+type: model
+title: A Core-collapse Supernova Neutrino Parameterization with Enhanced Physical Interpretability
+short: 'Core-collapse supernova neutrino parameterisation with physical interpretability: data'
+description: Data used in the paper "A Core-collapse Supernova Neutrino Parameterization with Enhanced Physical Interpretability"
+doi: 10.57760/sciencedb.40056
+url_landing: https://www.scidb.cn/detail?dataSetId=76a051441217409097302bd8b3fe6530
+creators:
+- name: Xuefei Chen
+  affiliation: Yunnan Observatories
+- name: Guoliang Lv
+  affiliation: Xinjiang University
+- name: Haihao Shi
+  affiliation: Xinjiang Astronomical Observatory
+publisher:
+  name: Science Data Bank
+version: V1
+date_published: '2026-06-16'
+date_updated: '2026-06-15'
+license: none-stated
+license_url: https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.57760/sciencedb.40056
+  host: institutional
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

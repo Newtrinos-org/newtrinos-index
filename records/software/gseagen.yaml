@@ -12,7 +12,7 @@ publisher:
   name: Mendeley
   kind: organization
 date_published: '2020-08-04'
-license: unknown
+license: none-stated
 access: open
 distributions:
 - url: https://doi.org/10.17632/ymgxvy2br4.1

@@ -1,0 +1,58 @@
+id: radiative-effects-event-generators
+type: software
+title: A universal implementation of radiative effects in neutrino event generators
+short: Universal implementation of radiative effects in neutrino (and electron) event generators
+description: Due to the similarities between electron-nucleus (eA) and neutrino-nucleus scattering (νA), eA data can contribute key information to improve cross-section modeling in eA and hence in νA event generators. However, to compare data and generated events, either the data must be radiatively corrected or radiative effects need to be included in the event generators. We implemented a universal radiative corrections program that can be used with all reaction mechanisms and any eA event generator. Our program includes real photon radiation by the incident and scattered electrons, and virtual photon exchange and photon vacuum polarization diagrams. It uses the “extended peaking” approximation for electron radiation and neglects charged hadron radiation. This method, validated with GENIE, can also be extended to simulate νA radiative effects. This work facilitates data-event-generator comparisons used to improve νA event generators for the next-generation of neutrino experiments.
+doi: 10.17632/hmsxg82vnf
+url_landing: https://data.mendeley.com/datasets/hmsxg82vnf
+creators:
+- name: Tena-Vidal, Júlia
+  affiliation: Tel Aviv University
+- name: Ashkenazi, Adi
+  affiliation: Tel Aviv University
+- name: Weinstein, Lawrence B.
+  affiliation: Old Dominion University
+- name: Blunden, Peter
+  affiliation: University of Manitoba
+- name: Dytman, Steven
+  affiliation: University of Pittsburgh
+- name: Steinberg, Noah
+  affiliation: Argonne National Laboratory
+publisher:
+  name: Mendeley Data
+date_published: '2025-02-03'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.17632/hmsxg82vnf
+  host: institutional
+  role: primary
+references:
+- doi: 10.1016/j.cpc.2025.109509
+  relation: describes
+sources:
+- none
+topics:
+- cross-section
+software:
+  repository: https://doi.org/10.17632/hmsxg82vnf
+  purposes:
+  - event-generator
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.1
+    citations: 1
+    views: 15
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

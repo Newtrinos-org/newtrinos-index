@@ -1,0 +1,38 @@
+id: antares-ps-2007-2017
+type: dataset
+title: ANTARES 2007-2017 Point Source Analysis
+short: ANTARES 2007–2017 point-source track sample with effective areas (KM3NeT Open Data)
+description: 'This data set corresponds to the track sample (muon neutrino candidates) of a study meant to search for a point sources with data collected from January 2007 to December 2017 by the ANTARES neutrino telescope. Available are the effective area, the acceptance, the cumulative angular resolution distribution and the point spread function for an E-2 source spectrum. This sample encompasses the two previous released sets, with similar cuts. This increased lifetime amounts to 3125 days and to a total number of 8754 events. More information on how the search was performed can be found in: G. Illuminati for the ANTARES Collaboration, PoS(ICRC2019)920 and A. Albert et al., ApJL 863, L30 (2018)'
+url_landing: https://doi.org/10.5072/FK2/HZQTC5
+creators:
+- name: Schnabel, Jutta
+date_published: '2024-11-28'
+license: CC-BY-4.0
+license_url: http://creativecommons.org/licenses/by/4.0
+access: open
+distributions:
+- url: https://doi.org/10.5072/FK2/HZQTC5
+  host: dataverse
+  role: primary
+experiments:
+- antares
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:dataverse (curated 2026-10-23)
+  harvest:
+    source: dataverse
+    query: 'https://opendata.km3net.de '
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - persistent identifier uses the DataCite test prefix 10.5072 (does not resolve)
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,46 @@
+id: icecube-radio-pulsar-stacking
+type: software
+title: IceCube-Package
+short: Code for a stacked search for IceCube neutrinos from radio pulsars (arXiv:2306.03427)
+description: 'This repository contains the code used to perform the analysis described in the paper "A stacked search for spatial coincidences between IceCube neutrinos and radio pulsars" (https://arxiv.org/abs/2306.03427). The code is written in Python 3.10 and uses the following packages: numpy, scipy, matplotlib, pandas, numba, multiprocessing.'
+url_landing: https://github.com/DarkWake9/IceCube-Package
+owner:
+  name: DarkWake9
+  kind: person
+date_published: '2023-05-02'
+date_updated: '2024-02-06'
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/DarkWake9/IceCube-Package
+  host: github
+  role: primary
+  formats:
+  - source-code
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+software:
+  repository: https://github.com/DarkWake9/IceCube-Package
+  languages:
+  - Jupyter Notebook
+  purposes:
+  - fitting
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrinos stars:>=3
+    harvested: '2026-10-23'
+    score: 10.0
+    stars: 5
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

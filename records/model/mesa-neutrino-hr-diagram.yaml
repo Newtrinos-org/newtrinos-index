@@ -1,0 +1,54 @@
+id: mesa-neutrino-hr-diagram
+type: model
+title: Stellar Tracks (i.e., MESA history files) used in the article "On Stellar Evolution In A Neutrino Hertzsprung-Russell Diagram"
+short: MESA stellar tracks for the neutrino Hertzsprung–Russell diagram (Farag, Timmes)
+description: MESA history files (i.e. stellar tracks) for all masses in the article "On Stellar Evolution In A Neutrino Hertzsprung-Russell Diagram". Files have been compressed with xz. To decompress, xv --decompress filename.
+doi: 10.5281/zenodo.3707670
+url_landing: https://zenodo.org/record/3707670
+creators:
+- name: Farag, Ebraheem
+  orcid: 0000-0002-5794-4286
+  affiliation: Arizona State University
+- name: Timmes, F. X.
+  orcid: 0000-0002-0474-159X
+  affiliation: Arizona State University
+- name: Taylor, Morgan
+  orcid: 0000-0002-5107-8639
+  affiliation: Arizona State University
+- name: Patton, Kelly
+  orcid: 0000-0002-2154-4782
+  affiliation: Colby College
+- name: Farmer, R.
+  orcid: 0000-0003-3441-7624
+  affiliation: University of Amsterdam
+publisher:
+  name: Zenodo
+date_published: '2020-03-12'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.3707670
+  host: zenodo
+  role: primary
+sources:
+- astrophysical
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

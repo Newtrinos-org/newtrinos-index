@@ -85,3 +85,10 @@
 - {id: bnl-7ft, name: BNL 7-foot bubble chamber, aliases: [BNL], collaboration: BNL, sources: [accelerator], technology: [other], site: Brookhaven (USA)}
 - {id: argoneut, name: ArgoNeuT, collaboration: ArgoNeuT, sources: [accelerator], technology: [lartpc], site: Fermilab (USA), start: 2009, end: 2010}
 - {id: majorana, name: Majorana Demonstrator, aliases: [MJD], collaboration: Majorana, sources: [nuclear-decay], technology: [germanium], site: SURF (USA), start: 2015, end: 2021}
+- {id: connie, name: CONNIE, collaboration: CONNIE, sources: [reactor], technology: [other], site: Angra (Brazil), start: 2016}
+- {id: ninja, name: NINJA, collaboration: NINJA, sources: [accelerator], technology: [emulsion], site: J-PARC (Japan)}
+- {id: ccfr, name: CCFR, aliases: [CCFR/NuTeV], collaboration: CCFR, sources: [accelerator], technology: [iron-calorimeter], site: Fermilab (USA), start: 1987, end: 1988}
+- {id: charm, name: CHARM, aliases: [CHARM II], collaboration: CHARM, sources: [accelerator], technology: [other], site: CERN, start: 1979, end: 1991}
+- {id: nutev, name: NuTeV, collaboration: NuTeV, sources: [accelerator], technology: [iron-calorimeter], site: Fermilab (USA), start: 1996, end: 1997}
+- {id: chorus, name: CHORUS, collaboration: CHORUS, sources: [accelerator], technology: [emulsion], site: CERN, start: 1994, end: 1997}
+- {id: sciboone, name: SciBooNE, collaboration: SciBooNE, sources: [accelerator], technology: [segmented-scintillator], site: Fermilab (USA), start: 2007, end: 2008}

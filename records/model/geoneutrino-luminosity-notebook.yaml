@@ -1,0 +1,47 @@
+id: geoneutrino-luminosity-notebook
+type: model
+title: Research on Radionuclides of the Earth – Jupyter Notebook
+short: 'Radiogenic power and geoneutrino luminosity of the Earth through time: Jupyter notebook (McDonough et al.)'
+description: 'This dataset contains the Jupyter Notebook used for calculations of the radiogenic power and geoneutrino luminosity of the Earth through time. It relates to the manuscript "McDonough, Šrámek, Wipperfurth: Radiogenic power and geoneutrino luminosity of the Earth and other terrestrial bodies through time" Geochemistry, Geophysics, Geosystems, 2020.'
+doi: 10.4121/uuid:d635e12b-6110-44aa-8afb-6ed02070a39f
+url_landing: https://data.4tu.nl/articles/_/12681371/2
+creators:
+- name: Šrámek, Ondřej
+publisher:
+  name: 4TU.Centre for Research Data
+version: '2'
+date_published: '2020-03-23'
+license: CC0-1.0
+license_url: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.4121/uuid:d635e12b-6110-44aa-8afb-6ed02070a39f
+  host: institutional
+  role: primary
+- url: https://doi.org/10.4121/uuid:191c7802-8835-4791-9c2d-31426dcb5d15
+  host: institutional
+  role: mirror
+  label: Research on Radionuclides of the Earth – Jupyter Notebook [version 1]
+sources:
+- geo
+topics:
+- flux
+- earth-model
+model:
+  quantities:
+  - model output
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 4
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

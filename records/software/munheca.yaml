@@ -1,0 +1,48 @@
+id: munheca
+type: software
+title: 'Neutrinos from muon-rich ultra high energy electromagnetic cascades: The MUNHECA code'
+short: 'MUNHECA: neutrinos from muon-rich ultra-high-energy electromagnetic cascades (Python)'
+description: An ultra high energy electromagnetic cascade, a purely leptonic process and initiated by either photons or e^±, can be a source of high energy neutrinos. We present a public python3 code, MUNHECA, to compute the neutrino spectrum by taking into account various QED processes, with the cascade developing either along the propagation in the cosmic microwave background in the high-redshift universe or in a predefined photon background surrounding the astrophysical source. The user can adjust various settings of MUNHECA, including the spectrum of injected high energy photons, the background photon field and the QED processes governing the cascade evolution. We improve the modeling of several processes, provide examples of the execution of MUNHECA and compare it with some earlier and more simplified estimates of the neutrino spectrum from electromagnetic cascades.
+doi: 10.17632/hrp7cvsjxk.1
+url_landing: https://data.mendeley.com/datasets/hrp7cvsjxk/1
+creators:
+- name: Ballantyne, John
+publisher:
+  name: Mendeley Data
+date_published: '2024-03-12'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.17632/hrp7cvsjxk.1
+  host: institutional
+  role: primary
+references:
+- doi: 10.1016/j.cpc.2024.109154
+  relation: describes
+sources:
+- astrophysical
+- cosmogenic
+topics:
+- flux
+software:
+  repository: https://doi.org/10.17632/hrp7cvsjxk.1
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

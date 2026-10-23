@@ -1,0 +1,54 @@
+id: jwst-desi-neutrino-mass-chains
+type: result
+title: Measuring neutrino masses with joint JWST and DESI DR2 data
+short: 'Neutrino-mass constraints from JWST + DESI DR2: Cobaya MCMC chains'
+description: 'This dataset contains posterior chains from MCMC sampling performed with Cobaya, together with summary results, covering three cosmological models: ΛCDM (LCDM), wCDM, and w0waCDM. For each model, we consider three neutrino mass hierarchies—NH (Normal Hierarchy), IH (Inverted Hierarchy), and DH (Degenerate Hierarchy); within each hierarchy we provide four observational data combinations: CMB, CMB+JWST, CMB+DESI, and CMB+DESI+JWST. These chains constitute the numerical sources for all figures in the paper’s main text and supplementary materials.'
+doi: 10.57760/sciencedb.28617
+url_landing: https://www.scidb.cn/detail?dataSetId=cef9ec58d1c44b73a3c1cf050d45ceb7
+creators:
+- name: Sheng-Han Zhou
+  affiliation: Key Laboratory of Cosmology and Astrophysics (Liaoning) & Department of Physics, College of Sciences, Northeastern University, Shenyang 110819, China
+- name: Tian-Nuo Li
+  affiliation: Key Laboratory of Cosmology and Astrophysics (Liaoning) & Department of Physics, College of Sciences, Northeastern University, Shenyang 110819, China
+- name: Du, Guo-Hong
+  affiliation: Key Laboratory of Cosmology and Astrophysics (Liaoning) & Department of Physics, College of Sciences, Northeastern University, Shenyang 110819, China
+- name: Jiang, Jun-Qian
+  affiliation: Korea Astronomy and Space Science Institute, Daejeon 34055, Republic of Korea
+- name: Zhang, Jing-Fei
+  affiliation: Key Laboratory of Cosmology and Astrophysics (Liaoning) & Department of Physics, College of Sciences, Northeastern University, Shenyang 110819, China
+- name: Zhang, Xin
+  affiliation: Key Laboratory of Cosmology and Astrophysics (Liaoning) & Department of Physics, College of Sciences, Northeastern University, Shenyang 110819, China
+publisher:
+  name: Science Data Bank
+version: V1
+date_published: '2025-09-25'
+date_updated: '2025-09-22'
+license: none-stated
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.57760/sciencedb.28617
+  host: institutional
+  role: primary
+sources:
+- cosmology
+topics:
+- absolute-mass
+data:
+  levels:
+  - posterior
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

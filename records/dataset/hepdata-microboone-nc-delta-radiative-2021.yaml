@@ -1,0 +1,49 @@
+id: hepdata-microboone-nc-delta-radiative-2021
+type: dataset
+title: Search for Neutrino-Induced Neutral Current $\Delta$ Radiative Decay in MicroBooNE and a First Test of the MiniBooNE Low Energy Excess Under a Single-Photon Hypothesis
+short: 'HEPData: MicroBooNE NC Δ radiative decay and first single-photon test of the MiniBooNE excess'
+description: We report results from a search for neutrino-induced neutral current (NC) resonant $\Delta$(1232) baryon production followed by $\Delta$ radiative decay, with a ⟨0.8⟩ GeV neutrino beam. Data corresponding to MicroBooNE’s first three years of operations (6.80×$10^{20}$ protons on target) are used to select single-photon events with one or zero protons and without charged leptons in the final state ($1\gamma1p$ and $1\gamma0p$, respectively). The background is constrained via an in-situ high-purity measurement of NC $\pi^{0}$ events, made possible via dedicated $2\gamma1p$ and $2\gamma0p$ selections. A total of 16 and 153 events are observed for the $1\gamma1p$ and $1\gamma0p$ selections, respectively, compared to a constrained background prediction of 20.5 ± 3.65(sys.) and 145.1 ± 13.8(sys.) events. The data lead to a bound on an anomalous enhancement of the normalization of NC $\Delta$ radiative decay of less than 2.3 times the predicted nominal rate for this process at the 90% confidence level (CL). The measurement disfavors a candidate photon interpretation of the MiniBooNE low-energy excess as a factor of 3.18 times the nominal NC $\Delta$ radiative decay rate at the 94.8% CL, in favor of the nominal prediction, and represents a greater than 50-fold improvement over the world’s best limit on single-photon production in NC interactions in the sub-GeV neutrino energy range.
+doi: 10.17182/hepdata.114860
+url_landing: https://www.hepdata.net/record/ins1937333
+creators:
+- name: MicroBooNE Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '1'
+date_published: '2021'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.114860
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1103/physrevlett.128.111801
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- bsm-other
+- cross-section
+channels:
+- nc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"MicroBooNE Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

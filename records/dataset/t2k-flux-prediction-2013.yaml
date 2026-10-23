@@ -1,0 +1,42 @@
+id: t2k-flux-prediction-2013
+type: dataset
+title: Data release for "The T2K Neutrino Flux Prediction" (2013)
+short: T2K neutrino flux prediction for ND280 and Super-K (2013 release, superseded)
+description: This data release is superseded by the flux release in 2016.The files in the following archive file contain the neutrino beam flux predictions for the T2K ND280 (near) and Super-Kamiokande (far) detectors. The description of the flux predictions is published in Phys. Rev. D.87.012001 (arxiv.org:1211.0469 [hep-ex]). The provided flux predictions include no neutrino oscillations. This tar file contains the flux predictions as well as a README.pdf file with detailed information on the included files.
+doi: 10.5281/zenodo.5734212
+url_landing: https://zenodo.org/doi/10.5281/zenodo.5734212
+creators:
+- name: T2K Collaboration
+publisher:
+  name: Zenodo
+date_published: '2013-03-15'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.5734212
+  host: zenodo
+  role: primary
+experiments:
+- t2k
+sources:
+- accelerator
+topics:
+- flux
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"T2K Collaboration"
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

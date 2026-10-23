@@ -1,0 +1,50 @@
+id: nuosclab
+type: software
+title: nuosclab
+short: 'nuosclab: interactive PMNS + NSI oscillation probability viewer with pluggable engines'
+description: 'nuosclab (Neutrino Oscillation Laboratory): an interactive PMNS + NSI neutrino oscillation probability viewer, with a frontend-neutral computation API and pluggable oscillation engines (numpy_ref, NuFast, optional nuprobe cross-check).'
+doi: 10.5281/zenodo.21919616
+url_landing: https://zenodo.org/doi/10.5281/zenodo.21919616
+creators:
+- name: Davies, Gavin S.
+publisher:
+  name: Zenodo
+version: v1.0.0
+date_published: '2026-08-13'
+license: MIT
+license_url: https://opensource.org/licenses/MIT
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.21919616
+  host: zenodo
+  role: primary
+relations:
+- rel: uses
+  target: nufast-lbl
+sources:
+- none
+topics:
+- oscillation
+- nsi
+software:
+  purposes:
+  - oscillation-probability
+  - plotting
+  repository: https://doi.org/10.5281/zenodo.21919616
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

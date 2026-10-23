@@ -1,0 +1,51 @@
+id: fast-flavor-conversion-3d
+type: model
+title: Evolution and the quasistationary state of collective fast neutrino flavor conversion in three dimensions without axisymmetry
+short: 'Collective fast neutrino flavour conversion in 3D without axisymmetry: simulation data'
+description: This repository contains the simulation data used in the study titled `Evolution and the quasistationary state of collective fast neutrino flavor conversion in three dimensions without axisymmetry`. All the necessary data are provided in the hdf5 file. Please check the article and the README enclosed herewith for more details.
+doi: 10.5281/zenodo.14220225
+url_landing: https://zenodo.org/doi/10.5281/zenodo.14220225
+creators:
+- name: George, Manu
+  orcid: 0000-0002-8974-5986
+  affiliation: Institute of Physics, Academia Sinica
+- name: Xiong, Zewei
+  orcid: 0000-0002-2385-6771
+  affiliation: GSI Helmholtz Centre for Heavy Ion Research
+- name: Wu, Meng-Ru
+  orcid: 0000-0003-4960-8706
+  affiliation: Institute of Physics, Academia Sinica
+- name: Lin, Chun-Yu
+  orcid: 0000-0002-7489-7418
+  affiliation: National Center for High-Performance Computing
+publisher:
+  name: Zenodo
+date_published: '2024-11-26'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.14220225
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- oscillation
+model:
+  quantities:
+  - flavour evolution
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

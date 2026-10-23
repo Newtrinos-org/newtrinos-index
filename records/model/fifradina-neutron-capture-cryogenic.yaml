@@ -1,0 +1,60 @@
+id: fifradina-neutron-capture-cryogenic
+type: model
+title: Fifradina dataset for radiative thermal neutron-capture processes in cryogenic detectors (CRAB)
+short: FIFRADINA γ-cascade data for thermal neutron capture in cryogenic CEvNS/DM detectors (CRAB calibration)
+description: "The emission of \\(\\gamma\\)-rays after a neutron capture in a cryogenic detector can generate mono-energetic nuclear recoils in the sub-keV regime, of direct interest for the calibration of Dark Matter and Coherent Elastic Neutrino Nucleus Scattering experiments. Accurate predictions of the nuclear recoil spectra induced by neutron captures require taking into account the interplay between the development in time of the de-excitation γ-cascade of the target nucleus and that of the associated atomic collisions in matter. Detailed simulations coupling the FIFRELIN code for the description of the γ-cascades and the Iradina code for the modelling of the fast atomic movements in matter have been described in G. Soum-Sidikov and al. (CRAB collaboration), Study of collision and γ-cascade times following neutron-capture processes in cryogenic detectorset al. 2023. doi :10.48550/arXiv.2305.10139. URL https://doi.org/\n 10.48550/arXiv.2305.10139 This dataset acts as supplemental material to this article. It provides detailed nuclear de-excitation cascades with associated total recoil energies for: Al (n, \\(\\gamma\\)) in Al2O3 Si (n, \\(\\gamma\\)) in Si Ge (n, \\(\\gamma\\)) in Ge W (n, \\(\\gamma\\)) in CaWO4"
+doi: 10.5281/zenodo.7936552
+url_landing: https://zenodo.org/record/7936552
+creators:
+- name: SOUM-SIDIKOV, Gabrielle
+  orcid: 0000-0003-1900-1794
+  affiliation: IRFU, CEA, Université Paris-Saclay, 91191 Gif-sur-Yvette, France
+- name: THULLIEZ, Loïc
+  orcid: 0000-0002-7191-0533
+  affiliation: IRFU, CEA, Université Paris-Saclay, 91191 Gif-sur-Yvette, France
+- name: LITAIZE, Olivier
+  orcid: 0000-0003-2627-4045
+  affiliation: CEA, DES, IRESNE, DER, Cadarache, F-13108 Saint-Paul-Lez-Durance, France
+- name: CHALIL, Achment
+  orcid: 0000-0002-6375-2774
+  affiliation: IRFU, CEA, Université Paris-Saclay, 91191 Gif-sur-Yvette, France & CEA, DES, IRESNE, DER, Cadarache, F-13108 Saint-Paul-Lez-Durance, France
+- name: CROCOMBETTE, Jean-Paul
+  orcid: 0000-0001-9543-3973
+  affiliation: Université Paris-Saclay, CEA, DES, SRMP, F-91191 Gif-sur-Yvette, France
+- name: LHUILLIER, David
+  orcid: 0000-0003-2324-0149
+  affiliation: IRFU, CEA, Université Paris-Saclay, 91191 Gif-sur-Yvette, France
+publisher:
+  name: Zenodo
+version: 1.0.0
+date_published: '2023-05-15'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.7936552
+  host: zenodo
+  role: primary
+sources:
+- reactor
+topics:
+- detector-response
+channels:
+- cevns
+model:
+  quantities:
+  - detector response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

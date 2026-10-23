@@ -1,0 +1,49 @@
+id: icecube-tools-nuisance
+type: software
+title: icecube_tools
+short: 'icecube_tools: Python tools for working with IceCube public data'
+description: Python tools for working with the IceCube public data.
+url_landing: https://nu-isance.github.io/icecube_tools/
+owner:
+  name: nu-isance
+  kind: organization
+date_published: '2019-09-17'
+date_updated: '2026-05-11'
+license: GPL-3.0-only
+access: open
+distributions:
+- url: https://github.com/nu-isance/icecube_tools
+  host: github
+  role: primary
+  formats:
+  - source-code
+relations:
+- rel: uses
+  target: icecube-ps-2008-2018
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+software:
+  repository: https://github.com/nu-isance/icecube_tools
+  languages:
+  - Python
+  purposes:
+  - data-access
+  development_status: unknown
+  interfaces:
+  - library
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:github (curated 2026-10-23)
+  harvest:
+    source: github
+    query: topic:neutrinos stars:>=3
+    harvested: '2026-10-23'
+    score: 34.0
+    stars: 17
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

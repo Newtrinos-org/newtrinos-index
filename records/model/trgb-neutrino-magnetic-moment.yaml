@@ -1,0 +1,49 @@
+id: trgb-neutrino-magnetic-moment
+type: model
+title: Tip of the Red Giant Branch Bounds on the Neutrino Magnetic Dipole Moment Revisited
+short: 'Tip-of-the-red-giant-branch bounds on the neutrino magnetic moment: reproduction package (MESA)'
+description: "Reproduction Package for the Paper \"Tip of the Red Giant Branch Bounds on the Neutrino Magnetic Dipole Moment Revisited\". File Organization MESA: MESA modifications to include losses due to the neutrino magnetic dipole moment, scripts to run the grid of models, and post processing pipeline scripts including the Worthey \\& Lee bolometric correction code. ML_models: Machine learning code to train and use the models as well as the models themselves. analysis: Plotting code to create figures for papers and presentations. makeGrids: Scripts to create the different input grid files to run MESA on. mcmc: Scripts and plots for the MCMC analysis. mesa_data: All MESA models generated in this project. environment.yml: Conda environment for analysis and the mcmc. More details can be found in the README files within each directory. Citation Policy\n If you use any part of this reproduction package for independent work, we recommend you cite the following papers: This paper https://arxiv.org/abs/2303.12069 https://arxiv.org/abs/2305.03113 Astrophys. J. Suppl. 192, 3 (2011) Astrophys. J. Suppl. 208, 4 (2013) Astrophys. J. Suppl. 234, 34 (2018) Astrophys. J. Suppl. 243, 10 (2019) Software Python version 3.8, NumPy version 1.22.3, Pandas version 1.4.3, Matplotlib version 3.5.1, Seaborn version 0.11.2, Tensorflow version 2.4.1, corner version 2.2.1, emcee version 3.1.2, MESA version 12778, MESASDK version x86_64-linux-20.3.2."
+doi: 10.5281/zenodo.8173321
+url_landing: https://zenodo.org/record/8173321
+creators:
+- name: Franz, Noah
+  orcid: 0000-0003-4537-3575
+  affiliation: University of Hawaii, Institute for Astronomy
+- name: Dennis, Mitchell T
+  orcid: 0000-0001-9066-0552
+  affiliation: University of Hawaii, Institute for Astronomy
+- name: Sakstein, Jeremy
+  orcid: 0000-0002-9780-0922
+  affiliation: University of Hawaii, Department of Physics and Astronomy
+publisher:
+  name: Zenodo
+version: Version 1
+date_published: '2023-07-21'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.8173321
+  host: zenodo
+  role: primary
+sources:
+- astrophysical
+topics:
+- magnetic-moment
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,54 @@
+id: xenon-tpc-0vbb-charge-readout-sim
+type: dataset
+title: Single-Phase Xenon TPC Charge Readout Simulation (Neutrinoless Double Beta Decay AI Summer School)
+short: Single-phase xenon TPC charge-readout simulation of 100 000 double-beta events (HDF5)
+description: 'Licensed under Lawrence Livermore National Laboratory, CP Number 2026-182.
+
+
+  More on this data can be found at arXiv:2603.27005.This dataset (HDF5 files) contains a subset of 100,000 simulated double beta decay events as recorded by the charge collectors of a single-phase liquid xenon TPC, and a holdout validation set at the target decay energy. The simulation follows the approximate design specifications of the nEXO experiment, which seeks to measure neutrinoless double beta decay (0vBB). The charge collection portion of nEXO is comprised of square tiles embedded with electrodes, 16 by 16 channels in perpendicular to reconstruct charge signals into position information. Here, events are confined to a single tile. Thus, each recorded event is an array of 32 channels of 1D charge waveform data within a window of 1377 time steps in units of 0.5 microseconds. Single events will appear duplicated as both sets of perpendicular channels will record charge. Each event has a clean (“noiseless”) and noisy version, along with an energy value in MeV.'
+doi: 10.5281/zenodo.20776760
+url_landing: https://zenodo.org/doi/10.5281/zenodo.20776760
+creators:
+- name: Parker, Grant
+  orcid: 0000-0003-4957-565X
+  affiliation: Lawrence Livermore National Laboratory
+- name: Brodsky, Jason
+  orcid: 0000-0002-7498-6461
+  affiliation: Lawrence Livermore National Laboratory
+- name: Chakraborty, Indrasis
+  orcid: 0000-0002-0132-8417
+  affiliation: Pacific Northwest National Laboratory
+publisher:
+  name: Zenodo
+date_published: '2026-06-20'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.20776760
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2603.27005'
+  relation: describes
+sources:
+- nuclear-decay
+topics:
+- double-beta
+data:
+  levels:
+  - mc
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

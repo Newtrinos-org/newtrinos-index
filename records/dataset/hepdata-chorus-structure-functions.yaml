@@ -1,0 +1,54 @@
+id: hepdata-chorus-structure-functions
+type: dataset
+title: 'HEPData: Measurement of nucleon structure functions in neutrino scattering.'
+short: 'HEPData: CHORUS nucleon structure functions (lead target)'
+description: After completion of the data taking for the νμ→ντ oscillation search, the CHORUS lead–scintillator calorimeter was used in the 1998 run as an active target. High-statistics samples of charged-current interactions were collected in the CERN SPS west area neutrino beam. This beam contained predominantly muon (anti-)neutrinos from sign-selected pions and kaons. We measure the flux and energy spectrum of the incident neutrinos and compare them with beam simulations. The neutrino–nucleon and anti-neutrino–nucleon differential cross-sections are measured in the range 0.01<x<0.7 , 0.05<y<0.95 , 10<Eν<200 GeV . We extract the neutrino–nucleon structure functions F2(x,Q2) , xF3(x,Q2) , and R(x,Q2) and compare these with results from other experiments.
+doi: 10.17182/hepdata.6187
+identifiers:
+  inspire: 699123
+  hepdata: ins699123
+url_landing: https://www.hepdata.net/record/ins699123
+creators:
+- name: CHORUS Collaboration
+  kind: collaboration
+date_published: '2006'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins699123
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1016/j.physletb.2005.10.062
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- chorus
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- dis
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: CHORUS
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,94 @@
+id: sbi-nucleon-knockout-parameters
+type: dataset
+title: First Estimation of Model Parameters for Neutrino-Induced Nucleon Knockout Using Simulation-Based Inference
+short: Simulation-based inference of neutrino-induced nucleon-knockout model parameters
+description: 'First Estimation of Model Parameters for Neutrino-Induced Nucleon Knockout Using Simulation-Based Inference
+
+
+   
+
+
+  Abstract:
+
+
+  To enable an accurate determination of oscillation parameters, accelerator-based neutrino experiments require detailed simulations of nuclear interaction physics in the GeV regime. While substantial effort from both theory and experiment is currently being invested to improve the fidelity of these simulations, their present deficiencies typically oblige experimental collaborations to resort to empirical tuning of simulation model parameters. As the precision requirements of thefield continue to become more stringent, machine learning techniques may provide a powerful means of handling corresponding growth in the complexity of future neutrino interaction model tuning exercises. To study the suitability of simulation-based inference (SBI) for this physics application, in this paper we revisit a tuned configuration of the GENIE neutrino event generator that was originally developed by the MicroBooNE collaboration. Despite closely reproducing the adopted values of four physics parameters when confronted with the tuned cross-section predictions as input, we find that our trained SBI algorithm prefers modestly different values (within MicroBooNE’s assigned uncertainties) and achieves slightly better goodness-of-fit when inference is run on the experimental data set originally used by MicroBooNE. We also find that our trained algorithm can create a fair approximation of an alternative neutrino scattering simulation, NuWro, that shares only a subset of its physics model parameters with GENIE.
+
+
+   
+
+
+  Datasets:
+
+
+  merged_output_Simulated.txt — GENIE Training & Test Simulation
+
+
+  This file contains the full ensemble of simulated neutrino–nucleus interaction events generated with the GENIE framework (v3.0.6, configuration G18_10a_02_11a), processed through NUISANCE to produce 58-bin histograms of the muon momentum distribution binned in cos θ. Each row corresponds to a unique configuration of the four GENIE cross-section parameters tuned in the MicroBooNE analysis: MᴬCCQE (axial mass for CCQE), NormCCMEC (CC multi-nucleon/MEC normalization), XSecShapeCCMEC (CC MEC cross-section shape), and RPA_CCQE (Random Phase Approximation correction). Parameter values were independently drawn from uniform prior distributions spanning the region of interest around the MicroBooNE Tune best-fit values. This dataset constitutes the training and test corpus for the Simulation-Based Inference (SBI) algorithm with Neural Posterior Estimation (NPE).
+
+
+  ub_tune_hist_out.txt — MicroBooNE Tune Benchmark Histogram
+
+
+  This file contains the 58-bin theoretical prediction histogram corresponding to the MicroBooNE Tune parameter configuration, generated using GENIE and NUISANCE under the same binning scheme as the training data. It serves as the primary validation benchmark: when provided as input to the trained SBI algorithm, the inferred posterior should recover the known MicroBooNE Tune parameter values. Successful recovery of these values constitutes the key sanity check confirming that the model has learned the correct mapping from observable histograms to underlying physics parameters.
+
+
+  t2k_hists_out.txt — T2K Experimental Data with Covariance Throws
+
+
+  This file contains the T2K "Analysis I" measurement of charged-current neutrino interactions on a hydrocarbon target, reported as a double-differential cross section in muon momentum and cos θ, binned into 58 bins consistent with the simulation. The first row encodes the central-value data histogram. The subsequent 1,000,000 rows are statistically consistent throws sampled from the full covariance matrix of the T2K measurement, propagating the correlated systematic and statistical uncertainties. This structure enables the SBI posterior to be evaluated while properly accounting for experimental uncertainties. This is the same T2K dataset originally used by MicroBooNE to derive their cross-section parameter tune.
+
+
+  nuwro_hist_out.txt — NuWro Alternative Generator Histogram
+
+
+  This file contains the 58-bin histogram prediction produced by the NuWro Monte Carlo event generator for the same T2K kinematic phase space, processed with NUISANCE under identical binning conditions. NuWro employs an independent nuclear interaction model — including a different treatment of two-nucleon knockout (MEC/2p2h) and intranuclear pion absorption — relative to GENIE. This histogram was used as input to the trained SBI algorithm to derive a surrogate GENIE parameter configuration that approximates the NuWro prediction, thereby testing the model''s ability to construct cross-generator surrogate models without requiring a dedicated full GENIE simulation campaign.'
+doi: 10.5281/zenodo.18747090
+url_landing: https://zenodo.org/doi/10.5281/zenodo.18747090
+creators:
+- name: Tame-Narvaez, Karla M.
+  orcid: 0000-0002-2249-9450
+  affiliation: Fermi National Accelerator Laboratory
+- name: Gardiner, Steven
+  orcid: 0000-0002-8368-5898
+  affiliation: Fermi National Accelerator Laboratory
+- name: Cerati, Giuseppe
+  orcid: 0000-0003-3548-0262
+- name: Ciprijanovic, Aleksandra
+  orcid: 0000-0003-1281-7192
+  affiliation: Fermi National Accelerator Laboratory
+publisher:
+  name: Zenodo
+version: '1'
+date_published: '2026-02-23'
+license: Apache-2.0
+license_url: http://www.apache.org/licenses/LICENSE-2.0
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.18747090
+  host: zenodo
+  role: primary
+experiments:
+- microboone
+- t2k
+sources:
+- accelerator
+topics:
+- cross-section
+- nuclear-model
+data:
+  levels:
+  - posterior
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

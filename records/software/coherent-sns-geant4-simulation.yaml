@@ -1,0 +1,217 @@
+id: coherent-sns-geant4-simulation
+type: software
+title: A Geant4 simulation of particle production at the Spallation Neutron Source
+short: COHERENT Geant4 simulation of particle (and neutrino) production at the SNS
+description: Release of COHERENT collaboration software associated with the neutrino production studies of the Spallation Neutron Source (SNS) at Oak Ridge National Laboratory described in arXiv:2109.11049. This simulation investigates the particle production at the SNS using Geant4, and we include both the base simulation and our analysis scripts in this package.
+doi: 10.5281/zenodo.6391623
+url_landing: https://zenodo.org/record/6391623
+creators:
+- name: Akimov, D.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)
+- name: An, P.
+  affiliation: Department of Physics, Duke University and Triangle Universities Nuclear Laboratory
+- name: Awe, C.
+  affiliation: Department of Physics, Duke University and Triangle Universities Nuclear Laboratory
+- name: Barbeau, P.S.
+  affiliation: Department of Physics, Duke University and Triangle Universities Nuclear Laboratory
+- name: Becker, B.
+  affiliation: Department of Physics and Astronomy, University of Tennessee
+- name: Belov, V.
+  affiliation: Institute for Theoretical and Experimental Physics named by A.I. Alikhanov of National Research Centre "Kurchatov Institute" and National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)
+- name: Bernardi, I.
+  affiliation: Department of Physics and Astronomy, University of Tennessee
+- name: Blackston, M.A.
+  affiliation: Oak Ridge National Laboratory
+- name: Bock, C.
+  affiliation: Physics Department, University of South Dakota
+- name: Bolozdynya, A.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)
+- name: Browning, J.
+  affiliation: Department of Physics, North Carolina State University
+- name: Cabrera-Palmer, B.
+  affiliation: Sandia National Laboratories, Livermore
+- name: Chernyak, D.
+  affiliation: Physics Department, University of South Dakota
+- name: Conley, E.
+  affiliation: Department of Physics, Duke University
+- name: Daughhetee, J.
+  affiliation: Oak Ridge National Laboratory
+- name: Detwiler, J.
+  affiliation: Center for Experimental Nuclear Physics and Astrophysics and Department of Physics, University of Washington
+- name: Ding, K.
+  affiliation: Physics Department, University of South Dakota
+- name: Durand, M.R.
+  affiliation: Center for Experimental Nuclear Physics and Astrophysics and Department of Physics, University of Washington
+- name: Efremenko, Y.
+  affiliation: Department of Physics and Astronomy, University of Tennessee and Oak Ridge National Laboratory
+- name: Elliott, S.R.
+  affiliation: Los Alamos National Laboratory
+- name: Fabris, L.
+  affiliation: Oak Ridge National Laboratory
+- name: Febbraro, M.
+  affiliation: Oak Ridge National Laboratory
+- name: Galambos, J.
+  affiliation: Oak Ridge National Laboratory
+- name: Gallo Rosso, A.
+  affiliation: Department of Physics, Laurentian University
+- name: Galindo-Uribarri, A.
+  affiliation: Oak Ridge National Laboratory and Department of Physics and Astronomy, University of Tennessee
+- name: Green, M.P.
+  affiliation: Department of Physics, North Carolina State University, Triangle Universities Nuclear Laboratory and Oak Ridge National Laboratory
+- name: Heath, M.R.
+  affiliation: Oak Ridge National Laboratory
+- name: Hedges, S.
+  affiliation: Department of Physics, Duke University and Triangle Universities Nuclear Laboratory
+- name: Hoang, D.
+  affiliation: Department of Physics, Carnegie Mellon University
+- name: Hughes, M.
+  affiliation: Department of Physics, Indiana University
+- name: Iverson, E.
+  affiliation: Oak Ridge National Laboratory
+- name: Johnson, T.
+  affiliation: Department of Physics, Duke University and Triangle Universities Nuclear Laboratory
+- name: Khromov, A.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)
+- name: Konovalov, A.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute) and Institute for Theoretical and Experimental Physics named by A.I. Alikhanov of National Research Centre "Kurchatov Institute"
+- name: Kozlova, E.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute) and Institute for Theoretical and Experimental Physics named by A.I. Alikhanov of National Research Centre "Kurchatov Institute"
+- name: Kumpan, A.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)
+- name: Li, L.
+  affiliation: Department of Physics, Duke University and Triangle Universities Nuclear Laboratory
+- name: Link, J.M.
+  affiliation: Center for Neutrino Physics, Virginia Tech
+- name: Liu, J.
+  affiliation: Physics Department, University of South Dakota
+- name: Mann, K.
+  affiliation: Department of Physics, North Carolina State University
+- name: Markoff, D.M.
+  affiliation: Department of Mathematics and Physics, North Carolina Central University and Triangle Universities Nuclear Laboratory
+- name: Mastroberti, J.
+  affiliation: Department of Physics, Indiana University
+- name: McIntyre, M.
+  affiliation: Department of Physics, University of Florida
+- name: Mueller, P.E.
+  affiliation: Oak Ridge National Laboratory
+- name: Newby, J.
+  affiliation: Oak Ridge National Laboratory
+- name: Parno, D.S.
+  affiliation: Department of Physics, Carnegie Mellon University
+- name: Penttila, S.I.
+  affiliation: Oak Ridge National Laboratory
+- name: Pershey, D.
+  affiliation: Department of Physics, Duke University
+- name: Rapp, R.
+  orcid: 0000-0003-4590-687X
+  affiliation: Department of Physics, Carnegie Mellon University
+- name: Ray, H.
+  affiliation: Department of Physics, University of Florida
+- name: Raybern, J.
+  affiliation: Department of Physics, Duke University
+- name: Razuvaeva, O.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)
+- name: Reyna, D.
+  affiliation: Sandia National Laboratories, Livermore
+- name: Rich, G.C.
+  affiliation: Triangle Universities Nuclear Laboratory
+- name: Rimal, D.
+  affiliation: Department of Physics, University of Florida
+- name: Ross, J.
+  affiliation: Department of Mathematics and Physics, North Carolina Central University and Triangle Universities Nuclear Laboratory
+- name: Rudik, D.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)
+- name: Runge, J.
+  affiliation: Department of Physics, Duke University and Triangle Universities Nuclear Laboratory
+- name: Salvat, D.J.
+  affiliation: Department of Physics, Indiana University
+- name: Salyapongse, A.M.
+  affiliation: Department of Physics, Carnegie Mellon University
+- name: Sander, J.
+  affiliation: Physics Department, University of South Dakota
+- name: Scholberg, K.
+  affiliation: Department of Physics, Duke University
+- name: Shakirov, A.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)
+- name: Simakov, G.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute) and Institute for Theoretical and Experimental Physics named by A.I. Alikhanov of National Research Centre "Kurchatov Institute"
+- name: Sinev, G.
+  affiliation: Department of Physics, Duke University
+- name: Snow, W.M.
+  affiliation: Department of Physics, Indiana University
+- name: Sosnovstsev, V.
+  affiliation: National Research Nuclear University MEPhI (Moscow Engineering Physics Institute)
+- name: Suh, B.
+  affiliation: Department of Physics, Indiana University
+- name: Tayloe, R.
+  affiliation: Department of Physics, Indiana University
+- name: Tellez-Giron-Flores, K.
+  affiliation: Center for Neutrino Physics, Virginia Tech
+- name: Tolstukhin, I.
+  affiliation: Department of Physics, Indiana University
+- name: Trotter, S.
+  affiliation: Oak Ridge National Laboratory
+- name: Ujah, E.
+  affiliation: Department of Mathematics and Physics, North Carolina Central University and Triangle Universities Nuclear Laboratory
+- name: Vanderwerp, J.
+  affiliation: Department of Physics, Indiana University
+- name: Varner, R.L.
+  affiliation: Oak Ridge National Laboratory
+- name: Virtue, C.J.
+  affiliation: Department of Physics, Laurentian University
+- name: Visser, G.
+  affiliation: Department of Physics, Indiana University
+- name: Wongjirad, T.
+  affiliation: Department of Physics and Astronomy, Tufts University
+- name: Yen, Y.-R.
+  affiliation: Department of Physics, Carnegie Mellon University
+- name: Yoo, J.
+  affiliation: Department of Physics and Astronomy, Seoul National University
+- name: Yu, C.-H.
+  affiliation: Oak Ridge National Laboratory
+- name: Zettlemoyer, J.
+  affiliation: Department of Physics, Indiana University
+- name: Zhang, S.
+  affiliation: Department of Physics, Carnegie Mellon University and Department of Physics, Indiana University
+publisher:
+  name: Zenodo
+version: '1'
+date_published: '2022-03-28'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.6391623
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2109.11049'
+  relation: describes
+experiments:
+- coherent
+sources:
+- spallation
+topics:
+- flux
+software:
+  purposes:
+  - flux-calculation
+  - detector-simulation
+  repository: https://doi.org/10.5281/zenodo.6391623
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

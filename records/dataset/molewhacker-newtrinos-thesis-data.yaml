@@ -1,0 +1,82 @@
+id: molewhacker-newtrinos-thesis-data
+type: dataset
+title: 'molewhacker-newtrinos: raw run data of the MoleWhacker neutrino-oscillation application (thesis data)'
+short: 'MoleWhacker importance sampling (BAT.jl) on Newtrinos.jl oscillation fits: thesis run data (TUM)'
+description: 'Raw per-cell outputs of the neutrino-oscillation application reported in Chapter 9 and Appendix B of the master''s thesis Importance Sampling Methods in the Bayesian Analysis Toolkit (Valentin Reindel, Technical University of Munich, Department of Physics, 2026): the joint three-flavor fit of Daya Bay, KamLAND and MINOS (11 parameters, both mass orderings) sampled by MoleWhacker, Metropolis-Hastings, NUTS, nested sampling and plain importance sampling under a common likelihood-evaluation budget; the ablation of MoleWhacker''s iteration cap; and the extension by the IceCube DeepCore atmospheric sample (24 parameters, normal ordering). Likelihoods: Newtrinos.jl (P. Eller et al.), pinned commit fa87689d.
+
+
+  Companion code repository (pipeline, figures, tables, pinned environment): github.com/valeagent/molewhacker-newtrinos. Benchmark of the same sampler on synthetic targets: github.com/valeagent/molewhacker-bench, data 10.5281/zenodo.22228405.
+
+
+  Contents (7.9 GB; every cell holds result.h5 with samples, weights, log-densities and diagnostics, for MoleWhacker the iteration log and the stored final mixture, plus metadata.json and summary.json):
+
+
+  molewhacker-newtrinos-runs.tar (755 MB): the 74 cells of the three-experiment campaign (50 protocol cells: five samplers at 5e4 and 5e5 evaluations, seeds 11/23/41, both orderings, nested sampling to evidence convergence; 24 single-experiment and pairwise MoleWhacker cells of the subset study) → out/runs/
+
+
+  molewhacker-newtrinos-ablation.tar.part-00 ... part-19 (6.5 GB, twenty parts: two of 1 GiB, then 256 MiB pieces; concatenate in name order): the six MoleWhacker cells with the iteration cap lifted, with the complete per-iteration population and mixture history → out_ablation/runs/
+
+
+  molewhacker-newtrinos-extension.tar (249 MB): the DeepCore extension (protocol MoleWhacker cell with 30 seeds, two MH chains of 2.5e5 steps, MoleWhacker with n_seed = 8 for seeds 11/23/41, the fresh draws from every stored d = 24 mixture, and the metadata of the cells stopped or lost to the out-of-memory event of 15 Sep 2026) → out_extension/, out_extension_nseed8/
+
+
+  molewhacker-newtrinos-logs.tar (26 MB): stdout/stderr of every lane of the campaign → out/logs/
+
+
+  DATA-README.md, SHA256SUMS.txt: description, reassembly and unpacking instructions, checksums of the archives, the parts and the reassembled ablation archive.
+
+
+  Usage. Clone the companion repository, reassemble the ablation archive (cat molewhacker-newtrinos-ablation.tar.part-* > molewhacker-newtrinos-ablation.tar; on Windows copy /b), verify with sha256sum -c SHA256SUMS.txt --ignore-missing, and unpack every archive at the repository root; every table and figure of the chapter then regenerates without re-running a cell (README.md of the repository lists the scripts in order). The runs are also regenerable from the queue files with seed-fixed random streams.
+
+
+  Data: CC-BY-4.0. Code (companion repository): MIT. The experimental data contained in the Newtrinos.jl likelihoods belong to the respective collaborations.'
+doi: 10.5281/zenodo.22879546
+url_landing: https://zenodo.org/doi/10.5281/zenodo.22879546
+creators:
+- name: Reindel, Valentin
+  affiliation: Technical University of Munich, Department of Physics
+publisher:
+  name: Zenodo
+version: 1.0.0
+date_published: '2026-09-21'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.22879546
+  host: zenodo
+  role: primary
+relations:
+- rel: uses
+  target: newtrinos-jl
+experiments:
+- icecube
+- daya-bay
+- kamland
+- minos
+detectors:
+- deepcore
+sources:
+- reactor
+- atmospheric
+- accelerator
+topics:
+- oscillation
+- statistics
+data:
+  levels:
+  - posterior
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

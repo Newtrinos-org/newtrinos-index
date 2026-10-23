@@ -1,0 +1,118 @@
+id: fifrelin-gd-deexcitation-cascades
+type: model
+title: 'Data from: Improved FIFRELIN de-excitation model for neutrino applications'
+short: FIFRELIN de-excitation cascades for ¹⁵⁶,¹⁵⁸Gd after neutron capture (neutrino-detector simulations)
+description: 'New FIFRELIN cascades for the isotopes 156,158Gd are distributed to the community, to be used for various applications. The new cascades feature an improved modeling of de-excitation. The main improvements are: 1) Inclusion of primary transitions from EGAF database. 2) Treatment of gamma-directional correlations 3) Improved physics for the Internal Conversion process and X ray emission. With the use of the files provided, please cite the following publication: H. Almazán et al, The European Physical Journal A volume 59, Article number: 75 (2023) DOI: https://doi.org/10.1140/epja/s10050-023-00977-x'
+doi: 10.5281/zenodo.6861341
+url_landing: https://zenodo.org/record/6861341
+creators:
+- name: Almazán Molina, Helena
+  orcid: 0000-0003-1772-2598
+  affiliation: Max-Planck-Institut fur Kernphysik, Saupfercheckweg 1, 69117 Heidelberg, Germany
+- name: Bernard, Laura
+  orcid: 0000-0002-6698-5645
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3, 38000 Grenoble, France
+- name: Blanchet, Adrien
+  orcid: 0000-0002-4992-0161
+  affiliation: IRFU, CEA, Universit ́e Paris-Saclay, 91191 Gif-sur-Yvette, France
+- name: Bonhomme, Aurélie
+  orcid: 0000-0002-0218-2835
+  affiliation: IRFU, CEA, Universite Paris-Saclay, 91191, Gif-sur-Yvette, France
+- name: Buck, Christian
+  affiliation: Max-Planck-Institut fur Kernphysik, Saupfercheckweg 1, 69117 Heidelberg, Germany
+- name: Chalil, Achment
+  orcid: 0000-0002-6375-2774
+  affiliation: IRFU, CEA, Universite Paris-Saclay, 91191, Gif-sur-Yvette, France
+- name: Chebboubi, Abdelhazize
+  orcid: 0000-0002-3933-584X
+  affiliation: CEA, DES, IRESNE, DER, Cadarache, 13108 Saint-Paul-Lez-Durance, France
+- name: del Amo Sánchez, Pablo
+  orcid: 0000-0002-0326-7806
+  affiliation: Univ. Savoie Mont Blanc, CNRS, LAPP-IN2P3, 74000 Annecy, France
+- name: El Atmani, Ilham
+  orcid: 0000-0002-8396-1901
+  affiliation: IRFU, CEA, Universite Paris-Saclay, 91191, Gif-sur-Yvette, France
+- name: Labit, Loïc
+  orcid: 0000-0003-2179-7787
+  affiliation: Univ. Savoie Mont Blanc, CNRS, LAPP-IN2P3, 74000 Annecy, France
+- name: Lamblin, Jacob
+  orcid: 0000-0003-0031-263X
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3, 38000 Grenoble, France
+- name: Letourneau, Alain
+  affiliation: IRFU, CEA, Universite Paris-Saclay, 91191, Gif-sur-Yvette, France
+- name: Lhuillier, David
+  orcid: 0000-0003-2324-0149
+  affiliation: IRFU, CEA, Universite Paris-Saclay, 91191, Gif-sur-Yvette, France
+- name: Licciardi, Matthieu
+  orcid: 0000-0002-9147-2438
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3, 38000 Grenoble, France
+- name: Lindner, Manfred
+  orcid: 0000-0002-3704-6016
+  affiliation: Max-Planck-Institut fur Kernphysik, Saupfercheckweg 1, 69117 Heidelberg, Germany
+- name: Litaize, Olivier
+  orcid: 0000-0003-2627-4045
+  affiliation: CEA, DES, IRESNE, DER, Cadarache, 13108 Saint-Paul-Lez-Durance, France
+- name: Materna, Thomas
+  orcid: 0000-0002-7806-3592
+  affiliation: IRFU, CEA, Universite Paris-Saclay, 91191, Gif-sur-Yvette, France
+- name: Pessard, Henri
+  orcid: 0000-0002-1627-129X
+  affiliation: Univ. Savoie Mont Blanc, CNRS, LAPP-IN2P3, 74000 Annecy, France
+- name: Réal, Jean-Sébastien
+  orcid: 0000-0003-1584-783X
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3, 38000 Grenoble, France
+- name: Ricol, Jean-Stephane
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3, 38000 Grenoble, France
+- name: Roca Català, Christian
+  orcid: 0000-0003-4994-5024
+  affiliation: Max-Planck-Institut fur Kernphysik, Saupfercheckweg 1, 69117 Heidelberg, Germany
+- name: Rogly, Rudolph
+  affiliation: IRFU, CEA, Universite Paris-Saclay, 91191, Gif-sur-Yvette, France
+- name: Salagnac, Thomas
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3, 38000 Grenoble, France
+- name: Savu, Vladimir
+  affiliation: IRFU, CEA, Universite Paris-Saclay, 91191, Gif-sur-Yvette, France
+- name: Schoppmann, Stefan
+  affiliation: Max-Planck-Institut fur Kernphysik, Saupfercheckweg 1, 69117 Heidelberg, Germany
+- name: Soldner, Torsten
+  orcid: 0000-0003-2468-5182
+  affiliation: Institut Laue-Langevin, CS 20156, 38042 Grenoble Cedex 9, France
+- name: Stutz, Anne
+  orcid: 0000-0003-3213-118X
+  affiliation: Univ. Grenoble Alpes, CNRS, Grenoble INP, LPSC-IN2P3, 38000 Grenoble, France
+- name: Thulliez, Loïc
+  affiliation: IRFU, CEA, Universite Paris-Saclay, 91191, Gif-sur-Yvette, France
+- name: Vialat, Mathieu
+  orcid: 0000-0001-7581-6053
+  affiliation: Institut Laue-Langevin, CS 20156, 38042 Grenoble Cedex 9, France
+publisher:
+  name: Zenodo
+date_published: '2022-07-25'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.6861341
+  host: zenodo
+  role: primary
+sources:
+- reactor
+topics:
+- detector-response
+model:
+  quantities:
+  - detector response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

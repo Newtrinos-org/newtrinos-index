@@ -1,0 +1,404 @@
+id: microboone-3plus1-numi-chi2-map
+type: result
+title: MicroBooNE 3+1 sterile neutrino search $\Delta \chi^2$ map for NuMI-only
+short: 'MicroBooNE 3+1 sterile search: observed Δχ² map on a 3D grid (NuMI only)'
+description: 'This text file contains the observed values of $\Delta \chi^2$ for each 4$\nu$ hypothesis, evaluated on a three-dimensional grid of oscillation parameters with dimensions $(\Delta m^2_{41}, \sin^2\theta_{14}, \sin^2\theta_{24}) = (100 \times 4000 \times 100)$. The fine binning in $\sin^2\theta_{14}$ (4000 points) was required to reproduce features observed in the NuMI-only analysis, which resulted in a file size too large for hosting on HEPData.
+
+
+  This dataset corresponds to the $\chi^2$ map obtained using NuMI-only data. It is provided as a supplementary release in support of the MicroBooNE 3+1 sterile neutrino oscillation search using both the BNB and NuMI beams. All other associated data products are available on [HEPData (link)].
+
+
+  Note that this NuMI-only result is not the final outcome of the MicroBooNE sterile neutrino analysis, which combines BNB and NuMI datasets. It is released here solely as an auxiliary result for completeness and reproducibility.'
+doi: 10.5281/zenodo.17161262
+url_landing: https://zenodo.org/doi/10.5281/zenodo.17161262
+creators:
+- name: P. Abratenko
+  affiliation: Tufts University, Medford, MA, 02155, USA
+- name: D. Andrade Aldana
+  affiliation: Illinois Institute of Technology (IIT), Chicago, IL 60616, USA
+- name: L. Arellano
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: J. Asaadi
+  affiliation: University of Texas, Arlington, TX, 76019, USA
+- name: A. Ashkenazi
+  affiliation: Tel Aviv University, Tel Aviv, Israel, 69978
+- name: S. Balasubramanian
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: B. Baller
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: A. Barnard
+  affiliation: University of Oxford, Oxford OX1 3RH, United Kingdom
+- name: G. Barr
+  affiliation: University of Oxford, Oxford OX1 3RH, United Kingdom
+- name: D. Barrow
+  affiliation: University of Oxford, Oxford OX1 3RH, United Kingdom
+- name: J. Barrow
+  affiliation: University of Minnesota, Minneapolis, MN, 55455, USA
+- name: V. Basque
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: J. Bateman
+  affiliation: Imperial College London, London SW7 2AZ, United Kingdom ; The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: O. Benevides Rodrigues
+  affiliation: Illinois Institute of Technology (IIT), Chicago, IL 60616, USA
+- name: S. Berkman
+  affiliation: Michigan State University, East Lansing, MI 48824, USA
+- name: A. Bhat
+  affiliation: University of Chicago, Chicago, IL, 60637, USA
+- name: M. Bhattacharya
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: M. Bishai
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: A. Blake
+  affiliation: Lancaster University, Lancaster LA1 4YW, United Kingdom
+- name: B. Bogart
+  affiliation: University of Michigan, Ann Arbor, MI, 48109, USA
+- name: T. Bolton
+  affiliation: Kansas State University (KSU), Manhattan, KS, 66506, USA
+- name: M. B. Brunetti
+  affiliation: The University of Kansas, Lawrence, KS, 66045, USA ; University of Warwick, Coventry CV4 7AL, United Kingdom
+- name: L. Camilleri
+  affiliation: Columbia University, New York, NY, 10027, USA
+- name: D. Caratelli
+  affiliation: University of California, Santa Barbara, CA, 93106, USA
+- name: F. Cavanna
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: G. Cerati
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: A. Chappell
+  affiliation: University of Warwick, Coventry CV4 7AL, United Kingdom
+- name: Y. Chen
+  affiliation: SLAC National Accelerator Laboratory, Menlo Park, CA, 94025, USA
+- name: J. M. Conrad
+  affiliation: Massachusetts Institute of Technology (MIT), Cambridge, MA, 02139, USA
+- name: M. Convery
+  affiliation: SLAC National Accelerator Laboratory, Menlo Park, CA, 94025, USA
+- name: L. Cooper-Troendle
+  affiliation: University of Pittsburgh, Pittsburgh, PA, 15260, USA
+- name: J. I. Crespo-Anad\'o
+  affiliation: Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT), Madrid E-28040, Spain
+- name: R. Cross
+  affiliation: University of Warwick, Coventry CV4 7AL, United Kingdom
+- name: M. Del Tutto
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: S. R. Dennis
+  affiliation: University of Cambridge, Cambridge CB3 0HE, United Kingdom
+- name: P. Detje
+  affiliation: University of Cambridge, Cambridge CB3 0HE, United Kingdom
+- name: R. Diurba
+  affiliation: Universität Bern, Bern CH-3012, Switzerland
+- name: Z. Djurcic
+  affiliation: Argonne National Laboratory (ANL), Lemont, IL, 60439, USA
+- name: K. Duffy
+  affiliation: University of Oxford, Oxford OX1 3RH, United Kingdom
+- name: S. Dytman
+  affiliation: University of Pittsburgh, Pittsburgh, PA, 15260, USA
+- name: B. Eberly
+  affiliation: University of Southern Maine, Portland, ME, 04104, USA
+- name: P. Englezos
+  affiliation: Rutgers University, Piscataway, NJ, 08854, USA
+- name: A. Ereditato
+  affiliation: University of Chicago, Chicago, IL, 60637, USA ; Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: J. J. Evans
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: C. Fang
+  affiliation: University of California, Santa Barbara, CA, 93106, USA
+- name: B. T. Fleming
+  affiliation: University of Chicago, Chicago, IL, 60637, USA
+- name: W. Foreman
+  affiliation: Illinois Institute of Technology (IIT), Chicago, IL 60616, USA ; Los Alamos National Laboratory (LANL), Los Alamos, NM, 87545, USA
+- name: D. Franco
+  affiliation: University of Chicago, Chicago, IL, 60637, USA
+- name: A. P. Furmanski
+  affiliation: University of Minnesota, Minneapolis, MN, 55455, USA
+- name: F. Gao
+  affiliation: University of California, Santa Barbara, CA, 93106, USA
+- name: D. Garcia-Gamez
+  affiliation: Universidad de Granada, E-18071, Granada, Spain
+- name: S. Gardiner
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: G. Ge
+  affiliation: Columbia University, New York, NY, 10027, USA
+- name: S. Gollapinni
+  affiliation: Los Alamos National Laboratory (LANL), Los Alamos, NM, 87545, USA
+- name: E. Gramellini
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: P. Green
+  affiliation: University of Oxford, Oxford OX1 3RH, United Kingdom
+- name: H. Greenlee
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: L. Gu
+  affiliation: Lancaster University, Lancaster LA1 4YW, United Kingdom
+- name: W. Gu
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: R. Guenette
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: P. Guzowski
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: L. Hagaman
+  affiliation: University of Chicago, Chicago, IL, 60637, USA
+- name: M. D. Handley
+  affiliation: University of Cambridge, Cambridge CB3 0HE, United Kingdom
+- name: O. Hen
+  affiliation: Massachusetts Institute of Technology (MIT), Cambridge, MA, 02139, USA
+- name: C. Hilgenberg
+  affiliation: University of Minnesota, Minneapolis, MN, 55455, USA
+- name: G. A. Horton-Smith
+  affiliation: Kansas State University (KSU), Manhattan, KS, 66506, USA
+- name: A. Hussain
+  affiliation: Kansas State University (KSU), Manhattan, KS, 66506, USA
+- name: B. Irwin
+  affiliation: University of Minnesota, Minneapolis, MN, 55455, USA
+- name: M. S. Ismail
+  affiliation: University of Pittsburgh, Pittsburgh, PA, 15260, USA
+- name: C. James
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: X. Ji
+  affiliation: Nankai University, Nankai District, Tianjin 300071, China
+- name: J. H. Jo
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: R. A. Johnson
+  affiliation: University of Cincinnati, Cincinnati, OH, 45221, USA
+- name: Y.-J. Jwa
+  affiliation: Columbia University, New York, NY, 10027, USA
+- name: D. Kalra
+  affiliation: Columbia University, New York, NY, 10027, USA
+- name: G. Karagiorgi
+  affiliation: Columbia University, New York, NY, 10027, USA
+- name: W. Ketchum
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: M. Kirby
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: T. Kobilarcik
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: N. Lane
+  affiliation: Imperial College London, London SW7 2AZ, United Kingdom ; The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: J.-Y. Li
+  affiliation: University of Edinburgh, Edinburgh EH9 3FD, United Kingdom
+- name: Y. Li
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: K. Lin
+  affiliation: Rutgers University, Piscataway, NJ, 08854, USA
+- name: B. R. Littlejohn
+  affiliation: Illinois Institute of Technology (IIT), Chicago, IL 60616, USA
+- name: L. Liu
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: W. C. Louis
+  affiliation: Los Alamos National Laboratory (LANL), Los Alamos, NM, 87545, USA
+- name: X. Luo
+  affiliation: University of California, Santa Barbara, CA, 93106, USA
+- name: T. Mahmud
+  affiliation: Lancaster University, Lancaster LA1 4YW, United Kingdom
+- name: C. Mariani
+  affiliation: Center for Neutrino Physics, Virginia Tech, Blacksburg, VA, 24061, USA
+- name: D. Marsden
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: J. Marshall
+  affiliation: University of Warwick, Coventry CV4 7AL, United Kingdom
+- name: N. Martinez
+  affiliation: Kansas State University (KSU), Manhattan, KS, 66506, USA
+- name: D. A. Martinez Caicedo
+  affiliation: South Dakota School of Mines and Technology (SDSMT), Rapid City, SD, 57701, USA
+- name: S. Martynenko
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: A. Mastbaum
+  affiliation: Rutgers University, Piscataway, NJ, 08854, USA
+- name: I. Mawby
+  affiliation: Lancaster University, Lancaster LA1 4YW, United Kingdom
+- name: N. McConkey
+  affiliation: Queen Mary University of London, London E1 4NS, United Kingdom
+- name: L. Mellet
+  affiliation: Michigan State University, East Lansing, MI 48824, USA
+- name: J. Mendez
+  affiliation: Louisiana State University, Baton Rouge, LA, 70803, USA
+- name: J. Micallef
+  affiliation: Massachusetts Institute of Technology (MIT), Cambridge, MA, 02139, USA ; Tufts University, Medford, MA, 02155, USA
+- name: A. Mogan
+  affiliation: Colorado State University, Fort Collins, CO, 80523, USA
+- name: T. Mohayai
+  affiliation: Indiana University, Bloomington, IN 47405, USA
+- name: M. Mooney
+  affiliation: Colorado State University, Fort Collins, CO, 80523, USA
+- name: A. F. Moor
+  affiliation: University of Cambridge, Cambridge CB3 0HE, United Kingdom
+- name: C. D. Moore
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: L. Mora Lepin
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: M. M. Moudgalya
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: S. Mulleriababu
+  affiliation: Universität Bern, Bern CH-3012, Switzerland
+- name: D. Naples
+  affiliation: University of Pittsburgh, Pittsburgh, PA, 15260, USA
+- name: A. Navrer-Agasson
+  affiliation: Imperial College London, London SW7 2AZ, United Kingdom
+- name: N. Nayak
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: M. Nebot-Guinot
+  affiliation: University of Edinburgh, Edinburgh EH9 3FD, United Kingdom
+- name: C. Nguyen
+  affiliation: Rutgers University, Piscataway, NJ, 08854, USA
+- name: J. Nowak
+  affiliation: Lancaster University, Lancaster LA1 4YW, United Kingdom
+- name: N. Oza
+  affiliation: Columbia University, New York, NY, 10027, USA
+- name: O. Palamara
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: N. Pallat
+  affiliation: University of Minnesota, Minneapolis, MN, 55455, USA
+- name: V. Paolone
+  affiliation: University of Pittsburgh, Pittsburgh, PA, 15260, USA
+- name: A. Papadopoulou
+  affiliation: Argonne National Laboratory (ANL), Lemont, IL, 60439, USA
+- name: V. Papavassiliou
+  affiliation: New Mexico State University (NMSU), Las Cruces, NM, 88003, USA
+- name: H. B. Parkinson
+  affiliation: University of Edinburgh, Edinburgh EH9 3FD, United Kingdom
+- name: S. F. Pate
+  affiliation: New Mexico State University (NMSU), Las Cruces, NM, 88003, USA
+- name: N. Patel
+  affiliation: Lancaster University, Lancaster LA1 4YW, United Kingdom
+- name: Z. Pavlovic
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: E. Piasetzky
+  affiliation: Tel Aviv University, Tel Aviv, Israel, 69978
+- name: K. Pletcher
+  affiliation: Michigan State University, East Lansing, MI 48824, USA
+- name: I. Pophale
+  affiliation: Lancaster University, Lancaster LA1 4YW, United Kingdom
+- name: X. Qian
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: J. L. Raaf
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: V. Radeka
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: A. Rafique
+  affiliation: Argonne National Laboratory (ANL), Lemont, IL, 60439, USA
+- name: M. Reggiani-Guzzo
+  affiliation: University of Edinburgh, Edinburgh EH9 3FD, United Kingdom
+- name: J. Rodriguez Rondon
+  affiliation: South Dakota School of Mines and Technology (SDSMT), Rapid City, SD, 57701, USA
+- name: M. Rosenberg
+  affiliation: Tufts University, Medford, MA, 02155, USA
+- name: M. Ross-Lonergan
+  affiliation: Los Alamos National Laboratory (LANL), Los Alamos, NM, 87545, USA
+- name: I. Safa
+  affiliation: Columbia University, New York, NY, 10027, USA
+- name: D. W. Schmitz
+  affiliation: University of Chicago, Chicago, IL, 60637, USA
+- name: A. Schukraft
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: W. Seligman
+  affiliation: Columbia University, New York, NY, 10027, USA
+- name: M. H. Shaevitz
+  affiliation: Columbia University, New York, NY, 10027, USA
+- name: R. Sharankova
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: J. Shi
+  affiliation: University of Cambridge, Cambridge CB3 0HE, United Kingdom
+- name: E. L. Snider
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: M. Soderberg
+  affiliation: Syracuse University, Syracuse, NY, 13244, USA
+- name: S. S\"o
+  affiliation: Imperial College London, London SW7 2AZ, United Kingdom
+- name: J. Spitz
+  affiliation: University of Michigan, Ann Arbor, MI, 48109, USA
+- name: M. Stancari
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: J. St. John
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: T. Strauss
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: A. M. Szelc
+  affiliation: University of Edinburgh, Edinburgh EH9 3FD, United Kingdom
+- name: N. Taniuchi
+  affiliation: University of Cambridge, Cambridge CB3 0HE, United Kingdom
+- name: K. Terao
+  affiliation: SLAC National Accelerator Laboratory, Menlo Park, CA, 94025, USA
+- name: C. Thorpe
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: D. Torbunov
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: D. Totani
+  affiliation: University of California, Santa Barbara, CA, 93106, USA
+- name: M. Toups
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: A. Trettin
+  affiliation: The University of Manchester, Manchester M13 9PL, United Kingdom
+- name: Y.-T. Tsai
+  affiliation: SLAC National Accelerator Laboratory, Menlo Park, CA, 94025, USA
+- name: J. Tyler
+  affiliation: Kansas State University (KSU), Manhattan, KS, 66506, USA
+- name: M. A. Uchida
+  affiliation: University of Cambridge, Cambridge CB3 0HE, United Kingdom
+- name: T. Usher
+  affiliation: SLAC National Accelerator Laboratory, Menlo Park, CA, 94025, USA
+- name: B. Viren
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: J. Wang
+  affiliation: Nankai University, Nankai District, Tianjin 300071, China
+- name: M. Weber
+  affiliation: Universität Bern, Bern CH-3012, Switzerland
+- name: H. Wei
+  affiliation: Louisiana State University, Baton Rouge, LA, 70803, USA
+- name: A. J. White
+  affiliation: University of Chicago, Chicago, IL, 60637, USA
+- name: S. Wolbers
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: T. Wongjirad
+  affiliation: Tufts University, Medford, MA, 02155, USA
+- name: K. Wresilo
+  affiliation: University of Cambridge, Cambridge CB3 0HE, United Kingdom
+- name: W. Wu
+  affiliation: University of Pittsburgh, Pittsburgh, PA, 15260, USA
+- name: E. Yandel
+  affiliation: University of California, Santa Barbara, CA, 93106, USA ; Los Alamos National Laboratory (LANL), Los Alamos, NM, 87545, USA
+- name: T. Yang
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: L. E. Yates
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: H. W. Yu
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+- name: G. P. Zeller
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: J. Zennamo
+  affiliation: Fermi National Accelerator Laboratory (FNAL), Batavia, IL 60510, USA
+- name: C. Zhang
+  affiliation: Brookhaven National Laboratory (BNL), Upton, NY, 11973, USA
+publisher:
+  name: Zenodo
+date_published: '2025-12-03'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.17161262
+  host: zenodo
+  role: primary
+references:
+- doi: 10.17182/hepdata.166435.v1
+  relation: describes
+experiments:
+- microboone
+sources:
+- accelerator
+topics:
+- sterile
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

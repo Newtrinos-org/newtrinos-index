@@ -1,0 +1,84 @@
+id: momenta
+type: software
+title: MOMENTA v1.2 - Multi-Observations Multi-Energy Neutrino Transient Analysis
+short: 'MOMENTA: constraints on neutrino emission from transient sources (multi-observation, multi-energy)'
+description: 'This package aims to compute constraints on the neutrino emission from transient objects (either point sources or with some larger uncertainty on the localisation). The user should provide all the inputs in terms of neutrino observations and instrument response functions, as well as the flux spectrum and optionally the jet model to be considered. The code returns the posterior distribution from which upper limits, credible intervals and other information may be obtained.
+
+
+  The main feature is that multiple samples from multiple detectors can be easily combined, allowing for constraints spanning large energy ranges and/or with complementary sky coverage.
+
+
+  More information on the methods is provided in the PDF documentation in doc/ and these conference proceedings.
+
+
+  This is the second release of the software, including the following updates:
+
+
+  a speed-up of the computation with vectorized prior/posterior computations
+
+
+  the possibility to perform stacking analyses
+
+
+  the possibility to use tabulated flux as inputs instead of analytical ones
+
+
+  Additional example notebooks have been added to introduce the new features.'
+doi: 10.5281/zenodo.13208669
+url_landing: https://zenodo.org/doi/10.5281/zenodo.13208669
+creators:
+- name: De Wasseige, Gwenhaël
+  orcid: 0000-0002-1010-5100
+  affiliation: UCLouvain
+- name: Lamoureux, Mathieu
+  orcid: 0000-0002-8860-5826
+  affiliation: UCLouvain
+- name: Moyaux, Émile
+  affiliation: UCLouvain
+- name: Raab, Christoph
+  orcid: 0000-0001-9921-2668
+  affiliation: Université Libre de Bruxelles
+- name: Ricca, Leonardo
+  orcid: 0009-0002-1638-0610
+  affiliation: UCLouvain
+- name: Vereecken, Matthias
+  orcid: 0000-0001-9194-5242
+  affiliation: UC Louvain
+publisher:
+  name: Zenodo
+version: v1.2
+date_published: 2025-12
+license: GPL-3.0-or-later
+license_url: https://www.gnu.org/licenses/gpl-3.0-standalone.html
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.13208669
+  host: zenodo
+  role: primary
+  size_bytes: 18267267
+  n_files: 1
+sources:
+- astrophysical
+topics:
+- multi-messenger
+software:
+  purposes:
+  - fitting
+  repository: https://doi.org/10.5281/zenodo.13208669
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

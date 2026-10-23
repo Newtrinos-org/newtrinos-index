@@ -1,0 +1,44 @@
+id: pns-cooling-variational-eos-nakazato
+type: model
+title: Supernova Neutrino Light Curves from Proto-Neutron Star Cooling with a Variational Nuclear Equation of State and Multi-Nucleus Composition
+short: Supernova neutrino light curves with a variational EoS and multi-nucleon effects (Nakanishi et al. 2025)
+description: We present the model spectra of neutrinos emitted from proto-neutron star (PNS) cooling used in Nakanishi et al., Astrophys. J. 992 (2025) 27, arXiv:2505.19721 [astro-ph.HE]. So as to obtain the time evolution of neutrino spectra, PNS cooling simulations are performed with use of a variational nuclear equation of state (EOS) including multi-nucleus composition (commonly known as Furusawa-Togashi EOS) and eight PNS cooling models with different initial conditions are involved. The format of the spectral data is the same with that of Supernova Neutrino Database. For the details, see readme.pdf
+doi: 10.5281/zenodo.20095083
+url_landing: https://zenodo.org/doi/10.5281/zenodo.20095083
+creators:
+- name: NAKAZATO, Ken'ichiro
+  orcid: 0000-0001-6330-1685
+  affiliation: Kyushu University
+- name: the nuLC Collaboration
+  affiliation: the nuLC Collaboration
+publisher:
+  name: Zenodo
+date_published: '2026-05-22'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.20095083
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

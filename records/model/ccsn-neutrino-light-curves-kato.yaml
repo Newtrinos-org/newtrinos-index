@@ -1,0 +1,96 @@
+id: ccsn-neutrino-light-curves-kato
+type: model
+title: 'Data release v1.0: Neutrino luminosities and spectra for "Comprehensive Neutrino Light Curves and Spectra: From Pre-supernova Evolution to Early Supernova Phase"'
+short: Neutrino luminosities and spectra from pre-supernova to early supernova phase (Kato, Nagakura et al.)
+description: 'This dataset provides the neutrino emission properties (luminosities, mean energies, and spectra) calculated in our comprehensive 1D core-collapse supernova (CCSN) study, as presented in the paper "Comprehensive Neutrino Light Curves and Spectra: From Pre-supernova Evolution to Early Supernova Phase".
+
+
+  update1: A new version, v1.1, was released on June 10, 2026. Please use this version if you would like to download the data for individual progenitor models.DOI: 10.5281/zenodo.20618971
+
+
+  Project Overview & Dataset In this project, we performed continuous 1D simulations covering the evolution from the pre-supernova phase to the early post-bounce phase. From these simulations, this dataset exclusively releases the resulting neutrino light curves and spectral data.
+
+
+  We provide the neutrino data for various progenitor models covering Zero-Age Main-Sequence (ZAMS) masses from 10 to 40 $M_\odot$, evaluated using two different stellar evolution codes:
+
+
+  HOSHI models
+
+
+  MESA models
+
+
+  Data Contents The uploaded ZIP file contains the time evolution of:
+
+
+  Neutrino luminosities
+
+
+  Mean energies
+
+
+  Spectra for all neutrino flavors
+
+
+  Usage and Scripts For detailed data formats, variables, and sample Python scripts to read the data, please visit our GitHub repository: https://github.com/Chinami1229/massivestar-neutrino-data.git
+
+
+  Future Updates Please note that this dataset may be updated in the future to reflect improvements in our simulation codes or physical models. We recommend checking for the latest version on Zenodo.
+
+
+  Citation If you use this dataset in your research, please cite the following paper: "Comprehensive Neutrino Light Curves and Spectra: From Pre-supernova Evolution to Early Supernova Phase" (Link/DOI to the paper will be added here upon publication)'
+doi: 10.5281/zenodo.18886215
+url_landing: https://zenodo.org/doi/10.5281/zenodo.18886215
+creators:
+- name: Kato, Chinami
+  orcid: 0000-0003-4213-0076
+  affiliation: The University of Tokyo
+- name: Nagakura, Hiroki
+  orcid: 0000-0002-7205-6367
+  affiliation: National Astronomical Observatory of Japan
+- name: Ito, Akira
+  orcid: 0009-0009-8598-7361
+  affiliation: Waseda University
+- name: Hirai, Ryosuke
+  orcid: 0000-0002-8032-8174
+  affiliation: Monash University
+- name: Furusawa, Shun
+  orcid: 0000-0001-9210-9393
+  affiliation: Kanto Gakuin University
+- name: Yoshida, Takashi
+  orcid: 0000-0002-8967-7063
+  affiliation: Kyoto University
+- name: Akaho, Ryuichiro
+  orcid: 0000-0002-9234-813X
+  affiliation: Waseda University
+publisher:
+  name: Zenodo
+date_published: '2026-03-06'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.18886215
+  host: zenodo
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

@@ -1,0 +1,46 @@
+id: hepdata-nomad-antilambda-polarization
+type: dataset
+title: Measurement of the Antilambda polarization in nu/mu charged current interactions in the NOMAD experiment.
+short: 'HEPData: NOMAD Λ̄ polarisation in νμ CC interactions'
+description: CERN-SPS. Measurement of LAMBDABAR polarization in NUMU charged current interactions by the NOMAD collaboration using a wide band neutrino beam with mean energy 43.8 GeV. The data sample consists of 649 reconstructed LAMBDABARs. The longitudinal axis is chosen along the reconstructed W-boson direction. The transverse axis is orthogonal to the LAMBDABAR production plane and the z axis forms a right handed co-ordinate system with the other two. Note that the Feynman X variable, xF,is coded here as XL.
+doi: 10.17182/hepdata.48928
+url_landing: https://www.hepdata.net/record/ins554759
+creators:
+- name: NOMAD Collaboration
+  kind: collaboration
+publisher:
+  name: HEPData
+version: '1'
+date_published: '1993'
+license: CC0-1.0
+access: open
+distributions:
+- url: https://doi.org/10.17182/hepdata.48928
+  host: hepdata
+  role: primary
+references:
+- doi: 10.1016/s0550-3213(01)00181-x
+  relation: describes
+experiments:
+- nomad
+sources:
+- accelerator
+topics:
+- cross-section
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"NOMAD Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

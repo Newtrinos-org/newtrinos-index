@@ -1,0 +1,1025 @@
+id: icecube-events-toward-icecat-1-alerts
+type: dataset
+title: Neutrino events in the direction of ICECAT-1 alerts
+short: IceCube neutrino events in the direction of IceCat-1 alerts (VizieR)
+description: IceCube neutrino events in the direction of IceCat-1 alerts (VizieR)
+doi: 10.26093/cds/vizier/ba-xq-1d
+url_landing: https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/951/45
+creators:
+- name: Abbasi R
+  orcid: 0000-0001-6141-4205
+  affiliation: Department of Physics, Loyola University Chicago, Chicago, IL 60660, USA;
+- name: Ackermann M
+  orcid: 0000-0001-8952-588X
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Adams J
+  affiliation: Dept. of Physics and Astronomy, University of Canterbury, Private Bag 4800, Christchurch, New Zealand
+- name: Aggarwal N
+  affiliation: Dept. of Physics, University of Alberta, Edmonton, AB, T6G 2E1, Canada
+- name: Aguilar J.A
+  orcid: 0000-0003-2252-9514
+  affiliation: Université Libre de Bruxelles, Science Faculty CP230, B-1050 Brussels, Belgium
+- name: Ahlers M
+  orcid: 0000-0003-0709-5631
+  affiliation: Niels Bohr Institute, University of Copenhagen, DK-2100 Copenhagen, Denmark
+- name: Alameddine J.M
+  orcid: 0000-0002-9534-9189
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: Alves A.A.J
+  orcid: 0000-0003-0073-3231
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Amin N.M
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Andeen K
+  affiliation: Department of Physics, Marquette University, Milwaukee, WI 53201, USA
+- name: Anderson T
+  affiliation: Dept. of Astronomy and Astrophysics, Pennsylvania State University, University Park, PA 16802, USA
+- name: Anton G
+  orcid: 0000-0003-2039-4724
+  affiliation: Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universität Erlangen-Nürnberg, D-91058 Erlangen, Germany
+- name: Argüelles C
+  orcid: 0000-0003-4186-4182
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Ashida Y
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Athanasiadou S
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Axani S.N
+  orcid: 0000-0001-8866-3826
+  affiliation: Dept. of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+- name: Bai X
+  orcid: 0000-0002-1827-9121
+  affiliation: Physics Department, South Dakota School of Mines and Technology, Rapid City, SD 57701, USA
+- name: V. A.B
+  orcid: 0000-0001-5367-8876
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Baricevic M
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Barwick S.W
+  orcid: 0000-0003-2050-6714
+  affiliation: Dept. of Physics and Astronomy, University of California, Irvine, CA 92697, USA
+- name: Basu V
+  orcid: 0000-0002-9528-2009
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Bay R
+  affiliation: Dept. of Physics, University of California, Berkeley, CA 94720, USA
+- name: Beatty J.J
+  orcid: 0000-0003-0481-4952
+  affiliation: Dept. of Astronomy, Ohio State University, Columbus, OH 43210, USA
+- name: Becker K.-
+  affiliation: Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany
+- name: Tjus J.B
+  orcid: 0000-0002-1748-7367
+  affiliation: Fakultät für Physik & Astronomie, Ruhr-Universität Bochum, D-44780 Bochum, Germany
+- name: Beise J
+  orcid: 0000-0002-7448-4189
+  affiliation: Dept. of Physics and Astronomy, Uppsala University, Box 516, SE-75120 Uppsala, Sweden
+- name: Bellenghi C
+  orcid: 0000-0001-8525-7515
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Benda S
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: BenZvi S
+  orcid: 0000-0001-5537-4710
+  affiliation: Dept. of Physics and Astronomy, University of Rochester, Rochester, NY 14627, USA
+- name: Berley D
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Bernardini E
+  orcid: 0000-0003-3108-1141
+  affiliation: Dipartimento di Fisica e Astronomia Galileo Galilei, Università Degli Studi di Padova, I-35122 Padova PD, Italy
+- name: Besson D.Z
+  orcid: 0000-0001-6733-963X
+  affiliation: Dept. of Physics and Astronomy, University of Kansas, Lawrence, KS 66045, USA
+- name: Binder G
+  affiliation: Dept. of Physics, University of California, Berkeley, CA 94720, USA
+- name: Bindig D
+  affiliation: Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany
+- name: Blaufuss E
+  orcid: 0000-0001-5450-1757
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Blot S
+  orcid: 0000-0003-1089-3001
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Bontempo F
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Book J.Y
+  orcid: 0000-0001-6687-5959
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Borowka J
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Meneguolo C.B
+  orcid: 0000-0001-8325-4329
+  affiliation: Dipartimento di Fisica e Astronomia Galileo Galilei, Università Degli Studi di Padova, I-35122 Padova PD, Italy
+- name: Böser S
+  orcid: 0000-0002-5918-4890
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Botner O
+  orcid: 0000-0001-8588-7306
+  affiliation: Dept. of Physics and Astronomy, Uppsala University, Box 516, SE-75120 Uppsala, Sweden
+- name: Böttcher J
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Bourbeau E
+  affiliation: Niels Bohr Institute, University of Copenhagen, DK-2100 Copenhagen, Denmark
+- name: Braun J
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Brinson B
+  affiliation: School of Physics and Center for Relativistic Astrophysics, Georgia Institute of Technology, Atlanta, GA 30332, USA
+- name: Brostean-Kaiser J
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Burley R.T
+  affiliation: Department of Physics, University of Adelaide, Adelaide, 5005, Australia
+- name: Busse R.S
+  affiliation: Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, D-48149 Münster, Germany
+- name: Campana M.A
+  orcid: 0000-0003-4162-5739
+  affiliation: Dept. of Physics, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA
+- name: Carnie-Bronca E.G
+  affiliation: Department of Physics, University of Adelaide, Adelaide, 5005, Australia
+- name: Chen C
+  orcid: 0000-0002-8139-4106
+  affiliation: School of Physics and Center for Relativistic Astrophysics, Georgia Institute of Technology, Atlanta, GA 30332, USA
+- name: Chen Z
+  orcid: 0000-0002-2813-7688
+  affiliation: Dept. of Physics and Astronomy, Stony Brook University, Stony Brook, NY 11794-3800, USA
+- name: Chirkin D
+  orcid: 0000-0003-4911-1345
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Choi K
+  affiliation: Dept. of Physics, Sungkyunkwan University, Suwon 16419, Republic of Korea
+- name: Clark B.A
+  orcid: 0000-0003-4089-2245
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Classen L
+  affiliation: Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, D-48149 Münster, Germany
+- name: Coleman A
+  orcid: 0000-0003-1510-1712
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Collin G.H
+  orcid: 0000-0003-1032-6496
+  affiliation: Dept. of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+- name: Connolly A
+  affiliation: Dept. of Astronomy, Ohio State University, Columbus, OH 43210, USA
+- name: Conrad J.M
+  orcid: 0000-0002-6393-0438
+  affiliation: Dept. of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+- name: Coppin P
+  orcid: 0000-0001-6869-1280
+  affiliation: Vrije Universiteit Brussel (VUB), Dienst ELEM, B-1050 Brussels, Belgium
+- name: Correa P
+  orcid: 0000-0002-1158-6735
+  affiliation: Vrije Universiteit Brussel (VUB), Dienst ELEM, B-1050 Brussels, Belgium
+- name: Countryman S
+  affiliation: Columbia Astrophysics and Nevis Laboratories, Columbia University, New York, NY 10027, USA
+- name: Cowen D.F
+  orcid: 0000-0003-4738-0787
+  affiliation: Dept. of Astronomy and Astrophysics, Pennsylvania State University, University Park, PA 16802, USA
+- name: Cross R
+  orcid: 0000-0003-0081-8024
+  affiliation: Dept. of Physics and Astronomy, University of Rochester, Rochester, NY 14627, USA
+- name: Dappen C
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Dave P
+  orcid: 0000-0002-3879-5115
+  affiliation: School of Physics and Center for Relativistic Astrophysics, Georgia Institute of Technology, Atlanta, GA 30332, USA
+- name: De Clercq C
+  orcid: 0000-0001-5266-7059
+  affiliation: Vrije Universiteit Brussel (VUB), Dienst ELEM, B-1050 Brussels, Belgium
+- name: DeLaunay J.J
+  orcid: 0000-0001-5229-1995
+  affiliation: Dept. of Physics and Astronomy, University of Alabama, Tuscaloosa, AL 35487, USA
+- name: Delgado López D
+  orcid: 0000-0002-4306-8828
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Dembinski H
+  orcid: 0000-0003-3337-3850
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Deoskar K
+  affiliation: Oskar Klein Centre and Dept. of Physics, Stockholm University, SE-10691 Stockholm, Sweden
+- name: Desai A
+  orcid: 0000-0001-7405-9994
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Desiati P
+  orcid: 0000-0001-9768-1858
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: de Vries K.D
+  orcid: 0000-0002-9842-4068
+  affiliation: Vrije Universiteit Brussel (VUB), Dienst ELEM, B-1050 Brussels, Belgium
+- name: de Wasseige G
+  orcid: 0000-0002-1010-5100
+  affiliation: Centre for Cosmology, Particle Physics and Phenomenology-CP3, Université catholique de Louvain, Louvain-la-Neuve, Belgium
+- name: DeYoung T
+  orcid: 0000-0003-4873-3783
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Diaz A
+  orcid: 0000-0001-7206-8336
+  affiliation: Dept. of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+- name: Díaz-Vélez J.C
+  orcid: 0000-0002-0087-0693
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Dittmer M
+  affiliation: Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, D-48149 Münster, Germany
+- name: Dujmovic H
+  orcid: 0000-0003-1891-0718
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: DuVernois M.A
+  orcid: 0000-0002-2987-9691
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Ehrhardt T
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Eller P
+  orcid: 0000-0001-6354-5209
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Engel R
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Erpenbeck H
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Evans J
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Evenson P.A
+  orcid: 0000-0001-7929-810X
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Fan K.L
+  orcid: 0000-0002-8246-4751
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Fazely A.R
+  orcid: 0000-0002-6907-8020
+  affiliation: Dept. of Physics, Southern University, Baton Rouge, LA 70813, USA
+- name: Fedynitch A
+  orcid: 0000-0003-2837-3477
+  affiliation: Institute of Physics, Academia Sinica, Taipei, 11529, Taiwan
+- name: Feigl N
+  affiliation: Institut für Physik, Humboldt-Universität zu Berlin, D-12489 Berlin, Germany
+- name: Fiedlschuster S
+  affiliation: Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universität Erlangen-Nürnberg, D-91058 Erlangen, Germany
+- name: Fienberg A.T
+  orcid: 0000-0002-9472-3597
+  affiliation: Dept. of Physics, Pennsylvania State University, University Park, PA 16802, USA
+- name: Finley C
+  orcid: 0000-0003-3350-390X
+  affiliation: Oskar Klein Centre and Dept. of Physics, Stockholm University, SE-10691 Stockholm, Sweden
+- name: Fischer L
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Fox D
+  orcid: 0000-0002-3714-672X
+  affiliation: Dept. of Astronomy and Astrophysics, Pennsylvania State University, University Park, PA 16802, USA
+- name: Franckowiak A
+  orcid: 0000-0002-5605-2219
+  affiliation: Fakultät für Physik & Astronomie, Ruhr-Universität Bochum, D-44780 Bochum, Germany
+- name: Friedman E
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Fritz A
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Fürst P
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Gaisser T.K
+  orcid: 0000-0003-4717-6620
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Gallagher J
+  affiliation: Dept. of Astronomy, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Ganster E
+  orcid: 0000-0003-4393-6944
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Garcia A
+  orcid: 0000-0002-8186-2459
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Garrappa S
+  orcid: 0000-0003-2403-4582
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Gerhardt L
+  affiliation: Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA
+- name: Ghadimi A
+  orcid: 0000-0002-6350-6485
+  affiliation: Dept. of Physics and Astronomy, University of Alabama, Tuscaloosa, AL 35487, USA
+- name: Glaser C
+  orcid: 0000-0001-5998-2553
+  affiliation: Dept. of Physics and Astronomy, Uppsala University, Box 516, SE-75120 Uppsala, Sweden
+- name: Glauch T
+  orcid: 0000-0003-1804-4055
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Glüsenkamp T
+  orcid: 0000-0002-2268-9297
+  affiliation: Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universität Erlangen-Nürnberg, D-91058 Erlangen, Germany
+- name: Goehlke N
+  affiliation: Karlsruhe Institute of Technology, Institute of Experimental Particle Physics, D-76021 Karlsruhe, Germany
+- name: Gonzalez J.G
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Goswami S
+  orcid: 0000-0002-0373-9770
+  affiliation: Dept. of Physics and Astronomy, University of Alabama, Tuscaloosa, AL 35487, USA
+- name: Grant D
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Gray S.J
+  orcid: 0000-0003-2907-8306
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Grégoire T
+  orcid: 0000-0001-8711-1456
+  affiliation: Dept. of Physics, Pennsylvania State University, University Park, PA 16802, USA
+- name: Griswold S
+  orcid: 0000-0002-7321-7513
+  affiliation: Dept. of Physics and Astronomy, University of Rochester, Rochester, NY 14627, USA
+- name: Günther C
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Gutjahr P
+  orcid: 0000-0001-7980-7285
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: Haack C
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Hallgren A
+  orcid: 0000-0001-7751-4489
+  affiliation: Dept. of Physics and Astronomy, Uppsala University, Box 516, SE-75120 Uppsala, Sweden
+- name: Halliday R
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Halve L
+  orcid: 0000-0003-2237-6714
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Halzen F
+  orcid: 0000-0001-6224-2417
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Hamdaoui H
+  affiliation: Dept. of Physics and Astronomy, Stony Brook University, Stony Brook, NY 11794-3800, USA
+- name: Minh M.H
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Hanson K
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Hardin J
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Harnisch A.A
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Hatch P
+  affiliation: Dept. of Physics, Engineering Physics, and Astronomy, Queen's University, Kingston, ON, K7L 3N6, Canada
+- name: Haungs A
+  orcid: 0000-0002-9638-7574
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Helbing K
+  orcid: 0000-0003-2072-4172
+  affiliation: Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany
+- name: Hellrung J
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Henningsen F
+  orcid: 0000-0002-0680-6588
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Heuermann L
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Hickford S
+  affiliation: Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany
+- name: Hidvegi A
+  affiliation: Oskar Klein Centre and Dept. of Physics, Stockholm University, SE-10691 Stockholm, Sweden
+- name: Hill C
+  orcid: 0000-0003-0647-9174
+  affiliation: Dept. of Physics and The International Center for Hadron Astrophysics, Chiba University, Chiba 263-8522, Japan
+- name: Hill G.C
+  affiliation: Department of Physics, University of Adelaide, Adelaide, 5005, Australia
+- name: Hoffman K.D
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Hoshina K
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Hou W
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Huber T
+  orcid: 0000-0002-6515-1673
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Hultqvist K
+  orcid: 0000-0003-0602-9472
+  affiliation: Oskar Klein Centre and Dept. of Physics, Stockholm University, SE-10691 Stockholm, Sweden
+- name: Hünnefeld M
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: Hussain R
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Hymon K
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: In S
+  affiliation: Dept. of Physics, Sungkyunkwan University, Suwon 16419, Republic of Korea
+- name: Iovine N
+  orcid: 0000-0001-7965-2252
+  affiliation: Université Libre de Bruxelles, Science Faculty CP230, B-1050 Brussels, Belgium
+- name: Ishihara A
+  affiliation: Dept. of Physics and The International Center for Hadron Astrophysics, Chiba University, Chiba 263-8522, Japan
+- name: Jansson M
+  affiliation: Oskar Klein Centre and Dept. of Physics, Stockholm University, SE-10691 Stockholm, Sweden
+- name: Japaridze G.S
+  orcid: 0000-0002-7000-5291
+  affiliation: CTSPS, Clark-Atlanta University, Atlanta, GA 30314, USA
+- name: Jeong M
+  affiliation: Dept. of Physics, Sungkyunkwan University, Suwon 16419, Republic of Korea
+- name: Jin M
+  orcid: 0000-0003-0487-5595
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Jones B.J.P
+  orcid: 0000-0003-3400-8986
+  affiliation: Dept. of Physics, University of Texas at Arlington, 502 Yates St., Science Hall Rm 108, Box 19059, Arlington, TX 76019, USA
+- name: Kang D
+  orcid: 0000-0002-5149-9767
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Kang W
+  orcid: 0000-0003-3980-3778
+  affiliation: Dept. of Physics, Sungkyunkwan University, Suwon 16419, Republic of Korea
+- name: Kang X
+  affiliation: Dept. of Physics, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA
+- name: Kappes A
+  orcid: 0000-0003-1315-3711
+  affiliation: Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, D-48149 Münster, Germany
+- name: Kappesser D
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Kardum L
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: Karg T
+  orcid: 0000-0003-3251-2126
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Karl M
+  orcid: 0000-0003-2475-8951
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Karle A
+  orcid: 0000-0001-9889-5161
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Katz U
+  orcid: 0000-0002-7063-4418
+  affiliation: Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universität Erlangen-Nürnberg, D-91058 Erlangen, Germany
+- name: Kauer M
+  orcid: 0000-0003-1830-9076
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Kelley J.L
+  orcid: 0000-0002-0846-4542
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Kheirandish A
+  orcid: 0000-0001-7074-0539
+  affiliation: Department of Physics & Astronomy, University of Nevada, Las Vegas, NV 89154, USA
+- name: Kin K
+  affiliation: Dept. of Physics and The International Center for Hadron Astrophysics, Chiba University, Chiba 263-8522, Japan
+- name: Kiryluk J
+  orcid: 0000-0003-0264-3133
+  affiliation: Dept. of Physics and Astronomy, Stony Brook University, Stony Brook, NY 11794-3800, USA
+- name: Klein S.R
+  orcid: 0000-0003-2841-6553
+  affiliation: Dept. of Physics, University of California, Berkeley, CA 94720, USA
+- name: Kochocki A
+  orcid: 0000-0003-3782-0128
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Koirala R
+  orcid: 0000-0002-7735-7169
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Kolanoski H
+  orcid: 0000-0003-0435-2524
+  affiliation: Institut für Physik, Humboldt-Universität zu Berlin, D-12489 Berlin, Germany
+- name: Kontrimas T
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Köpke L
+  orcid: 0000-0001-8530-6348
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Kopper C
+  orcid: 0000-0001-6288-7637
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Koskinen D.J
+  orcid: 0000-0002-0514-5917
+  affiliation: Niels Bohr Institute, University of Copenhagen, DK-2100 Copenhagen, Denmark
+- name: Koundal P
+  orcid: 0000-0002-5917-5230
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Kovacevich M
+  orcid: 0000-0002-5019-5745
+  affiliation: Dept. of Physics, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA
+- name: Kowalski M
+  orcid: 0000-0001-8594-8666
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Kozynets T
+  affiliation: Niels Bohr Institute, University of Copenhagen, DK-2100 Copenhagen, Denmark
+- name: Krupczak E
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Kun E
+  orcid: 0000-0003-2769-3591
+  affiliation: Fakultät für Physik & Astronomie, Ruhr-Universität Bochum, D-44780 Bochum, Germany
+- name: Kurahashi N
+  orcid: 0000-0003-1047-8094
+  affiliation: Dept. of Physics, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA
+- name: Lad N
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Lagunas Gualda C
+  orcid: 0000-0002-9040-7191
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Larson M.J
+  orcid: 0000-0002-6996-1155
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Lauber F
+  orcid: 0000-0001-5648-5930
+  affiliation: Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany
+- name: Lazar J.P
+  orcid: 0000-0003-0928-5025
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Lee J.W
+  orcid: 0000-0001-5681-4941
+  affiliation: Dept. of Physics, Sungkyunkwan University, Suwon 16419, Republic of Korea
+- name: Leonard K
+  orcid: 0000-0002-8795-0601
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Leszczyńska A
+  orcid: 0000-0003-0935-6313
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Lincetto M
+  affiliation: Fakultät für Physik & Astronomie, Ruhr-Universität Bochum, D-44780 Bochum, Germany
+- name: Liu Q.R
+  orcid: 0000-0003-3379-6423
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Liubarska M
+  affiliation: Dept. of Physics, University of Alberta, Edmonton, AB, T6G 2E1, Canada
+- name: Lohfink E
+  orcid: 0000-0003-3248-5682
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Love C
+  affiliation: Dept. of Physics, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA
+- name: Mariscal C.J.L
+  affiliation: Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, D-48149 Münster, Germany
+- name: Lu L
+  orcid: 0000-0003-3175-7770
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Lucarelli F
+  orcid: 0000-0002-9558-8788
+  affiliation: Département de physique nucléaire et corpusculaire, Université de Genève, CH-1211 Genève, Switzerland
+- name: Ludwig A
+  orcid: 0000-0001-9038-4375
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Luszczak W
+  orcid: 0000-0003-3085-0674
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Lyu Y
+  orcid: 0000-0002-2333-4383
+  affiliation: Dept. of Physics, University of California, Berkeley, CA 94720, USA
+- name: Ma W.Y
+  orcid: 0000-0003-1251-5493
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Madsen J
+  orcid: 0000-0003-2415-9959
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Mahn K.B.M
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Makino Y
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Mancina S
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Sainte W.M
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Mariş I.C
+  orcid: 0000-0002-5771-1124
+  affiliation: Université Libre de Bruxelles, Science Faculty CP230, B-1050 Brussels, Belgium
+- name: Marka S
+  affiliation: Columbia Astrophysics and Nevis Laboratories, Columbia University, New York, NY 10027, USA
+- name: Marka Z
+  affiliation: Columbia Astrophysics and Nevis Laboratories, Columbia University, New York, NY 10027, USA
+- name: Marsee M
+  affiliation: Dept. of Physics and Astronomy, University of Alabama, Tuscaloosa, AL 35487, USA
+- name: Martinez-Soler I
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Maruyama R
+  orcid: 0000-0003-2794-512X
+  affiliation: Dept. of Physics, Yale University, New Haven, CT 06520, USA
+- name: McElroy T
+  affiliation: Dept. of Physics, University of Alberta, Edmonton, AB, T6G 2E1, Canada
+- name: McNally F
+  orcid: 0000-0002-0785-2244
+  affiliation: Department of Physics, Mercer University, Macon, GA 31207-0001, USA
+- name: Mead J.V
+  affiliation: Niels Bohr Institute, University of Copenhagen, DK-2100 Copenhagen, Denmark
+- name: Meagher K
+  orcid: 0000-0003-3967-1533
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Mechbal S
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Medina A
+  affiliation: Dept. of Physics and Center for Cosmology and Astro-Particle Physics, Ohio State University, Columbus, OH 43210, USA
+- name: Meier M
+  orcid: 0000-0002-9483-9450
+  affiliation: Dept. of Physics and The International Center for Hadron Astrophysics, Chiba University, Chiba 263-8522, Japan
+- name: Meighen-Berger S
+  orcid: 0000-0001-6579-2000
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Merckx Y
+  affiliation: Vrije Universiteit Brussel (VUB), Dienst ELEM, B-1050 Brussels, Belgium
+- name: Micallef J
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Mockler D
+  affiliation: Université Libre de Bruxelles, Science Faculty CP230, B-1050 Brussels, Belgium
+- name: Montaruli T
+  orcid: 0000-0001-5014-2152
+  affiliation: Département de physique nucléaire et corpusculaire, Université de Genève, CH-1211 Genève, Switzerland
+- name: Moore R.W
+  orcid: 0000-0003-4160-4700
+  affiliation: Dept. of Physics, University of Alberta, Edmonton, AB, T6G 2E1, Canada
+- name: Morse R
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Moulai M
+  orcid: 0000-0001-7909-5812
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Mukherjee T
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Naab R
+  orcid: 0000-0003-2512-466X
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Nagai R
+  orcid: 0000-0001-7503-2777
+  affiliation: Dept. of Physics and The International Center for Hadron Astrophysics, Chiba University, Chiba 263-8522, Japan
+- name: Naumann U
+  affiliation: Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany
+- name: Nayerhoda A
+  orcid: 0000-0003-0587-4324
+  affiliation: Dipartimento di Fisica e Astronomia Galileo Galilei, Università Degli Studi di Padova, I-35122 Padova PD, Italy
+- name: Necker J
+  orcid: 0000-0003-0280-7484
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Neumann M
+  affiliation: Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, D-48149 Münster, Germany
+- name: Niederhausen H
+  orcid: 0000-0002-9566-4904
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Nisa M.U
+  orcid: 0000-0002-6859-3944
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Noell A
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Nowicki S.C
+  orcid: 0000-0003-2497-8057
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Pollmann A.O
+  orcid: 0000-0002-2492-043X
+  affiliation: Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany
+- name: Oehler M
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Oeyen B
+  orcid: 0000-0003-2940-3164
+  affiliation: Dept. of Physics and Astronomy, University of Gent, B-9000 Gent, Belgium
+- name: Olivas A
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Orsoe R
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Osborn J
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: O'Sullivan E
+  orcid: 0000-0003-1882-8802
+  affiliation: Dept. of Physics and Astronomy, Uppsala University, Box 516, SE-75120 Uppsala, Sweden
+- name: Pandya H
+  orcid: 0000-0002-6138-4808
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Pankova D.V
+  affiliation: Dept. of Physics, Pennsylvania State University, University Park, PA 16802, USA
+- name: Park N
+  orcid: 0000-0002-4282-736X
+  affiliation: Dept. of Physics, Engineering Physics, and Astronomy, Queen's University, Kingston, ON, K7L 3N6, Canada
+- name: Parker G.K
+  affiliation: Dept. of Physics, University of Texas at Arlington, 502 Yates St., Science Hall Rm 108, Box 19059, Arlington, TX 76019, USA
+- name: Paudel E.N
+  orcid: 0000-0001-9276-7994
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Paul L
+  affiliation: Department of Physics, Marquette University, Milwaukee, WI 53201, USA
+- name: de los Heros C.P
+  orcid: 0000-0002-2084-5866
+  affiliation: Dept. of Physics and Astronomy, Uppsala University, Box 516, SE-75120 Uppsala, Sweden
+- name: Peters L
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Peterson J
+  orcid: 0000-0002-7985-1443
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Philippen S
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Pieper S
+  affiliation: Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany
+- name: Pizzuto A
+  orcid: 0000-0002-8466-8168
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Plum M
+  orcid: 0000-0001-8691-242X
+  affiliation: Physics Department, South Dakota School of Mines and Technology, Rapid City, SD 57701, USA
+- name: Popovych Y
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Porcelli A
+  orcid: 0000-0002-3220-6295
+  affiliation: Dept. of Physics and Astronomy, University of Gent, B-9000 Gent, Belgium
+- name: Prado Rodriguez M
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Pries B
+  orcid: 0000-0003-4811-9863
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Procter-Murphy R
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Przybylski G.T
+  affiliation: Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA
+- name: Raab C
+  orcid: 0000-0001-9921-2668
+  affiliation: Université Libre de Bruxelles, Science Faculty CP230, B-1050 Brussels, Belgium
+- name: Rack-Helleis J
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Rameez M
+  orcid: 0000-0001-5023-5631
+  affiliation: Niels Bohr Institute, University of Copenhagen, DK-2100 Copenhagen, Denmark
+- name: Rawlins K
+  affiliation: Dept. of Physics and Astronomy, University of Alaska Anchorage, 3211 Providence Dr., Anchorage, AK 99508, USA
+- name: Rechav Z
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Rehman A
+  orcid: 0000-0001-7616-5790
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Reichherzer P
+  affiliation: Fakultät für Physik & Astronomie, Ruhr-Universität Bochum, D-44780 Bochum, Germany
+- name: Renzi G
+  affiliation: Université Libre de Bruxelles, Science Faculty CP230, B-1050 Brussels, Belgium
+- name: Resconi E
+  orcid: 0000-0003-0705-2770
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Reusch S
+  orcid: 0000-0002-7788-628X
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Rhode W
+  orcid: 0000-0003-2636-5000
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: Richman M
+  affiliation: Dept. of Physics, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA
+- name: Riedel B
+  orcid: 0000-0002-9524-8943
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Roberts E.J
+  affiliation: Department of Physics, University of Adelaide, Adelaide, 5005, Australia
+- name: Robertson S
+  affiliation: Dept. of Physics, University of California, Berkeley, CA 94720, USA
+- name: Rodan S
+  affiliation: Dept. of Physics, Sungkyunkwan University, Suwon 16419, Republic of Korea
+- name: Roellinghoff G
+  affiliation: Dept. of Physics, Sungkyunkwan University, Suwon 16419, Republic of Korea
+- name: Rongen M
+  orcid: 0000-0002-7057-1007
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Rott C
+  orcid: 0000-0002-6958-6033
+  affiliation: Dept. of Physics, Sungkyunkwan University, Suwon 16419, Republic of Korea
+- name: Ruhe T
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: Ruohan L
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Ryckbosch D
+  orcid: 0000-0002-8759-7553
+  affiliation: Dept. of Physics and Astronomy, University of Gent, B-9000 Gent, Belgium
+- name: Rysewyk Cantu D
+  orcid: 0000-0002-3612-6129
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Safa I
+  orcid: 0000-0001-8737-6825
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Saffer J
+  affiliation: Karlsruhe Institute of Technology, Institute of Experimental Particle Physics, D-76021 Karlsruhe, Germany
+- name: Salazar-Gallegos D
+  orcid: 0000-0002-9312-9684
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Sampathkumar P
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Sanchez Herrera S.E
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Sandrock A
+  orcid: 0000-0002-6779-1172
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: Santander M
+  orcid: 0000-0001-7297-8217
+  affiliation: Dept. of Physics and Astronomy, University of Alabama, Tuscaloosa, AL 35487, USA
+- name: Sarkar S
+  orcid: 0000-0002-1206-4330
+  affiliation: Dept. of Physics, University of Alberta, Edmonton, AB, T6G 2E1, Canada
+- name: Sarkar S
+  orcid: 0000-0002-3542-858X
+  affiliation: Dept. of Physics, University of Oxford, Parks Road, Oxford OX1 3PU, UK
+- name: Savelberg J
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Schaufel M
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Schieler H
+  orcid: 0000-0002-2637-4778
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Schindler S
+  orcid: 0000-0001-5507-8890
+  affiliation: Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universität Erlangen-Nürnberg, D-91058 Erlangen, Germany
+- name: Schlueter B
+  affiliation: Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, D-48149 Münster, Germany
+- name: Schmidt T
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Schneider J
+  orcid: 0000-0001-7752-5700
+  affiliation: Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universität Erlangen-Nürnberg, D-91058 Erlangen, Germany
+- name: Schröder F.G
+  orcid: 0000-0001-8495-7210
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Schumacher L
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Schwefer G
+  orcid: 0000-0002-2050-8413
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Sclafani S
+  orcid: 0000-0001-9446-1219
+  affiliation: Dept. of Physics, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA
+- name: Seunarine S
+  affiliation: Dept. of Physics, University of Wisconsin, River Falls, WI 54022, USA
+- name: Sharma A
+  orcid: 0000-0001-5397-6777
+  affiliation: Dept. of Physics and Astronomy, Uppsala University, Box 516, SE-75120 Uppsala, Sweden
+- name: Shefali S
+  affiliation: Karlsruhe Institute of Technology, Institute of Experimental Particle Physics, D-76021 Karlsruhe, Germany
+- name: Shimizu N
+  affiliation: Dept. of Physics and The International Center for Hadron Astrophysics, Chiba University, Chiba 263-8522, Japan
+- name: Silva M
+  orcid: 0000-0001-6940-8184
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Skrzypek B
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Smithers B
+  orcid: 0000-0003-1273-985X
+  affiliation: Dept. of Physics, University of Texas at Arlington, 502 Yates St., Science Hall Rm 108, Box 19059, Arlington, TX 76019, USA
+- name: Snihur R
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Soedingrekso J
+  orcid: 0000-0003-1011-2797
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: Søgaard A
+  affiliation: Niels Bohr Institute, University of Copenhagen, DK-2100 Copenhagen, Denmark
+- name: Soldin D
+  orcid: 0000-0003-3005-7879
+  affiliation: Karlsruhe Institute of Technology, Institute of Experimental Particle Physics, D-76021 Karlsruhe, Germany
+- name: Spannfellner C
+  affiliation: Physik-department, Technische Universität München, D-85748 Garching, Germany
+- name: Spiczak G.M
+  orcid: 0000-0002-0030-0519
+  affiliation: Dept. of Physics, University of Wisconsin, River Falls, WI 54022, USA
+- name: Spiering C
+  orcid: 0000-0001-7372-0074
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Stamatikos M
+  affiliation: Dept. of Physics and Center for Cosmology and Astro-Particle Physics, Ohio State University, Columbus, OH 43210, USA
+- name: Stanev T
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Stein R
+  orcid: 0000-0003-2434-0387
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Stezelberger T
+  orcid: 0000-0003-2676-9574
+  affiliation: Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA
+- name: Stürwald T
+  affiliation: Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany
+- name: Stuttard T
+  orcid: 0000-0001-7944-279X
+  affiliation: Niels Bohr Institute, University of Copenhagen, DK-2100 Copenhagen, Denmark
+- name: Sullivan G.W
+  orcid: 0000-0002-2585-2352
+  affiliation: Dept. of Physics, University of Maryland, College Park, MD 20742, USA
+- name: Taboada I
+  orcid: 0000-0003-3509-3457
+  affiliation: School of Physics and Center for Relativistic Astrophysics, Georgia Institute of Technology, Atlanta, GA 30332, USA
+- name: Ter-Antonyan S
+  orcid: 0000-0002-5788-1369
+  affiliation: Dept. of Physics, Southern University, Baton Rouge, LA 70813, USA
+- name: Thompson W.G
+  orcid: 0000-0003-2988-7998
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+- name: Thwaites J
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Tilav S
+  affiliation: Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA
+- name: Tollefson K
+  orcid: 0000-0001-9725-1479
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Tönnis C
+  affiliation: Institute of Basic Science, Sungkyunkwan University, Suwon 16419, Republic of Korea
+- name: Toscano S
+  orcid: 0000-0002-1860-2240
+  affiliation: Université Libre de Bruxelles, Science Faculty CP230, B-1050 Brussels, Belgium
+- name: Tosi D
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Trettin A
+  orcid: 0000-0003-0350-3597
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Tung C.F
+  orcid: 0000-0001-6920-7841
+  affiliation: School of Physics and Center for Relativistic Astrophysics, Georgia Institute of Technology, Atlanta, GA 30332, USA
+- name: Turcotte R
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Twagirayezu J.P
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Ty B
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Unland Elorrieta M.A
+  orcid: 0000-0002-6124-3255
+  affiliation: Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, D-48149 Münster, Germany
+- name: Upshaw K
+  affiliation: Dept. of Physics, Southern University, Baton Rouge, LA 70813, USA
+- name: Valtonen-Mattila N
+  orcid: 0000-0002-1830-098X
+  affiliation: Dept. of Physics and Astronomy, Uppsala University, Box 516, SE-75120 Uppsala, Sweden
+- name: Vandenbroucke J
+  orcid: 0000-0002-9867-6548
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: van Eijndhoven N
+  orcid: 0000-0001-5558-3328
+  affiliation: Vrije Universiteit Brussel (VUB), Dienst ELEM, B-1050 Brussels, Belgium
+- name: Vannerom D
+  affiliation: Dept. of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+- name: van Santen J
+  orcid: 0000-0002-2412-9728
+  affiliation: DESY, D-15738 Zeuthen, Germany
+- name: Vara J
+  affiliation: Institut für Kernphysik, Westfälische Wilhelms-Universität Münster, D-48149 Münster, Germany
+- name: Veitch-Michaelis J
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Verpoest S
+  orcid: 0000-0002-3031-3206
+  affiliation: Dept. of Physics and Astronomy, University of Gent, B-9000 Gent, Belgium
+- name: Veske D
+  affiliation: Columbia Astrophysics and Nevis Laboratories, Columbia University, New York, NY 10027, USA
+- name: Walck C
+  orcid: 0000-0002-4188-9219
+  affiliation: Oskar Klein Centre and Dept. of Physics, Stockholm University, SE-10691 Stockholm, Sweden
+- name: Wang W
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Watson T.B
+  orcid: 0000-0002-8631-2253
+  affiliation: Dept. of Physics, University of Texas at Arlington, 502 Yates St., Science Hall Rm 108, Box 19059, Arlington, TX 76019, USA
+- name: Weaver C
+  orcid: 0000-0003-2385-2559
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Weigel P
+  affiliation: Dept. of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+- name: Weindl A
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Weldert J
+  orcid: 0000-0002-3709-2354
+  affiliation: Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany
+- name: Wendt C
+  orcid: 0000-0001-8076-8877
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Werthebach J
+  affiliation: Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany
+- name: Weyrauch M
+  affiliation: Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany
+- name: Whitehorn N
+  orcid: 0000-0002-3157-0407
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Wiebusch C.H
+  orcid: 0000-0002-6418-3008
+  affiliation: III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany
+- name: Willey N
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Williams D.R
+  affiliation: Dept. of Physics and Astronomy, University of Alabama, Tuscaloosa, AL 35487, USA
+- name: Wolf M
+  orcid: 0000-0001-9991-3923
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Wrede G
+  affiliation: Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universität Erlangen-Nürnberg, D-91058 Erlangen, Germany
+- name: Wulff J
+  affiliation: Fakultät für Physik & Astronomie, Ruhr-Universität Bochum, D-44780 Bochum, Germany
+- name: Xu X.W
+  affiliation: Dept. of Physics, Southern University, Baton Rouge, LA 70813, USA
+- name: Yanez J.P
+  affiliation: Dept. of Physics, University of Alberta, Edmonton, AB, T6G 2E1, Canada
+- name: Yildizci E
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Yoshida S
+  orcid: 0000-0003-2480-5105
+  affiliation: Dept. of Physics and The International Center for Hadron Astrophysics, Chiba University, Chiba 263-8522, Japan
+- name: Yu S
+  affiliation: Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+- name: Yuan T
+  orcid: 0000-0002-7041-5872
+  affiliation: Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin-Madison, Madison, WI 53706, USA
+- name: Zhang Z
+  orcid: 0000-0002-7347-283X
+  affiliation: Dept. of Physics and Astronomy, Stony Brook University, Stony Brook, NY 11794-3800, USA
+- name: Zhelnin P
+  affiliation: Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA
+publisher:
+  name: Centre de Donnees Strasbourg (CDS)
+date_published: 2025
+license: none-stated
+license_url: https://cds.unistra.fr/vizier-org/licences_vizier.html
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.26093/cds/vizier/ba-xq-1d
+  host: institutional
+  role: primary
+references:
+- doi: 10.3847/1538-4357/acd2ca
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

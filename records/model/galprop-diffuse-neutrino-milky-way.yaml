@@ -1,0 +1,51 @@
+id: galprop-diffuse-neutrino-milky-way
+type: model
+title: Datasets for "Simulating the Diffuse Neutrino Emission from the Milky Way with GALPROP"
+short: GALPROP skymaps of the diffuse Galactic neutrino emission
+description: 'This repository includes six skymaps of the predicted neutrino emission and all configuration files required to reproduce them in GALPROP.
+
+
+  There are six skymaps, with filenames `neutrino_healpix_57_*_SS_R12_PBSS_neutrino.gz`, where the first `*` denotes the source distribution model used and the second denotes any injected CR spectral index changes used (see section 2 of the paper). All six skymaps contain the per-flavour neutrino flux. The energy axis for the flux can be found in the header.
+
+
+  The skymaps can be reproduced by downloading and installing GALPROP version 57 and using the `galdef_57_*_SS_R12_PBSS_neutrino*` and `sourceClass_*_0_AMS_it3*.pars`. All other required files are included in the installation of GALPROP version 57. Detailed instructions on configuring GALPROP can be found in the README file.'
+doi: 10.5281/zenodo.18603272
+url_landing: https://zenodo.org/doi/10.5281/zenodo.18603272
+creators:
+- name: Marinos, Peter
+  orcid: 0000-0003-1734-0215
+  affiliation: Stanford University
+publisher:
+  name: Zenodo
+date_published: '2026-02-11'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.18603272
+  host: zenodo
+  role: primary
+references:
+- arxiv: '2511.09777'
+  relation: describes
+sources:
+- astrophysical
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes / spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

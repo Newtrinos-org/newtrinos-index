@@ -1,0 +1,45 @@
+id: pks0735-jet-dynamics-tables
+type: dataset
+title: The dynamics of the parsec-scale jet in the neutrino blazar PKS 0735+178 - Tables A1 and A2
+short: 'Parsec-scale jet dynamics of the neutrino blazar PKS 0735+178: tables A1–A2'
+description: 'Parsec-scale jet dynamics of the neutrino blazar PKS 0735+178: tables A1–A2'
+doi: 10.5281/zenodo.15598198
+url_landing: https://zenodo.org/doi/10.5281/zenodo.15598198
+creators:
+- name: Kim, Yu-Sik
+  orcid: 0009-0002-2865-6514
+  affiliation: Ulsan National Institute of Science and Technology
+- name: Kim, Jae-Young
+  orcid: 0000-0001-8229-7183
+  affiliation: Ulsan National Institute of Science and Technology
+publisher:
+  name: Zenodo
+date_published: '2025-06-05'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.15598198
+  host: zenodo
+  role: primary
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

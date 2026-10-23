@@ -1,0 +1,44 @@
+id: plasmon-decay-neutrino-emission-ns
+type: model
+title: 'Neutrino emission by plasmon decay in a strong magnetic field: Data material'
+short: 'Neutrino emission by plasmon decay in strong magnetic fields (neutron-star crust): data'
+description: 'This data reference paper summarizes the fundamental calculated results obtained analytically for the case of a neutron star (NS) crust: it’s cooling rate, time-scale evolution and neutrino luminosity, based on two different theories- Photo-Neutrino (PN) interaction and conventional weak interaction. Considering the NS environment as a degenerate plasmon composition the calculation tables are given.'
+doi: 10.5281/zenodo.4393352
+url_landing: https://zenodo.org/record/4393352
+creators:
+- name: Majumder, Brajagopal
+  affiliation: Tripura University (retired)
+- name: Debnath, Shiladittya
+  orcid: 0000-0001-8701-5448
+  affiliation: West Bengal University of Technology
+publisher:
+  name: Zenodo
+date_published: '2020-12-25'
+license: CC-BY-4.0
+license_url: https://creativecommons.org/licenses/by/4.0/legalcode
+access: open
+distributions:
+- url: https://doi.org/10.5281/zenodo.4393352
+  host: zenodo
+  role: primary
+sources:
+- astrophysical
+topics:
+- magnetic-moment
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: titles.title:neutrino AND publisher:Zenodo
+    harvested: '2026-10-23'
+    score: 0.0
+    citations: 0
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

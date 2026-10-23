@@ -1,0 +1,64 @@
+id: conflux
+type: software
+title: 'CONFLUX: A standardized framework to calculate reactor antineutrino flux'
+short: 'CONFLUX: standardized framework to calculate reactor antineutrino fluxes'
+description: Nuclear fission reactors are abundant sources of antineutrinos for neutrino physics experiments. The flux and spectrum of antineutrinos emitted by a reactor can indicate its activity and composition, suggesting potential applications of neutrino measurements beyond fundamental scientific studies that may be valuable to society. The utility of reactor antineutrinos for applications and fundamental science is dependent on the availability of precise predictions of these emissions. For example, in the last decade, disagreements between reactor antineutrino measurements and models have inspired revision of reactor antineutrino calculations and standard nuclear databases as well as searches for new fundamental particles not predicted by the Standard Model of particle physics. Past predictions and descriptions of the methods used to generate them are documented to varying degrees in the literature, with different modeling teams incorporating a range of methods, input data, and assumptions. The resulting difficulty in accessing or reproducing past models and reconciling results from differing approaches complicates the future study and application of reactor antineutrinos. The CONFLUX (Calculation Of Neutrino FLUX) software framework is a neutrino prediction tool built with the goal of simplifying, standardizing, and democratizing the process of reactor antineutrino flux calculations. CONFLUX includes three primary methods for calculating the antineutrino emissions of nuclear reactors or individual beta decays that incorporate common nuclear data and beta decay theory. The software is prepackaged with the current nuclear databases, including ENDF.B/VIII, JEFF-3.3, and ENSDF, and it includes the capability to predict time-dependent reactor emissions, adjust nuclear database or beta decay inputs/assumptions, and propagate related sources of uncertainty. This paper describes the CONFLUX software structure, details the methods used for flux and spectrum calculations, and provides examples of potential use cases.
+doi: 10.17632/hvkr4bff8v
+url_landing: https://data.mendeley.com/datasets/hvkr4bff8v
+creators:
+- name: Zhang, Xianyi
+  affiliation: Lawrence Livermore National Laboratory
+- name: Irani, Anosh
+  affiliation: Illinois Institute of Technology
+- name: Mendenhall, Michael P.
+  affiliation: Lawrence Livermore National Laboratory
+- name: Rybicki, Nathan
+  affiliation: Illinois Institute of Technology
+- name: Hayen, Leendert
+  affiliation: Laboratoire de Physique Corpusculaire de Caen
+- name: Bowden, Nathaniel
+  affiliation: Lawrence Livermore National Laboratory
+- name: Huber, Patrick
+  affiliation: Virginia Polytechnic Institute and State University
+- name: Littlejohn, Bryce
+  affiliation: Illinois Institute of Technology
+- name: Bogetic, Sandra
+  affiliation: University of Tennessee
+publisher:
+  name: Mendeley Data
+date_published: '2025-09-25'
+license: none-stated
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.17632/hvkr4bff8v
+  host: institutional
+  role: primary
+references:
+- doi: 10.1016/j.cpc.2025.109831
+  relation: describes
+sources:
+- reactor
+topics:
+- flux
+software:
+  repository: https://doi.org/10.17632/hvkr4bff8v
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: subjects.subject:neutrino
+    harvested: '2026-10-23'
+    score: 10.1
+    citations: 1
+    views: 17
+    downloads: 1
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

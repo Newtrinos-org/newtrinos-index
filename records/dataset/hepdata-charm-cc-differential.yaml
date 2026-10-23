@@ -1,0 +1,55 @@
+id: hepdata-charm-cc-differential
+type: dataset
+title: 'HEPData: Experimental Study of Differential Cross-sections in Charged Current Neutrino and Anti-neutrinos Interactions'
+short: 'HEPData: CHARM differential CC ν and ν̄ cross sections'
+description: Inclusive neutrino and antineutrino charged-current interactions were studied using the electronic detector of the CHARM Collaboration exposed to the narrow-band beam of the CERN SPS. The relative contributions of quarks and antiquarks to the neutrino cross sections were deduced from the differential cross sectionsdσ/d y . The x and Q 2 dependence of the structure functions F 2 and F 3 were measured. Scaling violations were observed, in qualitative agreement with QCD. A value of the mass scale parameter of QCD,Λ = [0.29 ± 0.12 (stat.) ± 0.10 (syst.)] GeV, was deduced in a leading-order approximation, following the method of Buras and Gaemers.
+doi: 10.17182/hepdata.6668
+identifiers:
+  inspire: 168613
+  hepdata: ins168613
+url_landing: https://www.hepdata.net/record/ins168613
+creators:
+- name: CHARM Collaboration
+  kind: collaboration
+date_published: '1982'
+license: CC0-1.0
+license_notes: HEPData records are CC0
+access: open
+distributions:
+- url: https://www.hepdata.net/record/ins168613
+  host: hepdata
+  role: primary
+  formats:
+  - yaml
+  - csv
+  - json
+  - root
+references:
+- doi: 10.1016/0370-2693(82)90479-8
+  relation: describes
+relations:
+- rel: is_part_of
+  target: hepdata
+experiments:
+- charm
+sources:
+- accelerator
+topics:
+- cross-section
+channels:
+- cc
+- dis
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:hepdata (curated 2026-10-23)
+  harvest:
+    source: hepdata
+    query: CHARM
+    harvested: '2026-10-23'
+    score: 0.0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract

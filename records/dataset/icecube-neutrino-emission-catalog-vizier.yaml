@@ -1,0 +1,429 @@
+id: icecube-neutrino-emission-catalog-vizier
+type: dataset
+title: Catalog of neutrino emissions
+short: Catalogue of neutrino flare emissions from an IceCube search (VizieR table)
+description: Catalogue of neutrino flare emissions from an IceCube search (VizieR table)
+doi: 10.26093/cds/vizier.19209045
+url_landing: https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/920/L45
+creators:
+- name: Abbasi, R.
+  orcid: 0000-0001-6141-4205
+- name: Ackermann, M.
+- name: Adams, J.
+- name: Aguilar, J.A.
+- name: Ahlers, M.
+- name: Ahrens, M.
+- name: Alispach, C.
+- name: Alves, A.A.
+- name: Amin, N.M.
+- name: An, R.
+- name: Andeen, K.
+- name: Anderson, T.
+- name: Anton, G.
+- name: Arguelles, C.
+- name: Ashida, Y.
+- name: Axani, S.
+- name: Bai, X.
+- name: Balagopal, V.A.
+- name: Barbano, A.
+- name: Barwick, S.W.
+- name: Bastian, B.
+- name: Basu, V.
+- name: Baur, S.
+- name: Bay, R.
+- name: Beatty, J.J.
+- name: Becker, K.-H.
+- name: Becker Tjus, J.
+- name: Bellenghi, C.
+- name: Benzvi, S.
+- name: Berley, D.
+- name: Bernardini, E.
+- name: Besson, D.Z.
+- name: Binder, G.
+- name: Bindig, D.
+- name: Blaufuss, E.
+- name: Blot, S.
+- name: Boddenberg, M.
+- name: Bontempo, F.
+- name: Borowka, J.
+- name: Boser, S.
+- name: Botner, O.
+- name: Bottcher, J.
+- name: Bourbeau, E.
+- name: Bradascio, F.
+- name: Braun, J.
+- name: Bron, S.
+- name: Brostean-Kaiser, J.
+- name: Browne, S.
+- name: Burgman, A.
+- name: Burley, R.T.
+- name: Busse, R.S.
+- name: Campana, M.A.
+- name: Carnie-Bronca, E.G.
+- name: Chen, C.
+- name: Chirkin, D.
+- name: Choi, K.
+- name: Clark, B.A.
+- name: Clark, K.
+- name: Classen, L.
+- name: Coleman, A.
+- name: Collin, G.H.
+- name: Conrad, J.M.
+- name: Coppin, P.
+- name: Correa, P.
+- name: Cowen, D.F.
+- name: Cross, R.
+- name: Dappen, C.
+- name: Dave, P.
+- name: De Clercq, C.
+- name: Delaunay, J.J.
+- name: Dembinski, H.
+- name: Deoskar, K.
+- name: De Ridder, S.
+- name: Desai, A.
+- name: Desiati, P.
+- name: De Vries, K.D.
+- name: De Wasseige, G.
+- name: De With, M.
+- name: Deyoung, T.
+- name: Dharani, S.
+- name: Diaz, A.
+- name: Diaz-Velez, J.C.
+- name: Dittmer, M.
+- name: Dujmovic, H.
+- name: Dunkman, M.
+- name: Duvernois, M.A.
+- name: Dvorak, E.
+- name: Ehrhardt, T.
+- name: Eller, P.
+- name: Engel, R.
+- name: Erpenbeck, H.
+- name: Evans, J.
+- name: Evenson, P.A.
+- name: Fan, K.L.
+- name: Fazely, A.R.
+- name: Fiedlschuster, S.
+- name: Fienberg, A.T.
+- name: Filimonov, K.
+- name: Finley, C.
+- name: Fischer, L.
+- name: Fox, D.
+- name: Franckowiak, A.
+- name: Friedman, E.
+- name: Fritz, A.
+- name: Furst, P.
+- name: Gaisser, T.K.
+- name: Gallagher, J.
+- name: Ganster, E.
+- name: Garcia, A.
+- name: Garrappa, S.
+- name: Gerhardt, L.
+- name: Ghadimi, A.
+- name: Glaser, C.
+- name: Glauch, T.
+- name: Glusenkamp, T.
+- name: Goldschmidt, A.
+- name: Gonzalez, J.G.
+- name: Goswami, S.
+- name: Grant, D.
+- name: Gregoire, T.
+- name: Griswold, S.
+- name: Gunduz, M.
+- name: Gunther, C.
+- name: Haack, C.
+- name: Hallgren, A.
+- name: Halliday, R.
+- name: Halve, L.
+- name: Halzen, F.
+- name: Ha Minh, M.
+- name: Hanson, K.
+- name: Hardin, J.
+- name: Harnisch, A.A.
+- name: Haungs, A.
+- name: Hauser, S.
+- name: Hebecker, D.
+- name: Helbing, K.
+- name: Henningsen, F.
+- name: Hettinger, E.C.
+- name: Hickford, S.
+- name: Hignight, J.
+- name: Hill, C.
+- name: Hill, G.C.
+- name: Hoffman, K.D.
+- name: Hoffmann, R.
+- name: Hoinka, T.
+- name: Hokanson-Fasig, B.
+- name: Hoshina, K.
+- name: Huang, F.
+- name: Huber, M.
+- name: Huber, T.
+- name: Hultqvist, K.
+- name: Hunnefeld, M.
+- name: Hussain, R.
+- name: In, S.
+- name: Iovine, N.
+- name: Ishihara, A.
+- name: Jansson, M.
+- name: Japaridze, G.S.
+- name: Jeong, M.
+- name: B.J.P., Jones
+- name: Kang, D.
+- name: Kang, W.
+- name: Kang, X.
+- name: Kappes, A.
+- name: Kappesser, D.
+- name: Karg, T.
+- name: Karl, M.
+- name: Karle, A.
+- name: Katz, U.
+- name: Kauer, M.
+- name: Kellermann, M.
+- name: Kelley, J.L.
+- name: Kheirandish, A.
+- name: Kin, K.
+- name: Kintscher, T.
+- name: Kiryluk, J.
+- name: Klein, S.R.
+- name: Koirala, R.
+- name: Kolanoski, H.
+- name: Kontrimas, T.
+- name: Kopke, L.
+- name: Kopper, C.
+- name: Kopper, S.
+- name: Koskinen, D.J.
+- name: Koundal, P.
+- name: Kovacevich, M.
+- name: Kowalski, M.
+- name: Kozynets, T.
+- name: Kun, E.
+- name: Kurahashi, N.
+- name: Lad, N.
+- name: Lagunas Gualda, C.
+- name: Lanfranchi, J.L.
+- name: Larson, M.J.
+- name: Lauber, F.
+- name: Lazar, J.P.
+- name: Lee, J.W.
+- name: Leonard, K.
+- name: Leszczynska, A.
+- name: Li, Y.
+- name: Lincetto, M.
+- name: Liu, Q.R.
+- name: Liubarska, M.
+- name: Lohfink, E.
+- name: Lozano Mariscal, C.J.
+- name: Lu, L.
+- name: Lucarelli, F.
+- name: Ludwig, A.
+- name: Luszczak, W.
+- name: Lyu, Y.
+- name: Ma, W.Y.
+- name: Madsen, J.
+- name: Mahn K.B.M.
+- name: Makino, Y.
+- name: Mancina, S.
+- name: Maris, I.C.
+- name: Maruyama, R.
+- name: Mase, K.
+- name: Mcelroy, T.
+- name: Mcnally, F.
+- name: Mead, J.V.
+- name: Meagher, K.
+- name: Medina, A.
+- name: Meier, M.
+- name: Meighen-Berger, S.
+- name: Micallef, J.
+- name: Mockler, D.
+- name: Montaruli, T.
+- name: Moore, R.W.
+- name: Morse, R.
+- name: Moulai, M.
+- name: Naab, R.
+- name: Nagai, R.
+- name: Naumann, U.
+- name: Necker, J.
+- name: Nguyen, L.V.
+- name: Niederhausen, H.
+- name: Nisa, M.U.
+- name: Nowicki, S.C.
+- name: Nygren, D.R.
+- name: Obertacke Pollmann, A.
+- name: Oehler, M.
+- name: Oeyen, B.
+- name: Olivas, A.
+- name: O'sullivan, E.
+- name: Pandya, H.
+- name: Pankova, D.V.
+- name: Park, N.
+- name: Parker, G.K.
+- name: Paudel, E.N.
+- name: Paul, L.
+- name: Perez De Los Heros, C.
+- name: Peters, L.
+- name: Peterson, J.
+- name: Philippen, S.
+- name: Pieloth, D.
+- name: Pieper, S.
+- name: Pittermann, M.
+- name: Pizzuto, A.
+- name: Plum, M.
+- name: Popovych, Y.
+- name: Porcelli, A.
+- name: Prado Rodriguez, M.
+- name: Price, P.B.
+- name: Pries, B.
+- name: Przybylski, G.T.
+- name: Raab, C.
+- name: Raissi, A.
+- name: Rameez, M.
+- name: Rawlins, K.
+- name: Rea, I.C.
+- name: Rehman, A.
+- name: Reichherzer, P.
+- name: Reimann, R.
+- name: Renzi, G.
+- name: Resconi, E.
+- name: Reusch, S.
+- name: Rhode, W.
+- name: Richman, M.
+- name: Riedel, B.
+- name: Roberts, E.J.
+- name: Robertson, S.
+- name: Roellinghoff, G.
+- name: Rongen, M.
+- name: Rott, C.
+- name: Ruhe, T.
+- name: Ryckbosch, D.
+- name: Rysewyk Cantu, D.
+- name: Safa, I.
+- name: Saffer, J.
+- name: Sanchez Herrera, S.E.
+- name: Sandrock, A.
+- name: Sandroos, J.
+- name: Santander, M.
+- name: Sarkar, S.
+- name: Sarkar, S.
+- name: Satalecka, K.
+- name: Scharf, M.
+- name: Schaufel, M.
+- name: Schieler, H.
+- name: Schindler, S.
+- name: Schlunder, P.
+- name: Schmidt, T.
+- name: Schneider, A.
+- name: Schneider, J.
+- name: Schroder, F.G.
+- name: Schumacher, L.
+- name: Schwefer, G.
+- name: Sclafani, S.
+- name: Seckel, D.
+- name: Seunarine, S.
+- name: Sharma, A.
+- name: Shefali, S.
+- name: Silva, M.
+- name: Skrzypek, B.
+- name: Smithers, B.
+- name: Snihur, R.
+- name: Soedingrekso, J.
+- name: Soldin, D.
+- name: Spannfellner, C.
+- name: Spiczak, G.M.
+- name: Spiering, C.
+- name: Stachurska, J.
+- name: Stamatikos, M.
+- name: Stanev, T.
+- name: Stein, R.
+- name: Stettner, J.
+- name: Steuer, A.
+- name: Stezelberger, T.
+- name: Sturwald, T.
+- name: Stuttard, T.
+- name: Sullivan, G.W.
+- name: Taboada, I.
+- name: Tenholt, F.
+- name: Ter-Antonyan, S.
+- name: Tilav, S.
+- name: Tischbein, F.
+- name: Tollefson, K.
+- name: Tomankova, L.
+- name: Tonnis, C.
+- name: Toscano, S.
+- name: Tosi, D.
+- name: Trettin, A.
+- name: Tselengidou, M.
+- name: Tung, C.F.
+- name: Turcati, A.
+- name: Turcotte, R.
+- name: Turley, C.F.
+- name: Twagirayezu, J.P.
+- name: Ty, B.
+- name: Unland Elorrieta, M.A.
+- name: Valtonen-Mattila, N.
+- name: Vandenbroucke, J.
+- name: Van Eijndhoven, N.
+- name: Vannerom, D.
+- name: Van Santen, J.
+- name: Verpoest, S.
+- name: Vraeghe, M.
+- name: Walck, C.
+- name: Watson, T.B.
+- name: Weaver, C.
+- name: Weigel, P.
+- name: Weindl, A.
+- name: Weiss, M.J.
+- name: Weldert, J.
+- name: Wendt, C.
+- name: Werthebach, J.
+- name: Weyrauch, M.
+- name: Whitehorn, N.
+- name: Wiebusch, C.H.
+- name: Williams, D.R.
+- name: Wolf, M.
+- name: Woschnagg, K.
+- name: Wrede, G.
+- name: Wulff, J.
+- name: Xu, X.W.
+- name: Xu, Y.
+- name: Yanez, J.P.
+- name: Yoshida, S.
+- name: Yu, S.
+- name: Yuan, T.
+- name: Zhang, Z.
+- name: (The Icecube Collaboration)
+publisher:
+  name: Centre de Donnees Strasbourg (CDS)
+date_published: '2024'
+license: none-stated
+license_url: https://cds.unistra.fr/vizier-org/licences_vizier.html
+license_notes: no licence in the repository metadata (DataCite); not checked on the landing page
+access: open
+distributions:
+- url: https://doi.org/10.26093/cds/vizier.19209045
+  host: institutional
+  role: primary
+references:
+- doi: 10.3847/2041-8213/ac2c7b
+  relation: describes
+experiments:
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: harvest:datacite (curated 2026-10-23)
+  harvest:
+    source: datacite
+    query: creators.name:"IceCube Collaboration"
+    harvested: '2026-10-23'
+    score: 10.0
+    citations: 1
+    views: 0
+    downloads: 0
+  quality_notes:
+  - metadata harvested from the repository; tags and summary assigned by the curator from title and abstract
