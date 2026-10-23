@@ -1,0 +1,23 @@
+- {id: oscillation, label: Oscillation parameters}
+- {id: mass-ordering, label: Mass ordering}
+- {id: cp-violation, label: CP violation}
+- {id: theta23-octant, label: θ23 octant}
+- {id: absolute-mass, label: Absolute neutrino mass}
+- {id: double-beta, label: Double-beta decay / Majorana nature}
+- {id: cross-section, label: Cross sections}
+- {id: flux, label: Flux modelling}
+- {id: nuclear-model, label: Nuclear modelling}
+- {id: detector-response, label: Detector response}
+- {id: earth-model, label: Earth model / tomography}
+- {id: solar-model, label: Solar model}
+- {id: sterile, label: Sterile neutrinos}
+- {id: nsi, label: Non-standard interactions}
+- {id: decay, label: Neutrino decay}
+- {id: decoherence, label: Decoherence / quantum gravity}
+- {id: lorentz-violation, label: Lorentz / CPT violation}
+- {id: magnetic-moment, label: Magnetic moment / EM properties}
+- {id: dark-matter, label: Dark matter searches with neutrinos}
+- {id: multi-messenger, label: Multi-messenger astronomy}
+- {id: global-fit, label: Global fits}
+- {id: statistics, label: Statistical methods}
+- {id: bsm-other, label: Other new physics}

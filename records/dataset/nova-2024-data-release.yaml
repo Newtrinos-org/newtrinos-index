@@ -1,0 +1,48 @@
+id: nova-2024-data-release
+type: dataset
+title: NOvA 2024 official data release (26.61E20 neutrino + 12.5E20 antineutrino)
+short: "NOvA 10-year far-detector νμ / νe spectra with predicted components, as used in the 2024 three-flavour analysis"
+description: |-
+  Far-detector data and predictions of the NOvA 2024 three-flavour oscillation analysis (26.61×10²⁰ POT ν,
+  12.5×10²⁰ POT ν̄): νμ disappearance in four resolution quartiles and νe appearance, FHC and RHC, with the predicted
+  signal and background components and the official contours.
+doi: 10.5281/zenodo.17822358
+url_landing: "https://zenodo.org/doi/10.5281/zenodo.17822358"
+creators: [{name: NOvA Collaboration, kind: collaboration}]
+publisher: {name: Zenodo, kind: organization}
+date_published: 2026-07-09
+license: CC-BY-4.0
+access: open
+distributions:
+  - {url: "https://doi.org/10.5281/zenodo.17822358", host: zenodo, role: primary, formats: [tarball], size_bytes: 1335901, n_files: 1, notes: data_release_2024.zip}
+experiments: [nova]
+sources: [accelerator]
+topics: [oscillation, mass-ordering, cp-violation, theta23-octant]
+channels: [cc]
+flavors: [numu, numubar, nue, nuebar]
+detector_technologies: [segmented-scintillator]
+exposure: "26.61×10²⁰ POT ν + 12.5×10²⁰ POT ν̄"
+data:
+  levels: [binned, prediction, contours]
+  observables: [reconstructed neutrino energy]
+  has_covariance: false
+  has_systematics_model: false
+  has_mc: false
+  result_of: 10.1103/x53y-2b86
+newtrinos:
+  modules: [nova_2024]
+  verifications: [10.1103_x53y-2b86]
+card:
+  summary: "Binned far-detector spectra and predicted components of NOvA's 10-year analysis."
+  intended_use: "Approximate reproduction of NOvA's three-flavour fit; inclusion in global fits with reduced systematics."
+  out_of_scope_use: "Anything needing true-energy information or the full systematic model: neither is released."
+  provenance: "Official collaboration release on Zenodo."
+  composition: "Observed counts and predicted components per sample and horn current."
+  systematics: "No systematic templates or covariance; users must build a reduced model (Newtrinos sizes it to the paper's post-extrapolation uncertainties)."
+  validation: "Reproduced with Newtrinos (entry 10.1103_x53y-2b86) using an effective, calibrated energy response."
+  known_limitations: "No true-energy information; predictions away from the reference point need an effective response model; official regions are Bayesian."
+  dphep_level: 2
+curation:
+  status: verified
+  added: 2026-10-23
+  source: manual

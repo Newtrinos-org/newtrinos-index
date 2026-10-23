@@ -1,0 +1,15 @@
+# Neutrino sources. id is used in records (sources: [...]).
+- {id: solar, label: Solar, description: "Neutrinos from fusion in the Sun (pp chain, CNO cycle)."}
+- {id: atmospheric, label: Atmospheric, description: "Neutrinos from cosmic-ray air showers."}
+- {id: reactor, label: Reactor, description: "Electron antineutrinos from nuclear reactors."}
+- {id: accelerator, label: Accelerator, description: "Beam neutrinos from pion/kaon decay-in-flight (long- and short-baseline)."}
+- {id: spallation, label: Spallation / stopped pion, description: "Decay-at-rest neutrinos from spallation sources (SNS, J-PARC MLF, LANSCE)."}
+- {id: geo, label: Geoneutrinos, description: "Antineutrinos from radioactive decays in the Earth."}
+- {id: supernova, label: Supernova, description: "Core-collapse supernova neutrinos, burst and diffuse background (DSNB)."}
+- {id: astrophysical, label: Astrophysical (high energy), description: "Diffuse and point-source high-energy cosmic neutrinos."}
+- {id: cosmogenic, label: Cosmogenic, description: "Ultra-high-energy neutrinos from cosmic-ray interactions with photon backgrounds."}
+- {id: relic, label: Relic (CνB), description: "The cosmic neutrino background."}
+- {id: cosmology, label: Cosmology, description: "Neutrino properties from cosmological observables (CMB, BAO, LSS)."}
+- {id: radioactive-source, label: Radioactive source, description: "Artificial sources (51Cr, 37Ar, 144Ce) used in source experiments."}
+- {id: nuclear-decay, label: Nuclear decay, description: "Beta decay endpoints (tritium, 163Ho) and double-beta decay; neutrino properties without detecting neutrinos."}
+- {id: none, label: Not source-specific, description: "General tools or inputs that apply to all sources."}

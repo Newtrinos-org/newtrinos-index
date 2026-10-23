@@ -1,0 +1,95 @@
+# expect: doi
+id: bad-doi-with-prefix
+type: dataset
+title: Full Data Release of the Daya Bay Reactor Neutrino Experiment
+short: "Daya Bay: all 5.55 M nGd IBD candidates (3158 days) plus every input needed for the θ13 / Δm²32 fit"
+description: |-
+  The complete nGd inverse-beta-decay sample of Daya Bay (8 antineutrino detectors, 2011–2020, 3158 days) with
+  daily livetimes and efficiencies, accidental-background rates and all inputs of the final oscillation analysis
+  (Phys. Rev. Lett. 130, 161802). Two variants: the *full dataset* (event level, ~200 MB per format) and the
+  *analysis dataset* (per-period IBD histograms and inputs, ~1 MB per format), each in HDF5, NPZ, ROOT and TSV.
+doi: https://doi.org/10.5281/zenodo.17587229
+url_landing: "https://zenodo.org/doi/10.5281/zenodo.17587229"
+creators:
+  - {name: Daya Bay Collaboration, kind: collaboration}
+publisher: {name: Zenodo, kind: organization}
+maintainers:
+  - {name: Zeyuan Yu, contact: yuzy@ihep.ac.cn}
+  - {name: Maxim Gonchar, contact: gonchar@jinr.ru}
+version: 1.0.0
+date_published: 2025-11-15
+license: CC-BY-4.0
+license_url: "https://creativecommons.org/licenses/by/4.0/legalcode"
+access: open
+distributions:
+  - url: "https://doi.org/10.5281/zenodo.17587229"
+    host: zenodo
+    role: primary
+    formats: [hdf5, npy, root, csv]
+    size_bytes: 820971896
+    n_files: 8
+    notes: "full_dataset_* (~200 MB each) and analysis_dataset_* (~1.4 MB each) zip archives in four formats"
+  - url: "https://doi.org/10.12402/opendata/DYB/20251205202440"
+    host: institutional
+    role: mirror
+    label: NHEPSDC (China)
+  - url: "https://github.com/dayabay-experiment/dayabay-data-official"
+    host: github
+    role: mirror
+    label: analysis dataset only
+  - url: "https://pypi.org/project/dayabay-data-official"
+    host: package-registry
+    role: mirror
+    label: analysis dataset only (PyPI)
+cite_as:
+  - "Daya Bay Collaboration, Full Data Release of the Daya Bay Reactor Neutrino Experiment, v1.0.0, Zenodo (2025), doi:10.5281/zenodo.17587229"
+  - "doi:10.1103/PhysRevLett.130.161802"
+references:
+  - {doi: 10.1103/PhysRevLett.130.161802, relation: describes}
+  - {arxiv: "2211.14988", relation: describes}
+relations:
+  - {rel: used_by, target: dayabay-model-official}
+experiments: [daya-bay]
+collaborations: [Daya Bay]
+sources: [reactor]
+topics: [oscillation]
+channels: [ibd]
+flavors: [nuebar]
+detector_technologies: [liquid-scintillator]
+energy_range: {min: 0.7, max: 12, unit: MeV, quantity: reconstructed prompt energy}
+period: {start: 2011-12, end: 2020-12}
+exposure: "3158 days, 8 ADs, 5.55 million nGd IBD candidates"
+data:
+  levels: [events, binned, response, systematics, likelihood]
+  observables: [reconstructed prompt energy, event time, detector]
+  binning: "analysis dataset: 26 reconstructed-energy bins × 8 ADs × 3 periods"
+  n_events: 5550000
+  has_covariance: true
+  has_systematics_model: true
+  has_mc: false
+  usage_code: "https://github.com/dagflow-team/dayabay-model-official"
+  result_of: 10.1103/PhysRevLett.130.161802
+newtrinos:
+  modules: [daya_bay_3158days, reactor_flux, ibd_xsec]
+  verifications: [10.5281_zenodo.17587229, 10.1103_PhysRevLett.130.161802]
+card:
+  summary: |-
+    The final Daya Bay nGd data set with everything needed to redo the published θ13 / Δm²32 measurement. Aimed at
+    anyone fitting reactor oscillation data, including global fits.
+  intended_use: "Reproduce or extend the PRL 130, 161802 oscillation fit; include Daya Bay in global fits; sterile-neutrino or BSM fits of the far/near ratio."
+  out_of_scope_use: "Absolute reactor-flux or spectral-shape studies need the separate Daya Bay flux/spectrum releases; nH-capture sample not included."
+  provenance: "Official collaboration release (Zenodo, 2025) with identical mirrors at NHEPSDC; analysis inputs as used for PRL 130, 161802."
+  composition: "IBD candidates per AD with daily livetime/efficiency, accidental rates, background spectra and rates, reactor power and fission fractions, detector response (IAV, LSNL, resolution) and their uncertainties."
+  systematics: "Full nuisance model available through the official dayabay-model code (~180 nuisance parameters); a Δχ² table is part of the release."
+  validation: "Newtrinos reproduces the official model prediction to <1e-4 per bin (546 bins) and the official fit (sin²2θ13 0.08536 vs 0.08538, Δm²32 2.4748 vs 2.4746 ×10⁻³ eV²), see the verification entry 10.5281_zenodo.17587229."
+  known_limitations: "The published Δχ² table is slightly wider at low values than both the official code and Newtrinos. Huber–Mueller spectral uncertainties are not included in the official default fit."
+  maintenance: "Versioned on Zenodo (v1.0.0); feedback via GitHub issues of dayabay-data-official."
+  usage_examples: "pip install dayabay-model-official; examples in github.com/dagflow-team/dayabay-analysis. Newtrinos: `Newtrinos.daya_bay_3158days`."
+  dphep_level: 3
+  fair: {findable: true, accessible: true, interoperable: true, reusable: true}
+curation:
+  status: verified
+  added: 2026-10-23
+  added_by: Newtrinos team
+  last_reviewed: 2026-10-23
+  source: manual

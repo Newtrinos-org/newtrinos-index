@@ -1,0 +1,40 @@
+id: huber-mueller-reactor-spectra
+type: model
+title: Huber–Mueller reactor antineutrino spectra
+short: "Reactor ν̄e spectra per fissioning isotope: Huber (235U, 239Pu, 241Pu conversion) + Mueller (238U ab initio)"
+description: |-
+  The standard reactor antineutrino flux model: converted ILL β spectra for ²³⁵U, ²³⁹Pu and ²⁴¹Pu (Huber 2011,
+  with erratum) and the summation calculation for ²³⁸U (Mueller et al. 2011), with uncertainty breakdowns and
+  correlation information. Tables are in the papers' supplements; Huber's page provides machine-readable files.
+url_landing: "http://www.phys.vt.edu/~pahuber/reactorfluxes/"
+creators: [{name: Patrick Huber}, {name: Th. A. Mueller}]
+date_published: 2011
+license: none-stated
+access: open
+distributions:
+  - {url: "http://www.phys.vt.edu/~pahuber/reactorfluxes/", host: personal, role: primary, formats: [txt]}
+  - {url: "https://doi.org/10.1103/PhysRevC.84.024617", host: journal-supplement, role: supplement, label: "Huber, PRC 84, 024617 (tables)"}
+  - {url: "https://doi.org/10.1103/PhysRevC.83.054615", host: journal-supplement, role: supplement, label: "Mueller et al., PRC 83, 054615 (tables)"}
+cite_as: ["doi:10.1103/PhysRevC.84.024617", "doi:10.1103/PhysRevC.85.029901", "doi:10.1103/PhysRevC.83.054615"]
+references:
+  - {doi: 10.1103/PhysRevC.84.024617, relation: describes}
+  - {doi: 10.1103/PhysRevC.85.029901, relation: describes, citation: "Erratum to PRC 84, 024617"}
+  - {doi: 10.1103/PhysRevC.83.054615, relation: describes}
+sources: [reactor]
+topics: [flux]
+flavors: [nuebar]
+energy_range: {min: 1.8, max: 8, unit: MeV, quantity: true antineutrino energy}
+model:
+  quantities: [reactor antineutrino spectrum per isotope]
+  targets: [U-235, U-238, Pu-239, Pu-241]
+  has_uncertainties: true
+  has_covariance: true
+  formats: [txt, pdf]
+newtrinos:
+  modules: [reactor_flux]
+  verifications: [10.1103_PhysRevC.84.024617]
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual
+  quality_notes: ["phys.vt.edu redirects to www1.phys.vt.edu (2026-10-23)"]

@@ -1,0 +1,769 @@
+{
+  "$id": "https://newtrinos-org.github.io/newtrinos-index/schema/record.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "enum": ["dataset", "result"]
+          }
+        }
+      },
+      "then": {
+        "required": ["data"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "software"
+          }
+        }
+      },
+      "then": {
+        "required": ["software"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "model"
+          }
+        }
+      },
+      "then": {
+        "required": ["model"]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "curation": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "card": {
+            "required": ["summary", "intended_use", "provenance", "validation", "known_limitations"]
+          }
+        },
+        "required": ["card"]
+      }
+    }
+  ],
+  "definitions": {
+    "agent": {
+      "additionalProperties": false,
+      "description": "A person or an organisation / collaboration",
+      "properties": {
+        "affiliation": {
+          "type": "string"
+        },
+        "contact": {
+          "description": "e-mail address, URL or issue tracker",
+          "type": "string"
+        },
+        "kind": {
+          "enum": ["person", "organization", "collaboration"]
+        },
+        "name": {
+          "type": "string"
+        },
+        "orcid": {
+          "$ref": "#/definitions/orcid"
+        },
+        "ror": {
+          "description": "ROR id of an organisation",
+          "type": "string"
+        }
+      },
+      "required": ["name"],
+      "type": "object"
+    },
+    "agents": {
+      "items": {
+        "$ref": "#/definitions/agent"
+      },
+      "type": "array"
+    },
+    "card_text": {
+      "description": "Markdown text",
+      "type": "string"
+    },
+    "date": {
+      "anyOf": [
+        {
+          "pattern": "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$",
+          "type": "string"
+        },
+        {
+          "maximum": 2100,
+          "minimum": 1900,
+          "type": "integer"
+        }
+      ],
+      "description": "YYYY, YYYY-MM or YYYY-MM-DD (a bare year may be written as a number)"
+    },
+    "distribution": {
+      "additionalProperties": false,
+      "properties": {
+        "archived": {
+          "$ref": "#/definitions/date",
+          "description": "date this copy was made (archives and mirrors)"
+        },
+        "checksum": {
+          "pattern": "^(sha256|sha1|md5):[0-9a-f]+$",
+          "type": "string"
+        },
+        "formats": {
+          "$ref": "#/definitions/formats"
+        },
+        "host": {
+          "enum": ["zenodo", "github", "gitlab", "hepdata", "cern-opendata", "arxiv", "journal-supplement", "institutional", "personal", "dataverse", "figshare", "osf", "wayback", "software-heritage", "package-registry", "other"],
+          "x-vocab": "hosts"
+        },
+        "label": {
+          "type": "string"
+        },
+        "n_files": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "role": {
+          "enum": ["primary", "mirror", "archive", "supplement", "documentation"]
+        },
+        "size_bytes": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "url": {
+          "$ref": "#/definitions/url"
+        }
+      },
+      "required": ["url", "host", "role"],
+      "type": "object",
+      "x-maps-to": "schema.org DataDownload / DCAT Distribution"
+    },
+    "doi": {
+      "description": "bare DOI, no https://doi.org/ prefix",
+      "pattern": "^10\\.[0-9]{4,9}/\\S+$",
+      "type": "string"
+    },
+    "formats": {
+      "items": {
+        "enum": ["csv", "txt", "json", "yaml", "toml", "hdf5", "root", "fits", "npy", "parquet", "pickle", "jld2", "xml", "pdf", "image", "html", "xlsx", "source-code", "binary", "tarball"],
+        "x-vocab": "formats"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "orcid": {
+      "pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$",
+      "type": "string"
+    },
+    "reference": {
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "required": ["doi"]
+        },
+        {
+          "required": ["arxiv"]
+        },
+        {
+          "required": ["url"]
+        },
+        {
+          "required": ["citation"]
+        }
+      ],
+      "properties": {
+        "arxiv": {
+          "type": "string"
+        },
+        "citation": {
+          "type": "string"
+        },
+        "doi": {
+          "$ref": "#/definitions/doi"
+        },
+        "relation": {
+          "default": "describes",
+          "enum": ["describes", "is-cited-by", "uses", "supplements", "validates", "documents"]
+        },
+        "url": {
+          "$ref": "#/definitions/url"
+        }
+      },
+      "type": "object"
+    },
+    "slug": {
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "type": "string"
+    },
+    "text_list": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "url": {
+      "pattern": "^https?://",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "access": {
+      "enum": ["open", "registration", "on-request", "collaboration-only", "defunct"]
+    },
+    "aliases": {
+      "$ref": "#/definitions/text_list"
+    },
+    "card": {
+      "additionalProperties": false,
+      "properties": {
+        "composition": {
+          "$ref": "#/definitions/card_text"
+        },
+        "dphep_level": {
+          "description": "DPHEP preservation level: 1 publication-level, 2 simplified data, 3 analysis-level, 4 full reconstruction/simulation",
+          "enum": [1, 2, 3, 4]
+        },
+        "fair": {
+          "additionalProperties": false,
+          "properties": {
+            "accessible": {
+              "type": "boolean"
+            },
+            "findable": {
+              "type": "boolean"
+            },
+            "interoperable": {
+              "type": "boolean"
+            },
+            "notes": {
+              "type": "string"
+            },
+            "reusable": {
+              "type": "boolean"
+            }
+          },
+          "type": "object"
+        },
+        "intended_use": {
+          "$ref": "#/definitions/card_text"
+        },
+        "known_limitations": {
+          "$ref": "#/definitions/card_text"
+        },
+        "maintenance": {
+          "$ref": "#/definitions/card_text"
+        },
+        "out_of_scope_use": {
+          "$ref": "#/definitions/card_text"
+        },
+        "physics_assumptions": {
+          "$ref": "#/definitions/card_text",
+          "description": "mainly software and models"
+        },
+        "provenance": {
+          "$ref": "#/definitions/card_text"
+        },
+        "summary": {
+          "$ref": "#/definitions/card_text"
+        },
+        "systematics": {
+          "$ref": "#/definitions/card_text"
+        },
+        "usage_examples": {
+          "$ref": "#/definitions/card_text"
+        },
+        "validation": {
+          "$ref": "#/definitions/card_text"
+        }
+      },
+      "type": "object"
+    },
+    "channels": {
+      "items": {
+        "enum": ["cc", "nc", "es", "ibd", "cevns", "ccqe", "mec", "res", "dis", "coherent-pion", "radiochemical", "glashow"],
+        "x-vocab": "channels"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "cite_as": {
+      "$ref": "#/definitions/text_list",
+      "description": "what the owners ask users to cite (DOIs or citation strings)"
+    },
+    "collaborations": {
+      "$ref": "#/definitions/text_list"
+    },
+    "creators": {
+      "$ref": "#/definitions/agents",
+      "x-maps-to": "DataCite creators / schema:creator"
+    },
+    "curation": {
+      "additionalProperties": false,
+      "properties": {
+        "added": {
+          "$ref": "#/definitions/date"
+        },
+        "added_by": {
+          "type": "string"
+        },
+        "last_reviewed": {
+          "$ref": "#/definitions/date"
+        },
+        "quality_notes": {
+          "$ref": "#/definitions/text_list"
+        },
+        "reviewed_by": {
+          "type": "string"
+        },
+        "source": {
+          "description": "how the record was found (manual, harvest:zenodo, ...)",
+          "type": "string"
+        },
+        "status": {
+          "enum": ["candidate", "curated", "verified"]
+        }
+      },
+      "required": ["status", "added"],
+      "type": "object"
+    },
+    "data": {
+      "additionalProperties": false,
+      "description": "dataset and result records",
+      "properties": {
+        "binning": {
+          "type": "string"
+        },
+        "formats": {
+          "$ref": "#/definitions/formats"
+        },
+        "has_covariance": {
+          "type": "boolean"
+        },
+        "has_mc": {
+          "type": "boolean"
+        },
+        "has_systematics_model": {
+          "type": "boolean"
+        },
+        "levels": {
+          "items": {
+            "enum": ["raw", "events", "binned", "prediction", "response", "mc", "systematics", "likelihood", "posterior", "contours", "summary", "digitized", "tables"],
+            "x-vocab": "data_levels"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "n_events": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "observables": {
+          "$ref": "#/definitions/text_list"
+        },
+        "result_of": {
+          "$ref": "#/definitions/doi",
+          "description": "DOI of the paper whose result this is"
+        },
+        "size_bytes": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "usage_code": {
+          "$ref": "#/definitions/url",
+          "description": "official example / reader code"
+        }
+      },
+      "type": "object"
+    },
+    "date_published": {
+      "$ref": "#/definitions/date",
+      "x-maps-to": "DataCite publicationYear / schema:datePublished"
+    },
+    "date_updated": {
+      "$ref": "#/definitions/date",
+      "description": "last upstream change we know of",
+      "x-maps-to": "schema:dateModified"
+    },
+    "description": {
+      "description": "Markdown",
+      "type": "string",
+      "x-maps-to": "schema:description"
+    },
+    "detector_technologies": {
+      "items": {
+        "enum": ["water-cherenkov", "heavy-water", "ice-cherenkov", "water-cherenkov-open", "liquid-scintillator", "water-based-scintillator", "lartpc", "gas-tpc", "segmented-scintillator", "iron-calorimeter", "emulsion", "radiochemical", "crystal", "germanium", "bolometer", "xenon-tpc", "spectrometer", "radio", "other"],
+        "x-vocab": "detector_technologies"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "distributions": {
+      "items": {
+        "$ref": "#/definitions/distribution"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "doi": {
+      "$ref": "#/definitions/doi",
+      "description": "DOI of the resource itself (not of the paper)"
+    },
+    "energy_range": {
+      "additionalProperties": false,
+      "properties": {
+        "max": {
+          "type": "number"
+        },
+        "min": {
+          "type": "number"
+        },
+        "quantity": {
+          "description": "e.g. true neutrino energy, visible energy, reconstructed energy",
+          "type": "string"
+        },
+        "unit": {
+          "enum": ["eV", "keV", "MeV", "GeV", "TeV", "PeV", "EeV"]
+        }
+      },
+      "required": ["min", "max", "unit"],
+      "type": "object"
+    },
+    "experiments": {
+      "items": {
+        "enum": ["homestake", "gallex", "gno", "sage", "best", "kamiokande", "super-k", "hyper-k", "sno", "sno-plus", "borexino", "kamland", "daya-bay", "double-chooz", "chooz", "reno", "juno", "bugey", "prospect", "stereo", "danss", "neos", "k2k", "t2k", "nova", "minos", "opera", "icarus", "microboone", "sbnd", "miniboone", "lsnd", "karmen", "minerva", "dune", "coherent", "conus", "icecube", "deepcore", "icecube-upgrade", "km3net-orca", "km3net-arca", "antares", "baikal-gvd", "katrin", "gerda", "legend", "cuore", "kamland-zen", "exo-200"],
+        "x-vocab": "experiments"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "exposure": {
+      "description": "free text, e.g. '1431.6 d × 71.3 t' or '6.6e20 POT'",
+      "type": "string"
+    },
+    "flavors": {
+      "items": {
+        "enum": ["nue", "numu", "nutau", "nuebar", "numubar", "nutaubar", "all"]
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "funding": {
+      "$ref": "#/definitions/text_list"
+    },
+    "id": {
+      "$ref": "#/definitions/slug",
+      "description": "unique slug, equal to the file name"
+    },
+    "identifiers": {
+      "additionalProperties": false,
+      "properties": {
+        "arxiv": {
+          "type": "string"
+        },
+        "ascl": {
+          "type": "string"
+        },
+        "hepdata": {
+          "description": "HEPData record, e.g. ins1234567",
+          "type": "string"
+        },
+        "inspire": {
+          "description": "INSPIRE literature record id",
+          "type": "integer"
+        },
+        "rrid": {
+          "type": "string"
+        },
+        "swhid": {
+          "pattern": "^swh:1:(cnt|dir|rev|rel|snp):[0-9a-f]{40}",
+          "type": "string"
+        },
+        "zenodo": {
+          "description": "Zenodo record id",
+          "type": "integer"
+        }
+      },
+      "type": "object"
+    },
+    "keywords": {
+      "$ref": "#/definitions/text_list"
+    },
+    "license": {
+      "enum": ["none-stated", "unknown", "proprietary", "CC0-1.0", "CC-BY-4.0", "CC-BY-3.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "ODbL-1.0", "MIT", "BSD-2-Clause", "BSD-3-Clause", "Apache-2.0", "GPL-2.0-only", "GPL-2.0-or-later", "GPL-3.0-only", "GPL-3.0-or-later", "LGPL-2.1-or-later", "LGPL-3.0-or-later", "MPL-2.0"],
+      "x-maps-to": "DataCite rights (SPDX)",
+      "x-vocab": "licenses"
+    },
+    "license_notes": {
+      "type": "string"
+    },
+    "license_url": {
+      "$ref": "#/definitions/url"
+    },
+    "maintainers": {
+      "$ref": "#/definitions/agents",
+      "x-maps-to": "codemeta:maintainer"
+    },
+    "model": {
+      "additionalProperties": false,
+      "properties": {
+        "formats": {
+          "$ref": "#/definitions/formats"
+        },
+        "has_covariance": {
+          "type": "boolean"
+        },
+        "has_uncertainties": {
+          "type": "boolean"
+        },
+        "quantities": {
+          "$ref": "#/definitions/text_list",
+          "description": "e.g. flux, cross section, electron density, solar structure"
+        },
+        "targets": {
+          "$ref": "#/definitions/text_list",
+          "description": "nuclei / materials"
+        },
+        "validity": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "newtrinos": {
+      "additionalProperties": false,
+      "properties": {
+        "modules": {
+          "$ref": "#/definitions/text_list",
+          "description": "Newtrinos.jl modules using this resource"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "verifications": {
+          "$ref": "#/definitions/text_list",
+          "description": "newtrinos-verifications entry slugs"
+        }
+      },
+      "type": "object"
+    },
+    "owner": {
+      "$ref": "#/definitions/agent",
+      "description": "who holds the rights / is responsible"
+    },
+    "period": {
+      "additionalProperties": false,
+      "properties": {
+        "end": {
+          "$ref": "#/definitions/date"
+        },
+        "start": {
+          "$ref": "#/definitions/date"
+        }
+      },
+      "type": "object"
+    },
+    "publisher": {
+      "$ref": "#/definitions/agent",
+      "x-maps-to": "DataCite publisher"
+    },
+    "references": {
+      "items": {
+        "$ref": "#/definitions/reference"
+      },
+      "type": "array"
+    },
+    "relations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "notes": {
+            "type": "string"
+          },
+          "rel": {
+            "enum": ["is_part_of", "has_part", "is_version_of", "supersedes", "superseded_by", "derived_from", "source_of", "uses", "used_by", "mirror_of", "documents", "reproduces", "compares_with"]
+          },
+          "target": {
+            "description": "record id, or doi:10.xxx/..., or a URL",
+            "type": "string"
+          }
+        },
+        "required": ["rel", "target"],
+        "type": "object"
+      },
+      "type": "array",
+      "x-maps-to": "DataCite relatedIdentifiers"
+    },
+    "service": {
+      "additionalProperties": false,
+      "properties": {
+        "api": {
+          "$ref": "#/definitions/url"
+        },
+        "api_kind": {
+          "enum": ["rest", "graphql", "oai-pmh", "sparql", "files", "none"]
+        },
+        "operator": {
+          "$ref": "#/definitions/agent"
+        },
+        "query_interface": {
+          "$ref": "#/definitions/url"
+        }
+      },
+      "type": "object"
+    },
+    "short": {
+      "description": "one-line summary for listings",
+      "maxLength": 120,
+      "type": "string"
+    },
+    "software": {
+      "additionalProperties": false,
+      "properties": {
+        "dependencies": {
+          "$ref": "#/definitions/text_list",
+          "description": "notable dependencies (ROOT, GSL, ...)"
+        },
+        "development_status": {
+          "description": "curator view; harvested commit dates go to status/",
+          "enum": ["active", "maintained", "dormant", "archived", "unknown"]
+        },
+        "documentation": {
+          "$ref": "#/definitions/url"
+        },
+        "interfaces": {
+          "items": {
+            "enum": ["library", "cli", "gui", "web", "python-bindings", "config-files"]
+          },
+          "type": "array"
+        },
+        "languages": {
+          "$ref": "#/definitions/text_list",
+          "x-maps-to": "codemeta:programmingLanguage"
+        },
+        "package_ids": {
+          "additionalProperties": false,
+          "properties": {
+            "conda": {
+              "type": "string"
+            },
+            "cran": {
+              "type": "string"
+            },
+            "docker": {
+              "type": "string"
+            },
+            "julia": {
+              "type": "string"
+            },
+            "pypi": {
+              "type": "string"
+            },
+            "spack": {
+              "type": "string"
+            },
+            "ups": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "platforms": {
+          "$ref": "#/definitions/text_list"
+        },
+        "purposes": {
+          "items": {
+            "enum": ["oscillation-probability", "event-generator", "flux-calculation", "detector-simulation", "reconstruction", "fitting", "global-fit", "sensitivity", "nuclear-model", "astrophysics", "earth-model", "data-access", "plotting", "tooling"],
+            "x-vocab": "software_purposes"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "repository": {
+          "$ref": "#/definitions/url",
+          "x-maps-to": "codemeta:codeRepository"
+        }
+      },
+      "type": "object"
+    },
+    "sources": {
+      "items": {
+        "enum": ["solar", "atmospheric", "reactor", "accelerator", "spallation", "geo", "supernova", "astrophysical", "cosmogenic", "relic", "cosmology", "radioactive-source", "nuclear-decay", "none"],
+        "x-vocab": "sources"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "title": {
+      "type": "string",
+      "x-maps-to": "DataCite titles / schema:name"
+    },
+    "topics": {
+      "items": {
+        "enum": ["oscillation", "mass-ordering", "cp-violation", "theta23-octant", "absolute-mass", "double-beta", "cross-section", "flux", "nuclear-model", "detector-response", "earth-model", "solar-model", "sterile", "nsi", "decay", "decoherence", "lorentz-violation", "magnetic-moment", "dark-matter", "multi-messenger", "global-fit", "statistics", "bsm-other"],
+        "x-vocab": "topics"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "type": {
+      "enum": ["dataset", "result", "model", "software", "service", "collection"]
+    },
+    "url_landing": {
+      "$ref": "#/definitions/url",
+      "description": "main human-facing page"
+    },
+    "version": {
+      "type": "string"
+    },
+    "versions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "date": {
+            "$ref": "#/definitions/date"
+          },
+          "doi": {
+            "$ref": "#/definitions/doi"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "url": {
+            "$ref": "#/definitions/url"
+          },
+          "version": {
+            "type": "string"
+          }
+        },
+        "required": ["version"],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": ["id", "type", "title", "short", "description", "license", "access", "distributions", "curation"],
+  "title": "Newtrinos Index record",
+  "type": "object",
+  "x-schema-version": "0.1.0"
+}

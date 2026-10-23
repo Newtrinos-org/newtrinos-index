@@ -1,0 +1,13 @@
+# the smallest valid record
+id: good-minimal-software
+type: software
+title: Minimal
+short: Smallest valid software record
+description: Used by test/runtests.jl.
+license: MIT
+access: open
+distributions:
+  - {url: "https://example.org/code", host: other, role: primary}
+software:
+  purposes: [tooling]
+curation: {status: candidate, added: 2026-10-23}

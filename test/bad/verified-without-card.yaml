@@ -1,0 +1,29 @@
+# expect: required Any["card"]
+id: bad-verified-without-card
+type: software
+title: nuSQuIDS
+short: "nuSQuIDS: neutrino oscillation and propagation with interactions (C++ / Python), based on SQuIDS"
+description: Solves the density-matrix evolution of neutrinos including coherent oscillations, matter effects, absorption, NC/CC interactions, tau regeneration and new physics, in bodies such as the Earth, the Sun or vacuum.
+url_landing: "https://github.com/arguelles/nuSQuIDS"
+creators: [{name: Carlos A. Argüelles}, {name: Jordi Salvado}, {name: Christopher N. Weaver}]
+date_published: 2014-09-17
+license: LGPL-3.0-or-later
+access: open
+distributions:
+  - {url: "https://github.com/arguelles/nuSQuIDS", host: github, role: primary, formats: [source-code]}
+cite_as: ["doi:10.1016/j.cpc.2022.108346"]
+references:
+  - {doi: 10.1016/j.cpc.2022.108346, relation: describes, citation: "Argüelles, Salvado, Weaver, Comput. Phys. Commun. 277, 108346 (2022)"}
+sources: [atmospheric, astrophysical, solar]
+topics: [oscillation, sterile, nsi, decoherence]
+software:
+  repository: "https://github.com/arguelles/nuSQuIDS"
+  languages: [C++, Python]
+  purposes: [oscillation-probability, earth-model]
+  interfaces: [library, python-bindings]
+  dependencies: [SQuIDS, GSL, HDF5]
+  development_status: active
+curation:
+  status: verified
+  added: 2026-10-23
+  source: manual

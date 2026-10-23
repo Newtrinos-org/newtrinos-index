@@ -1,0 +1,58 @@
+# Experiment registry. Records reference experiments by `id`. Years = data taking (end omitted if running/unknown).
+# Keep `aliases` complete: the harvesters map free-text experiment names onto ids with them.
+# --- solar / radiochemical ---
+- {id: homestake, name: Homestake chlorine experiment, aliases: [Homestake, Chlorine, Cl], collaboration: Homestake, sources: [solar], technology: [radiochemical], site: Homestake Mine (USA), start: 1970, end: 1994}
+- {id: gallex, name: GALLEX, collaboration: GALLEX, sources: [solar, radioactive-source], technology: [radiochemical], site: LNGS (Italy), start: 1991, end: 1997, successor: gno}
+- {id: gno, name: GNO, aliases: [GALLEX/GNO], collaboration: GNO, sources: [solar], technology: [radiochemical], site: LNGS (Italy), start: 1998, end: 2003, predecessor: gallex}
+- {id: sage, name: SAGE, aliases: [Soviet-American Gallium Experiment], collaboration: SAGE, sources: [solar, radioactive-source], technology: [radiochemical], site: Baksan (Russia), start: 1990}
+- {id: best, name: BEST, aliases: [Baksan Experiment on Sterile Transitions], collaboration: BEST, sources: [radioactive-source], technology: [radiochemical], site: Baksan (Russia), start: 2019, end: 2020}
+- {id: kamiokande, name: Kamiokande, aliases: [Kamiokande-II, Kamiokande-III], collaboration: Kamiokande, sources: [solar, atmospheric, supernova], technology: [water-cherenkov], site: Kamioka (Japan), start: 1983, end: 1996, successor: super-k}
+- {id: super-k, name: Super-Kamiokande, aliases: [SK, Super-K, SuperK, SK-I, SK-II, SK-III, SK-IV, SK-V, SK-Gd], collaboration: Super-Kamiokande, sources: [atmospheric, solar, supernova, accelerator], technology: [water-cherenkov], site: Kamioka (Japan), start: 1996, website: "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/", predecessor: kamiokande, successor: hyper-k}
+- {id: hyper-k, name: Hyper-Kamiokande, aliases: [HK, Hyper-K], collaboration: Hyper-Kamiokande, sources: [accelerator, atmospheric, solar, supernova], technology: [water-cherenkov], site: Kamioka (Japan), predecessor: super-k}
+- {id: sno, name: SNO, aliases: [Sudbury Neutrino Observatory], collaboration: SNO, sources: [solar, atmospheric], technology: [heavy-water], site: SNOLAB (Canada), start: 1999, end: 2006, successor: sno-plus}
+- {id: sno-plus, name: SNO+, aliases: [SNOplus, SNO+], collaboration: SNO+, sources: [solar, reactor, geo, nuclear-decay], technology: [liquid-scintillator, water-cherenkov], site: SNOLAB (Canada), start: 2017, website: "https://snoplus.phy.queensu.ca", predecessor: sno}
+- {id: borexino, name: Borexino, collaboration: Borexino, sources: [solar, geo, radioactive-source], technology: [liquid-scintillator], site: LNGS (Italy), start: 2007, end: 2021}
+# --- reactor ---
+- {id: kamland, name: KamLAND, collaboration: KamLAND, sources: [reactor, geo, solar], technology: [liquid-scintillator], site: Kamioka (Japan), start: 2002, website: "https://www.awa.tohoku.ac.jp/kamland/"}
+- {id: daya-bay, name: Daya Bay, aliases: [DayaBay, DYB], collaboration: Daya Bay, sources: [reactor], technology: [liquid-scintillator], site: Daya Bay (China), start: 2011, end: 2020}
+- {id: double-chooz, name: Double Chooz, aliases: [DoubleChooz], collaboration: Double Chooz, sources: [reactor], technology: [liquid-scintillator], site: Chooz (France), start: 2011, end: 2018, predecessor: chooz}
+- {id: chooz, name: CHOOZ, collaboration: CHOOZ, sources: [reactor], technology: [liquid-scintillator], site: Chooz (France), start: 1997, end: 1998, successor: double-chooz}
+- {id: reno, name: RENO, collaboration: RENO, sources: [reactor], technology: [liquid-scintillator], site: Hanbit (Korea), start: 2011}
+- {id: juno, name: JUNO, aliases: [Jiangmen Underground Neutrino Observatory, JUNO-TAO, TAO], collaboration: JUNO, sources: [reactor, solar, atmospheric, geo, supernova], technology: [liquid-scintillator], site: Jiangmen (China), start: 2025, website: "https://juno.ihep.cas.cn"}
+- {id: bugey, name: Bugey, aliases: [Bugey-3, Bugey-4], collaboration: Bugey, sources: [reactor], technology: [liquid-scintillator], site: Bugey (France)}
+- {id: prospect, name: PROSPECT, collaboration: PROSPECT, sources: [reactor], technology: [segmented-scintillator], site: HFIR (USA), start: 2018}
+- {id: stereo, name: STEREO, collaboration: STEREO, sources: [reactor], technology: [liquid-scintillator], site: ILL (France), start: 2016, end: 2020}
+- {id: danss, name: DANSS, collaboration: DANSS, sources: [reactor], technology: [segmented-scintillator], site: Kalinin (Russia), start: 2016}
+- {id: neos, name: NEOS, collaboration: NEOS, sources: [reactor], technology: [liquid-scintillator], site: Hanbit (Korea), start: 2015}
+# --- accelerator ---
+- {id: k2k, name: K2K, collaboration: K2K, sources: [accelerator], technology: [water-cherenkov], site: KEK → Kamioka (Japan), start: 1999, end: 2004, successor: t2k}
+- {id: t2k, name: T2K, aliases: [Tokai to Kamioka, ND280], collaboration: T2K, sources: [accelerator], technology: [water-cherenkov, gas-tpc, segmented-scintillator], site: J-PARC → Kamioka (Japan), start: 2010, website: "https://t2k-experiment.org", predecessor: k2k}
+- {id: nova, name: NOvA, collaboration: NOvA, sources: [accelerator], technology: [segmented-scintillator], site: Fermilab → Ash River (USA), start: 2014, website: "https://novaexperiment.fnal.gov"}
+- {id: minos, name: MINOS, aliases: [MINOS+], collaboration: MINOS, sources: [accelerator, atmospheric], technology: [iron-calorimeter], site: Fermilab → Soudan (USA), start: 2005, end: 2016}
+- {id: opera, name: OPERA, collaboration: OPERA, sources: [accelerator], technology: [emulsion], site: CERN → LNGS, start: 2008, end: 2012}
+- {id: icarus, name: ICARUS, collaboration: ICARUS, sources: [accelerator], technology: [lartpc], site: Fermilab (USA)}
+- {id: microboone, name: MicroBooNE, aliases: [uBooNE], collaboration: MicroBooNE, sources: [accelerator], technology: [lartpc], site: Fermilab (USA), start: 2015, end: 2021, website: "https://microboone.fnal.gov"}
+- {id: sbnd, name: SBND, collaboration: SBND, sources: [accelerator], technology: [lartpc], site: Fermilab (USA), start: 2024}
+- {id: miniboone, name: MiniBooNE, collaboration: MiniBooNE, sources: [accelerator], technology: [liquid-scintillator], site: Fermilab (USA), start: 2002, end: 2019}
+- {id: lsnd, name: LSND, collaboration: LSND, sources: [spallation], technology: [liquid-scintillator], site: LANSCE (USA), start: 1993, end: 1998}
+- {id: karmen, name: KARMEN, collaboration: KARMEN, sources: [spallation], technology: [liquid-scintillator], site: ISIS (UK), start: 1990, end: 2001}
+- {id: minerva, name: MINERvA, collaboration: MINERvA, sources: [accelerator], technology: [segmented-scintillator], site: Fermilab (USA), start: 2009, end: 2019, website: "https://minerva.fnal.gov"}
+- {id: dune, name: DUNE, aliases: [Deep Underground Neutrino Experiment, LBNF], collaboration: DUNE, sources: [accelerator, atmospheric, supernova, solar], technology: [lartpc], site: Fermilab → SURF (USA), website: "https://www.dunescience.org"}
+# --- spallation / CEvNS ---
+- {id: coherent, name: COHERENT, collaboration: COHERENT, sources: [spallation], technology: [crystal, lartpc, germanium], site: SNS (USA), start: 2015, website: "https://sites.duke.edu/coherent/"}
+- {id: conus, name: CONUS, aliases: [CONUS+], collaboration: CONUS, sources: [reactor], technology: [germanium], site: Brokdorf / Leibstadt}
+# --- neutrino telescopes ---
+- {id: icecube, name: IceCube, aliases: [IceCube Neutrino Observatory, IC86, IC79, IC40], collaboration: IceCube, sources: [astrophysical, atmospheric, supernova], technology: [ice-cherenkov], site: South Pole, start: 2011, website: "https://icecube.wisc.edu"}
+- {id: deepcore, name: IceCube DeepCore, aliases: [DeepCore], collaboration: IceCube, sources: [atmospheric], technology: [ice-cherenkov], site: South Pole, start: 2011}
+- {id: icecube-upgrade, name: IceCube Upgrade, collaboration: IceCube, sources: [atmospheric], technology: [ice-cherenkov], site: South Pole}
+- {id: km3net-orca, name: KM3NeT/ORCA, aliases: [ORCA, ORCA6, ORCA115], collaboration: KM3NeT, sources: [atmospheric], technology: [water-cherenkov-open], site: Toulon (France), start: 2017, website: "https://www.km3net.org"}
+- {id: km3net-arca, name: KM3NeT/ARCA, aliases: [ARCA], collaboration: KM3NeT, sources: [astrophysical, atmospheric], technology: [water-cherenkov-open], site: Capo Passero (Italy), website: "https://www.km3net.org"}
+- {id: antares, name: ANTARES, collaboration: ANTARES, sources: [astrophysical, atmospheric], technology: [water-cherenkov-open], site: Toulon (France), start: 2008, end: 2022}
+- {id: baikal-gvd, name: Baikal-GVD, collaboration: Baikal-GVD, sources: [astrophysical, atmospheric], technology: [water-cherenkov-open], site: Lake Baikal (Russia)}
+# --- absolute mass / double beta ---
+- {id: katrin, name: KATRIN, collaboration: KATRIN, sources: [nuclear-decay], technology: [spectrometer], site: KIT (Germany), start: 2018, website: "https://www.katrin.kit.edu"}
+- {id: gerda, name: GERDA, collaboration: GERDA, sources: [nuclear-decay], technology: [germanium], site: LNGS (Italy), start: 2011, end: 2019, successor: legend}
+- {id: legend, name: LEGEND, aliases: [LEGEND-200, LEGEND-1000], collaboration: LEGEND, sources: [nuclear-decay], technology: [germanium], site: LNGS (Italy), predecessor: gerda}
+- {id: cuore, name: CUORE, collaboration: CUORE, sources: [nuclear-decay], technology: [bolometer], site: LNGS (Italy), start: 2017}
+- {id: kamland-zen, name: KamLAND-Zen, collaboration: KamLAND-Zen, sources: [nuclear-decay], technology: [liquid-scintillator], site: Kamioka (Japan), start: 2011}
+- {id: exo-200, name: EXO-200, collaboration: EXO-200, sources: [nuclear-decay], technology: [xenon-tpc], site: WIPP (USA), start: 2011, end: 2018}

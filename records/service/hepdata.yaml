@@ -1,0 +1,28 @@
+id: hepdata
+type: service
+title: HEPData
+short: "HEPData: the open-access repository for numerical data behind HEP publications (tables, covariances, likelihoods)"
+description: |-
+  Durham/CERN-run repository of the data points of published plots and tables, with per-record DOIs, versioning,
+  a REST API and YAML/JSON/CSV/ROOT exports. Neutrino coverage is growing (e.g. MINOS, T2K, MicroBooNE
+  cross sections) but much neutrino data still lives elsewhere.
+url_landing: "https://www.hepdata.net"
+owner: {name: IPPP Durham University, kind: organization}
+license: CC0-1.0
+license_notes: "HEPData records are released under CC0"
+access: open
+distributions:
+  - {url: "https://www.hepdata.net", host: hepdata, role: primary, formats: [yaml, json, csv, root]}
+sources: [none]
+topics: [cross-section, oscillation]
+service:
+  operator: {name: IPPP Durham University, kind: organization}
+  api: "https://www.hepdata.net/search/?format=json"
+  api_kind: rest
+  query_interface: "https://www.hepdata.net/search/"
+newtrinos:
+  verifications: [10.1016_j.physletb.2007.12.027]
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual

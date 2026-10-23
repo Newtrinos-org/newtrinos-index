@@ -1,0 +1,32 @@
+id: dayabay-model-official
+type: software
+title: dayabay-model-official
+short: Official Python model of the Daya Bay nGd oscillation analysis (predictions, χ², fits) for the full data release
+description: |-
+  The Daya Bay collaboration's analysis model for the open nGd data: reads the analysis dataset in any of its
+  formats and provides the predicted IBD spectra per AD, the χ² functions and every intermediate quantity.
+  Built on the dagflow framework; worked examples and fit commands are in the companion repository dayabay-analysis.
+url_landing: "https://github.com/dagflow-team/dayabay-model-official"
+owner: {name: dagflow-team, kind: organization}
+date_published: 2025-09-03
+license: MIT
+access: open
+distributions:
+  - {url: "https://github.com/dagflow-team/dayabay-model-official", host: github, role: primary, formats: [source-code]}
+  - {url: "https://github.com/dagflow-team/dayabay-analysis", host: github, role: documentation, label: "analysis examples (dayabay-analysis)", formats: [source-code]}
+relations:
+  - {rel: uses, target: daya-bay-full-data-release}
+experiments: [daya-bay]
+sources: [reactor]
+topics: [oscillation]
+software:
+  repository: "https://github.com/dagflow-team/dayabay-model-official"
+  languages: [Python]
+  purposes: [fitting, data-access]
+  interfaces: [library, cli]
+  development_status: active
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual
+  quality_notes: ["dayabay-analysis has no licence file (GitHub API, 2026-10-23)"]

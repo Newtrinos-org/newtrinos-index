@@ -1,0 +1,16 @@
+- {id: zenodo, label: Zenodo}
+- {id: github, label: GitHub}
+- {id: gitlab, label: GitLab}
+- {id: hepdata, label: HEPData}
+- {id: cern-opendata, label: CERN Open Data}
+- {id: arxiv, label: arXiv ancillary files}
+- {id: journal-supplement, label: Journal supplement}
+- {id: institutional, label: Institutional / collaboration web page}
+- {id: personal, label: Personal web page}
+- {id: dataverse, label: Dataverse / institutional repository}
+- {id: figshare, label: Figshare}
+- {id: osf, label: OSF}
+- {id: wayback, label: Internet Archive (Wayback Machine)}
+- {id: software-heritage, label: Software Heritage}
+- {id: package-registry, label: Package registry}
+- {id: other, label: Other}

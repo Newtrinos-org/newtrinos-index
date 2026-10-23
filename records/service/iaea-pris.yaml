@@ -1,0 +1,27 @@
+id: iaea-pris
+type: service
+title: IAEA Power Reactor Information System (PRIS)
+short: "IAEA PRIS: every power reactor's location, thermal power, history and load factors — the input for reactor-ν fluxes"
+description: Database of all nuclear power reactors worldwide (status, design, thermal/electric power, operating history, annual load factors), used to compute reactor antineutrino fluxes at detectors such as KamLAND, JUNO or SNO+.
+url_landing: "https://pris.iaea.org"
+owner: {name: International Atomic Energy Agency, kind: organization}
+license: proprietary
+license_notes: "IAEA terms of use; data free to view"
+access: open
+distributions:
+  - {url: "https://pris.iaea.org", host: institutional, role: primary, formats: [html, xlsx]}
+  - {url: "https://pris-stats.iaea.org", host: institutional, role: mirror, label: "PRIS statistics portal / API (current landing target)"}
+sources: [reactor]
+topics: [flux]
+service:
+  operator: {name: International Atomic Energy Agency, kind: organization}
+  api: "https://pris-stats.iaea.org"
+  api_kind: rest
+newtrinos:
+  modules: [reactor_flux, kamland]
+  notes: "unit data from the PRIS API (retrieved 2026-10-09); operating history from archived PRIS reactor pages (web.archive.org)"
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual
+  quality_notes: ["historical per-reactor monthly data are not exposed by the current site; archive copies were needed"]

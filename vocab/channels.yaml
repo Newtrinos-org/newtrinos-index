@@ -1,0 +1,12 @@
+- {id: cc, label: Charged current (CC)}
+- {id: nc, label: Neutral current (NC)}
+- {id: es, label: Elastic scattering on electrons (ES)}
+- {id: ibd, label: Inverse beta decay (IBD)}
+- {id: cevns, label: Coherent elastic ν-nucleus scattering (CEvNS)}
+- {id: ccqe, label: CC quasi-elastic}
+- {id: mec, label: Meson-exchange / 2p2h}
+- {id: res, label: Resonant pion production}
+- {id: dis, label: Deep inelastic scattering}
+- {id: coherent-pion, label: Coherent pion production}
+- {id: radiochemical, label: Radiochemical capture}
+- {id: glashow, label: Glashow resonance}

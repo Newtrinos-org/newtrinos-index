@@ -1,0 +1,29 @@
+id: icecube-deepcore-3y-chi2-maps
+type: result
+title: "Measurement of atmospheric neutrino oscillations with three years of data from the full sky: Δχ² maps"
+short: "Δχ² maps and Feldman–Cousins contour of IceCube DeepCore 3-year νμ disappearance (PRL 120, 071801)"
+description: Official Δχ² tables in (sin²θ23, Δm²32) for both orderings and the Feldman–Cousins contour of the PRL 120, 071801 analysis.
+doi: 10.21234/B4105H
+url_landing: "http://icecube.wisc.edu/science/data/2018nuosc"
+creators: [{name: IceCube Collaboration, kind: collaboration}]
+date_published: 2018
+license: unknown
+access: open
+distributions:
+  - {url: "https://doi.org/10.21234/B4105H", host: institutional, role: primary}
+references:
+  - {doi: 10.1103/PhysRevLett.120.071801, relation: describes}
+relations:
+  - {rel: compares_with, target: icecube-deepcore-3y-highstats}
+experiments: [deepcore]
+sources: [atmospheric]
+topics: [oscillation]
+data:
+  levels: [likelihood, contours]
+  result_of: 10.1103/PhysRevLett.120.071801
+newtrinos:
+  verifications: [10.1103_PhysRevLett.120.071801]
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual

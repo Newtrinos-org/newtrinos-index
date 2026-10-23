@@ -1,0 +1,28 @@
+id: prem
+type: model
+title: Preliminary Reference Earth Model (PREM)
+short: "PREM (Dziewonski & Anderson 1981): radial density profile of the Earth used for matter effects"
+description: Radial profiles of density and seismic velocities of the Earth; the standard input for neutrino matter effects through the Earth.
+doi: 10.1016/0031-9201(81)90046-7
+url_landing: "https://ds.iris.edu/ds/products/emc-prem/"
+creators: [{name: Adam M. Dziewonski}, {name: Don L. Anderson}]
+date_published: 1981
+license: none-stated
+access: open
+distributions:
+  - {url: "https://ds.iris.edu/ds/products/emc-prem/", host: institutional, role: primary, label: "EarthScope (IRIS) Earth Model Collaboration", formats: [txt]}
+cite_as: ["doi:10.1016/0031-9201(81)90046-7"]
+sources: [none]
+topics: [earth-model]
+model:
+  quantities: [density, seismic velocities]
+  validity: "0–6371 km radius; layered polynomial fits"
+  formats: [txt]
+newtrinos:
+  modules: [earth_layers]
+  verifications: ["10.1016_0031-9201(81)90046-7"]
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual
+  quality_notes: ["ds.iris.edu now redirects to data.earthscope.org (2026-10-23)"]

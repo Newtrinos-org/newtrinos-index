@@ -1,0 +1,36 @@
+id: honda-atmospheric-flux-tables
+type: model
+title: HKKM atmospheric neutrino flux tables (Honda et al.)
+short: "Honda (HKKM2014) atmospheric ν fluxes per site, energy, zenith and azimuth, with solar-min/max variants"
+description: |-
+  Tabulated atmospheric neutrino and antineutrino fluxes (νe, νμ) from the HKKM 3D calculation for many detector
+  sites (Kamioka, Sudbury, Gran Sasso, South Pole, Frejus, INO, ...), binned in energy, cos(zenith) and azimuth,
+  for solar minimum and maximum. The 2014 version is described in Phys. Rev. D 92, 023004 (2015).
+url_landing: "https://www.icrr.u-tokyo.ac.jp/~mhonda/"
+creators: [{name: M. Honda}, {name: M. Sajjad Athar}, {name: T. Kajita}, {name: K. Kasahara}, {name: S. Midorikawa}]
+maintainers: [{name: M. Honda}]
+version: HKKM2014
+date_published: 2015
+license: none-stated
+access: open
+distributions:
+  - {url: "https://www.icrr.u-tokyo.ac.jp/~mhonda/", host: personal, role: primary, formats: [txt]}
+cite_as: ["doi:10.1103/PhysRevD.92.023004"]
+references:
+  - {doi: 10.1103/PhysRevD.92.023004, relation: describes}
+sources: [atmospheric]
+topics: [flux]
+flavors: [nue, nuebar, numu, numubar]
+energy_range: {min: 0.1, max: 10000, unit: GeV, quantity: true neutrino energy}
+model:
+  quantities: [atmospheric neutrino flux]
+  has_uncertainties: false
+  formats: [txt]
+newtrinos:
+  modules: [atm_flux]
+  verifications: [10.1103_PhysRevD.92.023004]
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual
+  quality_notes: ["hosted on a personal page without licence or PID: archive copy recommended", "energy range per table varies; 0.1 GeV–10 TeV is the overall span"]

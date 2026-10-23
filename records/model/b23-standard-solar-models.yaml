@@ -1,0 +1,58 @@
+id: b23-standard-solar-models
+type: model
+title: Standard Solar Models B23 / SF-III
+short: "B23 standard solar models (SF-III rates): fluxes, correlations, structure and production profiles, six compositions"
+description: |-
+  The B23 generation of standard solar models computed with the Solar Fusion III nuclear rates, for six solar
+  surface compositions (GS98, AGSS09met, C11, AAG21, MB22-phot, MB22-met). Provides neutrino fluxes with
+  uncertainties and correlation matrices, the solar structure (including electron density) and the radial
+  production distributions of every flux component. MB22-met is the NuFIT 6.0 reference model.
+doi: 10.5281/zenodo.10174170
+identifiers: {zenodo: 10822316}
+url_landing: "https://doi.org/10.5281/zenodo.10174170"
+creators:
+  - {name: Yuri Herrera}
+  - {name: Aldo Serenelli}
+publisher: {name: Zenodo, kind: organization}
+version: v1.2
+versions:
+  - {version: v1.2, doi: 10.5281/zenodo.10822316, notes: "structure files differ from v1.1 by up to 0.5 % in nₑ and 1–6 % in production distributions; fluxes unchanged"}
+date_published: 2023-11-21
+license: CC-BY-4.0
+license_url: "https://creativecommons.org/licenses/by/4.0/legalcode"
+access: open
+distributions:
+  - url: "https://doi.org/10.5281/zenodo.10822316"
+    host: zenodo
+    role: primary
+    formats: [txt, tarball]
+    size_bytes: 2510334
+    n_files: 1
+    notes: SolarModels_ICE2023_v1.2.zip
+cite_as: ["doi:10.5281/zenodo.10174170", "doi:10.1103/8lm7-gs18"]
+references:
+  - {doi: 10.1103/8lm7-gs18, relation: uses, citation: "Solar fusion III, Rev. Mod. Phys. 97, 035002 (2025): B23 fluxes in Table II"}
+sources: [solar]
+topics: [solar-model, flux]
+model:
+  quantities: [neutrino fluxes, flux correlations, electron density, solar structure, production distributions]
+  has_uncertainties: true
+  has_covariance: true
+  formats: [txt]
+newtrinos:
+  modules: [solar_flux]
+  verifications: [10.5281_zenodo.10174170]
+card:
+  summary: "Reference solar-model inputs (fluxes, nₑ profile, production regions) for solar-neutrino analyses."
+  intended_use: "Solar flux priors and MSW matter profiles for oscillation fits; comparing compositions (metallicity problem)."
+  out_of_scope_use: "Neutrino spectral shapes and detector cross sections are not part of the package."
+  provenance: "Herrera & Serenelli, computed with GARSTEC and SF-III rates; no journal publication of the package itself."
+  validation: "Newtrinos reproduces package fluxes exactly, correlations to 1e-16, nₑ to 5e-7, production regions to 1e-4; SF-III Table II fluxes within rounding (verification entry 10.5281_zenodo.10174170)."
+  known_limitations: "No journal paper for B23 itself; v1.1 and v1.2 structure files differ."
+  maintenance: "Versioned on Zenodo (concept DOI 10.5281/zenodo.10174170)."
+  dphep_level: 2
+  fair: {findable: true, accessible: true, interoperable: true, reusable: true}
+curation:
+  status: verified
+  added: 2026-10-23
+  source: manual

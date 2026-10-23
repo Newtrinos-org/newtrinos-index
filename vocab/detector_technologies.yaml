@@ -1,0 +1,19 @@
+- {id: water-cherenkov, label: Water Cherenkov}
+- {id: heavy-water, label: Heavy-water Cherenkov}
+- {id: ice-cherenkov, label: Ice Cherenkov}
+- {id: water-cherenkov-open, label: Open-water Cherenkov (sea/lake)}
+- {id: liquid-scintillator, label: Liquid scintillator}
+- {id: water-based-scintillator, label: Water-based liquid scintillator}
+- {id: lartpc, label: Liquid-argon TPC}
+- {id: gas-tpc, label: Gas TPC}
+- {id: segmented-scintillator, label: Segmented / plastic scintillator}
+- {id: iron-calorimeter, label: Magnetised iron / tracking calorimeter}
+- {id: emulsion, label: Nuclear emulsion}
+- {id: radiochemical, label: Radiochemical}
+- {id: crystal, label: Scintillating crystal (CsI, NaI)}
+- {id: germanium, label: Germanium detector}
+- {id: bolometer, label: Cryogenic bolometer}
+- {id: xenon-tpc, label: Xenon TPC}
+- {id: spectrometer, label: Electrostatic / MAC-E spectrometer}
+- {id: radio, label: Radio detection}
+- {id: other, label: Other}

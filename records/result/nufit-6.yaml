@@ -1,0 +1,48 @@
+id: nufit-6
+type: result
+title: NuFIT 6.0 global three-neutrino oscillation fit
+short: "NuFIT 6.0 (2024): best fits, ranges, Δχ² tables and figures of the global three-flavour fit"
+description: |-
+  Results of the NuFIT 6.0 global analysis of oscillation data (Esteban, Gonzalez-Garcia, Maltoni, Schwetz, Zhou):
+  one- and two-dimensional Δχ² projections for both orderings and for variants with and without the Super-K
+  atmospheric χ² table (IC19 / IC24), as downloadable tables and figures on nu-fit.org.
+url_landing: "http://www.nu-fit.org"
+creators:
+  - {name: Ivan Esteban}
+  - {name: M. C. Gonzalez-Garcia}
+  - {name: Michele Maltoni}
+  - {name: Thomas Schwetz}
+  - {name: Albert Zhou}
+version: "6.0"
+date_published: 2024
+license: none-stated
+access: open
+distributions:
+  - {url: "http://www.nu-fit.org", host: institutional, role: primary, formats: [txt, pdf, image], notes: "tables v60.release-TB{off,yes}-{NO,IO}.txt.xz"}
+  - {url: "https://web.archive.org/web/2025/http://www.nu-fit.org/", host: wayback, role: archive, notes: "used when nu-fit.org was unreachable (Oct 2026)"}
+cite_as: ["doi:10.1007/JHEP12(2024)216"]
+references:
+  - {doi: 10.1007/JHEP12(2024)216, arxiv: "2410.05380", relation: describes}
+sources: [solar, atmospheric, reactor, accelerator]
+topics: [oscillation, global-fit, mass-ordering, cp-violation, theta23-octant]
+data:
+  levels: [likelihood, summary, contours]
+  formats: [txt, pdf, image]
+  result_of: 10.1007/JHEP12(2024)216
+newtrinos:
+  verifications: [10.1007_JHEP12(2024)216]
+card:
+  summary: "The reference global three-flavour fit; Δχ² tables let users add NuFIT as a likelihood or compare with their own fits."
+  intended_use: "Priors / constraints on oscillation parameters; benchmark for global fits."
+  out_of_scope_use: "Combination with experiments already inside NuFIT (double counting); the tables are profiled projections, not a full likelihood."
+  provenance: "Computed by the NuFIT group from published experimental data and collaboration-provided χ² maps (e.g. Super-K atmospheric)."
+  validation: "Newtrinos global fit compared in verification entry 10.1007_JHEP12(2024)216 (ordering preference, s23, Δm²31, solar Δm²21 tension)."
+  known_limitations: "Website-only distribution without DOI or licence; the site has had outages and archive copies are needed."
+  maintenance: "Updated irregularly with new NuFIT versions; older versions remain on the site."
+  dphep_level: 1
+  fair: {findable: false, accessible: true, interoperable: true, reusable: false, notes: "no PID, no licence"}
+curation:
+  status: verified
+  added: 2026-10-23
+  source: manual
+  quality_notes: ["Wayback URL is a generic snapshot link; replace by the exact snapshot used"]

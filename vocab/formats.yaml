@@ -1,0 +1,20 @@
+- {id: csv, label: CSV / TSV}
+- {id: txt, label: Plain-text table}
+- {id: json, label: JSON}
+- {id: yaml, label: YAML}
+- {id: toml, label: TOML}
+- {id: hdf5, label: HDF5}
+- {id: root, label: ROOT}
+- {id: fits, label: FITS}
+- {id: npy, label: NumPy (npy/npz)}
+- {id: parquet, label: Parquet}
+- {id: pickle, label: Python pickle}
+- {id: jld2, label: JLD2}
+- {id: xml, label: XML}
+- {id: pdf, label: PDF (tables in document)}
+- {id: image, label: Image (PNG/SVG/EPS figure)}
+- {id: html, label: HTML / web table}
+- {id: xlsx, label: Spreadsheet}
+- {id: source-code, label: Source code}
+- {id: binary, label: Binary / bespoke}
+- {id: tarball, label: Archive (tar/zip) of mixed content}

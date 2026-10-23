@@ -1,0 +1,14 @@
+- {id: oscillation-probability, label: Oscillation probabilities}
+- {id: event-generator, label: Event generator}
+- {id: flux-calculation, label: Flux calculation}
+- {id: detector-simulation, label: Detector simulation}
+- {id: reconstruction, label: Reconstruction}
+- {id: fitting, label: Fitting / inference framework}
+- {id: global-fit, label: Global-fit framework}
+- {id: sensitivity, label: Sensitivity / experiment simulation}
+- {id: nuclear-model, label: Nuclear model / cross-section calculation}
+- {id: astrophysics, label: Astrophysical modelling (Sun, supernova, sources)}
+- {id: earth-model, label: Earth model / propagation}
+- {id: data-access, label: Data access / reader}
+- {id: plotting, label: Plotting / visualisation}
+- {id: tooling, label: General tooling}

@@ -1,0 +1,41 @@
+id: globes
+type: software
+title: GLoBES — General Long Baseline Experiment Simulator
+short: "GLoBES: C library + AEDL language for simulating long-baseline and reactor experiments and their sensitivities"
+description: |-
+  Simulates neutrino oscillation experiments described in the Abstract Experiment Definition Language (AEDL):
+  rates, χ² with systematics, correlations and degeneracies. Widely used for sensitivity studies; many experiment
+  definitions (AEDL files) are distributed with it or by third parties.
+url_landing: "https://www.mpi-hd.mpg.de/personalhomes/globes/"
+creators: [{name: Patrick Huber}, {name: Manfred Lindner}, {name: Walter Winter}, {name: Joachim Kopp}, {name: Mark Rolinec}]
+version: "3.0"
+license: unknown
+access: open
+distributions:
+  - {url: "https://www.mpi-hd.mpg.de/personalhomes/globes/", host: institutional, role: primary, formats: [source-code]}
+cite_as: ["doi:10.1016/j.cpc.2005.01.003", "doi:10.1016/j.cpc.2007.05.004"]
+references:
+  - {doi: 10.1016/j.cpc.2005.01.003, relation: describes, citation: "Huber, Lindner, Winter, Comput. Phys. Commun. 167, 195 (2005)"}
+  - {doi: 10.1016/j.cpc.2007.05.004, relation: describes, citation: "Huber, Kopp, Lindner, Rolinec, Winter, Comput. Phys. Commun. 177, 432 (2007) — GLoBES 3"}
+sources: [accelerator, reactor]
+topics: [oscillation, sterile, nsi]
+software:
+  repository: "https://www.mpi-hd.mpg.de/personalhomes/globes/"
+  languages: [C]
+  purposes: [sensitivity, oscillation-probability]
+  interfaces: [library, config-files]
+  dependencies: [GSL]
+  development_status: maintained
+card:
+  summary: "The standard tool for long-baseline and reactor sensitivity studies."
+  intended_use: "Sensitivity and physics-reach studies with parametrised detectors (AEDL); new-physics engines via user-defined probabilities."
+  out_of_scope_use: "Fits to real data with full experimental systematics; atmospheric neutrinos (no zenith integration)."
+  physics_assumptions: "Detector response by migration matrices or Gaussian smearing; systematics as normalisation/tilt pulls; constant-density layers for matter."
+  validation: "Not yet compared with Newtrinos."
+  known_limitations: "Licence not stated on the landing page (to be checked in the tarball); AEDL files of different authors vary in quality and provenance."
+  maintenance: "Version 3.0 is the latest stable release; development pace low."
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual
+  quality_notes: ["licence: GLoBES is believed to be GPL; landing page does not state it — check the tarball before setting"]

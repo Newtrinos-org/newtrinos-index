@@ -1,0 +1,42 @@
+id: icecube-deepcore-3y-highstats
+type: dataset
+title: IceCube 3 year high statistics neutrino oscillation samples
+short: "IceCube DeepCore 2012–2015 oscillation samples A and B: binned MC, data and systematics prescriptions"
+description: |-
+  Public binned Monte Carlo and data of two three-year DeepCore event selections ("sample A" and "sample B"),
+  close variants of the samples of the PRL 120, 071801 νμ-disappearance and PRD 99, 032007 ντ-appearance analyses,
+  with instructions for detector systematics (ice absorption / scattering hyperplanes).
+doi: 10.21234/ac23-ra43
+url_landing: "https://icecube.wisc.edu/data-releases/2019/05/three-year-high-statistics-neutrino-oscillation-samples/"
+creators: [{name: IceCube Collaboration, kind: collaboration}]
+publisher: {name: IceCube Collaboration, kind: collaboration}
+date_published: 2019
+license: unknown
+access: open
+distributions:
+  - {url: "https://icecube.wisc.edu/data-releases/2019/05/three-year-high-statistics-neutrino-oscillation-samples/", host: institutional, role: primary}
+references:
+  - {doi: 10.1103/PhysRevLett.120.071801, relation: describes}
+  - {doi: 10.1103/PhysRevD.99.032007, relation: describes}
+relations:
+  - {rel: compares_with, target: icecube-deepcore-3y-chi2-maps}
+experiments: [deepcore]
+sources: [atmospheric]
+topics: [oscillation, mass-ordering]
+channels: [cc, nc]
+flavors: [all]
+detector_technologies: [ice-cherenkov]
+energy_range: {min: 6, max: 56, unit: GeV, quantity: reconstructed energy}
+period: {start: 2012, end: 2015}
+data:
+  levels: [binned, mc, systematics]
+  has_mc: true
+  has_systematics_model: true
+newtrinos:
+  modules: [deepcore_3y]
+  verifications: [10.1103_PhysRevLett.120.071801, 10.1103_PhysRevD.99.032007]
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual
+  quality_notes: ["DataCite record carries no licence; check the release page", "public sample is a close variant, not the exact sample, of the papers"]

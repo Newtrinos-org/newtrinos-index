@@ -1,0 +1,21 @@
+# Allowed `license` values: SPDX identifiers seen so far (extend as needed) plus three non-SPDX states.
+- {id: none-stated, label: No licence stated, description: "Publicly downloadable but no licence given: reuse terms unclear."}
+- {id: unknown, label: Unknown, description: "Not yet checked."}
+- {id: proprietary, label: Proprietary / custom terms}
+- {id: CC0-1.0, label: CC0 1.0}
+- {id: CC-BY-4.0, label: CC BY 4.0}
+- {id: CC-BY-3.0, label: CC BY 3.0}
+- {id: CC-BY-SA-4.0, label: CC BY-SA 4.0}
+- {id: CC-BY-NC-4.0, label: CC BY-NC 4.0}
+- {id: ODbL-1.0, label: ODbL 1.0}
+- {id: MIT, label: MIT}
+- {id: BSD-2-Clause, label: BSD 2-Clause}
+- {id: BSD-3-Clause, label: BSD 3-Clause}
+- {id: Apache-2.0, label: Apache 2.0}
+- {id: GPL-2.0-only, label: GPL 2.0 only}
+- {id: GPL-2.0-or-later, label: GPL 2.0 or later}
+- {id: GPL-3.0-only, label: GPL 3.0 only}
+- {id: GPL-3.0-or-later, label: GPL 3.0 or later}
+- {id: LGPL-2.1-or-later, label: LGPL 2.1 or later}
+- {id: LGPL-3.0-or-later, label: LGPL 3.0 or later}
+- {id: MPL-2.0, label: MPL 2.0}

@@ -1,0 +1,14 @@
+# What processing stage a dataset/result represents (loosely DPHEP-inspired; one record may have several).
+- {id: raw, label: Raw data, description: "Detector-level data before calibration."}
+- {id: events, label: Event list, description: "Reconstructed, selected events (unbinned)."}
+- {id: binned, label: Binned observed data, description: "Histograms / spectra of observed counts or rates."}
+- {id: prediction, label: Binned predictions, description: "Expected spectra / templates, e.g. per component or per oscillation hypothesis."}
+- {id: response, label: Detector response, description: "Efficiencies, smearing / response matrices, energy scale models."}
+- {id: mc, label: Monte Carlo, description: "Simulated events with truth information."}
+- {id: systematics, label: Systematics model, description: "Covariance matrices, nuisance parameterisations, uncertainty tables."}
+- {id: likelihood, label: Likelihood / χ² map, description: "Likelihood or Δχ² tables over physics parameters."}
+- {id: posterior, label: Posterior samples, description: "MCMC chains or posterior samples."}
+- {id: contours, label: Contours / limits, description: "Confidence regions, exclusion curves, intervals."}
+- {id: summary, label: Summary values, description: "Tables of measured quantities (rates, cross sections, best fits)."}
+- {id: digitized, label: Digitised from figures, description: "Values read off published figures (by anyone; record who in provenance)."}
+- {id: tables, label: Model tables, description: "Tabulated theory/model output (fluxes, densities, cross sections)."}

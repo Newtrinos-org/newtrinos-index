@@ -1,0 +1,32 @@
+id: bahcall-sndata
+type: collection
+title: John Bahcall's solar neutrino data and software pages (SNdata)
+short: "Bahcall's IAS pages: solar ν spectra (pp, hep, ⁸B, CNO), absorption cross sections, solar models, exposure functions"
+description: |-
+  The classic collection of solar-neutrino inputs maintained by John Bahcall at the Institute for Advanced Study:
+  energy spectra of all solar neutrino sources, Cl and Ga absorption cross sections, the BP2000/BP04/BS05 solar
+  models (with electron-density tables), survival probabilities and zenith-angle exposure functions. Still the
+  reference source for many tables, but frozen since 2005 and on an at-risk personal web space.
+url_landing: "https://www.sns.ias.edu/~jnb/"
+creators: [{name: John N. Bahcall}]
+license: none-stated
+access: open
+distributions:
+  - {url: "https://www.sns.ias.edu/~jnb/SNdata/", host: personal, role: primary, formats: [txt, html]}
+references:
+  - {doi: 10.1103/PhysRevC.56.2839, relation: describes, citation: "Bahcall, PRC 56, 2839 (1997) — exposure functions"}
+  - {doi: 10.1103/PhysRevLett.92.121301, relation: describes, citation: "Bahcall & Pinsonneault, PRL 92, 121301 (2004) — BP04"}
+sources: [solar]
+topics: [solar-model, flux, cross-section]
+newtrinos:
+  modules: [solar_flux, solar_xsec]
+  verifications: [10.1103_PhysRevLett.92.121301, 10.1103_PhysRevC.56.2839, 10.1103_PhysRevD.62.093004]
+card:
+  summary: "Historic but still-used solar neutrino reference tables."
+  known_limitations: "Frozen since 2005; nuclear inputs superseded by SF-III / B23; site returns 403 to some clients (2026-10-23) — archive copies needed."
+  maintenance: "Unmaintained (author deceased 2005); hosted by IAS."
+  dphep_level: 1
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual

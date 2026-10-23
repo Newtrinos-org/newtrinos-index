@@ -1,0 +1,39 @@
+id: borexino-open-data
+type: collection
+title: Borexino open data (figure data, spectra, MC spectral shapes)
+short: "Borexino website data: Phase II/III spectra, fit components, likelihood profiles and MC PDFs of signals and backgrounds"
+description: |-
+  Data files published by the Borexino collaboration on its web site alongside papers: the TFC-subtracted Phase-III
+  spectrum with the best fit (PRL 129, 252701), Nature 2018 Phase-II figures (spectra, P_ee, correlations),
+  CNO likelihood profiles and Monte Carlo spectral shapes of signals and backgrounds (open data of arXiv:2005.12829).
+url_landing: "https://borex.lngs.infn.it/"
+creators: [{name: Borexino Collaboration, kind: collaboration}]
+license: none-stated
+access: open
+distributions:
+  - {url: "https://borex.lngs.infn.it/", host: institutional, role: primary, formats: [txt]}
+references:
+  - {doi: 10.1103/PhysRevLett.129.252701, relation: describes}
+  - {doi: 10.1038/s41586-018-0624-y, relation: describes}
+  - {arxiv: "2005.12829", relation: describes}
+experiments: [borexino]
+sources: [solar]
+topics: [oscillation, solar-model, flux]
+channels: [es]
+detector_technologies: [liquid-scintillator]
+newtrinos:
+  modules: [borexino_ph3, borexino_ph2_spectrum, borexino_ph1_spectrum]
+  verifications: [10.1103_PhysRevLett.129.252701, 10.1038_s41586-018-0624-y, 10.1103_PhysRevD.100.082004]
+card:
+  summary: "The public pieces of Borexino's spectral analyses."
+  intended_use: "Spectral fits of solar ν rates (pp, ⁷Be, pep, CNO) with Borexino's MC shapes."
+  out_of_scope_use: "Full reproduction of the multivariate fits: the TFC-tagged spectrum and radial distributions are not public."
+  provenance: "Collaboration web site, files attached to paper pages; no DOIs."
+  validation: "Newtrinos borexino_ph3 reproduces the CNO profile with background priors (verification entries)."
+  known_limitations: "No DOI or licence; web site unreachable at times (2026-10-23) — archive copies needed; the collaboration has concluded."
+  dphep_level: 2
+  fair: {findable: false, accessible: true, interoperable: true, reusable: false, notes: "no PID, no licence"}
+curation:
+  status: curated
+  added: 2026-10-23
+  source: manual

@@ -1,0 +1,23 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.12'
+      - uses: julia-actions/cache@v2
+      - run: julia --project -e 'using Pkg; Pkg.instantiate()'
+      - name: Schema is generated from vocab/
+        run: julia --project tools/gen_schema.jl --check
+      - name: Validator tests and catalogue checks
+        run: julia --project test/runtests.jl
+      - name: Site builds
+        run: julia --project site/build.jl --out=public

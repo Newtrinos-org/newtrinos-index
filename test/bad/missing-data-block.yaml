@@ -1,0 +1,10 @@
+# expect: required Any["data"]
+id: bad-missing-data-block
+type: dataset
+title: x
+short: x
+description: x
+license: MIT
+access: open
+distributions: [{url: "https://x.org", host: github, role: primary}]
+curation: {status: curated, added: 2026-01-01}

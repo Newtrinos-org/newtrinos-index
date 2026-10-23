@@ -1,0 +1,281 @@
+# Newtrinos Index record schema (source).
+# tools/gen_schema.jl turns this into schema/record.schema.json, replacing every `{$vocab: <file>}` by an enum of the
+# ids in vocab/<file>.yaml. Edit this file and the vocabularies, never the generated JSON.
+# Field names follow DataCite / schema.org / CodeMeta where an equivalent exists (see the `x-maps-to` hints).
+$schema: "http://json-schema.org/draft-07/schema#"
+$id: "https://newtrinos-org.github.io/newtrinos-index/schema/record.schema.json"
+title: Newtrinos Index record
+x-schema-version: "0.1.0"
+type: object
+additionalProperties: false
+required: [id, type, title, short, description, license, access, distributions, curation]
+
+definitions:
+  slug: {type: string, pattern: "^[a-z0-9][a-z0-9-]*[a-z0-9]$"}
+  date:
+    description: "YYYY, YYYY-MM or YYYY-MM-DD (a bare year may be written as a number)"
+    anyOf:
+      - {type: string, pattern: "^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$"}
+      - {type: integer, minimum: 1900, maximum: 2100}
+  url: {type: string, pattern: "^https?://"}
+  doi: {type: string, pattern: "^10\\.[0-9]{4,9}/\\S+$", description: "bare DOI, no https://doi.org/ prefix"}
+  orcid: {type: string, pattern: "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$"}
+  agent:
+    description: "A person or an organisation / collaboration"
+    type: object
+    additionalProperties: false
+    required: [name]
+    properties:
+      name: {type: string}
+      kind: {enum: [person, organization, collaboration]}
+      orcid: {$ref: "#/definitions/orcid"}
+      ror: {type: string, description: "ROR id of an organisation"}
+      affiliation: {type: string}
+      contact: {type: string, description: "e-mail address, URL or issue tracker"}
+  agents: {type: array, items: {$ref: "#/definitions/agent"}}
+  text_list: {type: array, items: {type: string}}
+  formats: {type: array, items: {$vocab: formats}, uniqueItems: true}
+  reference:
+    type: object
+    additionalProperties: false
+    properties:
+      doi: {$ref: "#/definitions/doi"}
+      arxiv: {type: string}
+      url: {$ref: "#/definitions/url"}
+      citation: {type: string}
+      relation: {enum: [describes, is-cited-by, uses, supplements, validates, documents], default: describes}
+    anyOf: [{required: [doi]}, {required: [arxiv]}, {required: [url]}, {required: [citation]}]
+  distribution:
+    x-maps-to: "schema.org DataDownload / DCAT Distribution"
+    type: object
+    additionalProperties: false
+    required: [url, host, role]
+    properties:
+      url: {$ref: "#/definitions/url"}
+      host: {$vocab: hosts}
+      role: {enum: [primary, mirror, archive, supplement, documentation]}
+      label: {type: string}
+      formats: {$ref: "#/definitions/formats"}
+      size_bytes: {type: integer, minimum: 0}
+      n_files: {type: integer, minimum: 0}
+      checksum: {type: string, pattern: "^(sha256|sha1|md5):[0-9a-f]+$"}
+      archived: {$ref: "#/definitions/date", description: "date this copy was made (archives and mirrors)"}
+      notes: {type: string}
+  card_text:
+    description: "Markdown text"
+    type: string
+
+properties:
+  # ---------------------------------------------------------------- identity
+  id: {$ref: "#/definitions/slug", description: "unique slug, equal to the file name"}
+  type: {enum: [dataset, result, model, software, service, collection]}
+  title: {type: string, x-maps-to: "DataCite titles / schema:name"}
+  short: {type: string, maxLength: 120, description: "one-line summary for listings"}
+  description: {type: string, description: "Markdown", x-maps-to: "schema:description"}
+  aliases: {$ref: "#/definitions/text_list"}
+  keywords: {$ref: "#/definitions/text_list"}
+
+  # ---------------------------------------------------------------- identifiers
+  doi: {$ref: "#/definitions/doi", description: "DOI of the resource itself (not of the paper)"}
+  identifiers:
+    type: object
+    additionalProperties: false
+    properties:
+      arxiv: {type: string}
+      inspire: {type: integer, description: "INSPIRE literature record id"}
+      zenodo: {type: integer, description: "Zenodo record id"}
+      hepdata: {type: string, description: "HEPData record, e.g. ins1234567"}
+      swhid: {type: string, pattern: "^swh:1:(cnt|dir|rev|rel|snp):[0-9a-f]{40}"}
+      ascl: {type: string}
+      rrid: {type: string}
+  url_landing: {$ref: "#/definitions/url", description: "main human-facing page"}
+
+  # ---------------------------------------------------------------- people
+  creators: {$ref: "#/definitions/agents", x-maps-to: "DataCite creators / schema:creator"}
+  owner: {$ref: "#/definitions/agent", description: "who holds the rights / is responsible"}
+  publisher: {$ref: "#/definitions/agent", x-maps-to: "DataCite publisher"}
+  maintainers: {$ref: "#/definitions/agents", x-maps-to: "codemeta:maintainer"}
+  funding: {$ref: "#/definitions/text_list"}
+
+  # ---------------------------------------------------------------- versions & dates
+  version: {type: string}
+  date_published: {$ref: "#/definitions/date", x-maps-to: "DataCite publicationYear / schema:datePublished"}
+  date_updated: {$ref: "#/definitions/date", description: "last upstream change we know of", x-maps-to: "schema:dateModified"}
+  versions:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [version]
+      properties:
+        version: {type: string}
+        date: {$ref: "#/definitions/date"}
+        doi: {$ref: "#/definitions/doi"}
+        url: {$ref: "#/definitions/url"}
+        notes: {type: string}
+
+  # ---------------------------------------------------------------- rights & access
+  license: {$vocab: licenses, x-maps-to: "DataCite rights (SPDX)"}
+  license_url: {$ref: "#/definitions/url"}
+  license_notes: {type: string}
+  access: {enum: [open, registration, on-request, collaboration-only, defunct]}
+
+  # ---------------------------------------------------------------- where to get it
+  distributions: {type: array, minItems: 1, items: {$ref: "#/definitions/distribution"}}
+  cite_as: {$ref: "#/definitions/text_list", description: "what the owners ask users to cite (DOIs or citation strings)"}
+  references: {type: array, items: {$ref: "#/definitions/reference"}}
+  relations:
+    x-maps-to: "DataCite relatedIdentifiers"
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required: [rel, target]
+      properties:
+        rel: {enum: [is_part_of, has_part, is_version_of, supersedes, superseded_by, derived_from, source_of, uses, used_by, mirror_of, documents, reproduces, compares_with]}
+        target: {type: string, description: "record id, or doi:10.xxx/..., or a URL"}
+        notes: {type: string}
+
+  # ---------------------------------------------------------------- neutrino physics classification
+  experiments: {type: array, items: {$vocab: experiments}, uniqueItems: true}
+  collaborations: {$ref: "#/definitions/text_list"}
+  sources: {type: array, items: {$vocab: sources}, uniqueItems: true}
+  topics: {type: array, items: {$vocab: topics}, uniqueItems: true}
+  channels: {type: array, items: {$vocab: channels}, uniqueItems: true}
+  flavors: {type: array, items: {enum: [nue, numu, nutau, nuebar, numubar, nutaubar, all]}, uniqueItems: true}
+  detector_technologies: {type: array, items: {$vocab: detector_technologies}, uniqueItems: true}
+  energy_range:
+    type: object
+    additionalProperties: false
+    required: [min, max, unit]
+    properties:
+      min: {type: number}
+      max: {type: number}
+      unit: {enum: [eV, keV, MeV, GeV, TeV, PeV, EeV]}
+      quantity: {type: string, description: "e.g. true neutrino energy, visible energy, reconstructed energy"}
+  period:
+    type: object
+    additionalProperties: false
+    properties:
+      start: {$ref: "#/definitions/date"}
+      end: {$ref: "#/definitions/date"}
+  exposure: {type: string, description: "free text, e.g. '1431.6 d × 71.3 t' or '6.6e20 POT'"}
+
+  # ---------------------------------------------------------------- type-specific blocks
+  data:
+    description: "dataset and result records"
+    type: object
+    additionalProperties: false
+    properties:
+      levels: {type: array, minItems: 1, items: {$vocab: data_levels}, uniqueItems: true}
+      observables: {$ref: "#/definitions/text_list"}
+      binning: {type: string}
+      n_events: {type: integer, minimum: 0}
+      has_covariance: {type: boolean}
+      has_systematics_model: {type: boolean}
+      has_mc: {type: boolean}
+      usage_code: {$ref: "#/definitions/url", description: "official example / reader code"}
+      result_of: {$ref: "#/definitions/doi", description: "DOI of the paper whose result this is"}
+      formats: {$ref: "#/definitions/formats"}
+      size_bytes: {type: integer, minimum: 0}
+  model:
+    type: object
+    additionalProperties: false
+    properties:
+      quantities: {$ref: "#/definitions/text_list", description: "e.g. flux, cross section, electron density, solar structure"}
+      targets: {$ref: "#/definitions/text_list", description: "nuclei / materials"}
+      has_uncertainties: {type: boolean}
+      has_covariance: {type: boolean}
+      validity: {type: string}
+      formats: {$ref: "#/definitions/formats"}
+  software:
+    type: object
+    additionalProperties: false
+    properties:
+      repository: {$ref: "#/definitions/url", x-maps-to: "codemeta:codeRepository"}
+      languages: {$ref: "#/definitions/text_list", x-maps-to: "codemeta:programmingLanguage"}
+      purposes: {type: array, minItems: 1, items: {$vocab: software_purposes}, uniqueItems: true}
+      package_ids:
+        type: object
+        additionalProperties: false
+        properties:
+          julia: {type: string}
+          pypi: {type: string}
+          conda: {type: string}
+          cran: {type: string}
+          spack: {type: string}
+          ups: {type: string}
+          docker: {type: string}
+      documentation: {$ref: "#/definitions/url"}
+      interfaces: {type: array, items: {enum: [library, cli, gui, web, python-bindings, config-files]}}
+      platforms: {$ref: "#/definitions/text_list"}
+      dependencies: {$ref: "#/definitions/text_list", description: "notable dependencies (ROOT, GSL, ...)"}
+      development_status: {enum: [active, maintained, dormant, archived, unknown], description: "curator view; harvested commit dates go to status/"}
+  service:
+    type: object
+    additionalProperties: false
+    properties:
+      operator: {$ref: "#/definitions/agent"}
+      api: {$ref: "#/definitions/url"}
+      api_kind: {enum: [rest, graphql, oai-pmh, sparql, files, none]}
+      query_interface: {$ref: "#/definitions/url"}
+
+  # ---------------------------------------------------------------- Newtrinos cross-links
+  newtrinos:
+    type: object
+    additionalProperties: false
+    properties:
+      modules: {$ref: "#/definitions/text_list", description: "Newtrinos.jl modules using this resource"}
+      verifications: {$ref: "#/definitions/text_list", description: "newtrinos-verifications entry slugs"}
+      notes: {type: string}
+
+  # ---------------------------------------------------------------- data card (Data Cards Playbook / Datasheets / Model Cards)
+  card:
+    type: object
+    additionalProperties: false
+    properties:
+      summary: {$ref: "#/definitions/card_text"}
+      intended_use: {$ref: "#/definitions/card_text"}
+      out_of_scope_use: {$ref: "#/definitions/card_text"}
+      provenance: {$ref: "#/definitions/card_text"}
+      composition: {$ref: "#/definitions/card_text"}
+      systematics: {$ref: "#/definitions/card_text"}
+      physics_assumptions: {$ref: "#/definitions/card_text", description: "mainly software and models"}
+      validation: {$ref: "#/definitions/card_text"}
+      known_limitations: {$ref: "#/definitions/card_text"}
+      maintenance: {$ref: "#/definitions/card_text"}
+      usage_examples: {$ref: "#/definitions/card_text"}
+      dphep_level: {enum: [1, 2, 3, 4], description: "DPHEP preservation level: 1 publication-level, 2 simplified data, 3 analysis-level, 4 full reconstruction/simulation"}
+      fair:
+        type: object
+        additionalProperties: false
+        properties:
+          findable: {type: boolean}
+          accessible: {type: boolean}
+          interoperable: {type: boolean}
+          reusable: {type: boolean}
+          notes: {type: string}
+
+  # ---------------------------------------------------------------- curation
+  curation:
+    type: object
+    additionalProperties: false
+    required: [status, added]
+    properties:
+      status: {enum: [candidate, curated, verified]}
+      added: {$ref: "#/definitions/date"}
+      added_by: {type: string}
+      last_reviewed: {$ref: "#/definitions/date"}
+      reviewed_by: {type: string}
+      source: {type: string, description: "how the record was found (manual, harvest:zenodo, ...)"}
+      quality_notes: {$ref: "#/definitions/text_list"}
+
+allOf:
+  - if: {properties: {type: {enum: [dataset, result]}}}
+    then: {required: [data]}
+  - if: {properties: {type: {const: software}}}
+    then: {required: [software]}
+  - if: {properties: {type: {const: model}}}
+    then: {required: [model]}
+  - if: {properties: {curation: {properties: {status: {const: verified}}}}}
+    then: {required: [card], properties: {card: {required: [summary, intended_use, provenance, validation, known_limitations]}}}
