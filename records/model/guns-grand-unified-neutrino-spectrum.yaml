@@ -1,0 +1,36 @@
+id: guns-grand-unified-neutrino-spectrum
+type: model
+title: 'Grand Unified Neutrino Spectrum (GUNS) at Earth: tabulated fluxes of all natural neutrino sources'
+short: 'Grand Unified Neutrino Spectrum (GUNS) at Earth: tabulated fluxes of all sources'
+description: 'arXiv ancillary tables: CNB, BBN (neutron, tritium), solar thermal, solar nuclear (pp, hep, B8, N13, O15) and lines, geoneutrinos, reactor, DSNB (with bands), atmospheric, IceCube, cosmogenic .dat files plus Mathematica notebook Produce-your-GUNS.nb.'
+url_landing: https://arxiv.org/abs/1910.11878
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/1910.11878
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '1910.11878'
+  relation: describes
+sources:
+- solar
+- geo
+- reactor
+- atmospheric
+- supernova
+- cosmogenic
+- relic
+topics:
+- flux
+model:
+  quantities:
+  - neutrino fluxes
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv abstract page 2026-10-23 lists the anc/tables files'
+  - Broad model input covering solar/geo/SN/atm/HE in one place.

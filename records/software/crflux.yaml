@@ -1,0 +1,36 @@
+id: crflux
+type: software
+title: 'crflux: cosmic-ray primary flux parameterisations (H3a, GST, GSF, ...)'
+short: 'crflux: cosmic-ray primary flux parameterisations (H3a, GST, GSF, …) for MCEq'
+description: Python package with cosmic-ray flux parameterisations at Earth used as primary inputs for atmospheric neutrino calculations (MCEq).
+url_landing: https://github.com/mceq-project/crflux
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/mceq-project/crflux
+  host: github
+  role: primary
+- url: https://mceq-project.github.io/crflux
+  host: institutional
+  role: mirror
+- url: https://pypi.org/project/crflux/
+  host: package-registry
+  role: mirror
+sources:
+- atmospheric
+topics:
+- flux
+software:
+  repository: https://github.com/mceq-project/crflux
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: PyPI JSON for crflux 2.1.0 queried 2026-10-23'
+  - Atmospheric flux model input; MCEq itself catalogued.

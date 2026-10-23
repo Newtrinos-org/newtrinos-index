@@ -1,0 +1,29 @@
+id: garching-walk-2020-black-hole
+type: model
+title: 'Garching archive: Walk et al. 2020 neutrino emission from black-hole-forming 3D collapse'
+short: 'Garching archive: Walk et al. 2020 neutrino emission from black-hole-forming collapse'
+description: Angle-dependent luminosities, mean and mean-square energies of nu_e, anti-nu_e, nu_x for 40 and 75 Msun BH-forming 3D models on a (theta,phi) observer grid, extracted at 500 km.
+url_landing: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/data/Walk2019/index.html
+license: proprietary
+license_notes: non-commercial; cite
+access: open
+distributions:
+- url: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/data/Walk2019/index.html
+  host: institutional
+  role: primary
+references:
+- arxiv: '1910.12971'
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/archive.html and the entry page (HTTP 200, open, 2026-10-23)'

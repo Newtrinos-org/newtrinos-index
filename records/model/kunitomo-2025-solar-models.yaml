@@ -1,0 +1,27 @@
+id: kunitomo-2025-solar-models
+type: model
+title: Solar models with protosolar accretion and turbulent mixing (Kunitomo, Buldgen & Guillot 2025)
+short: Solar models with protosolar accretion and turbulent mixing (Kunitomo et al.)
+description: 'MESA r12115 solar evolution models: KBG25.csv summary of optimised inputs/results (incl. neutrino fluxes per paper), history and solar-age profile data files, movies, example MESA work directory.'
+doi: 10.5281/zenodo.16789192
+url_landing: https://zenodo.org/records/16789192
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://zenodo.org/records/16789192
+  host: zenodo
+  role: primary
+sources:
+- solar
+topics:
+- solar-model
+model:
+  quantities:
+  - solar structure
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API record queried 2026-10-23'
+  - Whether neutrino fluxes are tabulated in KBG25.csv not inspected; addresses solar abundance problem.

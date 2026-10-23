@@ -1,0 +1,35 @@
+id: psns-presupernova
+type: model
+title: 'PSNS: Pre-Supernova Neutrino Spectrum data and codes (Odrzywolek)'
+short: 'PSNS: pre-supernova neutrino spectra data and codes (Odrzywolek)'
+description: Pre-supernova pair-annihilation anti-nu_e spectra data files (s15_*.tot.dat, s15/s25_nuebar_data.txt, README), thermal-process emissivity tables on request, NSE library (libnse), SN Ia neutrino pages.
+url_landing: https://th.if.uj.edu.pl/~odrzywolek/psns/
+license: none-stated
+access: open
+distributions:
+- url: https://th.if.uj.edu.pl/~odrzywolek/psns/
+  host: institutional
+  role: primary
+- url: https://th.if.uj.edu.pl/~odrzywolek/psns/data/
+  host: institutional
+  role: mirror
+- url: https://th.if.uj.edu.pl/~odrzywolek/psns/Numerical%20tables%20and%20codes/data.html
+  host: institutional
+  role: mirror
+references:
+- arxiv: astro-ph/0405006
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched PSNS index and data/ directory listing 2026-10-23 (HTTP 200)'
+  - Source of SNEWPY Odrzywolek_2010 presn model.

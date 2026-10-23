@@ -1,0 +1,34 @@
+id: sno-salt-2003-howto
+type: result
+title: SNO salt-phase 2003 flux results HOWTO for oscillation analyses
+short: 'SNO salt-phase 2003 flux results: HOWTO for oscillation analyses'
+description: HOWTO document describing how to include the SNO salt-phase CC/NC/ES flux data (with correlations) in an oscillation analysis.
+url_landing: https://sno.phy.queensu.ca/results_09_03/howto.pdf
+license: none-stated
+access: open
+distributions:
+- url: https://sno.phy.queensu.ca/results_09_03/howto.pdf
+  host: institutional
+  role: primary
+- url: https://sno.phy.queensu.ca/results_09_03/index.html
+  host: institutional
+  role: mirror
+references:
+- arxiv: nucl-ex/0309004
+  relation: describes
+experiments:
+- sno
+sources:
+- solar
+topics:
+- oscillation
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page content read from Wayback Machine snapshot; live sno.phy.queensu.ca refused connections (ECONNREFUSED) on 2026-10-23 (2021 snapshot)'
+  - Document (PDF) with numeric inputs, not a data file.

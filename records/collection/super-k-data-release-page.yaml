@@ -1,0 +1,31 @@
+id: super-k-data-release-page
+type: collection
+title: Super-Kamiokande publications & data-release page (For Researchers)
+short: Super-Kamiokande publications and data-release page (for researchers)
+description: Official SK index of per-paper data releases (zip/tar of ROOT/text tables, chi2 maps, effective areas) hosted under /sk/publications/data/ and on Zenodo.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/
+  host: institutional
+  role: primary
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data-e.html
+  host: institutional
+  role: mirror
+experiments:
+- super-k
+sources:
+- atmospheric
+- solar
+- supernova
+topics:
+- oscillation
+- flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'
+  - Live server returned 503 at time of check; old data-e.html URL now 404 (moved). Individual Zenodo releases are partly catalogued already.

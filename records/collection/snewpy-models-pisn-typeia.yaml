@@ -1,0 +1,26 @@
+id: snewpy-models-pisn-typeia
+type: collection
+title: 'snewpy-models-pisn_typeIa: pair-instability and type Ia supernova neutrino models for SNEWPY'
+short: 'snewpy-models-pisn_typeIa: pair-instability and type Ia supernova neutrino models'
+description: Repository of non-core-collapse (PISN, thermonuclear) supernova neutrino models for SNEWPY.
+url_landing: https://github.com/SNEWS2/snewpy-models-pisn_typeIa
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/SNEWS2/snewpy-models-pisn_typeIa
+  host: github
+  role: primary
+relations:
+- rel: uses
+  target: snewpy
+sources:
+- supernova
+topics:
+- flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on https://github.com/orgs/SNEWS2/repositories (fetched 2026-10-23)'
+  - No description on GitHub; content inferred from name and SNEWPY docs (pair-instability and type Ia models).

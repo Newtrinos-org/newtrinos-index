@@ -1,0 +1,37 @@
+id: fluka-3d-atm-flux-tables
+type: model
+title: FLUKA 3D atmospheric neutrino flux tables (Battistoni et al.)
+short: FLUKA 3D atmospheric neutrino flux tables (Battistoni et al.; archived copy)
+description: Text tables of differential nu_mu, anti-nu_mu, nu_e, anti-nu_e flux in 40 cos-zenith x 61 log-energy bins (from 0.1 GeV, extension to 10 TeV) for Kamioka, Soudan, Gran Sasso and no-cutoff, solar min/max.
+url_landing: http://pcbat1.mi.infn.it/~battist/neutrino.html
+license: none-stated
+access: open
+distributions:
+- url: http://pcbat1.mi.infn.it/~battist/neutrino.html
+  host: institutional
+  role: primary
+- url: http://web.archive.org/web/2009/http://pcbat1.mi.infn.it:80/~battist/neutrino.html
+  host: wayback
+  role: mirror
+- url: http://www.mi.infn.it/~battist/neutrino.html
+  host: institutional
+  role: mirror
+references:
+- arxiv: hep-ph/0207035
+  relation: describes
+- arxiv: hep-ph/0305208
+  relation: describes
+sources:
+- atmospheric
+topics:
+- flux
+model:
+  quantities:
+  - atmospheric neutrino flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page content read from Wayback snapshot (2009); live hosts unreachable (2026-10-23)'
+  - Format also documented in GENIE GFLUKAAtmoFlux driver. Only archived copy confirmed.

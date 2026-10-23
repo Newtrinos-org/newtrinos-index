@@ -1,0 +1,37 @@
+id: snewpy-dsnb
+type: software
+title: 'snewpy-dsnb: DSNB flux and event-rate calculator'
+short: 'snewpy-dsnb: diffuse supernova neutrino background fluxes and event rates'
+description: Python package computing DSNB differential flux (redshift integration over CCSN rate and SNEWPY-style spectra) and IBD event rates with smearing.
+doi: 10.5281/zenodo.21788506
+url_landing: https://github.com/dristii-32/snewpy-dsnb
+license: MIT
+access: open
+distributions:
+- url: https://github.com/dristii-32/snewpy-dsnb
+  host: github
+  role: primary
+- url: https://zenodo.org/records/21788506
+  host: zenodo
+  role: mirror
+relations:
+- rel: uses
+  target: snewpy
+sources:
+- supernova
+topics:
+- flux
+software:
+  repository: https://github.com/dristii-32/snewpy-dsnb
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API record queried 2026-10-23'
+  - New (2026) third-party package; maturity unknown.

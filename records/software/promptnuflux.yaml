@@ -1,0 +1,37 @@
+id: promptnuflux
+type: software
+title: 'PromptNuFlux: prompt atmospheric neutrino flux interpolation (GRRST, LHCb-constrained charm)'
+short: 'PromptNuFlux: prompt atmospheric neutrino flux tables and interpolation (GRRST, …)'
+description: Code + interpolation tables giving E^3 Phi of the prompt atmospheric neutrino flux with theory uncertainty for 10^3-10^7.5 GeV, for BPL, H3P, H3A, H14a, H14b primary CR models.
+url_landing: https://promptnuflux.hepforge.org/
+license: none-stated
+access: open
+distributions:
+- url: https://promptnuflux.hepforge.org/
+  host: institutional
+  role: primary
+- url: https://www.hepforge.org/downloads/promptnuflux
+  host: institutional
+  role: mirror
+references:
+- arxiv: '1511.06346'
+  relation: describes
+- arxiv: '1506.08025'
+  relation: describes
+sources:
+- atmospheric
+topics:
+- flux
+software:
+  repository: https://promptnuflux.hepforge.org/
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched hepforge page 2026-10-23 (HTTP 200)'

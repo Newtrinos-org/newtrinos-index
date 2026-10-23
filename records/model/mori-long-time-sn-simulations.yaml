@@ -1,0 +1,30 @@
+id: mori-long-time-sn-simulations
+type: model
+title: Long-time (20 s) supernova neutrino simulations (nuLC / Mori et al. PTEP 2021)
+short: Long-time (20 s) supernova neutrino simulations (nuLC, Mori et al.)
+description: Seven model files model{N}.bary.{Mb}_grav.{Mg}.dat with neutrino emission up to 20 s post-bounce (no oscillation) for different NS masses, plus readme.txt.
+doi: 10.1093/ptep/ptaa185
+url_landing: https://zenodo.org/records/5825648
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://zenodo.org/records/5825648
+  host: zenodo
+  role: primary
+references:
+- doi: 10.1093/ptep/ptaa185
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API search result (record 5825648) 2026-10-23'
+  - Zenodo record carries the paper DOI rather than its own; journal page/number from memory - check.

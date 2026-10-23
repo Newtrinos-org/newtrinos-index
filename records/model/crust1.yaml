@@ -1,0 +1,26 @@
+id: crust1
+type: model
+title: CRUST1.0 global 1-degree crustal model
+short: 'CRUST1.0: global 1° crustal model (input to geoneutrino flux models)'
+description: crust1.0.tar.gz (model files + Fortran 77 routines), crustal-type add-on, XYZ grids (crustal thickness, Moho depth, sediment thickness), Matlab toolbox. Standard crustal input for geoneutrino flux models.
+url_landing: https://igppweb.ucsd.edu/~gabi/crust1.html
+license: none-stated
+access: open
+distributions:
+- url: https://igppweb.ucsd.edu/~gabi/crust1.html
+  host: institutional
+  role: primary
+sources:
+- geo
+topics:
+- earth-model
+model:
+  quantities:
+  - crustal structure
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page 2026-10-23'
+  - Not neutrino-specific; include as geoneutrino model input.

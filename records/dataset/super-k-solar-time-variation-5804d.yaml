@@ -1,0 +1,32 @@
+id: super-k-solar-time-variation-5804d
+type: dataset
+title: Super-Kamiokande solar 8B flux periodic time variation data 1996-2018 (5804 days)
+short: Super-K solar ⁸B flux time variation 1996–2018 (5804 days)
+description: Text file of time-binned SK-I..IV solar 8B neutrino flux used for periodicity search.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/sksolartimevariation5804d.txt
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/sksolartimevariation5804d.txt
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/PhysRevLett.132.241803
+  relation: describes
+- arxiv: '2311.01159'
+  relation: describes
+experiments:
+- super-k
+sources:
+- solar
+topics:
+- flux
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'

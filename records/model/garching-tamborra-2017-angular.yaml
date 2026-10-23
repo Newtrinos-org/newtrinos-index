@@ -1,0 +1,26 @@
+id: garching-tamborra-2017-angular
+type: model
+title: 'Garching archive: Tamborra et al. 2017 flavour-dependent neutrino angular distributions'
+short: 'Garching archive: Tamborra et al. 2017 flavour-dependent neutrino angular distributions'
+description: Radius- and angle-dependent neutrino properties for selected snapshots of 1D 11.2, 15, 25 Msun (LS220) models, comoving frame; reading instructions.
+url_landing: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/data/Tamborra2017/
+license: proprietary
+license_notes: non-commercial; cite
+access: open
+distributions:
+- url: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/data/Tamborra2017/
+  host: institutional
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/archive.html and the entry page (HTTP 200, open, 2026-10-23)'

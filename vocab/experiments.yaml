@@ -100,3 +100,9 @@
 - {id: next, name: NEXT, aliases: [NEXT-White, NEXT-100], collaboration: NEXT, sources: [nuclear-decay], technology: [xenon-tpc], site: LSC (Spain)}
 - {id: ricochet, name: Ricochet, collaboration: Ricochet, sources: [reactor], technology: [bolometer], site: ILL (France)}
 - {id: dresden-ii, name: Dresden-II reactor CEvNS (NCC-1701), aliases: [NCC-1701], collaboration: Dresden-II, sources: [reactor], technology: [germanium], site: Dresden-II reactor (USA)}
+# --- radio / air-shower UHE neutrino detectors ---
+- {id: auger, name: Pierre Auger Observatory, aliases: [Auger, Pierre Auger], collaboration: Pierre Auger, sources: [cosmogenic, astrophysical], technology: [other], site: Malargüe (Argentina), start: 2004}
+- {id: ara, name: ARA, aliases: [Askaryan Radio Array], collaboration: ARA, sources: [cosmogenic, astrophysical], technology: [radio], site: South Pole}
+- {id: anita, name: ANITA, collaboration: ANITA, sources: [cosmogenic, astrophysical], technology: [radio], site: Antarctica (balloon)}
+- {id: rno-g, name: RNO-G, aliases: [Radio Neutrino Observatory Greenland], collaboration: RNO-G, sources: [cosmogenic, astrophysical], technology: [radio], site: Summit Station (Greenland), start: 2021}
+- {id: grand, name: GRAND, aliases: [Giant Radio Array for Neutrino Detection], collaboration: GRAND, sources: [cosmogenic, astrophysical], technology: [radio], site: China / Argentina}

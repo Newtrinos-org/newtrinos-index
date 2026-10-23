@@ -1,0 +1,27 @@
+id: garching-ccsn-archive
+type: collection
+title: Garching Core-Collapse Supernova Data Archive
+short: Garching core-collapse supernova data archive (neutrino signals of many simulations)
+description: '~80 entries of MPA Garching CCSN simulation outputs (PROMETHEUS-VERTEX, HotB, ALCAR): neutrino luminosities/spectra/moments, GW signals, profiles, DSNB (Kresse 2021).'
+url_landing: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/archive.html
+license: proprietary
+license_notes: non-commercial use; cite archive link and paper
+access: open
+distributions:
+- url: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/archive.html
+  host: institutional
+  role: primary
+- url: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/
+  host: institutional
+  role: mirror
+sources:
+- supernova
+topics:
+- flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/archive.html and the entry page (HTTP 200, open, 2026-10-23)'
+  - 'Most neutrino-signal entries (Bollig 2016-2021, Hüdepohl 2010/2014, Kresse DSNB, Melson, Summa) are password-protected: contact H.-T. Janka.'

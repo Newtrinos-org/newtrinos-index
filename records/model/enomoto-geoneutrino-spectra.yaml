@@ -1,0 +1,29 @@
+id: enomoto-geoneutrino-spectra
+type: model
+title: Enomoto geoneutrino spectrum and luminosity tables (U, Th chains, 40K)
+short: Enomoto geoneutrino spectrum and luminosity tables (U, Th chains, ⁴⁰K)
+description: Per-isotope and chain-summed geoneutrino energy spectra on a 1 keV grid normalised per parent decay (Firestone 1996 data, Fermi function, forbidden corrections for 40K and 210Bi), single archive download; README dated 2006 (DONGURI v1.0.1).
+url_landing: https://www.awa.tohoku.ac.jp/~sanshiro/research/geoneutrino/spectrum/
+license: none-stated
+access: open
+distributions:
+- url: https://www.awa.tohoku.ac.jp/~sanshiro/research/geoneutrino/spectrum/
+  host: institutional
+  role: primary
+- url: https://www.awa.tohoku.ac.jp/~sanshiro/research/geoneutrino/spectrum/AA_README
+  host: institutional
+  role: mirror
+sources:
+- geo
+topics:
+- flux
+model:
+  quantities:
+  - geoneutrino spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Search-engine snippets of index page and AA_README; direct fetch HTTP 403 (host blocks our IP) on 2026-10-23'
+  - De-facto standard geoneutrino spectrum; re-verify in a browser.

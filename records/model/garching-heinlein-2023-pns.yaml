@@ -1,0 +1,30 @@
+id: garching-heinlein-2023-pns
+type: model
+title: 'Garching archive: Heinlein 2023 proto-neutron-star evolution neutrino signals (Fiorillo et al. 2023 SN1987A models)'
+short: 'Garching archive: Heinlein 2023 proto-neutron-star evolution neutrino signals'
+description: '1D PROMETHEUS-VERTEX PNS cooling models: neutrino signals, radial neutrino moments, hydro profiles for multiple EoS incl. muons.'
+url_landing: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/data/Heinlein2023/
+license: proprietary
+license_notes: non-commercial; cite
+access: open
+distributions:
+- url: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/data/Heinlein2023/
+  host: institutional
+  role: primary
+references:
+- arxiv: '2308.01403'
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/archive.html and the entry page (HTTP 200, open, 2026-10-23) (landing page open)'
+  - Sub-directories (nusignal, numoments, ...) were listed as locked on the archive index.

@@ -1,0 +1,32 @@
+id: super-k-snwatch
+type: dataset
+title: Super-Kamiokande SK-Gd real-time supernova monitor (SNWatch) data release
+short: 'SK-Gd real-time supernova monitor (SNWatch): data release'
+description: Data release for the upgraded SK-Gd supernova burst monitoring system paper (performance, pointing).
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/SNWatchpaper.zip
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/SNWatchpaper.zip
+  host: institutional
+  role: primary
+references:
+- doi: 10.3847/1538-4357/ad4d8e
+  relation: describes
+- arxiv: '2403.06760'
+  relation: describes
+experiments:
+- super-k
+sources:
+- supernova
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'

@@ -1,0 +1,35 @@
+id: fornax-3d-angular
+type: model
+title: Princeton Fornax 3D CCSN neutrino signals with angular (spherical-harmonic) decomposition
+short: Princeton Fornax 3D CCSN neutrino signals with angular decomposition
+description: Solid-angle-integrated luminosity spectra vs time per species for 3D Fornax models (9-25 Msun) plus spherical-harmonic coefficients of the angular emission; tarballs, README_ALL.pdf, spectra_reader_ALL.py.
+url_landing: https://www.astro.princeton.edu/~burrows/nu-emissions.3d/index.html
+license: none-stated
+access: open
+distributions:
+- url: https://www.astro.princeton.edu/~burrows/nu-emissions.3d/index.html
+  host: institutional
+  role: primary
+references:
+- arxiv: '1809.05106'
+  relation: describes
+- arxiv: '1902.00547'
+  relation: describes
+- arxiv: '1906.08787'
+  relation: describes
+- arxiv: '1909.04152'
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page 2026-10-23 (HTTP 200)'
+  - Also used by SNEWPY (Fornax_2019/2021 models).

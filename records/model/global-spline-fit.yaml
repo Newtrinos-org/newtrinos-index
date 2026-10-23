@@ -1,0 +1,35 @@
+id: global-spline-fit
+type: model
+title: Global Spline Fit (GSF) cosmic-ray flux and composition model
+short: 'Global Spline Fit: data-driven cosmic-ray flux and composition model'
+description: Data-driven spline fit of cosmic-ray flux and elemental composition from GeV to EeV with covariance; primary input for daemonflux/MCEq atmospheric neutrino calculations.
+url_landing: https://github.com/gsf-project/globalsplinefit
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/gsf-project/globalsplinefit
+  host: github
+  role: primary
+- url: https://gsf-project.github.io/globalsplinefit/
+  host: institutional
+  role: mirror
+- url: https://pypi.org/project/globalsplinefit/
+  host: package-registry
+  role: mirror
+references:
+- arxiv: '1711.11432'
+  relation: describes
+sources:
+- atmospheric
+topics:
+- flux
+model:
+  quantities:
+  - cosmic-ray flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: PyPI JSON for globalsplinefit 2.1.0 queried 2026-10-23'
+  - Paper reference from memory; check.

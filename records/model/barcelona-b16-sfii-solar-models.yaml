@@ -1,0 +1,37 @@
+id: barcelona-b16-sfii-solar-models
+type: model
+title: 'Barcelona standard solar models B16 and SFII (GS98/AGSS09): structure, neutrino production profiles, fluxes, MC correlations'
+short: 'Barcelona standard solar models B16 / SFII (GS98, AGSS09): structure and fluxes (archived)'
+description: 'Text tables: struct_b16_{gs98,agss09}.dat, fluxes_b16.dat, nudistr_b16_*.dat (neutrino production & electron density profiles), helio_b16_*.dat, Monte Carlo samples (small/large composition errors), power laws, flux correlations; B16.tar bundle; SFII-rate model equivalents.'
+url_landing: https://www.ice.csic.es/personal/aldos/Solar_Data.html
+license: none-stated
+access: open
+distributions:
+- url: https://www.ice.csic.es/personal/aldos/Solar_Data.html
+  host: institutional
+  role: primary
+- url: http://web.archive.org/web/20220302205007/https://www.ice.csic.es/personal/aldos/Solar_Data.html
+  host: wayback
+  role: mirror
+- url: https://www.ice.csic.es/personal/aldos/Solar_Data_files/B16.tar
+  host: institutional
+  role: mirror
+references:
+- arxiv: '1611.09867'
+  relation: describes
+sources:
+- solar
+topics:
+- solar-model
+- flux
+model:
+  quantities:
+  - solar structure
+  - neutrino fluxes
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page content read from Wayback snapshot 2022-03-02; live URL returns 404 (2026-10-23)'
+  - Catalogued B23 Zenodo record is the successor; B16 widely used (e.g. Borexino CNO, SK). Only archived copy confirmed.

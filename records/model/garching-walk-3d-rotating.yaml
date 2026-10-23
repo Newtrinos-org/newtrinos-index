@@ -1,0 +1,31 @@
+id: garching-walk-3d-rotating
+type: model
+title: 'Garching archive: Walk et al. 3D rotating CCSN neutrino signals (rotation identified with neutrinos)'
+short: 'Garching archive: Walk et al. 3D rotating CCSN neutrino signals'
+description: Direction-dependent neutrino emission data and movies (ELN, IceCube rates) for three 15 Msun 3D models with different rotation.
+url_landing: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/data/Walk2018/index.html
+license: proprietary
+license_notes: non-commercial; cite
+access: open
+distributions:
+- url: https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/data/Walk2018/index.html
+  host: institutional
+  role: primary
+references:
+- arxiv: '1807.02366'
+  relation: describes
+- arxiv: '1901.06235'
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched https://wwwmpa.mpa-garching.mpg.de/ccsnarchive/archive.html and the entry page (HTTP 200, open, 2026-10-23)'

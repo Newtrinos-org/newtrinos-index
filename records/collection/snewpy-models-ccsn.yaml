@@ -1,0 +1,26 @@
+id: snewpy-models-ccsn
+type: collection
+title: 'snewpy-models-ccsn: collection of core-collapse supernova neutrino models for SNEWPY'
+short: 'snewpy-models-ccsn: core-collapse supernova neutrino model collection for SNEWPY'
+description: GitHub repository holding the CCSN model flux files (one subdirectory per model family with its own README/citation) that SNEWPY downloads via get_models().
+url_landing: https://github.com/SNEWS2/snewpy-models-ccsn
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/SNEWS2/snewpy-models-ccsn
+  host: github
+  role: primary
+relations:
+- rel: uses
+  target: snewpy
+sources:
+- supernova
+topics:
+- flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched GitHub repo page 2026-10-23'
+  - SNEWPY code itself catalogued; this is the separate data collection. Licence not shown on page.

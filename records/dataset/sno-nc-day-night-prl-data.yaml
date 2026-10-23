@@ -1,0 +1,36 @@
+id: sno-nc-day-night-prl-data
+type: dataset
+title: 'SNO NC and day/night PRL data (pure D2O phase): spectra, cos-zenith livetime, background tables, HOWTO'
+short: 'SNO D₂O-phase NC and day/night PRL data: spectra, cos θ_sun, HOWTO'
+description: SnoDayNightPrlSpectra.dat (Fig. 2 day/night spectra), SnoCosZenith.dat (livetime vs cos zenith), SnoBackgroundTables.dat (neutron and low-energy backgrounds per bin, day/night), prldata.ps HOWTO for oscillation fits.
+url_landing: http://www.sno.phy.queensu.ca/sno/prlwebpage/
+license: none-stated
+access: open
+distributions:
+- url: http://www.sno.phy.queensu.ca/sno/prlwebpage/
+  host: institutional
+  role: primary
+- url: http://web.archive.org/web/20021109081258/http://www.sno.phy.queensu.ca:80/sno/prlwebpage/
+  host: wayback
+  role: mirror
+references:
+- arxiv: nucl-ex/0204008
+  relation: describes
+- arxiv: nucl-ex/0204009
+  relation: describes
+experiments:
+- sno
+sources:
+- solar
+topics:
+- oscillation
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page content read from Wayback Machine snapshot; live sno.phy.queensu.ca refused connections (ECONNREFUSED) on 2026-10-23 (2002 snapshot)'
+  - Only archived copy confirmed; may be offline.

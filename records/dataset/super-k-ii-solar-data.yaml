@@ -1,0 +1,35 @@
+id: super-k-ii-solar-data
+type: dataset
+title: Super-Kamiokande-II solar neutrino data (energy spectrum, correlated errors, D/N)
+short: 'Super-K-II solar neutrino data: energy spectrum and correlated errors'
+description: Text tables espectrum.txt, ecorrerr.txt, skc_exclude_dn_flux.txt plus README for the SK-II solar analysis.
+url_landing: http://www-sk.icrr.u-tokyo.ac.jp/sk/lowe/sk2_data/
+license: none-stated
+access: open
+distributions:
+- url: http://www-sk.icrr.u-tokyo.ac.jp/sk/lowe/sk2_data/
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/PhysRevD.78.032002
+  relation: describes
+- arxiv: '0803.4312'
+  relation: describes
+experiments:
+- super-k
+sources:
+- solar
+topics:
+- oscillation
+- flux
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Linked as ''Pertinent SK information'' from SK publications page; files listed in Wayback CDX (200, 2012-2013)'
+  - Live availability unverified (server 503).

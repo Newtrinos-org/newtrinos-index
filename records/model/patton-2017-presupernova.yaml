@@ -1,0 +1,29 @@
+id: patton-2017-presupernova
+type: model
+title: Patton et al. 2017 presupernova neutrino luminosities (15 and 30 Msun, per-isotope beta processes)
+short: Patton et al. 2017 pre-supernova neutrino luminosities and spectra (15, 30 M☉)
+description: 'Energy-differential neutrino luminosities at many pre-collapse times for 15 and 30 Msun MESA models: totals (pair+beta) and per-isotope beta contributions; zips, .dat, readData.py, README.'
+doi: 10.5281/zenodo.2626645
+url_landing: https://zenodo.org/record/2626645
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://zenodo.org/record/2626645
+  host: zenodo
+  role: primary
+references:
+- arxiv: '1709.01877'
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API record 2626645 queried 2026-10-23'

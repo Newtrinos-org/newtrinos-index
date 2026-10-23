@@ -1,0 +1,29 @@
+id: li-zhao-2024-geoneutrino-spectra
+type: model
+title: 'New geo-neutrino energy spectrum calculation (Li & Zhao 2024): 238U and 232Th flux tables'
+short: Geoneutrino energy spectra of ²³⁸U and ²³²Th chains (Li & Zhao 2024; arXiv ancillary)
+description: arXiv ancillary files README.md, new_flux_232Th.txt, new_flux_238Th.txt (file name sic) with updated U/Th geoneutrino spectra differing from Enomoto by ~4%/9% in IBD yield.
+url_landing: https://arxiv.org/abs/2412.07711
+license: none-stated
+access: open
+distributions:
+- url: https://arxiv.org/abs/2412.07711
+  host: arxiv
+  role: primary
+  label: arXiv ancillary files (listed on the abstract page)
+references:
+- arxiv: '2412.07711'
+  relation: describes
+sources:
+- geo
+topics:
+- flux
+model:
+  quantities:
+  - geoneutrino spectra
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: arXiv abstract page 2026-10-23 lists anc files'

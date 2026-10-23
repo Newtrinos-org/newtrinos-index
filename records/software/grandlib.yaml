@@ -1,0 +1,32 @@
+id: grandlib
+type: software
+title: 'GRANDlib: GRAND collaboration offline data handling, simulation and analysis package'
+short: 'GRANDlib: GRAND data handling, simulation and analysis'
+description: Core Python 3 package for GRAND offline data handling, simulation pipeline and analysis.
+url_landing: https://github.com/grand-mother/grand
+license: LGPL-3.0-or-later
+access: open
+distributions:
+- url: https://github.com/grand-mother/grand
+  host: github
+  role: primary
+experiments:
+- grand
+sources:
+- cosmogenic
+topics:
+- detector-response
+software:
+  repository: https://github.com/grand-mother/grand
+  purposes:
+  - detector-simulation
+  - reconstruction
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched GitHub page 2026-10-23'

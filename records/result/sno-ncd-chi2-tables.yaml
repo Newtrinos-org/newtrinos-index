@@ -1,0 +1,36 @@
+id: sno-ncd-chi2-tables
+type: result
+title: SNO NCD-phase SNO-only chi2 tables and HOWTO
+short: SNO NCD-phase SNO-only χ² tables and HOWTO
+description: Chi2 grids (log tan^2 theta, log dm^2, chi2, 8B scale vs BS05(OP)) combining D2O & salt day/night spectra and NCD fluxes; HowTo document describing how to use NCD-phase results.
+url_landing: https://sno.phy.queensu.ca/papers/ncd_chi2/
+license: none-stated
+access: open
+distributions:
+- url: https://sno.phy.queensu.ca/papers/ncd_chi2/
+  host: institutional
+  role: primary
+- url: https://sno.phy.queensu.ca/papers/ncd_chi2/howto.pdf
+  host: institutional
+  role: mirror
+- url: https://sno.phy.queensu.ca/papers/ncd_chi2/SNONCD_Chi2_full.txt
+  host: institutional
+  role: mirror
+- url: https://sno.phy.queensu.ca/papers/ncd_chi2/SNONCD_Chi2_LMA.txt
+  host: institutional
+  role: mirror
+experiments:
+- sno
+sources:
+- solar
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page content read from Wayback Machine snapshot; live sno.phy.queensu.ca refused connections (ECONNREFUSED) on 2026-10-23 (2021 snapshot)'

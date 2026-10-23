@@ -1,0 +1,35 @@
+id: bartol-2004-flux-tables
+type: model
+title: Bartol atmospheric neutrino flux tables (Barr et al. 2004, 3D calculation)
+short: Bartol 3D atmospheric neutrino flux tables (Barr et al. 2004; archived copy)
+description: Tabulated nu_e, nu_mu and antineutrino fluxes vs energy and direction for Kamioka (kam), SNO (sno), Soudan (sou) sites and solar max/min (fmax/fmin, 0401, 0408i versions).
+url_landing: http://www-pnp.physics.ox.ac.uk/~barr/fluxfiles/
+license: none-stated
+access: open
+distributions:
+- url: http://www-pnp.physics.ox.ac.uk/~barr/fluxfiles/
+  host: institutional
+  role: primary
+- url: http://web.archive.org/web/2022/http://www-pnp.physics.ox.ac.uk/~barr/fluxfiles/
+  host: wayback
+  role: mirror
+- url: http://www-pnp.physics.ox.ac.uk/~barr/fluxfiles/0408i/index.html
+  host: institutional
+  role: mirror
+references:
+- arxiv: astro-ph/0403630
+  relation: describes
+sources:
+- atmospheric
+topics:
+- flux
+model:
+  quantities:
+  - atmospheric neutrino flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Wayback CDX lists the directory and >50 table files (HTTP 200, 2011-2022); live URL returns 404 (2026-10-23)'
+  - Only archived; used by older SK/MINOS analyses and IceCube NeutrinoFlux.

@@ -1,0 +1,36 @@
+id: prince
+type: software
+title: 'PriNCe: cosmic-ray propagation including nuclear cascade equations (cosmogenic neutrinos)'
+short: 'PriNCe: cosmic-ray propagation with nuclear cascades and cosmogenic neutrinos'
+description: Python solver for UHECR propagation with nuclear cascades, producing cosmic-ray and cosmogenic neutrino fluxes for fitted source models.
+url_landing: https://github.com/joheinze/PriNCe
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/joheinze/PriNCe
+  host: github
+  role: primary
+- url: https://pypi.org/project/prince-cr/
+  host: package-registry
+  role: mirror
+references:
+- arxiv: '1901.03338'
+  relation: describes
+sources:
+- cosmogenic
+topics:
+- flux
+software:
+  repository: https://github.com/joheinze/PriNCe
+  purposes:
+  - astrophysics
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: PyPI JSON prince-cr 0.6.0 queried; GitHub repo HTTP 200 (2026-10-23)'
+  - Paper ref from memory; check.

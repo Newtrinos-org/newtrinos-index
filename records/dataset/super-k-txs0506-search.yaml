@@ -1,0 +1,30 @@
+id: super-k-txs0506-search
+type: dataset
+title: Super-Kamiokande TXS 0506+056 neutrino search macros and data
+short: 'Super-K search for neutrinos from TXS 0506+056: macros and data'
+description: Analysis macros (SaveHisto/DrawHisto .cc), analysis data files, result ROOT files and figures with 00README.dat.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/macros.zip
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/macros.zip
+  host: institutional
+  role: primary
+references:
+- arxiv: '1910.07680'
+  relation: describes
+experiments:
+- super-k
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'

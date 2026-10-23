@@ -1,0 +1,29 @@
+id: rno-g-public-data
+type: collection
+title: RNO-G public data repository (figure data and plotting scripts from RNO-G publications)
+short: 'RNO-G public data: figure data and plotting scripts'
+description: Per-publication subdirectories with data (json/txt plotting points, e.g. effective volumes/sensitivity), plots and scripts; currently 2010.12279_RNO-G_Design_And_Sensitivity.
+url_landing: https://github.com/RNO-G/rno-g_public_data
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/RNO-G/rno-g_public_data
+  host: github
+  role: primary
+references:
+- arxiv: '2010.12279'
+  relation: describes
+experiments:
+- rno-g
+sources:
+- cosmogenic
+- astrophysical
+topics:
+- detector-response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched GitHub repo page 2026-10-23'
+  - Licence not stated; cite the paper. Cited as public data repository in JINST 18 E03001 (2023).

@@ -1,0 +1,35 @@
+id: super-k-iv-solar-full-release
+type: dataset
+title: Super-Kamiokande IV full-period solar neutrino measurement data release (sksolarfull.zip)
+short: 'Super-K IV full-period solar ⁸B measurement: official data release (spectra, day/night)'
+description: Official SK data release for the SK-IV full-period solar 8B analysis (spectra/day-night/tables).
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/sksolarfull.zip
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/sksolarfull.zip
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/PhysRevD.109.092001
+  relation: describes
+- arxiv: '2312.12907'
+  relation: describes
+experiments:
+- super-k
+sources:
+- solar
+topics:
+- oscillation
+- flux
+data:
+  levels:
+  - binned
+  - systematics
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'
+  - Catalogue already has Newtrinos-extracted paper tables (super-k-solar-i-iv-spectra); this is the collaboration's own zip. Contents not inspected.

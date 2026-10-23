@@ -1,0 +1,34 @@
+id: gen2-radio-sensitivities
+type: dataset
+title: IceCube-Gen2 radio TDR sensitivity parametrisations (gen2_toise_sensitivities)
+short: IceCube-Gen2 radio TDR sensitivity parametrisations (for toise)
+description: Parametrisations (effective volumes, transfer matrices, resolutions, efficiencies, backgrounds) via .yaml per array layout (baseline, hex_shallow, hex_shallowheavy, hex_hybrid_only), toise aeff generator, TDR notebooks and figures.
+url_landing: https://gitlab.desy.de/steffen.hallmann/gen2_toise_sensitivities
+license: none-stated
+access: open
+distributions:
+- url: https://gitlab.desy.de/steffen.hallmann/gen2_toise_sensitivities
+  host: gitlab
+  role: primary
+references:
+- arxiv: '2107.08910'
+  relation: describes
+experiments:
+- icecube
+detectors:
+- icecube-gen2
+sources:
+- cosmogenic
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched raw README.md from DESY GitLab 2026-10-23 (HTTP 200)'
+  - Personal repository; licence not stated. Catalogued Gen2 effective-area Dataverse record is optical; this is radio.

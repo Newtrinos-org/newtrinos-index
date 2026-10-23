@@ -1,0 +1,39 @@
+id: super-k-sn-burst-monitor-2016
+type: dataset
+title: Super-Kamiokande real-time supernova burst monitor (2016) figures and programs
+short: 'Super-K real-time supernova burst monitor (2016): figures and program'
+description: Figures (5.7 MB), programs and README for the SK real-time SN burst monitor paper.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/figures.zip
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/figures.zip
+  host: institutional
+  role: primary
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/program.zip
+  host: institutional
+  role: mirror
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/README.pdf
+  host: institutional
+  role: mirror
+references:
+- doi: 10.1016/j.astropartphys.2016.04.003
+  relation: describes
+- arxiv: '1601.04778'
+  relation: describes
+experiments:
+- super-k
+sources:
+- supernova
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'
+  - Journal DOI inferred from Astropart. Phys. 81 (2016) 39; check.

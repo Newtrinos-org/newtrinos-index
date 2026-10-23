@@ -1,0 +1,32 @@
+id: sheffield-garching-signal-files
+type: model
+title: Sheffield copy of Garching (Janka et al.) supernova neutrino signal files (11.2, 27, 40 Msun)
+short: Sheffield copy of Garching supernova neutrino signal files
+description: Per-flavour text files (time, luminosity, mean energy, mean-square energy) for Garching 11.2, 27 and 40 Msun models, made available by H.-T. Janka; spectral reconstruction per Tamborra et al. appendix.
+url_landing: https://www.hep.shef.ac.uk/cartwright/snn
+license: none-stated
+access: open
+distributions:
+- url: https://www.hep.shef.ac.uk/cartwright/snn
+  host: institutional
+  role: primary
+references:
+- arxiv: '1406.0006'
+  relation: describes
+relations:
+- rel: mirror_of
+  target: garching-ccsn-archive
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page 2026-10-23 (HTTP 200)'
+  - Third-party mirror of Garching data (original archive entries locked).

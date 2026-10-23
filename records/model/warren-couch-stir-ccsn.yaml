@@ -1,0 +1,31 @@
+id: warren-couch-stir-ccsn
+type: model
+title: Warren, Couch, O'Connor & Morozova STIR 1D CCSN multi-messenger (neutrino) signals
+short: STIR 1D CCSN multi-messenger models (Warren, Couch, O'Connor, Morozova)
+description: '523 per-model files from 1D FLASH/STIR simulations (SFHo, M1 12-group transport) for many progenitor masses and mixing parameters 1.23/1.25/1.27: neutrino luminosities/spectra and GW signals. Used as SNEWPY Warren_2020.'
+doi: 10.5281/zenodo.3952926
+url_landing: https://zenodo.org/record/3952926
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://zenodo.org/record/3952926
+  host: zenodo
+  role: primary
+references:
+- arxiv: '1912.03328'
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+- multi-messenger
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API record 3952926 queried 2026-10-23'
+  - Journal refs from memory; check.

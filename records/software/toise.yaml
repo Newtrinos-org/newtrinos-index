@@ -1,0 +1,35 @@
+id: toise
+type: software
+title: 'toise: sensitivity framework for high-energy neutrino detectors (IceCube-Gen2)'
+short: 'toise: sensitivity framework for high-energy neutrino detectors (IceCube-Gen2)'
+description: Framework converting surface neutrino fluxes to binned event rates and computing sensitivities/discovery potentials from detector parametrisations; fetch_data.sh retrieves Gen2 performance tables.
+url_landing: https://github.com/icecube/toise
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/icecube/toise
+  host: github
+  role: primary
+experiments:
+- icecube
+detectors:
+- icecube-gen2
+sources:
+- astrophysical
+- cosmogenic
+topics:
+- flux
+software:
+  repository: https://github.com/icecube/toise
+  purposes:
+  - sensitivity
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched GitHub page 2026-10-23'
+  - Has LICENSE.md (type not read).

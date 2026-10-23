@@ -1,0 +1,25 @@
+id: snewpy-models-presn
+type: collection
+title: 'snewpy-models-presn: pre-supernova neutrino flux models for SNEWPY'
+short: 'snewpy-models-presn: pre-supernova neutrino flux models for SNEWPY'
+description: Pre-supernova flux models (Patton_2017, Odrzywolek_2010, Kato_2017, Yoshida_2016) packaged for SNEWPY with source links and references.
+url_landing: https://github.com/SNEWS2/snewpy-models-presn
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/SNEWS2/snewpy-models-presn
+  host: github
+  role: primary
+relations:
+- rel: uses
+  target: snewpy
+sources:
+- supernova
+topics:
+- flux
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched GitHub repo page 2026-10-23'

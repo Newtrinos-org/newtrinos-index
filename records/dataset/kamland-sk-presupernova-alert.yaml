@@ -1,0 +1,33 @@
+id: kamland-sk-presupernova-alert
+type: dataset
+title: KamLAND + Super-Kamiokande combined pre-supernova alert system data release
+short: 'KamLAND + Super-K combined pre-supernova alert system: data release'
+description: Figure data for the combined pre-supernova neutrino alert (sensitivity vs distance, false-alarm rates).
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/figures.tar
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/figures.tar
+  host: institutional
+  role: primary
+references:
+- doi: 10.3847/1538-4357/ad5fee
+  relation: describes
+- arxiv: '2404.09920'
+  relation: describes
+experiments:
+- super-k
+- kamland
+sources:
+- supernova
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'

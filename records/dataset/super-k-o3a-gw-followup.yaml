@@ -1,0 +1,35 @@
+id: super-k-o3a-gw-followup
+type: dataset
+title: Super-Kamiokande LIGO-Virgo O3a coincidence search data release (effective areas, limits)
+short: 'Super-K LIGO-Virgo O3a coincidence search: data release with effective areas'
+description: Figures, CSV tables of follow-ups (observed events, flux/Eiso limits), ROOT files with SK detector effective area, INSTRUCTIONS.txt; 9 MB.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/datarelease-20210420.tar
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/datarelease-20210420.tar
+  host: institutional
+  role: primary
+- url: https://doi.org/10.5281/zenodo.4724823
+  host: zenodo
+  role: documentation
+references:
+- arxiv: '2104.09196'
+  relation: describes
+experiments:
+- super-k
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'
+  - Same paper as catalogued VizieR table super-k-gw-coincidence-vizier, but this release adds effective areas/ROOT; judge whether duplicate. Also on Zenodo as 10.5281/zenodo.4724823 (not in known list).

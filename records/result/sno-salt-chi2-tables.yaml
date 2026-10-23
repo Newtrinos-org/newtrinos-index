@@ -1,0 +1,36 @@
+id: sno-salt-chi2-tables
+type: result
+title: SNO salt-phase (391-day) SNO-only chi2 tables for mixing-parameter analysis
+short: SNO salt-phase (391 d) SNO-only χ² tables for mixing-parameter analyses
+description: Text chi2 grids (log tan^2 theta, log dm^2, chi2, 8B scale vs BP04) for full region (coarse) and LMA (fine), with contour plots.
+url_landing: https://sno.phy.queensu.ca/papers/nsp_chi2/
+license: none-stated
+access: open
+distributions:
+- url: https://sno.phy.queensu.ca/papers/nsp_chi2/
+  host: institutional
+  role: primary
+- url: https://sno.phy.queensu.ca/papers/nsp_chi2/distribution_files/SNO_Chi2_full.txt
+  host: institutional
+  role: mirror
+- url: https://sno.phy.queensu.ca/papers/nsp_chi2/distribution_files/SNO_Chi2_LMA.txt
+  host: institutional
+  role: mirror
+references:
+- arxiv: nucl-ex/0502021
+  relation: describes
+experiments:
+- sno
+sources:
+- solar
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page content read from Wayback Machine snapshot; live sno.phy.queensu.ca refused connections (ECONNREFUSED) on 2026-10-23 (2021 snapshot)'

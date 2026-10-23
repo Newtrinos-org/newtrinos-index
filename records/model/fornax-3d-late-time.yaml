@@ -1,0 +1,26 @@
+id: fornax-3d-late-time
+type: model
+title: 'Princeton Fornax CCSN neutrino signals: 25 3D models to late times'
+short: 'Princeton Fornax CCSN neutrino signals: 25 3D models to late times'
+description: Angle-averaged nustat (time, L, <E>, rms, skew) and nuspec spectral luminosities at 500 km for 25 3D Fornax models (9-100 Msun, Sukhbold progenitors; 2 BH-forming), hosted via Google Drive folders.
+url_landing: https://www.astro.princeton.edu/~burrows/nu-emissions.3d.update/
+license: none-stated
+access: open
+distributions:
+- url: https://www.astro.princeton.edu/~burrows/nu-emissions.3d.update/
+  host: institutional
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page 2026-10-23 (HTTP 200)'
+  - Catalogued Zenodo 10.5281/zenodo.14397745 covers only 11/12.25/14 Msun; this page is the full 25-model set.

@@ -1,0 +1,30 @@
+id: solar-atmospheric-neutrinos-data-release
+type: dataset
+title: 'Data release: Solar atmospheric neutrinos and the sensitivity floor for solar dark matter annihilation searches'
+short: 'Solar atmospheric neutrinos and the sensitivity floor for solar DM searches: data release'
+description: 'FJAWs.tar (5.82 MB): solar-atmospheric neutrino flux predictions (MCEq-based, with oscillation to Earth) from the paper.'
+url_landing: https://dspace.mit.edu/handle/1721.1/108394
+license: none-stated
+access: open
+distributions:
+- url: https://dspace.mit.edu/handle/1721.1/108394
+  host: institutional
+  role: primary
+references:
+- arxiv: '1703.07798'
+  relation: describes
+sources:
+- solar
+topics:
+- flux
+- dark-matter
+data:
+  levels:
+  - prediction
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched DSpace@MIT record 2026-10-23'
+  - Paper arXiv number from memory of the title; confirm.

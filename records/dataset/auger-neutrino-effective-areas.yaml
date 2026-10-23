@@ -1,0 +1,41 @@
+id: auger-neutrino-effective-areas
+type: dataset
+title: Pierre Auger Observatory UHE neutrino effective areas (ES, DGH, DGL channels)
+short: Pierre Auger Observatory UHE neutrino effective areas (Earth-skimming, downward-going)
+description: Numerical effective area vs energy (and zenith) for Earth-skimming (90-95 deg), downward-going high-angle (75-90) and low-angle (60-75) neutrino channels, from the point-source neutrino limits paper.
+url_landing: https://www.auger.org/science/public-data/data-and-tables
+license: none-stated
+access: open
+distributions:
+- url: https://www.auger.org/science/public-data/data-and-tables
+  host: institutional
+  role: primary
+- url: https://www.auger.org/document-centre-public?task=download.send&id=4988&catid=78&m=0
+  host: institutional
+  role: mirror
+- url: https://www.auger.org/document-centre-public?task=download.send&id=4989&catid=78&m=0
+  host: institutional
+  role: mirror
+- url: https://www.auger.org/document-centre-public?task=download.send&id=4990&catid=78&m=0
+  host: institutional
+  role: mirror
+references:
+- arxiv: '1906.07419'
+  relation: describes
+experiments:
+- auger
+sources:
+- cosmogenic
+- astrophysical
+topics:
+- flux
+data:
+  levels:
+  - response
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched Auger ''Data and Tables'' page 2026-10-23 (HTTP 200), download links present'
+  - Page also hosts photon limits and other cosmic-ray tables.

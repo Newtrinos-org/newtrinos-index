@@ -1,0 +1,33 @@
+id: super-k-gw150914-gw151226
+type: dataset
+title: Super-Kamiokande GW150914/GW151226 neutrino search data (high-energy and low-energy samples)
+short: 'Super-K neutrino search for GW150914 / GW151226: data'
+description: FC/PC/upward-muon events in text (2.7 MB) and <100 MeV low-energy sample in ROOT (12.5 MB) with READMEs.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/GW15-highe.tar.gz
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/GW15-highe.tar.gz
+  host: institutional
+  role: primary
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/GW15-lowe.zip
+  host: institutional
+  role: mirror
+references:
+- arxiv: '1608.08745'
+  relation: describes
+experiments:
+- super-k
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'

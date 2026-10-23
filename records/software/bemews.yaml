@@ -1,0 +1,30 @@
+id: bemews
+type: software
+title: 'BEMEWS: Earth-matter effects for supernova neutrinos'
+short: 'BEMEWS: Earth-matter effects for supernova neutrinos'
+description: C++/Python module computing Earth-matter effects on supernova neutrino fluxes; standalone or within SNEWPY.
+url_landing: https://github.com/SNEWS2/BEMEWS
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/SNEWS2/BEMEWS
+  host: github
+  role: primary
+sources:
+- supernova
+topics:
+- oscillation
+- earth-model
+software:
+  repository: https://github.com/SNEWS2/BEMEWS
+  purposes:
+  - oscillation-probability
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Listed on SNEWS2 GitHub org page (fetched 2026-10-23)'

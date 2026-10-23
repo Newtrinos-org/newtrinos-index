@@ -1,0 +1,29 @@
+id: guess-crust-u-th-abundances
+type: dataset
+title: Uranium and thorium abundances in rocks for the GUESS crustal model at Borexino
+short: U and Th abundances in rocks for the GUESS crustal model at Borexino
+description: 1,583 geolocated rock/sediment samples (mostly ITALRAD, Central Italy) with gamma-spectrometry U and Th abundances underlying the GUESS local-crust geoneutrino model around LNGS.
+doi: 10.5281/zenodo.21353553
+url_landing: https://zenodo.org/records/21353553
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://zenodo.org/records/21353553
+  host: zenodo
+  role: primary
+experiments:
+- borexino
+sources:
+- geo
+topics:
+- earth-model
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API record queried 2026-10-23'
+  - Files not listed in API response (may be restricted/embargoed); check.

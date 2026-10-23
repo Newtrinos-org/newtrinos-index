@@ -1,0 +1,33 @@
+id: super-k-atm-likelihood-2018
+type: result
+title: Super-Kamiokande atmospheric neutrino oscillation likelihood surfaces (SK I-IV, external constraints)
+short: Super-K atmospheric oscillation likelihood surfaces (PRD 97, 072001)
+description: Complete likelihood (chi2) surfaces from the two SK atmospheric-only analyses in text, plus ROOT TGraphs of 90% CL contours; 12.2 MB.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/sk.atm.data.release.tar.gz
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/sk.atm.data.release.tar.gz
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/PhysRevD.97.072001
+  relation: describes
+- arxiv: '1710.09126'
+  relation: describes
+experiments:
+- super-k
+sources:
+- atmospheric
+topics:
+- oscillation
+- mass-ordering
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'

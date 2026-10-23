@@ -1,0 +1,32 @@
+id: icemc
+type: software
+title: 'icemc: ANITA neutrino simulation in ice'
+short: 'icemc: ANITA neutrino simulation in Antarctic ice'
+description: ROOT-based Monte Carlo of UHE neutrino interactions in Antarctic ice, Askaryan radio emission and ANITA payload response; used for ANITA acceptance/limits.
+url_landing: https://github.com/anitaNeutrino/icemc
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/anitaNeutrino/icemc
+  host: github
+  role: primary
+experiments:
+- anita
+sources:
+- cosmogenic
+topics:
+- detector-response
+software:
+  repository: https://github.com/anitaNeutrino/icemc
+  purposes:
+  - detector-simulation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched GitHub page 2026-10-23'
+  - No licence file shown. No public ANITA limit/effective-area data release found (tables only in papers, e.g. arXiv:1902.04005).

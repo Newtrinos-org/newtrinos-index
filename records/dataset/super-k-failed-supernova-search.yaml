@@ -1,0 +1,30 @@
+id: super-k-failed-supernova-search
+type: dataset
+title: Super-Kamiokande failed-supernova candidate associated neutrino search data release
+short: 'Super-K search for neutrinos from a failed-supernova candidate: data release'
+description: Data release for the first neutrino search associated with a failed supernova candidate.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/FailedSN_data_release.zip
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/FailedSN_data_release.zip
+  host: institutional
+  role: primary
+references:
+- arxiv: '2511.03470'
+  relation: describes
+experiments:
+- super-k
+sources:
+- supernova
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'

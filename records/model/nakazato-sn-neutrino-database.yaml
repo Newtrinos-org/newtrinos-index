@@ -1,0 +1,26 @@
+id: nakazato-sn-neutrino-database
+type: model
+title: Nakazato et al. Supernova Neutrino Database (core collapse to PNS cooling)
+short: 'Nakazato et al. supernova neutrino database: core collapse to PNS cooling'
+description: Time-dependent neutrino spectra/luminosities (20 s) for 13-50 Msun, Z=0.02/0.004, shock revival 100-300 ms, BH models (Shen/Togashi/LS220); full data (5.3 MB tarball), time-integrated spectra, original early/late-phase data (52.6 MB), guide.pdf.
+url_landing: http://asphwww.ph.noda.tus.ac.jp/snn/
+license: none-stated
+access: open
+distributions:
+- url: http://asphwww.ph.noda.tus.ac.jp/snn/
+  host: institutional
+  role: primary
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page 2026-10-23'
+  - Catalogued Zenodo PNS-cooling records are different (Nakazato PNS cooling series).

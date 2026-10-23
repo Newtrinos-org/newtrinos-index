@@ -1,0 +1,33 @@
+id: super-k-i-iii-subleading-chi2
+type: result
+title: Super-Kamiokande SK I-IV sub-leading effects atmospheric chi-squared map
+short: Super-K I–III sub-leading-effects atmospheric χ² map
+description: Chi-squared map from SK-I,II,III atmospheric oscillation analysis with sub-leading (solar-term) effects.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/atmpd/sk123_subdom_data/
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/atmpd/sk123_subdom_data/
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/PhysRevD.81.092004
+  relation: describes
+- arxiv: '1002.3471'
+  relation: describes
+experiments:
+- super-k
+sources:
+- atmospheric
+topics:
+- oscillation
+data:
+  levels:
+  - likelihood
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Linked as ''Chi-Squared Map'' on the SK publications page (Wayback 2026)'
+  - Contents not inspected.

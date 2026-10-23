@@ -1,0 +1,34 @@
+id: chromo
+type: software
+title: 'chromo: Python interface to hadronic interaction models (SIBYLL, EPOS, QGSJet, DPMJET, Pythia)'
+short: 'chromo: Python interface to hadronic interaction models (SIBYLL, EPOS, QGSJet, …)'
+description: Unified Python interface to cosmic-ray hadronic event generators, used to generate inputs for atmospheric lepton flux calculations (MCEq).
+url_landing: https://github.com/impy-project/chromo
+license: BSD-3-Clause
+access: open
+distributions:
+- url: https://github.com/impy-project/chromo
+  host: github
+  role: primary
+- url: https://pypi.org/project/chromo/
+  host: package-registry
+  role: mirror
+sources:
+- atmospheric
+topics:
+- flux
+- cross-section
+software:
+  repository: https://github.com/impy-project/chromo
+  purposes:
+  - event-generator
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: PyPI JSON chromo 0.11.0 queried 2026-10-23'
+  - Atmospheric-flux model input; borderline scope.

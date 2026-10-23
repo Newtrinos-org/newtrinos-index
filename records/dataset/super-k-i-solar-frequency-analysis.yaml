@@ -1,0 +1,31 @@
+id: super-k-i-solar-frequency-analysis
+type: dataset
+title: Super-Kamiokande-I solar neutrino time-variation / frequency-analysis data
+short: Super-K-I solar neutrino time-variation / frequency-analysis data
+description: SK-I 5-day (and 10-day) binned 8B solar flux data used in many periodicity studies.
+url_landing: http://www-sk.icrr.u-tokyo.ac.jp/sk/lowe/frequencyanalysis/
+license: none-stated
+access: open
+distributions:
+- url: http://www-sk.icrr.u-tokyo.ac.jp/sk/lowe/frequencyanalysis/
+  host: institutional
+  role: primary
+- url: http://www-sk.icrr.u-tokyo.ac.jp/sk/lowe/soltimevar.html
+  host: institutional
+  role: mirror
+experiments:
+- super-k
+sources:
+- solar
+topics:
+- flux
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Wayback CDX shows pages (2003, 2022 redirect); arXiv:1604.06758 states the SK-I dataset is publicly available'
+  - Exact current location unverified; page redirects (301). Describing paper not confirmed (SK-I periodicity analyses, 2003-2005).

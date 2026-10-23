@@ -1,0 +1,29 @@
+id: snews-candidate-list
+type: dataset
+title: SNEWS massive-star / red supergiant supernova candidate list
+short: SNEWS list of nearby massive-star / red-supergiant supernova candidates
+description: CSV catalogue of Galactic red supergiant SN progenitor candidates (latest RSG_and_close_stars_catalog_4_11_24.csv), bright late-type stars, column descriptions, notebook.
+url_landing: https://github.com/SNEWS2/candidate_list
+license: none-stated
+access: open
+distributions:
+- url: https://github.com/SNEWS2/candidate_list
+  host: github
+  role: primary
+references:
+- arxiv: '2307.08785'
+  relation: describes
+sources:
+- supernova
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched GitHub repo page 2026-10-23'
+  - Licence not stated.

@@ -1,0 +1,35 @@
+id: kamland-geoneutrino-2022-release
+type: dataset
+title: KamLAND 2022 geoneutrino paper data release (spectra per period, U/Th chi2 map)
+short: 'KamLAND 2022 geoneutrino data release: spectra per period and U/Th results'
+description: 0.1 MeV-binned estimated background and geoneutrino spectra for three data periods, plus plain-text delta-chi2 table vs observed 238U and 232Th geoneutrino fluxes.
+url_landing: https://www.awa.tohoku.ac.jp/KamLAND/geonu2022/data-release.html
+license: none-stated
+access: open
+distributions:
+- url: https://www.awa.tohoku.ac.jp/KamLAND/geonu2022/data-release.html
+  host: institutional
+  role: primary
+- url: https://www.awa.tohoku.ac.jp/KamLAND/datarelease/2ndresult.html
+  host: institutional
+  role: mirror
+references:
+- arxiv: '2205.14934'
+  relation: describes
+experiments:
+- kamland
+sources:
+- geo
+topics:
+- flux
+- earth-model
+data:
+  levels:
+  - binned
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Search-engine snippet of the page; direct fetch HTTP 403 (bot block) on 2026-10-23'
+  - Paper ref from memory; check. Re-verify in a browser.

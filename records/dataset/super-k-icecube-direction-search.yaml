@@ -1,0 +1,31 @@
+id: super-k-icecube-direction-search
+type: dataset
+title: 'Super-Kamiokande search in directions of IceCube astrophysical neutrinos: archive'
+short: 'Super-K search in the directions of IceCube astrophysical neutrinos: data'
+description: Data archive for SK excess search toward IceCube HESE/track directions; 55.2 MB.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/SK-IC_archive.tar.bz2
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/SK-IC_archive.tar.bz2
+  host: institutional
+  role: primary
+references:
+- arxiv: '1707.08604'
+  relation: describes
+experiments:
+- super-k
+- icecube
+sources:
+- astrophysical
+topics:
+- multi-messenger
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'

@@ -1,0 +1,44 @@
+id: sno-periodicity-data
+type: dataset
+title: 'SNO periodicity analysis public data: run lists and event times (D2O and salt phases)'
+short: 'SNO periodicity analysis: run lists and event times (D₂O and salt phases)'
+description: ASCII run start times/lengths and neutrino event times (truncated to the second) for the D2O and salt phases, with warnings on run-boundary periodicities and burst/muon cuts.
+url_landing: https://sno.phy.queensu.ca/periodicity/
+license: none-stated
+access: open
+distributions:
+- url: https://sno.phy.queensu.ca/periodicity/
+  host: institutional
+  role: primary
+- url: https://sno.phy.queensu.ca/periodicity/runlist_d2o.dat
+  host: institutional
+  role: mirror
+- url: https://sno.phy.queensu.ca/periodicity/runlist_salt.dat
+  host: institutional
+  role: mirror
+- url: https://sno.phy.queensu.ca/periodicity/eventlist_d2o_trunsec.dat
+  host: institutional
+  role: mirror
+- url: https://sno.phy.queensu.ca/periodicity/eventlist_salt_trunsec.dat
+  host: institutional
+  role: mirror
+references:
+- arxiv: hep-ex/0507079
+  relation: describes
+- arxiv: '0910.2433'
+  relation: describes
+experiments:
+- sno
+sources:
+- solar
+topics:
+- flux
+data:
+  levels:
+  - events
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Page content read from Wayback Machine snapshot; live sno.phy.queensu.ca refused connections (ECONNREFUSED) on 2026-10-23 (2021 snapshot)'

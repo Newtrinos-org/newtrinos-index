@@ -1,0 +1,26 @@
+id: ssm-energy-loss-kernels
+type: model
+title: Energy-loss kernels for Standard Solar Model variations
+short: Energy-loss kernels for standard-solar-model variations
+description: Precomputed radial energy-loss kernels and integration routines giving linear SSM response (incl. neutrino fluxes, helioseismic quantities) to arbitrary small extra energy losses; SSM+Eloss_Kernels_v0.9.zip + Readme.pdf.
+doi: 10.5281/zenodo.15624062
+url_landing: https://zenodo.org/records/15624062
+license: CC-BY-4.0
+access: open
+distributions:
+- url: https://zenodo.org/records/15624062
+  host: zenodo
+  role: primary
+sources:
+- solar
+topics:
+- solar-model
+model:
+  quantities:
+  - solar structure
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Zenodo API record queried 2026-10-23'

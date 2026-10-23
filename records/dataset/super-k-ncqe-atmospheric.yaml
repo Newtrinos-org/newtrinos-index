@@ -1,0 +1,34 @@
+id: super-k-ncqe-atmospheric
+type: dataset
+title: 'Super-Kamiokande NC quasielastic cross section with atmospheric neutrinos in SK-Gd: data release'
+short: Super-K NC quasielastic cross section with atmospheric neutrinos (PRD 109, L011101)
+description: Data release accompanying the neutrino-oxygen NCQE cross-section measurement using atmospheric neutrinos.
+url_landing: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/PhysRevD_109_L011101.zip
+license: none-stated
+access: open
+distributions:
+- url: https://www-sk.icrr.u-tokyo.ac.jp/sk/publications/data/PhysRevD_109_L011101.zip
+  host: institutional
+  role: primary
+references:
+- doi: 10.1103/PhysRevD.109.L011101
+  relation: describes
+- arxiv: '2311.03842'
+  relation: describes
+experiments:
+- super-k
+sources:
+- atmospheric
+topics:
+- cross-section
+channels:
+- nc
+data:
+  levels:
+  - summary
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: SK publications/data-release list at https://www-sk.icrr.u-tokyo.ac.jp/en/sk/for-reseacher/ read via Wayback (web.archive.org, 2026 snapshot); file present in Wayback CDX with HTTP'

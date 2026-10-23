@@ -1,0 +1,35 @@
+id: geoneutrino-flux-code
+type: software
+title: Geoneutrino Flux Code (Wipperfurth, Šrámek, McDonough lithospheric reference model)
+short: 'Geoneutrino Flux Code: lithospheric reference model (Wipperfurth, Šrámek, McDonough)'
+description: MATLAB code, functions and input data computing heat-producing element content and geoneutrino flux at detector sites using LITHO1.0, CRUST1.0, CRUST2.0; ~16 MB zip with README.
+doi: 10.4121/uuid:d20c29a5-aba7-43d5-be46-7fba7e5fa093
+url_landing: https://data.4tu.nl/articles/_/12715934/1
+license: CC0-1.0
+access: open
+distributions:
+- url: https://data.4tu.nl/articles/_/12715934/1
+  host: institutional
+  role: primary
+references:
+- arxiv: '1907.12184'
+  relation: describes
+sources:
+- geo
+topics:
+- flux
+- earth-model
+software:
+  repository: https://data.4tu.nl/articles/_/12715934/1
+  purposes:
+  - flux-calculation
+  interfaces:
+  - library
+  development_status: unknown
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: DataCite API record queried 2026-10-23; 4TU host refused connection at time of check'
+  - Different from catalogued 4TU notebook record (d635e12b).

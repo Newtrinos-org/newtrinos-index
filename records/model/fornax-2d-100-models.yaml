@@ -1,0 +1,28 @@
+id: fornax-2d-100-models
+type: model
+title: 'Princeton Fornax CCSN neutrino signals: 100 2D models to late times'
+short: 'Princeton Fornax CCSN neutrino signals: 100 2D models to late times'
+description: 'For 100 2D Fornax models (9-27 Msun, 37 non-exploding): nustat.{0,1,2}.dat (time, L, <E>, rms, skew at 500 km) and nuspec.{}.xg 12-bin spectra; nureader-nu.py reader.'
+url_landing: https://www.astro.princeton.edu/~burrows/nu-emissions.2d.large/
+license: none-stated
+access: open
+distributions:
+- url: https://www.astro.princeton.edu/~burrows/nu-emissions.2d.large/
+  host: institutional
+  role: primary
+references:
+- arxiv: '2307.08735'
+  relation: describes
+sources:
+- supernova
+topics:
+- flux
+model:
+  quantities:
+  - neutrino emission
+curation:
+  status: curated
+  added: '2026-10-23'
+  source: web search (astro_atm_solar_sn, 2026-10-23)
+  quality_notes:
+  - 'found by targeted web search; verified: Fetched page 2026-10-23 (HTTP 200)'
